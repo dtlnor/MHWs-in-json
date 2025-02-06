@@ -1,0 +1,52 @@
+[
+    {
+        "app.user_data.NpcAITableActionData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWp06CanDodge_Param": {
+                                "_DodgeType": "[0]TARGET_DEPART"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckRangeInCombatEnemy_Param": {
+                                "_Range": {
+                                    "s": 0.0,
+                                    "r": 1.2999999523162842
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_ActionSetting": {
+                "app.user_data.NpcAITableActionData.cActionSetting": {
+                    "_ForceInterrupt": true,
+                    "_TableEnd": false
+                }
+            },
+            "_Param": {
+                "app.user_data.NpcAITableActionData.cNpcAITableEffectHolder": {
+                    "_Param": {
+                        "app.NpcAITableEffects.cStreak_Param": {
+                            "_StreakPlanData": {
+                                "app.user_data.NpcStreakPlanData": {
+                                    "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp06/3_StreakPlan/CbtWp06_Passive_AdjustStepFar_StreakPlan.user"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

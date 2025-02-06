@@ -1,0 +1,70 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[2]AIM_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cFsmLikeActionCamp_Param": {
+                            "STRUCT__ActionTime__HasValue": false,
+                            "STRUCT__ActionTime__Value": 0.0,
+                            "_ImmediateActionSet": false,
+                            "_UseVariation": false,
+                            "_VariIntervalTime": {
+                                "s": 20.0,
+                                "r": 20.0
+                            },
+                            "_VariProbability": {
+                                "s": 50.0,
+                                "r": 0.0
+                            },
+                            "_ActionSelector": {
+                                "app.cNpcFsmLikeActionSelector": {
+                                    "_Category": 3,
+                                    "_ActionID": -1157962368,
+                                    "_UseVariation": false,
+                                    "_Variation": -663541696
+                                }
+                            },
+                            "_VariData": [],
+                            "_CampPointType": 3
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSideWaitCampState_Param": {
+                            "_DelayTime": 0.0,
+                            "_IsAlphaZero": false,
+                            "_IsDisableAlphaFade": false,
+                            "_IsAlphaZero_Porter": false,
+                            "_IsDisableAlphaFade_Porter": false,
+                            "_CheckState": "[1]CONTACT"
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckCampState_Param": {
+                                "_CheckState": "[1]CONTACT"
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

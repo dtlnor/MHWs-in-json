@@ -1,0 +1,84 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 30.0,
+                                "r": 30.0
+                            },
+                            "_Cancel": {
+                                "s": 5.0,
+                                "r": 0.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCanShotSlingerType_Param": {
+                                        "_SlingerType": "[1]ATTR"
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
+                                        "_Range": {
+                                            "s": 7.0,
+                                            "r": 28.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cSetSlingerShotTarget_Param": {
+                                        "_TargetType": "[1]TARGET_EM",
+                                        "_IsDungTarget": false,
+                                        "_TargetEnemyRange": 0.0,
+                                        "_SlingerTargetRange": 0.0
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckFiringLineClear_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cNone_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

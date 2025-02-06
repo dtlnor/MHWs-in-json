@@ -1,0 +1,168 @@
+[
+    {
+        "app.user_data.NpcStreakPlanData": {
+            "_ActionDataList": {
+                "ace.cInstanceGuidArray`1<app.user_data.NpcStreakPlanData.cActionData>": {
+                    "_DataArray": [
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "a91ed024-4e3b-4a4a-a6cf-97e1b9e0c777",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/WpGun/4_StreakAction/CbtWpGun_TargetApproaching_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "d2f352c7-5cc3-450d-8f39-650f81e1bec7",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/WpGun/4_StreakAction/CbtWpGun_TargetKeepAway_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "0d9aa0fe-ab4d-45a6-87be-3b5d17ad3e67",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp12/4_StreakAction/CbtWp12_KeepAwayDodge_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": [
+                                            {
+                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                                    "_ActionGuid": "d2f352c7-5cc3-450d-8f39-650f81e1bec7",
+                                                    "_RandomWeight": 50
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "ee535972-12b8-4058-b83a-8e6a2fae967d",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp12/4_StreakAction/CbtWp12_KeepAwayStep_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": [
+                                            {
+                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                                    "_ActionGuid": "0d9aa0fe-ab4d-45a6-87be-3b5d17ad3e67",
+                                                    "_RandomWeight": -1
+                                                }
+                                            },
+                                            {
+                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                                    "_ActionGuid": "d2f352c7-5cc3-450d-8f39-650f81e1bec7",
+                                                    "_RandomWeight": 50
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DerivedAction_Activate": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": [
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "a91ed024-4e3b-4a4a-a6cf-97e1b9e0c777",
+                                "_RandomWeight": 50
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DerivedAction_Activate_WpOn": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": [
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "d2f352c7-5cc3-450d-8f39-650f81e1bec7",
+                                "_RandomWeight": 50
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "0d9aa0fe-ab4d-45a6-87be-3b5d17ad3e67",
+                                "_RandomWeight": -1
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "ee535972-12b8-4058-b83a-8e6a2fae967d",
+                                "_RandomWeight": -1
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DerivedAction_Activate_Breaked": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": []
+                }
+            },
+            "_DerivedAction_Always": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": []
+                }
+            },
+            "_TargetType": {
+                "app.NpcPartnerDef.STREAK_TARGET_TYPE_Serializable": {
+                    "_Value": "[1190479488]COMBAT_ENEMY"
+                }
+            },
+            "_TargetPartsType": {
+                "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
+                    "_Value": "[-269892992]ROOT"
+                }
+            }
+        }
+    }
+]

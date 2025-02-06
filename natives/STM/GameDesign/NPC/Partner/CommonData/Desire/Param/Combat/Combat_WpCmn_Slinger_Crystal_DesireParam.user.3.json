@@ -1,0 +1,108 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 30.0,
+                                "r": 30.0
+                            },
+                            "_Cancel": {
+                                "s": 5.0,
+                                "r": 0.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckGuardianEmWeakAmmo_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCanBadConditionCombatEnemy_Param": {
+                                        "_Condition": "[23]WEAK_ATTR_BOOST",
+                                        "_ResistLevel": "[0]ZERO"
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckRangeInEnergyCrystal_Param": {
+                                        "_NpcToGmRange": {
+                                            "s": 0.0,
+                                            "r": 40.0
+                                        },
+                                        "_PlToGmRange": {
+                                            "s": 0.0,
+                                            "r": 7.0
+                                        },
+                                        "_EmToGmRange": {
+                                            "s": 0.0,
+                                            "r": 4.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckFiringLineClear_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cSetSlingerShotTarget_Param": {
+                                        "_TargetType": "[3]ENERGY_CRYSTAL",
+                                        "_IsDungTarget": false,
+                                        "_TargetEnemyRange": 0.0,
+                                        "_SlingerTargetRange": 0.0
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cShootSlinger_Param": {
+                                        "_IsWeakAmmo": true,
+                                        "_AmmoType": {
+                                            "app.HunterDef.SLINGER_AMMO_TYPE_Serializable": {
+                                                "_Value": "[131051936]NONE"
+                                            }
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

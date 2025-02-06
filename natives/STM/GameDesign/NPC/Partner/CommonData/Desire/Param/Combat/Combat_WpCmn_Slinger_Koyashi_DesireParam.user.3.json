@@ -1,0 +1,82 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 0.0,
+                                "r": 0.0
+                            },
+                            "_Cancel": {
+                                "s": 3.0,
+                                "r": 5.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCanShotSlinger_Param": {
+                                        "_AmmoType": {
+                                            "app.HunterDef.SLINGER_AMMO_TYPE_Serializable": {
+                                                "_Value": "[-1909267840]DUNG"
+                                            }
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cSetSlingerShotTarget_Param": {
+                                        "_TargetType": "[2]DUNG_TARGET",
+                                        "_IsDungTarget": true,
+                                        "_TargetEnemyRange": 18.0,
+                                        "_SlingerTargetRange": 15.0
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckFiringLineClear_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cShootSlinger_Param": {
+                                        "_IsWeakAmmo": false,
+                                        "_AmmoType": {
+                                            "app.HunterDef.SLINGER_AMMO_TYPE_Serializable": {
+                                                "_Value": "[-1909267840]DUNG"
+                                            }
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

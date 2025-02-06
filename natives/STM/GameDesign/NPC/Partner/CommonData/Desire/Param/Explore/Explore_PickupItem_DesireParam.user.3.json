@@ -1,0 +1,51 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 30.0,
+                                "r": 30.0
+                            },
+                            "_Cancel": {
+                                "s": 15.0,
+                                "r": 15.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckPickupItem_Param": {
+                                        "STRUCT__IsInCamera__HasValue": false,
+                                        "STRUCT__IsInCamera__Value": false,
+                                        "_IsCheckCraftMaterial": true
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckMovingPorterRoot_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

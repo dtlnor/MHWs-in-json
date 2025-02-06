@@ -1,0 +1,59 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cHammerFullSwing_Param": {
+                            "_ActionType": "[0]SHORT"
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckAnyCancel_Param": {
+                                "_CancelMotSeq": "[1]WP"
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cHitAttackSphere_Param": {
+                                "_AttackShape": {
+                                    "pos": {
+                                        "x": 0.0,
+                                        "y": 1.100000023841858,
+                                        "z": 0.0
+                                    },
+                                    "r": 1.2999999523162842
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

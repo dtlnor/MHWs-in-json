@@ -1,0 +1,1543 @@
+[
+    {
+        "ace.btable.user_data.BTableOrderList": {
+            "_OperatorFactories": [
+                {
+                    "ace.btable.cOperatorFactory": {
+                        "_OrderType": "app.btable.PlOperator.TableExitOnSuccess",
+                        "_ArgumentType": "ace.btable.cOperatorArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cOperatorFactory": {
+                        "_OrderType": "app.btable.PlOperator.NotSkipIf",
+                        "_ArgumentType": "ace.btable.cOperatorArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cOperatorFactory": {
+                        "_OrderType": "app.btable.PlOperator.NotSkipIfEnd",
+                        "_ArgumentType": "ace.btable.cOperatorArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                }
+            ],
+            "_CommandFactories": [
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBorderPlayer",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWatchCancelOnNextTable",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerCommandCheckToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerCommandCheckToRequestActionFull",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArgFull",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingFull"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerCommandCheckToRequestActionFullWatchSubCancel",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArgFull",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingFull"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNotPlayerCommandCheckToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNotPlayerCommandCheckToRequestActionFull",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArgFull",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingFull"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerCommandCheckToRequestAction_Cancel",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionEndToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionRegister",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveStop",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNotAttack00",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNotAim",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNoGroundToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNoGroundHighToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cOnGroundToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStepUpCancelToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStepUpWallDashFallToJump",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPushPop",
+                        "_ArgumentType": "app.btable.PlCommand.cPopPushArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cKeepPushPopAndRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cSomethingEnumAndRequestActionArg`1<app.ActBtnCategory.TYPE_Fixed>",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cResurrection",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingSign",
+                        "_ArgumentType": "app.btable.PlCommand.cSomethingEnumAndRequestActionArg`1<app.HunterDef.SLIDING_BEGIN_TYPE>",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cResurrected",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingSignEndJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingSignEndJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cSlidingSignEndJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingToRun",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingToDash",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingTurn",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlidingToGround",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cTarzanGmAccess",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cTarzanDashJump",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cForceNaviMove",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBorderJudgeToDo",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cAnyCaseToRequetAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpOnJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpOnJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cWpOnJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpFlyOnJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpFlyOnJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cWpFlyOnJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpSlidingOnJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpSlidingOnJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cWpFlyOnJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpStepOnJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpStepOnJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cWpFlyOnJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpOffJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpOffJudgeCaseFull",
+                        "_ArgumentType": "app.btable.PlCommand.cWpOffJudgeArgFull",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingFull"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cMoveJudgeArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cMoveJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveTurnJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveTurnJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cMoveTurnJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveDirJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveDirJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cMoveDirJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStepUpJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cDir4Arg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStepUpJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cStepUpudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cAirStepUpJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cAirStepUpJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cAirStepUpJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStepUpWallDashEndJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStepUpWallDashEndJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cStepUpWallDashEndJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallStartJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallStartJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cClimbWallStartJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallMoveJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallMoveJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cClimbWallMoveJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallSlideDownStopCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallFinishJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cClimbWallFinishJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cClimbWallFinishJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWallThroughJumpCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDodgeTypeJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDodgeTypeJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cDodgeTypeJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDodge4",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDodge4Case",
+                        "_ArgumentType": "app.btable.PlCommand.cDodge4JudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cLandJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cLandJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cLandJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionFromSquatCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionIsSquatCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCrawlCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStartSwimCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cTarzanSwingJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cTarzanSwingJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cTarzanSwingJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlingerShootJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlingerShootJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cSlingerShootJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCaptureNetResultJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCaptureNetResultJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cCaptureNetResultJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cUseItemJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cNotUseItemJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cUseItemJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cUseItemJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cUseItemNoActionJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cUseItemNoActionJudgeCaseArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMeatGrillJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMeatGrillJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cItemIDJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingCastJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingCastJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cFishingCastJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingOutJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingOutJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cFishingOutJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingBigBattleJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingBigBattleJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cFishingBigBattleJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingBigAdjust",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingBigJumping",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingBigJumpInputJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingBigBattleJumpInputJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cFishingBigBattleJumpInputJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingMoveBaitJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFishingMoveBaitJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cFishingMoveBaitJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBombLPopInputTypeJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBombLPopInputTypeJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cBombLPopInputTypeJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPushPopJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cPopAccessArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPushPopJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPopPushJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPushPopNoActionJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPopPushNoActionJudgeCaseArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPushPopKeepJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPushPopKeepJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPushPopKeepJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerDamageJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerDamageJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cDamageTypeJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDieTypeJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDieTypeJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cDieTypeJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRespawnTypeJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRespawnTypeJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cRespawnTypeJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFastTravelTypeJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cFastTravelTypeJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cFastTravelTypeJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWallCrashJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWallCrashJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cWallCrashJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerOpenMapJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerOpenMapJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cMapOpenTypeJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRidingPartsStatusJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRidingPartsStatusJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cBattleRidingPartsStatusJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRideCallPorterJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRideCallPorterJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cRideCallPorterJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSetPtCallableType",
+                        "_ArgumentType": "app.btable.PlCommand.cPtCallableTypeArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCallPorterPreCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCallPorterInputCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpChangeCallPorterInputCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpChangeCallPorterJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpChangeCallPorterJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cWpChangeCallPorterJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cItemReplenishCallPorterInputCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cItemReplenishCallPorterJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cItemReplenishCallPorterJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cItemReplenishCallPorterJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStealthAttackJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStealthAttackJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cStealthAttackJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterIsRiding",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideStartJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideStartJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterRideStartJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterWpChangeStartJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterWpChangeStartJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterWpChangeStartJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterItemReplenishStartJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterItemReplenishStartJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterItemReplenishStartJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterAskToRescure",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterActionUnlinkedCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterSpeedCheckCommandJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterSpeedCheckCommandJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterSpeedCheckCommandJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterSpeedDiffCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterSpeedLvCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterSpeedLvCheckArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterActionCategoryCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterActionCategoryArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterStatusCategoryCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterStatusCategoryArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterActionCheckToRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionByPorterArg",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingByPorter"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideDismountJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideDismountJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterRideDismountJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterThroughWallJump",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterClimbWallCancel",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterPreCallEnableRideCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideSecondaryCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRidePopDismount",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideEnableAlignment",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterCallActionRegister",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterBlameAttackRegister",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cInTentStateJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cInTentStateJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cInTentStateJudgeArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cInTentIdelTypeCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cInTentIdelTypeJudgeArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBorderDo",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRequestAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRequestActionFull",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionFullArg",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingFull"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRequestRootSubAction",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cRequestRootSubActionWp",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBorderIs",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerCommand",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPlayerCommandNoRegister",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIsActionEnd",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIsLanded",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionPhase",
+                        "_ArgumentType": "app.btable.PlCommand.cActionPhaseArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionBTableTrg",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpOnCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpOnDamageCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cWpTypeCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cWpTypeCheckArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStunCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSleepCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cStaminaCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cStaminaCheckArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDieCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cMoveLevelCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cMoveLevelCheckArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDurationDamageEnd",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDamageCatchEmPhase",
+                        "_ArgumentType": "app.btable.PlCommand.cDamageCatchEmPhaseArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBossCatchTypeJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBossCatchTypeJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cBossCatchTypeJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSlingerAmmoCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIdleTurn",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cAfterDodgeCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cAfterDodgeCheckArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBTableCommandFlagCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cHunterBTableCommandFlagArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterCanItemReplenishCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRideStartCheck",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRideMoveCheckAndSetAction",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRidingFinishAttack",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRidingSuccessJump",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBattleRidingCancel",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cTableIsPrepareMode",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIsForcePullOffMantle",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cEmoteRequestJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cEmoteRequestJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cEmoteRequestJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cBorderSwitch",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionSwitch",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cActionSwitchCase",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPrevActionSwitch",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPrevActionSwitchCase",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSubRootActionSwitch",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cSubRootActionSwitchCase",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCheckSubRootActionChange",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIsGestureCansel",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIsGestureSafeAreaCansel",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cIsPhotoActionCansel",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDamFlowJudge",
+                        "_ArgumentType": "app.btable.PlCommand.cOptionArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cDamFlowJudgeCase",
+                        "_ArgumentType": "app.btable.PlCommand.cDamFlowJudgeCaseArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cCheckDamFlowEnd",
+                        "_ArgumentType": "ace.btable.cCommandArgumentNone",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideBlameFirstAttack",
+                        "_ArgumentType": "app.btable.PlCommand.cPlayerCommandAndRequestActionArg",
+                        "_ArgumentSettingType": "app.btable.AppBTableUtil.cSelectActionArgSetting"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterRideBlameAttack",
+                        "_ArgumentType": "app.btable.PlCommand.cRequestActionFullArg",
+                        "_ArgumentSettingType": "app.btable.PlCommand.cSelectActionArgSettingFull"
+                    }
+                },
+                {
+                    "ace.btable.cCommandFactory": {
+                        "_OrderType": "app.btable.PlCommand.cPorterInteractionEmoteCheck",
+                        "_ArgumentType": "app.btable.PlCommand.cPorterInteractionEmoteCheckArg",
+                        "_ArgumentSettingType": "ace.btable.cArgumentSettingNone"
+                    }
+                }
+            ]
+        }
+    }
+]

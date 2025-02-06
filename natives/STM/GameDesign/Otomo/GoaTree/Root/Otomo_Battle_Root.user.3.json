@@ -1,0 +1,469 @@
+[
+    {
+        "goatree.user_data.GoalDefinition": {
+            "_SelfGuid": "0cb581e8-c7e1-423f-97f4-7b7e0f0146a0",
+            "_RootGoalNameHash": {
+                "app.cStrHashHeavy": {
+                    "_Hash": 4175418299
+                }
+            },
+            "_ParentAssetList": [
+                {
+                    "goatree.user_data.GoalDefinition.cParentAsset": {
+                        "_Asset": {
+                            "goatree.user_data.GoalDefinition": {
+                                "userdataPath": "GameDesign/Otomo/GoaTree/Battle/Otomo_Battle_AttackToEm.user"
+                            }
+                        }
+                    }
+                },
+                {
+                    "goatree.user_data.GoalDefinition.cParentAsset": {
+                        "_Asset": {
+                            "goatree.user_data.GoalDefinition": {
+                                "userdataPath": "GameDesign/Otomo/GoaTree/Battle/Otomo_Battle_Intimidate.user"
+                            }
+                        }
+                    }
+                },
+                {
+                    "goatree.user_data.GoalDefinition.cParentAsset": {
+                        "_Asset": {
+                            "goatree.user_data.GoalDefinition": {
+                                "userdataPath": "GameDesign/Otomo/GoaTree/Battle/Otomo_Battle_Slinger.user"
+                            }
+                        }
+                    }
+                },
+                {
+                    "goatree.user_data.GoalDefinition.cParentAsset": {
+                        "_Asset": {
+                            "goatree.user_data.GoalDefinition": {
+                                "userdataPath": "GameDesign/Otomo/GoaTree/Battle/Otomo_Battle_DragAirShip.user"
+                            }
+                        }
+                    }
+                }
+            ],
+            "_CustomGoalList": [],
+            "_GoalList": [
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 4175418299
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[2]DESIRE_FROM_TOP"
+                            }
+                        },
+                        "_EndlessLoop": true,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "1e4682e1-444b-430a-ac1d-90ee4a9c7d16",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 4007017951
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cIsUseOtomoTool_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false,
+                                                            "_UseOtomoToolType": 1032146176
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "bbd6659f-519b-471a-bebf-698e371c203f",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2917896536
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cIsUseOtomoTool_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false,
+                                                            "_UseOtomoToolType": 1806094720
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "0cb581e8-c7e1-423f-97f4-7b7e0f0146a0",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 304949919
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 304949919
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalOrInterruptGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "0cb581e8-c7e1-423f-97f4-7b7e0f0146a0",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1504722133
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cCheckRefresh_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "0cb581e8-c7e1-423f-97f4-7b7e0f0146a0",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1092595404
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "39afeb48-1f43-4b84-841b-4bc9f6d765ae",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1653323128
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": true,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cRequestInsectHeal_Revive_Param": {
+                                                            "_IsWaitActionEnd": true,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "29857848-cbf3-4a3d-94f0-44581ea60b54",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2573744875
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cIsDamStream_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 4103685741
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_None": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1092595404
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "0cb581e8-c7e1-423f-97f4-7b7e0f0146a0",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1820800810
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 2880076660
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_None": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1820800810
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "9477d3ab-dcaf-4b5f-af4b-65b14a2a0840",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 654637156
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.OtomoGoaTreeGoalEffects.cSetTarget_Param": {
+                                            "_Type": "[2]CONBAT_ENEMY"
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.OtomoGoaTreeGoalEffects.cResetAttackCount_Param": {}
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1504722133
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.OtomoGoaTreeGoals.cActionEnd_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_IsWaitActionEnd": false,
+                                "_IgnoreSuspensionGoal": false,
+                                "_IsIgnoreForceInterruptActionGoalEnd": false,
+                                "_IsEnableActionEnd": false,
+                                "_IsEnableInterruptGoalEnd": false,
+                                "_IsReserveAIState": false,
+                                "_IsEnableCancel": false
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.OtomoGoaTreeGoalEffects.cRequestChangeAction_Param": {
+                                            "_ActionID": "6f830d64-def3-4733-b6d3-a3f4bd831421",
+                                            "_AppendDataType": "[0]DEFAULT"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,96 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetHunterAction_ActionParam": {
+                            "_ActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": -1974898176,
+                                    "_Action": 6
+                                }
+                            },
+                            "_ActionEnd": false,
+                            "_IgnoreError": false,
+                            "_RetryCommad": true
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTarget_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_LogicType": "[0]NEAR_COLLIDER",
+                            "_AdjustType": "[0]TO_KEY_JOINTS",
+                            "_UpdateTiming": "[0]ALWAYS",
+                            "_CheckRayCast": false,
+                            "_IsDirectionAim": true
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
+                                "_Immediate": true,
+                                "_Strict": true,
+                                "_ActionSelector": {
+                                    "app.cNpcHunterActionSelector": {
+                                        "_Category": -1974898176,
+                                        "_Action": 6
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cHitAttack_Param": {
+                                "_AttackAABB": {
+                                    "minpos": {
+                                        "x": -1.399999976158142,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
+                                    "maxpos": {
+                                        "x": 0.4000000059604645,
+                                        "y": 1.7999999523162842,
+                                        "z": 1.2999999523162842,
+                                        "pad": 0.0
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

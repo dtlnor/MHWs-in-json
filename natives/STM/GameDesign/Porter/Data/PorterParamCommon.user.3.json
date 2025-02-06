@@ -1,0 +1,2578 @@
+[
+    {
+        "app.user_data.PorterParamCommon": {
+            "_JointConst": [
+                {
+                    "app.cJointConstData": {
+                        "_JointName": {
+                            "ace.cJointHash": {
+                                "_Hash": 3858046040
+                            }
+                        },
+                        "_OffsetPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IgnoreJointRotation": false,
+                        "_OffsetRotationDegree": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        }
+                    }
+                },
+                {
+                    "app.cJointConstData": {
+                        "_JointName": {
+                            "ace.cJointHash": {
+                                "_Hash": 3459751961
+                            }
+                        },
+                        "_OffsetPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IgnoreJointRotation": false,
+                        "_OffsetRotationDegree": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        }
+                    }
+                }
+            ],
+            "_PorterDamageActionData": {
+                "app.user_data.PorterDamageActionData": {
+                    "userdataPath": "GameDesign/Porter/Data/PorterDamageActionData.user"
+                }
+            },
+            "_PorterDodgeDamageTypeData": {
+                "app.user_data.PorterDodgeDamageTypeData": {
+                    "userdataPath": "GameDesign/Porter/Data/PorterDodgeDamageTypeData.user"
+                }
+            },
+            "_SaddleData": {
+                "app.user_data.PorterSaddleData": {
+                    "userdataPath": "GameDesign/Porter/Data/Saddle/Pt_SaddleData.user"
+                }
+            },
+            "_ReinData": {
+                "app.user_data.PorterReinData": {
+                    "userdataPath": "GameDesign/Porter/Data/Rein/Pt_ReinData.user"
+                }
+            },
+            "_StirrupData": {
+                "app.user_data.PorterStirrupData": {
+                    "userdataPath": "GameDesign/Porter/Data/Saddle/Pt_StirrupData.user"
+                }
+            },
+            "_WeaponBagsData": {
+                "app.user_data.PorterWeaponBagsData": {
+                    "userdataPath": "GameDesign/Porter/Data/WeaponBags/Pt_WeaponBags.user"
+                }
+            },
+            "_SlopeIkSupporterParam": {
+                "app.user_data.SlopeIkSupporterParam": {
+                    "userdataPath": "Motion/Porter/Decorate/IkLeg/Pt_SlopeIkSupportParam.user"
+                }
+            },
+            "_IkHandleCorrectionParam": {
+                "app.user_data.IkHandleCorrectionParam": {
+                    "userdataPath": "Motion/Porter/Decorate/IkLeg/Pt_IkHandleCorrection.user"
+                }
+            },
+            "_EyeCtrlParam": {
+                "app.user_data.EyeControlParam": {
+                    "userdataPath": "GameDesign/Porter/Animation/Eye/PorterEyeCtrlParam.user"
+                }
+            },
+            "_EyeBlinkCycle": {
+                "app.cEyeBlinkCycle": {
+                    "_SpanMin": 1.0,
+                    "_SpanMax": 4.0,
+                    "_FastBlinkRate": 2
+                }
+            },
+            "_Communicate": {
+                "app.user_data.PorterParamCommon.cCommunicate": {
+                    "_Warp": {
+                        "app.user_data.PorterParamCommon.cCommunicate.cWarp": {
+                            "_CallWarpThresholdDist": 70.0,
+                            "_CallWarpOffset": {
+                                "x": -2.0,
+                                "y": 0.0,
+                                "z": -4.0,
+                                "pad": 0.0
+                            },
+                            "_CallWarpToRideOwnerBackGroundPosTimeMax": 10.0,
+                            "_CallWarpToRideOwnerPosTimeMax": 13.0
+                        }
+                    },
+                    "_CallMoveSpeed": {
+                        "app.cPorterMoveInfo.cMoveSpeed": {
+                            "_SpeedLv": "[5]TOP",
+                            "_InternalRate": 0.5
+                        }
+                    },
+                    "_CallMoveSpeed_Near": {
+                        "app.cPorterMoveInfo.cMoveSpeed": {
+                            "_SpeedLv": "[4]DASH",
+                            "_InternalRate": 1.0
+                        }
+                    },
+                    "_CallNearRange": 7.0,
+                    "_RidingReadyMoveSpeed": {
+                        "app.cPorterMoveInfo.cMoveSpeed": {
+                            "_SpeedLv": "[4]DASH",
+                            "_InternalRate": 1.0
+                        }
+                    },
+                    "_RidingReadyMoveSpeedRange": 5.0,
+                    "_RidingReadyMoveSpeed_Low": {
+                        "app.cPorterMoveInfo.cMoveSpeed": {
+                            "_SpeedLv": "[4]DASH",
+                            "_InternalRate": 0.699999988079071
+                        }
+                    },
+                    "_RidingReadyMoveSpeedRange_Low": 7.0,
+                    "_OwnerLowSpeedPerSecond": 5.0,
+                    "_RidingDefaultMoveSpeed": {
+                        "app.cPorterMoveInfo.cMoveSpeed": {
+                            "_SpeedLv": "[4]DASH",
+                            "_InternalRate": 0.5
+                        }
+                    },
+                    "_RidingReadySubMotionStartRange": 5.0,
+                    "_RidingReadySideDirectionDeg": 15.0,
+                    "_RidingReadySideDirectionSwitchTime": 1.0,
+                    "_CallDirectMoveRange": 10.0,
+                    "_RidingWithoutCallRange": 4.0,
+                    "_RidingRangeDefault": {
+                        "app.user_data.PorterParamCommon.cCommunicate.cRideRange": {
+                            "_RidingReadyRange": 2.0,
+                            "_RidingReadyOffsetZ": 0.0
+                        }
+                    },
+                    "_RidingRangeUkemiShort": {
+                        "app.user_data.PorterParamCommon.cCommunicate.cRideRange": {
+                            "_RidingReadyRange": 1.5,
+                            "_RidingReadyOffsetZ": 0.75
+                        }
+                    },
+                    "_RidingRangeUkemiLong": {
+                        "app.user_data.PorterParamCommon.cCommunicate.cRideRange": {
+                            "_RidingReadyRange": 1.0,
+                            "_RidingReadyOffsetZ": 1.25
+                        }
+                    },
+                    "_DismountJumpDirectionRotDeg": 80.0,
+                    "_DismoutJumpDirectionRotTime": 3.0,
+                    "_ThresholdSecToApproachOwnerAfterDied": 0.30000001192092896
+                }
+            },
+            "_TerrainCheck": {
+                "app.user_data.PorterParamCommon.cTerrainCheck": {
+                    "_FrontWallCheck": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cFrontWallCheck": {
+                            "_FrontWallCheckLength": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthDataList": {
+                                    "_JumpLengthDataList": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[0]STOP",
+                                                "_Length": 5.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_Length": 5.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_Length": 5.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_Length": 7.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_Length": 7.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_Length": 7.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_FrontCheckOffsetHeight": 0.5,
+                            "_FrontCheckOffsetHeight_Fly": 0.20000000298023224
+                        }
+                    },
+                    "_FrontUpperGroundCheck": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cFrontUpperGroundCheck": {
+                            "_FrontUpperGroundCheckHeight": 12.0,
+                            "_FrontDownwardCheckLength": 12.0,
+                            "_FrontDownwardCheckRotateDeg": 15.0
+                        }
+                    },
+                    "_ObstacleFrontCheck": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cObstacleFrontCheck": {
+                            "_ObstacleFrontCheckLength_Walk": 10.0,
+                            "_ObstacleFrontCheckLength_Run": 20.0,
+                            "_ObstacleAvoidDirectionWallOffsetLength": 10.0,
+                            "_ObstacleAvoidDirectionCheckLength": 8.0
+                        }
+                    },
+                    "_GroundDetect": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cGroundDetect": {
+                            "_GroundDetectOffsetLength": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthDataList": {
+                                    "_JumpLengthDataList": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_Length": 1.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_Length": 1.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_Length": 2.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_Length": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_Length": 2.5
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_GroundDetectOffsetY": 1.5,
+                            "_GroundDetectOffsetLengthWallDetect": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthDataList": {
+                                    "_JumpLengthDataList": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_Length": 0.800000011920929
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_Length": 0.800000011920929
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_Length": 0.800000011920929
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_Length": 0.800000011920929
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_Length": 0.800000011920929
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_GroundDetectOffsetYWallDetect": 0.800000011920929,
+                            "_GroundDegMax": 60.0
+                        }
+                    },
+                    "_LandDetect": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cLandDetect": {
+                            "_LandDetectDist": 0.5,
+                            "_LandDetectDist_Fly": 0.10000000149011612
+                        }
+                    },
+                    "_StepJumpUp": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cTerrainCheckStepJumpUp": {
+                            "_StepJumpUpClimbWallWtartHeightMax": 12.0,
+                            "_StepJumpUpHighHeightMax": 6.0,
+                            "_StepJumpUpHighHeightMin": 2.0,
+                            "_StepJumpUpHighWallDist": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthDataList": {
+                                    "_JumpLengthDataList": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_Length": 4.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_Length": 4.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_Length": 4.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_Length": 5.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_Length": 6.5
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_StepJumpUpLowHeightMin": 0.5,
+                            "_StepJumpUpLowWallDist": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthDataList": {
+                                    "_JumpLengthDataList": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_Length": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_Length": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_Length": 4.400000095367432
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_Length": 5.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_Length": 5.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_StepJumpUpJudgeDeg": 10.0
+                        }
+                    },
+                    "_StepJumpDown": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cTerrainCheckStepJumpDown": {
+                            "_FallCheckHeight": 1.5,
+                            "_StepJumpDownLowHeightMax": 2.0,
+                            "_StepJumpDownLowHeightMin": 0.6000000238418579,
+                            "_StepJumpDownLowLengthXZMax": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthDataList": {
+                                    "_JumpLengthDataList": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_Length": 0.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_Length": 0.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_Length": 1.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_Length": 1.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cTerrainCheck.SpeedLengthData": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_Length": 4.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_OffsetYFromPosPorter": -0.30000001192092896,
+                            "_FallDownHeightCenterPosRate": 50.0,
+                            "_FallDownHeightCenterRate": 50.0
+                        }
+                    },
+                    "_PointJump": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cTerrainCheckPointJump": {
+                            "_PointJumpUpHighHeightMax": 6.0,
+                            "_PointJumpUpHighlengthXZMin": 3.5,
+                            "_PointJumpUpHighlengthXZMax": 13.5,
+                            "_PointJumpDownLowHeightMin": -5.0,
+                            "_PointJumpDownLowlengthXZMax": 19.0,
+                            "_PointJumpDownHeigHeightMin": -10.0,
+                            "_PointJumpDownHighlengthXZMin": 6.5,
+                            "_PointJumpDownHighlengthXZMax": 23.0
+                        }
+                    },
+                    "_ClimbWall": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cClimbWall": {
+                            "_ClimbBeginWallCheckOfsY": 4.5,
+                            "_ClimbAttachMiniHeightMax": 12.100000381469727,
+                            "_ClimbWallStartCheckWidth": 1.399999976158142,
+                            "_ClimbWallEndHeightMax": 9.0,
+                            "_ClimbWallEndShortHeightMax": 4.0,
+                            "_ClimbWallThicknessMax": 3.0,
+                            "_ClimbWallEndHeight": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.cClimbWall.cClimbWallEndHeight": {
+                                    "_ClimbWallEndHeightMax": 9.0,
+                                    "_ClimbWallEndShortHeightMax": 4.0
+                                }
+                            },
+                            "_ClimbWallEndHeightWallArena": {
+                                "app.user_data.PorterParamCommon.cTerrainCheck.cClimbWall.cClimbWallEndHeight": {
+                                    "_ClimbWallEndHeightMax": 7.5,
+                                    "_ClimbWallEndShortHeightMax": 2.5
+                                }
+                            },
+                            "_OffsetYHeightWallArena": 1.5
+                        }
+                    },
+                    "_ClimbWallFromJump": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cClimbWallFromJump": {
+                            "_ClimbWallStartCheckFromJumpZLength": 2.5,
+                            "_ClimbWallStartCheckFromJumpRayYOffset": -0.8799999952316284,
+                            "_DisenableClimbWallStartFromJumpCheckHeight": 5.0,
+                            "_DisenableClimbWallStartFromJumpCheckHeightUp": 1.8799999952316284
+                        }
+                    },
+                    "_ClimbWallEndEdge": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cClimbWallEndEdge": {
+                            "_ClimbWallEndEdgeZLengthMax": 2.5,
+                            "_ClimbWallEndEdgeRayYOffset": -2.5,
+                            "_ClimbWallEndEdgeUpRayOfsZ": 3.0,
+                            "_ClimbWallEndEdgeUpperUpCheckDistMax": 1.0
+                        }
+                    },
+                    "_JumpThroughWall": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cJumpThroughWall": {
+                            "_WallThroughJumpDistMax": 2.0,
+                            "_WallThroughJumpDegMax": 30.0
+                        }
+                    },
+                    "_JumpUpperGroundHeight": 0.5,
+                    "_JumpUpperGroundHeight_WallMaterial": 3.0,
+                    "_JumpUpperWallDist": 5.5,
+                    "_JumpUpperLowStepGroundHeight": 2.0,
+                    "_JumpUpperLowStepWallDist": 4.5,
+                    "_ClimbBeginWallCheckOfsY": 4.5,
+                    "_ClimbFinishUpDist_JumpEnd": 4.0,
+                    "_ClimbBeginWallDist_FromJump": 1.5,
+                    "_ClimbBeginWallDist_Edge": 1.5,
+                    "_ClimbBeginGroundDist_Edge": 2.0,
+                    "_WallRunSideCheckRayLength": 3.0,
+                    "_WallRunSideCheckRayPosOffset": {
+                        "x": -1.0,
+                        "y": 0.5,
+                        "z": 3.0,
+                        "pad": 0.0
+                    },
+                    "_NearCallPlayer": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cNearCallPlayer": {
+                            "_NearCallPlayerXZMax": 7.0,
+                            "_NearCallPlayerYMax": 2.0
+                        }
+                    },
+                    "_WaterCheck": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cWaterCheck": {
+                            "_WaistWaterHeight": 0.6000000238418579,
+                            "_RayCheckStartHeight": 2.0,
+                            "_RayCheckEndHeight": -0.10000000149011612
+                        }
+                    },
+                    "_SandGroundCastAround": {
+                        "app.user_data.PorterParamCommon.cTerrainCheck.cSandGroundCastAround": {
+                            "_SandGroundCastAroundRadius": 0.5,
+                            "_SandGroundCastAroundNormalCount": 0
+                        }
+                    }
+                }
+            },
+            "_MoveControl": {
+                "app.user_data.PorterParamCommon.cMoveControl": {
+                    "_TurnSpeedEaseTime_Walk": 0.4000000059604645,
+                    "_TurnSpeedEaseTime_Run": 0.25,
+                    "_TurnSppedRateCallRideReady": 1.5,
+                    "_TurnSppedRateEnableDegCallRideReady": 60.0,
+                    "_MovingTurn90": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cMovingTurn90": {
+                            "_JudgeInputTime": 0.07500000298023224,
+                            "_JudgeInputMax": 0.8500000238418579,
+                            "_ConditionDegManual": {
+                                "x": 75.0,
+                                "y": 140.0
+                            },
+                            "_ConditionDegAuto": {
+                                "x": 90.0,
+                                "y": 140.0
+                            },
+                            "_NaviCheckDistance": 15.0
+                        }
+                    },
+                    "_MovingTurn180": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cMovingTurn180": {
+                            "_ConditionDegMin": 140.0,
+                            "_NaviCheckDistance": 15.0,
+                            "_MovingTurn180or90Time": 5.0
+                        }
+                    },
+                    "TurnInputLooseRidingTime": 2.0,
+                    "_TurnSpeedDataList": [
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData": {
+                                "_TurnType": "[2]WALK",
+                                "_FlexibleTurnSpeedWhenNoCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 20.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 40.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 120.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 20.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 40.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 120.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 20.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 40.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 120.0
+                                        }
+                                    }
+                                ],
+                                "_TurnSpeedRateByTerrainNavigation": 1.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData": {
+                                "_TurnType": "[3]RUN",
+                                "_FlexibleTurnSpeedWhenNoCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 20.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 50.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 110.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 140.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 20.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 50.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 110.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 140.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 20.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 50.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 110.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 140.0
+                                        }
+                                    }
+                                ],
+                                "_TurnSpeedRateByTerrainNavigation": 1.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData": {
+                                "_TurnType": "[4]DASH",
+                                "_FlexibleTurnSpeedWhenNoCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 100.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 150.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 220.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 270.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 350.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 120,
+                                            "_SpeedDeg": 420.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 100.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 150.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 220.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 270.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 350.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 120,
+                                            "_SpeedDeg": 420.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 30.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 100.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 150.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 220.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 120,
+                                            "_SpeedDeg": 270.0
+                                        }
+                                    }
+                                ],
+                                "_TurnSpeedRateByTerrainNavigation": 2.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData": {
+                                "_TurnType": "[5]TOP",
+                                "_FlexibleTurnSpeedWhenNoCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 120.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 160.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 250.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 290.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 330.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 120.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 160.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 250.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 290.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 330.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 30.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 15,
+                                            "_SpeedDeg": 80.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 30,
+                                            "_SpeedDeg": 120.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 60,
+                                            "_SpeedDeg": 160.0
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 90,
+                                            "_SpeedDeg": 250.0
+                                        }
+                                    }
+                                ],
+                                "_TurnSpeedRateByTerrainNavigation": 4.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData": {
+                                "_TurnType": "[6]GLIDE",
+                                "_FlexibleTurnSpeedWhenNoCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 30.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 30.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 30.0
+                                        }
+                                    }
+                                ],
+                                "_TurnSpeedRateByTerrainNavigation": 1.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData": {
+                                "_TurnType": "[7]WALL_RUN",
+                                "_FlexibleTurnSpeedWhenNoCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 300.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenCombatNoRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 300.0
+                                        }
+                                    }
+                                ],
+                                "_FlexibleTurnSpeedWhenRiding": [
+                                    {
+                                        "app.user_data.PorterParamCommon.cMoveControl.FlexibleTurnSpeedData.cData": {
+                                            "_ThlesholdDeg": 0,
+                                            "_SpeedDeg": 300.0
+                                        }
+                                    }
+                                ],
+                                "_TurnSpeedRateByTerrainNavigation": 1.0
+                            }
+                        }
+                    ],
+                    "_TurnAddMotionThresholdDeg": 20.0,
+                    "_TurnAddMotionMinRate": 0.0,
+                    "_TurnAddMotionMaxRateDeg": 120.0,
+                    "_KeepFollowBrakeRange": 30.0,
+                    "_SpeedLvChangeDisableAdaptiveTime": 20.0,
+                    "_InputToAutoDelayTime": 15.0,
+                    "_InputToAutoDelayTimeRateWhenNotMovingSpeed": 60.0,
+                    "_ManualTransitionValToMaxSec": 3.0,
+                    "_ManualTransitionValToMaxSec_AutoDirAgainst": 1.0,
+                    "_AutoDirAgainstDiffDeg": 120.0,
+                    "_ManualTransitionValToZeroSec": 1.0,
+                    "_SlowDownBowGunShootTime": 0.5,
+                    "_SlowDownBowShootTime": 0.5,
+                    "_MoveSpeedStopByMenuTime": -1.0,
+                    "_LimitGroundDegForMoveBankMaxAttenuation": 40.0,
+                    "_Drift": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cDrift": {
+                            "_StartDriftDeg": 45.0,
+                            "_DriftShortTurnDegMax": {
+                                "app.user_data.PorterParamCommon.cMoveControl.cDrift.cTurnDegMax": {
+                                    "_TurnDegMaxInside": 15.0,
+                                    "_TurnDegMaxOutside": 0.0
+                                }
+                            },
+                            "_DriftLongTurnDegMax": {
+                                "app.user_data.PorterParamCommon.cMoveControl.cDrift.cTurnDegMax": {
+                                    "_TurnDegMaxInside": 15.0,
+                                    "_TurnDegMaxOutside": 1.5
+                                }
+                            }
+                        }
+                    },
+                    "_StepJumpLimitDeg": 30.0,
+                    "_KeepSideNear": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cKeepSideNear": {
+                            "_KeepSideBaseLength": 8.0,
+                            "_KeepSideNearCheckRange": 9.0,
+                            "_KeepSideNearCheckNaviPotralNum": 10,
+                            "_KeepSideSpeedRateChangeSpeed": 1.0,
+                            "_KeepSideBrakeDiffDeg": 60.0
+                        }
+                    },
+                    "_KeepSideFar": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cKeepSideFar": {
+                            "_KeepSideCheckFarRange_XZ": 30.0,
+                            "_KeepSideCheckFarHeight": 10.0,
+                            "_KeepSideBrakeDiffDeg_NaviDest": 80.0
+                        }
+                    },
+                    "_KeepSide": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cKeepSide": {
+                            "_OffsetLenghtNoCombat": 10.0,
+                            "_OffsetLenghtCombat": 10.0,
+                            "_NearRange": 20.0,
+                            "_ArrivalRange": 6.0,
+                            "_MoveSpeed": {
+                                "app.cPorterMoveInfo.cMoveSpeed": {
+                                    "_SpeedLv": "[3]RUN",
+                                    "_InternalRate": 0.0
+                                }
+                            }
+                        }
+                    },
+                    "_CalcMainTargetPosListData": {
+                        "app.user_data.PorterParamCommon.cMoveControl.cCalcMainTargetPosListData": {
+                            "_FarRange": 25.0,
+                            "_NearRange": 8.0,
+                            "_OffsetLenghtNoCombat": 10.0,
+                            "_OffsetLenghtCombat": 15.0,
+                            "_SideOffsetLenghtRate": 0.6000000238418579,
+                            "_OffsetPlay": 2.0,
+                            "_ArrivalRange": 5.0,
+                            "_MoveSpeed": {
+                                "app.cPorterMoveInfo.cMoveSpeed": {
+                                    "_SpeedLv": "[3]RUN",
+                                    "_InternalRate": 0.0
+                                }
+                            },
+                            "_NoEntryDegBack": 120.0,
+                            "_BackSideOffset": 4.0,
+                            "_OffsetNarrowWallCheck": 5.0,
+                            "_NarrowEscapeBackScoreRate": 0.30000001192092896,
+                            "_OffsetLengthNarrow": 6.0,
+                            "_NarrowFrontWallCheckRate": 0.20000000298023224,
+                            "_RangeForSearchingOtherNearBoss": 30.0
+                        }
+                    },
+                    "_MoveMotionAdjustData": [
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.cMotionAdjust": {
+                                "_SpeedLv": "[0]STOP",
+                                "_SpeedRate_Min": 1.0,
+                                "_SpeedRate_Max": 1.0,
+                                "_TransRate_Min": 1.0,
+                                "_TransRate_Max": 1.0,
+                                "_BaseSpeedValue": 0.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.cMotionAdjust": {
+                                "_SpeedLv": "[1]WALK_SLOW",
+                                "_SpeedRate_Min": 0.6000000238418579,
+                                "_SpeedRate_Max": 1.100000023841858,
+                                "_TransRate_Min": 1.0,
+                                "_TransRate_Max": 1.0,
+                                "_BaseSpeedValue": 0.7638888955116272
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.cMotionAdjust": {
+                                "_SpeedLv": "[2]WALK",
+                                "_SpeedRate_Min": 1.0,
+                                "_SpeedRate_Max": 1.0,
+                                "_TransRate_Min": 1.0,
+                                "_TransRate_Max": 1.0,
+                                "_BaseSpeedValue": 1.944445013999939
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.cMotionAdjust": {
+                                "_SpeedLv": "[3]RUN",
+                                "_SpeedRate_Min": 0.8500000238418579,
+                                "_SpeedRate_Max": 1.100000023841858,
+                                "_TransRate_Min": 0.800000011920929,
+                                "_TransRate_Max": 1.100000023841858,
+                                "_BaseSpeedValue": 7.222221851348877
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.cMotionAdjust": {
+                                "_SpeedLv": "[4]DASH",
+                                "_SpeedRate_Min": 0.800000011920929,
+                                "_SpeedRate_Max": 1.100000023841858,
+                                "_TransRate_Min": 1.0,
+                                "_TransRate_Max": 1.100000023841858,
+                                "_BaseSpeedValue": 10.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cMoveControl.cMotionAdjust": {
+                                "_SpeedLv": "[5]TOP",
+                                "_SpeedRate_Min": 1.0,
+                                "_SpeedRate_Max": 1.0,
+                                "_TransRate_Min": 1.0,
+                                "_TransRate_Max": 1.0,
+                                "_BaseSpeedValue": 13.888890266418457
+                            }
+                        }
+                    ],
+                    "_MoveMotionSpeedRateAdjustTime": 0.20000000298023224,
+                    "_AvoidBaseFrontOffset_Run": 4.0,
+                    "_AvoidBaseFrontOffset_Dash": 6.0,
+                    "_AvoidMoveVectorDivNum": 5,
+                    "_AvoidEmModelSideAdjustRate": 1.100000023841858,
+                    "_AvoidTargetCharacterRange": 15.0,
+                    "_NotMovingSpeedDataList": {
+                        "app.user_data.PorterParamCommon.cMoveControl.SpeedSpeedDataList": {
+                            "_SpeedDataList": [
+                                {
+                                    "app.user_data.PorterParamCommon.cMoveControl.SpeedSpeedData": {
+                                        "_SpeedLv": "[1]WALK_SLOW",
+                                        "_Speed": 0.20000000298023224
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cMoveControl.SpeedSpeedData": {
+                                        "_SpeedLv": "[2]WALK",
+                                        "_Speed": 1.2999999523162842
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cMoveControl.SpeedSpeedData": {
+                                        "_SpeedLv": "[3]RUN",
+                                        "_Speed": 2.5
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cMoveControl.SpeedSpeedData": {
+                                        "_SpeedLv": "[4]DASH",
+                                        "_Speed": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cMoveControl.SpeedSpeedData": {
+                                        "_SpeedLv": "[5]TOP",
+                                        "_Speed": 4.0
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            "_NavigationControl": {
+                "app.user_data.PorterParamCommon.cNavigationControl": {
+                    "_AgentDetectRadDataList": {
+                        "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthDataList": {
+                            "_JumpLengthDataList": [
+                                {
+                                    "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthData": {
+                                        "_SpeedLv": "[1]WALK_SLOW",
+                                        "_Length": 1.5
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthData": {
+                                        "_SpeedLv": "[2]WALK",
+                                        "_Length": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthData": {
+                                        "_SpeedLv": "[3]RUN",
+                                        "_Length": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthData": {
+                                        "_SpeedLv": "[4]DASH",
+                                        "_Length": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthData": {
+                                        "_SpeedLv": "[5]TOP",
+                                        "_Length": 4.0
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "_RetraceSec_Default": 2.0,
+                    "_JumpPointNotifyDirectionDeg": 360.0,
+                    "_JumpPointValidManualDirectionDeg": 60.0,
+                    "_BlanchCheckPotralNum": 20,
+                    "_NearRange_AnimalTrail": 5.0,
+                    "_BlanchAccessRange_AnimalTrail": 40.0,
+                    "_BlanchAccessHeight_AnimalTrail": 10.0,
+                    "_EmEndDestinationIgnoreRange": 40.0,
+                    "_SwitchingStopRange": 60.0,
+                    "_PorterRouteSelect": {
+                        "app.user_data.PorterParamCommon.cNavigationControl.PorterRouteSelect": {
+                            "_DengerLv": 3,
+                            "_MonsterNumMaxDefault": 10
+                        }
+                    }
+                }
+            },
+            "_ColliderControl": {
+                "app.user_data.PorterParamCommon.cColliderControl": {
+                    "_CharaCtrlData_Base": {
+                        "app.user_data.PorterParamCommon.cColliderControl.cColliderData": {
+                            "_Radius": 1.0,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    },
+                    "_CharaCtrlData_AnimalTrail": {
+                        "app.user_data.PorterParamCommon.cColliderControl.cColliderData": {
+                            "_Radius": 1.0,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    },
+                    "_CharaCtrlData_OverGentleAngle": {
+                        "app.user_data.PorterParamCommon.cColliderControl.cColliderData": {
+                            "_Radius": 1.0,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    },
+                    "_CharaCtrlData_ClimbWall": {
+                        "app.user_data.PorterParamCommon.cColliderControl.cColliderData": {
+                            "_Radius": 0.699999988079071,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    },
+                    "_CharaCtrlGentleAngleMin": 60.0,
+                    "_CharaCtrlGentleAngleMax": 90.0
+                }
+            },
+            "_SensorHit": {
+                "app.user_data.PorterParamCommon.cSensorHit": {
+                    "_ClibmableDie": {
+                        "app.user_data.PorterParamCommon.cSensorHit.cClibmableDie": {
+                            "_ClimbSensorHitParam": {
+                                "app.user_data.ClimbSensorHitParam": {
+                                    "userdataPath": "GameDesign/Porter/Data/PorterClimbSensorHitParam.user"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_IkLegSpineData": {
+                "app.user_data.PorterParamCommon.cIkLegSpineData": {
+                    "_AngleSlope": 30.0
+                }
+            },
+            "_IkCtrlData": {
+                "app.user_data.PorterParamCommon.cIkCtrlData": {
+                    "_CogOffsetSpeed": 1.0
+                }
+            },
+            "_ManualAutoJump": {
+                "app.user_data.PorterParamCommon.cManualAutoJump": {
+                    "_SearchNavigationLinkData": {
+                        "app.user_data.PorterParamCommon.cManualAutoJump.cSearchNavigationLinkData": {
+                            "_RangeMax": 3.0,
+                            "_HeightMax": 1.5,
+                            "_DirectionDegMax": 45.0
+                        }
+                    },
+                    "_SearchLinkedJumpPointData": {
+                        "app.user_data.PorterParamCommon.cManualAutoJump.cSearchLinkedJumpPointData": {
+                            "_RangeMax": 3.0,
+                            "_DirectionDegMax": 60.0
+                        }
+                    },
+                    "_SearchWallRunPointData": {
+                        "app.user_data.PorterParamCommon.cManualAutoJump.cSearchWallRunPointData": {
+                            "_RangeMax": 3.0,
+                            "_DirectionDegMax": 60.0
+                        }
+                    }
+                }
+            },
+            "_OfferControl": {
+                "app.user_data.PorterParamCommon.cOfferControl": {
+                    "_TargetPickRange": 200.0,
+                    "_TargetPickDeg": 20.0,
+                    "_TargetPickDeg_Lock": 60.0,
+                    "_TargetPickNeedSec": 0.5
+                }
+            },
+            "_ExteriorScan": {
+                "app.user_data.PorterParamCommon.cExteriorScan": {
+                    "_AroundEnemiesRange": 50.0,
+                    "_CautionDangerValueThreshold": 40.0,
+                    "_CautionUnderDist": 10.0,
+                    "_CautionUnderDiffDeg": 30.0
+                }
+            },
+            "_Gesture": {
+                "app.user_data.PorterParamCommon.cGesture": {
+                    "_IdleGestureChangeTimeDataList": [
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.IdleGestureChangeTimeData": {
+                                "_IdleGestureChangeTimeWhenNoCombat": 0.5,
+                                "_IdleGestureChangeTimeWhenNoCombatHot": 0.5,
+                                "_IdleGestureChangeTimeWhenNoCombatCold": 0.5,
+                                "_IdleGestureChangeTimeWhenCombat": 0.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.IdleGestureChangeTimeData": {
+                                "_IdleGestureChangeTimeWhenNoCombat": 10.0,
+                                "_IdleGestureChangeTimeWhenNoCombatHot": 3.0,
+                                "_IdleGestureChangeTimeWhenNoCombatCold": 5.0,
+                                "_IdleGestureChangeTimeWhenCombat": 0.5
+                            }
+                        }
+                    ],
+                    "_GestureActionDataList": [
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "0a7a7b17-5b24-44bd-a40d-8fd856a8d08d",
+                                "_GestureActionRateWhenNoCombat": 5,
+                                "_GestureActionRateWhenNoCombatHot": 0,
+                                "_GestureActionRateWhenNoCombatCold": 0,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "47e91452-7a50-44a6-a547-57b90f77c3b2",
+                                "_GestureActionRateWhenNoCombat": 5,
+                                "_GestureActionRateWhenNoCombatHot": 1,
+                                "_GestureActionRateWhenNoCombatCold": 1,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "6a0fe72a-b8a3-4759-bcc3-21587f683940",
+                                "_GestureActionRateWhenNoCombat": 0,
+                                "_GestureActionRateWhenNoCombatHot": 0,
+                                "_GestureActionRateWhenNoCombatCold": 0,
+                                "_GestureActionRateWhenCombat": 10
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "17faa05f-63dc-4e02-b169-bc1074d29308",
+                                "_GestureActionRateWhenNoCombat": 2,
+                                "_GestureActionRateWhenNoCombatHot": 0,
+                                "_GestureActionRateWhenNoCombatCold": 1,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "be08339d-4d20-49c3-89af-46dcdc142e59",
+                                "_GestureActionRateWhenNoCombat": 3,
+                                "_GestureActionRateWhenNoCombatHot": 0,
+                                "_GestureActionRateWhenNoCombatCold": 0,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "bed3af2e-edd5-4cf8-9dd8-aebc68b1f2c9",
+                                "_GestureActionRateWhenNoCombat": 0,
+                                "_GestureActionRateWhenNoCombatHot": 10,
+                                "_GestureActionRateWhenNoCombatCold": 0,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "34b9bcb9-06cc-4b3b-8df3-e70e32329343",
+                                "_GestureActionRateWhenNoCombat": 0,
+                                "_GestureActionRateWhenNoCombatHot": 0,
+                                "_GestureActionRateWhenNoCombatCold": 10,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "c7fdc94f-1b5a-44dd-ba11-ebd1665d03a8",
+                                "_GestureActionRateWhenNoCombat": 2,
+                                "_GestureActionRateWhenNoCombatHot": 1,
+                                "_GestureActionRateWhenNoCombatCold": 1,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        }
+                    ],
+                    "_GestureForbidConditionDataList": [
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "0a7a7b17-5b24-44bd-a40d-8fd856a8d08d",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": false,
+                                "_PermitGestureActionWhenOilMud": false,
+                                "_PermitGestureActionWhenLargeSlope": false,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": false,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "47e91452-7a50-44a6-a547-57b90f77c3b2",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "6a0fe72a-b8a3-4759-bcc3-21587f683940",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": false,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "17faa05f-63dc-4e02-b169-bc1074d29308",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "be08339d-4d20-49c3-89af-46dcdc142e59",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": false,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": false,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "bed3af2e-edd5-4cf8-9dd8-aebc68b1f2c9",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "34b9bcb9-06cc-4b3b-8df3-e70e32329343",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "c7fdc94f-1b5a-44dd-ba11-ebd1665d03a8",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": false,
+                                "_PermitGestureActionWhenLifeArea": false,
+                                "_PermitGestureActionWhenClimbingDieBody": false,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        }
+                    ],
+                    "_HeightAsWater": 0.20000000298023224,
+                    "_AngleAsSlope": 20.0,
+                    "_TailGesturePlayIntervalTimeMin": 0.0,
+                    "_TailGesturePlayIntervalTimeMax": 3.0,
+                    "_UnkoIntervalMinSec": 1440.0,
+                    "_UnkoIntervalMaxSec": 2880.0
+                }
+            },
+            "_WaitPointGesture": {
+                "app.user_data.PorterParamCommon.cWaitPointGesture": {
+                    "_IntervalTime1stMin": 300.0,
+                    "_IntervalTime1stMax": 600.0,
+                    "_IntervalTime2ndOverMin": 60.0,
+                    "_IntervalTime2ndOverMax": 180.0,
+                    "_EatFoodLoopMotionCount": {
+                        "app.user_data.PorterParamCommon.CountRandom": {
+                            "_CountMin": 1,
+                            "_CountMax": 2
+                        }
+                    },
+                    "_EatFoodLoopMotionCountForNPC": {
+                        "app.user_data.PorterParamCommon.CountRandom": {
+                            "_CountMin": 1,
+                            "_CountMax": 2
+                        }
+                    },
+                    "_DrinkWaterLoopMotionCount": {
+                        "app.user_data.PorterParamCommon.CountRandom": {
+                            "_CountMin": 1,
+                            "_CountMax": 2
+                        }
+                    },
+                    "_DrinkWaterLoopMotionCountForNPC": {
+                        "app.user_data.PorterParamCommon.CountRandom": {
+                            "_CountMin": 1,
+                            "_CountMax": 2
+                        }
+                    }
+                }
+            },
+            "_Glide": {
+                "app.user_data.PorterParamCommon.cGlide": {
+                    "_GlideFlappingGroundHeight": 5.400000095367432,
+                    "_GlideFlappingEndTimerLimit": 1.0
+                }
+            },
+            "_BTable": {
+                "app.user_data.PorterParamCommon.cBTable": {
+                    "_QuickTurn": {
+                        "app.user_data.PorterParamCommon.cBTable.cQuickTurn": {
+                            "_QuickTurnTime": 1.0,
+                            "_QuickTurnDeg": 20.0
+                        }
+                    },
+                    "_ChangeMoveSpeedStopWhenFollowOwnerData": {
+                        "app.user_data.PorterParamCommon.cBTable.cChangeMoveSpeedStopWhenFollowOwnerData": {
+                            "_Default": {
+                                "app.user_data.PorterParamCommon.cBTable.cChangeMoveSpeedStopWhenFollowOwnerData.cLengthData": {
+                                    "_MaxLengthXZ": 15.0,
+                                    "_MaxLengthY": 5.0
+                                }
+                            },
+                            "_RideOwnerTarzan": {
+                                "app.user_data.PorterParamCommon.cBTable.cChangeMoveSpeedStopWhenFollowOwnerData.cLengthData": {
+                                    "_MaxLengthXZ": 15.0,
+                                    "_MaxLengthY": 15.0
+                                }
+                            },
+                            "_RideOwnerClimbingEmDieBody": {
+                                "app.user_data.PorterParamCommon.cBTable.cChangeMoveSpeedStopWhenFollowOwnerData.cLengthData": {
+                                    "_MaxLengthXZ": 15.0,
+                                    "_MaxLengthY": 15.0
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_SpeedTree": {
+                "app.user_data.PorterParamCommon.cSpeedTree": {
+                    "_SpeedTreeRoot": {
+                        "app.user_data.PorterParamCommon.cSpeedTree.cSpeedTreeData": {
+                            "_SpeedTreeSphereOffset": {
+                                "x": 0.0,
+                                "y": 0.30000001192092896,
+                                "z": 0.0,
+                                "pad": 0.0
+                            },
+                            "_SpeedTreeSphereRadius": 0.5,
+                            "_SpeedTreeSpherePower": 0.75
+                        }
+                    },
+                    "_SpeedTreeHead": {
+                        "app.user_data.PorterParamCommon.cSpeedTree.cSpeedTreeData": {
+                            "_SpeedTreeSphereOffset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.25,
+                                "pad": 0.0
+                            },
+                            "_SpeedTreeSphereRadius": 0.30000001192092896,
+                            "_SpeedTreeSpherePower": 0.44999998807907104
+                        }
+                    },
+                    "_SpeedTreeChest": {
+                        "app.user_data.PorterParamCommon.cSpeedTree.cSpeedTreeData": {
+                            "_SpeedTreeSphereOffset": {
+                                "x": 0.0,
+                                "y": -0.20000000298023224,
+                                "z": 0.25,
+                                "pad": 0.0
+                            },
+                            "_SpeedTreeSphereRadius": 0.550000011920929,
+                            "_SpeedTreeSpherePower": 1.0
+                        }
+                    },
+                    "_SpeedTreeRoot_Wall": {
+                        "app.user_data.PorterParamCommon.cSpeedTree.cSpeedTreeData": {
+                            "_SpeedTreeSphereOffset": {
+                                "x": 0.0,
+                                "y": 1.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            },
+                            "_SpeedTreeSphereRadius": 0.5,
+                            "_SpeedTreeSpherePower": 1.0
+                        }
+                    },
+                    "_SpeedTreeHead_Wall": {
+                        "app.user_data.PorterParamCommon.cSpeedTree.cSpeedTreeData": {
+                            "_SpeedTreeSphereOffset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.25,
+                                "pad": 0.0
+                            },
+                            "_SpeedTreeSphereRadius": 0.30000001192092896,
+                            "_SpeedTreeSpherePower": 0.44999998807907104
+                        }
+                    },
+                    "_SpeedTreeChest_Wall": {
+                        "app.user_data.PorterParamCommon.cSpeedTree.cSpeedTreeData": {
+                            "_SpeedTreeSphereOffset": {
+                                "x": 0.0,
+                                "y": -0.20000000298023224,
+                                "z": 0.25,
+                                "pad": 0.0
+                            },
+                            "_SpeedTreeSphereRadius": 0.550000011920929,
+                            "_SpeedTreeSpherePower": 1.0
+                        }
+                    }
+                }
+            },
+            "_CombatPositioning": {
+                "app.user_data.PorterParamCommon.cCombatPositioning": {
+                    "_CombatPositioningCommon": {
+                        "app.user_data.PorterParamCommon.cCombatPositioningCommon": {
+                            "_CombatPositioningLenght": 10.0,
+                            "_CombatPositioningWallCheckLenght": 20.0,
+                            "_CombatPositioningRayCheckTop": 5.0,
+                            "_CombatPositioningRayCheckbottom": 5.0
+                        }
+                    },
+                    "_CombatPositioningDefault": {
+                        "app.user_data.PorterParamCommon.cCombatPositioningDefault": {
+                            "_CombatPositioningCameraPosCheckDeg": 20.0,
+                            "_CombatPositioningCameraPosCheckLength": 20.0
+                        }
+                    },
+                    "_AreaPointWaitPointForCombat": {
+                        "app.user_data.PorterParamCommon.cCombatPositioningAreaPointWaitPointForCombat": {
+                            "_AreaPointWaitPointForCombatRadiusMax": 10.0,
+                            "_AreaPointWaitPointForCombatForPlayerRadiusMax": 30.0,
+                            "_AreaPointWaitPointForCombatSearchRadius": 30.0,
+                            "_AreaPointWaitPointForCombatLeaveLength": 20.0,
+                            "_AreaPointWaitPointForCombatPosOffsetY": 5.0
+                        }
+                    }
+                }
+            },
+            "_NoCombatPositioning": {
+                "app.user_data.PorterParamCommon.cNoCombatPositioning": {
+                    "_AroundPorterRadius": 15.0,
+                    "_AroundRideOwnerRadius": 30.0,
+                    "_OffsetForSingleEnemyAround": 10.0,
+                    "_OffsetForMultipleEnemyAround": 10.0,
+                    "_DistanceLimitForMove": 2.0
+                }
+            },
+            "_HidePositioning": {
+                "app.user_data.PorterParamCommon.cHidePositioning": {
+                    "_PositioningLength": 12.0,
+                    "_AlterPosRotDeg": 45.0,
+                    "_EnemyRange": 30.0
+                }
+            },
+            "_DodgeStamina": {
+                "app.user_data.PorterParamCommon.cDodgeStamina": {
+                    "_StaminaMax": 100.0,
+                    "_RecoveryDisenableTimerLimit": 10.0,
+                    "_StaminaDodgeS": 45.0,
+                    "_StaminaDodgeM": 70.0,
+                    "_RecoveryDisableTimerCountRateForCombat": 1.0,
+                    "_RecoveryDisableTimerCountRateForNoCombat": 10.0,
+                    "_StaminaRecoveryTimerCountRateForCombat": 0.5,
+                    "_StaminaRecoveryTimerCountRateForNoCombat": 1.5
+                }
+            },
+            "_WaitPointBase": {
+                "app.user_data.PorterParamCommon.cWaitPointBase": {
+                    "_GoToWaitPointBaseTimeAfterRiding": 10.0,
+                    "_SearchRadius": 250.0
+                }
+            },
+            "_WaitPointGimmick": {
+                "app.user_data.PorterParamCommon.cWaitPointGimmick": {
+                    "_DrinkWater": {
+                        "app.user_data.PorterParamCommon.cWaitPointGimmick.WaitPointGimmickData": {
+                            "_OffsetZ": 1.5,
+                            "_HightMax": 0.6000000238418579,
+                            "_HightMin": 0.0,
+                            "_ReactLengthMaxWaitPoint": 50.0
+                        }
+                    },
+                    "_EatFood": {
+                        "app.user_data.PorterParamCommon.cWaitPointGimmick.WaitPointGimmickData": {
+                            "_OffsetZ": 1.5,
+                            "_HightMax": 1.0,
+                            "_HightMin": 0.0,
+                            "_ReactLengthMaxWaitPoint": 50.0
+                        }
+                    }
+                }
+            },
+            "_AutoAreaPatrol": {
+                "app.user_data.PorterParamCommon.cAutoAreaPatrol": {
+                    "_StartTime": {
+                        "app.user_data.PorterParamCommon.cAutoAreaPatrol.cStartTime": {
+                            "_AiStateManualTime": 10.0,
+                            "_AiStateManualTimerRateWhenNotMovingSpeed": 20.0,
+                            "_NotCommandMovingTime": 3.0,
+                            "_NotCommandMovingTimerRateWhenNotMovingSpeed": 6.0,
+                            "_ChangedMoveSpeedTime": 3.0,
+                            "_ChangedMoveSpeedTimerRateWhenNotMovingSpeed": 1.0
+                        }
+                    },
+                    "_SpeedLv": "[3]RUN",
+                    "_AutoAreaPatrolPointSpeedDownLength": 15.0,
+                    "_AutoAreaPatrolPointSpeedUpLength": 5.0,
+                    "_SearchBossEmIntervalSec": 1.5,
+                    "_SearchPatrolPointThresholdDistance": 5.0,
+                    "_WaitStartDurationSec": 5.0,
+                    "_StopOverwriteSpeedSecAfterSpeedChanged": 3.0,
+                    "_AngleRangeForSearchingPatrolPoint": 100.0,
+                    "_AutoAreaPatrolMovingTime": 1200.0,
+                    "_FindEnemy": {
+                        "app.user_data.PorterParamCommon.cAutoAreaPatrol.cFindEnemy": {
+                            "_Radius": 20.0,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 10.0,
+                                "pad": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_LookAt": {
+                "app.user_data.PorterParamCommon.cLookAt": {
+                    "_IdleGestureChangeTimeDataList": [
+                        {
+                            "app.user_data.PorterParamCommon.cLookAt.LookAtSettingData": {
+                                "_IgnoreLength": 2.0,
+                                "_StartLength": 4.0,
+                                "_StopLength": 8.0,
+                                "_EnableMaxTime": 10.0,
+                                "_DisenableMaxTime": 3.0,
+                                "_UpdateIntervalTime": 0.4000000059604645
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cLookAt.LookAtSettingData": {
+                                "_IgnoreLength": 2.0,
+                                "_StartLength": 5.0,
+                                "_StopLength": 10.0,
+                                "_EnableMaxTime": 7.0,
+                                "_DisenableMaxTime": 5.0,
+                                "_UpdateIntervalTime": 0.4000000059604645
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cLookAt.LookAtSettingData": {
+                                "_IgnoreLength": 2.0,
+                                "_StartLength": 40.0,
+                                "_StopLength": 40.0,
+                                "_EnableMaxTime": 10.0,
+                                "_DisenableMaxTime": 5.0,
+                                "_UpdateIntervalTime": 0.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cLookAt.LookAtSettingData": {
+                                "_IgnoreLength": 2.0,
+                                "_StartLength": 40.0,
+                                "_StopLength": 40.0,
+                                "_EnableMaxTime": 10.0,
+                                "_DisenableMaxTime": 5.0,
+                                "_UpdateIntervalTime": 0.0
+                            }
+                        }
+                    ]
+                }
+            },
+            "LookedPos": {
+                "app.user_data.PorterParamCommon.cLookedPos": {
+                    "Joint": {
+                        "ace.cJointHash": {
+                            "_Hash": 935285574
+                        }
+                    }
+                }
+            },
+            "_EmoteControl": {
+                "app.user_data.PorterParamCommon.cEmoteControl": {
+                    "_FurBristleSec": 3.0,
+                    "_FurInterpolationEase_Start": {
+                        "app.cEaseProgressParam": {
+                            "_Time": 2.0,
+                            "_EaseType": "[5]OutQuad"
+                        }
+                    },
+                    "_FurInterpolationEase_Return": {
+                        "app.cEaseProgressParam": {
+                            "_Time": 10.0,
+                            "_EaseType": "[3]InOutSine"
+                        }
+                    },
+                    "_BristleCoolTimeRange": {
+                        "s": 0.0,
+                        "r": 0.0
+                    },
+                    "_LookBackAngleDeg": 45.0,
+                    "_LookBackRange": 60.0,
+                    "_LookBackCoolTime": 5.0,
+                    "_SpeedUpResponceCoolTimeAdd": 3.0
+                }
+            },
+            "Gimmick": {
+                "app.user_data.PorterParamCommon.cGimmick": {
+                    "_GimmickSandpitDrag": {
+                        "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag": {
+                            "_NormalSandPitDragSpeed": {
+                                "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeed": {
+                                    "_SandpitDragSpeedInfoData": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[0]STOP",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_SandpitDragSpeedLookCenter": 1.0,
+                                                "_SandpitDragSpeedLookOutSide": 1.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_SandpitDragSpeedLookCenter": 0.0,
+                                                "_SandpitDragSpeedLookOutSide": 0.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_SandpitDragSpeedLookCenter": 0.0,
+                                                "_SandpitDragSpeedLookOutSide": 0.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_LargeSandPitDragSpeed": {
+                                "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeed": {
+                                    "_SandpitDragSpeedInfoData": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[0]STOP",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_SandpitDragSpeedLookCenter": 1.0,
+                                                "_SandpitDragSpeedLookOutSide": 1.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_SandpitDragSpeedLookCenter": 0.0,
+                                                "_SandpitDragSpeedLookOutSide": 0.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_SandpitDragSpeedLookCenter": 0.0,
+                                                "_SandpitDragSpeedLookOutSide": 0.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            "_SmallSandPitDragSpeed": {
+                                "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeed": {
+                                    "_SandpitDragSpeedInfoData": [
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[0]STOP",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[1]WALK_SLOW",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[2]WALK",
+                                                "_SandpitDragSpeedLookCenter": 2.5,
+                                                "_SandpitDragSpeedLookOutSide": 2.5
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[3]RUN",
+                                                "_SandpitDragSpeedLookCenter": 1.0,
+                                                "_SandpitDragSpeedLookOutSide": 1.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[4]DASH",
+                                                "_SandpitDragSpeedLookCenter": 0.0,
+                                                "_SandpitDragSpeedLookOutSide": 0.0
+                                            }
+                                        },
+                                        {
+                                            "app.user_data.PorterParamCommon.cGimmick.cGimmickSandpitDrag.cSandpitDragSpeedInfo": {
+                                                "_SpeedLv": "[5]TOP",
+                                                "_SandpitDragSpeedLookCenter": 0.0,
+                                                "_SandpitDragSpeedLookOutSide": 0.0
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    "_GimmickDam": {
+                        "app.user_data.PorterParamCommon.cGimmick.cGimmickDam": {
+                            "_FlowSpeed": 7.0,
+                            "_DamHeight": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "pad1": 0.0,
+                                "pad2": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_Event": {
+                "app.user_data.PorterParamCommon.cEvent": {
+                    "_DisableGestureSubActionDataList": [
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "4f64da67-9ce8-4a53-a350-c34222b54d95"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "c40f37d1-93e0-40a1-b146-3948e88c45da"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "ba8e1c10-58be-47d7-95e3-7dfdb51e9ec3"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "bdf5ba31-7fca-4d20-b5ac-9f3f0b0e7caf"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "84eb09ba-7924-47b3-9d3f-032731c16090"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "9fca2c1f-aaef-4f52-a272-6cf6e1e38925"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cEvent.DisableGestureSubActionData": {
+                                "_DisableGestureSubAction": "09de67c0-adfc-442b-8af0-23d1367baaf5"
+                            }
+                        }
+                    ]
+                }
+            },
+            "_ActionAgentPrefab": {
+                "via.Prefab": {
+                    "v0": 1,
+                    "v1": "GameDesign/Porter/_Prefab/PorterActionAgent.pfb"
+                }
+            },
+            "_SandSinkParam": {
+                "app.cSandSinkParam": {
+                    "_MoveSpeedThreshold": 0.800000011920929,
+                    "_SinkDepthMin": 0.05000000074505806,
+                    "_SinkDepthMax": 0.20000000298023224,
+                    "_SlopeMaxDeg": 50.0,
+                    "_SinkSpeed": 0.10000000149011612,
+                    "_RiseSpeed": 0.10000000149011612,
+                    "_InDurationTime": 0.20000000298023224,
+                    "_OffDurationTime": 0.5,
+                    "_DepthInterpolateSpeed": 0.5
+                }
+            },
+            "_JointEffectPack": {
+                "app.user_data.PorterJointEffectPack": {
+                    "userdataPath": "Motion/Porter/Decorate/JointEffect/PorterJointEffectPack.user"
+                }
+            },
+            "_HeatCheckParam": {
+                "app.user_data.HeatCheckParam": {
+                    "userdataPath": "GameDesign/Porter/Data/PorterHeatCheckParam.user"
+                }
+            },
+            "_PartsReduction": {
+                "app.user_data.PartsReductionMotionFilterData": {
+                    "userdataPath": "Motion/Porter/Decorate/MotionFilter/PtPartsReductionMotionFilterData.user"
+                }
+            },
+            "_MotionPartsStabilizer": {
+                "app.user_data.MotionPartsStabilizerParam": {
+                    "userdataPath": "Motion/Porter/Decorate/MotionFilter/PtMotionPartsStabilizerParam.user"
+                }
+            },
+            "_PointQuery": {
+                "app.user_data.PorterParamCommon.cPointQuery": {
+                    "ScoringData_Warp": {
+                        "app.user_data.NpcPQSScoringData": {
+                            "userdataPath": "GameDesign/Porter/PointQuery/PQSScoringData_Warp.user"
+                        }
+                    },
+                    "ScoringData_StayCamp": {
+                        "app.user_data.NpcPQSScoringData": {
+                            "userdataPath": "GameDesign/Porter/PointQuery/PQSScoringData_StayCamp.user"
+                        }
+                    },
+                    "ScoringData_StayCampForNpc": {
+                        "app.user_data.NpcPQSScoringData": {
+                            "userdataPath": "GameDesign/Porter/PointQuery/PQSScoringData_StayCampForNpc.user"
+                        }
+                    },
+                    "ScoringData_Fishing": {
+                        "": {}
+                    },
+                    "SaftyQueryInvalidAttr": {
+                        "app.NpcPartnerDef.POINT_QUERY_ATTRIBUTEBit_Serializable": {
+                            "_Value": "[64]WALL_NEAR"
+                        }
+                    }
+                }
+            },
+            "_CommEmote": {
+                "app.user_data.PorterParamCommon.cCommEmote": {
+                    "_PorterEnableAction": [
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "073c3aeb-8ef3-4332-83a3-8653772ab698"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "0a7a7b17-5b24-44bd-a40d-8fd856a8d08d"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "47e91452-7a50-44a6-a547-57b90f77c3b2"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "17faa05f-63dc-4e02-b169-bc1074d29308"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "1aa13a9e-9a4f-40c1-a8e4-2177cfd11c6d"
+                            }
+                        }
+                    ],
+                    "_EmoteTable": [
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-1168210944]READ_THE_WIND"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-407084288]GREETING"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[792530176]SITDOWN"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "9b6c74fd-b181-4a76-9364-21b8218acc94"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[2028124416]OUT"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "0b10ad2b-1fe4-4c5c-a311-76e444a5346e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1229200512]BYE"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1170768000]PORTER_EMOTE_001"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "bbd6a931-335d-4512-b055-abfd4b906b6f"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1834030464]PORTER_EMOTE_002"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e935bd1c-1bfa-4373-8d0c-086ec0d8f5a5"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[32457568]PORTER_EMOTE_003"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5651d20f-ffef-419a-8c6a-7588b4717764"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-1254317568]PORTER_EMOTE_004"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "567449d9-cecc-42b1-ba9e-bb1a94a4fc8b"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-2130267392]PORTER_EMOTE_005"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "15c14de9-96ba-4390-8803-d6f6e1cc7bc2"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-760753984]PORTER_EMOTE_006"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "3390abba-fb52-437e-b755-1b0d327d6e1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[500377472]PORTER_EMOTE_007"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "70435a9c-7d6e-439f-8832-6f4751ec5f83"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[927296704]SADNESS"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e079f096-2a61-4c68-96e4-d66d40e1f2f5"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-921141184]JOY_1"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1409465216]JOY_2"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1897596160]RELIEVE"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e079f096-2a61-4c68-96e4-d66d40e1f2f5"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1584979200]DISAGREE"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e079f096-2a61-4c68-96e4-d66d40e1f2f5"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-988025024]WAR_CRY"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1207142528]APPLAUSE"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-1499164672]GOOD_JOB"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[-2142118016]FIRE_WORKS"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1924037632]AGREE"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[1604471424]PROVOCATION"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[861868032]PORTER_RIDE_EMOTE_001"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "a3b6b4c0-0d78-42ce-b4dd-e13f550d25ce"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[497135008]PORTER_RIDE_EMOTE_002"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e994f364-940b-4050-81dc-4d69621531aa"
+                            }
+                        }
+                    ],
+                    "_DefaultEmoteActionID": "0b10ad2b-1fe4-4c5c-a311-76e444a5346e",
+                    "_PlayerCancelSetTable": [
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPlayerCancelSet": {
+                                "_CancelType": {
+                                    "app.HunterDef.COMM_ACTION_CANCEL_TYPE_Serializable": {
+                                        "_Value": "[-621063936]DEFAULT"
+                                    }
+                                },
+                                "_ActionID": "678332ce-97a8-4adb-879e-fa31239699a4"
+                            }
+                        }
+                    ],
+                    "_PorterCancelSetTable": [
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterCancelSet": {
+                                "_CancelType": "[0]DEFAULT",
+                                "_ActionID": "678332ce-97a8-4adb-879e-fa31239699a4"
+                            }
+                        }
+                    ],
+                    "_TimeoutLimitSecForCommEmote": 10.0
+                }
+            },
+            "_RideRushAttack": {
+                "app.user_data.PorterParamCommon.cRideRushAttack": {
+                    "_Elements": [
+                        {
+                            "app.user_data.PorterParamCommon.cRideRushAttack.cElement": {
+                                "_WeaponType": {
+                                    "app.WeaponDef.TYPE_Serializable": {
+                                        "_Value": "[7]GUN_LANCE"
+                                    }
+                                },
+                                "_MaxRotationAngle": 20.0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cRideRushAttack.cElement": {
+                                "_WeaponType": {
+                                    "app.WeaponDef.TYPE_Serializable": {
+                                        "_Value": "[8]LANCE"
+                                    }
+                                },
+                                "_MaxRotationAngle": 20.0
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DamageEar": {
+                "app.user_data.PorterParamCommon.cDamageEar": {
+                    "_LoopTimeScaleForDamageEarSBySkillLv1": 0.20000000298023224,
+                    "_LoopTimeScaleForDamageEarLBySkillLv2": 0.10000000149011612
+                }
+            },
+            "_Grill": {
+                "app.user_data.PorterParamCommon.cGrill": {
+                    "_DistanceLimitForMove": 3.0
+                }
+            },
+            "_Fishing": {
+                "app.user_data.PorterParamCommon.cFishing": {
+                    "_FishingDistanceLimit": 25.0
+                }
+            }
+        }
+    }
+]

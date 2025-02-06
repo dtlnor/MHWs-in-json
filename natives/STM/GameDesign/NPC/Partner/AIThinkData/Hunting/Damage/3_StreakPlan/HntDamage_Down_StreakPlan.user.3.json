@@ -1,0 +1,115 @@
+[
+    {
+        "app.user_data.NpcStreakPlanData": {
+            "_ActionDataList": {
+                "ace.cInstanceGuidArray`1<app.user_data.NpcStreakPlanData.cActionData>": {
+                    "_DataArray": [
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "6079e41c-56c4-0c25-2dc2-89118586ab88",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Hunting/Damage/4_StreakAction/HntDamage_Down_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "cbf27b80-8b8b-4d68-918c-b7a9ca1ff8a6",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Hunting/Damage/4_StreakAction/HntDamage_PorterRescue_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": [
+                                            {
+                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                                    "_ActionGuid": "6079e41c-56c4-0c25-2dc2-89118586ab88",
+                                                    "_RandomWeight": 50
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DerivedAction_Activate": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": [
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "cbf27b80-8b8b-4d68-918c-b7a9ca1ff8a6",
+                                "_RandomWeight": -1
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "6079e41c-56c4-0c25-2dc2-89118586ab88",
+                                "_RandomWeight": 50
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DerivedAction_Activate_WpOn": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": [
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "cbf27b80-8b8b-4d68-918c-b7a9ca1ff8a6",
+                                "_RandomWeight": -1
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "6079e41c-56c4-0c25-2dc2-89118586ab88",
+                                "_RandomWeight": 50
+                            }
+                        }
+                    ]
+                }
+            },
+            "_DerivedAction_Activate_Breaked": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": []
+                }
+            },
+            "_DerivedAction_Always": {
+                "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                    "_DerivedActionParams": []
+                }
+            },
+            "_TargetType": {
+                "app.NpcPartnerDef.STREAK_TARGET_TYPE_Serializable": {
+                    "_Value": "[1189767808]SELF"
+                }
+            },
+            "_TargetPartsType": {
+                "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
+                    "_Value": "[-269892992]ROOT"
+                }
+            }
+        }
+    }
+]

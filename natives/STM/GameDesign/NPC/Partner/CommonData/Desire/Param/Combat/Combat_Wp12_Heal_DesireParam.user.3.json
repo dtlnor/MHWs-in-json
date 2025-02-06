@@ -1,0 +1,70 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 180.0,
+                                "r": 120.0
+                            },
+                            "_Cancel": {
+                                "s": 15.0,
+                                "r": 15.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cAnyHunterHealthCheck_Param": {
+                                        "_HealthThreshold": 70.0,
+                                        "_CompareType": "[5]LESS_OR_EQUAL"
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRangeInPlayer_Param": {
+                                        "_Range": {
+                                            "s": 0.0,
+                                            "r": 45.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cIsShotSpecifyBullet_Param": {
+                                        "_ShellType": {
+                                            "app.WeaponGunDef.SHELL_TYPE_Serializable": {
+                                                "_Value": "[-1308781056]HEAL"
+                                            }
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

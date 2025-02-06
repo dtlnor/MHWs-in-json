@@ -1,0 +1,292 @@
+[
+    {
+        "app.user_data.AccessoryList": {
+            "_Accessories": [
+                {
+                    "app.accessory.Data": {
+                        "_Prefab": {
+                            "via.Prefab": {
+                                "v0": 1,
+                                "v1": "GameDesign/Accessory/_Prefab/Player/Acc001_076.pfb"
+                            }
+                        },
+                        "_Offset": {
+                            "app.accessory.Def.cOffset": {
+                                "UseOffset": false,
+                                "OffsetOrder": "[1]ROT_POS",
+                                "STRUCT_Coord_Position": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "STRUCT_Coord_Rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "PositionOffsetCtrl": "[0]LOCAL",
+                                "RotationOffsetCtrl": "[0]LOCAL"
+                            }
+                        },
+                        "_States": [
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "ce5cb3a8-bc32-074a-055a-2c78f43effb8",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[0]VISIBLE"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActObjectVisibility": {
+                                                "_Visibility": "[0]VISIBLE"
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.ActPartsVisibility": {
+                                                "_Visibilities": [
+                                                    "[0]VISIBLE",
+                                                    "[1]HIDDEN"
+                                                ]
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.ActChangeMotion": {
+                                                "_BankId": 0,
+                                                "_MotionId": 4,
+                                                "_LayerIndex": 0,
+                                                "_ImmediateSetup": false,
+                                                "_InterpolationFrame": 0.0,
+                                                "_InterpolationMode": "[0]None",
+                                                "_InterpolationCurve": "[0]Linear"
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.ActPlaySe": {
+                                                "_TriggerId": 1972035121
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": []
+                                }
+                            },
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "eb72958d-094d-013f-3f19-764b4b881133",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[1]HIDE"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActObjectVisibility": {
+                                                "_Visibility": "[1]HIDDEN"
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": []
+                                }
+                            },
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "444c21d2-d22e-042d-18fa-14dfdd3d6b9d",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[-499814912]PLAY_EFFECT"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActPlayEffect": {
+                                                "_ContainerId": 0,
+                                                "_ElementId": 0,
+                                                "_FollowTarget": {
+                                                    "app.accessory.StateActionDef.PLAY_EFFECT_FOLLOW_TARGET_Serializable": {
+                                                        "_Value": "[350440480]NONE"
+                                                    }
+                                                },
+                                                "_FollowJoint": ""
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": []
+                                }
+                            },
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "0c213ea2-3dc3-0182-2a1c-defb09004677",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[-513128704]COLLECT_ANIMAL_HAND"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActMotionSelect": {
+                                                "_Motions": [
+                                                    {
+                                                        "app.accessory.ActMotionSelect.cMotionData": {
+                                                            "_MotionType": {
+                                                                "app.accessory.StateActionDef.MOTION_SELECT_Serializable": {
+                                                                    "_Value": "[1189606656]DEFAULT"
+                                                                }
+                                                            },
+                                                            "_BankId": 0,
+                                                            "_MotionId": 5
+                                                        }
+                                                    },
+                                                    {
+                                                        "app.accessory.ActMotionSelect.cMotionData": {
+                                                            "_MotionType": {
+                                                                "app.accessory.StateActionDef.MOTION_SELECT_Serializable": {
+                                                                    "_Value": "[1433678976]MIRROR"
+                                                                }
+                                                            },
+                                                            "_BankId": 0,
+                                                            "_MotionId": 6
+                                                        }
+                                                    }
+                                                ],
+                                                "_LayerIndex": 0
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.ActPartsVisibility": {
+                                                "_Visibilities": [
+                                                    "[0]VISIBLE",
+                                                    "[0]VISIBLE"
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": [
+                                        {
+                                            "app.accessory.saActCheckMotionEnd": {
+                                                "_TargetLayerIndex": 0
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.saActRotateTransform": {
+                                                "_Pivot": "[32]OWNER_BASED",
+                                                "_TargetRotation": {
+                                                    "x": 0.0,
+                                                    "y": 0.0,
+                                                    "z": 0.0,
+                                                    "w": 1.0
+                                                },
+                                                "_Duration": 0.0,
+                                                "_EaseType": "[0]Linear"
+                                            }
+                                        }
+                                    ]
+                                }
+                            },
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "bfe12197-6620-0ec0-2b0a-e98f3cd2e8c5",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[844023808]COLLECT_ANIMAL_SLINGER"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActMotionSelect": {
+                                                "_Motions": [
+                                                    {
+                                                        "app.accessory.ActMotionSelect.cMotionData": {
+                                                            "_MotionType": {
+                                                                "app.accessory.StateActionDef.MOTION_SELECT_Serializable": {
+                                                                    "_Value": "[1189606656]DEFAULT"
+                                                                }
+                                                            },
+                                                            "_BankId": 0,
+                                                            "_MotionId": 5
+                                                        }
+                                                    },
+                                                    {
+                                                        "app.accessory.ActMotionSelect.cMotionData": {
+                                                            "_MotionType": {
+                                                                "app.accessory.StateActionDef.MOTION_SELECT_Serializable": {
+                                                                    "_Value": "[1433678976]MIRROR"
+                                                                }
+                                                            },
+                                                            "_BankId": 0,
+                                                            "_MotionId": 6
+                                                        }
+                                                    }
+                                                ],
+                                                "_LayerIndex": 0
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.ActPartsVisibility": {
+                                                "_Visibilities": [
+                                                    "[0]VISIBLE",
+                                                    "[0]VISIBLE"
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": [
+                                        {
+                                            "app.accessory.saActCheckMotionEnd": {
+                                                "_TargetLayerIndex": 0
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.saActRotateTransform": {
+                                                "_Pivot": "[32]OWNER_BASED",
+                                                "_TargetRotation": {
+                                                    "x": 0.0,
+                                                    "y": 0.0,
+                                                    "z": 0.0,
+                                                    "w": 1.0
+                                                },
+                                                "_Duration": 0.0,
+                                                "_EaseType": "[0]Linear"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        ]
+                    }
+                }
+            ],
+            "_JointConsts": [
+                {
+                    "app.accessory.JointConst": {
+                        "_Guid": "85fdb891-f782-0920-3f18-c5852f383fb0",
+                        "_Data": {
+                            "app.cJointConstData": {
+                                "_JointName": {
+                                    "ace.cJointHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "_OffsetPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "_IgnoreJointRotation": false,
+                                "_OffsetRotationDegree": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,99 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 0.0,
+                                "r": 0.0
+                            },
+                            "_Cancel": {
+                                "s": 0.0,
+                                "r": 0.0
+                            },
+                            "_Group": {
+                                "s": 300.0,
+                                "r": 120.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cActiveBadConditionCombatEnemy_Param": {
+                                        "_Condition": "[5]PARALYSE"
+                                    }
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cExistsSameAreaEnemies_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckTargetEmActiveDebuffSimulation_Param": {
+                                        "_Condition": "[5]PARALYSE",
+                                        "_UnitValue": 40.0,
+                                        "_AssumedHitCount": 12,
+                                        "_ActiveCount": 1
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cActiveBadConditionCombatEnemy_Param": {
+                                        "_Condition": "[7]SLEEP"
+                                    }
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cMissionTargetCombatEnemy_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRideCombatEnemy_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cActiveBadConditionCombatEnemy_Param": {
+                                        "_Condition": "[5]PARALYSE"
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

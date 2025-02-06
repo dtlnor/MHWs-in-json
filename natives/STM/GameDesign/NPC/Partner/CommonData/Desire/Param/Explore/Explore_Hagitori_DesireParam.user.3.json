@@ -1,0 +1,92 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 5.0,
+                                "r": 0.0
+                            },
+                            "_Cancel": {
+                                "s": 5.0,
+                                "r": 0.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCameraPlayingHunt_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckPorterCalling_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckHagitoriEnemySameArea_Param": {
+                                        "_IsEnableBoss": true,
+                                        "_IsEnableLostParts": true,
+                                        "_IsEnableCaptureBoss": false,
+                                        "_IsEnableZako": false,
+                                        "_IsEnablePopComplete": false,
+                                        "_IsOnlyQuestTarget": true
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRangeInTargetEnemyHagitoriHinder_Param": {
+                                        "_Range": {
+                                            "s": 0.0,
+                                            "r": 22.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckMovingPorterRoot_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckHagitoriCount_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

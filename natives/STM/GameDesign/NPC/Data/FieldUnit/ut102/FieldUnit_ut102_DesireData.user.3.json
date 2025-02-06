@@ -1,0 +1,78 @@
+[
+    {
+        "app.user_data.NpcDesireData": {
+            "_DataList": [
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcGroupAIDesireConditions.cCampFireRunning_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcGroupAIDesireConditions.cCampFireRunning_Param": {}
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[5314]GROUP_AI"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 2117305728
+                    }
+                }
+            ],
+            "_TimerParam": {
+                "app.cNpcDesireTimerHolder": {
+                    "_Param": {
+                        "app.NpcDesireTimers.cNone_Param": {}
+                    }
+                }
+            },
+            "_DesireEnum": {
+                "ace.user_data.EnumMaker": {
+                    "userdataPath": "GameDesign/NPC/EnumMaker/NpcFieldUnitDesire_ut102.user"
+                }
+            }
+        }
+    }
+]

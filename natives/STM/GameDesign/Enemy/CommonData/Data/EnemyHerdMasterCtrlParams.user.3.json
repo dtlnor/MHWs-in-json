@@ -1,0 +1,100 @@
+[
+    {
+        "app.herdclusteraction.HerdMasterCtrlParams": {
+            "rigSolver": "[1]FrontBackBend",
+            "refreshDepthMatrixCount": 1,
+            "refreshClusterFrames": 2.0,
+            "PairBaseActions": [
+                {
+                    "app.herdclusteraction.HerdClusterActionParams_PressFrontBack": {
+                        "userdataPath": "Motion/Enemy/Decorate/Herd/EnemyHerd_ClusterActionParams_PressFrontBack.user"
+                    }
+                }
+            ],
+            "PairActions": [
+                {
+                    "app.herdclusteraction.HerdClusterActionParams_Tackle": {
+                        "userdataPath": "Motion/Enemy/Decorate/Herd/EnemyHerd_ClusterActionParams_Tackle.user"
+                    }
+                }
+            ],
+            "PairActionCooldownLow": 200.0,
+            "PairActionCooldownHigh": 300.0,
+            "TripleBaseActions": [
+                {
+                    "app.herdclusteraction.HerdClusterActionParams_Shake": {
+                        "userdataPath": "Motion/Enemy/Decorate/Herd/EnemyHerd_ClusterActionParams_Shake.user"
+                    }
+                }
+            ],
+            "ActionSubjectGroups": [
+                {
+                    "app.herdclusteraction.HerdMasterCtrlParams.ActionSubjectGroup": {
+                        "Comment": "High",
+                        "High": true,
+                        "Default": true,
+                        "Child": false,
+                        "Custom1": false,
+                        "Custom2": false,
+                        "Custom3": false
+                    }
+                },
+                {
+                    "app.herdclusteraction.HerdMasterCtrlParams.ActionSubjectGroup": {
+                        "Comment": "Default",
+                        "High": false,
+                        "Default": true,
+                        "Child": false,
+                        "Custom1": false,
+                        "Custom2": false,
+                        "Custom3": false
+                    }
+                },
+                {
+                    "app.herdclusteraction.HerdMasterCtrlParams.ActionSubjectGroup": {
+                        "Comment": "Child",
+                        "High": false,
+                        "Default": false,
+                        "Child": true,
+                        "Custom1": false,
+                        "Custom2": false,
+                        "Custom3": false
+                    }
+                },
+                {
+                    "app.herdclusteraction.HerdMasterCtrlParams.ActionSubjectGroup": {
+                        "Comment": "Custom1",
+                        "High": false,
+                        "Default": false,
+                        "Child": false,
+                        "Custom1": false,
+                        "Custom2": false,
+                        "Custom3": false
+                    }
+                },
+                {
+                    "app.herdclusteraction.HerdMasterCtrlParams.ActionSubjectGroup": {
+                        "Comment": "Custom2",
+                        "High": false,
+                        "Default": false,
+                        "Child": false,
+                        "Custom1": false,
+                        "Custom2": false,
+                        "Custom3": false
+                    }
+                },
+                {
+                    "app.herdclusteraction.HerdMasterCtrlParams.ActionSubjectGroup": {
+                        "Comment": "Custom3",
+                        "High": false,
+                        "Default": false,
+                        "Child": false,
+                        "Custom1": false,
+                        "Custom2": false,
+                        "Custom3": false
+                    }
+                }
+            ]
+        }
+    }
+]

@@ -1,0 +1,91 @@
+[
+    {
+        "app.user_data.NpcAITableLayerData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cResetNearApproachTrap_Param": {}
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckAttackChanceCombatEnemy_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckTargetEnemyFlash_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckNearApproachTrap_Param": {
+                                "_Range": {
+                                    "s": 0.0,
+                                    "r": 15.0
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                }
+            ],
+            "_TableHolder": {
+                "app.cNpcAITableHolder": {
+                    "_Setting": {
+                        "app.cNpcAITableHolder.cSetting": {
+                            "_LayerType": 0,
+                            "_DisableInterrupt": false
+                        }
+                    },
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "1f830d48-a4c5-4b08-ab74-23e6d1880342",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Support/It03/2_AITableAction/SptIt03_NearApproach_Trap_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "42d07830-1d1f-4608-a19d-902461640c0a",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Support/It03/1_AITableLayer/SptIt03_NearTrapWaitingWp12_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "7af6eb75-5a54-48ad-9960-2ef3511a49c6",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Support/It03/2_AITableAction/SptIt03_NearTrapWaitingCmn_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

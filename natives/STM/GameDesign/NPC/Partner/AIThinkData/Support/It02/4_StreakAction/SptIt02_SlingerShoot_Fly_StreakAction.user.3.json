@@ -1,0 +1,82 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSlingerShot_ActionParam": {
+                            "_NoCheckRange": true,
+                            "_CanShotRange": {
+                                "s": 3.0,
+                                "r": 17.0
+                            },
+                            "_HightRange": {
+                                "s": 1.0,
+                                "r": 29.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetJointTarget_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[1]SLINGER_SHOT",
+                            "_CanAimWpOff": true,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_TargetJoint": "[0]HEAD",
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": -5.0,
+                                "z": 12.0,
+                                "pad": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckSlingerSetAI_Param": {}
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckShootSlingerAction_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cIsFlyCombatEnemy_Param": {}
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

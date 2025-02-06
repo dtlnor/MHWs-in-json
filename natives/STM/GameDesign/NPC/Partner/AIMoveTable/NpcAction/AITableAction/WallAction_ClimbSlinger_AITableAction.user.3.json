@@ -1,0 +1,60 @@
+[
+    {
+        "app.user_data.NpcAITableActionData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cEnableWallAction_Param": {
+                                "WallAction": "[2]SLINGER"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckVerNaviLink_Param": {
+                                "_CheckVertical": "[1]UP",
+                                "_Dist": 5.0,
+                                "_EnableLinkRange": 5.0
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                }
+            ],
+            "_ActionSetting": {
+                "app.user_data.NpcAITableActionData.cActionSetting": {
+                    "_ForceInterrupt": false,
+                    "_TableEnd": false
+                }
+            },
+            "_Param": {
+                "app.user_data.NpcAITableActionData.cNpcAITableEffectHolder": {
+                    "_Param": {
+                        "app.NpcAITableEffects.cSpeedSet_Param": {
+                            "_EffectHolder": {
+                                "app.cNpcAIMoveEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcAIMoveEffects.cClimbMove_Param": {
+                                            "_SpeedLv": 3,
+                                            "_UseExternalSpeed": false,
+                                            "_StickDir": "[0]NAVI",
+                                            "MoveDir": "[1]UP",
+                                            "ClimbAction": "[1]SLINGER",
+                                            "DelayTime": 0.0
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

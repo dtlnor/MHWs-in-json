@@ -1,0 +1,70 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[3]ALL_END",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetScoringPoint_LStickParam": {
+                            "_Reach": 3.0,
+                            "_ContinueMove": true,
+                            "_StopWhenReached": true,
+                            "_MoveType": 6,
+                            "_UseAIMoveEnd": false,
+                            "_IsNotRidePorter": false,
+                            "_FixedSpeedLv": 4,
+                            "_IsMoveStopTurn": false,
+                            "_StopTurnDir": "[0]PL_AXIS_Z",
+                            "_DegRange": {
+                                "s": 0.0,
+                                "r": 180.0
+                            },
+                            "_IsOverwritePartsType": false,
+                            "_OverwritePartsType": {
+                                "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
+                                    "_Value": "[-156120704]NEAR_PARTS"
+                                }
+                            },
+                            "_TargetParam": {
+                                "app.mcNpcTargetController.cScoringPoint_Param": {
+                                    "_ScoringData": {
+                                        "app.user_data.NpcPQSScoringData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/Meta_ToBehind_PQSScoringData.user"
+                                        }
+                                    },
+                                    "_RelayingData": {
+                                        "app.user_data.NpcPQSRelayingData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/Meta_ToBehind_PQSRelayingData.user"
+                                        }
+                                    },
+                                    "_RouteType": "[1]RELAYING_ROUTE",
+                                    "_DirectionType": 0,
+                                    "_EnvLayer": 0,
+                                    "_IsEnableJointTarget": false,
+                                    "_ShiftForward": false,
+                                    "_ShiftForwardLength": 5.0,
+                                    "_JudgeLength": 2.0
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_EvaluatorParams": []
+        }
+    }
+]

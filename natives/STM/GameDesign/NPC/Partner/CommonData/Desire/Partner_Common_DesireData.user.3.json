@@ -1,0 +1,1036 @@
+[
+    {
+        "app.user_data.NpcDesireData": {
+            "_DataList": [
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cNpcHealthLow_Param": {
+                                            "_HealthThreshold": 85
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsedItemCategory_Param": {
+                                            "_ItemCategory": 1
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cNpcHealthHigh_Param": {
+                                            "_HealthThreshold": 90
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1376267008]USED_HEAL_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 2,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 5.0
+                                },
+                                "_Cancel": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 1
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cAlwaysFalse_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[1666184320]USED_BUFF_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 2
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCanItemUse_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[126]ITEM_0152"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCheckQuestFlow_Param": {
+                                            "_QuestFlow": "[1]QUEST_PLAYING"
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cRangeInPlayer_Param": {
+                                            "_Range": {
+                                                "s": 0.0,
+                                                "r": 35.0
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
+                                            "_Range": {
+                                                "s": 0.0,
+                                                "r": 55.0
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsedItem_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[126]ITEM_0152"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[1666184320]USED_BUFF_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[-1066725376]UTILITY_ITEM"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[-779717760]LV2"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 360.0,
+                                    "r": 120.0
+                                },
+                                "_Cancel": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 480.0,
+                                    "r": 60.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 2
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cAlwaysFalse_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[1666184320]USED_BUFF_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 3
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCanItemUse_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[127]ITEM_0153"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCheckQuestFlow_Param": {
+                                            "_QuestFlow": "[1]QUEST_PLAYING"
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cRangeInPlayer_Param": {
+                                            "_Range": {
+                                                "s": 0.0,
+                                                "r": 35.0
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
+                                            "_Range": {
+                                                "s": 0.0,
+                                                "r": 55.0
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsedItem_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[127]ITEM_0153"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[1666184320]USED_BUFF_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[-481422144]HEAL_ITEM"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[-779717760]LV2"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 360.0,
+                                    "r": 120.0
+                                },
+                                "_Cancel": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 480.0,
+                                    "r": 60.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 3
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCheckBadCondition_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCheckBcrAction_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1921849216]BADCONDITION_RELEASE"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 4
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cAlwaysFalse_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1376267008]USED_HEAL_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 120.0,
+                                    "r": 30.0
+                                },
+                                "_Cancel": {
+                                    "s": 15.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 150.0,
+                                    "r": 120.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 5
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cPlayerBadCondition_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCanItemUse_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[175]ITEM_0201"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsedItem_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[175]ITEM_0201"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1376267008]USED_HEAL_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[-481422144]HEAL_ITEM"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[-160021552]LV1"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 150.0,
+                                    "r": 60.0
+                                },
+                                "_Cancel": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 330.0,
+                                    "r": 60.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 5
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cPlayerBadCondition_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cCanItemUse_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[175]ITEM_0201"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsedItem_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[175]ITEM_0201"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1376267008]USED_HEAL_ITEM"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[-481422144]HEAL_ITEM"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[-779717760]LV2"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 120.0,
+                                    "r": 30.0
+                                },
+                                "_Cancel": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 150.0,
+                                    "r": 120.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 5
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 1
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
+                                            "_Range": {
+                                                "s": 30.0,
+                                                "r": 70.0
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cPlayerCombat_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 1
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1957955712]ACTIVE_SKILL"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Cancel": {
+                                    "s": 5.0,
+                                    "r": 5.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 6
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 2
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cActiveSkillInEffect_Param": {
+                                            "_ActiveSkillType": 2
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 2
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1957955712]ACTIVE_SKILL"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 7
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 3
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cActiveSkillInEffect_Param": {
+                                            "_ActiveSkillType": 3
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 3
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1957955712]ACTIVE_SKILL"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 8
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 4
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cActiveSkillInEffect_Param": {
+                                            "_ActiveSkillType": 4
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 4
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1957955712]ACTIVE_SKILL"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 9
+                    }
+                },
+                {
+                    "app.user_data.NpcDesireData.cData": {
+                        "_StartConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 5
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cActiveSkillInEffect_Param": {
+                                            "_ActiveSkillType": 5
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
+                            }
+                        ],
+                        "_EndConditionParams": [
+                            {
+                                "app.cNpcDesireConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcDesireConditions.cUsingActiveSkill_Param": {
+                                            "_ActiveSkillType": 5
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_ContinueConditionParams": [],
+                        "_Category": {
+                            "app.NpcDef.DESIRE_CATEGORY_Serializable": {
+                                "_Value": "[-1957955712]ACTIVE_SKILL"
+                            }
+                        },
+                        "_Kind": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
+                                "_Value": "[1031877312]INVALID"
+                            }
+                        },
+                        "_KindLv": {
+                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
+                                "_Value": "[1844144896]NOUSE"
+                            }
+                        },
+                        "_RetryCount": 1,
+                        "_CoolTime": {
+                            "app.user_data.NpcDesireData.cData.cCoolTime": {
+                                "_Complete": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Cancel": {
+                                    "s": 10.0,
+                                    "r": 0.0
+                                },
+                                "_Group": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_EnumFixedID": 10
+                    }
+                }
+            ],
+            "_TimerParam": {
+                "app.cNpcDesireTimerHolder": {
+                    "_Param": {
+                        "app.NpcDesireTimers.cDesireAI_Param": {}
+                    }
+                }
+            },
+            "_DesireEnum": {
+                "ace.user_data.EnumMaker": {
+                    "userdataPath": "GameDesign/NPC/Partner/CommonData/EnumMaker/NpcDesire_Partner_Cmn.user"
+                }
+            }
+        }
+    }
+]
