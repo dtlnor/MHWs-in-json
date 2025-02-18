@@ -7,7 +7,7 @@
                         "_Prefab": {
                             "via.Prefab": {
                                 "v0": 1,
-                                "v1": ""
+                                "v1": "GameDesign/Accessory/_Prefab/Player/Acc001_073.pfb"
                             }
                         },
                         "_Offset": {
@@ -30,6 +30,8 @@
                                 "RotationOffsetCtrl": "[0]LOCAL"
                             }
                         },
+                        "_AllowDisableMotionByAnimationLOD": false,
+                        "_DeadStopOnInvisible": false,
                         "_States": [
                             {
                                 "app.accessory.State": {
@@ -39,7 +41,13 @@
                                             "_Value": "[0]VISIBLE"
                                         }
                                     },
-                                    "_Actions": [],
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActObjectVisibility": {
+                                                "_Visibility": "[0]VISIBLE"
+                                            }
+                                        }
+                                    ],
                                     "_StandAloneActions": []
                                 }
                             },
@@ -51,7 +59,18 @@
                                             "_Value": "[1]HIDE"
                                         }
                                     },
-                                    "_Actions": [],
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActObjectVisibility": {
+                                                "_Visibility": "[1]HIDDEN"
+                                            }
+                                        },
+                                        {
+                                            "app.accessory.ActPlaySe": {
+                                                "_TriggerId": 2383656521
+                                            }
+                                        }
+                                    ],
                                     "_StandAloneActions": []
                                 }
                             }

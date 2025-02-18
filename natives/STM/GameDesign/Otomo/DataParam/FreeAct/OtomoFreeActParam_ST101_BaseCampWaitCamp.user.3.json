@@ -2,7 +2,7 @@
     {
         "app.user_data.OtomoFreeActParam": {
             "_SpaceID": "[6]ST101_BASE_CAMP_WAIT_CAMP",
-            "_CoolTime": 180.0,
+            "_CoolTime": 100.0,
             "_BaseCampParam": {
                 "app.user_data.OtomoFreeActParam.cBaseCampParam": {
                     "_ActStartIntervalSec": 10.0,
@@ -36,100 +36,7 @@
                                 "_PointID": 0,
                                 "_IsDefaultActPoint": false,
                                 "_IsOnTheSpotAct": false,
-                                "_ActLocationForHost": {
-                                    "x": -747.1541748046875,
-                                    "y": 57.51572036743164,
-                                    "z": 739.0062255859375,
-                                    "pad": 0.0
-                                },
-                                "_ActLocationForGuest": {
-                                    "x": -747.2225952148438,
-                                    "y": 57.54604721069336,
-                                    "z": 740.5413208007812,
-                                    "pad": 0.0
-                                },
-                                "_SecondaryActLocationForHost": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "pad": 0.0
-                                },
-                                "_SecondaryActLocationForGuest": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "pad": 0.0
-                                },
-                                "_TertiaryActLocationForHost": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "pad": 0.0
-                                },
-                                "_TertiaryActLocationForGuest": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "pad": 0.0
-                                },
-                                "_ActionID": "a813ee1c-1774-420a-83f6-d6d14c2cb60f",
-                                "_AppendDataType": "[0]DEFAULT",
-                                "_FreeActTarget": "[6]OTOMO",
-                                "_TargetNpcIDs": [],
-                                "_TargetPorterParams": [],
-                                "_TargetAnimalIDs": [],
-                                "_TargetOtomoParams": [
-                                    {
-                                        "app.user_data.OtomoFreeActParam.cActPoint.cTargetOtomoParam": {
-                                            "_PartnerOtomoType": {
-                                                "app.OtomoDef.PARTNER_OTOMO_TYPE_Serializable": {
-                                                    "_Value": "[-1275956736]PERTNER_OT_0600"
-                                                }
-                                            },
-                                            "_ConditionHolders": [
-                                                {
-                                                    "app.OtomoAIStateLifeArea.LotteryConditions.cConditionHolder": {
-                                                        "_Param": {
-                                                            "app.OtomoAIStateLifeArea.LotteryConditions.cExistsPartnerOtomoAtSeparatelyForceCamp_Param": {}
-                                                        }
-                                                    }
-                                                }
-                                            ]
-                                        }
-                                    }
-                                ],
-                                "_TargetBackgroundPositions": [],
-                                "_ConditionPack": {
-                                    "app.OtomoAIStateLifeArea.LotteryConditions.cConditionPack": {
-                                        "_ConditionHolders": [
-                                            {
-                                                "app.OtomoAIStateLifeArea.LotteryConditions.cConditionHolder": {
-                                                    "_Param": {
-                                                        "app.OtomoAIStateLifeArea.LotteryConditions.cExistsNpcInRange_Param": {
-                                                            "_NpcID": {
-                                                                "app.NpcDef.ID_Serializable": {
-                                                                    "_Value": "[325639392]NPC300_00_017"
-                                                                }
-                                                            },
-                                                            "_Distance": 5.0
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ]
-                                    }
-                                },
-                                "_MinLoopCount": 1,
-                                "_SelectionProbability": 10,
-                                "_ActEndProbability": 30,
-                                "_ActEndAdditionalProbability": 5
-                            }
-                        },
-                        {
-                            "app.user_data.OtomoFreeActParam.cActPoint": {
-                                "_PointID": 1,
-                                "_IsDefaultActPoint": false,
-                                "_IsOnTheSpotAct": false,
+                                "_IsInterruptActPoint": false,
                                 "_ActLocationForHost": {
                                     "x": -776.10205078125,
                                     "y": 57.42354202270508,
@@ -181,6 +88,8 @@
                                         "pad": 0.0
                                     }
                                 ],
+                                "_UseHostTargetBackgroundPosition": true,
+                                "_TargetBackgroundPositionsForGuest": [],
                                 "_ConditionPack": {
                                     "app.OtomoAIStateLifeArea.LotteryConditions.cConditionPack": {
                                         "_ConditionHolders": []
@@ -194,9 +103,10 @@
                         },
                         {
                             "app.user_data.OtomoFreeActParam.cActPoint": {
-                                "_PointID": 2,
+                                "_PointID": 1,
                                 "_IsDefaultActPoint": false,
                                 "_IsOnTheSpotAct": false,
+                                "_IsInterruptActPoint": false,
                                 "_ActLocationForHost": {
                                     "x": -754.7298583984375,
                                     "y": 57.581966400146484,
@@ -248,6 +158,8 @@
                                         "pad": 0.0
                                     }
                                 ],
+                                "_UseHostTargetBackgroundPosition": true,
+                                "_TargetBackgroundPositionsForGuest": [],
                                 "_ConditionPack": {
                                     "app.OtomoAIStateLifeArea.LotteryConditions.cConditionPack": {
                                         "_ConditionHolders": []
@@ -261,9 +173,10 @@
                         },
                         {
                             "app.user_data.OtomoFreeActParam.cActPoint": {
-                                "_PointID": 3,
+                                "_PointID": 2,
                                 "_IsDefaultActPoint": true,
                                 "_IsOnTheSpotAct": false,
+                                "_IsInterruptActPoint": false,
                                 "_ActLocationForHost": {
                                     "x": -754.2637939453125,
                                     "y": 57.49435043334961,
@@ -315,12 +228,14 @@
                                         "pad": 0.0
                                     }
                                 ],
+                                "_UseHostTargetBackgroundPosition": true,
+                                "_TargetBackgroundPositionsForGuest": [],
                                 "_ConditionPack": {
                                     "app.OtomoAIStateLifeArea.LotteryConditions.cConditionPack": {
                                         "_ConditionHolders": []
                                     }
                                 },
-                                "_MinLoopCount": 6,
+                                "_MinLoopCount": 8,
                                 "_SelectionProbability": 50,
                                 "_ActEndProbability": 20,
                                 "_ActEndAdditionalProbability": 5
@@ -328,69 +243,95 @@
                         },
                         {
                             "app.user_data.OtomoFreeActParam.cActPoint": {
-                                "_PointID": 4,
+                                "_PointID": 3,
                                 "_IsDefaultActPoint": false,
                                 "_IsOnTheSpotAct": false,
+                                "_IsInterruptActPoint": false,
                                 "_ActLocationForHost": {
-                                    "x": -785.0363159179688,
-                                    "y": 57.28463363647461,
-                                    "z": 734.5,
+                                    "x": -785.985595703125,
+                                    "y": 57.352745056152344,
+                                    "z": 734.3510131835938,
                                     "pad": 0.0
                                 },
                                 "_ActLocationForGuest": {
-                                    "x": -785.9923706054688,
-                                    "y": 57.34470748901367,
-                                    "z": 734.64453125,
+                                    "x": -785.985595703125,
+                                    "y": 57.352745056152344,
+                                    "z": 734.3510131835938,
                                     "pad": 0.0
                                 },
                                 "_SecondaryActLocationForHost": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
+                                    "x": -784.6549072265625,
+                                    "y": 59.117401123046875,
+                                    "z": 735.45849609375,
                                     "pad": 0.0
                                 },
                                 "_SecondaryActLocationForGuest": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
+                                    "x": -786.9210205078125,
+                                    "y": 59.09772872924805,
+                                    "z": 735.9559936523438,
                                     "pad": 0.0
                                 },
                                 "_TertiaryActLocationForHost": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
+                                    "x": -784.6256103515625,
+                                    "y": 57.26811981201172,
+                                    "z": 734.4738159179688,
                                     "pad": 0.0
                                 },
                                 "_TertiaryActLocationForGuest": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
+                                    "x": -786.857177734375,
+                                    "y": 57.40950012207031,
+                                    "z": 734.798828125,
                                     "pad": 0.0
                                 },
-                                "_ActionID": "8bad3851-d88f-4c7a-9b63-cff923397d82",
+                                "_ActionID": "7f2d1f26-82e0-4583-b247-a8936175c994",
                                 "_AppendDataType": "[0]DEFAULT",
-                                "_FreeActTarget": "[1]DEFAULT",
+                                "_FreeActTarget": "[7]BACKGROUND",
                                 "_TargetNpcIDs": [],
                                 "_TargetPorterParams": [],
                                 "_TargetAnimalIDs": [],
                                 "_TargetOtomoParams": [],
-                                "_TargetBackgroundPositions": [],
+                                "_TargetBackgroundPositions": [
+                                    {
+                                        "x": -786.182861328125,
+                                        "y": 57.163185119628906,
+                                        "z": 733.3381958007812,
+                                        "pad": 0.0
+                                    }
+                                ],
+                                "_UseHostTargetBackgroundPosition": true,
+                                "_TargetBackgroundPositionsForGuest": [],
                                 "_ConditionPack": {
                                     "app.OtomoAIStateLifeArea.LotteryConditions.cConditionPack": {
-                                        "_ConditionHolders": []
+                                        "_ConditionHolders": [
+                                            {
+                                                "app.OtomoAIStateLifeArea.LotteryConditions.cConditionHolder": {
+                                                    "_Param": {
+                                                        "app.OtomoAIStateLifeArea.LotteryConditions.cCheckMissionFlag_Param": {
+                                                            "_Flag": {
+                                                                "app.StoryPackageFlag.TYPE_Serializable": {
+                                                                    "_Value": "[1]STORY_000001"
+                                                                }
+                                                            },
+                                                            "_InverseFlag": true
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        ]
                                     }
                                 },
-                                "_MinLoopCount": 3,
-                                "_SelectionProbability": 25,
-                                "_ActEndProbability": 25,
+                                "_MinLoopCount": 10,
+                                "_SelectionProbability": 20,
+                                "_ActEndProbability": 10,
                                 "_ActEndAdditionalProbability": 5
                             }
                         },
                         {
                             "app.user_data.OtomoFreeActParam.cActPoint": {
-                                "_PointID": 5,
+                                "_PointID": 4,
                                 "_IsDefaultActPoint": true,
                                 "_IsOnTheSpotAct": false,
+                                "_IsInterruptActPoint": false,
                                 "_ActLocationForHost": {
                                     "x": -754.2637939453125,
                                     "y": 57.49440002441406,
@@ -442,12 +383,14 @@
                                         "pad": 0.0
                                     }
                                 ],
+                                "_UseHostTargetBackgroundPosition": true,
+                                "_TargetBackgroundPositionsForGuest": [],
                                 "_ConditionPack": {
                                     "app.OtomoAIStateLifeArea.LotteryConditions.cConditionPack": {
                                         "_ConditionHolders": []
                                     }
                                 },
-                                "_MinLoopCount": 6,
+                                "_MinLoopCount": 8,
                                 "_SelectionProbability": 50,
                                 "_ActEndProbability": 20,
                                 "_ActEndAdditionalProbability": 5
@@ -455,6 +398,12 @@
                         }
                     ],
                     "_ActPointsNight": []
+                }
+            },
+            "_EmoteParam": {
+                "app.user_data.OtomoFreeActParam.cEmoteParam": {
+                    "_OffsetDataList": [],
+                    "_ActPoints": []
                 }
             }
         }

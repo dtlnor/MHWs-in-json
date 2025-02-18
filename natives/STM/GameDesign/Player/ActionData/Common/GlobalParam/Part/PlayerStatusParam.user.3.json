@@ -193,7 +193,7 @@
                                 {
                                     "app.cPlayerStaminaParam.cStaminaUseValue": {
                                         "EnumValue": 28,
-                                        "_Value": 25.0
+                                        "_Value": 5.0
                                     }
                                 },
                                 {
@@ -600,14 +600,14 @@
             "_SlipDamage_Thorn_Damage": 2.0,
             "_SlipDamage_HeatGround_IntervalTime": 0.800000011920929,
             "_SlipDamage_HeatGround_Damage": 1.0,
-            "_SlipDamage_HeatingGrass_IntervalTime": 0.800000011920929,
+            "_SlipDamage_HeatingGrass_IntervalTime": 2.0,
             "_SlipDamage_HeatingGrass_Damage": 1.0,
             "_SlipDamage_HotArea_IntervalTime": 2.0,
             "_SlipDamage_HotArea_Damage": 1.0,
             "_PopGet_HealValue": 50.0,
-            "_PopGet_StaminaValue": 20.0,
-            "_PopGet_StaminaTimer": 180.0,
-            "_PopGet_StaminaRate": 0.800000011920929,
+            "_PopGet_StaminaValue": 25.0,
+            "_PopGet_StaminaTimer": 120.0,
+            "_PopGet_StaminaRate": 0.5,
             "_CondHealAnimal_CureConditionList": [
                 "[1357164288]POISON",
                 "[-1601527552]STUN",
@@ -628,8 +628,8 @@
             "STRUCT__Poison_Accumerator_Param__Interval": 3.0,
             "STRUCT__Poison_Accumerator_Param__ReduceVelue": 5.0,
             "_Poison_DurationTime": 30.0,
-            "_Poison_DamageIntervalTime": 2.0,
-            "_Poison_Damage": 3.0,
+            "_Poison_DamageIntervalTime": 1.5,
+            "_Poison_Damage": 2.0,
             "_Stink_DurationTime": 50.0,
             "_Blast_TimeLimit": 25.0,
             "_Blast_Damage": 30.0,
@@ -640,6 +640,7 @@
             "_BleedDamage_Attack": 2.0,
             "_BleedDamage_Guard": 3.0,
             "_BleedDamage_Dodge": 5.0,
+            "_BleedDamage_BattleRideMove": 1.0,
             "_BleedDamage_Dash": 1.0,
             "_Bleedinterval_Dash": 1.5,
             "_Bleed_RecoveryBuffTime": 30.0,
@@ -680,7 +681,7 @@
             "_Fire_DurationTime": 30.0,
             "_Fire_DodgeConsumeTime": 10.0,
             "_Fire_StepDodgeConsumeTime": 5.0,
-            "_Fire_DamageIntervalTime": 2.0,
+            "_Fire_DamageIntervalTime": 1.0,
             "_Fire_Damage": 3.0,
             "_Elec_DurationTime": 60.0,
             "_Elec_DodgeConsumeTime": 3.0,
@@ -689,7 +690,7 @@
             "_Water_DurationTime": 60.0,
             "_Water_DodgeConsumeTime": 3.0,
             "_Water_StepDodgeConsumeTime": 2.0,
-            "_Water_StaminaRecoveryRate": 0.5,
+            "_Water_StaminaRecoveryRate": 0.25,
             "_Ice_DurationTime": 60.0,
             "_Ice_DodgeConsumeTime": 3.0,
             "_Ice_StepDodgeConsumeTime": 2.0,
@@ -728,12 +729,12 @@
             "STRUCT__Sleep_Accumerator_Param__ReduceVelue": 5.0,
             "_Sleep_Pre_DurationTime": 10.0,
             "_Sleep_DurationTime": 7.0,
-            "_Sticky_DurationTime": 5.0,
-            "_Sticky_LeverMashingInfluence": 2.5,
+            "_Sticky_DurationTime": 7.0,
+            "_Sticky_LeverMashingInfluence": 2.0,
             "STRUCT__Frozen_Accumerator_Param__Interval": 3.0,
             "STRUCT__Frozen_Accumerator_Param__ReduceVelue": 5.0,
-            "_Frozen_DurationTime": 5.0,
-            "_Frozen_LeverMashingInfluence": 2.5,
+            "_Frozen_DurationTime": 8.0,
+            "_Frozen_LeverMashingInfluence": 2.0,
             "_DamageEarS_DurationTime": 2.0,
             "_DamageEarL_DurationTime": 3.0,
             "_DamageQuakeSS_DurationTime": 0.10000000149011612,
@@ -756,7 +757,18 @@
                 }
             },
             "_CriticalAttackRate": 1.25,
-            "_NegativeAttackRate": 0.75
+            "_NegativeAttackRate": 0.75,
+            "_PhysicalAttack_RateLimit": 4.0,
+            "_PhysicalAttack_RateLimitAll": 5.0,
+            "_PhysicalAttack_AddLimit": 400.0,
+            "_PhysicalAttack_AddLimitAll": 600.0,
+            "_ElementAttack_RateLimit": 1.899999976158142,
+            "_ElementAttack_AddLimit": 35.0,
+            "_ElementAttack_RateLimit_Gun": 1.899999976158142,
+            "_ConditionAttack_RateLimit": 1.600000023841858,
+            "_StunAttack_RateLimit": 1.5,
+            "_StaminaAttack_RateLimit": 1.5,
+            "_RideAttack_RateLimit": 1.4500000476837158
         }
     }
 ]

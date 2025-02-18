@@ -1,7 +1,17 @@
 [
     {
         "app.user_data.NpcAITableLayerData": {
-            "_ConditionParams": [],
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.ctDisableSupportAction_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": false
+                    }
+                }
+            ],
             "_TableHolder": {
                 "app.cNpcAITableHolder": {
                     "_Setting": {
@@ -27,16 +37,6 @@
                                 "_TableData": {
                                     "app.user_data.NpcAITableLayerData": {
                                         "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Hunting/Explore/1_AITableLayer/HntExplore_PickupItem_AITableLayer.user"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "app.cNpcAITableHolder.cTableData": {
-                                "_InstanceGuid": "9117ccfe-9f5c-46f1-9b15-01b82ed9f28f",
-                                "_TableData": {
-                                    "app.user_data.NpcAITableLayerData": {
-                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Hunting/Explore/1_AITableLayer/HntExplore_LostedItem_AITableLayer.user"
                                     }
                                 }
                             }

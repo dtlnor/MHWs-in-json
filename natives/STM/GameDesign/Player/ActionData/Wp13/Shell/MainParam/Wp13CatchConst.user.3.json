@@ -61,8 +61,7 @@
                                 "_IsShellHitTerrainCorrect": true,
                                 "STRUCT__HitTerrainLimitDeg__HasValue": false,
                                 "STRUCT__HitTerrainLimitDeg__Value": 0.0,
-                                "_ShellAttackColLifeSec": -1.0,
-                                "_ShowRailgunHit": false
+                                "_ShellAttackColLifeSec": -1.0
                             }
                         }
                     }
@@ -229,7 +228,8 @@
                         "LateUpdateOrder": 600,
                         "_ConstType": "[1]MESH",
                         "_IsWpShell": true,
-                        "_IsDestroySync": false
+                        "_IsDestroySync": false,
+                        "_IsRelicaDestroySync": true
                     }
                 },
                 {
@@ -239,6 +239,7 @@
                         "_IsDependedOn": false,
                         "UpdateOrder": 200,
                         "LateUpdateOrder": 200,
+                        "_ConstraintOption": "[1320527616]KEEP_ROT_AT_START",
                         "_OffsetPos": {
                             "x": 0.0,
                             "y": 0.0,
@@ -254,7 +255,9 @@
                         "_IsIgnoreFur": false,
                         "_JointConstSinkRateToJoint": 0.10000000149011612,
                         "_KeepParentDir": true,
-                        "_IsBlastWhenEmSleed": false
+                        "_IsBlastWhenEmSleed": false,
+                        "_IsBlastWhenPartsBreak": true,
+                        "_IsKillEmShellTimerStop": false
                     }
                 },
                 {

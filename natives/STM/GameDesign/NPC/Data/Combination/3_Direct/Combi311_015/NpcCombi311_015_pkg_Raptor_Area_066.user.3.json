@@ -7,6 +7,7 @@
                         "app.user_data.NpcCombinationPackage.cDirect_Param": {
                             "_Fsm": "GameDesign/NPC/Data/Combination/3_Direct/Combi311_015/Combi311_015_fsm.fsmv2",
                             "_DisableTalk": true,
+                            "_DisableUpstreamSkip": false,
                             "_CenterData": {
                                 "app.cNpcDestinationData": {
                                     "_Pos": {
@@ -20,6 +21,7 @@
                             },
                             "_Range": 2.0,
                             "_DestType": "[0]WORLD",
+                            "_ForceBind": false,
                             "_Situations": [
                                 {
                                     "app.cNpcCombinationSituation": {
@@ -38,7 +40,7 @@
                                                 },
                                                 "_PorterID": {
                                                     "app.PorterDef.ID_Serializable": {
-                                                        "_Value": "[1957765760]PT01_11_004"
+                                                        "_Value": "[-1876108032]PT01_11_001"
                                                     }
                                                 },
                                                 "_VisualChecker": {
@@ -50,8 +52,7 @@
                                                         }
                                                     }
                                                 },
-                                                "_IsTerminateAction": false,
-                                                "_IsCreate": false
+                                                "_IsTerminateAction": false
                                             }
                                         }
                                     }
@@ -71,14 +72,6 @@
                                                         "_DegY": 0
                                                     }
                                                 },
-                                                "_MotionPack_Base": {
-                                                    "": {}
-                                                },
-                                                "_MotionPack_Sub": {
-                                                    "": {}
-                                                },
-                                                "_IsRestartFsm": true,
-                                                "_IsTerminateAction": true,
                                                 "_VisualChecker": {
                                                     "app.cNpcCombinationVisualChecker": {
                                                         "_SkeletonType": "[1]HUMAN_ADL",
@@ -94,6 +87,23 @@
                                                                 "_Value": "[4]INVALID"
                                                             }
                                                         }
+                                                    }
+                                                },
+                                                "_IsTerminateAction": true,
+                                                "_MotionPack_Base": {
+                                                    "": {}
+                                                },
+                                                "_MotionPack_Sub": {
+                                                    "": {}
+                                                },
+                                                "_IsMotionPackFullLoad": false,
+                                                "_Accessories": {
+                                                    "app.cNpcAccessoryIDHolder": {
+                                                        "_AccessoryTypes": [
+                                                            65535,
+                                                            65535,
+                                                            65535
+                                                        ]
                                                     }
                                                 }
                                             }

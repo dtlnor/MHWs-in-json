@@ -1217,7 +1217,7 @@
                         "STRUCT__AimTurnDegOffsetY__HasValue": false,
                         "STRUCT__AimTurnDegOffsetY__Value": 0.0,
                         "_ActionGuideID": -372107104,
-                        "_ScarConstWarpTime": 1.0,
+                        "_ScarConstWarpTime": 0.4000000059604645,
                         "_ConstOffsetPos": {
                             "x": 0.0,
                             "y": 0.0,
@@ -1298,8 +1298,10 @@
                             }
                         ],
                         "_JumpRotateSpeed": 10.0,
-                        "_SlingerMoveSpeed": 20.0,
-                        "_SlingerRotateSpeed": 60.0
+                        "_SlingerMoveSpeed": 25.0,
+                        "_SlingerRotateSpeed": 60.0,
+                        "_SpringConst": 2.0,
+                        "_DampingConst": 2.0
                     }
                 },
                 {
@@ -1791,7 +1793,7 @@
                         "_NetPosInterpolation": false,
                         "_StartTurnInfo": {
                             "app.cHunterActionTurnInfo": {
-                                "_StartTurnType": "[0]NONE",
+                                "_StartTurnType": "[2]LV2",
                                 "_UseCustomTurnParam": false,
                                 "_TurnParam": {
                                     "app.cHunterActionTurnParam": {
@@ -1913,6 +1915,55 @@
                     }
                 },
                 {
+                    "app.Wp02Action.cSlidingDodge": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": []
+                            }
+                        },
+                        "_RootSubActionGuid": "00000000-0000-0000-0000-000000000000",
+                        "_BaseCameraAttachParamID": "914dfac5-8155-492d-be10-4820f1542400",
+                        "_PostEffectSceneGuid": "00000000-0000-0000-0000-000000000000",
+                        "_SkipNextMoveStart": false,
+                        "_MoveLevel": "[-1]NONE",
+                        "_SubMotionInfluence": "[12]REDUCE_3",
+                        "_VarietyMotionInfluenceFixed": {
+                            "app.HunterDef.VARIETY_MOTION_INFLUENCE_Serializable": {
+                                "_Value": "[2]NONE"
+                            }
+                        },
+                        "_WpAttachTypeFixed": {
+                            "app.WeaponAttachType.TYPE_Serializable": {
+                                "_Value": "[1]NORMAL"
+                            }
+                        },
+                        "_NetPosInterpolation": true,
+                        "_StartTurnInfo": {
+                            "app.cHunterActionTurnInfo": {
+                                "_StartTurnType": "[0]NONE",
+                                "_UseCustomTurnParam": false,
+                                "_TurnParam": {
+                                    "app.cHunterActionTurnParam": {
+                                        "_PrimaryTurnTime": 0.4000000059604645,
+                                        "_ComboTurnParam": {
+                                            "app.cHunterActionTurnParam.cComboTurnParam": {
+                                                "_LeverDeg": 10.0,
+                                                "_ForceMaxTurn": false,
+                                                "_TurnTime": 0.4000000059604645,
+                                                "_TurnMaxDeg": 10.0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "_Aim": false,
+                        "STRUCT__AimTurnDegOffsetY__HasValue": false,
+                        "STRUCT__AimTurnDegOffsetY__Value": 0.0,
+                        "_ActionGuideID": -1027749568
+                    }
+                },
+                {
                     "app.Wp02Action.cKijinSlidingSlash": {
                         "_ActionComponentArray": {
                             "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
@@ -1938,7 +1989,7 @@
                         "_NetPosInterpolation": false,
                         "_StartTurnInfo": {
                             "app.cHunterActionTurnInfo": {
-                                "_StartTurnType": "[0]NONE",
+                                "_StartTurnType": "[2]LV2",
                                 "_UseCustomTurnParam": false,
                                 "_TurnParam": {
                                     "app.cHunterActionTurnParam": {
@@ -3570,6 +3621,16 @@
                     "ace.user_data.ActionParam.cInfo": {
                         "_Guid": "8ffc821b-54e5-4d86-8339-4dd87a51d8d4",
                         "_ActionGuid": "4a9e610d-f17f-479b-9c37-ac1e6da210e0",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "15661401-b19b-4553-9162-ba4db899802c",
+                        "_ActionGuid": "fb19b2d4-051f-4426-80ac-0b1f6e4216bf",
                         "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
                         "_OverrideParamNameArray": [],
                         "_OverrideOwnerAction": false,

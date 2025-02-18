@@ -20,7 +20,6 @@
                             "_StopWhenReached": true,
                             "_MoveType": "[6]COMBAT",
                             "_UseAIMoveEnd": false,
-                            "_IsNotRidePorter": false,
                             "_FixedSpeedLv": "[3]RUN",
                             "_IsMoveStopTurn": false,
                             "_StopTurnDir": "[0]PL_AXIS_Z",
@@ -50,8 +49,6 @@
                                     "_DirectionType": "[0]INVALID",
                                     "_EnvLayer": "[0]SHORT",
                                     "_IsEnableJointTarget": false,
-                                    "_ShiftForward": false,
-                                    "_ShiftForwardLength": 5.0,
                                     "_JudgeLength": 1.0
                                 }
                             }
@@ -70,7 +67,9 @@
                 {
                     "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
                         "_Param": {
-                            "app.NpcStreakEvaluators.cExistAttackArea_Param": {}
+                            "app.NpcStreakEvaluators.cDetectAttackArea_Param": {
+                                "_WhereNeedAvoid": false
+                            }
                         },
                         "_Inverse": false
                     }

@@ -6,12 +6,12 @@
                     "_CoolTime": {
                         "app.user_data.NpcDesireParam.cParam.cCoolTime": {
                             "_Complete": {
-                                "s": 10.0,
-                                "r": 5.0
+                                "s": 3.0,
+                                "r": 3.0
                             },
                             "_Cancel": {
-                                "s": 5.0,
-                                "r": 5.0
+                                "s": 3.0,
+                                "r": 3.0
                             },
                             "_Group": {
                                 "s": 0.0,
@@ -24,10 +24,20 @@
                             "app.cNpcDesireConditionHolder": {
                                 "_Param": {
                                     "app.NpcDesireConditions.cNpcHealthLow_Param": {
-                                        "_HealthThreshold": 60
+                                        "_HealthThreshold": 65
                                     }
                                 },
                                 "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckInAttackArea_Param": {
+                                        "_CheckHate": true
+                                    }
+                                },
+                                "_Inverse": true
                             }
                         }
                     ],

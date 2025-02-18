@@ -1,0 +1,80 @@
+[
+    {
+        "app.user_data.NpcAITableLayerData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckPorterRiding_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckNaviAttr_Param": {
+                                "_NaviAttr": "[17]ANY_NPC"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                }
+            ],
+            "_TableHolder": {
+                "app.cNpcAITableHolder": {
+                    "_Setting": {
+                        "app.cNpcAITableHolder.cSetting": {
+                            "_LayerType": "[0]FROM_TOP",
+                            "_DisableInterrupt": false
+                        }
+                    },
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "5b44b098-d989-4578-963a-5b3099a9e544",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIMoveTable/Common/AITableLayer/Cmn_ActionInterupt_Npc_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "b1cbb503-cffa-0750-03b7-eba89b32d21d",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIMoveTable/Common/AITableLayer/Cmn_NGLink_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "8c37f0ed-efbe-091b-034b-6d770238e92c",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIMoveTable/NpcAction/AITableLayer/NpcAct_WallLink_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "6fea75a9-3083-414f-8d97-6a50a300bd02",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIMoveTable/Common/AITableLayer/Cmn_ShortCutLink_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

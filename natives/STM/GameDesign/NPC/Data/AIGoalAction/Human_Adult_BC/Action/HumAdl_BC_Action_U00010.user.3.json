@@ -20,10 +20,10 @@
                         "_BuildType": "[0]SET",
                         "_SubGoalSelectType": {
                             "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[1]SEQUENTIAL"
+                                "_Value": "[0]MOST_DESIRABILITY"
                             }
                         },
-                        "_EndlessLoop": false,
+                        "_EndlessLoop": true,
                         "_ParallelWhenInterrupted": false,
                         "_UseableToReferent": false,
                         "_OverridableToReferent": false,
@@ -40,9 +40,9 @@
                                                             "_Hash": 2408795325
                                                         }
                                                     },
-                                                    "_JustOnce": true,
+                                                    "_JustOnce": false,
                                                     "_Inverse": false,
-                                                    "_IgnoreInterrupt": true,
+                                                    "_IgnoreInterrupt": false,
                                                     "_EvaluatorParam": {
                                                         "app.NpcGoaTreeEvaluators.cHasForceInviteMessage_Param": {}
                                                     }
@@ -53,73 +53,7 @@
                                                     "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 721928911
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cCheckActionSetOnce_Param": {}
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 1761955904
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cCheckFsmLikeAction_Param": {
-                                                            "_ActionSelector": {
-                                                                "app.cNpcFsmLikeActionSelector": {
-                                                                    "_Category": -46611132,
-                                                                    "_ActionID": 1715833216,
-                                                                    "_UseVariation": false,
-                                                                    "_Variation": -663541696
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 1761955904
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cCheckFsmLikeAction_Param": {
-                                                            "_ActionSelector": {
-                                                                "app.cNpcFsmLikeActionSelector": {
-                                                                    "_Category": -46611132,
-                                                                    "_ActionID": 294083872,
-                                                                    "_UseVariation": false,
-                                                                    "_Variation": -663541696
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 721928911
+                                                            "_Hash": 1456833925
                                                         }
                                                     },
                                                     "_JustOnce": false,
@@ -143,433 +77,7 @@
                     "goatree.cGoalPackage_Basic": {
                         "_GoalNameHash": {
                             "app.cStrHashHeavy": {
-                                "_Hash": 1761955904
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": true,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 3497823227
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cNearPointDetection_Param": {
-                                                            "_IsSetDestination": true,
-                                                            "_IntervalTime": 3.0,
-                                                            "_PointSearcher": {
-                                                                "app.cNpcPointSearcher": {
-                                                                    "_TargetType": "[1]POINT_GRAPH",
-                                                                    "_DestList": [],
-                                                                    "_PointSelector": {
-                                                                        "app.cNpcPointSelector": {
-                                                                            "_Category": "[1]NPC_GIMMICK",
-                                                                            "_PointType": 1200432256
-                                                                        }
-                                                                    },
-                                                                    "STRUCT__IsOnOff__HasValue": false,
-                                                                    "STRUCT__IsOnOff__Value": false,
-                                                                    "_Pos": {
-                                                                        "x": -7.949759483337402,
-                                                                        "y": 0.14856481552124023,
-                                                                        "z": 1.4541964530944824,
-                                                                        "pad": 0.0
-                                                                    },
-                                                                    "_Range": -1.0,
-                                                                    "_GroupAIType": "[0]INVALID",
-                                                                    "_FieldUnitType": "[0]INVALID"
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 1102204736
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cNearPointDetection_Param": {
-                                                            "_IsSetDestination": true,
-                                                            "_IntervalTime": 3.0,
-                                                            "_PointSearcher": {
-                                                                "app.cNpcPointSearcher": {
-                                                                    "_TargetType": "[1]POINT_GRAPH",
-                                                                    "_DestList": [],
-                                                                    "_PointSelector": {
-                                                                        "app.cNpcPointSelector": {
-                                                                            "_Category": "[1]NPC_GIMMICK",
-                                                                            "_PointType": -997460672
-                                                                        }
-                                                                    },
-                                                                    "STRUCT__IsOnOff__HasValue": false,
-                                                                    "STRUCT__IsOnOff__Value": false,
-                                                                    "_Pos": {
-                                                                        "x": -7.5694732666015625,
-                                                                        "y": 1.4185419082641602,
-                                                                        "z": -0.6971330642700195,
-                                                                        "pad": 0.0
-                                                                    },
-                                                                    "_Range": -1.0,
-                                                                    "_GroupAIType": "[0]INVALID",
-                                                                    "_FieldUnitType": "[0]INVALID"
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 721928911
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[1]SEQUENTIAL"
-                            }
-                        },
-                        "_EndlessLoop": true,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 1102204736
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cNearPointDetection_Param": {
-                                                            "_IsSetDestination": true,
-                                                            "_IntervalTime": 3.0,
-                                                            "_PointSearcher": {
-                                                                "app.cNpcPointSearcher": {
-                                                                    "_TargetType": "[1]POINT_GRAPH",
-                                                                    "_DestList": [],
-                                                                    "_PointSelector": {
-                                                                        "app.cNpcPointSelector": {
-                                                                            "_Category": "[1]NPC_GIMMICK",
-                                                                            "_PointType": -997460672
-                                                                        }
-                                                                    },
-                                                                    "STRUCT__IsOnOff__HasValue": false,
-                                                                    "STRUCT__IsOnOff__Value": false,
-                                                                    "_Pos": {
-                                                                        "x": -7.949759483337402,
-                                                                        "y": 0.14856481552124023,
-                                                                        "z": 1.4541964530944824,
-                                                                        "pad": 0.0
-                                                                    },
-                                                                    "_Range": -1.0,
-                                                                    "_GroupAIType": "[0]INVALID",
-                                                                    "_FieldUnitType": "[0]INVALID"
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 3497823227
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cNearPointDetection_Param": {
-                                                            "_IsSetDestination": true,
-                                                            "_IntervalTime": 3.0,
-                                                            "_PointSearcher": {
-                                                                "app.cNpcPointSearcher": {
-                                                                    "_TargetType": "[1]POINT_GRAPH",
-                                                                    "_DestList": [],
-                                                                    "_PointSelector": {
-                                                                        "app.cNpcPointSelector": {
-                                                                            "_Category": "[1]NPC_GIMMICK",
-                                                                            "_PointType": 1200432256
-                                                                        }
-                                                                    },
-                                                                    "STRUCT__IsOnOff__HasValue": false,
-                                                                    "STRUCT__IsOnOff__Value": false,
-                                                                    "_Pos": {
-                                                                        "x": -7.5694732666015625,
-                                                                        "y": 1.4185419082641602,
-                                                                        "z": -0.6971330642700195,
-                                                                        "pad": 0.0
-                                                                    },
-                                                                    "_Range": -1.0,
-                                                                    "_GroupAIType": "[0]INVALID",
-                                                                    "_FieldUnitType": "[0]INVALID"
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 1102204736
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cTime_Param": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 1102080738
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "goatree.cEvaluatorParam_Max": {}
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "_InterruptGoalList": []
-                                    }
-                                },
-                                "_TimeMin": 180.0,
-                                "_TimeMax": 180.0
-                            }
-                        },
-                        "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 1102080738
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": [
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.NpcGoaTreeEffects.cUpdateFsmLikeAction_Param": {
-                                            "_TargetDestination": "[0]AI",
-                                            "_ImmediateActionSet": false,
-                                            "_ActionSelector": {
-                                                "app.cNpcFsmLikeActionSelector": {
-                                                    "_Category": -46611132,
-                                                    "_ActionID": 465473664,
-                                                    "_UseVariation": false,
-                                                    "_Variation": -663541696
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 3497823227
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cTime_Param": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 1736421181
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "goatree.cEvaluatorParam_Max": {}
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "_InterruptGoalList": []
-                                    }
-                                },
-                                "_TimeMin": 180.0,
-                                "_TimeMax": 180.0
-                            }
-                        },
-                        "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 1736421181
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": [
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.NpcGoaTreeEffects.cUpdateFsmLikeAction_Param": {
-                                            "_TargetDestination": "[0]AI",
-                                            "_ImmediateActionSet": false,
-                                            "_ActionSelector": {
-                                                "app.cNpcFsmLikeActionSelector": {
-                                                    "_Category": -46611132,
-                                                    "_ActionID": -1403547648,
-                                                    "_UseVariation": false,
-                                                    "_Variation": -663541696
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 402935249
+                                "_Hash": 3305178036
                             }
                         },
                         "_BuildType": "[0]SET",
@@ -599,6 +107,569 @@
                     "goatree.cGoalPackage_Basic": {
                         "_GoalNameHash": {
                             "app.cStrHashHeavy": {
+                                "_Hash": 1456833925
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": true,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1126102358
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.NpcGoaTreeEvaluators.cCheckActionSetOnce_Param": {}
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1126102358
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.NpcGoaTreeEvaluators.cCheckAIActionFreeValue_Param": {
+                                                            "_WorkNo": "[0]WORK_1",
+                                                            "_Value": 1
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1126102358
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.NpcGoaTreeEvaluators.cCheckFsmLikeAction_Param": {
+                                                            "_ActionSelector": {
+                                                                "app.cNpcFsmLikeActionSelector": {
+                                                                    "_Category": -46611132,
+                                                                    "_ActionID": 190517488,
+                                                                    "_UseVariation": false,
+                                                                    "_Variation": -663541696
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1193536334
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 3935485243
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.NpcGoaTreeEvaluators.cU00010FacilityCondition_Param": {}
+                                                    }
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1126102358
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[1]SEQUENTIAL"
+                            }
+                        },
+                        "_EndlessLoop": true,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2946741873
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1819621427
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1193536334
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[1]SEQUENTIAL"
+                            }
+                        },
+                        "_EndlessLoop": true,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cGoalParam_NoEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1819621427
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2946741873
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 2946741873
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1184675130
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1184675130
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cFsmLikeActionElapsedTime_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_TimeMin": 180.0,
+                                "_TimeMax": 180.0
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cSetAIDestination_Point_Param": {
+                                            "_PointSearcher": {
+                                                "app.cNpcPointSearcher": {
+                                                    "_TargetType": "[1]POINT_GRAPH",
+                                                    "_DestList": [],
+                                                    "_PointSelector": {
+                                                        "app.cNpcPointSelector": {
+                                                            "_Category": "[1]NPC_GIMMICK",
+                                                            "_PointType": -997460672
+                                                        }
+                                                    },
+                                                    "STRUCT__IsOnOff__HasValue": false,
+                                                    "STRUCT__IsOnOff__Value": false,
+                                                    "_Pos": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0,
+                                                        "pad": 0.0
+                                                    },
+                                                    "_Range": -1.0,
+                                                    "_GroupAIType": "[0]INVALID",
+                                                    "_FieldUnitType": "[0]INVALID"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cUpdateFsmLikeAction_Param": {
+                                            "_TargetDestination": "[0]AI",
+                                            "_ImmediateActionSet": false,
+                                            "_ActionSelector": {
+                                                "app.cNpcFsmLikeActionSelector": {
+                                                    "_Category": -46611132,
+                                                    "_ActionID": 465473664,
+                                                    "_UseVariation": false,
+                                                    "_Variation": -663541696
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1819621427
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 3571852145
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 3571852145
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cFsmLikeActionElapsedTime_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_TimeMin": 180.0,
+                                "_TimeMax": 180.0
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cSetAIDestination_Point_Param": {
+                                            "_PointSearcher": {
+                                                "app.cNpcPointSearcher": {
+                                                    "_TargetType": "[1]POINT_GRAPH",
+                                                    "_DestList": [],
+                                                    "_PointSelector": {
+                                                        "app.cNpcPointSelector": {
+                                                            "_Category": "[1]NPC_GIMMICK",
+                                                            "_PointType": 1200432256
+                                                        }
+                                                    },
+                                                    "STRUCT__IsOnOff__HasValue": false,
+                                                    "STRUCT__IsOnOff__Value": false,
+                                                    "_Pos": {
+                                                        "x": 0.0,
+                                                        "y": 0.0,
+                                                        "z": 0.0,
+                                                        "pad": 0.0
+                                                    },
+                                                    "_Range": -1.0,
+                                                    "_GroupAIType": "[0]INVALID",
+                                                    "_FieldUnitType": "[0]INVALID"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cUpdateFsmLikeAction_Param": {
+                                            "_TargetDestination": "[0]AI",
+                                            "_ImmediateActionSet": false,
+                                            "_ActionSelector": {
+                                                "app.cNpcFsmLikeActionSelector": {
+                                                    "_Category": -46611132,
+                                                    "_ActionID": -1403547648,
+                                                    "_UseVariation": false,
+                                                    "_Variation": -663541696
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 3935485243
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2819453848
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.NpcGoaTreeEvaluators.cU00010FacilityConditionEnd_Param": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cContinueFsmLikeAction_Param": {}
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
                                 "_Hash": 2408795325
                             }
                         },
@@ -622,14 +693,14 @@
                                                     "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 1920273786
+                                                            "_Hash": 2819453848
                                                         }
                                                     },
                                                     "_JustOnce": false,
-                                                    "_Inverse": true,
+                                                    "_Inverse": false,
                                                     "_IgnoreInterrupt": false,
                                                     "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cHasForceInviteMessage_Param": {}
+                                                        "app.NpcGoaTreeEvaluators.cCheckCurrentDialogueChanged_Param": {}
                                                     }
                                                 }
                                             }
@@ -665,79 +736,6 @@
                     "goatree.cGoalPackage_Basic": {
                         "_GoalNameHash": {
                             "app.cStrHashHeavy": {
-                                "_Hash": 1920273786
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "goatree.cGoalParam_SubGoalEnd": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "02262b8b-baed-461f-aa14-7fbbfe717690",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
-                                                            "_Hash": 3497823227
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cNearPointDetection_Param": {
-                                                            "_IsSetDestination": true,
-                                                            "_IntervalTime": 3.0,
-                                                            "_PointSearcher": {
-                                                                "app.cNpcPointSearcher": {
-                                                                    "_TargetType": "[1]POINT_GRAPH",
-                                                                    "_DestList": [],
-                                                                    "_PointSelector": {
-                                                                        "app.cNpcPointSelector": {
-                                                                            "_Category": "[1]NPC_GIMMICK",
-                                                                            "_PointType": 1200432256
-                                                                        }
-                                                                    },
-                                                                    "STRUCT__IsOnOff__HasValue": false,
-                                                                    "STRUCT__IsOnOff__Value": false,
-                                                                    "_Pos": {
-                                                                        "x": -7.5694732666015625,
-                                                                        "y": 1.4185419082641602,
-                                                                        "z": -0.6971330642700195,
-                                                                        "pad": 0.0
-                                                                    },
-                                                                    "_Range": -1.0,
-                                                                    "_GroupAIType": "[0]INVALID",
-                                                                    "_FieldUnitType": "[0]INVALID"
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        ],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
                                 "_Hash": 2819453848
                             }
                         },
@@ -752,7 +750,7 @@
                         "_UseableToReferent": false,
                         "_OverridableToReferent": false,
                         "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cGoalParam_NextFrameEnd": {
+                            "goatree.cGoalParam_ImmediateEnd": {
                                 "_SubGoalWrapper": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],

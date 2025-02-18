@@ -7,6 +7,7 @@
                         "app.user_data.NpcCombinationPackage.cDirect_Param": {
                             "_Fsm": "GameDesign/NPC/Data/Combination/3_Direct/Combi311_007/Combi311_007_fsm.fsmv2",
                             "_DisableTalk": true,
+                            "_DisableUpstreamSkip": false,
                             "_CenterData": {
                                 "app.cNpcDestinationData": {
                                     "_Pos": {
@@ -20,6 +21,7 @@
                             },
                             "_Range": 2.5,
                             "_DestType": "[1]PACKAGE_OFFSET",
+                            "_ForceBind": false,
                             "_Situations": [
                                 {
                                     "app.cNpcCombinationSituation": {
@@ -63,14 +65,6 @@
                                                         "_DegY": -90
                                                     }
                                                 },
-                                                "_MotionPack_Base": {
-                                                    "": {}
-                                                },
-                                                "_MotionPack_Sub": {
-                                                    "": {}
-                                                },
-                                                "_IsRestartFsm": true,
-                                                "_IsTerminateAction": false,
                                                 "_VisualChecker": {
                                                     "app.cNpcCombinationVisualChecker": {
                                                         "_SkeletonType": "[1]HUMAN_ADL",
@@ -83,9 +77,68 @@
                                                         },
                                                         "_ID": {
                                                             "app.NpcDef.ID_Serializable": {
-                                                                "_Value": "[4]INVALID"
+                                                                "_Value": "[32]NPC112_11_033"
                                                             }
                                                         }
+                                                    }
+                                                },
+                                                "_IsTerminateAction": false,
+                                                "_MotionPack_Base": {
+                                                    "": {}
+                                                },
+                                                "_MotionPack_Sub": {
+                                                    "": {}
+                                                },
+                                                "_IsMotionPackFullLoad": false,
+                                                "_Accessories": {
+                                                    "app.cNpcAccessoryIDHolder": {
+                                                        "_AccessoryTypes": [
+                                                            65535,
+                                                            65535,
+                                                            65535
+                                                        ]
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                {
+                                    "app.cNpcCombinationSituation": {
+                                        "_Character": {
+                                            "app.cNpcCombinationSituation.cGimmick": {
+                                                "_DestData": {
+                                                    "app.cNpcDestinationData": {
+                                                        "_Pos": {
+                                                            "x": 0.0,
+                                                            "y": 0.0,
+                                                            "z": 0.0,
+                                                            "pad": 0.0
+                                                        },
+                                                        "_DegY": 0
+                                                    }
+                                                },
+                                                "_GmID": {
+                                                    "app.GimmickDef.ID_Serializable": {
+                                                        "_Value": "[0]INVALID"
+                                                    }
+                                                },
+                                                "_GmTargetID": {
+                                                    "app.NpcDef.GM_TARGET_ID_Serializable": {
+                                                        "_Value": "[19805]GM001_002"
+                                                    }
+                                                },
+                                                "_IsCreate": false,
+                                                "_IsSetInteractDest": false,
+                                                "_InteractDestData": {
+                                                    "app.cNpcDestinationData": {
+                                                        "_Pos": {
+                                                            "x": 0.0,
+                                                            "y": 0.0,
+                                                            "z": 0.0,
+                                                            "pad": 0.0
+                                                        },
+                                                        "_DegY": 0
                                                     }
                                                 }
                                             }

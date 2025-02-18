@@ -20,7 +20,7 @@
                         "_BuildType": "[0]SET",
                         "_SubGoalSelectType": {
                             "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
+                                "_Value": "[1]SEQUENTIAL"
                             }
                         },
                         "_EndlessLoop": false,
@@ -32,6 +32,22 @@
                                 "_SubGoalWrapper": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "849f0188-201b-0856-268a-1092013c35b4",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2479156817
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            },
                                             {
                                                 "goatree.cGoalParam_Composite.cSubGoalSetting": {
                                                     "_AssetGuid": "849f0188-201b-0856-268a-1092013c35b4",
@@ -256,29 +272,7 @@
                                     "_Param": {
                                         "app.NpcGoaTreeEffects.cMoveSpeedCalculate_Param": {
                                             "_SpeedCalcParam": {
-                                                "app.mcNpcMoveSpeedCalculator.cCalcRelayPos_Param": {
-                                                    "_MoveTypeDests": [
-                                                        {
-                                                            "app.mcNpcMoveSpeedCalculator.cCalcRelayPos_Param.cMoveTypeDest": {
-                                                                "_Dest": 1.0,
-                                                                "_SpeedLv": "[1]STOP"
-                                                            }
-                                                        },
-                                                        {
-                                                            "app.mcNpcMoveSpeedCalculator.cCalcRelayPos_Param.cMoveTypeDest": {
-                                                                "_Dest": 8.0,
-                                                                "_SpeedLv": "[2]WALK"
-                                                            }
-                                                        },
-                                                        {
-                                                            "app.mcNpcMoveSpeedCalculator.cCalcRelayPos_Param.cMoveTypeDest": {
-                                                                "_Dest": 9999.0,
-                                                                "_SpeedLv": "[3]RUN"
-                                                            }
-                                                        }
-                                                    ],
-                                                    "_Threshold": 0.5
-                                                }
+                                                "app.mcNpcMoveSpeedCalculator.cCalcFormationField_Param": {}
                                             },
                                             "STRUCT__OverwriteMoveBlendRate__HasValue": false,
                                             "STRUCT__OverwriteMoveBlendRate__Value": 0.0
@@ -731,6 +725,54 @@
                             }
                         },
                         "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 2479156817
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cTime_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_TimeMin": 2.0,
+                                "_TimeMax": 3.0
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cUpdateFsmLikeActionBasic_Param": {
+                                            "_TargetDestination": "[5]INVALID",
+                                            "_ImmediateActionSet": false,
+                                            "_BasicAction": {
+                                                "app.NpcDef.BASIC_FSM_LIKE_ACTION_Serializable": {
+                                                    "_Value": "[-343095680]IDLE"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        ]
                     }
                 }
             ]

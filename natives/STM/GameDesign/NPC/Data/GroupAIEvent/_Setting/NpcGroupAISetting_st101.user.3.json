@@ -3,17 +3,17 @@
         "app.user_data.NpcGroupAISetting": {
             "_RelatedSituationDesireDefinition": {
                 "app.user_data.RelatedSituationDesireDefinition2": {
-                    "userdataPath": "GameDesign/NPC/Data/GroupAIEvent/st101/GroupAI_st101_RelatedSituationDesireDefinition.user"
+                    "userdataPath": "GameDesign/NPC/Data/GroupAIEvent/st101/_Desire/GroupAI_st101_RelatedSituationDesireDefinition.user"
                 }
             },
             "_DesireGroupPackages": {
                 "app.user_data.NpcDesireGroupPackages": {
-                    "userdataPath": "GameDesign/NPC/Data/GroupAIEvent/st101/GroupAI_st101_DesireGroupPackages.user"
+                    "userdataPath": "GameDesign/NPC/Data/GroupAIEvent/st101/_Desire/GroupAI_st101_DesireGroupPackages.user"
                 }
             },
             "_EventData": {
                 "app.user_data.NpcGroupAIEventData": {
-                    "userdataPath": "GameDesign/NPC/Data/GroupAIEvent/st101/GroupAI_st101_EventData.user"
+                    "userdataPath": "GameDesign/NPC/Data/GroupAIEvent/st101/_Desire/GroupAI_st101_EventData.user"
                 }
             },
             "_OperationPackageList": {
@@ -26,11 +26,25 @@
                     "_Value": "[346]STORY_000346"
                 }
             },
-            "_DisableGreetingToPlayerSection": {
-                "app.StoryPackageFlag.TYPE_Serializable": {
-                    "_Value": "[388]STORY_000388"
+            "_GestureSealList": [
+                {
+                    "app.cNpcGestureSealParam": {
+                        "_Tag": {
+                            "app.NpcDef.GESTURE_TAG_Serializable": {
+                                "_Value": "[-2063098112]GREETING"
+                            }
+                        },
+                        "_Section": {
+                            "app.StoryPackageFlag.TYPE_Serializable": {
+                                "_Value": "[388]STORY_000388"
+                            }
+                        },
+                        "_InverseSection": false,
+                        "_ToPl": true,
+                        "_ToNpc": false
+                    }
                 }
-            }
+            ]
         }
     }
 ]

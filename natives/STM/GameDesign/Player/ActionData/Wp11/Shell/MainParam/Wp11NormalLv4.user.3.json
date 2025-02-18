@@ -61,8 +61,7 @@
                                 "_IsShellHitTerrainCorrect": true,
                                 "STRUCT__HitTerrainLimitDeg__HasValue": false,
                                 "STRUCT__HitTerrainLimitDeg__Value": 0.0,
-                                "_ShellAttackColLifeSec": -1.0,
-                                "_ShowRailgunHit": false
+                                "_ShellAttackColLifeSec": -1.0
                             }
                         }
                     }
@@ -97,10 +96,14 @@
                         "_TargetDirLimitDeg_Y": 0,
                         "_IsUseDistanceTargetDirLimitDegX": false,
                         "_IsUseDistanceParentRoot": false,
+                        "_IsUseXZDist": false,
+                        "STRUCT__TargetDirLimitOwnerLocal_X__HasValue": false,
+                        "STRUCT__TargetDirLimitOwnerLocal_X__Value": 0,
                         "_TargetDirMaxDistance": 0.0,
                         "_TargetDirMinDistance": 0.0,
                         "_IsUseNoTargetAdjustYaw": false,
                         "_NoTargetAdjustYaw_Deg": 90.0,
+                        "_IsUseStraightLineDistance": false,
                         "_Range_Distance": 25.0,
                         "_Acceleration": {
                             "x": 0.0,
@@ -124,7 +127,7 @@
                         "_ArrowLv": "[4]LV4",
                         "_Critical_Begin_Dist": 3.0,
                         "_Critical_End_Dist": 20.0,
-                        "_Critical_AttackRate": 1.0,
+                        "_Critical_AttackRate": 1.100000023841858,
                         "_Before_Critical_AttackRate": 0.800000011920929,
                         "_After_Critical_AttackRate": 0.20000000298023224,
                         "_SpecialShot_HitSlowSpeedRate": 0.15000000596046448,
@@ -188,11 +191,24 @@
                         "_MultiLockonScatterDistRate": 0.10000000149011612,
                         "_MultiLockonTurnAccStartDistRate": {
                             "app.AppAnimationCurve": {
-                                "v0": [],
-                                "v1": 1092616192,
-                                "v2": 3240099840,
+                                "v0": [
+                                    {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "w": 0.0
+                                    },
+                                    {
+                                        "x": 0.0,
+                                        "y": 4294967296.0,
+                                        "z": 0.0,
+                                        "w": 0.0
+                                    }
+                                ],
+                                "v1": 0,
+                                "v2": 1065353216,
                                 "v3": 0,
-                                "v4": 1120403456,
+                                "v4": 1106247680,
                                 "v5": 0,
                                 "v6": 2
                             }
@@ -204,6 +220,57 @@
                             0.0,
                             0.0
                         ]
+                    }
+                },
+                {
+                    "app.cShellminiParamCallCustomChildShell": {
+                        "MiniParamName": "CallCustomChildShell",
+                        "MiniParamtype": "[4]CALL_CHILD",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 0,
+                        "LateUpdateOrder": 0,
+                        "_CreateNum": 1,
+                        "_Offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IsInheritChildScaleValue": false,
+                        "_IsRotWorldY": false,
+                        "STRUCT__StartRot__HasValue": false,
+                        "STRUCT__StartRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "STRUCT__OffsetRot__HasValue": false,
+                        "STRUCT__OffsetRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "_IsSameTimeCall": false,
+                        "_IsCreateShellOwnerPos": false,
+                        "_IsChainShell": false,
+                        "_ChainID": 0,
+                        "_LinkParentChainID": 0,
+                        "_ChildOverrideParam": {
+                            "app.cShellminiParamCallChildShell.cChildOverrideSetting": {
+                                "_OffsetArray": [],
+                                "_StartRotArray": [],
+                                "_OffsetRotArray": []
+                            }
+                        },
+                        "_ShellList": {
+                            "ace.cChildShellGenerateParam": {
+                                "_IsPassingHitID": false,
+                                "_ShellNameHash": 901900743
+                            }
+                        },
+                        "_ShellIndex": "[1]INDEX_2"
                     }
                 }
             ],

@@ -1,7 +1,7 @@
 [
     {
         "app.user_data.EmParamBasic": {
-            "_ModelSize": "[1]XS",
+            "_ModelSize": "[0]XXS",
             "_BeaconOffset": {
                 "x": 0.0,
                 "y": 2.0,
@@ -14,7 +14,15 @@
                 "z": 0.0,
                 "pad": 0.0
             },
+            "_OverrideStealthIconOffset": [],
             "_AdditionalStealthCheckPointList": [],
+            "_IsUseFlyStealhAttackCheckOfs": false,
+            "_FlyStealhAttackCheckOfs": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0,
+                "pad": 0.0
+            },
             "_SlimRate": 1.0,
             "_CenterOffset": {
                 "x": 0.0,
@@ -79,10 +87,20 @@
                         },
                         {
                             "app.user_data.EmParamBasic.cEnemyDetectorParamGuid.cData": {
-                                "DetectorType": "app.cEnemyNoticeCautionDetectorAttribute",
+                                "DetectorType": "app.cEnemyNoticeCombatDetectorAttribute",
                                 "ParamGuid": {
                                     "app.cEmParamGuid_Detector": {
-                                        "Value": "148a142b-750c-4e86-8b9f-5624440abd1b"
+                                        "Value": "00000000-0000-0000-0000-000000000000"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.EmParamBasic.cEnemyDetectorParamGuid.cData": {
+                                "DetectorType": "app.cEnemyNoticeAngryDetectorAttribute",
+                                "ParamGuid": {
+                                    "app.cEmParamGuid_Detector": {
+                                        "Value": "00000000-0000-0000-0000-000000000000"
                                     }
                                 }
                             }
@@ -97,6 +115,7 @@
             "_ClimbActionHeightStepM": 3.0,
             "_ClimbActionHeightStepS": 1.0,
             "_IsEnableRouteAvoidHighWall": false,
+            "_IsEnableAvoidFailedSetAction": false,
             "_TrapCollisionParam": {
                 "app.cEmParamGuid_TrapCollision": {
                     "Value": "00000000-0000-0000-0000-000000000000"
@@ -145,7 +164,8 @@
                     "CancelEatTrapMeatHeight": 0.800000011920929
                 }
             },
-            "IkSwordGroundChangeDetectRange": 0.0
+            "IkSwordGroundChangeDetectRange": 0.0,
+            "_NextPortalDirectionRange": 5.0
         }
     }
 ]

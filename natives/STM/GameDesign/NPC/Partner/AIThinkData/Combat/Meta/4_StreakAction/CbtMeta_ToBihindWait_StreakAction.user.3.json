@@ -1,7 +1,7 @@
 [
     {
         "app.user_data.NpcStreakActionData": {
-            "_TerminateType": "[3]ALL_END",
+            "_TerminateType": "[1]LSTICK_EXECUTED",
             "_ActionEffectParam": {
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
                     "_Param": {
@@ -14,11 +14,10 @@
                     "_Param": {
                         "app.NpcStreakEffects.cSetScoringPoint_LStickParam": {
                             "_Reach": 3.0,
-                            "_ContinueMove": true,
-                            "_StopWhenReached": true,
+                            "_ContinueMove": false,
+                            "_StopWhenReached": false,
                             "_MoveType": "[6]COMBAT",
                             "_UseAIMoveEnd": false,
-                            "_IsNotRidePorter": false,
                             "_FixedSpeedLv": "[4]DASH",
                             "_IsMoveStopTurn": false,
                             "_StopTurnDir": "[0]PL_AXIS_Z",
@@ -29,7 +28,7 @@
                             "_IsOverwritePartsType": false,
                             "_OverwritePartsType": {
                                 "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
-                                    "_Value": "[-156120704]NEAR_PARTS"
+                                    "_Value": "[1075205376]HEAD"
                                 }
                             },
                             "_TargetParam": {
@@ -40,16 +39,12 @@
                                         }
                                     },
                                     "_RelayingData": {
-                                        "app.user_data.NpcPQSRelayingData": {
-                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/Meta_ToBehind_PQSRelayingData.user"
-                                        }
+                                        "": {}
                                     },
-                                    "_RouteType": "[1]RELAYING_ROUTE",
+                                    "_RouteType": "[0]HIGHSCORE_POINT",
                                     "_DirectionType": "[0]INVALID",
-                                    "_EnvLayer": "[0]SHORT",
+                                    "_EnvLayer": "[1]LARGE",
                                     "_IsEnableJointTarget": false,
-                                    "_ShiftForward": false,
-                                    "_ShiftForwardLength": 5.0,
                                     "_JudgeLength": 2.0
                                 }
                             }

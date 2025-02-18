@@ -30,6 +30,8 @@
                                 "RotationOffsetCtrl": "[0]LOCAL"
                             }
                         },
+                        "_AllowDisableMotionByAnimationLOD": false,
+                        "_DeadStopOnInvisible": false,
                         "_States": [
                             {
                                 "app.accessory.State": {
@@ -161,6 +163,80 @@
                             }
                         ]
                     }
+                },
+                {
+                    "app.accessory.Data": {
+                        "_Prefab": {
+                            "via.Prefab": {
+                                "v0": 1,
+                                "v1": "GameDesign/Accessory/_Prefab/Player/Acc000_020.pfb"
+                            }
+                        },
+                        "_Offset": {
+                            "app.accessory.Def.cOffset": {
+                                "UseOffset": false,
+                                "OffsetOrder": "[1]ROT_POS",
+                                "STRUCT_Coord_Position": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "STRUCT_Coord_Rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "PositionOffsetCtrl": "[0]LOCAL",
+                                "RotationOffsetCtrl": "[0]LOCAL"
+                            }
+                        },
+                        "_AllowDisableMotionByAnimationLOD": false,
+                        "_DeadStopOnInvisible": false,
+                        "_States": [
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "4e9c3e88-71c9-416f-80a8-c4a0147f596a",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[2]EMPTY"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActPartsVisibility": {
+                                                "_Visibilities": [
+                                                    "[0]VISIBLE"
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": []
+                                }
+                            },
+                            {
+                                "app.accessory.State": {
+                                    "_Guid": "588a1995-2653-4339-a3cc-baa50754ebaa",
+                                    "_Tag": {
+                                        "app.accessory.Def.TAG_Serializable": {
+                                            "_Value": "[2]EMPTY"
+                                        }
+                                    },
+                                    "_Actions": [
+                                        {
+                                            "app.accessory.ActPartsVisibility": {
+                                                "_Visibilities": [
+                                                    "[1]HIDDEN"
+                                                ]
+                                            }
+                                        }
+                                    ],
+                                    "_StandAloneActions": []
+                                }
+                            }
+                        ]
+                    }
                 }
             ],
             "_JointConsts": [
@@ -183,6 +259,33 @@
                                 "_IgnoreJointRotation": false,
                                 "_OffsetRotationDegree": {
                                     "x": -4.617000102996826,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.accessory.JointConst": {
+                        "_Guid": "76dfaaf4-0c06-46ce-a9a7-759800e56626",
+                        "_Data": {
+                            "app.cJointConstData": {
+                                "_JointName": {
+                                    "ace.cJointHash": {
+                                        "_Hash": 2879905340
+                                    }
+                                },
+                                "_OffsetPosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "_IgnoreJointRotation": false,
+                                "_OffsetRotationDegree": {
+                                    "x": 0.0,
                                     "y": 0.0,
                                     "z": 0.0,
                                     "pad": 0.0

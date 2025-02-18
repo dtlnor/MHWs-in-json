@@ -5,7 +5,27 @@
                 {
                     "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
                         "_Param": {
-                            "app.NpcAITableConditions.cCheckSomeEnemiesInSameArea_Param": {}
+                            "app.NpcAITableConditions.cCheckSomeEnemiesInSameArea_Param": {
+                                "_IsCheckRange": true,
+                                "_Range": {
+                                    "s": 0.0,
+                                    "r": 30.0
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckRangeInCombatEnemy_Param": {
+                                "_Range": {
+                                    "s": 0.0,
+                                    "r": 80.0
+                                }
+                            }
                         },
                         "_Inverse": false,
                         "_IsContinue": true
@@ -27,16 +47,6 @@
                                 "_TableData": {
                                     "app.user_data.NpcAITableActionData": {
                                         "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Hunting/Caution/2_AITableAction/HntCaution_OtherTargetCombat_AITableAction.user"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "app.cNpcAITableHolder.cTableData": {
-                                "_InstanceGuid": "9254d9bb-177c-4cd6-8e4e-223fc39cd3ad",
-                                "_TableData": {
-                                    "app.user_data.NpcAITableActionData": {
-                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Hunting/Caution/2_AITableAction/HntCaution_OtherTargetLife_AITableAction.user"
                                     }
                                 }
                             }

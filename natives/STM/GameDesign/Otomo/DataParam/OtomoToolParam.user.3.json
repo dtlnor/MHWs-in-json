@@ -2,6 +2,7 @@
     {
         "app.user_data.OtomoToolParam": {
             "_GlobalCoolTime": 90,
+            "_CheckEnemyAreaMoveTime": 10.0,
             "_InsectDelivery": {
                 "app.user_data.OtomoToolParam_InsectHeal_Delivery": {
                     "_IsUseOnlyUniqueCoolTime": true,
@@ -17,7 +18,8 @@
                     "_HealValue": 50,
                     "_StockCount": 1,
                     "_HealValue_PowerUp": 80,
-                    "_StockCount_PowerUp": 2
+                    "_StockCount_PowerUp": 2,
+                    "_CoolTime2nd": 420
                 }
             },
             "_BadConditionsHealDelivery": {
@@ -32,8 +34,11 @@
                     "_IsResetGlobalCoolTime": true,
                     "_CheckAreaMoveTime": 30.0,
                     "_IsNoUseTool_EnemyAreaMove": false,
+                    "_HealValue": 15,
                     "_StockCount": 1,
-                    "_StockCount_PowerUp": 2
+                    "_HealValue_PowerUp": 30,
+                    "_StockCount_PowerUp": 2,
+                    "_CoolTime2nd": 600
                 }
             },
             "_HealBugWarmSet": {
@@ -41,7 +46,7 @@
                     "_IsUseOnlyUniqueCoolTime": false,
                     "_CoolTime": 420,
                     "_CoolTime_PowerUp": 420,
-                    "_CoolTimeFromQuestStart": 240,
+                    "_CoolTimeFromQuestStart": 180,
                     "_IsReduceCoolTimeInQuest": true,
                     "_UseStoryCoolTime": false,
                     "_StoryCoolTime": 30,
@@ -149,7 +154,7 @@
             "_SetFlashTrap": {
                 "app.user_data.OtomoToolParam_SetFlashTrap": {
                     "_IsUseOnlyUniqueCoolTime": false,
-                    "_CoolTime": 390,
+                    "_CoolTime": 360,
                     "_CoolTime_PowerUp": 270,
                     "_CoolTimeFromQuestStart": 0,
                     "_IsReduceCoolTimeInQuest": true,
@@ -163,7 +168,7 @@
             "_Horn_AtkUp": {
                 "app.user_data.OtomoToolParam_Horn_AtkUp": {
                     "_IsUseOnlyUniqueCoolTime": true,
-                    "_CoolTime": 480,
+                    "_CoolTime": 600,
                     "_CoolTime_PowerUp": 480,
                     "_CoolTimeFromQuestStart": 0,
                     "_IsReduceCoolTimeInQuest": true,
@@ -195,9 +200,9 @@
             "_StealBoomerang": {
                 "app.user_data.OtomoToolParam_StealBoomerang": {
                     "_IsUseOnlyUniqueCoolTime": true,
-                    "_CoolTime": 150,
-                    "_CoolTime_PowerUp": 120,
-                    "_CoolTimeFromQuestStart": 120,
+                    "_CoolTime": 210,
+                    "_CoolTime_PowerUp": 150,
+                    "_CoolTimeFromQuestStart": 150,
                     "_IsReduceCoolTimeInQuest": true,
                     "_UseStoryCoolTime": false,
                     "_StoryCoolTime": 30,
@@ -206,17 +211,17 @@
                     "_IsNoUseTool_EnemyAreaMove": false,
                     "_StealProbability_Lv1": {
                         "app.user_data.OtomoToolParam_StealBoomerang.cStealProbability": {
-                            "_Probability_1st": 30,
-                            "_Probability_2nd": 20,
+                            "_Probability_1st": 50,
+                            "_Probability_2nd": 30,
                             "_Probability_3rd": 0,
-                            "_MultiHitCount": 2
+                            "_MultiHitCount": 3
                         }
                     },
                     "_StealProbability_Lv2": {
                         "app.user_data.OtomoToolParam_StealBoomerang.cStealProbability": {
-                            "_Probability_1st": 50,
-                            "_Probability_2nd": 35,
-                            "_Probability_3rd": 10,
+                            "_Probability_1st": 90,
+                            "_Probability_2nd": 60,
+                            "_Probability_3rd": 30,
                             "_MultiHitCount": 4
                         }
                     }
@@ -227,18 +232,23 @@
                     "_IsUseOnlyUniqueCoolTime": false,
                     "_CoolTime": 3600,
                     "_CoolTime_PowerUp": 3600,
-                    "_CoolTimeFromQuestStart": 240,
+                    "_CoolTimeFromQuestStart": 0,
                     "_IsReduceCoolTimeInQuest": false,
                     "_UseStoryCoolTime": false,
                     "_StoryCoolTime": 30,
                     "_IsResetGlobalCoolTime": true,
-                    "_CheckAreaMoveTime": 30.0,
-                    "_IsNoUseTool_EnemyAreaMove": false,
+                    "_CheckAreaMoveTime": 20.0,
+                    "_IsNoUseTool_EnemyAreaMove": true,
                     "_ActiveTime": 60,
                     "_ReduceTime_Damage": 5,
                     "_UseEndActiveTime": 20,
                     "_ActiveTime_PowerUp": 90,
-                    "_SuspendActiveTime": 20
+                    "_SuspendActiveTime": 0,
+                    "_SuspendCoolDownTime": 30,
+                    "_StrongAttackIntervalTime": 10.0,
+                    "_StrongAttackEnableShotCount": 5,
+                    "_StrongAttackProbability": 100,
+                    "_ShotIntervalTime": 0.5
                 }
             }
         }

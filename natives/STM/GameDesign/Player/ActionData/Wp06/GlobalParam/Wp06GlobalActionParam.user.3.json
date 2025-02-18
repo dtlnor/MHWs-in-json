@@ -30,8 +30,8 @@
                 "app.cGravityJumpParam": {
                     "_JumpVelocity": {
                         "x": 0.0,
-                        "y": 0.0,
-                        "z": 1.0,
+                        "y": 4.0,
+                        "z": 2.200000047683716,
                         "pad": 0.0
                     },
                     "_Gravity": 9.800000190734863,
@@ -126,10 +126,12 @@
                 "pad": 0.0
             },
             "_GuardLaserType": "[0]F_LR",
-            "_LaserGuard_OutRangeKeepTime": 1.0,
+            "_LaserGuard_OutRangeKeepTime": 0.20000000298023224,
             "_LaserGuard_KnockBackSpeed": 0.5,
             "_GuardDamageReduceRate_LaserSlip": 0.10000000149011612,
-            "_GuardDamageReduceRate_LaserSlipStamina": 0.20000000298023224,
+            "LaserGuard_GuardStaminaReduceInterval": 0.5,
+            "_LaserGuard_SlipStaminaReduce": 5.0,
+            "_LaserGuard_KireajiReduce": 3,
             "_GuardKireajiReduce_S": 1,
             "_GuardKireajiReduce_M": 2,
             "_GuardKireajiReduce_L": 3,
@@ -314,6 +316,7 @@
             "_OffAttach_Sub_InterpolateTime": 1.0,
             "_OffShakeChain_InterpolateTime": 0.5,
             "_IgnoreParryPowerLimit": false,
+            "_ParryHyperArmorDamageRate": 0.30000001192092896,
             "STRUCT__CameraLStickRotRate_Base": 0.0,
             "STRUCT__CameraLStickRotRate_Vertical": 0.0,
             "_MaxStepCount": 3,
@@ -414,15 +417,15 @@
                     "_FadeOutSpeed": 1.0
                 }
             },
-            "_RushLevelCount": 2.5,
+            "_RushLevelCount": 1.399999976158142,
             "_SlidingRushLevelCount": 1.0,
             "_RushSpeedMotRate": [
-                1.0,
+                1.100000023841858,
                 1.149999976158142
             ],
             "_RushSpeedRate": [
-                0.8999999761581421,
-                1.2999999523162842
+                1.100000023841858,
+                1.25
             ],
             "_SlidingRushSpeedMotRate": [
                 1.0,
@@ -460,6 +463,8 @@
                     "_GravityRate": 1.0
                 }
             },
+            "_GuardTurnTime": 0.5,
+            "_GuardTurnCancelAngle": 20.0,
             "_PowerGuardDegree": 360.0,
             "_PowerGuardPower_S": 39.0,
             "_PowerGuardPower_M": 49.0,
@@ -468,10 +473,13 @@
             "_PowerGuardDamageReduceRate_L": 0.30000001192092896,
             "_PowerGuard_MaxReactCount": 3,
             "_PowerGuard_ReactCountBuffRate": [
+                1.0,
                 1.2999999523162842,
-                1.600000023841858,
-                2.0
+                1.7000000476837158
             ],
+            "_PowerGuard_VersusGuardPower_S": 0,
+            "_PowerGuard_VersusGuardPower_M": 1,
+            "_PowerGuard_VersusGuardPower_L": 2,
             "_MaxGuardToDir4GuardTime": 0.4000000059604645,
             "_GuardDashStepS": 2.2300000190734863,
             "_GuardDashStepM": 2.5299999713897705,
@@ -501,17 +509,23 @@
             "_RushToGuardInertialKeepTime": 0.0,
             "_SlidingRushToRushInertialFriction": 200.0,
             "_SlidingRushToRushInertialKeepTime": 0.0,
+            "_MaxGuardToFinishStingerChargeLvTime": 0.4000000059604645,
             "_FinishStingerChargeTimes": [
-                0.6000000238418579,
-                1.2000000476837158,
-                1.7999999523162842
+                0.800000011920929,
+                2.0,
+                3.5
             ],
-            "_FinishStingerMaxChargeHoldTime": 1.0,
+            "_FinishStingerMaxChargeHoldTime": 0.800000011920929,
             "_FinishStingerChargeAttackRate": [
                 1.2000000476837158,
-                1.5,
-                2.0
+                1.350000023841858,
+                1.600000023841858
             ],
+            "_FinishStingerChargeStartLv_Neutral": 0,
+            "_FinishStingerChargeStartLv_Combo_1": 1,
+            "_FinishStingerChargeStartLv_Combo_2": 2,
+            "_FinishStingerChargeStartLv_Combo_3": 3,
+            "_FinishStingerChargeStartLv_ComboSkip": 2,
             "_RideAttack_FinishTime": 3.0,
             "_RideDismountStrongAttack_Time": 3.0
         }

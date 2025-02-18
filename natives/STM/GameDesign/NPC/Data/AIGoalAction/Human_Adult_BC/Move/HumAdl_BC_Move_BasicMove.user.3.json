@@ -820,22 +820,6 @@
                                                     "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 3739811958
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "goatree.cEvaluatorParam_Max": {}
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
                                                             "_Hash": 1254576503
                                                         }
                                                     },
@@ -1045,7 +1029,24 @@
                                                 }
                                             }
                                         ],
-                                        "_InterruptGoalList": []
+                                        "_InterruptGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1254576503
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.NpcGoaTreeEvaluators.cCheckCurrentDialogueChanged_Param": {}
+                                                    }
+                                                }
+                                            }
+                                        ]
                                     }
                                 }
                             }
@@ -1098,7 +1099,7 @@
                                                     "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 57363640
+                                                            "_Hash": 353185381
                                                         }
                                                     },
                                                     "_JustOnce": false,
@@ -1121,7 +1122,7 @@
                                                     "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 3642067734
+                                                            "_Hash": 3372278938
                                                         }
                                                     },
                                                     "_JustOnce": false,
@@ -1244,36 +1245,6 @@
                     "goatree.cGoalPackage_Basic": {
                         "_GoalNameHash": {
                             "app.cStrHashHeavy": {
-                                "_Hash": 3739811958
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cGoalParam_NextFrameEnd": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
                                 "_Hash": 1254576503
                             }
                         },
@@ -1365,7 +1336,7 @@
                                 "goatree.cGoalPackage.cGoalEffectHolder": {
                                     "_Param": {
                                         "app.NpcGoaTreeEffects.cSetAIDestination_Param": {
-                                            "_TargetType": "[18]GM400_025",
+                                            "_TargetType": "[19]GM400_025",
                                             "_DestData": {
                                                 "app.cNpcDestinationData": {
                                                     "_Pos": {
@@ -1416,7 +1387,7 @@
                                 "goatree.cGoalPackage.cGoalEffectHolder": {
                                     "_Param": {
                                         "app.NpcGoaTreeEffects.cSetAIDestination_Param": {
-                                            "_TargetType": "[8]GOAL_ACTION",
+                                            "_TargetType": "[9]GOAL_ACTION",
                                             "_DestData": {
                                                 "app.cNpcDestinationData": {
                                                     "_Pos": {
@@ -1433,6 +1404,162 @@
                                 }
                             }
                         ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 2292510995
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_None": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 353185381
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[1]SEQUENTIAL"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 57363640
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1254576503
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 3372278938
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[1]SEQUENTIAL"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 3642067734
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "c282b5ba-473a-4bfd-a204-835af37b16bd",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 1254576503
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
                     }
                 },
                 {

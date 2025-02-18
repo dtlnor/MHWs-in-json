@@ -353,8 +353,8 @@
             },
             "_WaistWaterHeight": 0.6000000238418579,
             "_CancelWaistWaterHeight": 0.44999998807907104,
-            "_WaistWaterHeight_Oil": 0.800000011920929,
-            "_CancelWaistWaterHeight_Oil": 0.5,
+            "_WaistWaterHeight_Oil": 0.6000000238418579,
+            "_CancelWaistWaterHeight_Oil": 0.44999998807907104,
             "_MoveSpeed_Slow": 1.5,
             "_MoveSpeed": 3.0,
             "_Move2ndSpeed": 3.9000000953674316,
@@ -365,6 +365,7 @@
             "_MoveSpeedWalk_Oil": 0.25,
             "_MoveSpeedWalk_Snow": 0.4000000059604645,
             "_OilHeightOffset": 0.550000011920929,
+            "_Disable4LegIdleWaterHeight": 0.30000001192092896,
             "_CheckDistData_Separate_Random_MuddyStream_PL": {
                 "app.cCheckDistData_Separate_Random": {
                     "_SeparateRandData": [
@@ -452,6 +453,7 @@
             "_AgainstMuddyStreamDeg": 75.0,
             "_MuddyStreamDeg": 75.0,
             "_MuddyStreamProgressTime": 1.75,
+            "_MuddyStreamMaxSplashEffectFlame": 15.0,
             "_DamStreamFlowSpeed": 3.0,
             "_WaveFlowTransRate": 0.20000000298023224,
             "_BackToPlRange_GatheringEnd": 12.0,
@@ -468,8 +470,15 @@
             "_ChangeBattleOffRangeToEm": 50.0,
             "_ChangeBattleOffRangeToPL_Boss": 40.0,
             "_ChangeBattleOffRangeToPL_Zako": 20.0,
-            "_ChangeHideRangeToPL": 25.0,
-            "_ChangeHideRangeInPLToEm": 30.0,
+            "_SelectNearFocusPlTargetEmDistData": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 30.0,
+                    "_UpRange": 15.0,
+                    "_DownRange": 15.0
+                }
+            },
+            "_ChangeHideRangeToPL": 20.0,
+            "_ChangeHideRangeInPLToEm": 25.0,
             "_ChangeHideRangeToEm": 15.0,
             "_ChangeHideOffRangeToPL": 25.0,
             "_ChangeHideOffRangeToEm": 15.0,
@@ -494,9 +503,9 @@
                     "_DownRange": 2.5
                 }
             },
-            "_ChangeCautionRangeToPL": 25.0,
+            "_ChangeCautionRangeToPL": 20.0,
             "_ChangeCautionRangeToEm": 15.0,
-            "_ChangeCautionOffRangeToPL": 25.0,
+            "_ChangeCautionOffRangeToPL": 20.0,
             "_ChangeCautionOffRangeToEm": 15.0,
             "_ChangeCoutionWeaponOnTime": 10.0,
             "_ChangeCoutionWeaponOffTime": 30.0,
@@ -510,15 +519,23 @@
                     "userdataPath": "GameDesign/Otomo/DataParam/OtomoRelatedSituationDesireDefinition2.user"
                 }
             },
-            "_PLAttackCountToBattle": 3,
+            "_PLAttackCountToBattle_Max": 3,
+            "_PLAttackCountToBattle_Min": 1,
             "_SameAngleFromPlShotRoot": 20.0,
             "_IgnoreNearDistanceToPl": 3.0,
             "_NearFieldGimmickRange": 30.0,
+            "_NearFieldGimmickDistData": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 30.0,
+                    "_UpRange": 10.0,
+                    "_DownRange": 5.0
+                }
+            },
             "_InduceFieldGimmickTime": 150.0,
             "_SearchInduceFieldGimmickInterval": 5.0,
-            "_ContinueAttackCount": 3,
-            "_MaxAttackSelectTime": 10.0,
-            "_AttackNearPlTime": 15.0,
+            "_ContinueAttackCount": 1,
+            "_MaxAttackSelectTime": 8.0,
+            "_AttackNearPlTime": 30.0,
             "_PlHelpAttackCoolTime": 180.0,
             "_PlHelpAttackCheckCoolTime": 15.0,
             "_PlHelpAttackProbability": [
@@ -530,18 +547,53 @@
                 },
                 {
                     "app.OtomoDef.cPlHelpAttackProbability": {
-                        "_Level": 20,
+                        "_Level": 11,
                         "_Probability": 75
                     }
                 },
                 {
                     "app.OtomoDef.cPlHelpAttackProbability": {
-                        "_Level": 30,
+                        "_Level": 21,
                         "_Probability": 90
                     }
                 }
             ],
             "_CheckJoinOtherEnemyTime": 5.0,
+            "_MoveToPLUseOtomoToolDist": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 15.0,
+                    "_UpRange": 10.0,
+                    "_DownRange": 10.0
+                }
+            },
+            "_CheckMoveEndDist_UseOtomoTool": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 10.0,
+                    "_UpRange": 5.0,
+                    "_DownRange": 5.0
+                }
+            },
+            "_MoveToPLUseInsectHealDist": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 35.0,
+                    "_UpRange": 15.0,
+                    "_DownRange": 15.0
+                }
+            },
+            "_CheckMoveEndDist_UseInsectHeal": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 30.0,
+                    "_UpRange": 10.0,
+                    "_DownRange": 10.0
+                }
+            },
+            "_BattleStartWarpDist": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 50.0,
+                    "_UpRange": 10.0,
+                    "_DownRange": 10.0
+                }
+            },
             "_ResearchRouteTime": 10.0,
             "_ResearchRouteTime_DelayMode": 120.0,
             "_ConditionParam": {
@@ -549,8 +601,10 @@
                     "userdataPath": "GameDesign/Otomo/DataParam/OtomoConditionParam.user"
                 }
             },
-            "_AttrDamageProb": 33,
-            "_AttackDivNum": 60,
+            "_AttrDamageProb": 40,
+            "_AttackDivNum": 20,
+            "_BadConditionAttackRate": 1.5,
+            "_AttributeAttackRate": 1.2000000476837158,
             "_NetActionStartInterpolationTime": 0.4000000059604645,
             "_IntervalPacketWarpLength": 5.0,
             "_ActionPacketWarpLength": 10.0,
@@ -662,10 +716,11 @@
                 "z": 0.0,
                 "pad": 0.0
             },
-            "_CollectOtomoToolRange": 40.0,
+            "_CollectOtomoToolRange": 80.0,
             "_SetOtomoToolTargetDist": 10.0,
             "_SetOtomoToolWallDist": 10.0,
             "_SetOtomoToolOtherGimmickDist": 10.0,
+            "_OtomoToolCancelCoolTime": 30.0,
             "_OtomoToolParam": {
                 "app.user_data.OtomoToolParam": {
                     "userdataPath": "GameDesign/Otomo/DataParam/OtomoToolParam.user"
@@ -788,7 +843,13 @@
             "_NoMoveDist": 0.5,
             "_NoMoveTime": 3.0,
             "_MoveExceptionCount": 2,
-            "_MoveNearDistXZ": 4.0,
+            "_MoveNearDist": {
+                "app.cCheckDistData": {
+                    "_HorizontalRange": 4.0,
+                    "_UpRange": 3.0,
+                    "_DownRange": 3.0
+                }
+            },
             "_MoveNearDistY": 1.0,
             "_StatusTable": {
                 "app.user_data.OtomoStatusTable": {
@@ -813,7 +874,7 @@
             "_MoveDirOffset_EscapeTent": 150.0,
             "_GetOffHammockTime": 10.0,
             "_ScaredWaitTime": 0.5,
-            "_FastTravelFadeSpeed": 0.5,
+            "_FastTravelFadeSpeed": 0.10000000149011612,
             "_RidePorterWarpFadeSpeed": 1.0,
             "_AnahoriFadeSpeed": 0.5,
             "_FastTravelStartFadeSpeed": 1.0,
@@ -837,10 +898,12 @@
             "_HeightLimit_Low": 1.0,
             "_AdjustMoveHeight_High": 3.0,
             "_AdjustMoveLimit_Low": 3.0,
-            "_AdjustHeightMoveSpeed_Up": 5.0,
+            "_AdjustHeightMoveSpeed_Up": 3.0,
             "_AdjustHeightMoveSpeed_Down": 2.0,
             "_RotPropellaSpeed_01": 360.0,
             "_RotPropellaSpeed_02": 360.0,
+            "_DragAirShipCharacterControllerRadius": 0.4000000059604645,
+            "_DragAirShipCharacterControllerHeight": 1.5,
             "_Emote": {
                 "app.user_data.OtomoEmoteSetting": {
                     "userdataPath": "GameDesign/Otomo/DataParam/OtomoEmoteSetting.user"
@@ -851,7 +914,45 @@
                     "userdataPath": "GameDesign/Otomo/DataParam/OtomoGrillSetting.user"
                 }
             },
-            "_SandPitDragDistanceLimit": 10.0
+            "_Fishing": {
+                "app.user_data.OtomoFishingSetting": {
+                    "userdataPath": "GameDesign/Otomo/DataParam/OtomoFishingSetting.user"
+                }
+            },
+            "_SandPitDragDistanceLimit": 10.0,
+            "_EquipLevelData": [
+                {
+                    "app.cEquipLevelData": {
+                        "_Rare": 2,
+                        "_HunterRank": 3
+                    }
+                },
+                {
+                    "app.cEquipLevelData": {
+                        "_Rare": 3,
+                        "_HunterRank": 5
+                    }
+                },
+                {
+                    "app.cEquipLevelData": {
+                        "_Rare": 4,
+                        "_HunterRank": 8
+                    }
+                },
+                {
+                    "app.cEquipLevelData": {
+                        "_Rare": 5,
+                        "_HunterRank": 21
+                    }
+                },
+                {
+                    "app.cEquipLevelData": {
+                        "_Rare": 6,
+                        "_HunterRank": 41
+                    }
+                }
+            ],
+            "_QuestEx_BarrelBomb_Rate": 3.0
         }
     }
 ]

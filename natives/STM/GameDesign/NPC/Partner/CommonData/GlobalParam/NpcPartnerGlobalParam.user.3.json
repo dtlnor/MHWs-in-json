@@ -6,11 +6,6 @@
                     "userdataPath": "GameDesign/NPC/Partner/Character/_Common/Common_PartnerData.user"
                 }
             },
-            "_PackageList": {
-                "app.user_data.NpcPartnerPackageList": {
-                    "userdataPath": "GameDesign/NPC/Partner/Character/_Package/NpcPartnerPackageList.user"
-                }
-            },
             "_StatusParam": {
                 "app.cNpcPartnerStatusData": {
                     "_StatusParam": {
@@ -116,11 +111,11 @@
                                 },
                                 "_Positioning": {
                                     "s": 5.0,
-                                    "r": 6.0
+                                    "r": 7.0
                                 },
                                 "_Combo": {
                                     "s": 0.0,
-                                    "r": 6.0
+                                    "r": 7.0
                                 },
                                 "_KeepAway": {
                                     "s": 0.0,
@@ -148,12 +143,12 @@
                                     "r": 195.0
                                 },
                                 "_Positioning": {
-                                    "s": 5.0,
-                                    "r": 6.0
+                                    "s": 8.0,
+                                    "r": 8.0
                                 },
                                 "_Combo": {
                                     "s": 0.0,
-                                    "r": 6.0
+                                    "r": 9.5
                                 },
                                 "_KeepAway": {
                                     "s": 0.0,
@@ -219,7 +214,7 @@
                                 },
                                 "_Combo": {
                                     "s": 0.0,
-                                    "r": 6.0
+                                    "r": 5.0
                                 },
                                 "_KeepAway": {
                                     "s": 0.0,
@@ -280,12 +275,12 @@
                                     "r": 195.0
                                 },
                                 "_Positioning": {
-                                    "s": 5.0,
-                                    "r": 6.0
+                                    "s": 2.0,
+                                    "r": 18.0
                                 },
                                 "_Combo": {
                                     "s": 0.0,
-                                    "r": 6.0
+                                    "r": 8.0
                                 },
                                 "_KeepAway": {
                                     "s": 0.0,
@@ -293,7 +288,7 @@
                                 },
                                 "_WeaponOn": {
                                     "s": 0.0,
-                                    "r": 2.0
+                                    "r": 12.0
                                 },
                                 "_WeaponOff": {
                                     "s": 0.0,
@@ -314,7 +309,7 @@
                                 },
                                 "_Positioning": {
                                     "s": 6.0,
-                                    "r": 9.5
+                                    "r": 11.0
                                 },
                                 "_Combo": {
                                     "s": 0.0,
@@ -548,12 +543,12 @@
                                     "r": 0.0
                                 },
                                 "_Combo": {
-                                    "s": 5.0,
-                                    "r": 30.0
+                                    "s": 2.0,
+                                    "r": 18.0
                                 },
                                 "_KeepAway": {
                                     "s": 0.0,
-                                    "r": 0.0
+                                    "r": 3.0
                                 },
                                 "_WeaponOn": {
                                     "s": 10.0,
@@ -643,8 +638,8 @@
                         "s": 0.0,
                         "r": 60.0
                     },
-                    "_LastAttackBackTimeSec": 180.0,
-                    "_LastDamageBackTimeSec": 180.0,
+                    "_LastAttackBackTimeSec": 120.0,
+                    "_LastDamageBackTimeSec": 120.0,
                     "_ConditionParams": [
                         {
                             "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
@@ -774,7 +769,7 @@
                         },
                         {
                             "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
-                                "Type": "[12]IS_EXIST_SELF_ATTACK_HISTORY_ZAKO",
+                                "Type": "[12]IS_EXIST_ATTACK_HISTORY_ZAKO",
                                 "Transition": "[1]TO_COMBAT"
                             }
                         },
@@ -797,17 +792,17 @@
                     "_PrioryLockOnActiveTimeSec": 3.0,
                     "_PrioryLockOnOverwriteCoolTimeSec": 12.0,
                     "_DiedActTimeSec": 3.0,
-                    "_LeadingDamagePercentage": 1.0
+                    "_LeadingDamagePercentage": 0.699999988079071
                 }
             },
             "_Neglect": {
                 "app.user_data.NpcPartnerGlobalParam.cNeglect": {
-                    "STRUCT__DpsCheckLv1Start_DamagePercentage": 0.25,
-                    "STRUCT__DpsCheckLv1End_DamagePercentage": 0.30000001192092896,
-                    "_WeakeningDPM_Pl2": 47,
-                    "_WeakeningDPM_Pl3": 35,
-                    "_WeakeningDPM_Pl4": 27,
-                    "_WeakeningDPM_Pl5": 21
+                    "STRUCT__DpsCheckLv1Start_DamagePercentage": 0.125,
+                    "STRUCT__DpsCheckLv1End_DamagePercentage": 0.15000000596046448,
+                    "_WeakeningDPM_Pl2": 50,
+                    "_WeakeningDPM_Pl3": 33,
+                    "_WeakeningDPM_Pl4": 25,
+                    "_WeakeningDPM_Pl5": 20
                 }
             },
             "_DodgeParam": {
@@ -1742,90 +1737,6 @@
                     ]
                 }
             },
-            "_Wp04": {
-                "app.user_data.NpcPartnerGlobalParam.cWp04": {
-                    "_KeepAwayRange": {
-                        "s": 0.0,
-                        "r": 7.0
-                    },
-                    "_ChargeMoveUseRange": {
-                        "s": 5.0,
-                        "r": 11.0
-                    },
-                    "_ApproachRange": {
-                        "s": 12.0,
-                        "r": 188.0
-                    },
-                    "_ChargeEndRange": {
-                        "s": 20.0,
-                        "r": 180.0
-                    },
-                    "_PunishTimeSec_Charge": 1.0,
-                    "_ChargeTimeoutSec": 15.0,
-                    "_VirtualStamina": 150.0,
-                    "_VtStaminaRegene": 25.0,
-                    "_ChargeStaminaSub": 4.0,
-                    "_ChargeLimitStamina": 25.0
-                }
-            },
-            "_Wp06": {
-                "app.user_data.NpcPartnerGlobalParam.cWp06": {
-                    "_NormalGuardPower": 50.0,
-                    "_PowerGuardPower": 100.0
-                }
-            },
-            "_Wp12": {
-                "app.user_data.NpcPartnerGlobalParam.cWp12": {
-                    "_Esn000LotteryTable": [
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 20.0,
-                                "_Weight": 5
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 30.0,
-                                "_Weight": 20
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 40.0,
-                                "_Weight": 40
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 50.0,
-                                "_Weight": 30
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 60.0,
-                                "_Weight": 5
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 70.0,
-                                "_Weight": 5
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cWp12.cLotData": {
-                                "_UseGauge": 80.0,
-                                "_Weight": 5
-                            }
-                        }
-                    ],
-                    "_ConditionBulletOnlyQuestTarget": false,
-                    "_ElementBulletEnableMeatNum": 2,
-                    "_ElementBulletEnableMeatValue": 20.0,
-                    "_SlashUsableEnemyHeathRate": 100.0
-                }
-            },
             "_ReactEnemyAttack": {
                 "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack": {
                     "_Data": [
@@ -1924,6 +1835,30 @@
                                 "_ActiveFrame": 27.0,
                                 "_IsParry": true
                             }
+                        },
+                        {
+                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                "_ReactType": "[-1]INVALID",
+                                "_StartupFrame": 0.0,
+                                "_ActiveFrame": 70.0,
+                                "_IsParry": false
+                            }
+                        },
+                        {
+                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                "_ReactType": "[-1]INVALID",
+                                "_StartupFrame": 0.0,
+                                "_ActiveFrame": 70.0,
+                                "_IsParry": false
+                            }
+                        },
+                        {
+                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                "_ReactType": "[-1]INVALID",
+                                "_StartupFrame": 45.0,
+                                "_ActiveFrame": 190.0,
+                                "_IsParry": true
+                            }
                         }
                     ]
                 }
@@ -1959,8 +1894,8 @@
             },
             "_PartnerJamParam": {
                 "app.cNpcCheckMoveJamParam": {
-                    "_CheckJamDist": 0.5,
-                    "_CheckJamTime": 0.30000001192092896,
+                    "_CheckJamDist": 0.30000001192092896,
+                    "_CheckJamTime": 1.0,
                     "_DeactivatePressTime": 1.0,
                     "_WarpTryTime": 2.0,
                     "_CheckWarpDist": 0.10000000149011612,
@@ -2141,6 +2076,46 @@
                     "_EndTimeMargin": 60.0
                 }
             },
+            "_St402GuidPositionData": {
+                "app.user_data.NpcPartnerGlobalParam.cSt402GuidPositionData": {
+                    "_Phase1AreaCenter": {
+                        "x": -530.2033081054688,
+                        "y": 85.9249496459961,
+                        "z": 704.7509155273438,
+                        "pad": 0.0
+                    },
+                    "_Phase2AreaCenter": {
+                        "x": -371.63818359375,
+                        "y": 131.2731170654297,
+                        "z": 760.7488403320312,
+                        "pad": 0.0
+                    },
+                    "_Phase2Em0161Around": {
+                        "x": -382.9181213378906,
+                        "y": 131.08229064941406,
+                        "z": 787.6546020507812,
+                        "pad": 0.0
+                    },
+                    "_Phase3AreaCenter": {
+                        "x": -293.52532958984375,
+                        "y": 150.18130493164062,
+                        "z": 816.7352905273438,
+                        "pad": 0.0
+                    },
+                    "_Phase3FallGimmickAround": {
+                        "x": -325.4748229980469,
+                        "y": 150.1852264404297,
+                        "z": 834.7199096679688,
+                        "pad": 0.0
+                    },
+                    "_Phase4AreaCenter": {
+                        "x": -258.5865173339844,
+                        "y": 75.30824279785156,
+                        "z": 833.2159423828125,
+                        "pad": 0.0
+                    }
+                }
+            },
             "_AttackChanceEnemyConditionParam": {
                 "app.user_data.NpcPartnerGlobalParam.cAttackChanceEnemyConditionParam": {
                     "_IsDown": true,
@@ -2168,6 +2143,11 @@
                     "_NearApproachTrapRange": 15.0
                 }
             },
+            "_SignResponse": {
+                "app.user_data.NpcPartnerGlobalParam.cSignResponse": {
+                    "_ContinueTime": 30.0
+                }
+            },
             "_RouteNaviData": {
                 "app.NpcPartnerRouteNavigationData": {
                     "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/Route/Common_RouteNavigationData.user"
@@ -2193,11 +2173,6 @@
                     "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/Slinger/NpcPartnerSlingerTable.user"
                 }
             },
-            "_SptItemEnableList": {
-                "app.user_data.NpcPartnerSptItEnableEmList": {
-                    "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/EnemyList/NpcPartner_SptItEnable_EmList.user"
-                }
-            },
             "_NpcLandMarkPointData": {
                 "app.user_data.NpcLandMarkPointData": {
                     "userdataPath": "GameDesign/NPC/Partner/CommonData/SituationSpeech/NpcLandMarkPointData.user"
@@ -2218,11 +2193,6 @@
                     "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/Rank/NpcPartnerDifficultyRankTable.user"
                 }
             },
-            "_SetBombTargetJointData": {
-                "app.user_data.NpcPartnerSetBombTargetData": {
-                    "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/EnemyList/NpcPartner_SetBomb_EmList.user"
-                }
-            },
             "_DetectedGimmickListData": {
                 "app.user_data.NpcCmnGimmickListData": {
                     "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/GimmickList/NpcPartner_Detect_GmList.user"
@@ -2231,6 +2201,11 @@
             "_AvoidGimmickListData": {
                 "app.user_data.NpcCmnGimmickListData": {
                     "userdataPath": "GameDesign/NPC/Partner/CommonData/Param/GimmickList/NpcPartner_Avoid_GmList.user"
+                }
+            },
+            "_PartnerLotteryTable": {
+                "app.user_data.NpcPartnerLotteryTable": {
+                    "userdataPath": "GameDesign/NPC/Partner/CommonData/LotteryTable/Common_PartnerLotteryTable.user"
                 }
             }
         }

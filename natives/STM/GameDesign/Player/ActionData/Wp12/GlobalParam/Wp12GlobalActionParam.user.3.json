@@ -30,8 +30,8 @@
                 "app.cGravityJumpParam": {
                     "_JumpVelocity": {
                         "x": 0.0,
-                        "y": 3.700000047683716,
-                        "z": 4.550000190734863,
+                        "y": 4.0,
+                        "z": 2.200000047683716,
                         "pad": 0.0
                     },
                     "_Gravity": 9.800000190734863,
@@ -126,10 +126,12 @@
                 "pad": 0.0
             },
             "_GuardLaserType": "[1]LR",
-            "_LaserGuard_OutRangeKeepTime": 0.0,
+            "_LaserGuard_OutRangeKeepTime": 0.20000000298023224,
             "_LaserGuard_KnockBackSpeed": 0.699999988079071,
             "_GuardDamageReduceRate_LaserSlip": 0.20000000298023224,
-            "_GuardDamageReduceRate_LaserSlipStamina": 0.20000000298023224,
+            "LaserGuard_GuardStaminaReduceInterval": 0.5,
+            "_LaserGuard_SlipStaminaReduce": 5.0,
+            "_LaserGuard_KireajiReduce": 3,
             "_GuardKireajiReduce_S": 1,
             "_GuardKireajiReduce_M": 2,
             "_GuardKireajiReduce_L": 3,
@@ -274,6 +276,7 @@
             "_OffAttach_Sub_InterpolateTime": 1.0,
             "_OffShakeChain_InterpolateTime": 0.5,
             "_IgnoreParryPowerLimit": true,
+            "_ParryHyperArmorDamageRate": 0.30000001192092896,
             "STRUCT__CameraLStickRotRate_Base": 1.0,
             "STRUCT__CameraLStickRotRate_Vertical": 1.0,
             "_GunCommonParam": {
@@ -338,6 +341,7 @@
             "_Energy_ShotGunShootRecover": 1.0,
             "_Energy_CustomEfficiency_Fast": 1.100000023841858,
             "_Energy_CustomEfficiency_Slow": 0.8999999761581421,
+            "_Energy_StealthShotRecover": 30.0,
             "_EnergyParts_EmitColor": {
                 "R": 255,
                 "G": 0,
@@ -369,7 +373,7 @@
             ],
             "_EnergyLaserBullet_BasicData": {
                 "app.WeaponGunDef.cEnergyBulletBasicData": {
-                    "_MinUseEnergy": 10.0
+                    "_MinUseEnergy": 20.0
                 }
             },
             "_EnergyLaserMaxRange": 3.0,
@@ -404,8 +408,8 @@
                     "_ParryRate": [
                         1.0,
                         1.0,
-                        1.5,
-                        2.0
+                        1.25,
+                        1.5
                     ],
                     "_AttackRate": [
                         1.0,
@@ -426,7 +430,7 @@
             ],
             "_EnergyGrenadeBullet_BasicData": {
                 "app.WeaponGunDef.cEnergyBulletBasicData": {
-                    "_MinUseEnergy": 25.0
+                    "_MinUseEnergy": 20.0
                 }
             },
             "_EnergyGrenadeBullet_ScatterList": [
@@ -461,9 +465,9 @@
                     ],
                     "_EnergyCost": [
                         0.0,
-                        10.0,
-                        20.0,
-                        30.0
+                        15.0,
+                        15.0,
+                        15.0
                     ],
                     "_OverheatTime": -1.0,
                     "_AttackRate": [
@@ -474,19 +478,20 @@
                     ]
                 }
             },
-            "_WeakPointSnipeBullet_MultiHitCount": 3,
-            "_WeakPointSnipeBullet_MultiHitTimer": 0.03999999910593033,
+            "_WeakPointSnipeBullet_MaxRange": 42.0,
+            "_WeakPointSnipeBullet_MultiHitCount": 5,
+            "_WeakPointSnipeBullet_MultiHitTimer": 0.019999999552965164,
             "_WeakPointSnipe_CustomAttackRate": [
                 1.0,
                 1.100000023841858,
                 1.2000000476837158
             ],
             "_WeakPointSnipeBullet_MaxBulletNum": 3,
-            "_WeakPointSnipeBullet_AddBulletTime": 30.0,
+            "_WeakPointSnipeBullet_AddBulletTime": 23.0,
             "_WeakPointSnipeBullet_ReserveTimerRate": 1.0,
             "_RyuugekiChargeTimer": 1.5,
             "_RyuugekiColExtendTime": 0.10000000149011612,
-            "_Ryuugeki_Range": 8.0,
+            "_Ryuugeki_Range": 6.5,
             "_Ryuugeki_Inner_Range": 2.0
         }
     }

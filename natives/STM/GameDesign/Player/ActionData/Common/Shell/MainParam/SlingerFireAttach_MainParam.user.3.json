@@ -61,8 +61,7 @@
                                 "_IsShellHitTerrainCorrect": true,
                                 "STRUCT__HitTerrainLimitDeg__HasValue": false,
                                 "STRUCT__HitTerrainLimitDeg__Value": 0.0,
-                                "_ShellAttackColLifeSec": -1.0,
-                                "_ShowRailgunHit": false
+                                "_ShellAttackColLifeSec": -1.0
                             }
                         }
                     }
@@ -76,7 +75,8 @@
                         "LateUpdateOrder": 600,
                         "_ConstType": "[2]POSITION",
                         "_IsWpShell": false,
-                        "_IsDestroySync": false
+                        "_IsDestroySync": false,
+                        "_IsRelicaDestroySync": true
                     }
                 },
                 {
@@ -102,7 +102,8 @@
                         "UpdateOrder": 600,
                         "LateUpdateOrder": 600,
                         "_IsDestroyByQuickSand": true,
-                        "_IsDestroyBySandDig": true
+                        "_IsDestroyBySandDig": true,
+                        "_IsStartSafeBySandDig": true
                     }
                 },
                 {
@@ -115,6 +116,15 @@
                         "_HightMax": 2.0,
                         "_HightMin": 0.0,
                         "_CenterHightMaxLength": 1.0
+                    }
+                },
+                {
+                    "app.mcShellDestoryChildShellSwitchOilParam": {
+                        "MiniParamName": "DestoryChildShellSwitchOilP",
+                        "MiniParamtype": "[6]DATA",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 400,
+                        "LateUpdateOrder": 400
                     }
                 }
             ],

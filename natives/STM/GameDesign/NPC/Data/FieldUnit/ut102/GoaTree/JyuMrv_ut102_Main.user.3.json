@@ -44,7 +44,7 @@
                                                     "_Inverse": false,
                                                     "_IgnoreInterrupt": false,
                                                     "_EvaluatorParam": {
-                                                        "app.NpcGoaTreeEvaluators.cIsClearMainStory_Param": {}
+                                                        "app.NpcGoaTreeEvaluators.cCheckFieldUnitEntry_Param": {}
                                                     }
                                                 }
                                             },
@@ -91,13 +91,15 @@
                         "_UseableToReferent": false,
                         "_OverridableToReferent": false,
                         "_GoalParam": {
-                            "goatree.cGoalParam_ImmediateEnd": {
+                            "app.NpcGoaTreeGoals.cTime_Param": {
                                 "_SubGoalWrapper": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
                                     }
-                                }
+                                },
+                                "_TimeMin": 0.0,
+                                "_TimeMax": 5.0
                             }
                         },
                         "_GoalEffectParams": [
@@ -105,7 +107,7 @@
                                 "goatree.cGoalPackage.cGoalEffectHolder": {
                                     "_Param": {
                                         "app.NpcGoaTreeEffects.cSetAIDestination_Param": {
-                                            "_TargetType": "[2]UNIT_ENTRY_POINT",
+                                            "_TargetType": "[3]UNIT_ENTRY_POINT",
                                             "_DestData": {
                                                 "app.cNpcDestinationData": {
                                                     "_Pos": {
@@ -129,6 +131,24 @@
                                             "_IsContinueWarp": false,
                                             "_CheckGround": true,
                                             "_ResetHunterAction": true
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.NpcGoaTreeEffects.cUpdateFsmLikeAction_Param": {
+                                            "_TargetDestination": "[5]INVALID",
+                                            "_ImmediateActionSet": false,
+                                            "_ActionSelector": {
+                                                "app.cNpcFsmLikeActionSelector": {
+                                                    "_Category": 1572806784,
+                                                    "_ActionID": 31235,
+                                                    "_UseVariation": false,
+                                                    "_Variation": -663541696
+                                                }
+                                            }
                                         }
                                     }
                                 }

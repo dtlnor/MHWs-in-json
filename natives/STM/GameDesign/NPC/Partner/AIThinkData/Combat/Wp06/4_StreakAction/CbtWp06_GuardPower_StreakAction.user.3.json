@@ -7,7 +7,7 @@
                     "_Param": {
                         "app.NpcStreakEffects.cLancePowerGuard_Param": {
                             "_ContinueType": "[1]ATTACK_DETECT",
-                            "_KeepTimeSec": 2.0
+                            "_KeepTimeSec": 5.0
                         }
                     }
                 }
@@ -21,7 +21,6 @@
                             "_StopWhenReached": false,
                             "_MoveType": "[6]COMBAT",
                             "_UseAIMoveEnd": false,
-                            "_IsNotRidePorter": false,
                             "_FixedSpeedLv": "[3]RUN",
                             "_IsMoveStopTurn": false,
                             "_StopTurnDir": "[0]PL_AXIS_Z",
@@ -64,7 +63,7 @@
                     "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
                         "_Param": {
                             "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
-                                "_Immediate": false,
+                                "_Immediate": true,
                                 "_Strict": false,
                                 "_ActionSelector": {
                                     "app.cNpcHunterActionSelector": {

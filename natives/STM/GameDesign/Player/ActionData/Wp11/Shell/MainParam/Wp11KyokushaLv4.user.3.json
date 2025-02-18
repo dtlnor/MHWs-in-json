@@ -160,10 +160,14 @@
                         "_TargetDirLimitDeg_Y": 0,
                         "_IsUseDistanceTargetDirLimitDegX": false,
                         "_IsUseDistanceParentRoot": false,
+                        "_IsUseXZDist": false,
+                        "STRUCT__TargetDirLimitOwnerLocal_X__HasValue": false,
+                        "STRUCT__TargetDirLimitOwnerLocal_X__Value": 0,
                         "_TargetDirMaxDistance": 0.0,
                         "_TargetDirMinDistance": 0.0,
                         "_IsUseNoTargetAdjustYaw": false,
                         "_NoTargetAdjustYaw_Deg": 90.0,
+                        "_IsUseStraightLineDistance": false,
                         "_Range_Distance": -1.0,
                         "_ParabolaType": "[1]TIME_GRAVITY",
                         "_Gravity": 9.800000190734863,
@@ -177,6 +181,59 @@
                         "_ReachTime": 1.5,
                         "_MaxHight": 0.0,
                         "_MinHight": 0.0
+                    }
+                },
+                {
+                    "app.cShellminiParamColHit": {
+                        "MiniParamName": "AppColHit",
+                        "MiniParamtype": "[3]COLLISION",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 100,
+                        "LateUpdateOrder": 100,
+                        "_ColHitFlag": 0,
+                        "_SubCollisionIDList": [],
+                        "_IsHitOwner": false,
+                        "_IsHitOwnerOhterShell": false,
+                        "_IsHitAnimalCollision": false,
+                        "_IsDisableNearestHit": false,
+                        "_IsNoHitAttackerShell": false,
+                        "_IsDamageShellNoSort": false,
+                        "_IsDamageDestory": false,
+                        "_IsEnableDynamicShape": false,
+                        "_AppHitTerrainSetting": {
+                            "app.cShellminiParamColHit.HitTerrainSetting": {
+                                "_FirstTerrainHitType": "[1]DESTROY",
+                                "_ShellHitWaterBehavior": "[3]CONTINUE",
+                                "_ShellHitGroundBehavior": "[0]FINISH",
+                                "STRUCT__ShellHitWallBehavior__HasValue": false,
+                                "STRUCT__ShellHitWallBehavior__Value": "[0]FINISH",
+                                "STRUCT__ShellHitCeilingBehavior__HasValue": false,
+                                "STRUCT__ShellHitCeilingBehavior__Value": "[0]FINISH",
+                                "_IsFirstTerrainCheck": true,
+                                "_FirstTerrainCheckJoint": {
+                                    "ace.cJointHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "STRUCT__FirstTerrainCheckOffset__HasValue": false,
+                                "STRUCT__FirstTerrainCheckOffset__Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "_FirstTerrainCheckGoalJoint": {
+                                    "ace.cJointHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "_TimeNotHitInTerrain": -1.0,
+                                "_IsShellHitTerrainCorrect": true,
+                                "STRUCT__HitTerrainLimitDeg__HasValue": false,
+                                "STRUCT__HitTerrainLimitDeg__Value": 0.0,
+                                "_ShellAttackColLifeSec": -1.0
+                            }
+                        }
                     }
                 }
             ],

@@ -37,7 +37,7 @@
             "_ReplicaActionStartInterpolateMaxDist": 10.0,
             "_ReplicaIntervalActionStartInterpolateTimeRate": 2.5,
             "_ReplicaIntervalInterpolateWarpDist": 5.0,
-            "_ReplicaIntervalInterpolateMotDeltaRate": 1.100000023841858,
+            "_ReplicaIntervalInterpolateMotDeltaRate": 1.0499999523162842,
             "_ReplicaActionEndToDrawOffTime": 1.0,
             "_Culling_DrawOffBeginDistToCamera": 300.0,
             "_Culling_DrawOffEndDistToCamera": 295.0,
@@ -102,6 +102,7 @@
                 }
             ],
             "_EscapeDashCheckDist": 40.0,
+            "_EscapeDashCheckDist_L": 80.0,
             "_EscapeDashCheckAngleDeg": 100.0,
             "_EscapeDashCheckDist_LargeEm": 60.0,
             "_EscapeDashCheckAngleDeg_LargeEm": 100.0,
@@ -122,11 +123,11 @@
             "_Dash_Caution_DecoMot_BlendRate": 0.30000001192092896,
             "_DodgeNoHitTime_Normal": 13,
             "_DodgeNoHitTime_Step": 10,
-            "_DodgeNoHitTime_EscapeLandAfter": 15,
-            "_DodgeNoHitTime_Wp01BackStep": 25,
+            "_DodgeNoHitTime_EscapeLandAfter": 30,
+            "_DodgeNoHitTime_Wp01BackStep": 40,
             "_DodgeNoHitTime_Wp02KijinDodge": 14,
             "_DodgeNoHitTime_Wp02JustDodge": 14,
-            "_DodgeNoHitWp02BuffJustDodgeASkill004Data": 25,
+            "_DodgeNoHitWp02BuffJustDodgeASkill004Data": 32,
             "_DodgeNoHitTime_Wp03Mikiri": 45,
             "_DodgeNoHitTime_Wp03MikiriRed": 45,
             "_DodgeNoHitTime_Wp04ChargeDodge": 20,
@@ -385,7 +386,7 @@
             "_SlidingSign_StartTime": 0.5,
             "_SlidingSign_FailTime": 0.4000000059604645,
             "_Sliding_EndDist": 2.700000047683716,
-            "_Sliding_EndTime": 0.30000001192092896,
+            "_Sliding_EndTime": 0.15000000596046448,
             "_Sliding_Start_AllowedDiffDeg": 60.0,
             "_Sliding_Turn_RequireDiffDeg": 90.0,
             "_Sliding_EndGestureEnableTime": 3.0,
@@ -401,8 +402,8 @@
             "_BattleRideConstDeactivateInterporateSec": 0.5,
             "_BattleRideConstRotateRate": {
                 "x": 0.5,
-                "y": 0.800000011920929,
-                "z": 0.30000001192092896,
+                "y": 1.0,
+                "z": 0.5,
                 "pad": 0.0
             },
             "_BattleRideConstPichOffsetRate_SpringConst": 2.0,
@@ -784,10 +785,18 @@
             "_Slinger_SightRayRange": 60.0,
             "_Slinger_Range": 40.0,
             "_ParabolaSlinger_Range": 15.0,
+            "_ExEmote00Slinger_Range": 10.0,
             "_StrongStunParabolaOffsetY": -15.0,
             "_StrongBombParabolaOffsetY": -15.0,
             "_StrongBomb_SpreadRandomY": 5.0,
             "_PaintActiveTime": 1200.0,
+            "_StrongSlinger_CameraAngleLimit": {
+                "x": 60.0,
+                "y": 30.0,
+                "pad1": 0.0,
+                "pad2": 0.0
+            },
+            "_StrongSlinger_CameraAngleLimitStartTime": 1.0,
             "_CatchSlinger_FindParam": {
                 "app.cCatchSlingerTargetFinder.cFindParam": {
                     "_MaxDetectionDist": 50.0,
@@ -916,6 +925,7 @@
             "_SwimStartMaxDeg": 90.0,
             "_WaistWaterHeight": 0.800000011920929,
             "_WaistOilHeight": 0.6000000238418579,
+            "_WaistWaterPorterRideOffest": 0.6000000238418579,
             "_WaistWaterSpeedRate_Walk": 0.75,
             "_WaistWaterMotSpeed_Walk": 1.0,
             "_WaistWaterSpeedRate_Run": 0.75,
@@ -1281,7 +1291,7 @@
             "_MuddyStreamProgressTime": 1.75,
             "_MuddyStreamMaxSplashEffectFlame": 15.0,
             "_DamFlowEndureTime": 0.0,
-            "_DamFlowSpeed": 7.0,
+            "_DamFlowSpeed": 3.0,
             "_DamMaxFlowTime": 4.0,
             "_DamHeight": {
                 "x": 0.5,
@@ -1347,7 +1357,7 @@
             "_QuestRetireActionWaitTime": 2.0,
             "_QuestFailedActionWaitTime": 2.0,
             "_QuestReplicaLeaveActionWaitTime": 2.0,
-            "_QuestClearStampTime": 3.0,
+            "_QuestClearStampTime": 2.9000000953674316,
             "_QuestRetireStampTime": 1.0,
             "_QuestFailedStampTime": 3.0,
             "_PutOnMantleClothFadeSpeedTime": 1.0,
@@ -1358,8 +1368,11 @@
                     "userdataPath": "GameDesign/Player/ActionData/Common/GlobalParam/Part/PlayerEnableGestureSetting.user"
                 }
             },
-            "_GesturePorter_LandCheckHeight": 2.0,
-            "_GesturePorter_LandCheckDeg": 10.0,
+            "_GesturePorter_PlayerToPorterCheckOffsetY": 1.0,
+            "_GesturePorter_LandCheckHeight": 4.0,
+            "_GesturePorter_LandCheckDeg": 20.0,
+            "_GesturePorter_MaxCallRange": 3.5,
+            "_GesturePorter_MaxGUIRange": 10.0,
             "STRUCT__PorterBin_Color__GlassColor": {
                 "R": 255,
                 "G": 255,
@@ -1372,17 +1385,19 @@
                 "B": 255,
                 "A": 18
             },
-            "_QuestEx_BarrelBombS_Rate": 3.0,
-            "_QuestEx_BarrelBombL_Rate": 3.0,
-            "_QuestEx_BarrelBombL_G_Rate": 3.0,
-            "_QuestEx_Blast_Rate": 3.0,
-            "_QuestEx_Poison_Rate": 3.0,
+            "_QuestEx_BarrelBombS_Rate": 1.5,
+            "_QuestEx_BarrelBombL_Rate": 1.5,
+            "_QuestEx_BarrelBombL_G_Rate": 1.5,
             "_BarrelBombL_Damage": 40.0,
             "_BarrelBombL_G_Damage": 75.0,
             "_BarrelBombL_Otomo_Damage": 40.0,
             "_CoalBomb_G_Damage": 40.0,
             "_CoalBomb_D_Damage": 40.0,
-            "_AimRangeAdjust_Rate": 0.800000011920929
+            "_AimRangeAdjust_Rate": 0.8999999761581421,
+            "_AmuletEffect_LerpTime": 1.0,
+            "_AmuletEffect_StayTime": 1.0,
+            "_PorterRideGuideTime": 2.0,
+            "_PorterRideGuideZoneMaxDeg": 180.0
         }
     }
 ]

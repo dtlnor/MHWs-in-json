@@ -381,6 +381,26 @@
                                                         }
                                                     }
                                                 }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "f5fcae6e-c5f0-4795-b666-f6d30c88c6c9",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 268680265
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": true,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cIsPlayerFishing_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false
+                                                        }
+                                                    }
+                                                }
                                             }
                                         ]
                                     }
@@ -469,6 +489,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_MoveActionType": "[1]RIDE_PORTER"
                             }
                         },
@@ -534,6 +555,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_MoveActionType": "[1]RIDE_PORTER"
                             }
                         },
@@ -608,6 +630,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_MoveActionType": "[3]LEAD_PLAYER"
                             }
                         },
@@ -663,6 +686,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_MoveActionType": "[2]MOVE_TO_DESTINATION"
                             }
                         },
@@ -718,6 +742,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_MoveActionType": "[0]GATHERING"
                             }
                         },
@@ -853,6 +878,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_MoveActionType": "[4]NORMAL"
                             }
                         },
@@ -941,7 +967,7 @@
                                                     "_AssetGuid": "d5d8ebd9-f2b7-481f-8e5f-02e81b331c12",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 3389212796
+                                                            "_Hash": 1197433793
                                                         }
                                                     },
                                                     "_JustOnce": false,
@@ -1457,13 +1483,92 @@
                     "goatree.cGoalPackage_Basic": {
                         "_GoalNameHash": {
                             "app.cStrHashHeavy": {
-                                "_Hash": 3389212796
+                                "_Hash": 1504722133
                             }
                         },
                         "_BuildType": "[0]SET",
                         "_SubGoalSelectType": {
                             "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[2]DESIRE_FROM_TOP"
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.OtomoGoaTreeGoals.cActionEnd_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_IsWaitActionEnd": false,
+                                "_IgnoreSuspensionGoal": false,
+                                "_IsIgnoreForceInterruptActionGoalEnd": false,
+                                "_IsEnableActionEnd": false,
+                                "_IsEnableInterruptGoalEnd": false,
+                                "_IsReserveAIState": false,
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.OtomoGoaTreeGoalEffects.cRequestChangeAction_Param": {
+                                            "_ActionID": "6f830d64-def3-4733-b6d3-a3f4bd831421",
+                                            "_AppendDataType": "[0]DEFAULT"
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 210762985
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_None": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 1197433793
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
                             }
                         },
                         "_EndlessLoop": false,
@@ -1472,6 +1577,68 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cCheckDistancePLOutRange_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "d5d8ebd9-f2b7-481f-8e5f-02e81b331c12",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
+                                                            "_Hash": 2083150080
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            }
+                                        ],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_IsWaitActionEnd": false,
+                                "_IgnoreSuspensionGoal": false,
+                                "_IsIgnoreForceInterruptActionGoalEnd": false,
+                                "_IsEnableActionEnd": false,
+                                "_IsEnableInterruptGoalEnd": false,
+                                "_IsReserveAIState": false,
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
+                                "_CheckDistType": "[0]DEFAULT",
+                                "_IsUseWaitTimer": false,
+                                "_IsDisableFollowMove": true,
+                                "_IsUseRandomTarget": true,
+                                "_IsStory": true,
+                                "_TimeMin": 5.0,
+                                "_TimeMax": 10.0
+                            }
+                        },
+                        "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 2083150080
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[2]DESIRE_FROM_TOP"
+                            }
+                        },
+                        "_EndlessLoop": true,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_SubGoalEnd": {
                                 "_SubGoalWrapper": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [
@@ -1535,72 +1702,10 @@
                                         ],
                                         "_InterruptGoalList": []
                                     }
-                                },
-                                "_IsWaitActionEnd": false,
-                                "_IgnoreSuspensionGoal": false,
-                                "_IsIgnoreForceInterruptActionGoalEnd": false,
-                                "_IsEnableActionEnd": false,
-                                "_IsEnableInterruptGoalEnd": false,
-                                "_IsReserveAIState": false,
-                                "_IsEnableCancel": false,
-                                "_CheckDistType": "[0]DEFAULT",
-                                "_IsUseWaitTimer": false,
-                                "_IsDisableFollowMove": true,
-                                "_IsUseRandomTarget": true,
-                                "_IsStory": true,
-                                "_TimeMin": 5.0,
-                                "_TimeMax": 10.0
+                                }
                             }
                         },
                         "_GoalEffectParams": []
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 1504722133
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.OtomoGoaTreeGoals.cActionEnd_Param": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [],
-                                        "_InterruptGoalList": []
-                                    }
-                                },
-                                "_IsWaitActionEnd": false,
-                                "_IgnoreSuspensionGoal": false,
-                                "_IsIgnoreForceInterruptActionGoalEnd": false,
-                                "_IsEnableActionEnd": false,
-                                "_IsEnableInterruptGoalEnd": false,
-                                "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
-                            }
-                        },
-                        "_GoalEffectParams": [
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.OtomoGoaTreeGoalEffects.cRequestChangeAction_Param": {
-                                            "_ActionID": "6f830d64-def3-4733-b6d3-a3f4bd831421",
-                                            "_AppendDataType": "[0]DEFAULT"
-                                        }
-                                    }
-                                }
-                            }
-                        ]
                     }
                 },
                 {
@@ -1978,7 +2083,8 @@
                                 "_IsEnableActionEnd": false,
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
                             }
                         },
                         "_GoalEffectParams": [
@@ -2047,6 +2153,7 @@
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
                                 "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false,
                                 "_CheckDistDataIn": {
                                     "app.cCheckDistData": {
                                         "_HorizontalRange": 7.0,
@@ -2211,7 +2318,8 @@
                                 "_IsEnableActionEnd": false,
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
                             }
                         },
                         "_GoalEffectParams": [
@@ -2245,7 +2353,8 @@
                                                 }
                                             },
                                             "_IsNavigationUpdateInterval": true,
-                                            "_UsePQSType": "[0]NONE"
+                                            "_UsePQSType": "[0]NONE",
+                                            "_IsFixTargetPos": true
                                         }
                                     }
                                 }
@@ -2358,7 +2467,8 @@
                                 "_IsEnableActionEnd": false,
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
                             }
                         },
                         "_GoalEffectParams": [
@@ -2413,7 +2523,8 @@
                                 "_IsEnableActionEnd": false,
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
                             }
                         },
                         "_GoalEffectParams": [
@@ -2561,7 +2672,8 @@
                                 "_IsEnableActionEnd": false,
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
                             }
                         },
                         "_GoalEffectParams": [
@@ -2580,13 +2692,14 @@
                                                     "_IsRotAdjust": true,
                                                     "_IsUseRandomTarget": false,
                                                     "_IsSelectMoveStopPoint": false,
-                                                    "_ArriveTargetType": "[9]NONE",
+                                                    "_ArriveTargetType": "[12]NONE",
                                                     "_OptionType": "[0]NONE",
                                                     "_ExMoveType": "[-1]NONE"
                                                 }
                                             },
                                             "_IsNavigationUpdateInterval": true,
-                                            "_UsePQSType": "[0]NONE"
+                                            "_UsePQSType": "[0]NONE",
+                                            "_IsFixTargetPos": true
                                         }
                                     }
                                 }
@@ -2625,7 +2738,8 @@
                                 "_IsEnableActionEnd": false,
                                 "_IsEnableInterruptGoalEnd": false,
                                 "_IsReserveAIState": false,
-                                "_IsEnableCancel": false
+                                "_IsEnableCancel": false,
+                                "_IsIgnoreInterruptGoalEnd": false
                             }
                         },
                         "_GoalEffectParams": [

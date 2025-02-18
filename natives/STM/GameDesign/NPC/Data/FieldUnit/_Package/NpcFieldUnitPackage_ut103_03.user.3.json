@@ -23,9 +23,17 @@
                                         "_Hash": 984802705
                                     }
                                 },
-                                "_NpcID": {
-                                    "app.NpcDef.ID_Serializable": {
-                                        "_Value": "[609769344]NPC112_13_072"
+                                "_SelectorHolder": {
+                                    "app.cNpcDerivedClassHolder`1<app.cNpcFieldUnitMemberSelector>": {
+                                        "_Value": {
+                                            "app.NpcFieldUnitMemberSelectors.cNpc": {
+                                                "_NpcID": {
+                                                    "app.NpcDef.ID_Serializable": {
+                                                        "_Value": "[609769344]NPC112_13_072"
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 "_FormationParam": {
@@ -47,15 +55,9 @@
                                     }
                                 },
                                 "_IsUseStreet": true,
-                                "_EmID": "[0]INVALID",
-                                "_GmID": {
-                                    "app.NpcDef.GM_TARGET_ID_Serializable": {
-                                        "_Value": "[-1132616320]INVALID"
-                                    }
-                                },
                                 "_MemberEffectData": {
                                     "app.user_data.NpcFieldUnitMemberEffectData": {
-                                        "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_Basic.user"
+                                        "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_AttachBasket.user"
                                     }
                                 }
                             }
@@ -67,15 +69,23 @@
                                         "_Hash": 3993049615
                                     }
                                 },
-                                "_NpcID": {
-                                    "app.NpcDef.ID_Serializable": {
-                                        "_Value": "[326817888]NPC111_13_063"
+                                "_SelectorHolder": {
+                                    "app.cNpcDerivedClassHolder`1<app.cNpcFieldUnitMemberSelector>": {
+                                        "_Value": {
+                                            "app.NpcFieldUnitMemberSelectors.cNpc": {
+                                                "_NpcID": {
+                                                    "app.NpcDef.ID_Serializable": {
+                                                        "_Value": "[326817888]NPC111_13_063"
+                                                    }
+                                                }
+                                            }
+                                        }
                                     }
                                 },
                                 "_FormationParam": {
                                     "app.cNpcFormationParam": {
-                                        "_FrontOffset": -5.0,
-                                        "_SideOffset": 0.6000000238418579,
+                                        "_FrontOffset": 5.0,
+                                        "_SideOffset": 0.4000000059604645,
                                         "_ValidFinalDestination": false,
                                         "_FinalDestinationData": {
                                             "app.cNpcDestinationData": {
@@ -91,15 +101,9 @@
                                     }
                                 },
                                 "_IsUseStreet": true,
-                                "_EmID": "[0]INVALID",
-                                "_GmID": {
-                                    "app.NpcDef.GM_TARGET_ID_Serializable": {
-                                        "_Value": "[-1132616320]INVALID"
-                                    }
-                                },
                                 "_MemberEffectData": {
                                     "app.user_data.NpcFieldUnitMemberEffectData": {
-                                        "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_Basic.user"
+                                        "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_AttachBasket.user"
                                     }
                                 }
                             }
@@ -125,13 +129,13 @@
                             "_Hash": 0
                         }
                     },
+                    "_ValidDefaultPhase": true,
                     "_DefaultPhaseSelector": {
                         "app.cNpcFieldUnitPhaseSelector": {
                             "_Category": 9,
                             "_Phase": -1277148928
                         }
                     },
-                    "_DefaultPhaseWarp": false,
                     "_DisableActivateSection": {
                         "app.StoryPackageFlag.TYPE_Serializable": {
                             "_Value": "[521]STORY_000521"
@@ -139,6 +143,7 @@
                     },
                     "_InverseDisableActivateSection": true,
                     "_IsEnableWhileEnvironmentStop": false,
+                    "_InstantiateRange": 150.0,
                     "_NearSafeAreaCenterPos": {
                         "x": 1077.7886962890625,
                         "y": -91.11214447021484,
@@ -162,6 +167,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -207,6 +213,9 @@
                                         "app.user_data.NpcTaskData": {
                                             "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/Task/HumAdl_ut103_03_Start_A.user"
                                         }
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -238,6 +247,9 @@
                                         "app.user_data.NpcTaskData": {
                                             "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/Task/HumAdl_ut103_03_Start_B.user"
                                         }
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -258,6 +270,7 @@
                         },
                         "_IsCheckPoint": true,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -301,6 +314,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -330,6 +346,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -340,7 +359,9 @@
                 {
                     "app.user_data.NpcFieldUnitPackage.cPhase": {
                         "_CastingPackageList": {
-                            "": {}
+                            "app.user_data.NpcCastingPackageList": {
+                                "userdataPath": "GameDesign/NPC/Data/Casting/_PackageList/NpcCastingPackageList_ut103_03_Area1.user"
+                            }
                         },
                         "_RouteID": "[0]INVALID",
                         "_FormationPresetHash": {
@@ -350,6 +371,7 @@
                         },
                         "_IsCheckPoint": true,
                         "_Time": 60,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -393,6 +415,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -422,6 +447,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -442,6 +470,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -487,6 +516,9 @@
                                         "app.user_data.NpcTaskData": {
                                             "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/Task/HumAdl_ut103_03_WorkEnd_1_A.user"
                                         }
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -518,6 +550,9 @@
                                         "app.user_data.NpcTaskData": {
                                             "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/Task/HumAdl_ut103_03_WorkEnd_1_B.user"
                                         }
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -538,6 +573,7 @@
                         },
                         "_IsCheckPoint": true,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -581,6 +617,11 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "app.user_data.NpcFieldUnitMemberEffectData": {
+                                            "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_FillBasket.user"
+                                        }
                                     }
                                 }
                             },
@@ -610,6 +651,11 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "app.user_data.NpcFieldUnitMemberEffectData": {
+                                            "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_FillBasket.user"
+                                        }
                                     }
                                 }
                             }
@@ -620,7 +666,9 @@
                 {
                     "app.user_data.NpcFieldUnitPackage.cPhase": {
                         "_CastingPackageList": {
-                            "": {}
+                            "app.user_data.NpcCastingPackageList": {
+                                "userdataPath": "GameDesign/NPC/Data/Casting/_PackageList/NpcCastingPackageList_ut103_03_Area2.user"
+                            }
                         },
                         "_RouteID": "[0]INVALID",
                         "_FormationPresetHash": {
@@ -630,6 +678,7 @@
                         },
                         "_IsCheckPoint": true,
                         "_Time": 60,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -673,6 +722,11 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "app.user_data.NpcFieldUnitMemberEffectData": {
+                                            "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_FillBasket.user"
+                                        }
                                     }
                                 }
                             },
@@ -702,6 +756,11 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "app.user_data.NpcFieldUnitMemberEffectData": {
+                                            "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_FillBasket.user"
+                                        }
                                     }
                                 }
                             }
@@ -722,6 +781,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -767,6 +827,9 @@
                                         "app.user_data.NpcTaskData": {
                                             "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/Task/HumAdl_ut103_03_WorkEnd_2_A.user"
                                         }
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -798,6 +861,9 @@
                                         "app.user_data.NpcTaskData": {
                                             "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/Task/HumAdl_ut103_03_WorkEnd_2_B.user"
                                         }
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -818,6 +884,7 @@
                         },
                         "_IsCheckPoint": true,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -861,6 +928,11 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "app.user_data.NpcFieldUnitMemberEffectData": {
+                                            "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_FillBasket.user"
+                                        }
                                     }
                                 }
                             },
@@ -890,6 +962,11 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "app.user_data.NpcFieldUnitMemberEffectData": {
+                                            "userdataPath": "GameDesign/NPC/Data/FieldUnit/ut103_03/MemberEffectData/HumAdl_ut103_03_FillBasket.user"
+                                        }
                                     }
                                 }
                             }
@@ -910,6 +987,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -953,6 +1031,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -982,6 +1063,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -1002,6 +1086,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -1045,6 +1130,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -1074,6 +1162,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -1094,6 +1185,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -1137,6 +1229,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -1165,6 +1260,9 @@
                                         }
                                     },
                                     "_TaskAsset": {
+                                        "": {}
+                                    },
+                                    "_MemberEffectData": {
                                         "": {}
                                     }
                                 }
@@ -1186,6 +1284,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -1229,6 +1328,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -1257,6 +1359,9 @@
                                         }
                                     },
                                     "_TaskAsset": {
+                                        "": {}
+                                    },
+                                    "_MemberEffectData": {
                                         "": {}
                                     }
                                 }
@@ -1278,6 +1383,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -1321,6 +1427,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -1349,6 +1458,9 @@
                                         }
                                     },
                                     "_TaskAsset": {
+                                        "": {}
+                                    },
+                                    "_MemberEffectData": {
                                         "": {}
                                     }
                                 }
@@ -1370,6 +1482,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -1413,6 +1526,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -1442,6 +1558,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             }
@@ -1462,6 +1581,7 @@
                         },
                         "_IsCheckPoint": false,
                         "_Time": -1,
+                        "_IsValidRestartPos": true,
                         "_RestartDestData": {
                             "app.cNpcDestinationData": {
                                 "_Pos": {
@@ -1505,6 +1625,9 @@
                                     },
                                     "_TaskAsset": {
                                         "": {}
+                                    },
+                                    "_MemberEffectData": {
+                                        "": {}
                                     }
                                 }
                             },
@@ -1533,6 +1656,9 @@
                                         }
                                     },
                                     "_TaskAsset": {
+                                        "": {}
+                                    },
+                                    "_MemberEffectData": {
                                         "": {}
                                     }
                                 }

@@ -111,7 +111,8 @@
                                 "pad": 0.0
                             },
                             "_CallWarpToRideOwnerBackGroundPosTimeMax": 10.0,
-                            "_CallWarpToRideOwnerPosTimeMax": 13.0
+                            "_CallWarpToRideOwnerPosTimeMax": 13.0,
+                            "_CallWarpRateWhenNotMovingWalkMoveLoop": 10.0
                         }
                     },
                     "_CallMoveSpeed": {
@@ -1254,7 +1255,7 @@
                                 {
                                     "app.user_data.PorterParamCommon.cNavigationControl.SpeedLengthData": {
                                         "_SpeedLv": "[2]WALK",
-                                        "_Length": 4.0
+                                        "_Length": 3.200000047683716
                                     }
                                 },
                                 {
@@ -1278,6 +1279,7 @@
                             ]
                         }
                     },
+                    "_AgentDetectRadOverwriteWhenWallRun": 6.0,
                     "_RetraceSec_Default": 2.0,
                     "_JumpPointNotifyDirectionDeg": 360.0,
                     "_JumpPointValidManualDirectionDeg": 60.0,
@@ -1365,7 +1367,7 @@
             },
             "_IkCtrlData": {
                 "app.user_data.PorterParamCommon.cIkCtrlData": {
-                    "_CogOffsetSpeed": 1.0
+                    "_CogOffsetSpeed": 0.6000000238418579
                 }
             },
             "_ManualAutoJump": {
@@ -1420,10 +1422,10 @@
                         },
                         {
                             "app.user_data.PorterParamCommon.cGesture.IdleGestureChangeTimeData": {
-                                "_IdleGestureChangeTimeWhenNoCombat": 10.0,
+                                "_IdleGestureChangeTimeWhenNoCombat": 20.0,
                                 "_IdleGestureChangeTimeWhenNoCombatHot": 3.0,
                                 "_IdleGestureChangeTimeWhenNoCombatCold": 5.0,
-                                "_IdleGestureChangeTimeWhenCombat": 0.5
+                                "_IdleGestureChangeTimeWhenCombat": 1.0
                             }
                         }
                     ],
@@ -1431,7 +1433,7 @@
                         {
                             "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
                                 "_GestureActionType": "0a7a7b17-5b24-44bd-a40d-8fd856a8d08d",
-                                "_GestureActionRateWhenNoCombat": 5,
+                                "_GestureActionRateWhenNoCombat": 10,
                                 "_GestureActionRateWhenNoCombatHot": 0,
                                 "_GestureActionRateWhenNoCombatCold": 0,
                                 "_GestureActionRateWhenCombat": 0
@@ -1440,7 +1442,7 @@
                         {
                             "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
                                 "_GestureActionType": "47e91452-7a50-44a6-a547-57b90f77c3b2",
-                                "_GestureActionRateWhenNoCombat": 5,
+                                "_GestureActionRateWhenNoCombat": 10,
                                 "_GestureActionRateWhenNoCombatHot": 1,
                                 "_GestureActionRateWhenNoCombatCold": 1,
                                 "_GestureActionRateWhenCombat": 0
@@ -1458,7 +1460,7 @@
                         {
                             "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
                                 "_GestureActionType": "17faa05f-63dc-4e02-b169-bc1074d29308",
-                                "_GestureActionRateWhenNoCombat": 2,
+                                "_GestureActionRateWhenNoCombat": 3,
                                 "_GestureActionRateWhenNoCombatHot": 0,
                                 "_GestureActionRateWhenNoCombatCold": 1,
                                 "_GestureActionRateWhenCombat": 0
@@ -1467,9 +1469,18 @@
                         {
                             "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
                                 "_GestureActionType": "be08339d-4d20-49c3-89af-46dcdc142e59",
-                                "_GestureActionRateWhenNoCombat": 3,
+                                "_GestureActionRateWhenNoCombat": 6,
                                 "_GestureActionRateWhenNoCombatHot": 0,
                                 "_GestureActionRateWhenNoCombatCold": 0,
+                                "_GestureActionRateWhenCombat": 0
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
+                                "_GestureActionType": "a6a529e0-6947-4346-ac27-e1d0630bd8f9",
+                                "_GestureActionRateWhenNoCombat": 1,
+                                "_GestureActionRateWhenNoCombatHot": 0,
+                                "_GestureActionRateWhenNoCombatCold": 5,
                                 "_GestureActionRateWhenCombat": 0
                             }
                         },
@@ -1494,9 +1505,9 @@
                         {
                             "app.user_data.PorterParamCommon.cGesture.GestureActionData": {
                                 "_GestureActionType": "c7fdc94f-1b5a-44dd-ba11-ebd1665d03a8",
-                                "_GestureActionRateWhenNoCombat": 2,
-                                "_GestureActionRateWhenNoCombatHot": 1,
-                                "_GestureActionRateWhenNoCombatCold": 1,
+                                "_GestureActionRateWhenNoCombat": 100,
+                                "_GestureActionRateWhenNoCombatHot": 100,
+                                "_GestureActionRateWhenNoCombatCold": 100,
                                 "_GestureActionRateWhenCombat": 0
                             }
                         }
@@ -1569,6 +1580,19 @@
                         },
                         {
                             "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
+                                "_GestureActionType": "a6a529e0-6947-4346-ac27-e1d0630bd8f9",
+                                "_PermitGestureActionWhenNoRiding": true,
+                                "_PermitGestureActionWhenRiding": true,
+                                "_PermitGestureActionWhenWater": true,
+                                "_PermitGestureActionWhenOilMud": true,
+                                "_PermitGestureActionWhenLargeSlope": true,
+                                "_PermitGestureActionWhenLifeArea": true,
+                                "_PermitGestureActionWhenClimbingDieBody": true,
+                                "_PermitGestureActionWhenInTrainingArea": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.GestureForbidConditionData": {
                                 "_GestureActionType": "bed3af2e-edd5-4cf8-9dd8-aebc68b1f2c9",
                                 "_PermitGestureActionWhenNoRiding": true,
                                 "_PermitGestureActionWhenRiding": true,
@@ -1600,7 +1624,7 @@
                                 "_PermitGestureActionWhenRiding": true,
                                 "_PermitGestureActionWhenWater": true,
                                 "_PermitGestureActionWhenOilMud": true,
-                                "_PermitGestureActionWhenLargeSlope": false,
+                                "_PermitGestureActionWhenLargeSlope": true,
                                 "_PermitGestureActionWhenLifeArea": false,
                                 "_PermitGestureActionWhenClimbingDieBody": false,
                                 "_PermitGestureActionWhenInTrainingArea": false
@@ -1826,7 +1850,7 @@
                 "app.user_data.PorterParamCommon.cWaitPointGimmick": {
                     "_DrinkWater": {
                         "app.user_data.PorterParamCommon.cWaitPointGimmick.WaitPointGimmickData": {
-                            "_OffsetZ": 1.5,
+                            "_OffsetZ": 1.600000023841858,
                             "_HightMax": 0.6000000238418579,
                             "_HightMin": 0.0,
                             "_ReactLengthMaxWaitPoint": 50.0
@@ -1834,7 +1858,7 @@
                     },
                     "_EatFood": {
                         "app.user_data.PorterParamCommon.cWaitPointGimmick.WaitPointGimmickData": {
-                            "_OffsetZ": 1.5,
+                            "_OffsetZ": 1.600000023841858,
                             "_HightMax": 1.0,
                             "_HightMin": 0.0,
                             "_ReactLengthMaxWaitPoint": 50.0
@@ -2217,7 +2241,9 @@
                         }
                     },
                     "ScoringData_Fishing": {
-                        "": {}
+                        "app.user_data.NpcPQSScoringData": {
+                            "userdataPath": "GameDesign/Porter/PointQuery/PQSScoringData_Fishing.user"
+                        }
                     },
                     "SaftyQueryInvalidAttr": {
                         "app.NpcPartnerDef.POINT_QUERY_ATTRIBUTEBit_Serializable": {
@@ -2504,6 +2530,76 @@
                                     }
                                 },
                                 "_PorterEmoteActionID": "e994f364-940b-4050-81dc-4d69621531aa"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[10068]EX_BASE_ACTION_00"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[5055]EX_BASE_ACTION_01"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[16200]EX_BASE_ACTION_02"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e079f096-2a61-4c68-96e4-d66d40e1f2f5"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[2165]EX_BASE_ACTION_03"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[16973]EX_BASE_ACTION_04"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "e018ebf6-8690-407c-af6b-db31a6498b83"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[17408]EX_SUB_ACTION_00"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "5aef6894-b6e5-446b-8139-dbe7acd3b404"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[7045]PORTER_RIDE_EMOTE_003"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "fcef9a8a-dc7f-44de-b7b3-27da50b7ca73"
                             }
                         }
                     ],

@@ -75,7 +75,7 @@
                         },
                         {
                             "app.user_data.NpcTaskData.cActionParam": {
-                                "_PointSelectType": "[4]RANDOM",
+                                "_PointSelectType": "[5]RANDOM_ALL",
                                 "_PointSearcher": {
                                     "app.cNpcPointSearcher": {
                                         "_TargetType": "[0]POS",
@@ -159,11 +159,124 @@
                                     "r": 2.0
                                 },
                                 "_InterruptTime": {
-                                    "s": 0.0,
+                                    "s": 5.0,
                                     "r": 0.0
                                 },
-                                "_InterruptProbability": 100,
-                                "_InterruptActionParamList": [],
+                                "_InterruptProbability": 30,
+                                "_InterruptActionParamList": [
+                                    {
+                                        "app.user_data.NpcTaskData.cInterruptActionParam": {
+                                            "_DestData": {
+                                                "app.cNpcDestinationData": {
+                                                    "_Pos": {
+                                                        "x": -946.5851440429688,
+                                                        "y": 80.19149780273438,
+                                                        "z": 251.69363403320312,
+                                                        "pad": 0.0
+                                                    },
+                                                    "_DegY": 109
+                                                }
+                                            },
+                                            "_GoalActionSelector": {
+                                                "app.cNpcAIGoalActionSelector": {
+                                                    "_Category": -1369853952,
+                                                    "_MoveID": -144299280,
+                                                    "_ActionID": -2056594048,
+                                                    "_HoldMotionPackID": 666361728,
+                                                    "_Variation": -663541696
+                                                }
+                                            },
+                                            "_ActionTime": {
+                                                "s": 5.0,
+                                                "r": 2.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.NpcTaskData.cInterruptActionParam": {
+                                            "_DestData": {
+                                                "app.cNpcDestinationData": {
+                                                    "_Pos": {
+                                                        "x": -953.6983642578125,
+                                                        "y": 80.21147155761719,
+                                                        "z": 256.6839904785156,
+                                                        "pad": 0.0
+                                                    },
+                                                    "_DegY": -4
+                                                }
+                                            },
+                                            "_GoalActionSelector": {
+                                                "app.cNpcAIGoalActionSelector": {
+                                                    "_Category": -1369853952,
+                                                    "_MoveID": -144299280,
+                                                    "_ActionID": -2056594048,
+                                                    "_HoldMotionPackID": 666361728,
+                                                    "_Variation": -663541696
+                                                }
+                                            },
+                                            "_ActionTime": {
+                                                "s": 5.0,
+                                                "r": 2.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.NpcTaskData.cInterruptActionParam": {
+                                            "_DestData": {
+                                                "app.cNpcDestinationData": {
+                                                    "_Pos": {
+                                                        "x": -957.0992431640625,
+                                                        "y": 80.37706756591797,
+                                                        "z": 233.35501098632812,
+                                                        "pad": 0.0
+                                                    },
+                                                    "_DegY": 121
+                                                }
+                                            },
+                                            "_GoalActionSelector": {
+                                                "app.cNpcAIGoalActionSelector": {
+                                                    "_Category": -1369853952,
+                                                    "_MoveID": -144299280,
+                                                    "_ActionID": -2056594048,
+                                                    "_HoldMotionPackID": 666361728,
+                                                    "_Variation": -663541696
+                                                }
+                                            },
+                                            "_ActionTime": {
+                                                "s": 5.0,
+                                                "r": 2.0
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.user_data.NpcTaskData.cInterruptActionParam": {
+                                            "_DestData": {
+                                                "app.cNpcDestinationData": {
+                                                    "_Pos": {
+                                                        "x": -946.4083862304688,
+                                                        "y": 79.93779754638672,
+                                                        "z": 242.10775756835938,
+                                                        "pad": 0.0
+                                                    },
+                                                    "_DegY": 112
+                                                }
+                                            },
+                                            "_GoalActionSelector": {
+                                                "app.cNpcAIGoalActionSelector": {
+                                                    "_Category": -1369853952,
+                                                    "_MoveID": -144299280,
+                                                    "_ActionID": -2056594048,
+                                                    "_HoldMotionPackID": 666361728,
+                                                    "_Variation": -663541696
+                                                }
+                                            },
+                                            "_ActionTime": {
+                                                "s": 5.0,
+                                                "r": 2.0
+                                            }
+                                        }
+                                    }
+                                ],
                                 "_TaskColliderID": "[0]INVALID",
                                 "_TaskDialogueID": "[0]INVALID",
                                 "_DisableStreet": false
@@ -190,7 +303,7 @@
                     },
                     "_NeedRunTimerByMove": true,
                     "_CanInterrupt_Rest": true,
-                    "_CanInterrupt_Combi": true,
+                    "_CanInterrupt_Combi": false,
                     "_NotSkipUpstream": false,
                     "_PtJackVisualChecker": {
                         "app.cNpcJackVisualChecker_Porter": {

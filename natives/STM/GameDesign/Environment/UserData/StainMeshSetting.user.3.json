@@ -4,39 +4,10 @@
             "_StainBabResource": "MasterMaterial/ByteAddressBuffer/StainMeshBAB.gpbf",
             "_MaxInstanceNum": 512,
             "_UseParamLength": 48,
-            "_StainStartSeparator": false,
-            "_HumanData": [
+            "_StainSeparator": false,
+            "_MaterialData": [
                 {
-                    "app.cHeightStainData": {
-                        "_StainType": {
-                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[0]SAND"
-                            }
-                        },
-                        "_DyanamicMat_Color": {
-                            "R": 83,
-                            "G": 56,
-                            "B": 29,
-                            "A": 255
-                        },
-                        "_DyanamicMat_Param": {
-                            "x": 1.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 15.0,
-                        "_RefNormal": true,
-                        "_offsetHeight": 0.15000000596046448,
-                        "_UseRT": false,
-                        "_rtOffsetHeight": 0.15000000596046448,
-                        "_gradationHeight": 0.20000000298023224,
-                        "_OCCBlend": 1.0,
-                        "_TopBlend": 0.8999999761581421
-                    }
-                },
-                {
-                    "app.cHeightStainData": {
+                    "app.cStainMaterialData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
                                 "_Value": "[4]WET"
@@ -46,22 +17,191 @@
                             "R": 0,
                             "G": 0,
                             "B": 0,
-                            "A": 0
+                            "A": 255
                         },
                         "_DyanamicMat_Param": {
-                            "x": 0.0,
+                            "x": 1.0,
                             "y": 0.0,
                             "z": 0.0,
                             "w": 0.0
                         },
-                        "_SubHeightSpeed": 20.0,
-                        "_RefNormal": false,
-                        "_offsetHeight": 0.20000000298023224,
+                        "_SubHeightSpeed": 60.0,
+                        "_OCCBlend": 0.15000000596046448,
+                        "_TopBlend": 0.15000000596046448,
+                        "_AddBlendSpeed": 0.4000000059604645
+                    }
+                },
+                {
+                    "app.cStainMaterialData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[0]SAND"
+                            }
+                        },
+                        "_DyanamicMat_Color": {
+                            "R": 83,
+                            "G": 56,
+                            "B": 29,
+                            "A": 245
+                        },
+                        "_DyanamicMat_Param": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_SubHeightSpeed": 15.0,
+                        "_OCCBlend": 0.15000000596046448,
+                        "_TopBlend": 1.0,
+                        "_AddBlendSpeed": 0.4000000059604645
+                    }
+                },
+                {
+                    "app.cStainMaterialData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[1]OIL_MUD"
+                            }
+                        },
+                        "_DyanamicMat_Color": {
+                            "R": 5,
+                            "G": 5,
+                            "B": 5,
+                            "A": 190
+                        },
+                        "_DyanamicMat_Param": {
+                            "x": 0.30000001192092896,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_SubHeightSpeed": 80.0,
+                        "_OCCBlend": 0.15000000596046448,
+                        "_TopBlend": 0.0,
+                        "_AddBlendSpeed": 0.4000000059604645
+                    }
+                },
+                {
+                    "app.cStainMaterialData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
+                        },
+                        "_DyanamicMat_Color": {
+                            "R": 26,
+                            "G": 26,
+                            "B": 21,
+                            "A": 125
+                        },
+                        "_DyanamicMat_Param": {
+                            "x": 0.20000000298023224,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_SubHeightSpeed": 60.0,
+                        "_OCCBlend": 0.15000000596046448,
+                        "_TopBlend": 1.0,
+                        "_AddBlendSpeed": 0.4000000059604645
+                    }
+                },
+                {
+                    "app.cStainMaterialData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_DyanamicMat_Color": {
+                            "R": 225,
+                            "G": 225,
+                            "B": 225,
+                            "A": 200
+                        },
+                        "_DyanamicMat_Param": {
+                            "x": 1.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_SubHeightSpeed": 10.0,
+                        "_OCCBlend": 2.0,
+                        "_TopBlend": 1.0,
+                        "_AddBlendSpeed": 0.5
+                    }
+                }
+            ],
+            "_SandStormDryTime": 7.0,
+            "_SandGroundDryTime": 10.0,
+            "_SnowDynamicTexFade": 0.4399999976158142,
+            "_SnowDynamicTexContrast": 0.5,
+            "_HeightStainSeparator": false,
+            "_SnowHeight": 0.5,
+            "_HumanData": [
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[4]WET"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
                         "_UseRT": true,
                         "_rtOffsetHeight": 0.0,
-                        "_gradationHeight": 1.0,
-                        "_OCCBlend": 0.15000000596046448,
-                        "_TopBlend": 0.15000000596046448
+                        "_gradationHeight": 0.5
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[1]OIL_MUD"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.5
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.5
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[0]SAND"
+                            }
+                        },
+                        "_offsetHeight": 0.15000000596046448,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.20000000298023224
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_offsetHeight": 0.15000000596046448,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.20000000298023224
                     }
                 }
             ],
@@ -70,31 +210,69 @@
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[4]WET"
+                            }
+                        },
+                        "_offsetHeight": 0.5,
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 2.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[1]OIL_MUD"
+                            }
+                        },
+                        "_offsetHeight": 0.30000001192092896,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 2.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
+                        },
+                        "_offsetHeight": 0.5,
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 2.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
                                 "_Value": "[0]SAND"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 83,
-                            "G": 56,
-                            "B": 29,
-                            "A": 255
-                        },
-                        "_DyanamicMat_Param": {
-                            "x": 1.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 15.0,
-                        "_RefNormal": false,
                         "_offsetHeight": 0.6000000238418579,
                         "_UseRT": false,
                         "_rtOffsetHeight": 0.15000000596046448,
-                        "_gradationHeight": 2.0,
-                        "_OCCBlend": 1.0,
-                        "_TopBlend": 0.8999999761581421
+                        "_gradationHeight": 2.0
                     }
                 },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_offsetHeight": 0.5,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 2.0
+                    }
+                }
+            ],
+            "_EmZakoData": [
                 {
                     "app.cHeightStainData": {
                         "_StainType": {
@@ -102,26 +280,62 @@
                                 "_Value": "[4]WET"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 0,
-                            "G": 0,
-                            "B": 0,
-                            "A": 0
-                        },
-                        "_DyanamicMat_Param": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 20.0,
-                        "_RefNormal": false,
-                        "_offsetHeight": 0.20000000298023224,
+                        "_offsetHeight": 0.5,
                         "_UseRT": true,
                         "_rtOffsetHeight": 0.0,
-                        "_gradationHeight": 2.0,
-                        "_OCCBlend": 0.15000000596046448,
-                        "_TopBlend": 0.15000000596046448
+                        "_gradationHeight": 1.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[1]OIL_MUD"
+                            }
+                        },
+                        "_offsetHeight": 0.30000001192092896,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 1.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
+                        },
+                        "_offsetHeight": 0.5,
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 1.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[0]SAND"
+                            }
+                        },
+                        "_offsetHeight": 0.6000000238418579,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 1.0
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_offsetHeight": 0.5,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 1.0
                     }
                 }
             ],
@@ -130,58 +344,65 @@
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[0]SAND"
+                                "_Value": "[4]WET"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 83,
-                            "G": 56,
-                            "B": 29,
-                            "A": 255
-                        },
-                        "_DyanamicMat_Param": {
-                            "x": 1.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 15.0,
-                        "_RefNormal": false,
                         "_offsetHeight": 0.10000000149011612,
-                        "_UseRT": false,
-                        "_rtOffsetHeight": 0.15000000596046448,
-                        "_gradationHeight": 0.15000000596046448,
-                        "_OCCBlend": 1.0,
-                        "_TopBlend": 0.8999999761581421
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.15000000596046448
                     }
                 },
                 {
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[4]WET"
+                                "_Value": "[1]OIL_MUD"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 0,
-                            "G": 0,
-                            "B": 0,
-                            "A": 0
+                        "_offsetHeight": 0.0,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.15000000596046448
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
                         },
-                        "_DyanamicMat_Param": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 20.0,
-                        "_RefNormal": false,
                         "_offsetHeight": 0.10000000149011612,
                         "_UseRT": true,
-                        "_rtOffsetHeight": 0.10000000149011612,
-                        "_gradationHeight": 0.15000000596046448,
-                        "_OCCBlend": 0.15000000596046448,
-                        "_TopBlend": 0.15000000596046448
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.15000000596046448
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[0]SAND"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.15000000596046448
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.15000000596046448
                     }
                 }
             ],
@@ -190,58 +411,65 @@
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[0]SAND"
+                                "_Value": "[4]WET"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 83,
-                            "G": 56,
-                            "B": 29,
-                            "A": 255
-                        },
-                        "_DyanamicMat_Param": {
-                            "x": 1.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 15.0,
-                        "_RefNormal": false,
-                        "_offsetHeight": 0.10000000149011612,
-                        "_UseRT": false,
-                        "_rtOffsetHeight": 0.15000000596046448,
-                        "_gradationHeight": 0.30000001192092896,
-                        "_OCCBlend": 1.0,
-                        "_TopBlend": 0.8999999761581421
+                        "_offsetHeight": 0.0,
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.6000000238418579
                     }
                 },
                 {
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[4]WET"
+                                "_Value": "[1]OIL_MUD"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 0,
-                            "G": 0,
-                            "B": 0,
-                            "A": 0
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.6000000238418579
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
                         },
-                        "_DyanamicMat_Param": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 20.0,
-                        "_RefNormal": false,
                         "_offsetHeight": 0.0,
                         "_UseRT": true,
                         "_rtOffsetHeight": 0.0,
-                        "_gradationHeight": 0.20000000298023224,
-                        "_OCCBlend": 0.15000000596046448,
-                        "_TopBlend": 0.15000000596046448
+                        "_gradationHeight": 0.6000000238418579
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[0]SAND"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.30000001192092896
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.30000001192092896
                     }
                 }
             ],
@@ -250,58 +478,65 @@
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[0]SAND"
+                                "_Value": "[4]WET"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 83,
-                            "G": 56,
-                            "B": 29,
-                            "A": 255
-                        },
-                        "_DyanamicMat_Param": {
-                            "x": 1.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 1.0,
-                        "_RefNormal": false,
-                        "_offsetHeight": 0.15000000596046448,
-                        "_UseRT": false,
-                        "_rtOffsetHeight": 0.15000000596046448,
-                        "_gradationHeight": 0.4000000059604645,
-                        "_OCCBlend": 1.0,
-                        "_TopBlend": 0.6000000238418579
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": true,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.15000000596046448
                     }
                 },
                 {
                     "app.cHeightStainData": {
                         "_StainType": {
                             "app.StainCtrlDef.STAIN_TYPE_Serializable": {
-                                "_Value": "[4]WET"
+                                "_Value": "[1]OIL_MUD"
                             }
                         },
-                        "_DyanamicMat_Color": {
-                            "R": 0,
-                            "G": 0,
-                            "B": 0,
-                            "A": 0
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.15000000596046448
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[3]MUD_WATER"
+                            }
                         },
-                        "_DyanamicMat_Param": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "_SubHeightSpeed": 20.0,
-                        "_RefNormal": false,
-                        "_offsetHeight": 0.20000000298023224,
+                        "_offsetHeight": 0.10000000149011612,
                         "_UseRT": true,
                         "_rtOffsetHeight": 0.0,
-                        "_gradationHeight": 0.15000000596046448,
-                        "_OCCBlend": 0.15000000596046448,
-                        "_TopBlend": 0.15000000596046448
+                        "_gradationHeight": 0.15000000596046448
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[0]SAND"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.20000000298023224
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[2]SNOW"
+                            }
+                        },
+                        "_offsetHeight": 0.10000000149011612,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.15000000596046448,
+                        "_gradationHeight": 0.20000000298023224
                     }
                 }
             ],

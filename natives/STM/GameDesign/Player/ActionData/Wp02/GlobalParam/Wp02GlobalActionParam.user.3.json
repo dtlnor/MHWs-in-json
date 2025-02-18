@@ -19,7 +19,7 @@
                     "_JumpVelocity": {
                         "x": 0.0,
                         "y": 0.0,
-                        "z": 1.0,
+                        "z": 1.600000023841858,
                         "pad": 0.0
                     },
                     "_Gravity": 9.800000190734863,
@@ -30,8 +30,8 @@
                 "app.cGravityJumpParam": {
                     "_JumpVelocity": {
                         "x": 0.0,
-                        "y": 0.0,
-                        "z": 1.0,
+                        "y": 4.0,
+                        "z": 2.200000047683716,
                         "pad": 0.0
                     },
                     "_Gravity": 9.800000190734863,
@@ -129,7 +129,9 @@
             "_LaserGuard_OutRangeKeepTime": 0.0,
             "_LaserGuard_KnockBackSpeed": 0.0,
             "_GuardDamageReduceRate_LaserSlip": 0.10000000149011612,
-            "_GuardDamageReduceRate_LaserSlipStamina": 0.20000000298023224,
+            "LaserGuard_GuardStaminaReduceInterval": 0.5,
+            "_LaserGuard_SlipStaminaReduce": 5.0,
+            "_LaserGuard_KireajiReduce": 3,
             "_GuardKireajiReduce_S": 1,
             "_GuardKireajiReduce_M": 2,
             "_GuardKireajiReduce_L": 3,
@@ -314,6 +316,7 @@
             "_OffAttach_Sub_InterpolateTime": 1.0,
             "_OffShakeChain_InterpolateTime": 0.5,
             "_IgnoreParryPowerLimit": false,
+            "_ParryHyperArmorDamageRate": 0.30000001192092896,
             "STRUCT__CameraLStickRotRate_Base": 0.0,
             "STRUCT__CameraLStickRotRate_Vertical": 0.0,
             "_AimAdjustParam": {
@@ -688,7 +691,14 @@
                 1.25
             ],
             "_JustSuccessHATime": 0.5,
-            "_JustSuccessBuffTime": 12.0,
+            "_JustSuccessBuffTime": 24.0,
+            "_BuffJustDodgeRecover": {
+                "app.user_data.Wp02ActionParam.cBuffRecover": {
+                    "_Recover1": 8.0,
+                    "_Recover2": 4.0,
+                    "_RecoverMin": 0.0
+                }
+            },
             "_JustSuccessAttackRate": 1.2000000476837158,
             "_JustSuccessStatusRate": 1.2000000476837158,
             "_BuffEffectChangeTime": 0.15000000596046448

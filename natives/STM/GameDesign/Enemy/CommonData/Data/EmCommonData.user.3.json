@@ -6,9 +6,12 @@
                     "FeelThresholdForPetitCaution": 30.0,
                     "UpdateFindTargetRangeRate": 3.0,
                     "FeelAdjustRateForNpc": 0.0,
-                    "FeelSightAdjustRangeNearSleepPoint": 15.0,
+                    "FeelSightAdjustDistNearSleepPoint": 15.0,
                     "FeelSightAdjustValueNearSleepPoint": 70.0,
+                    "FeelRangeAdjustDistNearSleepPoint": 15.0,
+                    "FeelRangeAdjustValueNearSleepPoint": 0.0,
                     "CampArrivalOffset": 2.0,
+                    "CampUIIntervalTimer": 30.0,
                     "LimeStonePoolExtendAreaStayTIme": 120.0
                 }
             },
@@ -17,6 +20,13 @@
                     "HateAdjustDmageInc": 400.0,
                     "HateAdjustDmageIncForOt": 200.0,
                     "HateAdjustDmageIncForNpc": 200.0,
+                    "HateAdjustDmageIncByZako": 400.0,
+                    "HateAdjustDmageIncForOtByZako": 200.0,
+                    "HateAdjustDmageIncForNpcByZako": 200.0,
+                    "RangeAddHatePorterRidingRate": 0.30000001192092896,
+                    "ActionSubHatePorterRidingRate": 1.5,
+                    "RangeAddHatePorterRidingRateForNpc": 0.30000001192092896,
+                    "ActionSubHatePorterRidingRateForNpc": 1.5,
                     "ReturnCenterSecFromOutArea": 5.0,
                     "HagitoriStayRange": 15.0,
                     "AttackNearDeadBossTime": 20.0,
@@ -32,7 +42,7 @@
                     "OverAllAttackStayAttackableSecQuestTargetMax": 4.0,
                     "OverAllAttackStayCoolSec": 5.0,
                     "AttackStayIgnoreMaxNumRate": 50.0,
-                    "ForceDepletionEndTIme": 30.0,
+                    "ForceDepletionEndTIme": 15.0,
                     "UnfairRoutineReturnCenterTimeBoss": 30.0,
                     "UnfairRoutineReturnCenterTimeZako": 30.0,
                     "DiePoseFreezeTime": 10.0,
@@ -51,7 +61,7 @@
                     "HalfLostSec": 20.0,
                     "LostSec": 15.0,
                     "SubSecByDamage": 60.0,
-                    "EnableLeadEggSec": 60.0,
+                    "EnableLeadEggSec": 900.0,
                     "LeadEggCoolTime": 60.0
                 }
             },
@@ -218,8 +228,8 @@
             "Quest": {
                 "app.user_data.EmParamCommon.cQuest": {
                     "QuestStartHealthRate": 5.0,
-                    "QuestStartHealthResetTimer": 30.0,
-                    "DisableQuestStartHealthRate": 10.0,
+                    "QuestStartHealthResetTimer": 3000.0,
+                    "DisableQuestStartHealthRate": 15.0,
                     "NotifyDisableNum": 3
                 }
             },
@@ -475,7 +485,7 @@
                                 "_EnumValue": 8,
                                 "Radius": 10.0,
                                 "CharaCtrlRadius": 9.5,
-                                "NaviAgentRadius": 10.0,
+                                "NaviAgentRadius": 1.0,
                                 "CombatRangeScale": 1.2999999523162842,
                                 "CadaverPoint": 5
                             }
@@ -634,7 +644,7 @@
                 1.0,
                 1.0499999523162842,
                 1.100000023841858,
-                1.149999976158142
+                1.2000000476837158
             ],
             "TrapPosComplementTime": 0.10000000149011612,
             "_TrapCollisionDefineArray": {
@@ -695,9 +705,10 @@
                 "app.user_data.EmParamCommon.cRide": {
                     "BumpWallCheck_ThresholdEffectWallDist": 2.0,
                     "_StockDamageRate_CombatAreaMove": 1.5,
-                    "_DamageRateRidingOther": 0.5,
-                    "_SuccessTotalDamageHealthPerRidingOther": 10,
+                    "_DamageRateRidingOther": 0.30000001192092896,
+                    "_SuccessTotalDamageHealthPerRidingOther": 7,
                     "_WallBumpCoolTimeSec": 30.0,
+                    "_FinishWaitActionLoopSec": 4.0,
                     "_RayTargetPrefab": {
                         "via.Prefab": {
                             "v0": 1,
@@ -716,7 +727,9 @@
                 "app.user_data.EmParamCommon.cRepop": {
                     "WaitRottenModelSec": 180.0,
                     "RottenModelSec": 120.0,
-                    "CrystalModelSec": 10.0,
+                    "WaitRottenModelSec_LostParts": 450.0,
+                    "RottenModelSec_LostParts": 150.0,
+                    "CrystalModelSec": 120.0,
                     "CreateBonesSec": 0.5,
                     "EraseModelSec_Animal": 10.0,
                     "EraseModelSec_Zako": 60.0,
@@ -732,6 +745,7 @@
             },
             "Set": {
                 "app.user_data.EmParamCommon.cSet": {
+                    "SetBySaveDataMinute": 5.0,
                     "MaxZakoSetNum": 100,
                     "MinZakoSetNum": 80,
                     "ValidZakoCheckTimerLimit": 30.0
@@ -751,6 +765,7 @@
                     "_MinHealthRateByEm": 40.0,
                     "_OutPlayingAreaDistance": 50.0,
                     "_OutPlayingAreaFixDmageRate": 0.30000001192092896,
+                    "_AcceptableHightDiff": 10.0,
                     "_KeepCombatSec": 50.0,
                     "_AddCombatSec": 15.0,
                     "_CoolTimeSecCombatEm": 360.0,
@@ -762,6 +777,9 @@
                 }
             },
             "GrappleCoolTime": 600.0,
+            "GrappleKnockDownWaitLimitSec": 10.0,
+            "GrappleWaitTime": 1.0,
+            "GrappleLimitSlopeDeg": 30.0,
             "ScarDownCombatEmRate": 1.0,
             "Insurance": {
                 "app.user_data.EmParamCommon.cInsuranceParam": {
@@ -769,8 +787,8 @@
                     "FallCheckLimitY": -350.0,
                     "NaviMoveCheckRange": 1.0,
                     "AdditionalMoveInsuranceScale": 1.0,
-                    "AreaMoveDamageCancelTime": 20.0,
-                    "EntryArrivalCheckTime": 90.0,
+                    "AreaMoveDamageCancelTime": 30.0,
+                    "EntryArrivalCheckTime": 240.0,
                     "ExitArrivalCheckTime_Boss": 150.0,
                     "ExitArrivalCheckTime_Zako": 240.0
                 }
@@ -821,7 +839,7 @@
             "StealthAttackParam": {
                 "app.user_data.EmParamCommon.cStealthAttackParam": {
                     "ForceEnableAttackAngle": 180.0,
-                    "CoolDownSec": 60.0
+                    "CoolDownSec": 300.0
                 }
             },
             "OutOfSenseAttackParam": {
@@ -846,6 +864,41 @@
             "MoveTurnSpeedDefault": 60.0,
             "MoveTurnSpeedWalk": 15.0,
             "MoveTurnSpeedCombatDash": 160.0,
+            "FlexibleSwordVirtualPlaneInfo": {
+                "app.user_data.EmParamCommon.cFlexibleSwordVirtualPlaneInfo": {
+                    "St401_VirtualPlane01_Pos": {
+                        "x": -283.1183776855469,
+                        "y": -28.951379776000977,
+                        "z": 155.4177703857422
+                    },
+                    "St401_VirtualPlane01_Normal": {
+                        "x": -1.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    },
+                    "St401_VirtualPlane02_Pos": {
+                        "x": -280.7010498046875,
+                        "y": -28.951379776000977,
+                        "z": 155.4177703857422
+                    },
+                    "St401_VirtualPlane02_Normal": {
+                        "x": 1.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            },
+            "ArenaParam": {
+                "app.user_data.EmParamCommon.cArenaParam": {
+                    "AdjustPorterRidingTargetPosY": -15.0
+                }
+            },
+            "ArrivalAdjustRotParam": {
+                "app.user_data.EmParamCommon.cArrivalAdjustRotParam": {
+                    "RotLerpEnableDegMax": 90.0,
+                    "RotLerpDegMax": 5.0
+                }
+            },
             "ReplicaActDelayMotSpeedAdjustParam": {
                 "app.user_data.EmParamCommon.cReplicaActDelayMotSpeedAdjustParam": {
                     "ActDelayTimeListMaxNum": 10,

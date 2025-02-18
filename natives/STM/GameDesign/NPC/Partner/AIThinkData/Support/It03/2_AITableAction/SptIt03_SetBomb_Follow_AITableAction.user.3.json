@@ -5,15 +5,6 @@
                 {
                     "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
                         "_Param": {
-                            "app.NpcAITableConditions.cCanUseBomb_Param": {}
-                        },
-                        "_Inverse": false,
-                        "_IsContinue": true
-                    }
-                },
-                {
-                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
-                        "_Param": {
                             "app.NpcAITableConditions.cCheckDesireCautionCommon_Param": {
                                 "_DesireFixedID": "[3]SET_BOMB_FOLLOW"
                             }
@@ -29,6 +20,21 @@
                         },
                         "_Inverse": false,
                         "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCanUseBomb_Param": {
+                                "_LotteryTable": {
+                                    "app.user_data.NpcDesireLotteryTable_Random": {
+                                        "userdataPath": "GameDesign/NPC/Partner/CommonData/Desire/LotteryTable/SetBomb_DesireLotteryTable_Random.user"
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
                     }
                 }
             ],

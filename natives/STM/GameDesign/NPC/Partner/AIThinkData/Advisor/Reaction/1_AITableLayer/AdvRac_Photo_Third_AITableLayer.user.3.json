@@ -5,12 +5,12 @@
                 {
                     "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
                         "_Param": {
-                            "app.NpcAITableConditions.cCheckPhotoModeType_Param": {
-                                "_Type": "[1]THIRD_PERSON"
+                            "app.NpcAITableConditions.cCheckReactionType_Param": {
+                                "_ReactionType": "[6]PHOTO_TOGETHER"
                             }
                         },
                         "_Inverse": false,
-                        "_IsContinue": false
+                        "_IsContinue": true
                     }
                 }
             ],
@@ -22,7 +22,48 @@
                             "_DisableInterrupt": false
                         }
                     },
-                    "_TableList": []
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "3e46fae3-56de-4940-a1a6-1461400801f0",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/_Common/2_AITableAction/AdvCmn_MoveNearPlayer_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "418ea7d0-ac97-42aa-94d5-9bf93796ef1a",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/Reaction/2_AITableAction/AdvRac_GestureMove_Flag_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "612758df-6265-476e-a2c8-c3d9df8d9c49",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/Reaction/2_AITableAction/AdvRac_GestureMove_Range_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "c78a6ea4-2ef7-4ded-b37c-31b7acad841e",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/Reaction/2_AITableAction/AdvRac_Gesture_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
             }
         }

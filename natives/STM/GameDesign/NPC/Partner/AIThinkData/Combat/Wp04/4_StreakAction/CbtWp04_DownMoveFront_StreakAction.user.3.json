@@ -1,7 +1,7 @@
 [
     {
         "app.user_data.NpcStreakActionData": {
-            "_TerminateType": "[3]ALL_END",
+            "_TerminateType": "[1]LSTICK_EXECUTED",
             "_ActionEffectParam": {
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
                     "_Param": {
@@ -14,11 +14,10 @@
                     "_Param": {
                         "app.NpcStreakEffects.cSetScoringPoint_LStickParam": {
                             "_Reach": 1.25,
-                            "_ContinueMove": true,
-                            "_StopWhenReached": true,
+                            "_ContinueMove": false,
+                            "_StopWhenReached": false,
                             "_MoveType": "[6]COMBAT",
                             "_UseAIMoveEnd": false,
-                            "_IsNotRidePorter": false,
                             "_FixedSpeedLv": "[3]RUN",
                             "_IsMoveStopTurn": false,
                             "_StopTurnDir": "[0]PL_AXIS_Z",
@@ -48,8 +47,6 @@
                                     "_DirectionType": "[0]INVALID",
                                     "_EnvLayer": "[0]SHORT",
                                     "_IsEnableJointTarget": true,
-                                    "_ShiftForward": false,
-                                    "_ShiftForwardLength": 5.0,
                                     "_JudgeLength": 2.0
                                 }
                             }

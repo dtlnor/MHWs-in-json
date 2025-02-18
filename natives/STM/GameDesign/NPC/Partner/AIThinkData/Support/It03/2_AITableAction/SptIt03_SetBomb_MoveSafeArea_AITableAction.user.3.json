@@ -14,7 +14,9 @@
                 {
                     "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
                         "_Param": {
-                            "app.cNpcAITableConditionParam_None": {}
+                            "app.NpcAITableConditions.cCheckAroundBomb_Param": {
+                                "_Range": 10.0
+                            }
                         },
                         "_Inverse": false,
                         "_IsContinue": true
@@ -23,7 +25,13 @@
                 {
                     "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
                         "_Param": {
-                            "app.cNpcAITableConditionParam_None": {}
+                            "app.NpcAITableConditions.cCheckSomeEnemiesInSameArea_Param": {
+                                "_IsCheckRange": true,
+                                "_Range": {
+                                    "s": 0.0,
+                                    "r": 30.0
+                                }
+                            }
                         },
                         "_Inverse": true,
                         "_IsContinue": false

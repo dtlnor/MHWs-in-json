@@ -234,6 +234,27 @@
                     }
                 },
                 {
+                    "app.PlayerCommonSubAction.cNothing": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": []
+                            }
+                        },
+                        "_ContinueWhileRootSubActionChange": false,
+                        "_Aim": false,
+                        "_MovingFadeOutFrame": 10.0,
+                        "_VarietyMotionInfluenceFixed": {
+                            "app.HunterDef.VARIETY_MOTION_INFLUENCE_SUB_Serializable": {
+                                "_Value": "[2]NONE"
+                            }
+                        },
+                        "_OverwriteWpConstType": "[0]NONE",
+                        "_RetargetRate": 0.0,
+                        "_ForcedBlendRateStart": false,
+                        "_ActionGuideID": -1
+                    }
+                },
+                {
                     "app.PlayerCommonSubAction.cRootPorterRide": {
                         "_ActionComponentArray": {
                             "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
@@ -546,7 +567,22 @@
                         "_RetargetRate": 0.0,
                         "_ForcedBlendRateStart": false,
                         "_ActionGuideID": 149545008,
-                        "_WaitReturnTime": 0.5
+                        "_WaitReturnTime": 0.5,
+                        "_EstimateTime": 0.5,
+                        "_PosOffset": {
+                            "x": 0.0,
+                            "y": -2.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IsOverrideRot": true,
+                        "_RotOffset": {
+                            "x": 0.7071067690849304,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.7071067690849304
+                        },
+                        "_OnEliminateInterpDuration": 0.1599999964237213
                     }
                 },
                 {
@@ -3086,7 +3122,7 @@
                         },
                         "_OverwriteWpConstType": "[2]OFF",
                         "_RetargetRate": 0.0,
-                        "_ForcedBlendRateStart": true,
+                        "_ForcedBlendRateStart": false,
                         "_ActionGuideID": -1,
                         "_SpecialIdleBlendRate": {
                             "app.PlayerSubMotionUtil.BlendRatePack": {
@@ -3141,12 +3177,12 @@
                         "_MovingFadeOutFrame": 10.0,
                         "_VarietyMotionInfluenceFixed": {
                             "app.HunterDef.VARIETY_MOTION_INFLUENCE_SUB_Serializable": {
-                                "_Value": "[2]NONE"
+                                "_Value": "[1]OFF_END"
                             }
                         },
-                        "_OverwriteWpConstType": "[0]NONE",
+                        "_OverwriteWpConstType": "[2]OFF",
                         "_RetargetRate": 0.0,
-                        "_ForcedBlendRateStart": false,
+                        "_ForcedBlendRateStart": true,
                         "_ActionGuideID": -1,
                         "_SpecialIdleBlendRate": {
                             "app.PlayerSubMotionUtil.BlendRatePack": {
@@ -5225,7 +5261,8 @@
                             "y": 0.03999999910593033,
                             "z": 0.029999999329447746,
                             "pad": 0.0
-                        }
+                        },
+                        "_RapidSpan": 0.5
                     }
                 },
                 {
@@ -5453,7 +5490,8 @@
                             "y": 0.03999999910593033,
                             "z": 0.029999999329447746,
                             "pad": 0.0
-                        }
+                        },
+                        "_RapidSpan": 0.5
                     }
                 },
                 {
@@ -5838,7 +5876,7 @@
                         },
                         "_OverwriteWpConstType": "[0]NONE",
                         "_RetargetRate": 0.0,
-                        "_ForcedBlendRateStart": false,
+                        "_ForcedBlendRateStart": true,
                         "_ActionGuideID": -1
                     }
                 },
@@ -6158,7 +6196,7 @@
                                 },
                                 "_Lower": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
-                                        "BlendRate": 1.0,
+                                        "BlendRate": 0.0,
                                         "BlendMode": "[1]AddBlend"
                                     }
                                 },
@@ -6178,7 +6216,7 @@
                         },
                         "_StepAirInfo": {
                             "app.PorterRiderSubMotions.SubMotionSetInfo": {
-                                "_BlendRateMoveSpeed": 1.0,
+                                "_BlendRateMoveSpeed": 0.5,
                                 "_Head": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
                                         "BlendRate": 1.0,
@@ -6193,7 +6231,7 @@
                                 },
                                 "_Lower": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
-                                        "BlendRate": 1.0,
+                                        "BlendRate": 0.0,
                                         "BlendMode": "[1]AddBlend"
                                     }
                                 },
@@ -6213,7 +6251,7 @@
                         },
                         "_StepLoopInfo": {
                             "app.PorterRiderSubMotions.SubMotionSetInfo": {
-                                "_BlendRateMoveSpeed": 1.0,
+                                "_BlendRateMoveSpeed": 0.5,
                                 "_Head": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
                                         "BlendRate": 1.0,
@@ -6228,7 +6266,7 @@
                                 },
                                 "_Lower": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
-                                        "BlendRate": 1.0,
+                                        "BlendRate": 0.0,
                                         "BlendMode": "[1]AddBlend"
                                     }
                                 },
@@ -6251,7 +6289,7 @@
                                 "_BlendRateMoveSpeed": 1.0,
                                 "_Head": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
-                                        "BlendRate": 1.0,
+                                        "BlendRate": 0.5,
                                         "BlendMode": "[1]AddBlend"
                                     }
                                 },
@@ -6263,7 +6301,7 @@
                                 },
                                 "_Lower": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
-                                        "BlendRate": 1.0,
+                                        "BlendRate": 0.5,
                                         "BlendMode": "[1]AddBlend"
                                     }
                                 },
@@ -6298,7 +6336,7 @@
                                 },
                                 "_Lower": {
                                     "app.PorterRiderSubMotions.SubMotionInfo": {
-                                        "BlendRate": 1.0,
+                                        "BlendRate": 0.30000001192092896,
                                         "BlendMode": "[1]AddBlend"
                                     }
                                 },
@@ -6434,12 +6472,12 @@
                                     "app.PlayerSubMotionUtil.BlendRatePack": {
                                         "_LArm": 1.0,
                                         "_Head": 1.0,
-                                        "_RArm": 1.0,
+                                        "_RArm": 0.11999999731779099,
                                         "_Body": 1.0,
-                                        "_LowerBody": 1.0
+                                        "_LowerBody": 0.4699999988079071
                                     }
                                 },
-                                "_BlendRateMoveSpeed": 1.0
+                                "_BlendRateMoveSpeed": 0.5
                             }
                         }
                     }
@@ -6461,7 +6499,7 @@
                         },
                         "_OverwriteWpConstType": "[2]OFF",
                         "_RetargetRate": 0.0,
-                        "_ForcedBlendRateStart": false,
+                        "_ForcedBlendRateStart": true,
                         "_ActionGuideID": -1,
                         "_MovingRArmBlendRate": {
                             "app.HUNTER_MOVING_BLEND_RATE": {
@@ -6493,14 +6531,14 @@
                         "_SpecialIdleBlendRate": {
                             "app.PlayerSubMotionUtil.BlendRatePack": {
                                 "_LArm": 1.0,
-                                "_Head": 1.0,
+                                "_Head": 0.6499999761581421,
                                 "_RArm": 1.0,
-                                "_Body": 1.0,
-                                "_LowerBody": 0.5
+                                "_Body": 0.47999998927116394,
+                                "_LowerBody": 0.20999999344348907
                             }
                         },
                         "_BlendRateMoveSpeed": 0.5,
-                        "_RetargetMoveSpeed": 0.20000000298023224
+                        "_RetargetMoveSpeed": 1.0
                     }
                 },
                 {
@@ -6733,6 +6771,16 @@
                     "ace.user_data.ActionParam.cInfo": {
                         "_Guid": "1fbb2876-f253-4670-96de-f88d5c77ece4",
                         "_ActionGuid": "5096125b-3664-4852-8eb3-71d5c005e692",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "0a9e6aac-beb5-4889-82f1-98221265f1bc",
+                        "_ActionGuid": "1e3ca25c-7109-406b-858c-c999629aa1cd",
                         "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
                         "_OverrideParamNameArray": [],
                         "_OverrideOwnerAction": false,

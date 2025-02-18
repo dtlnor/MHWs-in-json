@@ -405,19 +405,19 @@
             },
             "_CampNeedPoint": {
                 "app.user_data.CampManagerSetting.cCampNeedPoint": {
-                    "_DangerSet": 200,
-                    "_LittleSafeSet": 150,
-                    "_SafeSet": 100,
-                    "_DangerRepair": 400,
-                    "_LittleSafeRepair": 300,
-                    "_SafeRepair": 200
+                    "_DangerSet": 75,
+                    "_LittleSafeSet": 50,
+                    "_SafeSet": 25,
+                    "_DangerRepair": 75,
+                    "_LittleSafeRepair": 50,
+                    "_SafeRepair": 25
                 }
             },
             "_RepoTimerLimit": {
                 "app.user_data.CampManagerSetting.cRepopTimerLimit": {
-                    "_Danger": 900.0,
-                    "_LittleSafe": 600.0,
-                    "_Safe": 300.0
+                    "_Danger": 600.0,
+                    "_LittleSafe": 300.0,
+                    "_Safe": 60.0
                 }
             },
             "_OtomoContactProbability": {
@@ -786,19 +786,350 @@
             "_FindDialogueInterval": 300,
             "_SetLogInterval": 60,
             "_FindDsiableEmDistance": 35.0,
-            "_NavSafeOffsetPosZ": 5.0,
-            "_ShowOBTEnableGm800ID": [
+            "_StampInfo": [
                 {
-                    "app.GimmickDef.ID_Serializable": {
-                        "_Value": "[644253312]GM800_000_55"
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_00_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.7372549176216125,
+                            "y": 0.7372549176216125,
+                            "z": 0.7372549176216125,
+                            "w": 0.0
+                        }
                     }
                 },
                 {
-                    "app.GimmickDef.ID_Serializable": {
-                        "_Value": "[2009017088]GM800_000_60"
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_01_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.250980406999588,
+                            "y": 0.47843137383461,
+                            "z": 0.545098066329956,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_02_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.46666666865348816,
+                            "y": 0.14901961386203766,
+                            "z": 0.14901961386203766,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_03_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.4588235318660736,
+                            "y": 0.38823530077934265,
+                            "z": 0.0,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_04_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.6745098233222961,
+                            "y": 0.08627451211214066,
+                            "z": 0.08627451211214066,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_05_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.19607843458652496,
+                            "y": 0.14901961386203766,
+                            "z": 0.7882353067398071,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_06_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 1.0,
+                            "y": 0.800000011920929,
+                            "z": 0.0,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_07_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.13333334028720856,
+                            "y": 0.772549033164978,
+                            "z": 0.37254902720451355,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_08_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.38823530077934265,
+                            "y": 0.13333334028720856,
+                            "z": 0.6470588445663452,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_09_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.2862745225429535,
+                            "y": 0.8705882430076599,
+                            "z": 0.501960813999176,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_10_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.08627451211214066,
+                            "y": 0.49803921580314636,
+                            "z": 0.8078431487083435,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_11_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.38823530077934265,
+                            "y": 0.239215686917305,
+                            "z": 0.843137264251709,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_12_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 1.0,
+                            "y": 0.9058823585510254,
+                            "z": 0.529411792755127,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_13_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.6313725709915161,
+                            "y": 0.25882354378700256,
+                            "z": 0.0,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_14_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.5490196347236633,
+                            "y": 0.10980392247438431,
+                            "z": 0.615686297416687,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_15_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.05098039284348488,
+                            "y": 0.3333333432674408,
+                            "z": 0.6784313917160034,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_16_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.95686274766922,
+                            "y": 0.250980406999588,
+                            "z": 0.37254902720451355,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_17_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.05098039284348488,
+                            "y": 0.5607843399047852,
+                            "z": 0.5058823823928833,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_18_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.572549045085907,
+                            "y": 0.250980406999588,
+                            "z": 0.05098039284348488,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_19_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.0,
+                            "y": 0.47058823704719543,
+                            "z": 0.33725491166114807,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_20_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.9843137264251709,
+                            "y": 0.7490196228027344,
+                            "z": 0.13333334028720856,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_21_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.0,
+                            "y": 0.4117647111415863,
+                            "z": 0.6313725709915161,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_22_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.8823529481887817,
+                            "y": 0.10980392247438431,
+                            "z": 0.2862745225429535,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_23_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.9803921580314636,
+                            "y": 0.800000011920929,
+                            "z": 0.08627451211214066,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_24_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.2078431397676468,
+                            "y": 0.8274509906768799,
+                            "z": 0.6000000238418579,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_25_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.4431372582912445,
+                            "y": 0.250980406999588,
+                            "z": 0.08627451211214066,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_26_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.9921568632125854,
+                            "y": 0.8784313797950745,
+                            "z": 0.27843138575553894,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_27_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.8588235378265381,
+                            "y": 0.14901961386203766,
+                            "z": 0.46666666865348816,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_28_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.6000000238418579,
+                            "y": 0.10980392247438431,
+                            "z": 0.10980392247438431,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_29_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.13333334028720856,
+                            "y": 0.8274509906768799,
+                            "z": 0.9333333373069763,
+                            "w": 1.0
+                        }
+                    }
+                },
+                {
+                    "app.user_data.CampManagerSetting.cStampInfo": {
+                        "_Resource": "Art/Model/Item/it84/00/0000/customStamps/it8400_stamp_30_MSK4.tex",
+                        "STRUCT__Color__Rgba": {
+                            "x": 0.4156862795352936,
+                            "y": 0.13333334028720856,
+                            "z": 0.658823549747467,
+                            "w": 1.0
+                        }
                     }
                 }
             ],
+            "_NavSafeOffsetPosZ": 5.0,
             "_OptionSetting": {
                 "app.user_data.CampOptionSetting": {
                     "userdataPath": "System/SystemSetting/CampOptionSetting.user"

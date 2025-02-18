@@ -162,7 +162,7 @@
                                 }
                             }
                         ],
-                        "_Fov": 45.0,
+                        "_Fov": 52.0,
                         "_InterpolationTime": 1.0,
                         "_InterpolationType": "[6]InOutQuad",
                         "_BaseDampingRate": 0.5,
@@ -507,6 +507,21 @@
                     "app.CameraMainAction.cBindDrop": {}
                 },
                 {
+                    "app.CameraMainAction.cBindRelease": {
+                        "_InTime": 0.5,
+                        "_InEase": "[5]OutQuad",
+                        "_OutTime": 0.5,
+                        "_OutEase": "[5]OutQuad",
+                        "_Fov": 40.0
+                    }
+                },
+                {
+                    "app.CameraMainAction.cBindReleaseDrop": {
+                        "_LookatTime": 0.699999988079071,
+                        "_LookatEase": "[5]OutQuad"
+                    }
+                },
+                {
                     "app.CameraMainAction.cTentOut": {
                         "_WorkData": {
                             "ace.user_data.CameraWorkData": {
@@ -515,6 +530,7 @@
                         },
                         "_ChoiceRangeDeg": 35.0,
                         "_BaseGroup": "7bf38abe-0278-4021-a603-90b51ed5a2da",
+                        "_FrontCutGuid": "94a93a65-8517-4dce-803a-ba7bea453bc0",
                         "_ChanceGroupList": [
                             "94a93a65-8517-4dce-803a-ba7bea453bc0",
                             "a0394ec1-0a40-4f63-a369-78fec229e075",
@@ -547,6 +563,7 @@
                             "1162cbd3-fd06-440e-a3b8-c18b39c3bced",
                             "49a31294-909e-4037-a161-6af690312b27"
                         ],
+                        "_FrontCutGuid": "0a62e679-5b28-4568-9db7-f82950718896",
                         "_OutTime": 0.800000011920929,
                         "_OutEase": "[6]InOutQuad"
                     }
@@ -756,13 +773,25 @@
                 },
                 {
                     "app.CameraMainAction.cPorterWallRun": {
-                        "_CenteringTargetDistance": 30.0,
+                        "_CenteringTargetDistance": 20.0,
                         "_FollowRate": 0.800000011920929,
                         "_BreakTime": 0.800000011920929,
                         "_BreakRotation": 30.0,
                         "_FirstResetTime": 0.5,
                         "_FirstResetType": "[6]InOutQuad",
-                        "_ControlOffset": 1.0
+                        "_ControlOffsetCurve": {
+                            "x": 2.5,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_ControlOffsetLinear": {
+                            "x": 1.0,
+                            "y": 0.5,
+                            "z": 2.0,
+                            "pad": 0.0
+                        },
+                        "_CurveDeg": 15.0
                     }
                 },
                 {
@@ -774,7 +803,7 @@
                         "_FirstResetTime": 1.0,
                         "_FirstResetType": "[6]InOutQuad",
                         "_GuideSepalateLimit": 4.0,
-                        "_LastTime": 1.0,
+                        "_LastTime": 0.5,
                         "_LastType": "[5]OutQuad",
                         "_PitchRange": {
                             "s": -60.0,
@@ -835,6 +864,18 @@
                         ],
                         "_FrontCutGuid": "4e119b7b-308a-4b85-a497-4f6afe08dda1",
                         "_QuestStartGuid": "45bb3cbb-bff7-4fb4-8b4a-29564b5a959d"
+                    }
+                },
+                {
+                    "app.CameraMainAction.cPorterLiftEnter": {
+                        "_WorkGuid": "3ad2562b-79f1-4fde-b8e2-060cfe2e78df"
+                    }
+                },
+                {
+                    "app.CameraMainAction.cPorterLiftExit": {
+                        "_WorkGuid": "2b8bf67b-6688-4367-93a2-1fc292daeda8",
+                        "_InterpolationTime": 0.5,
+                        "_InterpolationEase": "[6]InOutQuad"
                     }
                 },
                 {
@@ -1063,6 +1104,26 @@
                 },
                 {
                     "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "e68eaafa-838d-4991-a386-250825bff8f6",
+                        "_ActionGuid": "be011c68-cdd0-4b91-955e-557ca274045d",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "5f663b6e-2da1-45fd-8b81-2fdccbbe3462",
+                        "_ActionGuid": "d1370ee8-52fe-430f-a7d6-ab7fd84276ec",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
                         "_Guid": "60b12033-d76e-470e-a52f-7173b081beab",
                         "_ActionGuid": "78e77ae4-031d-4f93-a70d-f17f584c7205",
                         "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
@@ -1235,6 +1296,26 @@
                     "ace.user_data.ActionParam.cInfo": {
                         "_Guid": "0613b5ca-736a-4fce-8775-3c167e31ff29",
                         "_ActionGuid": "76cfcbf2-9b8b-4c15-aebf-a556a88e32e2",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "1e3145e4-10e4-4250-80f0-98fe5eeac57f",
+                        "_ActionGuid": "2d9f1da1-786d-46fd-bcf1-4a89f2bdd89c",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "f4f50b39-bf9c-4d39-b841-2320645db67b",
+                        "_ActionGuid": "641ad0bf-7c77-4f65-82cc-18187411918c",
                         "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
                         "_OverrideParamNameArray": [],
                         "_OverrideOwnerAction": false,

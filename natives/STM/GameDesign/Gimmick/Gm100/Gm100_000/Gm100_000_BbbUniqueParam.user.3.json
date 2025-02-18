@@ -199,6 +199,18 @@
                         "_Name": "_EnemyNearDistance",
                         "_IsInherited": false
                     }
+                },
+                {
+                    "ace.user_data.InheritableParam.cFieldInfo": {
+                        "_Name": "_BreakObject",
+                        "_IsInherited": false
+                    }
+                },
+                {
+                    "ace.user_data.InheritableParam.cFieldInfo": {
+                        "_Name": "_BrokenObject",
+                        "_IsInherited": false
+                    }
                 }
             ],
             "_BossOffsetPosition": {
@@ -242,24 +254,36 @@
                     "_EnableOpneMeshFrame": 167.0,
                     "_EnableFacilitiesMeshFrame": 166.0,
                     "_EnableStrapMeshFrame": 340.0,
-                    "_EnableChainFrame": 520.0
+                    "_EnableChainFrame": 520.0,
+                    "_CreateShellFrame": 20.0,
+                    "_CreateLanternFrame": 600.0
                 }
             },
             "_RepairMotionInfo": {
                 "app.user_data.Gm100_000_BbbUniqueParam.cRepairMotionInfo": {
                     "_DisableMeshFrame": 200.0,
                     "_EnableMeshFrame": 359.0,
-                    "_SetMotionStartFrame": 303.0
+                    "_SetMotionStartFrame": 303.0,
+                    "_CreateShellFrame": 190.0
                 }
             },
             "_RemoveMotionInfo": {
                 "app.user_data.Gm100_000_BbbUniqueParam.cRemoveMotionInfo": {
                     "_EnableRopeMeshFrame": 152.0,
                     "_DisableMeshFrame": 175.0,
-                    "_KillFrame": 176.0
+                    "_KillFrame": 176.0,
+                    "_CreateShellFrame": 180.0,
+                    "_FadeOutStartFrame": 160.0,
+                    "_DeleteLanternFrame": 0.0
                 }
             },
-            "_EnemyNearDistance": 30.0
+            "_EnemyNearDistance": 30.0,
+            "_BreakObject": {
+                "via.Prefab": {
+                    "v0": 1,
+                    "v1": "Art/VFX/Mesh/Props/gm100/gm100_000/11_gm100_000_break.pfb"
+                }
+            }
         }
     }
 ]

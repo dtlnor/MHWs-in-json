@@ -130,22 +130,6 @@
                                                     "_AssetGuid": "5b9bd4b3-e999-4769-afb0-344ed30989c8",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 3717255433
-                                                        }
-                                                    },
-                                                    "_JustOnce": false,
-                                                    "_Inverse": false,
-                                                    "_IgnoreInterrupt": false,
-                                                    "_EvaluatorParam": {
-                                                        "goatree.cEvaluatorParam_Max": {}
-                                                    }
-                                                }
-                                            },
-                                            {
-                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
-                                                    "_AssetGuid": "5b9bd4b3-e999-4769-afb0-344ed30989c8",
-                                                    "_GoalNameHash": {
-                                                        "app.cStrHashHeavy": {
                                                             "_Hash": 548942906
                                                         }
                                                     },
@@ -163,97 +147,7 @@
                                 }
                             }
                         },
-                        "_GoalEffectParams": [
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.NpcGoaTreeEffects.cUpdateNavigation_Param": {
-                                            "_TargetType": {
-                                                "app.NpcDef.NAVI_TARGET_TYPE_Serializable": {
-                                                    "_Value": "[345064608]PORTER"
-                                                }
-                                            },
-                                            "STRUCT__Reach__HasValue": true,
-                                            "STRUCT__Reach__Value": 1.0,
-                                            "_DisableStreet": true,
-                                            "_IsUseHunterNavFilter": false,
-                                            "_IsUseAdjuster": true,
-                                            "_AdjustParam": {
-                                                "app.mcNpcNaviDirectionAdjuster.cAdjustParam": {
-                                                    "_AheadDist": 1.5,
-                                                    "_DetectDist": 6.0,
-                                                    "_AvoidRate": 1.0,
-                                                    "_IsAvoidPlayer": true,
-                                                    "_IsAvoidNpc": true,
-                                                    "_IsAvoidPoint": true,
-                                                    "_IsAvoidPorter": false,
-                                                    "_IsAvoidOtomo": true,
-                                                    "_IsAvoidEmZako": false,
-                                                    "_IsAvoidEmBoss": false,
-                                                    "_IsAvoidGimmick": true
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        ]
-                    }
-                },
-                {
-                    "goatree.cGoalPackage_Basic": {
-                        "_GoalNameHash": {
-                            "app.cStrHashHeavy": {
-                                "_Hash": 3717255433
-                            }
-                        },
-                        "_BuildType": "[0]SET",
-                        "_SubGoalSelectType": {
-                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
-                                "_Value": "[0]MOST_DESIRABILITY"
-                            }
-                        },
-                        "_EndlessLoop": false,
-                        "_ParallelWhenInterrupted": false,
-                        "_UseableToReferent": false,
-                        "_OverridableToReferent": false,
-                        "_GoalParam": {
-                            "app.NpcGoaTreeGoals.cNavigationCompleted_Param": {
-                                "_SubGoalWrapper": {
-                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
-                                        "_SubGoalList": [],
-                                        "_InterruptGoalList": []
-                                    }
-                                }
-                            }
-                        },
-                        "_GoalEffectParams": [
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.NpcGoaTreeEffects.cSetMoveSpeed_Param": {
-                                            "_SpeedLv": "[2]WALK"
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.NpcGoaTreeEffects.cHunterMoveByStick_Param": {
-                                            "STRUCT__OverwriteSpeedLv__HasValue": false,
-                                            "STRUCT__OverwriteSpeedLv__Value": "[1]STOP",
-                                            "_IsTurn": false,
-                                            "_IsWarp": false,
-                                            "_TurnTarget": "[0]COMBAT_ENEMY",
-                                            "_TurnRange": 90.0,
-                                            "_ShieldRange": 90.0,
-                                            "_StickMagunitude": 0.5
-                                        }
-                                    }
-                                }
-                            }
-                        ]
+                        "_GoalEffectParams": []
                     }
                 },
                 {
@@ -287,7 +181,7 @@
                             {
                                 "goatree.cGoalPackage.cGoalEffectHolder": {
                                     "_Param": {
-                                        "app.NpcGoaTreeEffects.cRidePorter_Param": {
+                                        "app.NpcGoaTreeEffects.cRidePorterImmediate_Param": {
                                             "_IsCallRide": false
                                         }
                                     }

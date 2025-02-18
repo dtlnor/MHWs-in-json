@@ -5,7 +5,6 @@
             "_ReForecastRemainMinute": 70,
             "_PastRemoveMinute": 30,
             "_PastRemoveCheckMinute": 90,
-            "_KeepQuestTimelimitMin": 10,
             "_SpOfferMax": 2,
             "_EnvEventGlobalParam": {
                 "app.user_data.ExFieldParam.cEnvEventGlobalParam": {
@@ -28,7 +27,7 @@
                                             "s": 20.0,
                                             "r": 5.0
                                         },
-                                        "_DispersionMinute": 5,
+                                        "_DispersionMinute": 15,
                                         "_AreaNumWeights": [
                                             {
                                                 "app.user_data.ExFieldParam.cEnvEventGlobalParamByEnv.cAreaNumWeight": {
@@ -66,7 +65,7 @@
                                             "s": 15.0,
                                             "r": 5.0
                                         },
-                                        "_DispersionMinute": 5,
+                                        "_DispersionMinute": 10,
                                         "_AreaNumWeights": [
                                             {
                                                 "app.user_data.ExFieldParam.cEnvEventGlobalParamByEnv.cAreaNumWeight": {
@@ -104,7 +103,7 @@
                                             "s": 20.0,
                                             "r": 5.0
                                         },
-                                        "_DispersionMinute": 5,
+                                        "_DispersionMinute": 15,
                                         "_AreaNumWeights": [
                                             {
                                                 "app.user_data.ExFieldParam.cEnvEventGlobalParamByEnv.cAreaNumWeight": {
@@ -156,11 +155,12 @@
                         "[59]GM000_170_00_RARE",
                         "[60]ASSIST_NPC_000",
                         "[61]ASSIST_NPC_001",
-                        "[62]GM408_000_00_OTHERS",
                         "[69]GM001_006_01_MANY",
                         "[71]GM551_001_00_MANY",
                         "[73]GM601_000_00_MANY",
-                        "[74]GM555_001_00_MANY"
+                        "[74]GM555_001_00_MANY",
+                        "[52]GM550_000_00_MANY",
+                        "[84]GM000_175_00_MANY"
                     ],
                     "_IsNotifyPopAnimals": [
                         "[5]PARALYSIS_FROG_MANY",
@@ -168,11 +168,11 @@
                         "[15]EM5001_20_0_MANY",
                         "[2]BIG_HONEY_INSECT_MANY",
                         "[4]BIG_LIGHTNING_INSECT_MANY",
-                        "[9]FLASH_INSECT_MANY",
-                        "[14]EM5004_10_0_MANY"
+                        "[9]FLASH_INSECT_MANY"
                     ],
                     "_IsNotSummaryGimmicks": [
-                        "[62]GM408_000_00_OTHERS"
+                        "[62]GM408_000_00_OTHERS",
+                        "[77]GM015_000_00_UNIQUE"
                     ]
                 }
             },
@@ -185,31 +185,6 @@
                 {
                     "app.user_data.ExFieldParam_LayoutData": {
                         "userdataPath": "GameDesign/Environment/UserData/ExFieldPattern/ExFieldPattern_Default/st101_ExFieldParam_LayoutData.user"
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam_LayoutData": {
-                        "userdataPath": "GameDesign/Environment/UserData/ExFieldPattern/ExFieldPattern_Default/st102_ExFieldParam_LayoutData.user"
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam_LayoutData": {
-                        "userdataPath": "GameDesign/Environment/UserData/ExFieldPattern/ExFieldPattern_Default/st103_ExFieldParam_LayoutData.user"
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam_LayoutData": {
-                        "userdataPath": "GameDesign/Environment/UserData/ExFieldPattern/ExFieldPattern_Default/st104_ExFieldParam_LayoutData.user"
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam_LayoutData": {
-                        "userdataPath": "GameDesign/Environment/UserData/ExFieldPattern/ExFieldPattern_Default/st105_ExFieldParam_LayoutData.user"
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam_LayoutData": {
-                        "userdataPath": "GameDesign/Environment/UserData/ExFieldPattern/ExFieldPattern_Default/st401_ExFieldParam_LayoutData.user"
                     }
                 }
             ],
@@ -237,7 +212,7 @@
                 },
                 {
                     "app.user_data.ExFieldParam.cSpOfferParamByHR": {
-                        "_HR": 15,
+                        "_HR": 16,
                         "_SpOfferParams": [
                             {
                                 "app.user_data.ExFieldParam.cSpOfferParam": {
@@ -258,19 +233,40 @@
                 },
                 {
                     "app.user_data.ExFieldParam.cSpOfferParamByHR": {
-                        "_HR": 20,
+                        "_HR": 21,
                         "_SpOfferParams": [
                             {
                                 "app.user_data.ExFieldParam.cSpOfferParam": {
-                                    "_LotIntervalMinute": 40,
-                                    "_Probability": 30,
+                                    "_LotIntervalMinute": 30,
+                                    "_Probability": 50,
                                     "_Weight": 30
                                 }
                             },
                             {
                                 "app.user_data.ExFieldParam.cSpOfferParam": {
+                                    "_LotIntervalMinute": 45,
+                                    "_Probability": 50,
+                                    "_Weight": 30
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "app.user_data.ExFieldParam.cSpOfferParamByHR": {
+                        "_HR": 31,
+                        "_SpOfferParams": [
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferParam": {
                                     "_LotIntervalMinute": 30,
-                                    "_Probability": 30,
+                                    "_Probability": 60,
+                                    "_Weight": 30
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferParam": {
+                                    "_LotIntervalMinute": 45,
+                                    "_Probability": 70,
                                     "_Weight": 30
                                 }
                             }
@@ -296,7 +292,7 @@
                                 "_Value": "[-731883392]REWARD_RANK_06"
                             }
                         },
-                        "_Probability": 20
+                        "_Probability": 50
                     }
                 },
                 {
@@ -306,7 +302,17 @@
                                 "_Value": "[-771966272]REWARD_RANK_07"
                             }
                         },
-                        "_Probability": 30
+                        "_Probability": 50
+                    }
+                },
+                {
+                    "app.user_data.ExFieldParam.cSpOfferParam_EmType": {
+                        "_EmRank": {
+                            "app.QuestDef.EM_REWARD_RANK_Serializable": {
+                                "_Value": "[316158848]REWARD_RANK_08"
+                            }
+                        },
+                        "_Probability": 50
                     }
                 }
             ],
@@ -533,7 +539,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[3]st101_03",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -541,7 +547,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[9]st101_09",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -549,7 +555,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[12]st101_12",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -557,7 +563,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[16]st101_16",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -565,7 +571,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[21]st102_02",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -573,7 +579,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[22]st102_03",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -581,7 +587,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[27]st102_08",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -589,7 +595,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[31]st102_12",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -597,7 +603,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[43]st103_03",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -605,7 +611,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[47]st103_07",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -613,7 +619,7 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[48]st103_08",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -621,7 +627,55 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[55]st103_15",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[62]st104_02",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[66]st104_06",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[68]st104_08",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[75]st104_15",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[84]st105_03",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[86]st105_05",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -629,14 +683,22 @@
                                     "_GimmickEvent": "[60]ASSIST_NPC_000",
                                     "_AreaID": "[87]st105_06",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[60]ASSIST_NPC_000",
+                                    "_AreaID": "[90]st105_09",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
                                 }
                             }
                         ],
                         "_LotIntervalWithWeights": [
                             {
                                 "app.user_data.ExFieldParam.cAssistNpcParam.cLotIntervalWithWeight": {
-                                    "_Interval": 30,
+                                    "_Interval": 31,
                                     "_Weight": 10
                                 }
                             },
@@ -663,7 +725,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[3]st101_03",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -671,7 +733,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[9]st101_09",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -679,7 +741,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[12]st101_12",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -687,7 +749,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[16]st101_16",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -695,7 +757,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[21]st102_02",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -703,7 +765,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[22]st102_03",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -711,7 +773,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[27]st102_08",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -719,7 +781,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[31]st102_12",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -727,7 +789,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[43]st103_03",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -735,7 +797,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[47]st103_07",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -743,7 +805,7 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[48]st103_08",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
                                 }
                             },
                             {
@@ -751,14 +813,78 @@
                                     "_GimmickEvent": "[61]ASSIST_NPC_001",
                                     "_AreaID": "[55]st103_15",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[62]st104_02",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[66]st104_06",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[68]st104_08",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[75]st104_15",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[84]st105_03",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[86]st105_05",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[87]st105_06",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcGimmick": {
+                                    "_GimmickEvent": "[61]ASSIST_NPC_001",
+                                    "_AreaID": "[90]st105_09",
+                                    "_Weight": 10,
+                                    "_EnableEnvBit": 7
                                 }
                             }
                         ],
                         "_LotIntervalWithWeights": [
                             {
                                 "app.user_data.ExFieldParam.cAssistNpcParam.cLotIntervalWithWeight": {
-                                    "_Interval": 30,
+                                    "_Interval": 31,
                                     "_Weight": 10
                                 }
                             },
@@ -785,15 +911,27 @@
                                     "_GimmickEvent": "[62]GM408_000_00_OTHERS",
                                     "_AreaID": "[65]st104_05",
                                     "_Weight": 10,
-                                    "_EnableEnvBit": 0
+                                    "_EnableEnvBit": 5
                                 }
                             }
                         ],
                         "_LotIntervalWithWeights": [
                             {
                                 "app.user_data.ExFieldParam.cAssistNpcParam.cLotIntervalWithWeight": {
-                                    "_Interval": 45,
+                                    "_Interval": 31,
                                     "_Weight": 10
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcParam.cLotIntervalWithWeight": {
+                                    "_Interval": 40,
+                                    "_Weight": 30
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cAssistNpcParam.cLotIntervalWithWeight": {
+                                    "_Interval": 60,
+                                    "_Weight": 50
                                 }
                             },
                             {
@@ -820,11 +958,7 @@
                                 "_Value": "[-1712813184]MISSION_507060"
                             }
                         },
-                        "_DisableMission": {
-                            "app.MissionIDList.ID_Serializable": {
-                                "_Value": "[0]INVALID"
-                            }
-                        }
+                        "_DisableMissions": []
                     }
                 },
                 {
@@ -840,11 +974,7 @@
                                 "_Value": "[1518337664]MISSION_506050"
                             }
                         },
-                        "_DisableMission": {
-                            "app.MissionIDList.ID_Serializable": {
-                                "_Value": "[0]INVALID"
-                            }
-                        }
+                        "_DisableMissions": []
                     }
                 },
                 {
@@ -860,38 +990,15 @@
                                 "_Value": "[1386085888]MISSION_006010"
                             }
                         },
-                        "_DisableMission": {
-                            "app.MissionIDList.ID_Serializable": {
-                                "_Value": "[-1069308800]MISSION_010110"
-                            }
-                        }
+                        "_DisableMissions": [
+                            "[2009542528]MISSION_008050",
+                            "[-1069308800]MISSION_010110",
+                            "[-1074267392]MISSION_506090"
+                        ]
                     }
                 }
             ],
-            "_BattlefieldLayouts": [
-                {
-                    "app.user_data.ExFieldParam.cBattlefieldLayout": {
-                        "_Stage": {
-                            "app.FieldDef.STAGE_Serializable": {
-                                "_Value": "[544388992]ST402"
-                            }
-                        },
-                        "_Rank": "[2]EX",
-                        "_OverrideID": "[12232]UnknEnumVal"
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam.cBattlefieldLayout": {
-                        "_Stage": {
-                            "app.FieldDef.STAGE_Serializable": {
-                                "_Value": "[905584064]ST403"
-                            }
-                        },
-                        "_Rank": "[2]EX",
-                        "_OverrideID": "[-1167809152]UnknEnumVal"
-                    }
-                }
-            ],
+            "_BattlefieldLayouts": [],
             "_OverrideHolder": {
                 "app.user_data.ExFieldParam_OverrideHolder": {
                     "userdataPath": "GameDesign/Environment/UserData/ExFieldParam_OverrideHolder.user"
