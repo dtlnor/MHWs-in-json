@@ -1,0 +1,66 @@
+[
+    {
+        "app.user_data.NpcAITableActionData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireAdvisorQuest_Param": {
+                                "_DesireFixedID": "[2]NOTIFY_HAGITORI_LOST_PARTS"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cSetHagitoriTarget_Param": {
+                                "_IsEnableBoss": false,
+                                "_IsEnableLostParts": true,
+                                "_IsEnableCaptureBoss": false,
+                                "_IsEnableZako": false,
+                                "_IsEnablePopComplete": true,
+                                "_IsOnlyQuestTarget": false,
+                                "_IsSafetyActPoint": false
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cSetNotify_Param": {
+                                "_NotifyType": "[1]REMIND_LOST_PARTS"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_ActionSetting": {
+                "app.user_data.NpcAITableActionData.cActionSetting": {
+                    "_ForceInterrupt": false,
+                    "_TableEnd": false
+                }
+            },
+            "_Param": {
+                "app.user_data.NpcAITableActionData.cNpcAITableEffectHolder": {
+                    "_Param": {
+                        "app.NpcAITableEffects.cStreakAct_Param": {
+                            "_StreakPlanData": {
+                                "app.user_data.NpcStreakPlanData": {
+                                    "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/Support/3_StreakPlan/AdvSpt_HagitoriLostParts_StreakPlan.user"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

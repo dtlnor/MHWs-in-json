@@ -1,0 +1,67 @@
+[
+    {
+        "app.user_data.NpcAITableActionData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireAdvisorQuest_Param": {
+                                "_DesireFixedID": "[5]SURVEY_CAPTURE_ENEMY"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cSetHagitoriTarget_Param": {
+                                "_IsEnableBoss": false,
+                                "_IsEnableLostParts": false,
+                                "_IsEnableCaptureBoss": true,
+                                "_IsEnableZako": false,
+                                "_IsEnablePopComplete": false,
+                                "_IsOnlyQuestTarget": true,
+                                "_IsSafetyActPoint": true
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckTargetSafety_Param": {
+                                "_TargetType": "[1169209344]HAGITORI_ENEMY",
+                                "_TargetPartsType": "[1075205376]HEAD"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_ActionSetting": {
+                "app.user_data.NpcAITableActionData.cActionSetting": {
+                    "_ForceInterrupt": false,
+                    "_TableEnd": false
+                }
+            },
+            "_Param": {
+                "app.user_data.NpcAITableActionData.cNpcAITableEffectHolder": {
+                    "_Param": {
+                        "app.NpcAITableEffects.cStreakAct_Param": {
+                            "_StreakPlanData": {
+                                "app.user_data.NpcStreakPlanData": {
+                                    "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/Support/3_StreakPlan/AdvSpt_SurveyCaptureBoss_StreakPlan.user"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]
