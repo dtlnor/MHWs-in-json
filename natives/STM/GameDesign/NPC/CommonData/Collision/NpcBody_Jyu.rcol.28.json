@@ -33,13 +33,13 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 1549972489,
                     "secondaryJointNameMMHash": 1549972489,
-                    "shapeName": "",
+                    "shapeName": "押し（立ち）",
                     "primaryJointName": "Hip",
                     "secondaryJointName": "Hip"
                 }
             ],
             "maskGuids": [],
-            "groupName": ""
+            "groupName": "Push"
         },
         {
             "groupGuid": "442a1977-f2cd-4cd7-bdf9-62b81f006fcd",
@@ -74,13 +74,13 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 1549972489,
                     "secondaryJointNameMMHash": 1549972489,
-                    "shapeName": "",
+                    "shapeName": "押し（移動）",
                     "primaryJointName": "Hip",
                     "secondaryJointName": "Hip"
                 }
             ],
             "maskGuids": [],
-            "groupName": ""
+            "groupName": "PushMove"
         },
         {
             "groupGuid": "38af2794-3018-00a8-33fe-2d068dac593b",
@@ -115,7 +115,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 2879905340,
                     "secondaryJointNameMMHash": 2879905340,
-                    "shapeName": "",
+                    "shapeName": "AttackDetector",
                     "primaryJointName": "root",
                     "secondaryJointName": "root"
                 }
@@ -123,7 +123,7 @@
             "maskGuids": [
                 "21964e78-82d8-4b3a-b8bb-e20f1ffe1e40"
             ],
-            "groupName": ""
+            "groupName": "AttackDetector"
         },
         {
             "groupGuid": "f5a6656f-a5b4-45f1-917c-a325d07f83bf",
@@ -158,7 +158,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 1743374425,
                     "secondaryJointNameMMHash": 2879905340,
-                    "shapeName": "",
+                    "shapeName": "Damage",
                     "primaryJointName": "Neck",
                     "secondaryJointName": "root"
                 }
@@ -166,7 +166,7 @@
             "maskGuids": [
                 "21964e78-82d8-4b3a-b8bb-e20f1ffe1e40"
             ],
-            "groupName": ""
+            "groupName": "Damage"
         }
     ],
     "requestSets": [
@@ -177,8 +177,8 @@
             "requestSetIndex": 0,
             "keyHash": 2152419538,
             "KeyNameMMHash": 396010129,
-            "name": "",
-            "keyName": "",
+            "name": "押し",
+            "keyName": "Push",
             "nativeShapeColliders": [
                 {
                     "via.physics.RequestSetColliderUserData": {
@@ -191,7 +191,7 @@
             ],
             "userData": {
                 "app.col_user_data.PressParam": {
-                    "v0_Name": "",
+                    "v0_Name": "Npc",
                     "v1_ParentUserData": {
                         "": {}
                     },
@@ -206,8 +206,8 @@
             "requestSetIndex": 1,
             "keyHash": 1654443503,
             "KeyNameMMHash": 82226707,
-            "name": "",
-            "keyName": "",
+            "name": "攻撃検知",
+            "keyName": "AttackDetector",
             "nativeShapeColliders": [
                 {
                     "via.physics.RequestSetColliderUserData": {
@@ -220,7 +220,7 @@
             ],
             "userData": {
                 "app.col_user_data.DamageParamNpc": {
-                    "v0_Name": "",
+                    "v0_Name": "NpcDetector",
                     "v1_ParentUserData": {
                         "": {}
                     },
@@ -240,8 +240,8 @@
             "requestSetIndex": 2,
             "keyHash": 1063346788,
             "KeyNameMMHash": 1077744395,
-            "name": "",
-            "keyName": "",
+            "name": "押し移動",
+            "keyName": "PushMove",
             "nativeShapeColliders": [
                 {
                     "via.physics.RequestSetColliderUserData": {
@@ -254,7 +254,7 @@
             ],
             "userData": {
                 "app.col_user_data.PressParam": {
-                    "v0_Name": "",
+                    "v0_Name": "NpcMove",
                     "v1_ParentUserData": {
                         "": {}
                     },
@@ -269,8 +269,8 @@
             "requestSetIndex": 3,
             "keyHash": 2910652208,
             "KeyNameMMHash": 2878922317,
-            "name": "",
-            "keyName": "",
+            "name": "ダメージ",
+            "keyName": "Damage",
             "nativeShapeColliders": [
                 {
                     "via.physics.RequestSetColliderUserData": {
@@ -283,7 +283,7 @@
             ],
             "userData": {
                 "app.col_user_data.DamageParamNpc": {
-                    "v0_Name": "",
+                    "v0_Name": "NpcDamage",
                     "v1_ParentUserData": {
                         "": {}
                     },

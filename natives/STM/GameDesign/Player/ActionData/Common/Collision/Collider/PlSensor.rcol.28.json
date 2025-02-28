@@ -41,7 +41,7 @@
             "maskGuids": [
                 "5d637fff-4c9b-4bfd-aa9b-96c8bca7c6fb"
             ],
-            "groupName": ""
+            "groupName": "SensorGet_Body"
         },
         {
             "groupGuid": "f87070b1-bc4b-4d9f-bfb5-82c869152c73",
@@ -76,7 +76,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 4175418299,
                     "secondaryJointNameMMHash": 2180083513,
-                    "shapeName": "",
+                    "shapeName": "Sensor",
                     "primaryJointName": "Root",
                     "secondaryJointName": ""
                 }
@@ -84,7 +84,7 @@
             "maskGuids": [
                 "db1ae534-4b20-4ebd-aa18-1dabb357ad33"
             ],
-            "groupName": ""
+            "groupName": "SensorGet_Pop"
         },
         {
             "groupGuid": "5cd2bd45-d1c9-4fc4-87d1-89be5208e4db",
@@ -119,7 +119,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 4175418299,
                     "secondaryJointNameMMHash": 2180083513,
-                    "shapeName": "",
+                    "shapeName": "Sensor",
                     "primaryJointName": "Root",
                     "secondaryJointName": ""
                 }
@@ -127,7 +127,7 @@
             "maskGuids": [
                 "a5ca093d-a8b3-47fc-b682-2e3a2bcc180d"
             ],
-            "groupName": ""
+            "groupName": "SensorPut"
         },
         {
             "groupGuid": "737f892d-f1c6-40aa-8968-fa9ce6a988d5",
@@ -174,7 +174,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 4175418299,
                     "secondaryJointNameMMHash": 2180083513,
-                    "shapeName": "",
+                    "shapeName": "NonFlexibleSensor",
                     "primaryJointName": "Root",
                     "secondaryJointName": ""
                 },
@@ -215,7 +215,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 2180083513,
                     "secondaryJointNameMMHash": 2180083513,
-                    "shapeName": "",
+                    "shapeName": "FlexibleSensor",
                     "primaryJointName": "",
                     "secondaryJointName": ""
                 }
@@ -223,7 +223,7 @@
             "maskGuids": [
                 "db1ae534-4b20-4ebd-aa18-1dabb357ad33"
             ],
-            "groupName": ""
+            "groupName": "RideSensorGet"
         },
         {
             "groupGuid": "ef6763cd-4213-4a14-bcac-3559f785922f",
@@ -267,7 +267,7 @@
                 "8626915e-aee1-42d0-a562-7bd612b97bdd",
                 "5d637fff-4c9b-4bfd-aa9b-96c8bca7c6fb"
             ],
-            "groupName": ""
+            "groupName": "助け起こし待ち"
         },
         {
             "groupGuid": "5b2e7beb-ab33-44c6-9225-d9aa8b59221b",
@@ -302,7 +302,7 @@
                     "unkn": 0,
                     "primaryJointNameMMHash": 4175418299,
                     "secondaryJointNameMMHash": 2180083513,
-                    "shapeName": "",
+                    "shapeName": "Sensor",
                     "primaryJointName": "Root",
                     "secondaryJointName": ""
                 }
@@ -310,7 +310,7 @@
             "maskGuids": [
                 "5d637fff-4c9b-4bfd-aa9b-96c8bca7c6fb"
             ],
-            "groupName": ""
+            "groupName": "Sleep_SensorGet"
         }
     ],
     "requestSets": [
@@ -321,8 +321,8 @@
             "requestSetIndex": 0,
             "keyHash": 795769323,
             "KeyNameMMHash": 2376776116,
-            "name": "",
-            "keyName": "",
+            "name": "ギミックセンサー",
+            "keyName": "Sensor",
             "nativeShapeColliders": [
                 {
                     "via.physics.RequestSetColliderUserData": {
@@ -349,12 +349,12 @@
             "requestSetIndex": 1,
             "keyHash": 2861661439,
             "KeyNameMMHash": 4097259860,
-            "name": "",
+            "name": "ギミックセンサー（ライド中）",
             "keyName": "RideSensor",
             "nativeShapeColliders": [
                 {
                     "app.col_user_data.SensorParamPlRide": {
-                        "v0_Name": "",
+                        "v0_Name": "NonFlexibleSensor",
                         "v1_ParentUserData": {
                             "": {}
                         },
@@ -418,7 +418,7 @@
                 },
                 {
                     "app.col_user_data.SensorParamPlRide": {
-                        "v0_Name": "",
+                        "v0_Name": "FlexibleSensor",
                         "v1_ParentUserData": {
                             "": {}
                         },
@@ -497,8 +497,8 @@
             "requestSetIndex": 2,
             "keyHash": 1869216324,
             "KeyNameMMHash": 1690512461,
-            "name": "",
-            "keyName": "",
+            "name": "ギミックセンサーPut",
+            "keyName": "SensorPut",
             "nativeShapeColliders": [
                 {
                     "via.physics.RequestSetColliderUserData": {
@@ -525,7 +525,7 @@
             "requestSetIndex": 3,
             "keyHash": 663858317,
             "KeyNameMMHash": 2828508466,
-            "name": "",
+            "name": "助け起こし待ち",
             "keyName": "ResurrectSensor",
             "nativeShapeColliders": [
                 {
@@ -539,7 +539,7 @@
             ],
             "userData": {
                 "app.col_user_data.SensorParamPl": {
-                    "v0_Name": "",
+                    "v0_Name": "助け起こし待ち",
                     "v1_ParentUserData": {
                         "": {}
                     },
@@ -554,7 +554,7 @@
             "requestSetIndex": 4,
             "keyHash": 3028048171,
             "KeyNameMMHash": 1269096198,
-            "name": "",
+            "name": "睡眠中吸血受付センサー",
             "keyName": "Sleep",
             "nativeShapeColliders": [
                 {
@@ -582,7 +582,7 @@
             "requestSetIndex": 5,
             "keyHash": 3492297798,
             "KeyNameMMHash": 402738278,
-            "name": "",
+            "name": "ボディセンサー",
             "keyName": "Sensor_Body",
             "nativeShapeColliders": [
                 {
