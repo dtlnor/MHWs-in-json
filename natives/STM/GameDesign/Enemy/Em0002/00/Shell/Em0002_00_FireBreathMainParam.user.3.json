@@ -1,0 +1,1028 @@
+[
+    {
+        "ace.user_data.ShellMainParam": {
+            "_ShellMiniParams": [
+                {
+                    "ace.cShellminiParamCommon": {
+                        "MiniParamName": "Common",
+                        "MiniParamtype": "[1]COMMON",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 0,
+                        "LateUpdateOrder": 0,
+                        "_LifeSec": 0.4000000059604645,
+                        "_HitOnSec": 0.0
+                    }
+                },
+                {
+                    "app.cShellminiParamMoveLaser": {
+                        "MiniParamName": "MoveLaser",
+                        "MiniParamtype": "[2]MOVE",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 200,
+                        "LateUpdateOrder": 200,
+                        "_MoveSpeed": 50.0,
+                        "_TargetOffset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_RotationType": "[2]TURN_TO_MOVE_DIR_ALWAYS",
+                        "STRUCT__OverwriteTurnToMoveDirCalcType__HasValue": false,
+                        "STRUCT__OverwriteTurnToMoveDirCalcType__Value": "[0]USE_WORLD_AXISY",
+                        "_IsUseTargetRotOffset": false,
+                        "_TargetRotOffset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IsDisableTarget": true,
+                        "_IsTargetDirLimit": false,
+                        "_TargetDirLimitDeg_X": 0,
+                        "_TargetDirLimitDeg_Y": 0,
+                        "_IsUseDistanceTargetDirLimitDegX": false,
+                        "_IsUseDistanceParentRoot": false,
+                        "_IsUseXZDist": false,
+                        "STRUCT__TargetDirLimitOwnerLocal_X__HasValue": false,
+                        "STRUCT__TargetDirLimitOwnerLocal_X__Value": 0,
+                        "_TargetDirMaxDistance": 0.0,
+                        "_TargetDirMinDistance": 0.0,
+                        "_IsUseNoTargetAdjustYaw": false,
+                        "_NoTargetAdjustYaw_Deg": 90.0,
+                        "_IsUseStraightLineDistance": false,
+                        "_Range_Distance": -1.0,
+                        "_LimitLength": 8.0,
+                        "_IsFastestImpact": true,
+                        "_IsDisableHitTerrainGimmick": false,
+                        "_IsAdjustDir": false,
+                        "_IsAdjustDirLimit": true,
+                        "_AdjustDirLimitDeg_X": 0,
+                        "_AdjustDirLimitDeg_Y": 0,
+                        "_IsLaserGuard": false,
+                        "_IsBreakGuardGimmick": true,
+                        "_IsGuardThrough": false,
+                        "_IsGuardShrinkEffect": false,
+                        "_GuardShrinkEffectLength": 1.0,
+                        "_TerrainCheckRayOffsetHeight": 0.0,
+                        "_IsStopMoveLaserTimeOut": false,
+                        "_LaserMoveStopTime": 0.0,
+                        "_IsCheckUnderneathWater": false,
+                        "_WaterCheckRayOffset": 0.0,
+                        "_WaterCheckRayLength": 1.0,
+                        "_IsCheckUnderneathGround": false,
+                        "_GroundCheckRayOffset": 0.0,
+                        "_GroundCheckRayLength": 1.0
+                    }
+                },
+                {
+                    "app.cShellminiParamColHitLaser": {
+                        "MiniParamName": "AppColHitLaser",
+                        "MiniParamtype": "[3]COLLISION",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 100,
+                        "LateUpdateOrder": 100,
+                        "_ColHitFlag": 2,
+                        "_SubCollisionIDList": [],
+                        "_IsHitOwner": false,
+                        "_IsHitOwnerOhterShell": false,
+                        "_IsHitAnimalCollision": false,
+                        "_IsDisableNearestHit": false,
+                        "_IsNoHitAttackerShell": false,
+                        "_IsDamageShellNoSort": false,
+                        "_IsDamageDestory": false,
+                        "_IsEnableDynamicShape": false,
+                        "_AppHitTerrainSetting": {
+                            "app.cShellminiParamColHit.HitTerrainSetting": {
+                                "_FirstTerrainHitType": "[0]FINISH",
+                                "_ShellHitWaterBehavior": "[3]CONTINUE",
+                                "_ShellHitGroundBehavior": "[0]FINISH",
+                                "STRUCT__ShellHitWallBehavior__HasValue": false,
+                                "STRUCT__ShellHitWallBehavior__Value": "[0]FINISH",
+                                "STRUCT__ShellHitCeilingBehavior__HasValue": false,
+                                "STRUCT__ShellHitCeilingBehavior__Value": "[0]FINISH",
+                                "_IsFirstTerrainCheck": true,
+                                "_FirstTerrainCheckJoint": {
+                                    "ace.cJointHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "STRUCT__FirstTerrainCheckOffset__HasValue": false,
+                                "STRUCT__FirstTerrainCheckOffset__Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "_FirstTerrainCheckGoalJoint": {
+                                    "ace.cJointHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "_TimeNotHitInTerrain": -1.0,
+                                "_IsShellHitTerrainCorrect": true,
+                                "STRUCT__HitTerrainLimitDeg__HasValue": false,
+                                "STRUCT__HitTerrainLimitDeg__Value": 0.0,
+                                "_ShellAttackColLifeSec": -1.0
+                            }
+                        },
+                        "_IsSingleHitEffectGround": false,
+                        "_HitEffectIntervalGround": 0.0,
+                        "_IsSingleHitEffectWall": false,
+                        "_HitEffectIntervalWall": 0.0,
+                        "_IsSingleHitEffectCharacter": false,
+                        "_HitEffectIntervalCharacter": 15.0,
+                        "_IsSingleHitEffectObject": false,
+                        "_HitEffectIntervalObject": 0.0
+                    }
+                },
+                {
+                    "app.cShellMiniParamEm0002_00FlameBreath": {
+                        "MiniParamName": "Em0002_00_FlameBreathShell",
+                        "MiniParamtype": "[4]CALL_CHILD",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 1,
+                        "LateUpdateOrder": 0,
+                        "_ShellSize": 2,
+                        "_GroundCheckRayLength": 4.0
+                    }
+                },
+                {
+                    "app.cShellminiParamCallCustomChildShell": {
+                        "MiniParamName": "CallCustomChildShell",
+                        "MiniParamtype": "[4]CALL_CHILD",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 0,
+                        "LateUpdateOrder": 0,
+                        "_CreateNum": 30,
+                        "_Offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IsInheritChildScaleValue": false,
+                        "_IsRotWorldY": false,
+                        "STRUCT__StartRot__HasValue": false,
+                        "STRUCT__StartRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "STRUCT__OffsetRot__HasValue": false,
+                        "STRUCT__OffsetRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "_IsSameTimeCall": false,
+                        "_IsCreateShellOwnerPos": false,
+                        "_IsChainShell": false,
+                        "_ChainID": 0,
+                        "_LinkParentChainID": 0,
+                        "_ChildOverrideParam": {
+                            "app.cShellminiParamCallChildShell.cChildOverrideSetting": {
+                                "_OffsetArray": [
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    }
+                                ],
+                                "_StartRotArray": [
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    }
+                                ],
+                                "_OffsetRotArray": [
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    },
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 1.0
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_ShellList": {
+                            "ace.cChildShellGenerateParam": {
+                                "_IsPassingHitID": true,
+                                "_ShellNameHash": 481728217
+                            }
+                        },
+                        "_ShellIndex": "[0]INDEX_1"
+                    }
+                }
+            ],
+            "_CommonParam": {
+                "ace.cShellminiParamCommon": {
+                    "MiniParamName": "Common",
+                    "MiniParamtype": "[1]COMMON",
+                    "_IsDependedOn": false,
+                    "UpdateOrder": 0,
+                    "LateUpdateOrder": 0,
+                    "_LifeSec": 0.4000000059604645,
+                    "_HitOnSec": 0.0
+                }
+            }
+        }
+    }
+]
