@@ -294,17 +294,8 @@
                 },
                 {
                     "app.user_data.NpcSpeechConditionPackages.cData": {
-                        "_ConditionParams": [
-                            {
-                                "app.cNpcSpeechConditionHolder": {
-                                    "_Param": {
-                                        "app.SpeechConditions.cWishListItemNotify_Param": {}
-                                    },
-                                    "_Inverse": false
-                                }
-                            }
-                        ],
-                        "_IsEnable": true,
+                        "_ConditionParams": [],
+                        "_IsEnable": false,
                         "_CoolTime": {
                             "s": 1800.0,
                             "r": 0.0
@@ -859,7 +850,8 @@
                                     "_Param": {
                                         "app.SpeechConditions.cEncountLegendEm_Param": {
                                             "_Range": 50.0,
-                                            "_LegendaryID": "[1]NORMAL"
+                                            "_LegendaryID": "[1]NORMAL",
+                                            "_IgnoreEnemyIDArray": []
                                         }
                                     },
                                     "_Inverse": false
@@ -4266,7 +4258,10 @@
                             {
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
-                                        "app.SpeechConditions.cNone_Param": {}
+                                        "app.SpeechConditions.cCurrentSeasonEvent_Param": {
+                                            "_IsAny": true,
+                                            "_SeasonEventID": "[-1]UnknEnumVal"
+                                        }
                                     },
                                     "_Inverse": false
                                 }

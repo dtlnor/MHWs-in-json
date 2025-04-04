@@ -1,7 +1,19 @@
 [
     {
         "app.user_data.NpcAITableLayerData": {
-            "_ConditionParams": [],
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireLifeCommon_Param": {
+                                "_DesireFixedID": "[3]FREE_ACT_BC"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
             "_TableHolder": {
                 "app.cNpcAITableHolder": {
                     "_Setting": {
@@ -10,7 +22,28 @@
                             "_DisableInterrupt": false
                         }
                     },
-                    "_TableList": []
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "123feb80-1592-44ec-ad7c-45649738609b",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00001/1_AITableLayer/AdvLifeU00001_st502_FreeAct_01_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "a5cc9ecc-6de7-46a5-9650-d003909d6679",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00001/1_AITableLayer/AdvLifeU00001_st502_FreeAct_02_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
             }
         }

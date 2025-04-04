@@ -41,16 +41,16 @@
                                 "_CoolTime": {
                                     "app.user_data.NpcDesireParam.cParam.cCoolTime": {
                                         "_Complete": {
-                                            "s": 420.0,
-                                            "r": 30.0
+                                            "s": 900.0,
+                                            "r": 120.0
                                         },
                                         "_Cancel": {
                                             "s": 15.0,
                                             "r": 5.0
                                         },
                                         "_Group": {
-                                            "s": 420.0,
-                                            "r": 120.0
+                                            "s": 360.0,
+                                            "r": 360.0
                                         }
                                     }
                                 },
@@ -58,109 +58,16 @@
                                     {
                                         "app.cNpcDesireConditionHolder": {
                                             "_Param": {
-                                                "app.NpcDesireConditions.cPlayerHealthLow_Param": {
-                                                    "_HealthThreshold": 35,
-                                                    "_IsIgnoreDead": true
+                                                "app.NpcDesireConditions.cCheckArenaRangeHealInvalid_Param": {
+                                                    "_CheckSkillArray": [
+                                                        "[422666624]HunterSkill_100",
+                                                        "[1359821952]HunterSkill_060"
+                                                    ]
                                                 }
                                             },
                                             "_Inverse": false
                                         }
                                     },
-                                    {
-                                        "app.cNpcDesireConditionHolder": {
-                                            "_Param": {
-                                                "app.NpcDesireConditions.cRangeInPlayer_Param": {
-                                                    "_Range": {
-                                                        "s": 0.0,
-                                                        "r": 50.0
-                                                    }
-                                                }
-                                            },
-                                            "_Inverse": false
-                                        }
-                                    },
-                                    {
-                                        "app.cNpcDesireConditionHolder": {
-                                            "_Param": {
-                                                "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
-                                                    "_Range": {
-                                                        "s": 0.0,
-                                                        "r": 30.0
-                                                    }
-                                                }
-                                            },
-                                            "_Inverse": false
-                                        }
-                                    },
-                                    {
-                                        "app.cNpcDesireConditionHolder": {
-                                            "_Param": {
-                                                "app.NpcDesireConditions.cCheckInAttackArea_Param": {
-                                                    "_CheckHate": true
-                                                }
-                                            },
-                                            "_Inverse": true
-                                        }
-                                    }
-                                ],
-                                "_EndConditionParams": [
-                                    {
-                                        "app.cNpcDesireConditionHolder": {
-                                            "_Param": {
-                                                "app.NpcDesireConditions.cUsedItemCategory_Param": {
-                                                    "_ItemCategory": "[2]AREA_HEAL"
-                                                }
-                                            },
-                                            "_Inverse": false
-                                        }
-                                    },
-                                    {
-                                        "app.cNpcDesireConditionHolder": {
-                                            "_Param": {
-                                                "app.NpcDesireConditions.cNpcHealthHigh_Param": {
-                                                    "_HealthThreshold": 80
-                                                }
-                                            },
-                                            "_Inverse": false
-                                        }
-                                    }
-                                ],
-                                "_ContinueConditionParams": []
-                            }
-                        },
-                        "_KindType": {
-                            "app.NpcPartnerDef.PERSONAL_KIND_Serializable": {
-                                "_Value": "[-481422144]HEAL_ITEM"
-                            }
-                        },
-                        "_KindLv": {
-                            "app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Serializable": {
-                                "_Value": "[-1259553536]LV0"
-                            }
-                        }
-                    }
-                },
-                {
-                    "app.user_data.NpcDesireParam.cKindParam": {
-                        "_Param": {
-                            "app.user_data.NpcDesireParam.cParam": {
-                                "_CoolTime": {
-                                    "app.user_data.NpcDesireParam.cParam.cCoolTime": {
-                                        "_Complete": {
-                                            "s": 330.0,
-                                            "r": 30.0
-                                        },
-                                        "_Cancel": {
-                                            "s": 15.0,
-                                            "r": 5.0
-                                        },
-                                        "_Group": {
-                                            "s": 270.0,
-                                            "r": 120.0
-                                        }
-                                    }
-                                },
-                                "_StartConditionParams": [
                                     {
                                         "app.cNpcDesireConditionHolder": {
                                             "_Param": {
@@ -253,20 +160,33 @@
                                 "_CoolTime": {
                                     "app.user_data.NpcDesireParam.cParam.cCoolTime": {
                                         "_Complete": {
-                                            "s": 240.0,
-                                            "r": 60.0
+                                            "s": 480.0,
+                                            "r": 120.0
                                         },
                                         "_Cancel": {
                                             "s": 5.0,
                                             "r": 5.0
                                         },
                                         "_Group": {
-                                            "s": 120.0,
-                                            "r": 120.0
+                                            "s": 360.0,
+                                            "r": 180.0
                                         }
                                     }
                                 },
                                 "_StartConditionParams": [
+                                    {
+                                        "app.cNpcDesireConditionHolder": {
+                                            "_Param": {
+                                                "app.NpcDesireConditions.cCheckArenaRangeHealInvalid_Param": {
+                                                    "_CheckSkillArray": [
+                                                        "[422666624]HunterSkill_100",
+                                                        "[1359821952]HunterSkill_060"
+                                                    ]
+                                                }
+                                            },
+                                            "_Inverse": false
+                                        }
+                                    },
                                     {
                                         "app.cNpcDesireConditionHolder": {
                                             "_Param": {

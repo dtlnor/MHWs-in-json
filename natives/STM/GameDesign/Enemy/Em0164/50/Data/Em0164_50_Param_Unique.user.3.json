@@ -4,17 +4,29 @@
             "_GenusInfo": {
                 "app.cEm0164ParamUniqueInfo": {
                     "_ReturnEnchantTime": 30.0,
+                    "_ReturnEnchantTime_EX": 20.0,
                     "_EnergyChargeTime": 180.0,
+                    "_EnergyChargeTime_EX": 180.0,
                     "_DepletionScarCount": 1,
+                    "_DepletionScarCount_EX": 1,
                     "_OldCrystalBreakRange": 5.4,
                     "_CheckWallCrystalRangeS": 4.4,
                     "_CheckWallCrystalRangeL": 6.7,
                     "_OldScarEnchantDamageRate": 1.35,
+                    "_OldScarEnchantDamageRate_EX": 1.2,
                     "_HeadScarDownNum": 2,
+                    "_HeadScarDownNum_EX": 3,
                     "_FinalPhasePartsBreakVitalRate": 0.7,
+                    "_FinalPhasePartsBreakVitalRate_EX": 1.0,
                     "_NormalMeteorLoopInterval": 53.0,
                     "_EnchantBreakDelayTime": 0.3,
                     "_DepletionAddDamageRate": 2.0,
+                    "_DepletionAddDamageRate_EX": 2.0,
+                    "_MotSpeedRate_Phase3_EX": 1.0,
+                    "_MotSpeedRate_Phase4_EX": 1.04,
+                    "_WeakAttrBoost_DefaultLimit": 9.0,
+                    "_WeakAttrBoost_AddLimit": 27.0,
+                    "_WeakAttrBoost_AccumulationMax": 107.0,
                     "_PhaseList": [
                         {
                             "app.cEm0164ParamUniqueInfo.cPhaseParam": {
@@ -39,6 +51,44 @@
                                 "_BattlePhase": "[2]PHASE_3",
                                 "_VitalRate": 32,
                                 "_VitalRateMin": 25,
+                                "_ReturnRampageTime": 20.0,
+                                "_RampageType": "[2]HEAD_ARM"
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[3]PHASE_4",
+                                "_VitalRate": 0,
+                                "_VitalRateMin": 0,
+                                "_ReturnRampageTime": -1.0,
+                                "_RampageType": "[3]ALL"
+                            }
+                        }
+                    ],
+                    "_PhaseList_EX": [
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[0]PHASE_1",
+                                "_VitalRate": 93,
+                                "_VitalRateMin": 88,
+                                "_ReturnRampageTime": 20.0,
+                                "_RampageType": "[0]NONE"
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[1]PHASE_2",
+                                "_VitalRate": 70,
+                                "_VitalRateMin": 65,
+                                "_ReturnRampageTime": 20.0,
+                                "_RampageType": "[1]HEAD"
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[2]PHASE_3",
+                                "_VitalRate": 37,
+                                "_VitalRateMin": 32,
                                 "_ReturnRampageTime": 20.0,
                                 "_RampageType": "[2]HEAD_ARM"
                             }
@@ -85,6 +135,7 @@
                             }
                         }
                     ],
+                    "_OutOfControlConditions_EX": [],
                     "_ShellParam_SP_EnergyBurstS": [
                         {
                             "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
@@ -711,6 +762,597 @@
                                     "x": -10.0,
                                     "y": 0.0,
                                     "z": 80.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        }
+                    ],
+                    "_ShellParam_Meteor_EX": [
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -20.0,
+                                    "y": 60.0,
+                                    "z": 87.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 1.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -20.0,
+                                    "y": 0.0,
+                                    "z": 87.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 8.0,
+                                    "y": 60.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 2.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 8.0,
+                                    "y": 0.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -18.0,
+                                    "y": 60.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 1.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -18.0,
+                                    "y": 0.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 10.0,
+                                    "y": 60.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 0.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 10.0,
+                                    "y": 0.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 23.0,
+                                    "y": 60.0,
+                                    "z": 106.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 4.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 23.0,
+                                    "y": 0.0,
+                                    "z": 106.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -7.0,
+                                    "y": 60.0,
+                                    "z": 95.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -7.0,
+                                    "y": 0.0,
+                                    "z": 95.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -12.0,
+                                    "y": 55.0,
+                                    "z": 127.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 4.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -12.0,
+                                    "y": 0.0,
+                                    "z": 127.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 32.0,
+                                    "y": 60.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 7.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 32.0,
+                                    "y": 0.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 23.0,
+                                    "y": 60.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 0.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 23.0,
+                                    "y": 0.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 19.0,
+                                    "y": 60.0,
+                                    "z": 81.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 1.2,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 19.0,
+                                    "y": 0.0,
+                                    "z": 81.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 30.0,
+                                    "y": 60.0,
+                                    "z": 125.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 30.0,
+                                    "y": 0.0,
+                                    "z": 125.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -8.0,
+                                    "y": 60.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 3.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -8.0,
+                                    "y": 0.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -35.0,
+                                    "y": 60.0,
+                                    "z": 90.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 4.8,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -35.0,
+                                    "y": 0.0,
+                                    "z": 90.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -25.0,
+                                    "y": 60.0,
+                                    "z": 105.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 2.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -25.0,
+                                    "y": 0.0,
+                                    "z": 105.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -22.0,
+                                    "y": 60.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.7,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -22.0,
+                                    "y": 0.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 5.0,
+                                    "y": 55.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 5.0,
+                                    "y": 0.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 20.0,
+                                    "y": 60.0,
+                                    "z": 126.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 5.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 20.0,
+                                    "y": 0.0,
+                                    "z": 126.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 38.0,
+                                    "y": 60.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 8.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 38.0,
+                                    "y": 0.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -41.5,
+                                    "y": 60.0,
+                                    "z": 113.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 9.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -41.5,
+                                    "y": 0.0,
+                                    "z": 113.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 5.0,
+                                    "y": 60.0,
+                                    "z": 96.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 10.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 5.0,
+                                    "y": 0.0,
+                                    "z": 96.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -12.0,
+                                    "y": 42.55,
+                                    "z": 133.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 11.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -12.0,
+                                    "y": 0.0,
+                                    "z": 133.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 10.0,
+                                    "y": 60.0,
+                                    "z": 78.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 12.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 10.0,
+                                    "y": 0.0,
+                                    "z": 78.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -10.0,
+                                    "y": 60.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 13.3,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -10.0,
+                                    "y": 0.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -31.0,
+                                    "y": 60.0,
+                                    "z": 75.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 14.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -31.0,
+                                    "y": 0.0,
+                                    "z": 75.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 15.0,
+                                    "y": 60.0,
+                                    "z": 62.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 15.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 15.0,
+                                    "y": 0.0,
+                                    "z": 62.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -10.0,
+                                    "y": 60.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 16.2,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -10.0,
+                                    "y": 0.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -32.0,
+                                    "y": 60.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 7.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -32.0,
+                                    "y": 0.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -21.0,
+                                    "y": 60.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 9.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -21.0,
+                                    "y": 0.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -4.0,
+                                    "y": 44.0,
+                                    "z": 132.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 8.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -4.0,
+                                    "y": 0.0,
+                                    "z": 132.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 13.0,
+                                    "y": 50.0,
+                                    "z": 131.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 10.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 13.0,
+                                    "y": 0.0,
+                                    "z": 131.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 5.0,
+                                    "y": 42.0,
+                                    "z": 134.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 12.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 5.0,
+                                    "y": 0.0,
+                                    "z": 134.0,
                                     "pad": 0.0
                                 }
                             }
@@ -2945,17 +3587,29 @@
             "_SpeciesInfo": {
                 "app.cEm0164_50ParamUniqueInfo": {
                     "_ReturnEnchantTime": 30.0,
+                    "_ReturnEnchantTime_EX": 20.0,
                     "_EnergyChargeTime": 180.0,
+                    "_EnergyChargeTime_EX": 180.0,
                     "_DepletionScarCount": 1,
+                    "_DepletionScarCount_EX": 1,
                     "_OldCrystalBreakRange": 5.4,
                     "_CheckWallCrystalRangeS": 4.4,
                     "_CheckWallCrystalRangeL": 6.7,
                     "_OldScarEnchantDamageRate": 1.35,
+                    "_OldScarEnchantDamageRate_EX": 1.2,
                     "_HeadScarDownNum": 2,
+                    "_HeadScarDownNum_EX": 3,
                     "_FinalPhasePartsBreakVitalRate": 0.7,
+                    "_FinalPhasePartsBreakVitalRate_EX": 1.0,
                     "_NormalMeteorLoopInterval": 53.0,
                     "_EnchantBreakDelayTime": 0.3,
                     "_DepletionAddDamageRate": 2.0,
+                    "_DepletionAddDamageRate_EX": 2.0,
+                    "_MotSpeedRate_Phase3_EX": 1.0,
+                    "_MotSpeedRate_Phase4_EX": 1.04,
+                    "_WeakAttrBoost_DefaultLimit": 9.0,
+                    "_WeakAttrBoost_AddLimit": 27.0,
+                    "_WeakAttrBoost_AccumulationMax": 107.0,
                     "_PhaseList": [
                         {
                             "app.cEm0164ParamUniqueInfo.cPhaseParam": {
@@ -2980,6 +3634,44 @@
                                 "_BattlePhase": "[2]PHASE_3",
                                 "_VitalRate": 32,
                                 "_VitalRateMin": 25,
+                                "_ReturnRampageTime": 20.0,
+                                "_RampageType": "[2]HEAD_ARM"
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[3]PHASE_4",
+                                "_VitalRate": 0,
+                                "_VitalRateMin": 0,
+                                "_ReturnRampageTime": -1.0,
+                                "_RampageType": "[3]ALL"
+                            }
+                        }
+                    ],
+                    "_PhaseList_EX": [
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[0]PHASE_1",
+                                "_VitalRate": 93,
+                                "_VitalRateMin": 88,
+                                "_ReturnRampageTime": 20.0,
+                                "_RampageType": "[0]NONE"
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[1]PHASE_2",
+                                "_VitalRate": 70,
+                                "_VitalRateMin": 65,
+                                "_ReturnRampageTime": 20.0,
+                                "_RampageType": "[1]HEAD"
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cPhaseParam": {
+                                "_BattlePhase": "[2]PHASE_3",
+                                "_VitalRate": 37,
+                                "_VitalRateMin": 32,
                                 "_ReturnRampageTime": 20.0,
                                 "_RampageType": "[2]HEAD_ARM"
                             }
@@ -3026,6 +3718,7 @@
                             }
                         }
                     ],
+                    "_OutOfControlConditions_EX": [],
                     "_ShellParam_SP_EnergyBurstS": [
                         {
                             "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
@@ -3652,6 +4345,597 @@
                                     "x": -10.0,
                                     "y": 0.0,
                                     "z": 80.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        }
+                    ],
+                    "_ShellParam_Meteor_EX": [
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -20.0,
+                                    "y": 60.0,
+                                    "z": 87.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 1.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -20.0,
+                                    "y": 0.0,
+                                    "z": 87.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 8.0,
+                                    "y": 60.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 2.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 8.0,
+                                    "y": 0.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -18.0,
+                                    "y": 60.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 1.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -18.0,
+                                    "y": 0.0,
+                                    "z": 115.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 10.0,
+                                    "y": 60.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 0.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 10.0,
+                                    "y": 0.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 23.0,
+                                    "y": 60.0,
+                                    "z": 106.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 4.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 23.0,
+                                    "y": 0.0,
+                                    "z": 106.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -7.0,
+                                    "y": 60.0,
+                                    "z": 95.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -7.0,
+                                    "y": 0.0,
+                                    "z": 95.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -12.0,
+                                    "y": 55.0,
+                                    "z": 127.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 4.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -12.0,
+                                    "y": 0.0,
+                                    "z": 127.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 32.0,
+                                    "y": 60.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 7.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 32.0,
+                                    "y": 0.0,
+                                    "z": 92.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 23.0,
+                                    "y": 60.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 0.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 23.0,
+                                    "y": 0.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 19.0,
+                                    "y": 60.0,
+                                    "z": 81.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 1.2,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 19.0,
+                                    "y": 0.0,
+                                    "z": 81.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 30.0,
+                                    "y": 60.0,
+                                    "z": 125.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 30.0,
+                                    "y": 0.0,
+                                    "z": 125.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -8.0,
+                                    "y": 60.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 3.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -8.0,
+                                    "y": 0.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -35.0,
+                                    "y": 60.0,
+                                    "z": 90.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 4.8,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -35.0,
+                                    "y": 0.0,
+                                    "z": 90.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -25.0,
+                                    "y": 60.0,
+                                    "z": 105.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 2.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -25.0,
+                                    "y": 0.0,
+                                    "z": 105.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -22.0,
+                                    "y": 60.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.7,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -22.0,
+                                    "y": 0.0,
+                                    "z": 70.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 5.0,
+                                    "y": 55.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 6.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 5.0,
+                                    "y": 0.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 20.0,
+                                    "y": 60.0,
+                                    "z": 126.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 5.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 20.0,
+                                    "y": 0.0,
+                                    "z": 126.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 38.0,
+                                    "y": 60.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 8.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 38.0,
+                                    "y": 0.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -41.5,
+                                    "y": 60.0,
+                                    "z": 113.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 9.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -41.5,
+                                    "y": 0.0,
+                                    "z": 113.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 5.0,
+                                    "y": 60.0,
+                                    "z": 96.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 10.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 5.0,
+                                    "y": 0.0,
+                                    "z": 96.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -12.0,
+                                    "y": 42.55,
+                                    "z": 133.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 11.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -12.0,
+                                    "y": 0.0,
+                                    "z": 133.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 10.0,
+                                    "y": 60.0,
+                                    "z": 78.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 12.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 10.0,
+                                    "y": 0.0,
+                                    "z": 78.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -10.0,
+                                    "y": 60.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 13.3,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -10.0,
+                                    "y": 0.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -31.0,
+                                    "y": 60.0,
+                                    "z": 75.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 14.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -31.0,
+                                    "y": 0.0,
+                                    "z": 75.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 15.0,
+                                    "y": 60.0,
+                                    "z": 62.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 15.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 15.0,
+                                    "y": 0.0,
+                                    "z": 62.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -10.0,
+                                    "y": 60.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 16.2,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -10.0,
+                                    "y": 0.0,
+                                    "z": 80.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -32.0,
+                                    "y": 60.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 7.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -32.0,
+                                    "y": 0.0,
+                                    "z": 120.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -21.0,
+                                    "y": 60.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 9.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -21.0,
+                                    "y": 0.0,
+                                    "z": 128.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": -4.0,
+                                    "y": 44.0,
+                                    "z": 132.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 8.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": -4.0,
+                                    "y": 0.0,
+                                    "z": 132.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 13.0,
+                                    "y": 50.0,
+                                    "z": 131.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 10.0,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 13.0,
+                                    "y": 0.0,
+                                    "z": 131.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.cEm0164ParamUniqueInfo.cShellCreateParam": {
+                                "_Pos": {
+                                    "x": 5.0,
+                                    "y": 42.0,
+                                    "z": 134.0,
+                                    "pad": 0.0
+                                },
+                                "_RotY": 0.0,
+                                "_DelayTime": 12.5,
+                                "_IsUseTargetPos": true,
+                                "_TargetPos": {
+                                    "x": 5.0,
+                                    "y": 0.0,
+                                    "z": 134.0,
                                     "pad": 0.0
                                 }
                             }
