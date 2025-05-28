@@ -20,15 +20,22 @@
                     "_GainGravity": 0.8,
                     "_GainSpeed": 0.95,
                     "_StaticFriction": 10.0,
-                    "_DynamicFriction": 2.0
+                    "_DynamicFriction": 2.0,
+                    "_FrictionSwitchRange": {
+                        "s": 0.1,
+                        "r": 0.1
+                    }
                 }
             },
             "_ConstraintSettings": {
                 "app.user_data.TamagusariParam.cConstraint": {
                     "_Iteration": 5,
-                    "_Correction": 0.5,
                     "_WallConstraintRatio": 0.5,
-                    "_LeadInfluence": 0.0
+                    "_LeadInfluence": 0.0,
+                    "_Mode": "[0]LIGHT_PBD",
+                    "_Correction": 0.5,
+                    "_StretchCompliance": 9.999999974752427e-07,
+                    "_BendCompliance": 9.999999974752427e-07
                 }
             },
             "_CollisionSettings": {
@@ -47,7 +54,8 @@
                         "z": 1.0,
                         "pad": 0.0
                     },
-                    "_MarginLength": 0.1
+                    "_MarginLength": 0.1,
+                    "_Thickness": -1.0
                 }
             }
         }
