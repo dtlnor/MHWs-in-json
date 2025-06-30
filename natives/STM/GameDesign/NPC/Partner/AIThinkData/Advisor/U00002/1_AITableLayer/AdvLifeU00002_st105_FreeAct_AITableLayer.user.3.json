@@ -1,16 +1,79 @@
 [
     {
         "app.user_data.NpcAITableLayerData": {
-            "_ConditionParams": [],
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireLifeCommon_Param": {
+                                "_DesireFixedID": "[1]FREE_ACT"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
             "_TableHolder": {
                 "app.cNpcAITableHolder": {
                     "_Setting": {
                         "app.cNpcAITableHolder.cSetting": {
-                            "_LayerType": "[0]FROM_TOP",
+                            "_LayerType": "[1]RANDOM",
                             "_DisableInterrupt": false
                         }
                     },
-                    "_TableList": []
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "0417f662-86a3-41de-b3c2-4f24ffabf21a",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st105_FreeAct_00_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "777849a3-9675-4aa1-b6d2-8cfc8b0a488b",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st105_FreeAct_01_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "01c7e6f7-0ad8-4550-9146-50d2e9e0bf9e",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st105_FreeAct_02_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "e06c76ad-3830-4271-a3df-915978514b2a",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st105_FreeAct_03_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "e63d917e-b72b-45ff-98e0-a7904e970be9",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st105_FreeAct_04_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
             }
         }

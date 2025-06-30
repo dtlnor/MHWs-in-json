@@ -1,0 +1,61 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 6.0,
+                                "r": 12.0
+                            },
+                            "_Cancel": {
+                                "s": 2.0,
+                                "r": 2.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
+                                        "_Range": {
+                                            "s": 0.0,
+                                            "r": 15.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cEx00EnableUniqueAction_Param": {}
+                                },
+                                "_Inverse": true
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cEx00EnableUniqueAction_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

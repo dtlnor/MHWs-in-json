@@ -119,20 +119,58 @@
                     }
                 }
             ],
-            "_StreamingSizeSetting": {
-                "ace.cStreamingSizeSetting": {
-                    "_TextureLowest": 2000,
-                    "_TextureLow": 4000,
-                    "_TextureStandard": 8000,
-                    "_TextureHigh": 12000,
-                    "_TextureHighest": 20000,
-                    "_TextureQualityLowVRAM": 7000,
-                    "_TextureQualityStandardVRAM": 10000,
-                    "_TextureQualityHighVRAM": 13000,
-                    "_TextureQualityHighestVRAM": 17000,
-                    "_IsPC_TextureQualityRefVRAM": true
+            "_StreamingTextureSettingList": [
+                {
+                    "ace.user_data.GraphicsSettingPresetBase.cStreamingTextureSetting": {
+                        "_Quality": "[0]LOWEST",
+                        "_VRAMThresholdSizeMB": 0,
+                        "_StreamingBudgetSizeMB": 512,
+                        "_BreadthFirstStreaming": true,
+                        "_BreadthFirstShortcutResolution": "[5]StreamingTextureResolution_256",
+                        "_VramBudgetLimitResolution": "[5]StreamingTextureResolution_256"
+                    }
+                },
+                {
+                    "ace.user_data.GraphicsSettingPresetBase.cStreamingTextureSetting": {
+                        "_Quality": "[1]LOW",
+                        "_VRAMThresholdSizeMB": 7000,
+                        "_StreamingBudgetSizeMB": 1500,
+                        "_BreadthFirstStreaming": true,
+                        "_BreadthFirstShortcutResolution": "[4]StreamingTextureResolution_512",
+                        "_VramBudgetLimitResolution": "[4]StreamingTextureResolution_512"
+                    }
+                },
+                {
+                    "ace.user_data.GraphicsSettingPresetBase.cStreamingTextureSetting": {
+                        "_Quality": "[2]STANDARD",
+                        "_VRAMThresholdSizeMB": 10000,
+                        "_StreamingBudgetSizeMB": 3000,
+                        "_BreadthFirstStreaming": true,
+                        "_BreadthFirstShortcutResolution": "[3]StreamingTextureResolution_1024",
+                        "_VramBudgetLimitResolution": "[3]StreamingTextureResolution_1024"
+                    }
+                },
+                {
+                    "ace.user_data.GraphicsSettingPresetBase.cStreamingTextureSetting": {
+                        "_Quality": "[3]HIGH",
+                        "_VRAMThresholdSizeMB": 13000,
+                        "_StreamingBudgetSizeMB": 5000,
+                        "_BreadthFirstStreaming": true,
+                        "_BreadthFirstShortcutResolution": "[3]StreamingTextureResolution_1024",
+                        "_VramBudgetLimitResolution": "[3]StreamingTextureResolution_1024"
+                    }
+                },
+                {
+                    "ace.user_data.GraphicsSettingPresetBase.cStreamingTextureSetting": {
+                        "_Quality": "[4]HIGHEST",
+                        "_VRAMThresholdSizeMB": 17000,
+                        "_StreamingBudgetSizeMB": 8000,
+                        "_BreadthFirstStreaming": true,
+                        "_BreadthFirstShortcutResolution": "[3]StreamingTextureResolution_1024",
+                        "_VramBudgetLimitResolution": "[3]StreamingTextureResolution_1024"
+                    }
                 }
-            },
+            ],
             "_RayTracingManagerSetting": {
                 "ace.user_data.GraphicsSettingPresetBase.cRayTracingManagerSetting": {
                     "_DiffuseRayMaxIterationCount": 500,
@@ -152,6 +190,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -176,7 +215,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -266,6 +304,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -358,7 +401,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -373,6 +417,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -397,7 +442,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -487,6 +531,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -579,7 +628,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -594,6 +644,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -618,7 +669,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -708,6 +758,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -800,7 +855,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -815,6 +871,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -839,7 +896,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -929,6 +985,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -1021,7 +1082,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -1036,6 +1098,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -1060,7 +1123,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -1150,6 +1212,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -1242,7 +1309,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -1257,6 +1325,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -1281,7 +1350,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -1371,6 +1439,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -1463,7 +1536,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -1478,6 +1552,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -1502,7 +1577,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -1592,6 +1666,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -1684,7 +1763,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -1699,6 +1779,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -1723,7 +1804,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -1813,6 +1893,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -1905,7 +1990,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -1920,6 +2006,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -1944,7 +2031,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -2034,6 +2120,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -2126,7 +2217,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -2141,6 +2233,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -2165,7 +2258,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -2255,6 +2347,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 1920,
+                                    "y": 1080
+                                },
+                                "_PreallocateMaxResolution": true,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -2347,7 +2444,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -2362,6 +2460,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -2386,7 +2485,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -2476,6 +2574,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 1920,
+                                    "y": 1080
+                                },
+                                "_PreallocateMaxResolution": true,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -2568,7 +2671,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -2583,6 +2687,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -2607,7 +2712,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -2697,6 +2801,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 1920,
+                                    "y": 1080
+                                },
+                                "_PreallocateMaxResolution": true,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -2789,7 +2898,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -2804,6 +2914,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -2828,7 +2939,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -2918,6 +3028,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 1920,
+                                    "y": 1080
+                                },
+                                "_PreallocateMaxResolution": true,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -3010,7 +3125,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -3025,6 +3141,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -3049,7 +3166,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -3139,6 +3255,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 1920,
+                                    "y": 1080
+                                },
+                                "_PreallocateMaxResolution": true,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -3231,7 +3352,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -3246,6 +3368,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -3270,7 +3393,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -3360,6 +3482,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 1920,
+                                    "y": 1080
+                                },
+                                "_PreallocateMaxResolution": true,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -3452,7 +3579,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -3467,6 +3595,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -3491,7 +3620,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -3581,6 +3709,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -3673,7 +3806,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -3688,6 +3822,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -3712,7 +3847,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -3802,6 +3936,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -3894,7 +4033,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -3909,6 +4049,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 5,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -3933,7 +4074,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -4023,6 +4163,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -4115,7 +4260,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -4130,6 +4276,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -4154,7 +4301,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -4244,6 +4390,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -4336,7 +4487,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -4351,6 +4503,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -4375,7 +4528,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -4465,6 +4617,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -4557,7 +4714,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -4572,6 +4730,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -4596,7 +4755,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -4686,6 +4844,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -4778,7 +4941,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -4793,6 +4957,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -4817,7 +4982,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -4907,6 +5071,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -4999,7 +5168,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -5014,6 +5184,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -5038,7 +5209,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -5128,6 +5298,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -5220,7 +5395,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -5235,6 +5411,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -5259,7 +5436,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -5349,6 +5525,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -5441,7 +5622,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -5456,6 +5638,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -5480,7 +5663,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -5570,6 +5752,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -5662,7 +5849,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -5677,6 +5865,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -5701,7 +5890,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -5791,6 +5979,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -5883,7 +6076,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -5898,6 +6092,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -5922,7 +6117,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -6012,6 +6206,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -6104,7 +6303,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -6119,6 +6319,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -6143,7 +6344,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 2,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -6233,6 +6433,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -6325,7 +6530,8 @@
                         "_UseLowGround": true,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -6340,6 +6546,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -6364,7 +6571,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 2,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -6454,6 +6660,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -6546,7 +6757,8 @@
                         "_UseLowGround": true,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -6561,6 +6773,7 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
                         "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
@@ -6585,7 +6798,6 @@
                         "_SmallObjectCullingResolution": 720,
                         "_MeshletSmallObjectCulling": 2.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 2,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -6675,6 +6887,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 1.0,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -6767,7 +6984,8 @@
                         "_UseLowGround": true,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -6782,8 +7000,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -6806,7 +7025,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -6896,6 +7114,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -6988,7 +7211,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -7003,8 +7227,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -7027,7 +7252,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -7117,6 +7341,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -7209,7 +7438,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -7224,8 +7454,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -7248,7 +7479,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -7338,6 +7568,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -7430,7 +7665,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -7445,8 +7681,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -7469,7 +7706,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -7559,6 +7795,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -7651,7 +7892,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -7666,8 +7908,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -7690,7 +7933,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -7780,6 +8022,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -7872,7 +8119,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -7887,8 +8135,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 2,
@@ -7911,7 +8160,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -8001,6 +8249,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -8093,7 +8346,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -8108,8 +8362,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -8132,7 +8387,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -8222,6 +8476,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -8314,7 +8573,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -8329,8 +8589,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -8353,7 +8614,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -8443,13 +8703,18 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
                                 "_DenoiserVersion2022": true,
                                 "_ModelScaler": 0.005,
                                 "_DepthRejectionThreshold": 0.02,
-                                "_DiffuseSecondaryBounce": true,
+                                "_DiffuseSecondaryBounce": false,
                                 "_SpecularSecondaryBounce": false,
                                 "_UseNoMovementDepthCompare": true,
                                 "_NormalCompareThreshold": 0.5,
@@ -8535,7 +8800,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -8550,8 +8816,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 2,
@@ -8574,7 +8841,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -8664,6 +8930,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -8756,7 +9027,8 @@
                         "_UseLowGround": true,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -8771,8 +9043,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -8795,7 +9068,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -8885,6 +9157,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -8977,7 +9254,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -8992,8 +9270,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 2,
@@ -9016,7 +9295,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -9106,6 +9384,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -9198,7 +9481,8 @@
                         "_UseLowGround": true,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -9213,8 +9497,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 3,
@@ -9237,7 +9522,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 3,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -9327,6 +9611,11 @@
                                 "_SpecularResolution": 1,
                                 "_DenoiserDebugView": 2,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -9419,7 +9708,8 @@
                         "_UseLowGround": false,
                         "_UseLowShellFur": false,
                         "_UseLowWindSimulation": false,
-                        "_UseLowWaterSimulation": false
+                        "_UseLowWaterSimulation": false,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 },
                 {
@@ -9434,8 +9724,9 @@
                         "_RenderingMethod": 0,
                         "_DeinterlaceType": 1,
                         "_ColorSpace": 1,
+                        "_OpenColorIOSDRConfig": "[0]Auto",
                         "_AntiAliasing": 1,
-                        "_SharpnessSetting": 1,
+                        "_SharpnessSetting": 4,
                         "_EffectMaskScaleForPSSRReactiveMask": 0.25,
                         "_DownsamplerSetting": 1,
                         "_ShadowQuality": 2,
@@ -9458,7 +9749,6 @@
                         "_SmallObjectCullingResolution": 0,
                         "_MeshletSmallObjectCulling": 0.0,
                         "_MeshQuality": 2,
-                        "_TextureQuality": 0,
                         "_SamplerQuality": 3,
                         "_SecondarySamplerQuality": 3,
                         "_BakedResourceTextureSizeOffset": 0,
@@ -9548,6 +9838,11 @@
                                 "_SpecularResolution": 0,
                                 "_DenoiserDebugView": 0,
                                 "_RayTracingResRatio": 0.5,
+                                "_MaxResolution": {
+                                    "x": 3840,
+                                    "y": 2160
+                                },
+                                "_PreallocateMaxResolution": false,
                                 "_BvhTraversalHeatmap": false,
                                 "_UseNewDenoiser": false,
                                 "_FilterResult": true,
@@ -9640,7 +9935,8 @@
                         "_UseLowGround": true,
                         "_UseLowShellFur": true,
                         "_UseLowWindSimulation": true,
-                        "_UseLowWaterSimulation": true
+                        "_UseLowWaterSimulation": true,
+                        "_HazeFilterStageEffectEnable": true
                     }
                 }
             ],

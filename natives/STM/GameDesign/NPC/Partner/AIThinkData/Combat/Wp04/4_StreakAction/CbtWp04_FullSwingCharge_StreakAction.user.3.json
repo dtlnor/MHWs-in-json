@@ -21,22 +21,23 @@
             "_AimEffectParam": {
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
                     "_Param": {
-                        "app.NpcStreakEffects.cSetTarget_AimParam": {
-                            "_StartType": "[1]ACTION_ID",
+                        "app.NpcStreakEffects.cSetTargetParts_AimParam": {
+                            "_StartType": "[0]NONE",
                             "_EndType": "[0]NONE",
                             "_CanAimWpOff": false,
                             "_UseParabora": "[0]NONE",
                             "_StartActionSelector": {
                                 "app.cNpcHunterActionSelector": {
-                                    "_Category": -1974898176,
-                                    "_Action": 18
+                                    "_Category": 773579456,
+                                    "_Action": 0
                                 }
                             },
-                            "_LogicType": "[0]NEAR_COLLIDER",
-                            "_AdjustType": "[0]TO_KEY_JOINTS",
-                            "_UpdateTiming": "[0]ALWAYS",
-                            "_CheckRayCast": false,
-                            "_IsDirectionAim": true
+                            "_IsOverwritePartsType": true,
+                            "_OverwritePartsType": {
+                                "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
+                                    "_Value": "[1075205376]HEAD"
+                                }
+                            }
                         }
                     }
                 }

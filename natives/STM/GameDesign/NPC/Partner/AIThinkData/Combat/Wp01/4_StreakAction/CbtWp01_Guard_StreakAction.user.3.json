@@ -1,0 +1,69 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cShortSword_Guard_Param": {
+                            "_StartType": "[1]ATK_FRAME",
+                            "_EndType": "[1]ATK_DETECT",
+                            "_HitStartFrameRange": {
+                                "s": -3.0,
+                                "r": 5.3
+                            },
+                            "_KeepTimeSec": 5.0
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetDirToTarget_LStickParam": {
+                            "_Reach": 0.1,
+                            "_ContinueMove": false,
+                            "_StopWhenReached": false,
+                            "_MoveType": "[6]COMBAT",
+                            "_UseAIMoveEnd": false,
+                            "_FixedSpeedLv": "[3]RUN",
+                            "_IsMoveStopTurn": false,
+                            "_StopTurnDir": "[0]PL_AXIS_Z",
+                            "_DegRange": {
+                                "s": 0.0,
+                                "r": 180.0
+                            },
+                            "_DegThreshold": 30.0
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTargetCenter_AimParam": {
+                            "_StartType": "[1]ACTION_ID",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": -614648896,
+                                    "_Action": 7
+                                }
+                            },
+                            "_UseAxisXZ": true,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": []
+        }
+    }
+]

@@ -1,0 +1,125 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetHunterAction_ActionParam": {
+                            "_ActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": -1675163520,
+                                    "_Action": 3
+                                }
+                            },
+                            "_ActionEnd": false,
+                            "_IgnoreError": false,
+                            "_RetryCommad": false
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cOnContinueFlag_Param": {
+                            "_IsSuperArmor": false,
+                            "_IsHyperArmor": true,
+                            "_IsForceFlinch": true,
+                            "_FlinchActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": -1675163520,
+                                    "_Action": 3
+                                }
+                            },
+                            "_FlinchType": "[1]ONCE"
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTargetCenter_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_UseAxisXZ": true,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckWpOn_Param": {}
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckIsFly_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
+                                "_Immediate": false,
+                                "_Strict": true,
+                                "_ActionSelector": {
+                                    "app.cNpcHunterActionSelector": {
+                                        "_Category": -1675163520,
+                                        "_Action": 3
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cHitAttack_Param": {
+                                "_AttackAABB": {
+                                    "minpos": {
+                                        "x": -0.6,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
+                                    "maxpos": {
+                                        "x": 0.6,
+                                        "y": 1.5,
+                                        "z": 3.6,
+                                        "pad": 0.0
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

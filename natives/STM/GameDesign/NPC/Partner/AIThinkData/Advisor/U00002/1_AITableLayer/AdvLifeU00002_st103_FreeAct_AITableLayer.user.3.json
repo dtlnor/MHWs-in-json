@@ -1,16 +1,69 @@
 [
     {
         "app.user_data.NpcAITableLayerData": {
-            "_ConditionParams": [],
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireLifeCommon_Param": {
+                                "_DesireFixedID": "[1]FREE_ACT"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
             "_TableHolder": {
                 "app.cNpcAITableHolder": {
                     "_Setting": {
                         "app.cNpcAITableHolder.cSetting": {
-                            "_LayerType": "[0]FROM_TOP",
+                            "_LayerType": "[1]RANDOM",
                             "_DisableInterrupt": false
                         }
                     },
-                    "_TableList": []
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "6727049c-18ac-49ba-82f8-647a3cc9db34",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st103_FreeAct_00_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "e45b4cb5-2cc7-4812-a5a5-b7a94c0f21fb",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st103_FreeAct_01_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "67bb40d6-8bff-4f70-8ade-32cd11afef88",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st103_FreeAct_02_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "4c7aa69b-d91c-4e6d-adf3-0661e2e49297",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Advisor/U00002/2_AITableAction/AdvLifeU00002_st103_FreeAct_03_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
                 }
             }
         }

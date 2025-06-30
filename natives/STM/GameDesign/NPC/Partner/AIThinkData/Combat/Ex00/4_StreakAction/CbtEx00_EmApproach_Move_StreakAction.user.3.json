@@ -1,0 +1,63 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[1]LSTICK_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetScoringContinuePoint_LStickParam": {
+                            "_Reach": 2.0,
+                            "_ContinueMove": true,
+                            "_StopWhenReached": true,
+                            "_MoveType": "[14]EX_00_COMBAT",
+                            "_UseAIMoveEnd": false,
+                            "_FixedSpeedLv": "[0]INVALID",
+                            "_IsMoveStopTurn": false,
+                            "_StopTurnDir": "[0]PL_AXIS_Z",
+                            "_DegRange": {
+                                "s": 0.0,
+                                "r": 180.0
+                            },
+                            "_TargetParam": {
+                                "app.mcNpcTargetController.cScoringContinuePoint_Param": {
+                                    "_ScoringData": {
+                                        "app.user_data.NpcPQSScoringData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/EX00_EMApproach_PQSScoring.user"
+                                        }
+                                    },
+                                    "_VerticalData": {
+                                        "app.user_data.NpcPQSVerticalData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/EX00_Approach_PQSVerticalData.user"
+                                        }
+                                    },
+                                    "_RelayingData": {
+                                        "": {}
+                                    },
+                                    "_RouteType": "[0]HIGHSCORE_POINT",
+                                    "_JudgeLength": 2.0,
+                                    "_LowerRange": 5.0,
+                                    "_DecreaseRate": false
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_EvaluatorParams": []
+        }
+    }
+]

@@ -1532,8 +1532,9 @@
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
                                         "app.SpeechConditions.cNpcHealthHealOrBuff_Param": {
-                                            "beforeHealedRate": 65,
-                                            "SuccessTime": 2.5
+                                            "beforeHealedRate": 80,
+                                            "SuccessTime": 2.5,
+                                            "CheckRedHeal": false
                                         }
                                     },
                                     "_Inverse": false
@@ -1575,9 +1576,19 @@
                                                     "app.ItemDef.ID_Serializable": {
                                                         "_Value": "[120]ITEM_0146"
                                                     }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[3]ITEM_0001"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[198]ITEM_0224"
+                                                    }
                                                 }
                                             ],
-                                            "_UsedTime": 1.5
+                                            "_UsedTime": 2.5
                                         }
                                     },
                                     "_Inverse": false
@@ -1587,8 +1598,8 @@
                         "_IsEnable": true,
                         "_IsNoRegularlyEvaluate": false,
                         "_CoolTime": {
-                            "s": 0.0,
-                            "r": 0.0
+                            "s": 10.0,
+                            "r": 10.0
                         },
                         "_SubCategoryFixed": "[8]NPC_THANKS_TO_PL",
                         "_EnumFixedID": 8
@@ -1602,7 +1613,8 @@
                                     "_Param": {
                                         "app.SpeechConditions.cNpcHealthHealOrBuff_Param": {
                                             "beforeHealedRate": 0,
-                                            "SuccessTime": 2.5
+                                            "SuccessTime": 2.5,
+                                            "CheckRedHeal": false
                                         }
                                     },
                                     "_Inverse": false
@@ -1635,7 +1647,7 @@
                                                 }
                                             ],
                                             "_WideningItemListFixed": [],
-                                            "_UsedTime": 1.5
+                                            "_UsedTime": 2.5
                                         }
                                     },
                                     "_Inverse": false
@@ -1645,8 +1657,8 @@
                         "_IsEnable": true,
                         "_IsNoRegularlyEvaluate": false,
                         "_CoolTime": {
-                            "s": 0.0,
-                            "r": 0.0
+                            "s": 10.0,
+                            "r": 10.0
                         },
                         "_SubCategoryFixed": "[8]NPC_THANKS_TO_PL",
                         "_EnumFixedID": 9
@@ -1696,7 +1708,7 @@
                                                     }
                                                 }
                                             ],
-                                            "_UsedTime": 1.5
+                                            "_UsedTime": 2.5
                                         }
                                     },
                                     "_Inverse": false
@@ -1706,8 +1718,8 @@
                         "_IsEnable": true,
                         "_IsNoRegularlyEvaluate": false,
                         "_CoolTime": {
-                            "s": 0.0,
-                            "r": 0.0
+                            "s": 10.0,
+                            "r": 10.0
                         },
                         "_SubCategoryFixed": "[8]NPC_THANKS_TO_PL",
                         "_EnumFixedID": 10
@@ -1953,10 +1965,10 @@
                                     "_Param": {
                                         "app.SpeechConditions.cDownCombatEnemyByHoldGimmick_Param": {
                                             "_ActionIDList": [
-                                                "[118]QUICKSAND",
-                                                "[122]TRAP_IVY",
-                                                "[167]WATER_FLOW",
-                                                "[164]GIMMICK_DOWN"
+                                                "[119]QUICKSAND",
+                                                "[123]TRAP_IVY",
+                                                "[168]WATER_FLOW",
+                                                "[165]GIMMICK_DOWN"
                                             ]
                                         }
                                     },
@@ -2590,6 +2602,115 @@
                         "_SubCategoryFixed": "[20]NPC_EM_OTHER",
                         "_EnumFixedID": 45
                     }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cAlwaysTrue_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": true,
+                        "_CoolTime": {
+                            "s": 0.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[0]NONE",
+                        "_EnumFixedID": 48
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cCombatEnemyFlinch_Param": {
+                                            "SuccessTime": 5.0
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cPlayerUsedItem_Param": {
+                                            "_ItemListFixed": [
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[2]ITEM_0000"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[3]ITEM_0001"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[5]ITEM_0003"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[6]ITEM_0004"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[178]ITEM_0204"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[120]ITEM_0146"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[198]ITEM_0224"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[204]ITEM_0230"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[12]ITEM_0010"
+                                                    }
+                                                },
+                                                {
+                                                    "app.ItemDef.ID_Serializable": {
+                                                        "_Value": "[200]ITEM_0226"
+                                                    }
+                                                }
+                                            ],
+                                            "_WideningItemListFixed": [],
+                                            "_UsedTime": 2.0
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 0.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[0]NONE",
+                        "_EnumFixedID": 46
+                    }
                 }
             ],
             "_SpeechSituationEnum": {
@@ -2759,6 +2880,16 @@
                             {
                                 "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
                                     "_SpeechFixedID": 26
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 48
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 46
                                 }
                             }
                         ],
@@ -2988,7 +3119,7 @@
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
                                         "app.SpeechConditions.cPlayerUsedItemAny_Param": {
-                                            "_UsedTime": 1.5
+                                            "_UsedTime": 2.5
                                         }
                                     },
                                     "_Inverse": false

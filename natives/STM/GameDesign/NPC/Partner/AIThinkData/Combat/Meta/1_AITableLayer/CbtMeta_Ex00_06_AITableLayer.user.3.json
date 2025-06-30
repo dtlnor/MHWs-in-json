@@ -1,0 +1,77 @@
+[
+    {
+        "app.user_data.NpcAITableLayerData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cTargetEnemyMetaActionDetected_Param": {
+                                "_ActionType": "[22]EX00_06"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckTargetActionTimer_Param": {
+                                "_ElapsedTimeSec": 6.75,
+                                "_CompareType": "[5]LESS_OR_EQUAL"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckRangeInCombatEnemy_Param": {
+                                "_Range": {
+                                    "s": 0.0,
+                                    "r": 35.0
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_TableHolder": {
+                "app.cNpcAITableHolder": {
+                    "_Setting": {
+                        "app.cNpcAITableHolder.cSetting": {
+                            "_LayerType": "[0]FROM_TOP",
+                            "_DisableInterrupt": false
+                        }
+                    },
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "8196c814-74fb-4b19-a4d3-c6e3045f5fc2",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Meta/2_AITableAction/CbtMeta_Ex00_06_Guard_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "4c26b19e-53c2-4401-b2f6-2dedb09cad6c",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Meta/2_AITableAction/CbtMeta_Ex00_06_Escape_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

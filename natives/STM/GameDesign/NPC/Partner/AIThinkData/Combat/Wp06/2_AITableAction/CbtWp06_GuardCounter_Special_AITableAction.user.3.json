@@ -1,0 +1,83 @@
+[
+    {
+        "app.user_data.NpcAITableActionData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWp06GuardAgainstEmAttack_Param": {
+                                "_GuardType": "[2]COUNTER_GUARD",
+                                "_PreGuardFrame": 50.0
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckHitAttack_Param": {
+                                "_AttackAABB": {
+                                    "minpos": {
+                                        "x": -3.5,
+                                        "y": 0.0,
+                                        "z": -3.5,
+                                        "pad": 0.0
+                                    },
+                                    "maxpos": {
+                                        "x": 3.5,
+                                        "y": 3.0,
+                                        "z": 3.5,
+                                        "pad": 0.0
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWp06ActionPowerGuardReaction_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireWp06_Param": {
+                                "_DesireFixedID": "[5]COUNTER_GUARD_SPECIAL"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_ActionSetting": {
+                "app.user_data.NpcAITableActionData.cActionSetting": {
+                    "_ForceInterrupt": false,
+                    "_TableEnd": false
+                }
+            },
+            "_Param": {
+                "app.user_data.NpcAITableActionData.cNpcAITableEffectHolder": {
+                    "_Param": {
+                        "app.NpcAITableEffects.cStreak_Param": {
+                            "_StreakPlanData": {
+                                "app.user_data.NpcStreakPlanData": {
+                                    "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp06/3_StreakPlan/CbtWp06_Passive_GuardCounter_StreakPlan.user"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+]

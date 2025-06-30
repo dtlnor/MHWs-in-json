@@ -6,11 +6,11 @@
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
                     "_Param": {
                         "app.NpcStreakEffects.cLanceAttack_FinishStingerCharge_Param": {
-                            "_InputType": "[0]CHARGE_01",
-                            "_ChargeType": "[2]CHARGE_ATTACK_DETECT",
+                            "_InputType": "[1]CHARGE_SP_01",
+                            "_ChargeType": "[3]CHARGE_COUNTER",
                             "_CounterFrameRange": {
                                 "s": 0.0,
-                                "r": 8.0
+                                "r": 7.0
                             }
                         }
                     }
@@ -50,21 +50,13 @@
                 {
                     "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
                         "_Param": {
-                            "app.NpcStreakEvaluators.cCheckWp06IsProLancer_Param": {}
-                        },
-                        "_Inverse": false
-                    }
-                },
-                {
-                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
-                        "_Param": {
                             "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
                                 "_Immediate": false,
                                 "_Strict": false,
                                 "_ActionSelector": {
                                     "app.cNpcHunterActionSelector": {
                                         "_Category": -1675163520,
-                                        "_Action": 12
+                                        "_Action": 60
                                     }
                                 }
                             }
@@ -75,13 +67,7 @@
                 {
                     "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
                         "_Param": {
-                            "app.NpcStreakEvaluators.cDetectAttackAreaForFrame_Param": {
-                                "_HitRemainFrameRange": {
-                                    "s": 0.0,
-                                    "r": 80.0
-                                },
-                                "_IgnoreArea": false
-                            }
+                            "app.NpcStreakEvaluators.cCheckGuard_Param": {}
                         },
                         "_Inverse": false
                     }

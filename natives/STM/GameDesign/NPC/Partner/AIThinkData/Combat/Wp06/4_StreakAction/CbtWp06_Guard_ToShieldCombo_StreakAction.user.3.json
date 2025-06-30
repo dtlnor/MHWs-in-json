@@ -16,8 +16,8 @@
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
                         "app.NpcStreakEffects.cSetTargetParts_LStickParam": {
-                            "_Reach": 0.1,
-                            "_ContinueMove": false,
+                            "_Reach": 0.03,
+                            "_ContinueMove": true,
                             "_StopWhenReached": false,
                             "_MoveType": "[6]COMBAT",
                             "_UseAIMoveEnd": false,
@@ -94,6 +94,18 @@
                             "app.NpcStreakEvaluators.cIsDivingCombatEnemy_Param": {}
                         },
                         "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cBadConditionActiveCountCombatEnemy_Param": {
+                                "_Condition": "[15]STUN",
+                                "_CompareType": "[3]LESS",
+                                "_ActiveCount": 2
+                            }
+                        },
+                        "_Inverse": false
                     }
                 },
                 {

@@ -2,18 +2,7 @@
     {
         "app.user_data.NpcMotionPack_Base": {
             "_PlayModeParam": {
-                "app.cNpcMotionPack.cPlayMode_RefUniqueAttachment": {
-                    "_UniqueAttachment": {
-                        "app.user_data.NpcMotionPack_Base": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/Human_Unique_Advisor/Bench/HumUnq_Advisor_Bench_Unique_MotionPack.user"
-                        }
-                    },
-                    "_NoUniqueAttachment": {
-                        "app.user_data.NpcMotionPack_Base": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/Human_Unique_Advisor/Bench/HumUnq_Advisor_Bench_NoUnique_MotionPack.user"
-                        }
-                    }
-                }
+                "app.cNpcMotionPack.cPlayMode_Default": {}
             },
             "_PackList": [
                 {
@@ -33,7 +22,8 @@
                                     "_AddMotion": false,
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50
+                                    "_RandomWeight": 50,
+                                    "_PlayConditions": []
                                 }
                             }
                         ],
@@ -83,7 +73,8 @@
                                     "_AddMotion": false,
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50
+                                    "_RandomWeight": 50,
+                                    "_PlayConditions": []
                                 }
                             }
                         ],
@@ -133,7 +124,8 @@
                                     "_AddMotion": false,
                                     "_LoopCount": -1,
                                     "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50
+                                    "_RandomWeight": 50,
+                                    "_PlayConditions": []
                                 }
                             }
                         ],
@@ -152,7 +144,7 @@
                             "app.user_data.NpcMotionPack_Base.cGesturePack": {
                                 "_GesturePackageList_Sub": {
                                     "app.user_data.NpcGesturePackageList": {
-                                        "userdataPath": "GameDesign/NPC/Data/Gesture/Human/SubAction/PackageList/HumAdl_Sub_Sit.user"
+                                        "userdataPath": "GameDesign/NPC/Data/Gesture/Human/SubAction/PackageList/HumUnq_Sub_Sit.user"
                                     }
                                 },
                                 "_GesturePackageList_Base": {
@@ -187,7 +179,8 @@
                                     "_AddMotion": false,
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50
+                                    "_RandomWeight": 50,
+                                    "_PlayConditions": []
                                 }
                             },
                             {
@@ -197,7 +190,17 @@
                                     "_AddMotion": false,
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50
+                                    "_RandomWeight": 50,
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cUniqueAttachment": {}
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        }
+                                    ]
                                 }
                             }
                         ],

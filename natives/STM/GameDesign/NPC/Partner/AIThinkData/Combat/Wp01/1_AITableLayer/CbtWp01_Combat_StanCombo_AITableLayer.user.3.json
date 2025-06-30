@@ -1,0 +1,98 @@
+[
+    {
+        "app.user_data.NpcAITableLayerData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckCombatRangeInCombatEnemy_Param": {
+                                "_CombatRange": "[3]COMBO"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cBadConditionActiveCountCombatEnemy_Param": {
+                                "_Condition": "[15]STUN",
+                                "_CompareType": "[5]LESS_OR_EQUAL",
+                                "_ActiveCount": 1
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckTargetEnemyFly_Param": {
+                                "_CheckFlyingTime": false,
+                                "_TimeRange": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                }
+                            }
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWp01ActionGuardAction_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_TableHolder": {
+                "app.cNpcAITableHolder": {
+                    "_Setting": {
+                        "app.cNpcAITableHolder.cSetting": {
+                            "_LayerType": "[0]FROM_TOP",
+                            "_DisableInterrupt": false
+                        }
+                    },
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "de0e590e-e8bf-477b-9208-6dc93cbb6bcd",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/2_AITableAction/CbtWp01_StanAssist_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "0aab6846-0a7d-40bb-8b66-ea1cd6fd08d3",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/2_AITableAction/CbtWp01_StanChance_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "2e42b2c6-fd66-4570-ba96-86edac34c367",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/2_AITableAction/CbtWp01_StanNoOnce_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

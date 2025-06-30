@@ -131,11 +131,12 @@
             "_DodgeNoHitTime_Wp03Mikiri": 45,
             "_DodgeNoHitTime_Wp03MikiriRed": 45,
             "_DodgeNoHitTime_Wp04ChargeDodge": 24,
-            "_DodgeNoHitTime_Wp05SpParrySoundAttack": 25,
+            "_DodgeNoHitTime_Wp05SpParrySoundAttack": 30,
             "_DodgeNoHitTime_Wp10JumpBack": 10,
             "_DodgeNoHitTime_Wp11ChargeStep": 13,
             "_DodgeNoHitTime_Wp12Dodge": 13,
             "_DodgeNoHitTime_Wp13Sliding": 13,
+            "_DodgeNoHitTime_ExField": 20,
             "_SlopeStage2": 35.0,
             "_SlopeStage1": 30.0,
             "_Slope1": {
@@ -1255,9 +1256,28 @@
                     "EnumValue": 0,
                     "_Curve": {
                         "via.AnimationCurve": {
-                            "Keys": [],
-                            "MinValue": 10.0,
-                            "MaxValue": -10.0,
+                            "Keys": [
+                                {
+                                    "value": 0.0,
+                                    "Time": 0.0,
+                                    "CurveType": 0,
+                                    "InNormalX": 0.0,
+                                    "InNormalY": 0.0,
+                                    "OutNormalX": 0.0,
+                                    "OutNormalY": 0.0
+                                },
+                                {
+                                    "value": 0.0,
+                                    "Time": 100.0,
+                                    "CurveType": 0,
+                                    "InNormalX": 0.0,
+                                    "InNormalY": 0.0,
+                                    "OutNormalX": 0.0,
+                                    "OutNormalY": 0.0
+                                }
+                            ],
+                            "MinValue": 0.0,
+                            "MaxValue": 3.0,
                             "MinTime": 0.0,
                             "MaxTime": 100.0,
                             "LoopCount": 0,
@@ -1269,6 +1289,52 @@
                     "_TargetSpeed": 0.1,
                     "_ToTargetTime": 0.0,
                     "_TargetDurationTime": 0.3,
+                    "_Target2Speed": 0.0,
+                    "_ToTarget2Time": 0.0,
+                    "_Target2DurationTime": 0.0,
+                    "_EndSpeed": 1.0,
+                    "_ToEndTime": 0.05,
+                    "_ForceStop": false
+                }
+            },
+            "_VeilHitStop_King": {
+                "app.cHitStopParam": {
+                    "EnumValue": 0,
+                    "_Curve": {
+                        "via.AnimationCurve": {
+                            "Keys": [
+                                {
+                                    "value": 0.0,
+                                    "Time": 0.0,
+                                    "CurveType": 0,
+                                    "InNormalX": 0.0,
+                                    "InNormalY": 0.0,
+                                    "OutNormalX": 0.0,
+                                    "OutNormalY": 0.0
+                                },
+                                {
+                                    "value": 0.0,
+                                    "Time": 100.0,
+                                    "CurveType": 0,
+                                    "InNormalX": 0.0,
+                                    "InNormalY": 0.0,
+                                    "OutNormalX": 0.0,
+                                    "OutNormalY": 0.0
+                                }
+                            ],
+                            "MinValue": 0.0,
+                            "MaxValue": 3.0,
+                            "MinTime": 0.0,
+                            "MaxTime": 100.0,
+                            "LoopCount": 0,
+                            "LoopWrapNo": 2
+                        }
+                    },
+                    "_UseCurve": false,
+                    "_BeginSpeed": 0.4,
+                    "_TargetSpeed": 0.1,
+                    "_ToTargetTime": 0.0,
+                    "_TargetDurationTime": 0.1,
                     "_Target2Speed": 0.0,
                     "_ToTarget2Time": 0.0,
                     "_Target2DurationTime": 0.0,
@@ -1359,6 +1425,7 @@
             "_PutOnMantleClothFadeSpeedTime": 1.0,
             "_PutOffMantleClothFadeSpeedTime": 1.5,
             "_GestureFireWorkOffsetAngleDeg": 60.0,
+            "_GestureMaxDanceSpotLight": 1,
             "_EnableGestureSetting": {
                 "app.user_data.PlayerEnableGestureSetting": {
                     "userdataPath": "GameDesign/Player/ActionData/Common/GlobalParam/Part/PlayerEnableGestureSetting.user"
@@ -1386,6 +1453,9 @@
             },
             "_ExEmote00_AimComInputFrame": 15,
             "_ExEmote00_AimComLastInputFrame": 10,
+            "_GestureWaterGunMaxAmmo": 3,
+            "_GestureWaterGunMazzleCorrect_MaxRange": 8.0,
+            "_GestureWaterGun_Range": 40.0,
             "_QuestEx_BarrelBombS_Rate": 1.5,
             "_QuestEx_BarrelBombL_Rate": 1.5,
             "_QuestEx_BarrelBombL_G_Rate": 1.5,
@@ -1398,7 +1468,12 @@
             "_AmuletEffect_LerpTime": 1.0,
             "_AmuletEffect_StayTime": 1.0,
             "_PorterRideGuideTime": 2.0,
-            "_PorterRideGuideZoneMaxDeg": 180.0
+            "_PorterRideGuideZoneMaxDeg": 180.0,
+            "_ExFieldMoveMaxDeg": 45.0,
+            "_ExFieldCSlingerDist": 9.0,
+            "_ExFieldCSlingerUIDistDiff": 1.0,
+            "_ExFieldFinishMinDist": 10.0,
+            "_ExFieldEndEffectTime": 0.0
         }
     }
 ]

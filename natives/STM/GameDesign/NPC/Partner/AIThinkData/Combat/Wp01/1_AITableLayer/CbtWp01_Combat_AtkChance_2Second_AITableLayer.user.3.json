@@ -1,0 +1,51 @@
+[
+    {
+        "app.user_data.NpcAITableLayerData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cAttackChancePunish_Param": {
+                                "_PunishType": "[1]TWO_SEC"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_TableHolder": {
+                "app.cNpcAITableHolder": {
+                    "_Setting": {
+                        "app.cNpcAITableHolder.cSetting": {
+                            "_LayerType": "[1]RANDOM",
+                            "_DisableInterrupt": false
+                        }
+                    },
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "3fe02f6d-fba8-4ce4-8a5d-f9bab03e6758",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/2_AITableAction/CbtWp01_AtkChance_JumpAtk_AITableAction.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "b9d8d079-cbb6-4328-aece-c4fb52e37677",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/2_AITableAction/CbtWp01_AtkChance_FinishSlash_AITableAction.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

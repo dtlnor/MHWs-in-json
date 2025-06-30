@@ -1,0 +1,140 @@
+[
+    {
+        "app.user_data.NpcAITableLayerData": {
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckCombatRangeInCombatEnemy_Param": {
+                                "_CombatRange": "[3]COMBO"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": true
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWpOn_Param": {}
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWp01ComboCancel_Param": {
+                                "_ComboType": "[0]ATK_CHANCE"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckAnyCancelSpecified_Param": {
+                                "_Immediate": false,
+                                "_Strict": false,
+                                "_ActionSelector": {
+                                    "app.cNpcHunterActionSelector": {
+                                        "_Category": -90159104,
+                                        "_Action": 28
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckAnyCancelSpecified_Param": {
+                                "_Immediate": false,
+                                "_Strict": false,
+                                "_ActionSelector": {
+                                    "app.cNpcHunterActionSelector": {
+                                        "_Category": -90159104,
+                                        "_Action": 21
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckHitAttack_Param": {
+                                "_AttackAABB": {
+                                    "minpos": {
+                                        "x": -1.0,
+                                        "y": -0.5,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
+                                    "maxpos": {
+                                        "x": 1.0,
+                                        "y": 2.8,
+                                        "z": 1.8,
+                                        "pad": 0.0
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWeakeningMode_Param": {}
+                        },
+                        "_Inverse": true,
+                        "_IsContinue": false
+                    }
+                }
+            ],
+            "_TableHolder": {
+                "app.cNpcAITableHolder": {
+                    "_Setting": {
+                        "app.cNpcAITableHolder.cSetting": {
+                            "_LayerType": "[0]FROM_TOP",
+                            "_DisableInterrupt": false
+                        }
+                    },
+                    "_TableList": [
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "da7374ef-a565-4397-a93b-db6e3bc16432",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/1_AITableLayer/CbtWp01_Combat_AtkChance_2Second_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.cNpcAITableHolder.cTableData": {
+                                "_InstanceGuid": "54f2a827-dcd0-49f0-9c53-2384dcedcaf2",
+                                "_TableData": {
+                                    "app.user_data.NpcAITableLayerData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp01/1_AITableLayer/CbtWp01_Combat_AtkChance_1Second_AITableLayer.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+]

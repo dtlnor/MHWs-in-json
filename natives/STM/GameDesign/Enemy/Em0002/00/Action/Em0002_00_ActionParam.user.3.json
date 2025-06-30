@@ -1560,7 +1560,8 @@
                         "_TurnSpeed": 60.0,
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
-                        "_OffsetShiftChangeProbability": 1.0
+                        "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false
                     }
                 },
                 {
@@ -1799,7 +1800,8 @@
                         "_TurnSpeed": 60.0,
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
-                        "_OffsetShiftChangeProbability": 1.0
+                        "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false
                     }
                 },
                 {
@@ -2038,7 +2040,8 @@
                         "_TurnSpeed": 60.0,
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
-                        "_OffsetShiftChangeProbability": 1.0
+                        "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false
                     }
                 },
                 {
@@ -2274,7 +2277,8 @@
                         "_TurnSpeed": 160.0,
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
-                        "_OffsetShiftChangeProbability": 1.0
+                        "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false
                     }
                 },
                 {
@@ -2513,7 +2517,8 @@
                         "_TurnSpeed": 60.0,
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
-                        "_OffsetShiftChangeProbability": 1.0
+                        "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false
                     }
                 },
                 {
@@ -2753,6 +2758,7 @@
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
                         "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false,
                         "_LoopSec": 5.0
                     }
                 },
@@ -2951,6 +2957,7 @@
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
                         "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false,
                         "_ToSlipLoopNum": 3
                     }
                 },
@@ -3674,6 +3681,7 @@
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
                         "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false,
                         "_FlyHeightOffset": 0.0
                     }
                 },
@@ -3947,6 +3955,7 @@
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
                         "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false,
                         "_FlyHeightOffset": 0.0,
                         "_DyingVariationRangeSec": 6.0,
                         "_DyingVariationRandomRange": 2.0
@@ -6049,7 +6058,8 @@
                         "_TurnSpeed": 60.0,
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
-                        "_OffsetShiftChangeProbability": 1.0
+                        "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false
                     }
                 },
                 {
@@ -6851,6 +6861,7 @@
                         "_TurnSpeedEaseType": "[8]OutCubic",
                         "_IsDisableRandomOffsetShift": false,
                         "_OffsetShiftChangeProbability": 1.0,
+                        "_DisableStrictArrival": false,
                         "_FlyHeightOffset": 0.0
                     }
                 },
@@ -17954,6 +17965,330 @@
                     }
                 },
                 {
+                    "app.Em0002_00Action.cGrappleVsLeviathanV2": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                    "_ActionParamFilterList": [],
+                                                    "_RuntimeFilterList": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.CharacterCommonActionComponent.acPlayMotion": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acRequestGrappleAction": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_MotionSequenceFilters": [],
+                        "_SubStamina": 0,
+                        "_SubHate": 0,
+                        "_OptionBit": 0,
+                        "_AttrBit": {
+                            "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                "_Value": [],
+                                "_MaxElement": 41
+                            }
+                        },
+                        "_OverrideMotionRate_Angry": 1.0,
+                        "_OverrideMotionRate_Tired": 1.0
+                    }
+                },
+                {
+                    "app.Em0002_00Action.cGrappleVsLeviathanV2Fly": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                    "_ActionParamFilterList": [],
+                                                    "_RuntimeFilterList": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.CharacterCommonActionComponent.acPlayMotion": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acRequestGrappleAction": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acFlySetting": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_MotionSequenceFilters": [],
+                        "_SubStamina": 0,
+                        "_SubHate": 0,
+                        "_OptionBit": 0,
+                        "_AttrBit": {
+                            "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                "_Value": [],
+                                "_MaxElement": 41
+                            }
+                        },
+                        "_OverrideMotionRate_Angry": 1.0,
+                        "_OverrideMotionRate_Tired": 1.0
+                    }
+                },
+                {
+                    "app.Em0002_00Action.cToGrappleVsLeviathanV2Phase2": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                    "_ActionParamFilterList": [],
+                                                    "_RuntimeFilterList": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acFlySetting": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acRequestGrappleAction": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_MotionSequenceFilters": [],
+                        "_SubStamina": 0,
+                        "_SubHate": 0,
+                        "_OptionBit": 0,
+                        "_AttrBit": {
+                            "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                "_Value": [],
+                                "_MaxElement": 41
+                            }
+                        },
+                        "_OverrideMotionRate_Angry": 1.0,
+                        "_OverrideMotionRate_Tired": 1.0
+                    }
+                },
+                {
+                    "app.Em0002_00Action.cToGrappleVsLeviathanV2Phase2Fly": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                    "_ActionParamFilterList": [],
+                                                    "_RuntimeFilterList": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acMotionSequence": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acFlySetting": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acRequestGrappleAction": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_MotionSequenceFilters": [],
+                        "_SubStamina": 0,
+                        "_SubHate": 0,
+                        "_OptionBit": 0,
+                        "_AttrBit": {
+                            "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                "_Value": [],
+                                "_MaxElement": 41
+                            }
+                        },
+                        "_OverrideMotionRate_Angry": 1.0,
+                        "_OverrideMotionRate_Tired": 1.0
+                    }
+                },
+                {
+                    "ace.cActionBase": {}
+                },
+                {
+                    "app.Em0002_00Action.cToGrappleVsLeviathanV2Phase4Win": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                    "_ActionParamFilterList": [],
+                                                    "_RuntimeFilterList": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acMotionSequence": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acFlySetting": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acGrappleJointDestination": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acGrappleEnd": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_MotionSequenceFilters": [],
+                        "_SubStamina": 0,
+                        "_SubHate": 0,
+                        "_OptionBit": 0,
+                        "_AttrBit": {
+                            "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                "_Value": [],
+                                "_MaxElement": 41
+                            }
+                        },
+                        "_OverrideMotionRate_Angry": 1.0,
+                        "_OverrideMotionRate_Tired": 1.0
+                    }
+                },
+                {
+                    "app.Em0002_00Action.cToGrappleVsLeviathanV2Phase4Lose": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                    "_ActionParamFilterList": [],
+                                                    "_RuntimeFilterList": []
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acMotionSequence": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acRequestGrappleAction": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acFlySetting": {}
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.EmCommonActionComponent.acGrappleJointDestination": {}
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "_MotionSequenceFilters": [],
+                        "_SubStamina": 0,
+                        "_SubHate": 0,
+                        "_OptionBit": 0,
+                        "_AttrBit": {
+                            "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                "_Value": [],
+                                "_MaxElement": 41
+                            }
+                        },
+                        "_OverrideMotionRate_Angry": 1.0,
+                        "_OverrideMotionRate_Tired": 1.0
+                    }
+                },
+                {
+                    "ace.cActionBase": {}
+                },
+                {
                     "app.Em0002_00Action.cCatchAttackStart": {
                         "_ActionComponentArray": {
                             "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
@@ -18690,7 +19025,8 @@
                                             "_TurnSpeed": 160.0,
                                             "_TurnSpeedEaseType": "[8]OutCubic",
                                             "_IsDisableRandomOffsetShift": false,
-                                            "_OffsetShiftChangeProbability": 1.0
+                                            "_OffsetShiftChangeProbability": 1.0,
+                                            "_DisableStrictArrival": false
                                         }
                                     },
                                     "_Guid": "582b8034-ac9f-4462-ba82-a1aefc2bb50c"
@@ -18852,7 +19188,8 @@
                                             "_TurnSpeed": 160.0,
                                             "_TurnSpeedEaseType": "[8]OutCubic",
                                             "_IsDisableRandomOffsetShift": false,
-                                            "_OffsetShiftChangeProbability": 1.0
+                                            "_OffsetShiftChangeProbability": 1.0,
+                                            "_DisableStrictArrival": false
                                         }
                                     },
                                     "_Guid": "35c9203a-6a3d-07c7-3c33-7a4540a045bd"
@@ -19021,7 +19358,8 @@
                                             "_TurnSpeed": 160.0,
                                             "_TurnSpeedEaseType": "[8]OutCubic",
                                             "_IsDisableRandomOffsetShift": false,
-                                            "_OffsetShiftChangeProbability": 1.0
+                                            "_OffsetShiftChangeProbability": 1.0,
+                                            "_DisableStrictArrival": false
                                         }
                                     },
                                     "_Guid": "653e9a3f-53a1-447b-a513-63a8414c7c29"
@@ -19296,6 +19634,7 @@
                                             "_TurnSpeedEaseType": "[8]OutCubic",
                                             "_IsDisableRandomOffsetShift": false,
                                             "_OffsetShiftChangeProbability": 1.0,
+                                            "_DisableStrictArrival": false,
                                             "_FlyHeightOffset": 0.0
                                         }
                                     },
@@ -19480,6 +19819,7 @@
                                             "_TurnSpeedEaseType": "[8]OutCubic",
                                             "_IsDisableRandomOffsetShift": false,
                                             "_OffsetShiftChangeProbability": 1.0,
+                                            "_DisableStrictArrival": false,
                                             "_FlyHeightOffset": 0.0
                                         }
                                     },
@@ -23947,6 +24287,46 @@
                     "ace.user_data.ActionParam.cBranchedParams": {
                         "_Params": []
                     }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cBranchedParams": {
+                        "_Params": []
+                    }
                 }
             ],
             "_ActionInfoList": [
@@ -27004,6 +27384,86 @@
                     "ace.user_data.ActionParam.cInfo": {
                         "_Guid": "4c7bb240-7ba3-41ec-879f-b0f78d52d455",
                         "_ActionGuid": "86885709-5962-4b20-b670-679d710aa41a",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "6593a784-0c50-4aca-b343-180d46c0b7c5",
+                        "_ActionGuid": "c4b4b3b4-0112-4fd4-addc-2d0dc0087ea3",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "87e5e0a5-448a-4752-8abc-91275714a994",
+                        "_ActionGuid": "2a26498e-d575-488a-b943-8e2ff90f9992",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "ba673d75-3c73-4b23-a0e6-2271420fc9eb",
+                        "_ActionGuid": "f990f78e-5633-4890-ae13-444e4fa750fe",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "865a896e-1c0c-4d12-aad6-b7ed06695560",
+                        "_ActionGuid": "cc2faf0c-e815-4523-a30f-b134709c7137",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "ff66c98e-30b6-4ec1-9540-1ffa394ac636",
+                        "_ActionGuid": "822af055-61b7-4d08-8c9b-4d102ef9be05",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "3388f7c4-a630-49bf-abbe-6ec255744cc8",
+                        "_ActionGuid": "cd2f4a6e-2bd9-498e-b7c9-dfcd78ce18bd",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "2aa09085-50b6-4dc7-abb4-925b09a5c893",
+                        "_ActionGuid": "a100e62b-daaf-42ba-a169-ad7762c90a5e",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "5a511be6-26bb-49d3-a74f-8395a8c4027c",
+                        "_ActionGuid": "b0dc2ef7-3587-46e4-baf8-e3be604c9073",
                         "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
                         "_OverrideParamNameArray": [],
                         "_OverrideOwnerAction": false,

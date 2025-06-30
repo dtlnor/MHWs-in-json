@@ -128,6 +128,22 @@
                                                     "_AssetGuid": "11d61a90-b322-4c3d-8bdc-33d6f76959bb",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
+                                                            "_Hash": 368711190
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "goatree.cEvaluatorParam_Max": {}
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "11d61a90-b322-4c3d-8bdc-33d6f76959bb",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
                                                             "_Hash": 3389212796
                                                         }
                                                     },
@@ -236,16 +252,6 @@
                             {
                                 "goatree.cGoalPackage.cGoalEffectHolder": {
                                     "_Param": {
-                                        "app.OtomoGoaTreeGoalEffects.cRequestChangeAction_Param": {
-                                            "_ActionID": "6060d14f-de7d-44f7-9231-faf9fe56c9d4",
-                                            "_AppendDataType": "[0]DEFAULT"
-                                        }
-                                    }
-                                }
-                            },
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
                                         "app.OtomoGoaTreeGoalEffects.cSetNpcOtomoEnd_Param": {}
                                     }
                                 }
@@ -311,17 +317,60 @@
                                                     "_EnableStopSpeedDown": false,
                                                     "_EnableFreeActMovement": false,
                                                     "_IsSpeedAdjust": false,
-                                                    "_IsRotAdjust": false,
+                                                    "_IsRotAdjust": true,
                                                     "_IsUseRandomTarget": false,
                                                     "_IsSelectMoveStopPoint": false,
-                                                    "_ArriveTargetType": "[0]PLAYER",
+                                                    "_ArriveTargetType": "[5]FORCE_POINT",
                                                     "_OptionType": "[0]NONE",
                                                     "_ExMoveType": "[-1]NONE"
                                                 }
                                             },
-                                            "_IsNavigationUpdateInterval": false,
+                                            "_IsNavigationUpdateInterval": true,
                                             "_UsePQSType": "[0]NONE",
-                                            "_IsFixTargetPos": true
+                                            "_IsFixTargetPos": false
+                                        }
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 368711190
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "app.NpcGoaTreeGoals.cTime_Param": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                },
+                                "_TimeMin": 1.0,
+                                "_TimeMax": 1.0
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.OtomoGoaTreeGoalEffects.cRequestChangeAction_Param": {
+                                            "_ActionID": "9d6e69cc-eedf-48a8-a9ac-b1b14cbae6c5",
+                                            "_AppendDataType": "[0]DEFAULT"
                                         }
                                     }
                                 }

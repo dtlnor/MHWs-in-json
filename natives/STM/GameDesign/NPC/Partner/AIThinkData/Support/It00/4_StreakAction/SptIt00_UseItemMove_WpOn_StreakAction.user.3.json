@@ -17,7 +17,7 @@
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
                         "app.NpcStreakEffects.cSetScoringContinuePoint_LStickParam": {
-                            "_Reach": 4.0,
+                            "_Reach": 3.0,
                             "_ContinueMove": true,
                             "_StopWhenReached": true,
                             "_MoveType": "[6]COMBAT",
@@ -33,17 +33,21 @@
                                 "app.mcNpcTargetController.cScoringContinuePoint_Param": {
                                     "_ScoringData": {
                                         "app.user_data.NpcPQSScoringData": {
-                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/It00_GoSafe_PQSScoringData.user"
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/It00_Wp01_GoSafe_PQSScoringData.user"
                                         }
+                                    },
+                                    "_VerticalData": {
+                                        "": {}
                                     },
                                     "_RelayingData": {
                                         "app.user_data.NpcPQSRelayingData": {
-                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/It00_GoSafe_PQSRelayingData.user"
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/It00_Wp01_GoSafe_PQSRelayingData.user"
                                         }
                                     },
                                     "_RouteType": "[1]RELAYING_ROUTE",
                                     "_JudgeLength": 5.0,
-                                    "_LowerRange": 8.0
+                                    "_LowerRange": 15.0,
+                                    "_DecreaseRate": false
                                 }
                             }
                         }
@@ -57,26 +61,7 @@
                     }
                 }
             },
-            "_EvaluatorParams": [
-                {
-                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
-                        "_Param": {
-                            "app.NpcStreakEvaluators.cCheckWpOn_Param": {}
-                        },
-                        "_Inverse": false
-                    }
-                },
-                {
-                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
-                        "_Param": {
-                            "app.NpcStreakEvaluators.cCheckWeaponType_Param": {
-                                "_WeaponType": "[13]SHORT_SWORD"
-                            }
-                        },
-                        "_Inverse": false
-                    }
-                }
-            ]
+            "_EvaluatorParams": []
         }
     }
 ]

@@ -5,34 +5,16 @@
             "_ActionEffectParam": {
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
                     "_Param": {
-                        "app.NpcStreakEffects.cLanceGuardDash_Param": {}
+                        "app.NpcStreakEffects.cLanceGuardDash_Param": {
+                            "_MoveTarget": "[1075205376]HEAD"
+                        }
                     }
                 }
             },
             "_LStickEffectParam": {
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
-                        "app.NpcStreakEffects.cSetTargetParts_LStickParam": {
-                            "_Reach": 0.1,
-                            "_ContinueMove": false,
-                            "_StopWhenReached": false,
-                            "_MoveType": "[6]COMBAT",
-                            "_UseAIMoveEnd": false,
-                            "_FixedSpeedLv": "[3]RUN",
-                            "_IsMoveStopTurn": false,
-                            "_StopTurnDir": "[0]PL_AXIS_Z",
-                            "_DegRange": {
-                                "s": 0.0,
-                                "r": 180.0
-                            },
-                            "_TargetType": "[0]CURRENT",
-                            "_IsOverwritePartsType": true,
-                            "_OverwritePartsType": {
-                                "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
-                                    "_Value": "[1075205376]HEAD"
-                                }
-                            }
-                        }
+                        "app.cNpcStreakEffectParam_None": {}
                     }
                 }
             },
@@ -72,14 +54,6 @@
                 {
                     "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
                         "_Param": {
-                            "app.NpcStreakEvaluators.cCheckGuard_Param": {}
-                        },
-                        "_Inverse": false
-                    }
-                },
-                {
-                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
-                        "_Param": {
                             "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
                                 "_Immediate": false,
                                 "_Strict": false,
@@ -90,6 +64,22 @@
                                     }
                                 }
                             }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckGuard_Param": {}
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckIsEnableLStickInput_Param": {}
                         },
                         "_Inverse": false
                     }

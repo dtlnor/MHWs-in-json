@@ -4202,7 +4202,15 @@
                     "app.Wp04Action.cSuperChargeAttackUpper": {
                         "_ActionComponentArray": {
                             "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
-                                "_ElementList": []
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.PlayerCommonActionComponent.acAimTargetHold": {}
+                                            }
+                                        }
+                                    }
+                                ]
                             }
                         },
                         "_RootSubActionGuid": "00000000-0000-0000-0000-000000000000",
@@ -4251,7 +4259,15 @@
                     "app.Wp04Action.cSuperChargeAttackSmash": {
                         "_ActionComponentArray": {
                             "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
-                                "_ElementList": []
+                                "_ElementList": [
+                                    {
+                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                            "Data": {
+                                                "app.PlayerCommonActionComponent.acAimTargetHold": {}
+                                            }
+                                        }
+                                    }
+                                ]
                             }
                         },
                         "_RootSubActionGuid": "00000000-0000-0000-0000-000000000000",
@@ -4722,6 +4738,165 @@
                         "_BorderLeftToBack": 130.0,
                         "_CogTurnMoveSpeed": 150.0,
                         "_QuickTurnStickSpeed": 1080.0
+                    }
+                },
+                {
+                    "app.Wp04Action.cParrySuccess": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": []
+                            }
+                        },
+                        "_RootSubActionGuid": "00000000-0000-0000-0000-000000000000",
+                        "_BaseCameraAttachParamID": "914dfac5-8155-492d-be10-4820f1542400",
+                        "_PostEffectSceneGuid": "00000000-0000-0000-0000-000000000000",
+                        "_SkipNextMoveStart": false,
+                        "_MoveLevel": "[-1]NONE",
+                        "_SubMotionInfluence": "[20]NONE",
+                        "_VarietyMotionInfluenceFixed": {
+                            "app.HunterDef.VARIETY_MOTION_INFLUENCE_Serializable": {
+                                "_Value": "[2]NONE"
+                            }
+                        },
+                        "_WpAttachTypeFixed": {
+                            "app.WeaponAttachType.TYPE_Serializable": {
+                                "_Value": "[1]NORMAL"
+                            }
+                        },
+                        "_NetPosInterpolation": false,
+                        "_StartTurnInfo": {
+                            "app.cHunterActionTurnInfo": {
+                                "_StartTurnType": "[0]NONE",
+                                "_UseCustomTurnParam": false,
+                                "_TurnParam": {
+                                    "app.cHunterActionTurnParam": {
+                                        "_PrimaryTurnTime": 0.4,
+                                        "_ComboTurnParam": {
+                                            "app.cHunterActionTurnParam.cComboTurnParam": {
+                                                "_LeverDeg": 10.0,
+                                                "_ForceMaxTurn": false,
+                                                "_TurnTime": 0.4,
+                                                "_TurnMaxDeg": 10.0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "_Aim": false,
+                        "STRUCT__AimTurnDegOffsetY__HasValue": false,
+                        "STRUCT__AimTurnDegOffsetY__Value": 0.0,
+                        "_ActionGuideID": 20852,
+                        "_HitStopType": {
+                            "app.PlayerDef.HIT_STOP_TYPE_Serializable": {
+                                "_Value": "[-361180672]INVALID"
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.Wp04Action.cParryCloseMove": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": []
+                            }
+                        },
+                        "_RootSubActionGuid": "00000000-0000-0000-0000-000000000000",
+                        "_BaseCameraAttachParamID": "914dfac5-8155-492d-be10-4820f1542400",
+                        "_PostEffectSceneGuid": "00000000-0000-0000-0000-000000000000",
+                        "_SkipNextMoveStart": false,
+                        "_MoveLevel": "[-1]NONE",
+                        "_SubMotionInfluence": "[20]NONE",
+                        "_VarietyMotionInfluenceFixed": {
+                            "app.HunterDef.VARIETY_MOTION_INFLUENCE_Serializable": {
+                                "_Value": "[2]NONE"
+                            }
+                        },
+                        "_WpAttachTypeFixed": {
+                            "app.WeaponAttachType.TYPE_Serializable": {
+                                "_Value": "[1]NORMAL"
+                            }
+                        },
+                        "_NetPosInterpolation": false,
+                        "_StartTurnInfo": {
+                            "app.cHunterActionTurnInfo": {
+                                "_StartTurnType": "[0]NONE",
+                                "_UseCustomTurnParam": false,
+                                "_TurnParam": {
+                                    "app.cHunterActionTurnParam": {
+                                        "_PrimaryTurnTime": 0.4,
+                                        "_ComboTurnParam": {
+                                            "app.cHunterActionTurnParam.cComboTurnParam": {
+                                                "_LeverDeg": 10.0,
+                                                "_ForceMaxTurn": false,
+                                                "_TurnTime": 0.4,
+                                                "_TurnMaxDeg": 10.0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "_Aim": false,
+                        "STRUCT__AimTurnDegOffsetY__HasValue": false,
+                        "STRUCT__AimTurnDegOffsetY__Value": 0.0,
+                        "_ActionGuideID": 20852,
+                        "_CameraResetMoveTime": 1.0,
+                        "_InputTurnSpeed": 30.0,
+                        "_HomingTurnSpeed": 90.0,
+                        "_FastTurnSpeed": 180.0,
+                        "_InputEnableDiffDeg": 30.0,
+                        "STRUCT__SlingerShotDuration__HasValue": false,
+                        "STRUCT__SlingerShotDuration__Value": 0.0
+                    }
+                },
+                {
+                    "app.Wp04Action.cParryFinishSmash": {
+                        "_ActionComponentArray": {
+                            "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                "_ElementList": []
+                            }
+                        },
+                        "_RootSubActionGuid": "00000000-0000-0000-0000-000000000000",
+                        "_BaseCameraAttachParamID": "914dfac5-8155-492d-be10-4820f1542400",
+                        "_PostEffectSceneGuid": "00000000-0000-0000-0000-000000000000",
+                        "_SkipNextMoveStart": false,
+                        "_MoveLevel": "[-1]NONE",
+                        "_SubMotionInfluence": "[20]NONE",
+                        "_VarietyMotionInfluenceFixed": {
+                            "app.HunterDef.VARIETY_MOTION_INFLUENCE_Serializable": {
+                                "_Value": "[2]NONE"
+                            }
+                        },
+                        "_WpAttachTypeFixed": {
+                            "app.WeaponAttachType.TYPE_Serializable": {
+                                "_Value": "[1]NORMAL"
+                            }
+                        },
+                        "_NetPosInterpolation": false,
+                        "_StartTurnInfo": {
+                            "app.cHunterActionTurnInfo": {
+                                "_StartTurnType": "[0]NONE",
+                                "_UseCustomTurnParam": false,
+                                "_TurnParam": {
+                                    "app.cHunterActionTurnParam": {
+                                        "_PrimaryTurnTime": 0.4,
+                                        "_ComboTurnParam": {
+                                            "app.cHunterActionTurnParam.cComboTurnParam": {
+                                                "_LeverDeg": 10.0,
+                                                "_ForceMaxTurn": false,
+                                                "_TurnTime": 0.4,
+                                                "_TurnMaxDeg": 10.0
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "_Aim": false,
+                        "STRUCT__AimTurnDegOffsetY__HasValue": false,
+                        "STRUCT__AimTurnDegOffsetY__Value": 0.0,
+                        "_ActionGuideID": 12800
                     }
                 },
                 {
@@ -5650,6 +5825,36 @@
                     "ace.user_data.ActionParam.cInfo": {
                         "_Guid": "8030872b-ae2a-4efe-b01e-65b5a7a463b4",
                         "_ActionGuid": "4098950c-7766-432e-aac7-434a23bb69ed",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "2c55e6e2-2a58-42a6-b939-f2cd9217a703",
+                        "_ActionGuid": "1e5808a2-f514-4c05-8276-5eeb08295b47",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "8bfeaa13-fe8e-4de5-9eef-fb8f497fefd5",
+                        "_ActionGuid": "4efeff94-9ef7-46fa-a084-c8e94e2fb42b",
+                        "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
+                        "_OverrideParamNameArray": [],
+                        "_OverrideOwnerAction": false,
+                        "_IsBaseAction": false
+                    }
+                },
+                {
+                    "ace.user_data.ActionParam.cInfo": {
+                        "_Guid": "bc4db44a-e456-4a75-850d-c38bbbde4b81",
+                        "_ActionGuid": "def08814-ac01-4a42-b53b-7099e6bbb4e6",
                         "_OverrideSourceActionParamGuid": "00000000-0000-0000-0000-000000000000",
                         "_OverrideParamNameArray": [],
                         "_OverrideOwnerAction": false,

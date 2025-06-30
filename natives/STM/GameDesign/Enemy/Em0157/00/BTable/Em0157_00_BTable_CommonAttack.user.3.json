@@ -393,6 +393,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -520,6 +525,11 @@
                                 "_CheckAreaNo": {
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
+                                    }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
                             }
@@ -1168,6 +1178,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -1380,6 +1395,11 @@
                                 "_CheckAreaNo": {
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
+                                    }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
                             }
@@ -1620,6 +1640,11 @@
                                 "_CheckAreaNo": {
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
+                                    }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
                             }
@@ -1991,12 +2016,12 @@
                         },
                         "_EditActionGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "7ae83d84-7c8b-46e9-ba88-f5aea4a397bb"
+                                "_Value": "677e64c5-d9b7-472d-b08b-ebe0a69133af"
                             }
                         },
                         "_EditBranchedParamGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "650a8bb7-699f-0a20-1d59-e9babaf7779f"
+                                "_Value": "00000000-0000-0000-0000-000000000000"
                             }
                         }
                     }
@@ -2332,7 +2357,7 @@
                         },
                         "_AngleWidth": {
                             "ace.btable.cEditFieldFloat": {
-                                "_Value": 100.0
+                                "_Value": 80.0
                             }
                         },
                         "_Option": {
@@ -2391,20 +2416,24 @@
                     }
                 },
                 {
-                    "app.btable.EmCommonCommand.cSelectActionArg": {
-                        "_EditAssetIndex": {
-                            "ace.btable.cEditFieldDropBox`1<System.Int32>": {
+                    "ace.btable.cCheckTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        }
+                    }
+                },
+                {
+                    "ace.btable.cSetTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        },
+                        "_SetType": {
+                            "ace.btable.cEditFieldEnum`1<ace.btable.cSetTimerValueArg.SET_TYPE>": {
                                 "_Value": 0
-                            }
-                        },
-                        "_EditActionGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "837c126e-2758-4317-8f09-6e290139db48"
-                            }
-                        },
-                        "_EditBranchedParamGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "00000000-0000-0000-0000-000000000000"
                             }
                         }
                     }
@@ -2418,7 +2447,7 @@
                         },
                         "_EditActionGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "11e7005c-a7e9-4115-9355-882edf208e53"
+                                "_Value": "837c126e-2758-4317-8f09-6e290139db48"
                             }
                         },
                         "_EditBranchedParamGuid": {
@@ -3134,7 +3163,7 @@
                         },
                         "_AngleWidth": {
                             "ace.btable.cEditFieldFloat": {
-                                "_Value": 100.0
+                                "_Value": 80.0
                             }
                         },
                         "_Option": {
@@ -3144,6 +3173,35 @@
                         },
                         "_Option2": {
                             "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckAngleArg.OPTION>": {
+                                "_Value": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cCheckDistanceArg": {
+                        "_Distance": {
+                            "ace.btable.cEditFieldFloat": {
+                                "_Value": 16.0
+                            }
+                        },
+                        "_CheckType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.CHECK_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_CheckHeightType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.CHECK_HEIGHT_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_AxisType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.AXIS_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_BaseType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.BASE_TYPE>": {
                                 "_Value": 0
                             }
                         }
@@ -3177,7 +3235,7 @@
                         },
                         "_AngleWidth": {
                             "ace.btable.cEditFieldFloat": {
-                                "_Value": 240.0
+                                "_Value": 260.0
                             }
                         },
                         "_Option": {
@@ -3187,6 +3245,29 @@
                         },
                         "_Option2": {
                             "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckAngleArg.OPTION>": {
+                                "_Value": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "ace.btable.cCheckTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        }
+                    }
+                },
+                {
+                    "ace.btable.cSetTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        },
+                        "_SetType": {
+                            "ace.btable.cEditFieldEnum`1<ace.btable.cSetTimerValueArg.SET_TYPE>": {
                                 "_Value": 0
                             }
                         }
@@ -3207,6 +3288,64 @@
                         "_EditBranchedParamGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
                                 "_Value": "00000000-0000-0000-0000-000000000000"
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cCheckDistanceArg": {
+                        "_Distance": {
+                            "ace.btable.cEditFieldFloat": {
+                                "_Value": 16.0
+                            }
+                        },
+                        "_CheckType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.CHECK_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_CheckHeightType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.CHECK_HEIGHT_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_AxisType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.AXIS_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_BaseType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.BASE_TYPE>": {
+                                "_Value": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cCheckDistanceArg": {
+                        "_Distance": {
+                            "ace.btable.cEditFieldFloat": {
+                                "_Value": 12.0
+                            }
+                        },
+                        "_CheckType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.CHECK_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_CheckHeightType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.CHECK_HEIGHT_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_AxisType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.AXIS_TYPE>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_BaseType": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckDistanceArg.BASE_TYPE>": {
+                                "_Value": 0
                             }
                         }
                     }
@@ -3343,6 +3482,11 @@
                                 "_CheckAreaNo": {
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
+                                    }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
                             }
@@ -3575,6 +3719,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -3696,25 +3845,6 @@
                         "_EditActionGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
                                 "_Value": "837c126e-2758-4317-8f09-6e290139db48"
-                            }
-                        },
-                        "_EditBranchedParamGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "00000000-0000-0000-0000-000000000000"
-                            }
-                        }
-                    }
-                },
-                {
-                    "app.btable.EmCommonCommand.cSelectActionArg": {
-                        "_EditAssetIndex": {
-                            "ace.btable.cEditFieldDropBox`1<System.Int32>": {
-                                "_Value": 0
-                            }
-                        },
-                        "_EditActionGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "11e7005c-a7e9-4115-9355-882edf208e53"
                             }
                         },
                         "_EditBranchedParamGuid": {
@@ -3838,6 +3968,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -3950,20 +4085,24 @@
                     }
                 },
                 {
-                    "app.btable.EmCommonCommand.cSelectActionArg": {
-                        "_EditAssetIndex": {
-                            "ace.btable.cEditFieldDropBox`1<System.Int32>": {
+                    "ace.btable.cCheckTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        }
+                    }
+                },
+                {
+                    "ace.btable.cSetTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        },
+                        "_SetType": {
+                            "ace.btable.cEditFieldEnum`1<ace.btable.cSetTimerValueArg.SET_TYPE>": {
                                 "_Value": 0
-                            }
-                        },
-                        "_EditActionGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "837c126e-2758-4317-8f09-6e290139db48"
-                            }
-                        },
-                        "_EditBranchedParamGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "00000000-0000-0000-0000-000000000000"
                             }
                         }
                     }
@@ -3977,7 +4116,7 @@
                         },
                         "_EditActionGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "11e7005c-a7e9-4115-9355-882edf208e53"
+                                "_Value": "837c126e-2758-4317-8f09-6e290139db48"
                             }
                         },
                         "_EditBranchedParamGuid": {
@@ -4091,6 +4230,25 @@
                         "_SetType": {
                             "ace.btable.cEditFieldEnum`1<ace.btable.cSetTimerValueArg.SET_TYPE>": {
                                 "_Value": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cSelectActionArg": {
+                        "_EditAssetIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Int32>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_EditActionGuid": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "837c126e-2758-4317-8f09-6e290139db48"
+                            }
+                        },
+                        "_EditBranchedParamGuid": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "00000000-0000-0000-0000-000000000000"
                             }
                         }
                     }
@@ -4431,6 +4589,51 @@
                     }
                 },
                 {
+                    "app.btable.EmCommonCommand.cCheckSelfTypeArg": {
+                        "_EditCategory": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckSelfTypeArg.CATEGORY>": {
+                                "_Value": 6
+                            }
+                        },
+                        "Enemy": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ID_Fixed>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "RoleID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyRoleIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ROLE_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "QuestRank": {
+                            "app.btable.EmCommonCommand.cCheckTypeQuestRankArg": {
+                                "_EditArg": {
+                                    "app.btable.EmCommonCommand.cCheckTypeQuestRankArg.cEditFieldEnumQuest": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "LegendaryID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyLegendaryIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.LEGENDARY_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
                     "app.btable.EmCommonCommand.cSelectActionArg": {
                         "_EditAssetIndex": {
                             "ace.btable.cEditFieldDropBox`1<System.Int32>": {
@@ -4445,6 +4648,51 @@
                         "_EditBranchedParamGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
                                 "_Value": "00000000-0000-0000-0000-000000000000"
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cCheckSelfTypeArg": {
+                        "_EditCategory": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckSelfTypeArg.CATEGORY>": {
+                                "_Value": 6
+                            }
+                        },
+                        "Enemy": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ID_Fixed>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "RoleID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyRoleIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ROLE_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "QuestRank": {
+                            "app.btable.EmCommonCommand.cCheckTypeQuestRankArg": {
+                                "_EditArg": {
+                                    "app.btable.EmCommonCommand.cCheckTypeQuestRankArg.cEditFieldEnumQuest": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "LegendaryID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyLegendaryIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.LEGENDARY_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
                             }
                         }
                     }
@@ -4590,6 +4838,11 @@
                                 "_CheckAreaNo": {
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
+                                    }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
                             }
@@ -4757,6 +5010,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -4777,6 +5035,51 @@
                         "_EditBranchedParamGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
                                 "_Value": "2580e416-932e-0d86-3dd2-834382bc4681"
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cCheckSelfTypeArg": {
+                        "_EditCategory": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckSelfTypeArg.CATEGORY>": {
+                                "_Value": 6
+                            }
+                        },
+                        "Enemy": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ID_Fixed>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "RoleID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyRoleIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ROLE_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "QuestRank": {
+                            "app.btable.EmCommonCommand.cCheckTypeQuestRankArg": {
+                                "_EditArg": {
+                                    "app.btable.EmCommonCommand.cCheckTypeQuestRankArg.cEditFieldEnumQuest": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "LegendaryID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyLegendaryIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.LEGENDARY_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
                             }
                         }
                     }
@@ -4900,7 +5203,52 @@
                         },
                         "_EditBranchedParamGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "9b9c1d84-4ca4-4116-8ee1-79bb415f6b0b"
+                                "_Value": "00000000-0000-0000-0000-000000000000"
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cCheckSelfTypeArg": {
+                        "_EditCategory": {
+                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckSelfTypeArg.CATEGORY>": {
+                                "_Value": 6
+                            }
+                        },
+                        "Enemy": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ID_Fixed>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "RoleID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyRoleIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ROLE_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "QuestRank": {
+                            "app.btable.EmCommonCommand.cCheckTypeQuestRankArg": {
+                                "_EditArg": {
+                                    "app.btable.EmCommonCommand.cCheckTypeQuestRankArg.cEditFieldEnumQuest": {
+                                        "_Value": 0
+                                    }
+                                }
+                            }
+                        },
+                        "LegendaryID": {
+                            "app.btable.EmCommonCommand.cCheckTypeEnemyLegendaryIDArg": {
+                                "_EditArg": {
+                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.LEGENDARY_ID>": {
+                                        "_Value": 0
+                                    }
+                                }
                             }
                         }
                     }
@@ -5037,6 +5385,11 @@
                                 "_CheckAreaNo": {
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
+                                    }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
                             }
@@ -5241,6 +5594,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -5446,6 +5804,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -5569,7 +5932,7 @@
                         },
                         "_AngleWidth": {
                             "ace.btable.cEditFieldFloat": {
-                                "_Value": 120.0
+                                "_Value": 80.0
                             }
                         },
                         "_Option": {
@@ -5641,7 +6004,7 @@
                         },
                         "_AngleWidth": {
                             "ace.btable.cEditFieldFloat": {
-                                "_Value": 240.0
+                                "_Value": 260.0
                             }
                         },
                         "_Option": {
@@ -5651,6 +6014,29 @@
                         },
                         "_Option2": {
                             "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckAngleArg.OPTION>": {
+                                "_Value": 0
+                            }
+                        }
+                    }
+                },
+                {
+                    "ace.btable.cCheckTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        }
+                    }
+                },
+                {
+                    "ace.btable.cSetTimerValueArg": {
+                        "_TargetVariableIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "2ead8999-8083-4250-b989-f6ac54cde789"
+                            }
+                        },
+                        "_SetType": {
+                            "ace.btable.cEditFieldEnum`1<ace.btable.cSetTimerValueArg.SET_TYPE>": {
                                 "_Value": 0
                             }
                         }
@@ -5789,6 +6175,11 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
+                                    }
                                 }
                             }
                         }
@@ -5804,6 +6195,25 @@
                         "_EditActionGuid": {
                             "ace.btable.cEditFieldDropBox`1<System.Guid>": {
                                 "_Value": "62a2d4d1-810d-4bfc-beca-63850ceffecf"
+                            }
+                        },
+                        "_EditBranchedParamGuid": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "00000000-0000-0000-0000-000000000000"
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.btable.EmCommonCommand.cSelectActionArg": {
+                        "_EditAssetIndex": {
+                            "ace.btable.cEditFieldDropBox`1<System.Int32>": {
+                                "_Value": 0
+                            }
+                        },
+                        "_EditActionGuid": {
+                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
+                                "_Value": "df117e47-5e42-4633-8fb3-a60d8578e736"
                             }
                         },
                         "_EditBranchedParamGuid": {
@@ -5927,71 +6337,12 @@
                                     "ace.btable.cEditFieldInt": {
                                         "_Value": 0
                                     }
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    "app.btable.EmCommonCommand.cCheckSelfTypeArg": {
-                        "_EditCategory": {
-                            "ace.btable.cEditFieldEnum`1<app.btable.EmCommonCommand.cCheckSelfTypeArg.CATEGORY>": {
-                                "_Value": 2
-                            }
-                        },
-                        "Enemy": {
-                            "app.btable.EmCommonCommand.cCheckTypeEnemyArg": {
-                                "_EditArg": {
-                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ID_Fixed>": {
-                                        "_Value": 0
+                                },
+                                "_IsExcludeHalfCombatArea": {
+                                    "ace.btable.cEditFieldBool": {
+                                        "_Value": false
                                     }
                                 }
-                            }
-                        },
-                        "RoleID": {
-                            "app.btable.EmCommonCommand.cCheckTypeEnemyRoleIDArg": {
-                                "_EditArg": {
-                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.ROLE_ID>": {
-                                        "_Value": 0
-                                    }
-                                }
-                            }
-                        },
-                        "QuestRank": {
-                            "app.btable.EmCommonCommand.cCheckTypeQuestRankArg": {
-                                "_EditArg": {
-                                    "app.btable.EmCommonCommand.cCheckTypeQuestRankArg.cEditFieldEnumQuest": {
-                                        "_Value": 1
-                                    }
-                                }
-                            }
-                        },
-                        "LegendaryID": {
-                            "app.btable.EmCommonCommand.cCheckTypeEnemyLegendaryIDArg": {
-                                "_EditArg": {
-                                    "ace.btable.cEditFieldEnum`1<app.EnemyDef.LEGENDARY_ID>": {
-                                        "_Value": 0
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                {
-                    "app.btable.EmCommonCommand.cSelectActionArg": {
-                        "_EditAssetIndex": {
-                            "ace.btable.cEditFieldDropBox`1<System.Int32>": {
-                                "_Value": 0
-                            }
-                        },
-                        "_EditActionGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "10eb7c2e-16be-430d-9335-4617103822e3"
-                            }
-                        },
-                        "_EditBranchedParamGuid": {
-                            "ace.btable.cEditFieldDropBox`1<System.Guid>": {
-                                "_Value": "00000000-0000-0000-0000-000000000000"
                             }
                         }
                     }

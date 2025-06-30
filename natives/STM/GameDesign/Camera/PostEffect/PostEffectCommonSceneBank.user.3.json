@@ -481,6 +481,24 @@
                                     {
                                         "ace.user_data.PostEffectSceneBank.cAction": {
                                             "_OverwriteMode": "[0]ORIGINAL",
+                                            "_EffectType": 64,
+                                            "_EffectGuid": "e20621a5-53d9-4b8f-ba8f-5a783d026f38",
+                                            "_InInterpolationGuid": "37c688ba-0d93-47f0-9bd3-60996675b0da",
+                                            "_OutInterpolationGuid": "37c688ba-0d93-47f0-9bd3-60996675b0da"
+                                        }
+                                    },
+                                    {
+                                        "ace.user_data.PostEffectSceneBank.cAction": {
+                                            "_OverwriteMode": "[0]ORIGINAL",
+                                            "_EffectType": 8,
+                                            "_EffectGuid": "b8aa59fb-e67a-4696-b48c-bc63c5365f7c",
+                                            "_InInterpolationGuid": "37c688ba-0d93-47f0-9bd3-60996675b0da",
+                                            "_OutInterpolationGuid": "37c688ba-0d93-47f0-9bd3-60996675b0da"
+                                        }
+                                    },
+                                    {
+                                        "ace.user_data.PostEffectSceneBank.cAction": {
+                                            "_OverwriteMode": "[0]ORIGINAL",
                                             "_EffectType": 5,
                                             "_EffectGuid": "2017f740-1766-4947-8e65-af89aa55b8c3",
                                             "_InInterpolationGuid": "37c688ba-0d93-47f0-9bd3-60996675b0da",
@@ -1269,7 +1287,42 @@
                 },
                 {
                     "ace.cInstanceGuidArray`1<ace.user_data.PostEffectSceneBank.cEffectHolder>": {
-                        "_DataArray": []
+                        "_DataArray": [
+                            {
+                                "ace.user_data.PostEffectSceneBank.cEffectHolder": {
+                                    "_InstanceGuid": "b8aa59fb-e67a-4696-b48c-bc63c5365f7c",
+                                    "_Param": {
+                                        "ace.PostEffect.cHazeFilterParam": {
+                                            "_Enabled": false,
+                                            "_HazeSrc": "systems/rendering/NullWhite.tex",
+                                            "_VolumeNoiseTexture": "systems/rendering/VolumeNoise_LIN.tex",
+                                            "_InvSrc": false,
+                                            "_Direction": {
+                                                "x": 0.0,
+                                                "y": -1.0,
+                                                "z": 0.0,
+                                                "pad": 0.0
+                                            },
+                                            "_Speed": 0.005,
+                                            "_NoiseTexScale": 1.0,
+                                            "_MoveScale": 0.0,
+                                            "_HazeScale": 0.05,
+                                            "_UseBorder": false,
+                                            "_BorderWidth": 0.04,
+                                            "_BorderFade": 0.0,
+                                            "_UseDepthHeight": false,
+                                            "_EnableDepth": true,
+                                            "_EnableHeight": true,
+                                            "_DepthStart": 0.0,
+                                            "_DepthEnd": 1000.0,
+                                            "_DepthDiffBias": 0.0,
+                                            "_HeightStart": 0.0,
+                                            "_HeightEnd": 0.0
+                                        }
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -3121,6 +3174,41 @@
                                             "_OcclusionMapIntensity": 0.0,
                                             "_AOCompFactor": 0.0,
                                             "_Interleave": false
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "ace.user_data.PostEffectSceneBank.cEffectHolder": {
+                                    "_InstanceGuid": "e20621a5-53d9-4b8f-ba8f-5a783d026f38",
+                                    "_Param": {
+                                        "app.PostEffect.cColorCorrectLinearParam": {
+                                            "_CorrectParams": [
+                                                {
+                                                    "app.PostEffect.cColorCorrectLinearParam.cSlot": {
+                                                        "_Slot": 0,
+                                                        "_CorrectType": "[0]None",
+                                                        "_LinearFactor": {
+                                                            "x": 1.0,
+                                                            "y": 1.0,
+                                                            "z": 1.0,
+                                                            "w": 1.0
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "app.PostEffect.cColorCorrectLinearParam.cSlot": {
+                                                        "_Slot": 1,
+                                                        "_CorrectType": "[0]None",
+                                                        "_LinearFactor": {
+                                                            "x": 1.0,
+                                                            "y": 1.0,
+                                                            "z": 1.0,
+                                                            "w": 1.0
+                                                        }
+                                                    }
+                                                }
+                                            ]
                                         }
                                     }
                                 }

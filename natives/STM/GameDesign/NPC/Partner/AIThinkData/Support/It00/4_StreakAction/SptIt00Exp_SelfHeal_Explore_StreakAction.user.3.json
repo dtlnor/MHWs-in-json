@@ -21,7 +21,7 @@
             "_LStickEffectParam": {
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
-                        "app.NpcStreakEffects.cSetTarget_LStickParam": {
+                        "app.NpcStreakEffects.cSetScoringContinuePoint_LStickParam": {
                             "_Reach": 3.0,
                             "_ContinueMove": true,
                             "_StopWhenReached": true,
@@ -33,6 +33,27 @@
                             "_DegRange": {
                                 "s": 0.0,
                                 "r": 180.0
+                            },
+                            "_TargetParam": {
+                                "app.mcNpcTargetController.cScoringContinuePoint_Param": {
+                                    "_ScoringData": {
+                                        "app.user_data.NpcPQSScoringData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/It00_GoSafe_PQSScoringData.user"
+                                        }
+                                    },
+                                    "_VerticalData": {
+                                        "": {}
+                                    },
+                                    "_RelayingData": {
+                                        "app.user_data.NpcPQSRelayingData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/It00_GoSafe_PQSRelayingData.user"
+                                        }
+                                    },
+                                    "_RouteType": "[1]RELAYING_ROUTE",
+                                    "_JudgeLength": 5.0,
+                                    "_LowerRange": 15.0,
+                                    "_DecreaseRate": false
+                                }
                             }
                         }
                     }
