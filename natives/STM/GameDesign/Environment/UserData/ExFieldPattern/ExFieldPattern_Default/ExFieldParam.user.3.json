@@ -160,7 +160,8 @@
                     ],
                     "_IsNotSummaryGimmicks": [
                         "[62]GM408_000_00_OTHERS",
-                        "[77]GM015_000_00_UNIQUE"
+                        "[77]GM015_000_00_UNIQUE",
+                        "[95]UnknEnumVal"
                     ]
                 }
             },
@@ -348,6 +349,16 @@
                         },
                         "_Probability": 75
                     }
+                },
+                {
+                    "app.user_data.ExFieldParam.cSpOfferParam_EmType": {
+                        "_EmRank": {
+                            "app.QuestDef.EM_REWARD_RANK_Serializable": {
+                                "_Value": "[2010001152]REWARD_RANK_09"
+                            }
+                        },
+                        "_Probability": 25
+                    }
                 }
             ],
             "_OpenCondition_SpOffer": [
@@ -436,47 +447,103 @@
                     }
                 }
             ],
-            "_SpOfferSecondTargetWeights": [
+            "_SpOfferSecondTargetWeightsByFirstEmRank": [
                 {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[-1866562304]REWARD_RANK_04",
-                        "_Weight": 20
+                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeightByFirstEmRank": {
+                        "_FirstEmRank": "[-1196666624]REWARD_RANK_01",
+                        "_SecondTargetWeights": [
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[-1866562304]REWARD_RANK_04",
+                                    "_Weight": 20
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[1893483520]REWARD_RANK_05",
+                                    "_Weight": 40
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[-731883392]REWARD_RANK_06",
+                                    "_Weight": 60
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[-771966272]REWARD_RANK_07",
+                                    "_Weight": 60
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[316158848]REWARD_RANK_08",
+                                    "_Weight": 60
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[2010001152]REWARD_RANK_09",
+                                    "_Weight": 0
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[914130816]REWARD_RANK_10",
+                                    "_Weight": 0
+                                }
+                            }
+                        ]
                     }
                 },
                 {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[1893483520]REWARD_RANK_05",
-                        "_Weight": 40
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[-731883392]REWARD_RANK_06",
-                        "_Weight": 60
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[-771966272]REWARD_RANK_07",
-                        "_Weight": 60
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[316158848]REWARD_RANK_08",
-                        "_Weight": 60
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[2010001152]REWARD_RANK_09",
-                        "_Weight": 60
-                    }
-                },
-                {
-                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
-                        "_EmRank": "[914130816]REWARD_RANK_10",
-                        "_Weight": 60
+                    "app.user_data.ExFieldParam.cSpOfferSecondTargetWeightByFirstEmRank": {
+                        "_FirstEmRank": "[2010001152]REWARD_RANK_09",
+                        "_SecondTargetWeights": [
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[-1866562304]REWARD_RANK_04",
+                                    "_Weight": 0
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[1893483520]REWARD_RANK_05",
+                                    "_Weight": 0
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[-731883392]REWARD_RANK_06",
+                                    "_Weight": 10
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[-771966272]REWARD_RANK_07",
+                                    "_Weight": 45
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[316158848]REWARD_RANK_08",
+                                    "_Weight": 30
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[2010001152]REWARD_RANK_09",
+                                    "_Weight": 15
+                                }
+                            },
+                            {
+                                "app.user_data.ExFieldParam.cSpOfferSecondTargetWeight": {
+                                    "_EmRank": "[914130816]REWARD_RANK_10",
+                                    "_Weight": 0
+                                }
+                            }
+                        ]
                     }
                 }
             ],
@@ -520,6 +587,16 @@
                         },
                         "_Probability": 7
                     }
+                },
+                {
+                    "app.user_data.ExFieldParam.cVillageBoostParam": {
+                        "_EmRank": {
+                            "app.QuestDef.EM_REWARD_RANK_Serializable": {
+                                "_Value": "[2010001152]REWARD_RANK_09"
+                            }
+                        },
+                        "_Probability": 0
+                    }
                 }
             ],
             "_VillageBoostParams_SpOffer": [
@@ -561,6 +638,16 @@
                             }
                         },
                         "_Probability": 14
+                    }
+                },
+                {
+                    "app.user_data.ExFieldParam.cVillageBoostParam": {
+                        "_EmRank": {
+                            "app.QuestDef.EM_REWARD_RANK_Serializable": {
+                                "_Value": "[2010001152]REWARD_RANK_09"
+                            }
+                        },
+                        "_Probability": 0
                     }
                 }
             ],
@@ -1105,7 +1192,8 @@
                         "_DisableMissions": [
                             "[2009542528]MISSION_008050",
                             "[-1069308800]MISSION_010110",
-                            "[-1074267392]MISSION_506090"
+                            "[-1074267392]MISSION_506090",
+                            "[30114]MISSION_730010"
                         ]
                     }
                 }

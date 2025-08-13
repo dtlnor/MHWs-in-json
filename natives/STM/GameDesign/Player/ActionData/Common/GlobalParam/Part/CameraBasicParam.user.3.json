@@ -22,6 +22,8 @@
                     "_NeautralLowRange": 0.2,
                     "_NeautralMouse": 1.0,
                     "_NeautralGyro": 0.3,
+                    "_NeautralMouseDistance": 3.0,
+                    "_NeautralGyroDistance": 0.1,
                     "_AimEnemyRate": 0.6
                 }
             },
@@ -1672,11 +1674,22 @@
                                 }
                             ],
                             "StartDistance": 12.0,
-                            "FinishDistance": 15.0
+                            "FinishDistance": 15.0,
+                            "_Insides": [],
+                            "InsideOffset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 1.5,
+                                "pad": 0.0
+                            }
                         }
                     },
                     "_DiedRate": 0.5,
-                    "_NotCombatRate": 0.5
+                    "_NotCombatRate": 0.5,
+                    "_InsideInterpolationTime": 1.0,
+                    "_InsideInterpolationType": "[6]InOutQuad",
+                    "_InsideContinueTime": 1.5,
+                    "_InsideDistanceMargin": 1.5
                 }
             },
             "_Damage": {
