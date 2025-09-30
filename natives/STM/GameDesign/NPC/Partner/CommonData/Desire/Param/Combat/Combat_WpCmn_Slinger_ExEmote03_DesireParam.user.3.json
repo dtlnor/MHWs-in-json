@@ -1,0 +1,70 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 10.0,
+                                "r": 0.0
+                            },
+                            "_Cancel": {
+                                "s": 5.0,
+                                "r": 0.0
+                            },
+                            "_Group": {
+                                "s": 0.0,
+                                "r": 0.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCanShotSlinger_Param": {
+                                        "_AmmoType": {
+                                            "app.HunterDef.SLINGER_AMMO_TYPE_Serializable": {
+                                                "_Value": "[24177]EX_EMOTE_03"
+                                            }
+                                        },
+                                        "_CheckEnableShoot": true
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cSetSlingerShotTargetHateHunter_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cShootSlinger_Param": {
+                                        "_IsWeakAmmo": false,
+                                        "_AmmoType": {
+                                            "app.HunterDef.SLINGER_AMMO_TYPE_Serializable": {
+                                                "_Value": "[24177]EX_EMOTE_03"
+                                            }
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]
