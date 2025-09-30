@@ -2,18 +2,7 @@
     {
         "app.user_data.NpcMotionPack_Base": {
             "_PlayModeParam": {
-                "app.cNpcMotionPack.cPlayMode_RefWarmClothes": {
-                    "_WarmClothes": {
-                        "app.user_data.NpcMotionPack_Base": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/Human_Unique_Advisor/BenchReadNotes/HumUnq_Advisor_BenchReadNotes_Muffler_MotionPack.user"
-                        }
-                    },
-                    "_NoWarmClothes": {
-                        "app.user_data.NpcMotionPack_Base": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/Human_Unique_Advisor/BenchReadNotes/HumUnq_Advisor_BenchReadNotes_NoMuffler_MotionPack.user"
-                        }
-                    }
-                }
+                "app.cNpcMotionPack.cPlayMode_Default": {}
             },
             "_PackList": [
                 {
@@ -300,7 +289,22 @@
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
                                     "_RandomWeight": 34,
-                                    "_PlayConditions": []
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cAttachement": {
+                                                        "_Attachement": {
+                                                            "app.NpcDef.ATTACHMENT_MODEL_Serializable": {
+                                                                "_Value": "[4034]WARM_CLOTHES"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "_Inverse": true
+                                            }
+                                        }
+                                    ]
                                 }
                             }
                         ],

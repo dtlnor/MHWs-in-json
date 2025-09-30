@@ -1652,7 +1652,7 @@
                     }
                 },
                 {
-                    "app.Em0077_00Action.cCliffFlyTurn": {
+                    "app.Em0077_00Action.cCliffTurnFly": {
                         "_ActionComponentArray": {
                             "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
                                 "_ElementList": [
@@ -21122,6 +21122,78 @@
                                     },
                                     "_Guid": "85650dc5-915c-0807-31bd-893a45166309"
                                 }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cBackSpinningKickLanding": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acMotionSequence": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acRequestAction": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 20,
+                                            "_SubHate": 30,
+                                            "_OptionBit": 0,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0,
+                                            "_IsEnableAdjustCharaCtrl": true,
+                                            "_StartAdjustFrame": 0,
+                                            "_FinishAdjustFrame": 9,
+                                            "_IsEnableStartToFly": true,
+                                            "_ToFlyStateFrame": 28,
+                                            "_IsChangeCogFadeFrame": false,
+                                            "_TakeOffCogFadeFrame": 0
+                                        }
+                                    },
+                                    "_Guid": "80f83acf-8703-403c-98ce-88caa56bc0cf"
+                                }
                             }
                         ]
                     }
@@ -21271,6 +21343,78 @@
                                         }
                                     },
                                     "_Guid": "9f0ea6ab-465c-0ac5-348f-b630f64dc9d3"
+                                }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cBackSpinningKickCombosLanding": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acMotionSequence": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acRequestAction": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 30,
+                                            "_SubHate": 40,
+                                            "_OptionBit": 0,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0,
+                                            "_IsEnableAdjustCharaCtrl": true,
+                                            "_StartAdjustFrame": 0,
+                                            "_FinishAdjustFrame": 9,
+                                            "_IsEnableStartToFly": true,
+                                            "_ToFlyStateFrame": 28,
+                                            "_IsChangeCogFadeFrame": false,
+                                            "_TakeOffCogFadeFrame": 0
+                                        }
+                                    },
+                                    "_Guid": "4a7e9f59-7ecf-4743-9a3a-712c122d8eb8"
                                 }
                             }
                         ]
@@ -21454,6 +21598,94 @@
                                     },
                                     "_Guid": "145ace92-2991-063c-26e8-d64863c73d33"
                                 }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cToSpinningKickLanding": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acLoopCondition": {
+                                                                        "_LoopEndConds": {
+                                                                            "app.AppActionUtil.cActionParamEditableArray`1<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                "_ElementList": [
+                                                                                    {
+                                                                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                            "Data": {
+                                                                                                "app.EmCommonActionLoopCondition.cCheckGround": {}
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                            "Data": {
+                                                                                                "app.EmCommonActionLoopCondition.cCheckLanded": {}
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                            "Data": {
+                                                                                                "app.EmCommonActionLoopCondition.cCheckLoopTime": {
+                                                                                                    "_Limit": 30.0
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 0,
+                                            "_SubHate": 0,
+                                            "_OptionBit": 1,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0
+                                        }
+                                    },
+                                    "_Guid": "b639b2c7-f9f8-4d73-be21-4ab4a26388b3"
+                                }
                             }
                         ]
                     }
@@ -21553,6 +21785,70 @@
                                     },
                                     "_Guid": "54f60421-e7a3-4d16-a1bc-39ee49c84462"
                                 }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cFrontKick": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acRequestAction": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 0
+                                                    }
+                                                },
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 15,
+                                            "_SubHate": 15,
+                                            "_OptionBit": 0,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0
+                                        }
+                                    },
+                                    "_Guid": "7e9c3d8f-cf73-05bf-3c2b-7aad6ac5b36c"
+                                }
                             }
                         ]
                     }
@@ -21624,6 +21920,77 @@
                                     },
                                     "_Guid": "e3a79fda-5cd7-4d20-9ee3-d82bf549e449"
                                 }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cFrontKickFly": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acMotionSequence": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acRequestAction": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 0
+                                                    }
+                                                },
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 15,
+                                            "_SubHate": 15,
+                                            "_OptionBit": 0,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0
+                                        }
+                                    },
+                                    "_Guid": "843100b4-9229-0bbb-3b23-3b7e0abcf4de"
+                                }
                             }
                         ]
                     }
@@ -21694,6 +22061,77 @@
                                         }
                                     },
                                     "_Guid": "9f68fd99-92fe-439d-91f5-c401ea9280a3"
+                                }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cToFrontKickAttack": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acMotionSequence": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acRequestAction": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 0
+                                                    }
+                                                },
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 0,
+                                            "_SubHate": 0,
+                                            "_OptionBit": 0,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0
+                                        }
+                                    },
+                                    "_Guid": "6f505bf0-b75c-06d3-1d03-27ca383cb574"
                                 }
                             }
                         ]
@@ -21788,6 +22226,101 @@
                                         }
                                     },
                                     "_Guid": "440c0423-2fbe-4c0b-93df-d20eb4d18321"
+                                }
+                            },
+                            {
+                                "ace.user_data.ActionParam.cBranchedParam": {
+                                    "_ActionClass": {
+                                        "app.Em0077_00Action.cToFrontKickAttackLanding": {
+                                            "_ActionComponentArray": {
+                                                "app.AppActionUtil.cActionParamEditableArray`1<app.cCharacterActionComponentBase>": {
+                                                    "_ElementList": [
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acSequenceFilterSetting": {
+                                                                        "_ActionParamFilterList": [],
+                                                                        "_RuntimeFilterList": []
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acLoopCondition": {
+                                                                        "_LoopEndConds": {
+                                                                            "app.AppActionUtil.cActionParamEditableArray`1<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                "_ElementList": [
+                                                                                    {
+                                                                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                            "Data": {
+                                                                                                "app.EmCommonActionLoopCondition.cCheckGround": {}
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                            "Data": {
+                                                                                                "app.EmCommonActionLoopCondition.cCheckLanded": {}
+                                                                                            }
+                                                                                        }
+                                                                                    },
+                                                                                    {
+                                                                                        "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.EmCommonActionLoopCondition.cConditionBase>": {
+                                                                                            "Data": {
+                                                                                                "app.EmCommonActionLoopCondition.cCheckLoopTime": {
+                                                                                                    "_Limit": 30.0
+                                                                                                }
+                                                                                            }
+                                                                                        }
+                                                                                    }
+                                                                                ]
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.Em0077_00Action.acDualMotSupporter": {}
+                                                                }
+                                                            }
+                                                        },
+                                                        {
+                                                            "app.AppActionUtil.cActionParamEditableArray`1.cElement<app.cCharacterActionComponentBase>": {
+                                                                "Data": {
+                                                                    "app.EmCommonActionComponent.acFlySetting": {}
+                                                                }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            },
+                                            "_MotionSequenceFilters": [
+                                                {
+                                                    "app.cEnemyActionBase.cMotionSequenceFilterId": {
+                                                        "STRUCT__ID_PageNo": 0,
+                                                        "STRUCT__ID_FilterNo": 10
+                                                    }
+                                                }
+                                            ],
+                                            "_SubStamina": 0,
+                                            "_SubHate": 0,
+                                            "_OptionBit": 0,
+                                            "_AttrBit": {
+                                                "ace.Bitset`1<app.EnemyDef.ACT_ATTR>": {
+                                                    "_Value": [],
+                                                    "_MaxElement": 41
+                                                }
+                                            },
+                                            "_OverrideMotionRate_Angry": 1.0,
+                                            "_OverrideMotionRate_Tired": 1.0
+                                        }
+                                    },
+                                    "_Guid": "d57324b9-e179-00d9-2e7c-0313df33e179"
                                 }
                             }
                         ]

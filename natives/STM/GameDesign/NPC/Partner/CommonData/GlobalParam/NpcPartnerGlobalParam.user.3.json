@@ -201,7 +201,7 @@
                         },
                         {
                             "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
-                                "Type": "[23]IS_BEYOND_ARENA_FENCE",
+                                "Type": "[24]IS_BEYOND_ARENA_FENCE",
                                 "Transition": "[2]TO_CAUTION"
                             }
                         },
@@ -267,6 +267,12 @@
                         },
                         {
                             "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
+                                "Type": "[23]IS_SPECIAL_TARGET",
+                                "Transition": "[1]TO_COMBAT"
+                            }
+                        },
+                        {
+                            "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
                                 "Type": "[10]IS_EXIST_PL_ATTACK_HISTORY",
                                 "Transition": "[1]TO_COMBAT"
                             }
@@ -296,9 +302,7 @@
                     "_PrioryLockOnActiveTimeSec": 3.0,
                     "_PrioryLockOnOverwriteCoolTimeSec": 12.0,
                     "_DiedActTimeSec": 3.0,
-                    "_LeadingDamagePercentage": 0.7,
-                    "_SpecialZakoDistStart": 3.0,
-                    "_SpecialZakoDistEnd": 5.0
+                    "_LeadingDamagePercentage": 0.7
                 }
             },
             "_Neglect": {
@@ -909,160 +913,219 @@
             },
             "_ReactEnemyAttack": {
                 "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack": {
-                    "_Data": [
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[0]COMMON_DODGE",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 12.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[4]JUMP_DODGE",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 150.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[2]ASKILL004_DODGE_WPON",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 40.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[3]ASKILL004_DODGE_WPOFF",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 130.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[1]COMMON_GUARD",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": -1.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[5]WP04_FULL_SWING_CHARGE",
-                                "_StartupFrame": 2.0,
-                                "_ActiveFrame": 14.0,
-                                "_IsParry": true
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[7]WP06_NORMAL_GUARD_WPON",
-                                "_StartupFrame": 8.0,
-                                "_ActiveFrame": 99.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[6]WP06_NORMAL_GUARD_WPOFF",
-                                "_StartupFrame": 18.0,
-                                "_ActiveFrame": 99.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[9]WP06_POWER_GUARD_WPON",
-                                "_StartupFrame": 38.0,
-                                "_ActiveFrame": 99.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[8]WP06_POWER_GUARD_WPOFF",
-                                "_StartupFrame": 55.0,
-                                "_ActiveFrame": 99.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[10]WP12_MANUAL_GUARD",
-                                "_StartupFrame": 10.0,
-                                "_ActiveFrame": 8.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[11]WP12_PARRY",
-                                "_StartupFrame": 94.0,
-                                "_ActiveFrame": 27.0,
-                                "_IsParry": true
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[-1]INVALID",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 70.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[-1]INVALID",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 70.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[-1]INVALID",
-                                "_StartupFrame": 45.0,
-                                "_ActiveFrame": 190.0,
-                                "_IsParry": true
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[-1]INVALID",
-                                "_StartupFrame": 0.0,
-                                "_ActiveFrame": 12.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[12]WP06_GUARD_COUNTER_WPOFF",
-                                "_StartupFrame": 110.0,
-                                "_ActiveFrame": 999.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[13]WP06_GUARD_COUNTER_WPON",
-                                "_StartupFrame": 70.0,
-                                "_ActiveFrame": 999.0,
-                                "_IsParry": false
-                            }
-                        },
-                        {
-                            "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
-                                "_ReactType": "[14]WP04_CHARGE_SWING_2",
-                                "_StartupFrame": 13.0,
-                                "_ActiveFrame": 14.0,
-                                "_IsParry": true
-                            }
+                    "_DataList": {
+                        "app.cEnumerableParam`2<app.NpcPartnerDef.REACT_TYPE_Fixed,app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData>": {
+                            "_ParamList": [
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 1,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 12.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 2,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 150.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 5.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 3,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 40.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 4,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 130.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 4.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 5,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": -1.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 6,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 73.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 2.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 7,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 73.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 2.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 8,
+                                        "_StartupFrame": 45.0,
+                                        "_ActiveFrame": 33.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 9,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 12.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 10,
+                                        "_StartupFrame": 2.0,
+                                        "_ActiveFrame": 14.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 11,
+                                        "_StartupFrame": 13.0,
+                                        "_ActiveFrame": 14.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 12,
+                                        "_StartupFrame": 1.0,
+                                        "_ActiveFrame": 9.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": 1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 23,
+                                        "_StartupFrame": 30.0,
+                                        "_ActiveFrame": 23.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 13,
+                                        "_StartupFrame": 18.0,
+                                        "_ActiveFrame": 99.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 14,
+                                        "_StartupFrame": 8.0,
+                                        "_ActiveFrame": 99.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 15,
+                                        "_StartupFrame": 55.0,
+                                        "_ActiveFrame": 99.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 16,
+                                        "_StartupFrame": 38.0,
+                                        "_ActiveFrame": 99.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 17,
+                                        "_StartupFrame": 110.0,
+                                        "_ActiveFrame": 999.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 18,
+                                        "_StartupFrame": 70.0,
+                                        "_ActiveFrame": 999.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 19,
+                                        "_StartupFrame": 10.0,
+                                        "_ActiveFrame": 8.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 20,
+                                        "_StartupFrame": 85.0,
+                                        "_ActiveFrame": 17.0,
+                                        "_IsParry": true,
+                                        "_DodgeDist": -1.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 21,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 12.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 3.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cReactEnemyAttack.cData": {
+                                        "EnumValue": 22,
+                                        "_StartupFrame": 0.0,
+                                        "_ActiveFrame": 12.0,
+                                        "_IsParry": false,
+                                        "_DodgeDist": 5.0
+                                    }
+                                }
+                            ]
                         }
-                    ]
+                    }
                 }
             },
             "_AIMoveSet": {
@@ -1339,8 +1402,7 @@
                         "[149]RIDE_FINISH",
                         "[165]GIMMICK_DOWN",
                         "[170]FIELD_PITFALL",
-                        "[174]LIGHT_PLANT",
-                        "[19]MULTI_PARTS_GRP_02"
+                        "[174]LIGHT_PLANT"
                     ]
                 }
             },
@@ -1351,7 +1413,8 @@
             },
             "_SignResponse": {
                 "app.user_data.NpcPartnerGlobalParam.cSignResponse": {
-                    "_ContinueTime": 30.0
+                    "_ContinueTime": 30.0,
+                    "_ContinueTime_Ex00": 20.0
                 }
             },
             "_SituationVoice": {
@@ -1360,7 +1423,17 @@
                 }
             },
             "_Role": {
-                "app.user_data.NpcPartnerGlobalParam.cRole": {}
+                "app.user_data.NpcPartnerGlobalParam.cRole": {
+                    "_Em0166_Hostility_BadConditionEx01StackCount": 2,
+                    "_Em0166_Hostility_Time": 30.0
+                }
+            },
+            "_Damage": {
+                "app.user_data.NpcPartnerGlobalParam.cDamage": {
+                    "_RandomDamageRateBias": 0.5,
+                    "_SlipDamageRate_Combat_Em0166Heat": 0.5,
+                    "_SlipDamageRate_NoCombat_Em0166Heat": 0.5
+                }
             },
             "_RouteNaviData": {
                 "app.NpcPartnerRouteNavigationData": {

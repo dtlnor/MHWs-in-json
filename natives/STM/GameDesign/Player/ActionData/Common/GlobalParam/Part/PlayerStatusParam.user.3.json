@@ -613,6 +613,10 @@
             "_SlipDamage_Thorn_Damage": 2.0,
             "_SlipDamage_HeatGround_IntervalTime": 0.8,
             "_SlipDamage_HeatGround_Damage": 1.0,
+            "_SlipDamage_HighTemperature_IntervalTime": 0.8,
+            "_SlipDamage_HighTemperature_Damage": 2.0,
+            "_SlipDamage_MidTemperature_IntervalTime": 0.8,
+            "_SlipDamage_MidTemperature_Damage": 1.0,
             "_SlipDamage_HeatingGrass_IntervalTime": 2.0,
             "_SlipDamage_HeatingGrass_Damage": 1.0,
             "_SlipDamage_HotArea_IntervalTime": 2.0,
@@ -650,7 +654,7 @@
             "_Blast_DodgeConsume": 35.0,
             "_Blast_StepDodgeConsume": 25.0,
             "_Bleed_CureTime": 4.0,
-            "_Bleed_CureRate_SquatMove": 0.6,
+            "_Bleed_CureRate_SquatMove": 0.8,
             "_Bleed_CureRate_OtherSquatIdle": 0.25,
             "_BleedDamage_Attack": 2.0,
             "_BleedDamage_Guard": 3.0,
@@ -892,6 +896,50 @@
             "_Ex00GAdd": 30.0,
             "_Ex00RAdd": 20.0,
             "_Ex00RTime": 30.0,
+            "_Ex01Param_Normal": {
+                "app.HunterDef.cBadCondEx01Param": {
+                    "_BaseDurationTime": 0.0,
+                    "_StackParam": [
+                        {
+                            "_Lv": 1,
+                            "_AddTime": 20.0,
+                            "_HealthValue": 30.0
+                        },
+                        {
+                            "_Lv": 2,
+                            "_AddTime": 0.0,
+                            "_HealthValue": 50.0
+                        },
+                        {
+                            "_Lv": 3,
+                            "_AddTime": 0.0,
+                            "_HealthValue": 70.0
+                        }
+                    ]
+                }
+            },
+            "_Ex01Param_Hard": {
+                "app.HunterDef.cBadCondEx01Param": {
+                    "_BaseDurationTime": 0.0,
+                    "_StackParam": [
+                        {
+                            "_Lv": 1,
+                            "_AddTime": 20.0,
+                            "_HealthValue": 40.0
+                        },
+                        {
+                            "_Lv": 2,
+                            "_AddTime": 0.0,
+                            "_HealthValue": 70.0
+                        },
+                        {
+                            "_Lv": 3,
+                            "_AddTime": 0.0,
+                            "_HealthValue": 100.0
+                        }
+                    ]
+                }
+            },
             "_CriticalAttackRate": 1.25,
             "_NegativeAttackRate": 0.75,
             "_PhysicalAttack_RateLimit": 4.0,

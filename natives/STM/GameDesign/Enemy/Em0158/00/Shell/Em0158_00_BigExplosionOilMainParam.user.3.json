@@ -29,8 +29,13 @@
                         "_IsNoHitAttackerShell": false,
                         "_IsDamageShellNoSort": false,
                         "_IsDamageDestory": true,
+                        "_IsNotDestroyOnZeroDamage": false,
                         "_IsEnableDynamicShape": false,
                         "_IsCreateShellOnDestory": false,
+                        "_IsCheckRequestDestroy_OnDamage": false,
+                        "_IsCheckBarrierHit": false,
+                        "_IsAttackBarrierHitDestroy": false,
+                        "_CheckBarrierHitOffsetY": 0.0,
                         "_IsCallHitEffectNoDestroy": false,
                         "_IsUseLifeTimerRateHitOn": false,
                         "_AppHitTerrainSetting": {
@@ -60,6 +65,13 @@
                                         "_Hash": 0
                                     }
                                 },
+                                "STRUCT__FirstTerrainCheckGoalOffset__HasValue": false,
+                                "STRUCT__FirstTerrainCheckGoalOffset__Value": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "_TimeNotHitInTerrain": -1.0,
                                 "_IsShellHitTerrainCorrect": true,
                                 "_IsShellHitTerrainWaterCorrect": true,
@@ -67,7 +79,8 @@
                                 "STRUCT__HitTerrainLimitDeg__Value": 0.0,
                                 "_ShellAttackColLifeSec": -1.0
                             }
-                        }
+                        },
+                        "_DelayTime": 0.5
                     }
                 },
                 {
@@ -81,9 +94,9 @@
                         "_IsApplyGroundNormal": false,
                         "_AxisType": "[0]WORLD_Y",
                         "_CheckUpDistance": 5.0,
-                        "_CheckDownDistance": 5.0,
+                        "_CheckDownDistance": 10.0,
                         "_IsUpdateContact": false,
-                        "_IsShellDeleteInGroundCheck": false,
+                        "_IsShellDeleteInGroundCheck": true,
                         "_IgnoreContactSlopeDeg": -1,
                         "_WaterContactOption": "[0]NONE",
                         "_IsGroundRun": false,
@@ -132,9 +145,39 @@
                         "_IsConstShell": false,
                         "_ChildOverrideParam": {
                             "app.cShellminiParamCallChildShell.cChildOverrideSetting": {
-                                "_OffsetArray": [],
-                                "_StartRotArray": [],
-                                "_OffsetRotArray": []
+                                "_OffsetArray": [
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "pad": 0.0
+                                        }
+                                    }
+                                ],
+                                "_StartRotArray": [
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 0.0
+                                        }
+                                    }
+                                ],
+                                "_OffsetRotArray": [
+                                    {
+                                        "_HasValue": false,
+                                        "_Value": {
+                                            "x": 0.0,
+                                            "y": 0.0,
+                                            "z": 0.0,
+                                            "w": 0.0
+                                        }
+                                    }
+                                ]
                             }
                         },
                         "_ShellList": {
@@ -144,6 +187,58 @@
                             }
                         },
                         "_ShellIndex": "[0]INDEX_1"
+                    }
+                },
+                {
+                    "app.cShellminiParamCallCustomChildShell": {
+                        "MiniParamName": "CallCustomChildShell",
+                        "MiniParamtype": "[4]CALL_CHILD",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 0,
+                        "LateUpdateOrder": 0,
+                        "_CreateNum": 1,
+                        "_Offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IsInheritChildScaleValue": false,
+                        "_IsRotWorldY": false,
+                        "STRUCT__StartRot__HasValue": false,
+                        "STRUCT__StartRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "STRUCT__OffsetRot__HasValue": false,
+                        "STRUCT__OffsetRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "_IsSameTimeCall": false,
+                        "_IsCreateShellOwnerPos": false,
+                        "_IsChainShell": false,
+                        "_ChainID": 0,
+                        "_LinkParentChainID": 0,
+                        "_IsConstShell": false,
+                        "_ChildOverrideParam": {
+                            "app.cShellminiParamCallChildShell.cChildOverrideSetting": {
+                                "_OffsetArray": [],
+                                "_StartRotArray": [],
+                                "_OffsetRotArray": []
+                            }
+                        },
+                        "_ShellList": {
+                            "ace.cChildShellGenerateParam": {
+                                "_IsPassingHitID": false,
+                                "_ShellNameHash": 3355155577
+                            }
+                        },
+                        "_ShellIndex": "[1]INDEX_2"
                     }
                 }
             ],

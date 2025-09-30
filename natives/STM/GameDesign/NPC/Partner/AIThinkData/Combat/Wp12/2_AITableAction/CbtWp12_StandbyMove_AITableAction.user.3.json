@@ -5,20 +5,12 @@
                 {
                     "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
                         "_Param": {
-                            "app.NpcAITableConditions.cCheckEnergyMode_Param": {}
-                        },
-                        "_Inverse": false,
-                        "_IsContinue": false
-                    }
-                },
-                {
-                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
-                        "_Param": {
                             "app.NpcAITableConditions.cDetectAttackArea_Param": {
                                 "_WhereNeedAvoid": false,
                                 "_ReactJumpDodge": false,
                                 "_WhereNeedGuard": false,
-                                "_IgnoreShell": false
+                                "_IgnoreShell": false,
+                                "_IgnoreDisabling": true
                             }
                         },
                         "_Inverse": false,
@@ -31,6 +23,27 @@
                             "app.NpcAITableConditions.cIsSquatShotActing_Param": {}
                         },
                         "_Inverse": true,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckWpOn_Param": {}
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckHateCombatEnemy_Param": {
+                                "_IgnoreSoftCC": false,
+                                "_IgnoreHardCC": true
+                            }
+                        },
+                        "_Inverse": false,
                         "_IsContinue": false
                     }
                 }

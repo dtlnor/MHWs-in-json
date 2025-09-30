@@ -13,12 +13,12 @@
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
                         "app.NpcStreakEffects.cSetTargetNull_AIMoveParam": {
-                            "_Reach": 0.0,
+                            "_Reach": 3.0,
                             "_ContinueMove": false,
                             "_StopWhenReached": false,
                             "_MoveType": "[12]FOLLOW_HUNTER",
-                            "_UseAIMoveEnd": true,
-                            "_FixedSpeedLv": "[0]INVALID",
+                            "_UseAIMoveEnd": false,
+                            "_FixedSpeedLv": "[4]DASH",
                             "_IsMoveStopTurn": false,
                             "_StopTurnDir": "[0]PL_AXIS_Z",
                             "_DegRange": {
@@ -36,7 +36,16 @@
                     }
                 }
             },
-            "_EvaluatorParams": []
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckPorterRiding_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                }
+            ]
         }
     }
 ]

@@ -32,11 +32,11 @@
                         "_Condition": {
                             "app.user_data.cDialogueConditionSelector2": {
                                 "_Value": {
-                                    "app.user_data.DCAlreadyReadOtherDialogue": {
+                                    "app.user_data.DCIsExistNotReadBranchDialogue": {
                                         "Order": 0,
                                         "RegisterRequest": false,
-                                        "DialogueId": "[8754]Dia_NPC102_00_001_Communication_001",
-                                        "_IsReadCheck": false
+                                        "_IsReverseEval": false,
+                                        "_BranchId": "[1]Com1_NPC102_00_001"
                                     }
                                 }
                             }
@@ -52,11 +52,11 @@
                         "_Condition": {
                             "app.user_data.cDialogueConditionSelector2": {
                                 "_Value": {
-                                    "app.user_data.DCAlreadyReadOtherDialogue": {
+                                    "app.user_data.DCIsExistNotReadBranchDialogue": {
                                         "Order": 0,
                                         "RegisterRequest": false,
-                                        "DialogueId": "[8755]Dia_NPC102_00_001_Communication_002",
-                                        "_IsReadCheck": false
+                                        "_IsReverseEval": false,
+                                        "_BranchId": "[2]Com2_NPC102_00_001"
                                     }
                                 }
                             }
@@ -66,17 +66,17 @@
                 {
                     "app.user_data.DialogueDynamicChoiceUnivarsalBase.cData": {
                         "_ChoiceNumber": 3,
-                        "_IsMinimumDisplay": false,
+                        "_IsMinimumDisplay": true,
                         "_IsRandomlysDisplay": true,
                         "_Weight": 1,
                         "_Condition": {
                             "app.user_data.cDialogueConditionSelector2": {
                                 "_Value": {
-                                    "app.user_data.DCAlreadyReadOtherDialogue": {
+                                    "app.user_data.DCIsExistNotReadBranchDialogue": {
                                         "Order": 0,
                                         "RegisterRequest": false,
-                                        "DialogueId": "[9256]Dia_NPC102_00_001_Communication_003",
-                                        "_IsReadCheck": false
+                                        "_IsReverseEval": false,
+                                        "_BranchId": "[3]Com3_NPC102_00_001"
                                     }
                                 }
                             }
@@ -86,17 +86,17 @@
                 {
                     "app.user_data.DialogueDynamicChoiceUnivarsalBase.cData": {
                         "_ChoiceNumber": 4,
-                        "_IsMinimumDisplay": false,
+                        "_IsMinimumDisplay": true,
                         "_IsRandomlysDisplay": true,
                         "_Weight": 1,
                         "_Condition": {
                             "app.user_data.cDialogueConditionSelector2": {
                                 "_Value": {
-                                    "app.user_data.DCAlreadyReadOtherDialogue": {
+                                    "app.user_data.DCIsExistNotReadBranchDialogue": {
                                         "Order": 0,
                                         "RegisterRequest": false,
-                                        "DialogueId": "[9257]Dia_NPC102_00_001_Communication_004",
-                                        "_IsReadCheck": false
+                                        "_IsReverseEval": false,
+                                        "_BranchId": "[4]Com4_NPC102_00_001"
                                     }
                                 }
                             }
@@ -106,17 +106,17 @@
                 {
                     "app.user_data.DialogueDynamicChoiceUnivarsalBase.cData": {
                         "_ChoiceNumber": 5,
-                        "_IsMinimumDisplay": false,
+                        "_IsMinimumDisplay": true,
                         "_IsRandomlysDisplay": true,
                         "_Weight": 1,
                         "_Condition": {
                             "app.user_data.cDialogueConditionSelector2": {
                                 "_Value": {
-                                    "app.user_data.DCAlreadyReadOtherDialogue": {
+                                    "app.user_data.DCIsExistNotReadBranchDialogue": {
                                         "Order": 0,
                                         "RegisterRequest": false,
-                                        "DialogueId": "[9258]Dia_NPC102_00_001_Communication_020",
-                                        "_IsReadCheck": false
+                                        "_IsReverseEval": false,
+                                        "_BranchId": "[5]Com5_NPC102_00_001"
                                     }
                                 }
                             }
@@ -126,6 +126,26 @@
                 {
                     "app.user_data.DialogueDynamicChoiceUnivarsalBase.cData": {
                         "_ChoiceNumber": 6,
+                        "_IsMinimumDisplay": false,
+                        "_IsRandomlysDisplay": true,
+                        "_Weight": 0,
+                        "_Condition": {
+                            "app.user_data.cDialogueConditionSelector2": {
+                                "_Value": {
+                                    "app.user_data.DCAlreadyReadOtherDialogue": {
+                                        "Order": 0,
+                                        "RegisterRequest": false,
+                                        "DialogueId": "[9738]Dia_NPC102_00_001_Communication_202",
+                                        "_IsReadCheck": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "app.user_data.DialogueDynamicChoiceUnivarsalBase.cData": {
+                        "_ChoiceNumber": 7,
                         "_IsMinimumDisplay": false,
                         "_IsRandomlysDisplay": false,
                         "_Weight": -1,

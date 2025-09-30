@@ -2,18 +2,7 @@
     {
         "app.user_data.NpcMotionPack_Sub": {
             "_PlayModeParam": {
-                "app.cNpcMotionPack.cPlayMode_RefWarmClothes": {
-                    "_WarmClothes": {
-                        "app.user_data.NpcMotionPack_Sub": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/_VariousData/AccentMotionPack/HumUnqSub_Accent_SitBench_U00001_Muffler_MotionPack.user"
-                        }
-                    },
-                    "_NoWarmClothes": {
-                        "app.user_data.NpcMotionPack_Sub": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/_VariousData/AccentMotionPack/HumUnqSub_Accent_SitBench_U00001_NoMuffler_MotionPack.user"
-                        }
-                    }
-                }
+                "app.cNpcMotionPack.cPlayMode_Default": {}
             },
             "_PackList": [
                 {
@@ -67,7 +56,22 @@
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
                                     "_RandomWeight": 50,
-                                    "_PlayConditions": []
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cAttachement": {
+                                                        "_Attachement": {
+                                                            "app.NpcDef.ATTACHMENT_MODEL_Serializable": {
+                                                                "_Value": "[4034]WARM_CLOTHES"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "_Inverse": true
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -78,7 +82,22 @@
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
                                     "_RandomWeight": 50,
-                                    "_PlayConditions": []
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cAttachement": {
+                                                        "_Attachement": {
+                                                            "app.NpcDef.ATTACHMENT_MODEL_Serializable": {
+                                                                "_Value": "[4034]WARM_CLOTHES"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "_Inverse": true
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             {

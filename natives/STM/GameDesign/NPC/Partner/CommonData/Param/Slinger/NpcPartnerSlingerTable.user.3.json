@@ -298,19 +298,6 @@
                             "r": 0
                         },
                         "_ScoreConditionParams": [],
-                        "_EnumFixedID": 405510400
-                    }
-                },
-                {
-                    "app.user_data.NpcPartnerSlingerTable.cData": {
-                        "_IsEnable": false,
-                        "_Power": "[0]NORMAL",
-                        "_SetType": "[0]POUCH_ITEM",
-                        "_Score": {
-                            "s": 10,
-                            "r": 0
-                        },
-                        "_ScoreConditionParams": [],
                         "_EnumFixedID": 593379264
                     }
                 },
@@ -324,33 +311,7 @@
                             "r": 0
                         },
                         "_ScoreConditionParams": [],
-                        "_EnumFixedID": -1727489792
-                    }
-                },
-                {
-                    "app.user_data.NpcPartnerSlingerTable.cData": {
-                        "_IsEnable": false,
-                        "_Power": "[0]NORMAL",
-                        "_SetType": "[0]POUCH_ITEM",
-                        "_Score": {
-                            "s": 10,
-                            "r": 0
-                        },
-                        "_ScoreConditionParams": [],
                         "_EnumFixedID": 1957147264
-                    }
-                },
-                {
-                    "app.user_data.NpcPartnerSlingerTable.cData": {
-                        "_IsEnable": false,
-                        "_Power": "[0]NORMAL",
-                        "_SetType": "[0]POUCH_ITEM",
-                        "_Score": {
-                            "s": 10,
-                            "r": 0
-                        },
-                        "_ScoreConditionParams": [],
-                        "_EnumFixedID": -993401344
                     }
                 },
                 {
@@ -791,6 +752,28 @@
                                     "_Inverse": false,
                                     "_Score": 5
                                 }
+                            },
+                            {
+                                "app.user_data.NpcPartnerSlingerTable.cSlingerConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcSlingerConditions.cCheckTargetEmID_Param": {
+                                            "_EnemyIDList": [
+                                                "[21849]EM0166_00_0"
+                                            ]
+                                        }
+                                    },
+                                    "_Inverse": false,
+                                    "_Score": -30
+                                }
+                            },
+                            {
+                                "app.user_data.NpcPartnerSlingerTable.cSlingerConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcSlingerConditions.cCheckEx01CombatGetHostility_Param": {}
+                                    },
+                                    "_Inverse": false,
+                                    "_Score": 99
+                                }
                             }
                         ],
                         "_EnumFixedID": 564336768
@@ -894,6 +877,45 @@
                         },
                         "_ScoreConditionParams": [],
                         "_EnumFixedID": 2006504960
+                    }
+                },
+                {
+                    "app.user_data.NpcPartnerSlingerTable.cData": {
+                        "_IsEnable": false,
+                        "_Power": "[0]NORMAL",
+                        "_SetType": "[1]PICK_ITEM",
+                        "_Score": {
+                            "s": 10,
+                            "r": 0
+                        },
+                        "_ScoreConditionParams": [],
+                        "_EnumFixedID": -1178441088
+                    }
+                },
+                {
+                    "app.user_data.NpcPartnerSlingerTable.cData": {
+                        "_IsEnable": false,
+                        "_Power": "[0]NORMAL",
+                        "_SetType": "[1]PICK_ITEM",
+                        "_Score": {
+                            "s": 10,
+                            "r": 0
+                        },
+                        "_ScoreConditionParams": [],
+                        "_EnumFixedID": 127594760
+                    }
+                },
+                {
+                    "app.user_data.NpcPartnerSlingerTable.cData": {
+                        "_IsEnable": false,
+                        "_Power": "[0]NORMAL",
+                        "_SetType": "[1]PICK_ITEM",
+                        "_Score": {
+                            "s": 10,
+                            "r": 0
+                        },
+                        "_ScoreConditionParams": [],
+                        "_EnumFixedID": -961562560
                     }
                 },
                 {
@@ -1108,14 +1130,55 @@
                 },
                 {
                     "app.user_data.NpcPartnerSlingerTable.cData": {
-                        "_IsEnable": false,
+                        "_IsEnable": true,
                         "_Power": "[0]NORMAL",
                         "_SetType": "[-1]NONE",
                         "_Score": {
-                            "s": 10,
+                            "s": 30,
                             "r": 0
                         },
-                        "_ScoreConditionParams": [],
+                        "_ScoreConditionParams": [
+                            {
+                                "app.user_data.NpcPartnerSlingerTable.cSlingerConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcSlingerConditions.cCheckLoadedAmmo_Param": {
+                                            "_AmmoType": {
+                                                "app.HunterDef.SLINGER_AMMO_TYPE_Serializable": {
+                                                    "_Value": "[24177]EX_EMOTE_03"
+                                                }
+                                            },
+                                            "_CheckReserve": true
+                                        }
+                                    },
+                                    "_Inverse": true,
+                                    "_Score": -99
+                                }
+                            },
+                            {
+                                "app.user_data.NpcPartnerSlingerTable.cSlingerConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcSlingerConditions.cTargetEnemyMetaActionDetected_Param": {
+                                            "_ActionTypeList": [
+                                                "[25]EX01_01",
+                                                "[26]EX01_02",
+                                                "[27]EX01_03",
+                                                "[28]EX01_04",
+                                                "[29]EX01_05",
+                                                "[30]EX01_06",
+                                                "[31]EX01_07",
+                                                "[32]EX01_08",
+                                                "[33]EX01_09",
+                                                "[34]EX01_10",
+                                                "[35]EX01_11",
+                                                "[36]EX01_12"
+                                            ]
+                                        }
+                                    },
+                                    "_Inverse": false,
+                                    "_Score": 30
+                                }
+                            }
+                        ],
                         "_EnumFixedID": 24177
                     }
                 }

@@ -2,18 +2,7 @@
     {
         "app.user_data.NpcMotionPack_Sub": {
             "_PlayModeParam": {
-                "app.cNpcMotionPack.cPlayMode_RefWarmClothes": {
-                    "_WarmClothes": {
-                        "app.user_data.NpcMotionPack_Sub": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/_VariousData/AccentMotionPack/HumUnqSub_Accent_Ride_U00001_Muffler_MotionPack.user"
-                        }
-                    },
-                    "_NoWarmClothes": {
-                        "app.user_data.NpcMotionPack_Sub": {
-                            "userdataPath": "GameDesign/NPC/Data/FsmLikeAction/_VariousData/AccentMotionPack/HumUnqSub_Accent_Ride_U00001_NoMuffler_MotionPack.user"
-                        }
-                    }
-                }
+                "app.cNpcMotionPack.cPlayMode_Default": {}
             },
             "_PackList": [
                 {
@@ -40,23 +29,27 @@
                             {
                                 "app.cNpcMotionPack.cMotionRef": {
                                     "_Enabled": true,
-                                    "_MotionGroupHash": 8052252945675615665,
-                                    "_AddMotion": false,
-                                    "_LoopCount": 1,
-                                    "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50,
-                                    "_PlayConditions": []
-                                }
-                            },
-                            {
-                                "app.cNpcMotionPack.cMotionRef": {
-                                    "_Enabled": true,
                                     "_MotionGroupHash": 816203433253226573,
                                     "_AddMotion": false,
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
                                     "_RandomWeight": 64,
-                                    "_PlayConditions": []
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cAttachement": {
+                                                        "_Attachement": {
+                                                            "app.NpcDef.ATTACHMENT_MODEL_Serializable": {
+                                                                "_Value": "[4034]WARM_CLOTHES"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "_Inverse": true
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -67,7 +60,16 @@
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
                                     "_RandomWeight": 73,
-                                    "_PlayConditions": []
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cUniqueAttachment": {}
+                                                },
+                                                "_Inverse": true
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -78,7 +80,22 @@
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
                                     "_RandomWeight": 50,
-                                    "_PlayConditions": []
+                                    "_PlayConditions": [
+                                        {
+                                            "app.cNpcMotionPackPlayConditionHolder": {
+                                                "_Value": {
+                                                    "app.NpcMotionPackPlayConditions.cAttachement": {
+                                                        "_Attachement": {
+                                                            "app.NpcDef.ATTACHMENT_MODEL_Serializable": {
+                                                                "_Value": "[4034]WARM_CLOTHES"
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "_Inverse": true
+                                            }
+                                        }
+                                    ]
                                 }
                             },
                             {
@@ -99,40 +116,7 @@
                                     "_AddMotion": false,
                                     "_LoopCount": 1,
                                     "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50,
-                                    "_PlayConditions": []
-                                }
-                            },
-                            {
-                                "app.cNpcMotionPack.cMotionRef": {
-                                    "_Enabled": true,
-                                    "_MotionGroupHash": 8052252945675615665,
-                                    "_AddMotion": false,
-                                    "_LoopCount": 1,
-                                    "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50,
-                                    "_PlayConditions": []
-                                }
-                            },
-                            {
-                                "app.cNpcMotionPack.cMotionRef": {
-                                    "_Enabled": true,
-                                    "_MotionGroupHash": 1478459167470359423,
-                                    "_AddMotion": false,
-                                    "_LoopCount": 1,
-                                    "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50,
-                                    "_PlayConditions": []
-                                }
-                            },
-                            {
-                                "app.cNpcMotionPack.cMotionRef": {
-                                    "_Enabled": true,
-                                    "_MotionGroupHash": 12722674723146352125,
-                                    "_AddMotion": false,
-                                    "_LoopCount": 1,
-                                    "_LR": "[-1]NONE",
-                                    "_RandomWeight": 50,
+                                    "_RandomWeight": 0,
                                     "_PlayConditions": []
                                 }
                             }
