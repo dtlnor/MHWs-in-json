@@ -1,0 +1,134 @@
+{
+    "GraphNodes": [
+        {
+            "x": 0,
+            "y": 0
+        }
+    ],
+    "Points": [
+        {
+            "a": {
+                "x": -919.20135,
+                "y": 152.75848,
+                "z": 252.23244,
+                "w": 0.0
+            },
+            "b": {
+                "x": -919.20135,
+                "y": 152.75848,
+                "z": 252.23244,
+                "w": 0.0
+            },
+            "c": {
+                "x": 0,
+                "y": -1,
+                "z": -1,
+                "w": 0
+            }
+        }
+    ],
+    "objects1": [
+        {
+            "app.point_graph_data.NpcLinearAct": {
+                "v0": 0,
+                "v1": {
+                    "x": -919.20135,
+                    "y": 152.75848,
+                    "z": 252.23244,
+                    "w": 0.0
+                },
+                "v2": 0,
+                "STRUCT__DegY__HasValue": false,
+                "STRUCT__DegY__Value": -80.6938,
+                "_MoveType": {
+                    "app.NpcDef.LINEAR_ACT_MOVE_TYPE_Serializable": {
+                        "_Value": "[-1199985792]INVALID"
+                    }
+                },
+                "_MoveBlendRate": 0.5,
+                "_DisableNavigation": false,
+                "_DisableAvoid": false,
+                "STRUCT__Reach__HasValue": false,
+                "STRUCT__Reach__Value": 0.0,
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[190]ROOT_TRANS|RELAX|BUMPED|AVOID|GREETING|ATTENTION_PL"
+                    }
+                },
+                "_ConditionData": {
+                    "": {}
+                },
+                "_Param": {
+                    "app.cNpcLinearActAction_Param": {
+                        "_LoopType": "[1]MS_FLAG",
+                        "_WaitTime": 2.0,
+                        "_MissionID": {
+                            "app.MissionIDList.ID_Serializable": {
+                                "_Value": "[268897600]MISSION_003240"
+                            }
+                        },
+                        "_FlagIndex": 3,
+                        "_LoopCount": 1,
+                        "_ActionSelector": {
+                            "app.cNpcFsmLikeActionSelector": {
+                                "_Category": -46611132,
+                                "_ActionID": -1331145728,
+                                "_UseVariation": false,
+                                "_Variation": -663541696
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "objects2": [
+        {
+            "app.point_graph_data.NpcLinearAct.cSharedData": {
+                "_MotionPack": {
+                    "app.user_data.NpcMotionPack_Base": {
+                        "userdataPath": "GameDesign/Mission/Mission003240/_PointGraph/MotionPack/Ms003240_Act_02_MotionPack_Base.user"
+                    }
+                },
+                "_MotionPack_Sub": {
+                    "": {}
+                },
+                "_HoldMotionPackSelector": {
+                    "app.cNpcHoldMotionPackSelector": {
+                        "_Category": 923327552,
+                        "_HoldMotionPackID": -638524608
+                    }
+                },
+                "_FollowParam": {
+                    "app.point_graph_data.NpcLinearAct.cFollowParam": {
+                        "_TargetNpc": {
+                            "app.NpcDef.ID_Serializable": {
+                                "_Value": "[-1]UnknEnumVal"
+                            }
+                        },
+                        "_DefaultSpeedLv": "[2]WALK",
+                        "_MoveTypeDests": [],
+                        "_StopAngle": 0.0
+                    }
+                },
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[0]"
+                    }
+                },
+                "_DisableMoveStartAccent": false,
+                "_IsLoop": false,
+                "_IsFinishIdle": false,
+                "_IsFinishAction": true,
+                "_ActionSelector": {
+                    "app.cNpcFsmLikeActionSelector": {
+                        "_Category": -46611132,
+                        "_ActionID": -1331145728,
+                        "_UseVariation": false,
+                        "_Variation": -663541696
+                    }
+                }
+            }
+        }
+    ]
+}

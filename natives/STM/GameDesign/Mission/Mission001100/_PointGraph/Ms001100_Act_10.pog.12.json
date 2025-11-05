@@ -1,0 +1,201 @@
+{
+    "GraphNodes": [
+        {
+            "x": 0,
+            "y": 0
+        },
+        {
+            "x": 1,
+            "y": 0
+        }
+    ],
+    "Points": [
+        {
+            "a": {
+                "x": 315.45514,
+                "y": 32.614883,
+                "z": 133.33232,
+                "w": 0.0
+            },
+            "b": {
+                "x": 316.97742,
+                "y": 32.733047,
+                "z": 136.09189,
+                "w": 0.0
+            },
+            "c": {
+                "x": 1,
+                "y": 1,
+                "z": -1,
+                "w": 2
+            }
+        },
+        {
+            "a": {
+                "x": 315.45514,
+                "y": 32.614883,
+                "z": 133.33232,
+                "w": 0.0
+            },
+            "b": {
+                "x": 316.97742,
+                "y": 32.733047,
+                "z": 136.09189,
+                "w": 0.0
+            },
+            "c": {
+                "x": 0,
+                "y": -1,
+                "z": -1,
+                "w": 0
+            }
+        }
+    ],
+    "objects1": [
+        {
+            "app.point_graph_data.NpcLinearAct": {
+                "v0": 0,
+                "v1": {
+                    "x": 315.45514,
+                    "y": 32.733047,
+                    "z": 133.33232,
+                    "w": 0.0
+                },
+                "v2": 0,
+                "STRUCT__DegY__HasValue": true,
+                "STRUCT__DegY__Value": 25.0,
+                "_MoveType": {
+                    "app.NpcDef.LINEAR_ACT_MOVE_TYPE_Serializable": {
+                        "_Value": "[1235155584]WARP"
+                    }
+                },
+                "_MoveBlendRate": 0.5,
+                "_DisableNavigation": false,
+                "_DisableAvoid": false,
+                "STRUCT__Reach__HasValue": true,
+                "STRUCT__Reach__Value": 0.5,
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[0]"
+                    }
+                },
+                "_ConditionData": {
+                    "": {}
+                },
+                "_Param": {
+                    "app.cNpcLinearActIdle_Param": {
+                        "_LoopType": "[0]TIMER",
+                        "_WaitTime": 6.0,
+                        "_MissionID": {
+                            "app.MissionIDList.ID_Serializable": {
+                                "_Value": "[-1]UnknEnumVal"
+                            }
+                        },
+                        "_FlagIndex": -1,
+                        "_LoopCount": 1
+                    }
+                }
+            }
+        },
+        {
+            "app.point_graph_data.NpcLinearAct": {
+                "v0": 0,
+                "v1": {
+                    "x": 316.97742,
+                    "y": 32.614883,
+                    "z": 136.09189,
+                    "w": 0.0
+                },
+                "v2": 0,
+                "STRUCT__DegY__HasValue": true,
+                "STRUCT__DegY__Value": 25.0,
+                "_MoveType": {
+                    "app.NpcDef.LINEAR_ACT_MOVE_TYPE_Serializable": {
+                        "_Value": "[-581128064]RUN"
+                    }
+                },
+                "_MoveBlendRate": 1.0,
+                "_DisableNavigation": false,
+                "_DisableAvoid": false,
+                "STRUCT__Reach__HasValue": true,
+                "STRUCT__Reach__Value": 0.5,
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[0]"
+                    }
+                },
+                "_ConditionData": {
+                    "": {}
+                },
+                "_Param": {
+                    "app.cNpcLinearActAction_Param": {
+                        "_LoopType": "[2]LOOP_COUNT",
+                        "_WaitTime": 2.0,
+                        "_MissionID": {
+                            "app.MissionIDList.ID_Serializable": {
+                                "_Value": "[-1]UnknEnumVal"
+                            }
+                        },
+                        "_FlagIndex": -1,
+                        "_LoopCount": 20,
+                        "_ActionSelector": {
+                            "app.cNpcFsmLikeActionSelector": {
+                                "_Category": 1572806784,
+                                "_ActionID": 1672851840,
+                                "_UseVariation": false,
+                                "_Variation": -663541696
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "objects2": [
+        {
+            "app.point_graph_data.NpcLinearAct.cSharedData": {
+                "_MotionPack": {
+                    "": {}
+                },
+                "_MotionPack_Sub": {
+                    "": {}
+                },
+                "_HoldMotionPackSelector": {
+                    "app.cNpcHoldMotionPackSelector": {
+                        "_Category": 923327552,
+                        "_HoldMotionPackID": -638524608
+                    }
+                },
+                "_FollowParam": {
+                    "app.point_graph_data.NpcLinearAct.cFollowParam": {
+                        "_TargetNpc": {
+                            "app.NpcDef.ID_Serializable": {
+                                "_Value": "[-1]UnknEnumVal"
+                            }
+                        },
+                        "_DefaultSpeedLv": "[2]WALK",
+                        "_MoveTypeDests": [],
+                        "_StopAngle": 0.0
+                    }
+                },
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[0]"
+                    }
+                },
+                "_DisableMoveStartAccent": false,
+                "_IsLoop": false,
+                "_IsFinishIdle": true,
+                "_IsFinishAction": true,
+                "_ActionSelector": {
+                    "app.cNpcFsmLikeActionSelector": {
+                        "_Category": 0,
+                        "_ActionID": 1116084352,
+                        "_UseVariation": false,
+                        "_Variation": -663541696
+                    }
+                }
+            }
+        }
+    ]
+}
