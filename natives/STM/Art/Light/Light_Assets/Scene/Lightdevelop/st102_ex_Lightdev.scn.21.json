@@ -1,0 +1,217 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[3]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "GIPC_AutoGen_Devastation_Pallet",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "Art/Light/Light_GIPointCloud/AutoGen/st102Ex/Scene/GIPC_AutoGen_Devastation_Pallet.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "b192b1c8-0915-45b0-999c-88313d41c70f",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "PointGraphList_st102_ex_Light",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.pointgraph.PointGraph": {
+                    "v0_Resource": "Art/Light/LightController/Zone/PointGraphList_st102_ex_Light.poglst"
+                }
+            }
+        },
+        "MainObject[4]": {
+            "Guid": "24d94848-ce78-439d-828d-7b7b64b961ab",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st102_ex_DPGIParamTransition",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "Art/Light/Light_Prefab/Basic00_DPGIParamTransition.pfb",
+            "Component[5]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[6]": {
+                "app.DPGIParamTransition": {
+                    "v0": 1,
+                    "_EnvChangeDatas": [
+                        {
+                            "app.DPGIParamTransition.cEnvChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_BlendGroupName": "Fertility",
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cEnvChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_BlendGroupName": "HeavyRain",
+                                "_FadeInTime": 1.0,
+                                "_FadeOutTime": 10.0
+                            }
+                        }
+                    ],
+                    "_JunctionChangeData": {
+                        "app.DPGIParamTransition.cJunctionChangeData": {
+                            "_NearDivisionNum": 2.0,
+                            "_FarDivisionNum": 4.0,
+                            "_Enable": true,
+                            "_TransitionTime": 1.0,
+                            "_ProceedDiffThreshold": 0.0001
+                        }
+                    },
+                    "_LayerChangeDatas": [
+                        {
+                            "app.DPGIParamTransition.cLayerChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_LabelName": "Base",
+                                "_TransitionTime": 1.0,
+                                "_ProceedDiffThreshold": 0.0001,
+                                "_StayTime": 5.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cLayerChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_LabelName": "UnderWater",
+                                "_TransitionTime": 1.0,
+                                "_ProceedDiffThreshold": 0.0001,
+                                "_StayTime": 5.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cLayerChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_LabelName": "ForestCave",
+                                "_TransitionTime": 1.0,
+                                "_ProceedDiffThreshold": 0.0001,
+                                "_StayTime": 5.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cLayerChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_LabelName": "ForestGodray",
+                                "_TransitionTime": 1.0,
+                                "_ProceedDiffThreshold": 0.0001,
+                                "_StayTime": 5.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cLayerChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_LabelName": "ForestDark",
+                                "_TransitionTime": 1.0,
+                                "_ProceedDiffThreshold": 0.0001,
+                                "_StayTime": 5.0
+                            }
+                        }
+                    ],
+                    "_GameCountDatas": [
+                        {
+                            "app.DPGIParamTransition.cGameCountData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_StartCount": 350,
+                                "_EndCount": 450,
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cGameCountData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_StartCount": 1950,
+                                "_EndCount": 2050,
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

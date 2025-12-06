@@ -1,0 +1,224 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[13]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "gui",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Event/evc/evc2040/evc2040_gui.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[14]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "sound",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Event/evc/evc2040/Flow/fl33/sound.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "7b449427-a984-4682-8315-5cd91977ee45",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "TimeLine",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/Resource/system/TimeLine.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.timeline.Timeline": {
+                    "v0_Enabled": true,
+                    "v1_ExecuteGroup": "[0]ExecuteGroup_00",
+                    "v2_PauseGroup": "[0]PauseGroup_00",
+                    "v3_Frame": "",
+                    "v4_StartFrame": 0.0,
+                    "v5_EndFrame": 300.0,
+                    "v6_PlayState": "[2]Stop",
+                    "v7_PlaySpeed": 1.0,
+                    "v8_Loop": false,
+                    "v9_EnableEvent": true,
+                    "v10_PlaySceneStart": false,
+                    "v11_BindType": "[1]Scene"
+                }
+            },
+            "Component[3]": {
+                "via.timeline.TimelineFsm2": {
+                    "v0": 1,
+                    "v1": [],
+                    "v2": "",
+                    "v3": 0,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0,
+                    "v8": [],
+                    "v9": "GameDesign/Event/evc/evc2040/Flow/fl33/fl33.tmlfsm2",
+                    "v10": 2
+                }
+            },
+            "Component[4]": {
+                "app.TimelineEventPlayOffsetSetter": {
+                    "v0": 1
+                }
+            },
+            "Component[5]": {
+                "ace.TimelineEventScheduler": {
+                    "v0": 1,
+                    "_EventID": 2040,
+                    "_FlowID": 33
+                }
+            }
+        },
+        "MainObject[6]": {
+            "Guid": "c9d9ff9f-ebd5-4c07-a139-333835a18181",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "ResourceCollection",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/Resource/system/ResourceCollection.pfb",
+            "Component[7]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[8]": {
+                "app.TimelineEventResourceCollection": {
+                    "v0": 1,
+                    "_EventID": 2040,
+                    "_FlowID": 33
+                }
+            },
+            "Component[9]": {
+                "via.gui.AdditionalMessage": {
+                    "v0_MessageList": []
+                }
+            },
+            "Component[10]": {
+                "ace.EventMovieHolder": {
+                    "v0": 1,
+                    "_EventID": -1,
+                    "_MovieHolder": []
+                }
+            }
+        },
+        "MainObject[11]": {
+            "Guid": "8d7efcf8-1672-4ba3-96d8-a89d79d17580",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "UniversalPositionRoot",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/Resource/system/UniversalPositionRoot.pfb",
+            "Component[12]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            }
+        }
+    }
+}

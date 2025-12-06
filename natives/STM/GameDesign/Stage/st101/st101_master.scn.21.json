@@ -1,0 +1,127 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[6]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st101_master_Body",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st101/st101_master_Body.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[7]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st101_Layout_Loaded",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st101/Layout/Loaded/st101_Layout_Loaded.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[8]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st101_Layout_Resident",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st101/Layout/Resident/st101_Layout_Resident.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "e82423aa-54b0-4b93-b4ba-2d9b9d0c547d",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "StageMark",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/Common/StageMark.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.StageMark": {
+                    "v0": 1
+                }
+            },
+            "Component[3]": {
+                "app.StageLoadSceneRegister": {
+                    "v0": 1,
+                    "_Stage": {
+                        "app.FieldDef.STAGE_Serializable": {
+                            "_Value": "[-1226157568]ST101"
+                        }
+                    }
+                }
+            },
+            "Component[4]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st101/Layout/Resident/Zone/Data/st101_Zone_Stage.cset"
+                }
+            },
+            "Component[5]": {
+                "app.BenchmarkStarter": {
+                    "v0": 1
+                }
+            }
+        }
+    }
+}

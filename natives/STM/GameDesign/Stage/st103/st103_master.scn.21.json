@@ -1,0 +1,206 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[6]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st103_master_Body",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st103/st103_master_Body.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[7]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st103_Layout_Loaded",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st103/Layout/Loaded/st103_Layout_Loaded.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[8]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st103_Layout_Resident",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st103/Layout/Resident/st103_Layout_Resident.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "a15ad09b-a594-4c44-8856-1777826bffe0",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "StageMark",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/Common/StageMark.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.StageMark": {
+                    "v0": 1
+                }
+            },
+            "Component[3]": {
+                "app.StageLoadSceneRegister": {
+                    "v0": 1,
+                    "_Stage": {
+                        "app.FieldDef.STAGE_Serializable": {
+                            "_Value": "[-1251081216]ST103"
+                        }
+                    }
+                }
+            },
+            "Component[4]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st103/Zone/Data/st103_Zone_Stage.cset"
+                }
+            },
+            "Component[5]": {
+                "app.SwitchSceneActiveByEnvironment": {
+                    "v0": 1,
+                    "_STAGE": {
+                        "app.FieldDef.STAGE_Serializable": {
+                            "_Value": "[-1251081216]ST103"
+                        }
+                    },
+                    "_Datas": [
+                        {
+                            "app.SwitchSceneActiveByEnvironment.cData": {
+                                "_Area": 4,
+                                "_Slot": 0,
+                                "_Data_Ruin": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.3,
+                                        "_Prop": 0
+                                    }
+                                },
+                                "_Data_Abnormal": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.3,
+                                        "_Prop": 0
+                                    }
+                                },
+                                "_Data_Fertility": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.0,
+                                        "_Prop": -1
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.SwitchSceneActiveByEnvironment.cData": {
+                                "_Area": 4,
+                                "_Slot": 1,
+                                "_Data_Ruin": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.1,
+                                        "_Prop": -1
+                                    }
+                                },
+                                "_Data_Abnormal": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.0,
+                                        "_Prop": -1
+                                    }
+                                },
+                                "_Data_Fertility": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.1,
+                                        "_Prop": 0
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.SwitchSceneActiveByEnvironment.cData": {
+                                "_Area": 7,
+                                "_Slot": 0,
+                                "_Data_Ruin": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.1,
+                                        "_Prop": 0
+                                    }
+                                },
+                                "_Data_Abnormal": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.0,
+                                        "_Prop": 0
+                                    }
+                                },
+                                "_Data_Fertility": {
+                                    "app.SwitchSceneActiveByEnvironment.cData.cEnvSwitchData": {
+                                        "_Rate": 0.1,
+                                        "_Prop": -1
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

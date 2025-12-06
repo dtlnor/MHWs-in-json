@@ -1,0 +1,737 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "Guid": "4ac0db00-0b67-4d1b-aa32-47436cbb9b2e",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "epvr_farweather_st102_D",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "Art/VFX/EffectProvider/Stage/cm/epvr_farweather_st102.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.EnvironmentEffectController": {
+                    "v0": 1,
+                    "EmitTimeDataList": [
+                        {
+                            "app.EnvironmentEffectController.EmitTimeData": {
+                                "_UseType": "[1]AREA",
+                                "StartTime_Hour": 0,
+                                "StartTime_Minutes": 0,
+                                "StartTime_Second": 0,
+                                "EndTime_Hour": 23,
+                                "EndTime_Minutes": 59,
+                                "EndTime_Second": 59,
+                                "Weather": 15,
+                                "SpeicalCondition": 64,
+                                "HowToFinish": "[0]ALPHA_KILL",
+                                "AppearTime": 5.0,
+                                "VanishTime": 5.0,
+                                "AllElement": true,
+                                "ElementIDBit": 0
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[3]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": false,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[4]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/cm/11_st_far_st102_000.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "24009848-bcde-436a-81fe-0b96822a86bc",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": true,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[0]FollowParent",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": 408.61823,
+                                    "y": 168.94397,
+                                    "z": 79.1257,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": -70.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [
+                                    {
+                                        "via.effect.script.GroupNameParameter": {
+                                            "Enable": true,
+                                            "GroupNameLv0": "Devastation",
+                                            "GroupNameLv1": ""
+                                        }
+                                    }
+                                ],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            }
+        },
+        "MainObject[5]": {
+            "Guid": "6ff55268-926f-49d4-b707-48f9cbc75b5f",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "epvr_farweather_st102_A",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "Art/VFX/EffectProvider/Stage/cm/epvr_farweather_st102.pfb",
+            "Component[6]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[7]": {
+                "app.EnvironmentEffectController": {
+                    "v0": 1,
+                    "EmitTimeDataList": [
+                        {
+                            "app.EnvironmentEffectController.EmitTimeData": {
+                                "_UseType": "[1]AREA",
+                                "StartTime_Hour": 0,
+                                "StartTime_Minutes": 0,
+                                "StartTime_Second": 0,
+                                "EndTime_Hour": 23,
+                                "EndTime_Minutes": 59,
+                                "EndTime_Second": 59,
+                                "Weather": 15,
+                                "SpeicalCondition": 2,
+                                "HowToFinish": "[0]ALPHA_KILL",
+                                "AppearTime": 5.0,
+                                "VanishTime": 5.0,
+                                "AllElement": true,
+                                "ElementIDBit": 0
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[8]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": false,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[9]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/cm/11_st_far_st102_000.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "24009848-bcde-436a-81fe-0b96822a86bc",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": true,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[0]FollowParent",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": 408.61823,
+                                    "y": 168.94397,
+                                    "z": 79.1257,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": -70.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [
+                                    {
+                                        "via.effect.script.GroupNameParameter": {
+                                            "Enable": true,
+                                            "GroupNameLv0": "Abnormal",
+                                            "GroupNameLv1": ""
+                                        }
+                                    }
+                                ],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            }
+        },
+        "MainObject[10]": {
+            "Guid": "a91719c1-15ca-48a5-bc90-16d7a1b8804c",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "epvr_farweather_st104_D",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "Art/VFX/EffectProvider/Stage/cm/epvr_farweather_st104.pfb",
+            "Component[11]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[12]": {
+                "app.EnvironmentEffectController": {
+                    "v0": 1,
+                    "EmitTimeDataList": [
+                        {
+                            "app.EnvironmentEffectController.EmitTimeData": {
+                                "_UseType": "[1]AREA",
+                                "StartTime_Hour": 0,
+                                "StartTime_Minutes": 0,
+                                "StartTime_Second": 0,
+                                "EndTime_Hour": 23,
+                                "EndTime_Minutes": 59,
+                                "EndTime_Second": 59,
+                                "Weather": 15,
+                                "SpeicalCondition": 256,
+                                "HowToFinish": "[0]ALPHA_KILL",
+                                "AppearTime": 5.0,
+                                "VanishTime": 5.0,
+                                "AllElement": true,
+                                "ElementIDBit": 0
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[13]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": false,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[14]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/cm/11_st_far_st104_000.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "60b7eafa-27f3-4d31-bc07-49b613135522",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": true,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[0]FollowParent",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": 2340.4316,
+                                    "y": 580.0,
+                                    "z": -436.48068,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": 110.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [
+                                    {
+                                        "via.effect.script.GroupNameParameter": {
+                                            "Enable": true,
+                                            "GroupNameLv0": "Devastation",
+                                            "GroupNameLv1": ""
+                                        }
+                                    }
+                                ],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            }
+        },
+        "MainObject[15]": {
+            "Guid": "190c8a0b-ebe1-449f-b257-896c82a67782",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "epvr_farweather_st104_A",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "Art/VFX/EffectProvider/Stage/cm/epvr_farweather_st104.pfb",
+            "Component[16]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[17]": {
+                "app.EnvironmentEffectController": {
+                    "v0": 1,
+                    "EmitTimeDataList": [
+                        {
+                            "app.EnvironmentEffectController.EmitTimeData": {
+                                "_UseType": "[1]AREA",
+                                "StartTime_Hour": 0,
+                                "StartTime_Minutes": 0,
+                                "StartTime_Second": 0,
+                                "EndTime_Hour": 23,
+                                "EndTime_Minutes": 59,
+                                "EndTime_Second": 59,
+                                "Weather": 15,
+                                "SpeicalCondition": 8,
+                                "HowToFinish": "[0]ALPHA_KILL",
+                                "AppearTime": 5.0,
+                                "VanishTime": 5.0,
+                                "AllElement": true,
+                                "ElementIDBit": 0
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[18]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": false,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[19]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/cm/11_st_far_st104_000.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "60b7eafa-27f3-4d31-bc07-49b613135522",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": true,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[0]FollowParent",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": 2340.4316,
+                                    "y": 580.0,
+                                    "z": -436.48068,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": 110.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [
+                                    {
+                                        "via.effect.script.GroupNameParameter": {
+                                            "Enable": true,
+                                            "GroupNameLv0": "Abnormal",
+                                            "GroupNameLv1": ""
+                                        }
+                                    }
+                                ],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,499 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "Guid": "c7432555-8e94-4e3e-8079-9dfdb9b22518",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_Camera",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_Camera.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.RegisterZone": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-203896896]INVALID"
+                        }
+                    }
+                }
+            },
+            "Component[3]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Zone_Camera.cset"
+                }
+            }
+        },
+        "MainObject[4]": {
+            "Guid": "2467a058-5858-4d88-9cab-fa42736c0816",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_Enemy",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_Enemy.pfb",
+            "Component[5]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[6]": {
+                "app.RegisterZoneEnemyArea": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-1933365888]ARENA_FANCE_ENABLE"
+                        }
+                    }
+                }
+            },
+            "Component[7]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Enemy_Zone_Enable_Fance.cset"
+                }
+            },
+            "ChildObject[8]": {
+                "Guid": "260f2a68-3156-0cf3-0049-3a6fd064ca81",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "st401_Zone_Enemy_Disable_Fence",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[9]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[10]": {
+                    "app.RegisterZoneEnemyArea": {
+                        "v0": 1,
+                        "_ColliderSetType": {
+                            "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                                "_Value": "[1624804992]ARENA_FANCE_DISABLE"
+                            }
+                        }
+                    }
+                },
+                "Component[11]": {
+                    "via.physics.ColliderSet": {
+                        "Enabled": true,
+                        "DevelopDraw": true,
+                        "DevelopDrawFillMode": "[1]WireFrame",
+                        "DependencyResources": [],
+                        "v4_Static": true,
+                        "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Enemy_Zone_Disable_Fance.cset"
+                    }
+                }
+            }
+        },
+        "MainObject[12]": {
+            "Guid": "99526843-540c-400a-b810-bcbc7870e19c",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_Area",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_Area.pfb",
+            "Component[13]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[14]": {
+                "app.RegisterZone": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-203896896]INVALID"
+                        }
+                    }
+                }
+            },
+            "Component[15]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Zone_Area.cset"
+                }
+            }
+        },
+        "MainObject[16]": {
+            "Guid": "5c394fd7-c92b-4849-8915-1f4a537c8488",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_LifeArea",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_LifeArea.pfb",
+            "Component[17]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[18]": {
+                "app.RegisterZone": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-203896896]INVALID"
+                        }
+                    }
+                }
+            },
+            "Component[19]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Zone_LifeArea.cset"
+                }
+            }
+        },
+        "MainObject[20]": {
+            "Guid": "6f9c50f4-fcd1-4eb1-98d2-adea94b5d95c",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_SpSafeArea",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_SpSafeArea.pfb",
+            "Component[21]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[22]": {
+                "app.RegisterZone": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-203896896]INVALID"
+                        }
+                    }
+                }
+            },
+            "Component[23]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Zone_SpSafeArea.cset"
+                }
+            }
+        },
+        "MainObject[24]": {
+            "Guid": "5f2e5354-253c-4f54-a941-62078d519004",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_Quest",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_Quest.pfb",
+            "Component[25]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[26]": {
+                "app.RegisterZone": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-203896896]INVALID"
+                        }
+                    }
+                }
+            },
+            "Component[27]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Zone_Quest.cset"
+                }
+            },
+            "Component[28]": {
+                "app.StoryZoneController": {
+                    "v0": 1,
+                    "isQuest": true
+                }
+            }
+        },
+        "MainObject[29]": {
+            "Guid": "6bfa8e92-506d-4c57-83ea-1902710dd2df",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st401_Zone_DisableBonfire",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/st401/Zone/st401_Zone_DisableGimmickSet.pfb",
+            "Component[30]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[31]": {
+                "app.RegisterZone": {
+                    "v0": 1,
+                    "_ColliderSetType": {
+                        "app.ZoneDef.COLLIDERSET_TYPE_Serializable": {
+                            "_Value": "[-203896896]INVALID"
+                        }
+                    }
+                }
+            },
+            "Component[32]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st401/Zone/Data/st401_Zone_DisableGimmickSet.cset"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,167 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[0]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "vfx_BG",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st103/Vfx/vfx_BG.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[1]": {
+            "Guid": "8e38a5a8-f4a7-464a-81d3-3d724571e8ba",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "HeatWave",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Environment/Prefab/HeatWave.pfb",
+            "Component[2]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.9335805,
+                        "z": 0.0,
+                        "w": 0.3583678
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[3]": {
+                "via.effect.script.ObjectEffectManager2": {
+                    "v0": 1,
+                    "_DisableRequestEffect": false,
+                    "_VFXRangeTrackReversePlayNoRequest": false,
+                    "_VFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                    "DataContainer": {
+                        "via.Prefab": {
+                            "v0": 1,
+                            "v1": "Art/VFX/EffectProvider/Stage/St103/epvr_st103_heatwave.pfb"
+                        }
+                    },
+                    "ExternalDataContainers": [],
+                    "TargetGameObject": "00000000-0000-0000-0000-000000000000",
+                    "ExternalPropertys": [
+                        {
+                            "via.effect.script.ObjectEffectManager2.ExternalProperty": {
+                                "ContainerID": 0,
+                                "ElementID": 0,
+                                "State": "[0]Idle",
+                                "ExternParameters": []
+                            }
+                        }
+                    ],
+                    "disableVFXTriggerTrack": true,
+                    "disableVFXRangeTrack": false,
+                    "disableMotionJackCheck": false,
+                    "_VFXTriggerTrackUseHighestWeight": false,
+                    "_VFXRangeTrackUseHighestWeight": false,
+                    "_StaticDataContainer": false,
+                    "_DisableByEmptyDataContainer": false
+                }
+            },
+            "Component[4]": {
+                "app.HeatWave": {
+                    "v0": 1,
+                    "_EdgeOpacitySearchDist": 80.0,
+                    "_MoveState": "[0]WAIT",
+                    "_Settings": {
+                        "app.HeatWaveSetting": {
+                            "userdataPath": "GameDesign/Environment/UserData/HeatWaveSetting.user"
+                        }
+                    }
+                }
+            },
+            "Component[5]": {
+                "soundlib.SoundContainer": {
+                    "v0": 1,
+                    "_TriggerOnlyDrawSelf": false,
+                    "_UserDataList": [
+                        {
+                            "soundlib.SoundContainerListData": {
+                                "userdataPath": "Sound/UserData/02_Container/Environment/Unique/EnvUnique_HeatWave_ContainerListData.user"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "MainObject[6]": {
+            "Guid": "414cbaa2-a748-4249-9f8a-47bf18a6595a",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "PointedSpace_EdgeOpacity_heavyrain_heatwave",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Environment/Prefab/PointedSpace_EdgeOpacity_heavyrain_heatwave.pfb",
+            "Component[7]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[8]": {
+                "via.pointgraph.PointGraph": {
+                    "v0_Resource": "GameDesign/Environment/PointGraph/PointGraphList_EdgeOpacity_heavyrain_heatwave.poglst"
+                }
+            }
+        }
+    }
+}

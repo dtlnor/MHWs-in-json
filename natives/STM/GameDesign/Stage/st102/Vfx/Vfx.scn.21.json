@@ -1,0 +1,159 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[0]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "vfx_BG",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st102/Vfx/vfx_BG.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[1]": {
+            "Guid": "41b17236-7658-428f-a5d8-f9b3a952aabf",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "HeavyRain",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Environment/Prefab/HeavyRain.pfb",
+            "Component[2]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[3]": {
+                "app.HeavyRain": {
+                    "v0": 1,
+                    "_EdgeOpacitySearchDist": 80.0,
+                    "_MoveState": "[0]WAIT",
+                    "_HeavyRainLightRate": 0.0,
+                    "_Settings": {
+                        "app.HeavyRainSetting": {
+                            "userdataPath": "GameDesign/Environment/UserData/HeavyRainSetting.user"
+                        }
+                    }
+                }
+            },
+            "Component[4]": {
+                "via.effect.script.ObjectEffectManager2": {
+                    "v0": 1,
+                    "_DisableRequestEffect": false,
+                    "_VFXRangeTrackReversePlayNoRequest": false,
+                    "_VFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                    "DataContainer": {
+                        "via.Prefab": {
+                            "v0": 1,
+                            "v1": "Art/VFX/EffectProvider/Stage/St102/epvr_st102_heavyrain.pfb"
+                        }
+                    },
+                    "ExternalDataContainers": [],
+                    "TargetGameObject": "00000000-0000-0000-0000-000000000000",
+                    "ExternalPropertys": [],
+                    "disableVFXTriggerTrack": true,
+                    "disableVFXRangeTrack": false,
+                    "disableMotionJackCheck": false,
+                    "_VFXTriggerTrackUseHighestWeight": false,
+                    "_VFXRangeTrackUseHighestWeight": false,
+                    "_StaticDataContainer": false,
+                    "_DisableByEmptyDataContainer": false
+                }
+            },
+            "Component[5]": {
+                "soundlib.SoundContainer": {
+                    "v0": 1,
+                    "_TriggerOnlyDrawSelf": false,
+                    "_UserDataList": [
+                        {
+                            "soundlib.SoundContainerListData": {
+                                "userdataPath": "Sound/UserData/02_Container/Environment/Unique/EnvUnique_HeavyRain_ContainerListData.user"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "MainObject[6]": {
+            "Guid": "cd56891e-d6da-46a5-a111-e41cc025d248",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "PointedSpace_EdgeOpacity_heavyrain_heatwave",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Environment/Prefab/PointedSpace_EdgeOpacity_heavyrain_heatwave.pfb",
+            "Component[7]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[8]": {
+                "via.pointgraph.PointGraph": {
+                    "v0_Resource": "GameDesign/Environment/PointGraph/PointGraphList_EdgeOpacity_heavyrain_heatwave.poglst"
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,505 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "Guid": "670adfcd-7533-4a2e-a948-c65e3c274320",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Wind_village",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": false,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[3]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/St101/11_st101_wind_000.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "da808539-fc62-4240-a3de-62624e03a20f",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": false,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[2]World",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": -830.7054,
+                                    "y": 26.461,
+                                    "z": 1021.05,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            },
+            "Component[4]": {
+                "app.EnvironmentEffectController": {
+                    "v0": 1,
+                    "EmitTimeDataList": [
+                        {
+                            "app.EnvironmentEffectController.EmitTimeData": {
+                                "_UseType": "[0]DEFAULT",
+                                "StartTime_Hour": 0,
+                                "StartTime_Minutes": 0,
+                                "StartTime_Second": 0,
+                                "EndTime_Hour": 23,
+                                "EndTime_Minutes": 0,
+                                "EndTime_Second": 0,
+                                "Weather": 6,
+                                "SpeicalCondition": 2,
+                                "HowToFinish": "[0]ALPHA_KILL",
+                                "AppearTime": 1.0,
+                                "VanishTime": 1.0,
+                                "AllElement": true,
+                                "ElementIDBit": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "MainObject[5]": {
+            "Guid": "ff585f93-95e4-45a1-9a33-9237c7aa6b03",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Wind_sand_tunnel",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[6]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[7]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": false,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[8]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/St101/11_st101_wind_001.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "a343f573-b040-43b3-afa4-3dc0b56e0251",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": false,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[2]World",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": -988.0,
+                                    "y": -80.0,
+                                    "z": 1286.0,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            },
+            "Component[9]": {
+                "app.EnvironmentEffectController": {
+                    "v0": 1,
+                    "EmitTimeDataList": [
+                        {
+                            "app.EnvironmentEffectController.EmitTimeData": {
+                                "_UseType": "[0]DEFAULT",
+                                "StartTime_Hour": 0,
+                                "StartTime_Minutes": 0,
+                                "StartTime_Second": 0,
+                                "EndTime_Hour": 23,
+                                "EndTime_Minutes": 0,
+                                "EndTime_Second": 0,
+                                "Weather": 7,
+                                "SpeicalCondition": 0,
+                                "HowToFinish": "[0]ALPHA_KILL",
+                                "AppearTime": 1.0,
+                                "VanishTime": 1.0,
+                                "AllElement": true,
+                                "ElementIDBit": 1
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "MainObject[10]": {
+            "Guid": "95d21794-3ceb-4d53-a49d-79890243696c",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Wind_nowind",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[11]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[12]": {
+                "via.effect.script.EnvironmentEffectManager": {
+                    "v0": 1,
+                    "IsEnableAutoCulling": true,
+                    "IsAutoPlay": true,
+                    "IsCullingNotAffectUpdate": false,
+                    "ExternalPropertys": []
+                }
+            },
+            "Component[13]": {
+                "via.effect.script.EPVStandardData": {
+                    "v0": 1,
+                    "Elements": [
+                        {
+                            "via.effect.script.EPVStandardData.Element": {
+                                "v0": [
+                                    "Art/VFX/EffectEditor/Stage/St101/11_st101_wind_002.efx"
+                                ],
+                                "TriggerId": 4294967295,
+                                "StopTriggerId": 4294967295,
+                                "GUID": "ad959d74-5ac4-47de-a685-b8fe6f2cfd73",
+                                "EffectCache": false,
+                                "IgnoreEffectCache": false,
+                                "AntiFlickerOffset": false,
+                                "GroupInfoList": [],
+                                "RenderOutputID": 31,
+                                "AssetGroupNameListLv0": [],
+                                "AssetGroupNameListLv1": [],
+                                "ID": 0,
+                                "RelationType": "[0]FollowParent",
+                                "InitlizationParentScale": true,
+                                "ParentDegree": 0,
+                                "RelationChildId": -1,
+                                "JointName": "",
+                                "UseVirtualSkeletonLocal": false,
+                                "UnparentFrame": -1.0,
+                                "Offset": {
+                                    "x": -62.70541,
+                                    "y": 26.461,
+                                    "z": 125.049995,
+                                    "pad": 0.0
+                                },
+                                "RotationOrder": "[2]ZXY",
+                                "BaseRotation": "[0]ParentJoint",
+                                "RelationRotationAxis": 0,
+                                "Rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "Scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0,
+                                    "pad": 0.0
+                                },
+                                "LifeFrame": -1.0,
+                                "EndType": "[1]Finish",
+                                "ActionOnProviderDestroy": "[1]Finish",
+                                "ActionOnParentDisappear": "[0]None",
+                                "IsCameraDirection": false,
+                                "IsVFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                                "IsLanding": false,
+                                "IsUseTerrainNormal": false,
+                                "SearchTerrainDistance": 0.5,
+                                "IsIgnoreLanding": false,
+                                "IgnoreLandingPosition": false,
+                                "LandingCoordinateSystem": "[0]World",
+                                "LandingAxis": "[4]MinusY",
+                                "LandingRotationOffset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "CamNodeBillbardSec": 1.0,
+                                "SeparateParentScale": false,
+                                "DelayFrame": 0.0,
+                                "LoopFrame": 0,
+                                "LoopDispersionFrame": 1,
+                                "PlaySpeed": 1.0,
+                                "RelationMotionSpeed": false,
+                                "IsDefaultMirror": false,
+                                "IsRelationMirror": false,
+                                "RelationMirrorReverse": 1,
+                                "RelationMirrorMotionBlendType": "[0]All",
+                                "ColorEnable": true,
+                                "Color": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "MaskEnable": false,
+                                "MaskBit": 0,
+                                "ActionOnCulling": "[0]None",
+                                "ExternParameters": [],
+                                "GroupNameParameters": [],
+                                "CustomLOD": false,
+                                "LODLevels": [],
+                                "UserBit": 0
+                            }
+                        }
+                    ],
+                    "Version": 1,
+                    "UseVirtualSkeleton": false
+                }
+            }
+        }
+    }
+}

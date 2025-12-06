@@ -1,0 +1,326 @@
+{
+    "looseInstance": {
+        "15": {
+            "via.navigation.map.InteractionShapeAABB": {
+                "Shape": {
+                    "minpos": {
+                        "x": -1015.18005,
+                        "y": 83.27191,
+                        "z": 870.9977,
+                        "pad": 0.0
+                    },
+                    "maxpos": {
+                        "x": -1014.0702,
+                        "y": 101.79321,
+                        "z": 872.16125,
+                        "pad": 0.0
+                    }
+                }
+            }
+        },
+        "19": {
+            "via.navigation.map.InteractionShapeAABB": {
+                "Shape": {
+                    "minpos": {
+                        "x": -1009.8994,
+                        "y": 42.86285,
+                        "z": 944.08826,
+                        "pad": 0.0
+                    },
+                    "maxpos": {
+                        "x": -1009.05835,
+                        "y": 44.86285,
+                        "z": 944.984,
+                        "pad": 0.0
+                    }
+                }
+            }
+        }
+    },
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "Guid": "397d8269-6047-4c7b-8519-da980d48ea2c",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "NavSafePosData",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/Common/NavSafePosData.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.NavSafePosDataRegister": {
+                    "v0": 1,
+                    "_NavSafePosData": {
+                        "app.user_data.NavSafePosUserData": {
+                            "userdataPath": "GameDesign/Stage/st101/NavSafePos/st101_NavSafePosData.user"
+                        }
+                    }
+                }
+            }
+        },
+        "MainObject[3]": {
+            "Guid": "8473fc69-4a3f-4459-9e4c-4e519eab88e7",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "PointGraph",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/Common/PointGraph.pfb",
+            "Component[4]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[5]": {
+                "via.pointgraph.PointGraph": {
+                    "v0_Resource": "GameDesign/Stage/st101/NavSafePos/st101_NavWayPoint_pointgraphlist.poglst"
+                }
+            }
+        },
+        "MainObject[6]": {
+            "Guid": "bce6c646-d90b-49ea-b270-d7bc86534249",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "AIMap_CreateExtraLink",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/stCommon/AIMap/AIMap_CreateExtraLink.pfb",
+            "Component[7]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[8]": {
+                "app.AIMapCreateExtraLink": {
+                    "v0": 1,
+                    "_Filter": {
+                        "via.navigation.FilterSet": {
+                            "v0_Filters": [
+                                {
+                                    "via.navigation.FilterInfo": {
+                                        "v0_Enabled": true,
+                                        "v1_Name": "AIMap_Guide_Only",
+                                        "v2_Type": "[0]Cost",
+                                        "v3_Cost": 0.0,
+                                        "v4_NotifyAround": false,
+                                        "v5_NotifyContainsLink": false,
+                                        "v6_NotifyDistance": 0.0,
+                                        "v7_TraceDestination": "[0]Optimize"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "_IsOneWay": true
+                }
+            },
+            "ChildObject[9]": {
+                "Guid": "c6bdb43a-8000-0acc-0540-a2953160393e",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "AIMapEffector_From",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[10]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[11]": {
+                    "via.navigation.AIMapEffector": {
+                        "v0": 1,
+                        "v1": "",
+                        "v2": [
+                            "CommonNav_NPC"
+                        ],
+                        "v3": [],
+                        "v4": "System/AIMap/Attribute/AIMapAttribute.aimapattr",
+                        "v5": 0,
+                        "v6": 0,
+                        "v7": 0,
+                        "v8": 1,
+                        "v9": 15,
+                        "v10": 0,
+                        "v11": 0,
+                        "v12": 2,
+                        "v13": 0
+                    }
+                }
+            },
+            "ChildObject[12]": {
+                "Guid": "8294f946-e400-0126-2df2-324ddda3ca32",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "AIMapEffector_To",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[13]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[14]": {
+                    "via.navigation.AIMapEffector": {
+                        "v0": 1,
+                        "v1": "",
+                        "v2": [
+                            "CommonNav_NPC"
+                        ],
+                        "v3": [],
+                        "v4": "System/AIMap/Attribute/AIMapAttribute.aimapattr",
+                        "v5": 0,
+                        "v6": 0,
+                        "v7": 0,
+                        "v8": 1,
+                        "v9": 19,
+                        "v10": 0,
+                        "v11": 0,
+                        "v12": 2,
+                        "v13": 0
+                    }
+                }
+            }
+        }
+    }
+}

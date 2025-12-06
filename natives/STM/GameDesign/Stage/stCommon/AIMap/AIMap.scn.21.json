@@ -1,0 +1,81 @@
+{
+    "looseInstance": {
+        "3": {
+            "via.navigation.SectionManagerHandle": {
+                "v0": [],
+                "v1_Resource": "GameDesign/Stage/stCommon/AIMap/CommonNav_NPC.ainvmmgr"
+            }
+        },
+        "4": {
+            "via.navigation.SectionManagerHandle": {
+                "v0": [],
+                "v1_Resource": "GameDesign/Stage/stCommon/AIMap/CommonNav_EM.ainvmmgr"
+            }
+        },
+        "5": {
+            "via.navigation.SectionManagerHandle": {
+                "v0": [],
+                "v1_Resource": "GameDesign/Stage/stCommon/AIMap/CommonNav_EMBoss.ainvmmgr"
+            }
+        }
+    },
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "Guid": "f73637e6-cedb-40a1-a580-975f66959bdf",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "AIMap",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Stage/Common/AIMap.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.navigation.AIMap": {
+                    "v0": [],
+                    "v1": [
+                        3,
+                        4,
+                        5
+                    ],
+                    "v2": 0
+                }
+            },
+            "Component[3]": {
+                "app.AIMapHandleRegister": {
+                    "v0": 1
+                }
+            }
+        }
+    }
+}

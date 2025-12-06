@@ -1,0 +1,166 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[6]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "GIPC_AutoGen_Fertility",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "Art/Light/Light_GIPointCloud/AutoGen/st552/Scene/GIPC_AutoGen_Fertility.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "d6f60a88-ac3b-440e-8a07-08da14d5f592",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "PointGraphList_st552_Light",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.pointgraph.PointGraph": {
+                    "v0_Resource": "Art/Light/LightController/Zone/PointGraphList_st552_Light.poglst"
+                }
+            }
+        },
+        "MainObject[3]": {
+            "Guid": "3817a9cc-210e-416d-81ba-8c6cda10f6bf",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "st552_DPGIParamTransition",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "Art/Light/Light_Prefab/Basic00_DPGIParamTransition.pfb",
+            "Component[4]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[5]": {
+                "app.DPGIParamTransition": {
+                    "v0": 1,
+                    "_EnvChangeDatas": [
+                        {
+                            "app.DPGIParamTransition.cEnvChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_BlendGroupName": "Fertility",
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cEnvChangeData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_BlendGroupName": "SandStorm",
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        }
+                    ],
+                    "_JunctionChangeData": {
+                        "app.DPGIParamTransition.cJunctionChangeData": {
+                            "_NearDivisionNum": 2.0,
+                            "_FarDivisionNum": 4.0,
+                            "_Enable": false,
+                            "_TransitionTime": 1.0,
+                            "_ProceedDiffThreshold": 0.0001
+                        }
+                    },
+                    "_LayerChangeDatas": [],
+                    "_GameCountDatas": [
+                        {
+                            "app.DPGIParamTransition.cGameCountData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_StartCount": 350,
+                                "_EndCount": 450,
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        },
+                        {
+                            "app.DPGIParamTransition.cGameCountData": {
+                                "_NearDivisionNum": 2.0,
+                                "_FarDivisionNum": 4.0,
+                                "_StartCount": 1950,
+                                "_EndCount": 2050,
+                                "_FadeInTime": 2.0,
+                                "_FadeOutTime": 4.0
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

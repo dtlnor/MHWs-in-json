@@ -1,0 +1,98 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[0]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "EnvBase",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[1]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "Reverb",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            },
+            "ChildObject[2]": {
+                "Guid": "60c0c762-71f9-4cef-8829-74bd6f0d468b",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "St601_Reverb",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": "Sound/Prefab/Reverb/St601_Reverb.pfb",
+                "Component[3]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[4]": {
+                    "via.pointgraph.PointGraph": {
+                        "v0_Resource": "Sound/UserData/01_IR/Reverb/St601/st601_Sound_Reverb_PointGraphList.poglst"
+                    }
+                },
+                "Component[5]": {
+                    "app.SoundSpatialAudioDataRegister": {
+                        "v0": 1,
+                        "_Reverb": {
+                            "app.snd_user_data.SoundReverbBusListData": {
+                                "userdataPath": "Sound/UserData/01_IR/Reverb/St101/St101_ReverbBusListData.user"
+                            }
+                        },
+                        "_RoomsAndPortals": {
+                            "": {}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

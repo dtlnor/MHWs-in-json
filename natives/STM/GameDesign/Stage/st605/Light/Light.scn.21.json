@@ -1,0 +1,166 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[11]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st605_Lightdev",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "Art/Light/Light_Assets/Scene/Lightdevelop/st605_Lightdev.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "b9705cc8-0998-4bfb-a2a4-b724fd3bfb1f",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "LightController",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.LightControlZoneController": {
+                    "v0": 1
+                }
+            },
+            "Component[3]": {
+                "ace.LightController": {
+                    "v0": 1,
+                    "_ControlType": "[0]LIGHT",
+                    "_isStoreInitParam": false,
+                    "_IsRestoreAtDestruction": false
+                }
+            },
+            "Component[4]": {
+                "via.timeline.TimelineBlend": {
+                    "v0_Enabled": true,
+                    "v1_ExecuteGroup": "[0]ExecuteGroup_00",
+                    "v2_PauseGroup": "[0]PauseGroup_00",
+                    "v3_Frame": "Art/Light/LightController/LightController/st605/LCD_st605_LightBlend.tmlbld",
+                    "v4_StartFrame": 0.0,
+                    "v5_EndFrame": 2400.0,
+                    "v6_PlayState": "[2]Stop",
+                    "v7_PlaySpeed": 1.0,
+                    "v8_Loop": false,
+                    "v9_PlaySceneStart": false,
+                    "v10_BindType": "[2]Fixed"
+                }
+            }
+        },
+        "MainObject[5]": {
+            "Guid": "e4ba1fe4-877f-4429-96ce-57e97208c799",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "PostController",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[6]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[7]": {
+                "app.LightControlZoneController": {
+                    "v0": 1
+                }
+            },
+            "Component[8]": {
+                "ace.LightController": {
+                    "v0": 1,
+                    "_ControlType": "[1]POST_EFFECT",
+                    "_isStoreInitParam": false,
+                    "_IsRestoreAtDestruction": false
+                }
+            },
+            "Component[9]": {
+                "via.timeline.TimelineBlend": {
+                    "v0_Enabled": true,
+                    "v1_ExecuteGroup": "[0]ExecuteGroup_00",
+                    "v2_PauseGroup": "[0]PauseGroup_00",
+                    "v3_Frame": "Art/Light/LightController/LightController/st605/LCD_st605_PostBlend.tmlbld",
+                    "v4_StartFrame": 0.0,
+                    "v5_EndFrame": 2400.0,
+                    "v6_PlayState": "[2]Stop",
+                    "v7_PlaySpeed": 1.0,
+                    "v8_Loop": false,
+                    "v9_PlaySceneStart": false,
+                    "v10_BindType": "[2]Fixed"
+                }
+            },
+            "Component[10]": {
+                "ace.BaseColorCorrectRequester": {
+                    "v0": 1,
+                    "_ColorCubeGroupList": []
+                }
+            }
+        }
+    }
+}

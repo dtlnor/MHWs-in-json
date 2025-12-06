@@ -1,0 +1,173 @@
+{
+    "looseInstance": {},
+    "ObjectsHierarchy": {
+        "MainFolder[8]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st102_ex_master_Body",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st102_ex/st102_ex_master_Body.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[9]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st102_ex_Layout_Loaded",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st102_ex/Layout/st102_ex_Layout_Loaded.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainFolder[10]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "st102_Layout_Resident",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": true,
+                    "ScenePath": "GameDesign/Stage/st102/Layout/Resident/st102_Resident.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[0]": {
+            "Guid": "332b37fa-0006-4d8e-8462-2da7c2e1cc0d",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "StageMark",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/_Develop/Stage/st102/StageMark.pfb",
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.StageMark": {
+                    "v0": 1
+                }
+            },
+            "Component[3]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st102/Layout/Resident/Zone/Data/st102_Zone_Stage.cset"
+                }
+            },
+            "Component[4]": {
+                "app.StageLoadSceneRegister": {
+                    "v0": 1,
+                    "_Stage": {
+                        "app.FieldDef.STAGE_Serializable": {
+                            "_Value": "[-859829056]ST102"
+                        }
+                    }
+                }
+            }
+        },
+        "MainObject[5]": {
+            "Guid": "253c8453-3aae-4686-9af6-8aa38ef02f95",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "AreaUnloadZone",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/_Develop/Stage/st102/AreaUnloadZone.pfb",
+            "Component[6]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[7]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Stage/st102/Zone/Data/st102_Zone_DevAreaUnload.cset"
+                }
+            }
+        }
+    }
+}

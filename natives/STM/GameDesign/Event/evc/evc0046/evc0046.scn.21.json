@@ -1,0 +1,508 @@
+{
+    "looseInstance": {
+        "4": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Event/evc/evc0046/Fsm/evc0046_Fsm_Start.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "18": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Event/evc/evc0046/Fsm/evc0046_Fsm_End.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "32": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Event/evc/evc0046/Fsm/evc0046_Fsm_Gallery.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    "ObjectsHierarchy": {
+        "MainFolder[0]": {
+            "Folder": {
+                "via.Folder": {
+                    "Name": "fl00",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "Standby": false,
+                    "ScenePath": "GameDesign/Event/evc/evc0046/Flow/fl00/fl00.scn",
+                    "UniversalOffset": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0
+                    }
+                }
+            }
+        },
+        "MainObject[1]": {
+            "Guid": "5fa459c8-0ff8-4659-9d78-3a8e5f6587d3",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "EventFsmController",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/Resource/system/EventFsmController.pfb",
+            "Component[2]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[3]": {
+                "via.behaviortree.ManualBehaviorTree": {
+                    "v0": 1,
+                    "v1": [
+                        4
+                    ],
+                    "v2": "",
+                    "v3": 1,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0
+                }
+            },
+            "Component[4]": {
+                "app.ManualBehaviorTreeSecureUser": {
+                    "v0": 1
+                }
+            },
+            "Component[5]": {
+                "app.EventFsmController": {
+                    "v0": 1,
+                    "_FsmType": "[0]START",
+                    "_EventID_Serializable": {
+                        "app.TimelineEventDefine.ID_Serializable": {
+                            "_Value": "[674005120]evc0046"
+                        }
+                    },
+                    "_FlowID": 0,
+                    "_BindTargetDataList": [
+                        {
+                            "app.EventFsmController.BindTargetData": {
+                                "TargetNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "FsmResource": "GameDesign/Event/evc/evc0046/Fsm/evc0046_Fsm_Start.fsmv2",
+                                "IsMainFsm": true,
+                                "TargetTreeIndex": 0,
+                                "IsRestart": false,
+                                "IsEnd": false
+                            }
+                        }
+                    ],
+                    "_LimitCamera": false,
+                    "_CameraType": "[0]POS",
+                    "_LimitYaw": 0.0,
+                    "_LimitPitch": 0.0,
+                    "_Time": 0.0,
+                    "_TargetObject": {
+                        "": {}
+                    },
+                    "_Pos": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_YawOffset": 0.0,
+                    "_PitchOffset": 0.0,
+                    "_IsEnableCameraAttachParam": false
+                }
+            },
+            "Component[6]": {
+                "app.CutSceneZoneController": {
+                    "v0": 1,
+                    "_ColliderSetResourceHolder": ""
+                }
+            },
+            "ChildObject[7]": {
+                "Guid": "3fc04fb0-0759-01b3-0434-ebe0ac16a4e1",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "RoutePointGraph",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[8]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[9]": {
+                    "app.RoutePointGraphRegister": {
+                        "v0": 1
+                    }
+                },
+                "Component[10]": {
+                    "via.pointgraph.PointGraph": {
+                        "v0_Resource": "GameDesign/Event/evc/evc0046/Fsm/evc0046_PointGraphList_Start.poglst"
+                    }
+                }
+            }
+        },
+        "MainObject[11]": {
+            "Guid": "7fb8ebd4-fdce-4a1d-a077-529ff412b2b3",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "EventFsmController_01",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/Resource/system/EventFsmController.pfb",
+            "Component[12]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[13]": {
+                "via.behaviortree.ManualBehaviorTree": {
+                    "v0": 1,
+                    "v1": [
+                        18
+                    ],
+                    "v2": "",
+                    "v3": 1,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0
+                }
+            },
+            "Component[14]": {
+                "app.ManualBehaviorTreeSecureUser": {
+                    "v0": 1
+                }
+            },
+            "Component[15]": {
+                "app.EventFsmController": {
+                    "v0": 1,
+                    "_FsmType": "[2]END",
+                    "_EventID_Serializable": {
+                        "app.TimelineEventDefine.ID_Serializable": {
+                            "_Value": "[674005120]evc0046"
+                        }
+                    },
+                    "_FlowID": 0,
+                    "_BindTargetDataList": [
+                        {
+                            "app.EventFsmController.BindTargetData": {
+                                "TargetNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "FsmResource": "GameDesign/Event/evc/evc0046/Fsm/evc0046_Fsm_End.fsmv2",
+                                "IsMainFsm": true,
+                                "TargetTreeIndex": 0,
+                                "IsRestart": false,
+                                "IsEnd": false
+                            }
+                        }
+                    ],
+                    "_LimitCamera": false,
+                    "_CameraType": "[0]POS",
+                    "_LimitYaw": 0.0,
+                    "_LimitPitch": 0.0,
+                    "_Time": 0.0,
+                    "_TargetObject": {
+                        "": {}
+                    },
+                    "_Pos": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_YawOffset": 0.0,
+                    "_PitchOffset": 0.0,
+                    "_IsEnableCameraAttachParam": false
+                }
+            },
+            "Component[16]": {
+                "app.CutSceneZoneController": {
+                    "v0": 1,
+                    "_ColliderSetResourceHolder": ""
+                }
+            },
+            "ChildObject[17]": {
+                "Guid": "14b65a95-d69d-03f8-2c76-7daf40ceeb0a",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "RoutePointGraph",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[18]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[19]": {
+                    "app.RoutePointGraphRegister": {
+                        "v0": 1
+                    }
+                },
+                "Component[20]": {
+                    "via.pointgraph.PointGraph": {
+                        "v0_Resource": "GameDesign/Event/evc/evc0046/Fsm/evc0046_PointGraphList_End.poglst"
+                    }
+                }
+            }
+        },
+        "MainObject[21]": {
+            "Guid": "16616f4f-6b05-4c75-ada6-43add3fed4d5",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "EventGalleryFsmController",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": "GameDesign/Event/Resource/system/EventGalleryFsmController.pfb",
+            "Component[22]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[23]": {
+                "via.behaviortree.ManualBehaviorTree": {
+                    "v0": 1,
+                    "v1": [
+                        32
+                    ],
+                    "v2": "",
+                    "v3": 1,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0
+                }
+            },
+            "Component[24]": {
+                "app.ManualBehaviorTreeSecureUser": {
+                    "v0": 1
+                }
+            },
+            "Component[25]": {
+                "app.EventGalleryFsmController": {
+                    "v0": 1,
+                    "_EventID_Serializable": {
+                        "app.TimelineEventDefine.ID_Serializable": {
+                            "_Value": "[674005120]evc0046"
+                        }
+                    },
+                    "_createContextLayout": false
+                }
+            },
+            "ChildObject[26]": {
+                "Guid": "f7d4f26c-06bd-04b3-08a1-28f9b276e79e",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "RoutePointGraph",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[27]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[28]": {
+                    "app.RoutePointGraphRegister": {
+                        "v0": 1
+                    }
+                },
+                "Component[29]": {
+                    "via.pointgraph.PointGraph": {
+                        "v0_Resource": ""
+                    }
+                }
+            }
+        }
+    }
+}
