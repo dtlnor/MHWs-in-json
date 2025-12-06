@@ -1,0 +1,248 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {
+        "6": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission102002/_Fsm/Ms102002_RestoreFsm.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Ms102002",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.MissionController": {
+                    "v0": 1,
+                    "_MsCtlrPhasePauseBefore": "[9]END",
+                    "DisableNextObjectiveLoad": false,
+                    "DisableOnLoadMissionGimmick": false,
+                    "IsBeforeBattleExMissionQuest": false,
+                    "_ObjectiveListData": {
+                        "app.user_data.ObjectiveListData": {
+                            "userdataPath": "GameDesign/Mission/Mission102002/Ms102002_ObData.user"
+                        }
+                    }
+                }
+            },
+            "Component[3]": {
+                "app.StoryZoneController": {
+                    "v0": 1,
+                    "isQuest": false
+                }
+            },
+            "Component[4]": {
+                "via.behaviortree.ManualBehaviorTree": {
+                    "v0": 1,
+                    "v1": [
+                        6
+                    ],
+                    "v2": "",
+                    "v3": 0,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0
+                }
+            },
+            "ChildObject[5]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "SetPointGraph",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[6]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[7]": {
+                    "via.pointgraph.PointGraph": {
+                        "v0_Resource": ""
+                    }
+                },
+                "Component[8]": {
+                    "app.ContextLayouter": {
+                        "v0": 1,
+                        "_ContextEnabled": true,
+                        "_LayoutTypeEm": "[0]DEFAULT",
+                        "_LayoutType": {
+                            "app.NpcDef.NPC_CONTEXT_LAYOUT_TYPE_Serializable": {
+                                "_Value": "[798760128]NONE"
+                            }
+                        }
+                    }
+                }
+            },
+            "ChildObject[9]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "RoutePointGraph",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[10]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[11]": {
+                    "app.RoutePointGraphRegister": {
+                        "v0": 1
+                    }
+                },
+                "Component[12]": {
+                    "via.pointgraph.PointGraph": {
+                        "v0_Resource": ""
+                    }
+                }
+            },
+            "ChildObject[13]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "ColliderSet",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[14]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[15]": {
+                    "via.physics.ColliderSet": {
+                        "Enabled": true,
+                        "DevelopDraw": true,
+                        "DevelopDrawFillMode": "[1]WireFrame",
+                        "DependencyResources": [],
+                        "v4_Static": true,
+                        "v5_Resource": ""
+                    }
+                }
+            }
+        }
+    }
+}

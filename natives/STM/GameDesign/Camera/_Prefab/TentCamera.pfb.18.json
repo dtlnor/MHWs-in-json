@@ -1,0 +1,151 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {
+        "4": {
+            "via.motion.TreeCameraLayer": {
+                "v0": 1,
+                "v1": 0,
+                "v2": 0,
+                "v3": 0,
+                "v4": 1065353216,
+                "v5": 0,
+                "v6": "",
+                "v7": 0,
+                "v8": 4294967295,
+                "v9": 0,
+                "v10": 0,
+                "v11": 0,
+                "v12": 0,
+                "v13": 0,
+                "v14": 0,
+                "v15": 0,
+                "v16": 1065353216,
+                "v17": 0,
+                "v18": 0,
+                "v19": 0,
+                "v20": 0,
+                "v21": 1,
+                "v22": 1,
+                "v23": 0,
+                "v24": 0,
+                "v25": 0,
+                "v26": 0
+            }
+        },
+        "5": {
+            "via.motion.MotionBank": {
+                "v0": "",
+                "v1": 0,
+                "v2": 0,
+                "v3": 0
+            }
+        }
+    },
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "TentCamera",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "ace.VirtualCamera": {
+                    "FOV": 8.876736,
+                    "NearClipPlane": 0.1,
+                    "FarClipPlane": 1000.0,
+                    "VerticalEnable": true,
+                    "AspectRatio": 1.0,
+                    "LookAtDistance": 10.66329,
+                    "CameraType": "[0]Game",
+                    "DebugCamera": false
+                }
+            },
+            "Component[3]": {
+                "via.motion.MotionCamera": {
+                    "v0": 1,
+                    "v1": 0,
+                    "v2": 1065353216,
+                    "v3": 0,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 4294967295,
+                    "v8": 0,
+                    "v9": "",
+                    "v10": 0,
+                    "v11": [
+                        4
+                    ],
+                    "v12": [
+                        5
+                    ],
+                    "v13": []
+                }
+            },
+            "Component[4]": {
+                "via.motion.ActorMotionCamera": {
+                    "Enabled": true,
+                    "DebugDraw": false,
+                    "UpdateTiming": "[3]ConstraintsEnd",
+                    "Priority": 0,
+                    "v4_AutoPlayMotionState": false,
+                    "v5_Layer": [
+                        {
+                            "via.motion.ActorCameraLayer": {
+                                "v0_TargetLayerNo": 0,
+                                "v1_BlendMode": "[0]Overwrite",
+                                "v2_BlendRate": 1.0,
+                                "v3_Resource": "",
+                                "v4_MotionBankID": 0,
+                                "v5_MotionID": 4294967295,
+                                "v6_Frame": 0.0,
+                                "v7_Speed": 1.0,
+                                "v8_InterpolationMode": "[1]FrontFade",
+                                "v9_InterpolationCurve": "[0]Linear",
+                                "v10_InterpolationFrame": 0.0
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[5]": {
+                "app.TentCameraController": {
+                    "v0": 1
+                }
+            }
+        }
+    }
+}

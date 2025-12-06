@@ -1,0 +1,227 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {},
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Gm030_023_00",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.physics.RequestSetCollider": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "Verbose": false,
+                    "RequestSetGroups": [
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Gm030/Gm030_023/Collision/Gm030_023_Sensor.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        }
+                    ],
+                    "BankResource": "",
+                    "v7": 4,
+                    "v8": 0
+                }
+            },
+            "Component[3]": {
+                "app.HitController": {
+                    "v0": 1
+                }
+            },
+            "Component[4]": {
+                "ace.ColliderPool": {
+                    "v0": 1
+                }
+            },
+            "Component[5]": {
+                "app.ColliderSwitcher": {
+                    "v0": 1
+                }
+            },
+            "Component[6]": {
+                "app.GimmickAssetHolder": {
+                    "v0": 1,
+                    "_MiniComponentHolder": {
+                        "ace.user_data.GimmickMiniComponentHolder": {
+                            "userdataPath": "GameDesign/Gimmick/Gm030/Gm030/MiniComponent/Gm030_MiniComponentHolder.user"
+                        }
+                    },
+                    "_CommonParam": {
+                        "app.user_data.GimmickCommonParam": {
+                            "userdataPath": "GameDesign/Gimmick/Gm030/Gm030_023_00/Gm030_023_00_CommonParam.user"
+                        }
+                    },
+                    "_AaaUniqueParam": {
+                        "": {}
+                    },
+                    "_BbbUniqueParam": {
+                        "": {}
+                    },
+                    "_ShellList": {
+                        "": {}
+                    }
+                }
+            },
+            "Component[7]": {
+                "ace.GameMessageReceiver": {}
+            },
+            "Component[8]": {
+                "soundlib.SoundContainer": {
+                    "v0": 1,
+                    "_TriggerOnlyDrawSelf": false,
+                    "_UserDataList": []
+                }
+            },
+            "Component[9]": {
+                "app.GimmickPrepare": {
+                    "v0": 1
+                }
+            },
+            "Component[10]": {
+                "via.effect.script.ObjectEffectManager2": {
+                    "v0": 1,
+                    "_DisableRequestEffect": false,
+                    "_VFXRangeTrackReversePlayNoRequest": false,
+                    "_VFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                    "DataContainer": {
+                        "via.Prefab": {
+                            "v0": 1,
+                            "v1": "Art/VFX/EffectProvider/Props/gm/gm030/gm030_023/epvr_gm030_023.pfb"
+                        }
+                    },
+                    "ExternalDataContainers": [],
+                    "TargetGameObject": "00000000-0000-0000-0000-000000000000",
+                    "ExternalPropertys": [],
+                    "disableVFXTriggerTrack": true,
+                    "disableVFXRangeTrack": false,
+                    "disableMotionJackCheck": true,
+                    "_VFXTriggerTrackUseHighestWeight": false,
+                    "_VFXRangeTrackUseHighestWeight": false,
+                    "_StaticDataContainer": true,
+                    "_DisableByEmptyDataContainer": false
+                }
+            },
+            "Component[11]": {
+                "app.SoundCullingController": {
+                    "v0": 1,
+                    "_Settings": {
+                        "app.snd_user_data.SoundCullingSettingsApp": {
+                            "userdataPath": "Sound/UserData/40_Culling/Gimmick/Gimmick_Base_CullingSettings.user"
+                        }
+                    }
+                }
+            },
+            "Component[12]": {
+                "app.InteractController": {
+                    "v0": 1,
+                    "_Data": {
+                        "app.user_data.InteractData": {
+                            "userdataPath": "GameDesign/Gimmick/Gm030/Gm030_023/UserData/Gm030_023_InteractData.user"
+                        }
+                    }
+                }
+            },
+            "Component[13]": {
+                "app.Gm030": {
+                    "v0": 1
+                }
+            },
+            "Component[14]": {
+                "app.GroundSurfaceTrailRequester": {
+                    "v0": 1,
+                    "_Setting": {
+                        "app.user_data.GroundSurfaceTrailRequestSetting": {
+                            "userdataPath": "GameDesign/Environment/UserData/SurfaceTrailSetting_StaticObj.user"
+                        }
+                    },
+                    "_RequestDatas": [
+                        {
+                            "app.GroundSurfaceTrailRequester.RequestData": {
+                                "Type": "[0]TRANSFORM",
+                                "RequestOBB": {
+                                    "coord": {
+                                        "m00": 1.0,
+                                        "m01": 0.0,
+                                        "m02": 0.0,
+                                        "m03": 0.0,
+                                        "m10": 0.0,
+                                        "m11": 1.0,
+                                        "m12": 0.0,
+                                        "m13": 0.0,
+                                        "m20": 0.0,
+                                        "m21": 0.0,
+                                        "m22": 1.0,
+                                        "m23": 0.0,
+                                        "m30": -0.5,
+                                        "m31": 0.0,
+                                        "m32": 0.5,
+                                        "m33": 1.0
+                                    },
+                                    "extent": {
+                                        "x": 4.0,
+                                        "y": 3.0,
+                                        "z": 6.0,
+                                        "pad": 0.0
+                                    }
+                                },
+                                "JointNameHash": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

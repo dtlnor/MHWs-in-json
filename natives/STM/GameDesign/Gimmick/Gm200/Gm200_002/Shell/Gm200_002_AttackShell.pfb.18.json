@@ -1,0 +1,88 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {},
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Gm200_002_AttackShell",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "app.HitController": {
+                    "v0": 1
+                }
+            },
+            "Component[3]": {
+                "ace.ColliderPool": {
+                    "v0": 1
+                }
+            },
+            "Component[4]": {
+                "via.physics.RequestSetCollider": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "Verbose": false,
+                    "RequestSetGroups": [
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Gm200/Gm200_002/Collision/Gm200_002_Attack.rcol"
+                            }
+                        }
+                    ],
+                    "BankResource": "",
+                    "v7": 4,
+                    "v8": 0
+                }
+            },
+            "Component[5]": {
+                "app.AppShell": {
+                    "v0": 1,
+                    "IsMasterShell": false,
+                    "IsChangeLifeTimerRate": false,
+                    "LifeTimerRate": 1.0
+                }
+            },
+            "Component[6]": {
+                "app.ShellHitController": {
+                    "v0": 1
+                }
+            }
+        }
+    }
+}

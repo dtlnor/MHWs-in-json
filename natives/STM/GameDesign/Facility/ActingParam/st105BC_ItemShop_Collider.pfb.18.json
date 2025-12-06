@@ -1,0 +1,201 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {
+        "14": {
+            "via.physics.CapsuleShape": {
+                "v0_BoundingAabb": {
+                    "minpos": {
+                        "x": -5.862714,
+                        "y": -23.479,
+                        "z": -84.1514,
+                        "pad": 0.0
+                    },
+                    "maxpos": {
+                        "x": -0.59989357,
+                        "y": -19.478998,
+                        "z": -78.281685,
+                        "pad": 0.0
+                    }
+                },
+                "v1_UserData": {
+                    "": {}
+                },
+                "v2": {
+                    "p0": {
+                        "x": -3.8627138,
+                        "y": -21.478998,
+                        "z": -82.1514,
+                        "pad": 0.0
+                    },
+                    "p1": {
+                        "x": -2.5998936,
+                        "y": -21.479,
+                        "z": -80.281685,
+                        "pad": 0.0
+                    },
+                    "r": {
+                        "x": 2.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    }
+                }
+            }
+        },
+        "15": {
+            "via.physics.FilterInfo": {
+                "v0_Layer": 0,
+                "v1_Group": 0,
+                "v2_SubGroup": 0,
+                "v3_IgnoreSubGroup": 0,
+                "v4_MaskBits": 4294967295
+            }
+        },
+        "18": {
+            "app.col_user_data.ActBtnParam": {
+                "Name": "",
+                "ParentUserData": {
+                    "via.physics.UserData": {}
+                },
+                "_HitType": {
+                    "app.ActBtnHitType.TYPE_Serializable": {
+                        "_Value": "[0]POS_ONLY"
+                    }
+                },
+                "_OwnRangeDegree": 0.0,
+                "STRUCT__OwnRangeDegreeRiding__HasValue": false,
+                "STRUCT__OwnRangeDegreeRiding__Value": 0.0,
+                "_TargetRangeDegree": 0.0,
+                "_UniqueIndex": "[0]NONE",
+                "_FreeInt": 0,
+                "_FreeFloat": 0.0
+            }
+        },
+        "19": {
+            "via.physics.Collider": {
+                "v0": 1,
+                "v1": 14,
+                "v2": 15,
+                "v3": 18,
+                "v4": "System/Collision/Filter/SensorPut/SensorPut_Npc.cfil",
+                "v5": "",
+                "v6": "",
+                "v7": ""
+            }
+        }
+    },
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Core_ItemShop_Collider",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.physics.RequestSetCollider": {
+                    "Enabled": false,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "Verbose": false,
+                    "RequestSetGroups": [
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/NPC/CommonData/Collision/NpcDummy.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/NPC/CommonData/Collision/NpcDummy.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/NPC/CommonData/Collision/NpcTalk.rcol"
+                            }
+                        }
+                    ],
+                    "BankResource": "",
+                    "v7": 4,
+                    "v8": 0
+                }
+            },
+            "Component[3]": {
+                "app.NpcTalkCollider": {
+                    "v0": 1
+                }
+            },
+            "Component[4]": {
+                "ace.ColliderPass": {}
+            },
+            "Component[5]": {
+                "app.HitController": {
+                    "v0": 1
+                }
+            },
+            "Component[6]": {
+                "app.ColliderSwitcher": {
+                    "v0": 0
+                }
+            },
+            "Component[7]": {
+                "ace.GameMessageReceiver": {}
+            },
+            "Component[8]": {
+                "app.InteractController": {
+                    "v0": 1,
+                    "_Data": {
+                        "app.user_data.InteractData": {
+                            "userdataPath": "GameDesign/NPC/CommonData/Interact/Interact_NPCBase.user"
+                        }
+                    }
+                }
+            },
+            "Component[9]": {
+                "via.physics.Colliders": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4": 1,
+                    "v5": [
+                        19
+                    ]
+                }
+            }
+        }
+    }
+}

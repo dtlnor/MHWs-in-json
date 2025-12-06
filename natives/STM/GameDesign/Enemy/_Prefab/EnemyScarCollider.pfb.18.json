@@ -1,0 +1,98 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {},
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "EnemyScarCollider",
+                    "Tag": "Enemy",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.physics.RequestSetCollider": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "Verbose": false,
+                    "RequestSetGroups": [
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmScar.rcol"
+                            }
+                        }
+                    ],
+                    "BankResource": "",
+                    "v7": 4,
+                    "v8": 0
+                }
+            },
+            "Component[3]": {
+                "app.EnemyScar": {
+                    "v0": 1,
+                    "StampSizeRate": 0.5,
+                    "IsDetailStampSizeRate": true,
+                    "TearStampSizeRate": 0.6,
+                    "RawStampSizeRate": 0.85,
+                    "OldStampSizeRate": 0.75,
+                    "EnableOffsetAngle_Horizontal": 45.0,
+                    "OffsetLimitAngle_Horizontal": 45.0,
+                    "EnableOffsetAngle_Target": 10.0,
+                    "OffsetLimitAngle_Target": 160.0,
+                    "CreatorThroughSec": 0.064
+                }
+            },
+            "Component[4]": {
+                "ace.ColliderPass": {}
+            },
+            "Component[5]": {
+                "app.HitController": {
+                    "v0": 1
+                }
+            },
+            "Component[6]": {
+                "app.ColliderSwitcher": {
+                    "v0": 1
+                }
+            },
+            "Component[7]": {
+                "app.ConstraintUpdater": {
+                    "v0": 0
+                }
+            }
+        }
+    }
+}

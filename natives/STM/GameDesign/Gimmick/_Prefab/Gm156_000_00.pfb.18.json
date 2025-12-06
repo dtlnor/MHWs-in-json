@@ -1,0 +1,345 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {},
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Gm156_000_00",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.physics.RequestSetCollider": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "Verbose": false,
+                    "RequestSetGroups": [
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Gm156/Gm156_000/Collision/Gm156_000_Body.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        }
+                    ],
+                    "BankResource": "",
+                    "v7": 4,
+                    "v8": 0
+                }
+            },
+            "Component[3]": {
+                "app.HitController": {
+                    "v0": 1
+                }
+            },
+            "Component[4]": {
+                "ace.ColliderPool": {
+                    "v0": 1
+                }
+            },
+            "Component[5]": {
+                "app.ColliderSwitcher": {
+                    "v0": 1
+                }
+            },
+            "Component[6]": {
+                "app.GimmickAssetHolder": {
+                    "v0": 1,
+                    "_MiniComponentHolder": {
+                        "ace.user_data.GimmickMiniComponentHolder": {
+                            "userdataPath": "GameDesign/Gimmick/Gm156/Gm156_000/MiniComponent/Gm156_000_MiniComponentHolder.user"
+                        }
+                    },
+                    "_CommonParam": {
+                        "app.user_data.GimmickCommonParam": {
+                            "userdataPath": "GameDesign/Gimmick/Gm156/Gm156_000_00/Gm156_000_00_CommonParam.user"
+                        }
+                    },
+                    "_AaaUniqueParam": {
+                        "": {}
+                    },
+                    "_BbbUniqueParam": {
+                        "": {}
+                    },
+                    "_ShellList": {
+                        "": {}
+                    }
+                }
+            },
+            "Component[7]": {
+                "ace.GameMessageReceiver": {}
+            },
+            "Component[8]": {
+                "soundlib.SoundContainer": {
+                    "v0": 1,
+                    "_TriggerOnlyDrawSelf": false,
+                    "_UserDataList": [
+                        {
+                            "soundlib.SoundContainerListData": {
+                                "userdataPath": "Sound/UserData/02_Container/Gimmick/Gm_Generic_ContainerListData.user"
+                            }
+                        },
+                        {
+                            "app.snd_user_data.SoundGimmickActionListData": {
+                                "userdataPath": "Sound/UserData/32_GimmickTrigger/gm10X_XXX_XX/Gm156_000_00_GimmickActionListData.user"
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[9]": {
+                "app.GimmickPrepare": {
+                    "v0": 1
+                }
+            },
+            "Component[10]": {
+                "via.effect.script.ObjectEffectManager2": {
+                    "v0": 1,
+                    "_DisableRequestEffect": false,
+                    "_VFXRangeTrackReversePlayNoRequest": false,
+                    "_VFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                    "DataContainer": {
+                        "via.Prefab": {
+                            "v0": 1,
+                            "v1": "Art/VFX/EffectProvider/Props/gm/gm156/gm156_000/epvr_gm156_000.pfb"
+                        }
+                    },
+                    "ExternalDataContainers": [],
+                    "TargetGameObject": "00000000-0000-0000-0000-000000000000",
+                    "ExternalPropertys": [],
+                    "disableVFXTriggerTrack": true,
+                    "disableVFXRangeTrack": false,
+                    "disableMotionJackCheck": true,
+                    "_VFXTriggerTrackUseHighestWeight": false,
+                    "_VFXRangeTrackUseHighestWeight": false,
+                    "_StaticDataContainer": true,
+                    "_DisableByEmptyDataContainer": false
+                }
+            },
+            "Component[11]": {
+                "app.SoundCullingController": {
+                    "v0": 1,
+                    "_Settings": {
+                        "app.snd_user_data.SoundCullingSettingsApp": {
+                            "userdataPath": "Sound/UserData/40_Culling/Gimmick/Gimmick_Base_CullingSettings.user"
+                        }
+                    }
+                }
+            },
+            "Component[12]": {
+                "via.landscape.Foliage": {
+                    "v0_RenderOutputID": 31,
+                    "v1_Enabled": true,
+                    "v2_SmallObjectCullingFactor": 1.0,
+                    "v3_Occluder": false,
+                    "v4_OcclusionCulling": false,
+                    "v5_DrawDefault": true,
+                    "v6_DrawShadowCast": true,
+                    "v7_DrawFarCascadeShadowCast": true,
+                    "v8_DrawEnvmap": true,
+                    "v9_DrawVoxelize": true,
+                    "v10_DrawRayTracing": true,
+                    "v11_DrawSignedDistanceField": true,
+                    "v12_Static": false,
+                    "v13": 0,
+                    "v14": "Art/Model/Item/it84/24/0000/Foliage/it8424_0000_0_A.fol",
+                    "v15": 1,
+                    "v16": 4,
+                    "v17": 0,
+                    "v18": 0,
+                    "v19": 1,
+                    "v20": 3,
+                    "v21": 0,
+                    "v22": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "v23": 0,
+                    "v24": 0,
+                    "v25": 1,
+                    "v26": 0,
+                    "v27": 0,
+                    "v28": 0,
+                    "v29": 4294967295,
+                    "v30": 0,
+                    "v31": 1
+                }
+            },
+            "Component[13]": {
+                "app.FoliageSetting": {
+                    "v0_Enabled": true,
+                    "_DisableDispOffController": false,
+                    "_IsPassThrough": false,
+                    "_DispType": 686504192,
+                    "_HeatReceiverParamID": -2104865152,
+                    "_WetBlend": 0.0,
+                    "_WetBlendLimit": 0.0,
+                    "_TopMaskFade": 0.0,
+                    "_GlobalTopMaskFade": 0.5,
+                    "_TopMaskFadeBias": 1.0,
+                    "_TopMaskMapBlend": 0.0,
+                    "_EmissiveIntensity": 1.0,
+                    "_TopBlendVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_TriPlanarColor": {
+                        "R": 128,
+                        "G": 128,
+                        "B": 128,
+                        "A": 255
+                    },
+                    "_GroundBlendBias": 1.0,
+                    "_PassThroughLengthBias": 1.0,
+                    "_ColorParam": {
+                        "R": 255,
+                        "G": 255,
+                        "B": 255,
+                        "A": 255
+                    },
+                    "_EmissivePower": 0.0,
+                    "_WaveScrollSpeed": 0.0,
+                    "_IceBlendRate": 1.0,
+                    "_IceSDFBlendRate": 0.5,
+                    "_IceNormalVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_IceNormalBlend": 1.0,
+                    "_AlphaTestRef": 0.1,
+                    "_EnvironmentGUID": 98,
+                    "_ShaderTimerGUID": 0,
+                    "_EditMaterialFlag": 1024,
+                    "_SimpleOrigin": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "_IsBurn": false,
+                    "_MaterialValues": [],
+                    "_MaterialParamIndexArray": [],
+                    "_IsCullingByDistance": false
+                }
+            },
+            "Component[14]": {
+                "app.CameraOverlapTransparencyControllerPopGm": {
+                    "v0": 1,
+                    "_Condition": {
+                        "app.user_data.CameraOverlapTransparencyCondition": {
+                            "userdataPath": "GameDesign/Camera/OverlapTransparency/CameraOverlapTransparencyCondition_Gm103_S.user"
+                        }
+                    },
+                    "_Interpolation": {
+                        "app.user_data.CameraOverlapTransparencyParam": {
+                            "userdataPath": "GameDesign/Camera/OverlapTransparency/CameraOverlapTransparencyParam_Gimmick.user"
+                        }
+                    }
+                }
+            },
+            "Component[15]": {
+                "app.Gm156_000": {
+                    "v0": 1
+                }
+            },
+            "Component[16]": {
+                "app.GroundSurfaceTrailRequester": {
+                    "v0": 1,
+                    "_Setting": {
+                        "app.user_data.GroundSurfaceTrailRequestSetting": {
+                            "userdataPath": "GameDesign/Environment/UserData/SurfaceTrailSetting_StaticObj.user"
+                        }
+                    },
+                    "_RequestDatas": [
+                        {
+                            "app.GroundSurfaceTrailRequester.RequestData": {
+                                "Type": "[0]TRANSFORM",
+                                "RequestOBB": {
+                                    "coord": {
+                                        "m00": 1.0,
+                                        "m01": 0.0,
+                                        "m02": 0.0,
+                                        "m03": 0.0,
+                                        "m10": 0.0,
+                                        "m11": 1.0,
+                                        "m12": 0.0,
+                                        "m13": 0.0,
+                                        "m20": 0.0,
+                                        "m21": 0.0,
+                                        "m22": 1.0,
+                                        "m23": 0.0,
+                                        "m30": 0.0,
+                                        "m31": 0.32999995,
+                                        "m32": 0.1,
+                                        "m33": 1.0
+                                    },
+                                    "extent": {
+                                        "x": 1.6499996,
+                                        "y": 0.5,
+                                        "z": 1.7199996,
+                                        "pad": 0.0
+                                    }
+                                },
+                                "JointNameHash": 0
+                            }
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

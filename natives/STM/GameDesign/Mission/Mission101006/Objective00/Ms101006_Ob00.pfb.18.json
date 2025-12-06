@@ -1,0 +1,110 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {
+        "3": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission101006/Objective00/_Fsm/Ms101006_Ob00_RestoreFsm.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "4": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission101006/Objective00/_Fsm/Ms101006_Ob00_Fsm00.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Ms101006_Ob00",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.behaviortree.ManualBehaviorTree": {
+                    "v0": 1,
+                    "v1": [
+                        3,
+                        4
+                    ],
+                    "v2": "",
+                    "v3": 0,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0
+                }
+            },
+            "Component[3]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Mission/Mission101006/Objective00/_Zone/Ms101006_Ob00_Col.cset"
+                }
+            },
+            "Component[4]": {
+                "app.ObjectiveController": {
+                    "v0": 1,
+                    "_ObjecitiveStatePauseBefore": "[0]WAIT"
+                }
+            },
+            "Component[5]": {
+                "app.StoryZoneController": {
+                    "v0": 1,
+                    "isQuest": false
+                }
+            }
+        }
+    }
+}

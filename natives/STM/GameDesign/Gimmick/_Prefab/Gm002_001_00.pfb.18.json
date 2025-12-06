@@ -1,0 +1,440 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {
+        "32": {
+            "via.physics.CapsuleShape": {
+                "v0_BoundingAabb": {
+                    "minpos": {
+                        "x": 3.4028235e+38,
+                        "y": 3.4028235e+38,
+                        "z": 3.4028235e+38,
+                        "pad": 0.0
+                    },
+                    "maxpos": {
+                        "x": -3.4028235e+38,
+                        "y": -3.4028235e+38,
+                        "z": -3.4028235e+38,
+                        "pad": 0.0
+                    }
+                },
+                "v1_UserData": {
+                    "": {}
+                },
+                "v2": {
+                    "p0": {
+                        "x": -7.629395e-06,
+                        "y": -15.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "p1": {
+                        "x": 0.0,
+                        "y": -5.03636,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "r": {
+                        "x": 3.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    }
+                }
+            }
+        },
+        "33": {
+            "via.physics.FilterInfo": {
+                "v0_Layer": 0,
+                "v1_Group": 0,
+                "v2_SubGroup": 0,
+                "v3_IgnoreSubGroup": 0,
+                "v4_MaskBits": 4294967295
+            }
+        },
+        "34": {
+            "via.physics.UserData": {}
+        },
+        "35": {
+            "via.physics.Collider": {
+                "v0": 1,
+                "v1": 32,
+                "v2": 33,
+                "v3": 34,
+                "v4": "System/Collision/Filter/ZonePut/ZonePut_Player.cfil",
+                "v5": "",
+                "v6": "",
+                "v7": ""
+            }
+        }
+    },
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Gm002_001_00",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.physics.RequestSetCollider": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "Verbose": false,
+                    "RequestSetGroups": [
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Gm002/Gm002_001/Collision/Gm002_001_Sensor.rcol"
+                            }
+                        },
+                        {
+                            "via.physics.RequestSetCollider.RequestSetGroup": {
+                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+                            }
+                        }
+                    ],
+                    "BankResource": "",
+                    "v7": 4,
+                    "v8": 0
+                }
+            },
+            "Component[3]": {
+                "app.HitController": {
+                    "v0": 1
+                }
+            },
+            "Component[4]": {
+                "ace.ColliderPool": {
+                    "v0": 1
+                }
+            },
+            "Component[5]": {
+                "app.ColliderSwitcher": {
+                    "v0": 1
+                }
+            },
+            "Component[6]": {
+                "app.GimmickAssetHolder": {
+                    "v0": 1,
+                    "_MiniComponentHolder": {
+                        "ace.user_data.GimmickMiniComponentHolder": {
+                            "userdataPath": "GameDesign/Gimmick/Gm002/Gm002_001/MiniComponent/Gm002_001_MiniComponentHolder.user"
+                        }
+                    },
+                    "_CommonParam": {
+                        "app.user_data.GimmickCommonParam": {
+                            "userdataPath": "GameDesign/Gimmick/Gm002/Gm002_001_00/Gm002_001_00_CommonParam.user"
+                        }
+                    },
+                    "_AaaUniqueParam": {
+                        "app.user_data.Gm002_AaaUniqueParam": {
+                            "userdataPath": "GameDesign/Gimmick/Gm002/Gm002_001/Gm002_001_AaaUniqueParam.user"
+                        }
+                    },
+                    "_BbbUniqueParam": {
+                        "": {}
+                    },
+                    "_ShellList": {
+                        "": {}
+                    }
+                }
+            },
+            "Component[7]": {
+                "ace.GameMessageReceiver": {}
+            },
+            "Component[8]": {
+                "soundlib.SoundContainer": {
+                    "v0": 1,
+                    "_TriggerOnlyDrawSelf": false,
+                    "_UserDataList": [
+                        {
+                            "soundlib.SoundContainerListData": {
+                                "userdataPath": "Sound/UserData/02_Container/Gimmick/Gm00x/Gm002_001_00_ContainerListData.user"
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[9]": {
+                "app.GimmickPrepare": {
+                    "v0": 1
+                }
+            },
+            "Component[10]": {
+                "via.effect.script.ObjectEffectManager2": {
+                    "v0": 1,
+                    "_DisableRequestEffect": false,
+                    "_VFXRangeTrackReversePlayNoRequest": false,
+                    "_VFXRangeTrack_NoEffectWaitIntervalFrame": false,
+                    "DataContainer": {
+                        "via.Prefab": {
+                            "v0": 1,
+                            "v1": "Art/VFX/EffectProvider/Props/gm/gm002/gm002_000/epvr_gm002_001_00.pfb"
+                        }
+                    },
+                    "ExternalDataContainers": [],
+                    "TargetGameObject": "00000000-0000-0000-0000-000000000000",
+                    "ExternalPropertys": [],
+                    "disableVFXTriggerTrack": true,
+                    "disableVFXRangeTrack": false,
+                    "disableMotionJackCheck": true,
+                    "_VFXTriggerTrackUseHighestWeight": false,
+                    "_VFXRangeTrackUseHighestWeight": false,
+                    "_StaticDataContainer": true,
+                    "_DisableByEmptyDataContainer": false
+                }
+            },
+            "Component[11]": {
+                "app.SoundCullingController": {
+                    "v0": 1,
+                    "_Settings": {
+                        "app.snd_user_data.SoundCullingSettingsApp": {
+                            "userdataPath": "Sound/UserData/40_Culling/Gimmick/Gm00x_Base_CullingSettings.user"
+                        }
+                    }
+                }
+            },
+            "Component[12]": {
+                "app.Gm002_000": {
+                    "v0": 1
+                }
+            },
+            "Component[13]": {
+                "app.VoxelDataRWEffector": {
+                    "v0": 1,
+                    "_ShapeType": "[0]SPHERE",
+                    "_Attr": "[16]GIMMICK_QUICK_SAND",
+                    "_LocalShape": {
+                        "pos": {
+                            "x": 0.0,
+                            "y": -2.0,
+                            "z": 0.0
+                        },
+                        "r": 5.0
+                    },
+                    "_LocalShapeBox": {
+                        "coord": {
+                            "m00": 0.0,
+                            "m01": 0.0,
+                            "m02": 0.0,
+                            "m03": 0.0,
+                            "m10": 0.0,
+                            "m11": 0.0,
+                            "m12": 0.0,
+                            "m13": 0.0,
+                            "m20": 0.0,
+                            "m21": 0.0,
+                            "m22": 0.0,
+                            "m23": 0.0,
+                            "m30": 0.0,
+                            "m31": 0.0,
+                            "m32": 0.0,
+                            "m33": 0.0
+                        },
+                        "extent": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        }
+                    }
+                }
+            },
+            "Component[14]": {
+                "via.dynamics.RigidBodySet": {
+                    "v0_Enabled": true,
+                    "v1_WorldNameHash": 0,
+                    "v2_DevelopDraw": false,
+                    "v3_Static": false,
+                    "v4_DependencyHierarchy": false,
+                    "v5": 1,
+                    "v6": 1,
+                    "v7": "PhantomStates",
+                    "v8": 2719822386,
+                    "v9": "Default",
+                    "v10": 1106175613,
+                    "v11": "GameDesign/Gimmick/Gm002/Gm002_001/Collision/Gm002_001_RigidBodySet.rbs",
+                    "v12": 0,
+                    "v13": 0,
+                    "v14": 4294967295,
+                    "v15": 1065353216,
+                    "v16": 0
+                }
+            },
+            "ChildObject[15]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "Gm002_000_Warp_ZoneGenerator",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[16]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[17]": {
+                    "soundlib.SoundZoneGenerator": {
+                        "v0": 1,
+                        "_StaticCollider": true
+                    }
+                },
+                "ChildObject[18]": {
+                    "GameObject": {
+                        "via.GameObject": {
+                            "Name": "SoundGenerator",
+                            "Tag": "",
+                            "UpdateSelf": true,
+                            "DrawSelf": true,
+                            "TimeScale": -1.0
+                        }
+                    },
+                    "Component[19]": {
+                        "via.Transform": {
+                            "LocalPosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "w": 0.0
+                            },
+                            "LocalRotation": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "w": 1.0
+                            },
+                            "LocalScale": {
+                                "x": 1.0,
+                                "y": 1.0,
+                                "z": 1.0,
+                                "w": 0.0
+                            },
+                            "ParentJoint": "",
+                            "SameJointsConstraint": false,
+                            "AbsoluteScaling": false,
+                            "JointSegmentScale": false,
+                            "JointFastLockScene": false,
+                            "FrameSkip": "[0]None"
+                        }
+                    },
+                    "Component[20]": {
+                        "via.physics.ZoneGroup": {}
+                    },
+                    "Component[21]": {
+                        "via.physics.Colliders": {
+                            "Enabled": true,
+                            "DevelopDraw": true,
+                            "DevelopDrawFillMode": "[1]WireFrame",
+                            "DependencyResources": [],
+                            "v4": 1,
+                            "v5": [
+                                35
+                            ]
+                        }
+                    },
+                    "Component[22]": {
+                        "soundlib.SoundContainer": {
+                            "v0": 1,
+                            "_TriggerOnlyDrawSelf": false,
+                            "_UserDataList": [
+                                {
+                                    "soundlib.SoundContainerListData": {
+                                        "userdataPath": "Sound/UserData/02_Container/Gimmick/Gm00x/Gm002_001_00_ContainerListData.user"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "Component[23]": {
+                        "app.SoundGenerator": {
+                            "v0": 1,
+                            "_TriggerIds": [
+                                2245660775
+                            ],
+                            "_StopTriggerIds": [
+                                2246252640
+                            ],
+                            "_PlayOnStart": false,
+                            "_UpdateClosest": false,
+                            "_FadeOutTime": 1
+                        }
+                    },
+                    "Component[24]": {
+                        "app.SoundZoneGeneratorCollidersApp": {
+                            "v0": 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
