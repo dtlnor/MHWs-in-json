@@ -179,6 +179,35 @@
                     "shapeName": "",
                     "primaryJointName": "",
                     "secondaryJointName": ""
+                },
+                {
+                    "shapeGuid": "8c9d43cb-3103-45dc-b844-eb69093ffb58",
+                    "shapeNameMMHash": 2180083513,
+                    "unknIndex": 0,
+                    "layerIndex": 0,
+                    "atteribute": -1,
+                    "skipIdBits": 0,
+                    "shapeType": "ContinuousCapsule",
+                    "shapeParam": {
+                        "start": {
+                            "x": 0.05000031,
+                            "y": 0.0,
+                            "z": 1.4362098
+                        },
+                        "end": {
+                            "x": 0.05000035,
+                            "y": 0.0,
+                            "z": 4.0
+                        },
+                        "radius": 2.5
+                    },
+                    "ignoreTagBits": 1,
+                    "unkn": 0,
+                    "primaryJointNameMMHash": 2180083513,
+                    "secondaryJointNameMMHash": 2180083513,
+                    "shapeName": "",
+                    "primaryJointName": "",
+                    "secondaryJointName": ""
                 }
             ],
             "maskGuids": [
@@ -5428,7 +5457,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.2,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -7208,7 +7237,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -7386,7 +7415,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -7564,7 +7593,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -7742,7 +7771,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.5,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -10359,6 +10388,14 @@
                             "": {}
                         }
                     }
+                },
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
                 }
             ],
             "userData": {
@@ -10921,7 +10958,7 @@
                         }
                     },
                     "_DamageAngleOffsetDeg": 0.0,
-                    "_Attack": 15.0,
+                    "_Attack": 30.0,
                     "_FixAttack": 0.0,
                     "_GuardType": "[0]NORMAL",
                     "_VersusGuardPower": 0.0,
@@ -10947,7 +10984,7 @@
                     "_CondValue": 0.0,
                     "_IsUseCondDefaultSec": true,
                     "_CondCustomSec": 0.0,
-                    "_StunDamage": 0.0,
+                    "_StunDamage": 5.0,
                     "_FlagBit": "[0]NONE",
                     "_MultiHitTimer": 0.0,
                     "_HealValue": 0.0,
@@ -10970,7 +11007,7 @@
                     },
                     "_ActionTypeFixed": {
                         "app.HitDef.ACTION_TYPE_Serializable": {
-                            "_Value": "[0]NONE"
+                            "_Value": "[2]BLOW"
                         }
                     },
                     "_PartsBreakRate": 1.0,
@@ -10982,7 +11019,7 @@
                     "_RidingSuccessDamage": 0.0,
                     "_RidingSuccessDamageRawScar": 0.0,
                     "_IsSkillHien": false,
-                    "_IsPointAttack": false,
+                    "_IsPointAttack": true,
                     "_IsPrePointHitReaction": true,
                     "_TearScarCreateRate": 1.0,
                     "_TearScarDamageRate": 1.0,
@@ -11003,11 +11040,11 @@
                     "_IsLaserGuardCounter": false,
                     "_IsWpPhysicalAttack": false,
                     "_IsNoUseKireaji": true,
-                    "_IsForceUseKireajiAttackRate": false,
+                    "_IsForceUseKireajiAttackRate": true,
                     "_IsCustomKireajiReduce": false,
                     "_CustomKireajiReduce": 10,
-                    "_UseStatusAttackPower": false,
-                    "_UseStatusAttrPower": false,
+                    "_UseStatusAttackPower": true,
+                    "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
                     "_UseSkillAdditionalDamage": false,
@@ -11024,7 +11061,7 @@
                     "_ExEmote03AttackType": "[0]NONE",
                     "_HitEffectTypeFixed": {
                         "app.HitDef.HIT_EFFECT_TYPE_PL_Serializable": {
-                            "_Value": "[10]NONE"
+                            "_Value": "[8]BLOW"
                         }
                     },
                     "_DisableHitEffect": {
@@ -11188,7 +11225,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -15019,5 +15056,10 @@
             }
         }
     ],
-    "ignoreTags": []
+    "ignoreTags": [
+        {
+            "ignoreTag": 1696471599,
+            "ignoreTagName": "ExtraStealthShape"
+        }
+    ]
 }
