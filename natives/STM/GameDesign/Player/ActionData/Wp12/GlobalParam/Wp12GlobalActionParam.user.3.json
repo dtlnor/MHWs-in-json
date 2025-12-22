@@ -151,7 +151,7 @@
                 }
             },
             "_SubMotionBlendRateMoveSpeed": 2.0,
-            "_SubMotionBlendRateMoveSpeed_FullBodyOff": 0.3,
+            "_SubMotionBlendRateMoveSpeed_FullBodyOff": 1.0,
             "_CallPorter_WorldBlendParam": {
                 "app.cMotionWorldBlendFilterParam": {
                     "_JointData": [
@@ -296,6 +296,7 @@
             "_AmmoLimit_Normal": 7,
             "_AmmoLimit_Penetrate": 3,
             "_AmmoLimit_ShotGun": 5,
+            "_SubMotionBlendRateMoveSpeed_ShootHight": 0.3,
             "_MoveSpeedRate": 1.0,
             "_AimMoveSpeedRate": 1.0,
             "_CreepAimAdjustParam": {
@@ -368,8 +369,8 @@
             ],
             "_Gatling_CustomAttackRate": [
                 1.0,
-                1.1,
-                1.2
+                1.15,
+                1.3
             ],
             "_EnergyLaserBullet_BasicData": {
                 "app.WeaponGunDef.cEnergyBulletBasicData": {
@@ -379,11 +380,11 @@
             "_EnergyLaserMaxRange": 3.0,
             "_EnergyLaserMaxUIRange": 40.0,
             "_EnergyLaserColNum": 3,
-            "_EnergyLaser_MultiHitCount": 5,
+            "_EnergyLaser_MultiHitCount": 7,
             "_EnergyLaser_CustomAttackRate": [
                 1.0,
-                1.1,
-                1.2
+                1.15,
+                1.3
             ],
             "_ParryBullet_BasicData": {
                 "app.WeaponGunDef.cEnergyBulletBasicData": {
@@ -428,9 +429,35 @@
                 1.15,
                 1.3
             ],
+            "_EnergyParryHitRecoverData": [
+                {
+                    "app.user_data.Wp12ActionParam.cEnergyParryHitRecoverData": {
+                        "HitRecover": 10.0,
+                        "SuccessRecover": 25.0
+                    }
+                },
+                {
+                    "app.user_data.Wp12ActionParam.cEnergyParryHitRecoverData": {
+                        "HitRecover": 10.0,
+                        "SuccessRecover": 25.0
+                    }
+                },
+                {
+                    "app.user_data.Wp12ActionParam.cEnergyParryHitRecoverData": {
+                        "HitRecover": 15.0,
+                        "SuccessRecover": 30.0
+                    }
+                },
+                {
+                    "app.user_data.Wp12ActionParam.cEnergyParryHitRecoverData": {
+                        "HitRecover": 20.0,
+                        "SuccessRecover": 35.0
+                    }
+                }
+            ],
             "_EnergyGrenadeBullet_BasicData": {
                 "app.WeaponGunDef.cEnergyBulletBasicData": {
-                    "_MinUseEnergy": 20.0
+                    "_MinUseEnergy": 15.0
                 }
             },
             "_EnergyGrenadeBullet_ScatterList": [
@@ -472,9 +499,9 @@
                     "_OverheatTime": -1.0,
                     "_AttackRate": [
                         1.0,
-                        1.3,
-                        1.6,
-                        2.1
+                        1.5,
+                        2.0,
+                        2.7
                     ]
                 }
             },
@@ -483,12 +510,18 @@
             "_WeakPointSnipeBullet_MultiHitTimer": 0.02,
             "_WeakPointSnipe_CustomAttackRate": [
                 1.0,
-                1.1,
-                1.2
+                1.15,
+                1.3
             ],
             "_WeakPointSnipeBullet_MaxBulletNum": 3,
             "_WeakPointSnipeBullet_AddBulletTime": 23.0,
             "_WeakPointSnipeBullet_ReserveTimerRate": 1.0,
+            "_WeakPointSnipeBulletHitRecoverData": [
+                15.0,
+                40.0,
+                45.0,
+                50.0
+            ],
             "_RyuugekiChargeTimer": 1.5,
             "_RyuugekiColExtendTime": 0.1,
             "_Ryuugeki_Range": 6.5,

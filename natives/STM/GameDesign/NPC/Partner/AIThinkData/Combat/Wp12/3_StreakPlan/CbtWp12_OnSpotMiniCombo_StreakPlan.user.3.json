@@ -114,10 +114,10 @@
                         },
                         {
                             "app.user_data.NpcStreakPlanData.cActionData": {
-                                "_InstanceGuid": "5b43fda0-db46-4099-9bf0-45161cfba49e",
+                                "_InstanceGuid": "2788ca1c-91c3-47dc-81d2-57e666080651",
                                 "_ActionData": {
                                     "app.user_data.NpcStreakActionData": {
-                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp12/4_StreakAction/CbtWp12_OnSpot_ToNormal_StreakAction.user"
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp12/4_StreakAction/CbtWp12_OnSpot_ChangeEnergyMode_StreakAction.user"
                                     }
                                 },
                                 "_DerivedAction_Combo": {
@@ -125,8 +125,41 @@
                                         "_DerivedActionParams": [
                                             {
                                                 "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
-                                                    "_ActionGuid": "2114ba2e-acbe-481b-88aa-2aca479cfd73",
+                                                    "_ActionGuid": "c01a8a47-2013-4035-befb-fbd784397963",
                                                     "_RandomWeight": -1
+                                                }
+                                            },
+                                            {
+                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                                    "_ActionGuid": "2114ba2e-acbe-481b-88aa-2aca479cfd73",
+                                                    "_RandomWeight": 50
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                "_DerivedAction_Interrupt": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": []
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cActionData": {
+                                "_InstanceGuid": "c01a8a47-2013-4035-befb-fbd784397963",
+                                "_ActionData": {
+                                    "app.user_data.NpcStreakActionData": {
+                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp12/4_StreakAction/CbtWp12_OnSpot_ChangeEnergyModeWait_StreakAction.user"
+                                    }
+                                },
+                                "_DerivedAction_Combo": {
+                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
+                                        "_DerivedActionParams": [
+                                            {
+                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                                    "_ActionGuid": "933cbeab-ca6f-4f15-8bfe-6603f228ac77",
+                                                    "_RandomWeight": 50
                                                 }
                                             }
                                         ]
@@ -165,12 +198,6 @@
                                             {
                                                 "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
                                                     "_ActionGuid": "69730991-081d-4789-86ea-2e345721aef9",
-                                                    "_RandomWeight": -1
-                                                }
-                                            },
-                                            {
-                                                "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
-                                                    "_ActionGuid": "3cbe4277-dc21-42a4-b234-4adcbeb88ba2",
                                                     "_RandomWeight": -1
                                                 }
                                             },
@@ -276,26 +303,6 @@
                                     }
                                 }
                             }
-                        },
-                        {
-                            "app.user_data.NpcStreakPlanData.cActionData": {
-                                "_InstanceGuid": "3cbe4277-dc21-42a4-b234-4adcbeb88ba2",
-                                "_ActionData": {
-                                    "app.user_data.NpcStreakActionData": {
-                                        "userdataPath": "GameDesign/NPC/Partner/AIThinkData/Combat/Wp12/4_StreakAction/CbtWp12_Shoot_EndRange_StreakAction.user"
-                                    }
-                                },
-                                "_DerivedAction_Combo": {
-                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
-                                        "_DerivedActionParams": []
-                                    }
-                                },
-                                "_DerivedAction_Interrupt": {
-                                    "app.user_data.NpcStreakPlanData.cDerivedActionHolder": {
-                                        "_DerivedActionParams": []
-                                    }
-                                }
-                            }
                         }
                     ]
                 }
@@ -317,8 +324,20 @@
                     "_DerivedActionParams": [
                         {
                             "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
-                                "_ActionGuid": "933cbeab-ca6f-4f15-8bfe-6603f228ac77",
+                                "_ActionGuid": "c01a8a47-2013-4035-befb-fbd784397963",
                                 "_RandomWeight": -1
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "2788ca1c-91c3-47dc-81d2-57e666080651",
+                                "_RandomWeight": -1
+                            }
+                        },
+                        {
+                            "app.user_data.NpcStreakPlanData.cDerivedActionHolder.cDerivedActionParam": {
+                                "_ActionGuid": "933cbeab-ca6f-4f15-8bfe-6603f228ac77",
+                                "_RandomWeight": 50
                             }
                         }
                     ]

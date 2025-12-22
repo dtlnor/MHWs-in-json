@@ -1181,6 +1181,48 @@
                         ],
                         "_EnumFixedID": 24177
                     }
+                },
+                {
+                    "app.user_data.NpcPartnerSlingerTable.cData": {
+                        "_IsEnable": true,
+                        "_Power": "[1]STRONG",
+                        "_SetType": "[2]LOST_ITEM",
+                        "_Score": {
+                            "s": 10,
+                            "r": 0
+                        },
+                        "_ScoreConditionParams": [
+                            {
+                                "app.user_data.NpcPartnerSlingerTable.cSlingerConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcSlingerConditions.cCheckHasItem_Param": {
+                                            "_ItemID": {
+                                                "app.ItemDef.ID_Serializable": {
+                                                    "_Value": "[820]ITEM_0845"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "_Inverse": true,
+                                    "_Score": -99
+                                }
+                            },
+                            {
+                                "app.user_data.NpcPartnerSlingerTable.cSlingerConditionHolder": {
+                                    "_Param": {
+                                        "app.NpcSlingerConditions.cCheckTargetEmID_Param": {
+                                            "_EnemyIDList": [
+                                                "[13052]EM0078_00_0"
+                                            ]
+                                        }
+                                    },
+                                    "_Inverse": false,
+                                    "_Score": 30
+                                }
+                            }
+                        ],
+                        "_EnumFixedID": 86
+                    }
                 }
             ],
             "_SlingerEnum": {

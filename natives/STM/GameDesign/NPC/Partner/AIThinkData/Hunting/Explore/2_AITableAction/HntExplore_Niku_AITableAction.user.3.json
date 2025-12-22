@@ -1,7 +1,39 @@
 [
     {
         "app.user_data.NpcAITableActionData": {
-            "_ConditionParams": [],
+            "_ConditionParams": [
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckDesireExploreCommon_Param": {
+                                "_DesireFixedID": "[3]NIKUTABE"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckStreakTargetType_Param": {
+                                "_TargetType": "[1190479488]COMBAT_ENEMY"
+                            }
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                },
+                {
+                    "app.user_data.NpcAITableData.cNpcAITableConditionHolder": {
+                        "_Param": {
+                            "app.NpcAITableConditions.cCheckPorterRiding_Param": {}
+                        },
+                        "_Inverse": false,
+                        "_IsContinue": false
+                    }
+                }
+            ],
             "_ActionSetting": {
                 "app.user_data.NpcAITableActionData.cActionSetting": {
                     "_ForceInterrupt": false,

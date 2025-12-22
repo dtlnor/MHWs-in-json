@@ -24,22 +24,22 @@
                 },
                 {
                     "app.cShellEm0158_00BigExplosionOil_Ignition": {
-                        "MiniParamName": "Em0158_00_BigExplosionOil_Ignition",
-                        "MiniParamtype": "[2]MOVE",
-                        "_IsDependedOn": false,
-                        "UpdateOrder": 200,
-                        "LateUpdateOrder": 200,
-                        "_MoveSpeed": 40.0,
-                        "_TargetOffset": {
+                        "v0": "Em0158_00_BigExplosionOil_Ignition",
+                        "v1": "[2]MOVE",
+                        "v2": false,
+                        "v3": 200,
+                        "v4": 200,
+                        "v5": 40.0,
+                        "v6": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0,
                             "pad": 0.0
                         },
-                        "_IsOwnerRootToTargetOffset": false,
-                        "_RotationType": "[2]TURN_TO_MOVE_DIR_ALWAYS",
-                        "STRUCT__OverwriteTurnToMoveDirCalcType__HasValue": false,
-                        "STRUCT__OverwriteTurnToMoveDirCalcType__Value": "[0]USE_WORLD_AXISY",
+                        "v7": false,
+                        "v8": "[2]TURN_TO_MOVE_DIR_ALWAYS",
+                        "STRUCT_v9__HasValue": false,
+                        "STRUCT_v9__Value": "[0]USE_WORLD_AXISY",
                         "_IsUseTargetRotOffset": false,
                         "_TargetRotOffset": {
                             "x": 0.0,
@@ -66,6 +66,7 @@
                         "_IsFastestImpact": false,
                         "_IsDisableHitTerrainGimmick": false,
                         "_IsAdjustDir": false,
+                        "_ParentAttachOnlyPos": false,
                         "_IsAdjustDirLimit": false,
                         "_AdjustDirLimitDeg_X": 0,
                         "_AdjustDirLimitDeg_Y": 0,
@@ -91,16 +92,17 @@
                         "_GroundCheckRayOffset": 0.0,
                         "_GroundCheckRayLength": 1.0,
                         "STRUCT__ColOffset__HasValue": false,
-                        "STRUCT__ColOffset__Value": 0.0
+                        "STRUCT__ColOffset__Value": 0.0,
+                        "_StartTerrainCheckRayOffset": 0.0
                     }
                 },
                 {
                     "app.cShellminiParamColHitLaser": {
-                        "MiniParamName": "AppColHitLaser",
-                        "MiniParamtype": "[3]COLLISION",
-                        "_IsDependedOn": false,
-                        "UpdateOrder": 100,
-                        "LateUpdateOrder": 100,
+                        "v0": "AppColHitLaser",
+                        "v1": "[3]COLLISION",
+                        "v2": false,
+                        "v3": 100,
+                        "v4": 100,
                         "_ColHitFlag": 3,
                         "_SubCollisionIDList": [],
                         "_IsHitOwner": false,
@@ -170,7 +172,8 @@
                         "_IsSingleHitEffectObject": false,
                         "_HitEffectIntervalObject": 0.0,
                         "_IsIgnoreEnemyHit": false,
-                        "_IgnoreHitEffectLength": -1.0
+                        "_IgnoreHitEffectLength": -1.0,
+                        "_IsIgnoreSelfColliderPassHit": false
                     }
                 }
             ],

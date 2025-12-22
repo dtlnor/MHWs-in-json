@@ -13,7 +13,7 @@
                                 }
                             },
                             "_ActionEnd": false,
-                            "_IgnoreError": false,
+                            "_IgnoreError": true,
                             "_RetryCommad": false
                         }
                     }
@@ -23,9 +23,9 @@
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
                         "app.NpcStreakEffects.cSetTargetParts_LStickParam": {
-                            "_Reach": 0.05,
-                            "_ContinueMove": true,
-                            "_StopWhenReached": true,
+                            "v0": 0.05,
+                            "v1": true,
+                            "v2": true,
                             "_MoveType": "[6]COMBAT",
                             "_UseAIMoveEnd": false,
                             "_FixedSpeedLv": "[3]RUN",
@@ -81,6 +81,29 @@
                                     "app.cNpcHunterActionSelector": {
                                         "_Category": -1974898176,
                                         "_Action": 91
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cHitAttack_Param": {
+                                "_AttackAABB": {
+                                    "minpos": {
+                                        "x": -2.5,
+                                        "y": 3.5,
+                                        "z": 4.3,
+                                        "pad": 0.0
+                                    },
+                                    "maxpos": {
+                                        "x": 2.5,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
                                     }
                                 }
                             }
