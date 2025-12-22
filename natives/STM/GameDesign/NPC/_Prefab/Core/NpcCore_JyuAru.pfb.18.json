@@ -380,16 +380,16 @@
                 "v11_InterpolationFrame": 0.0
             }
         },
-        "144": {
+        "145": {
             "via.motion.JointConstraintsLayer": {
                 "v0": 0,
                 "v1": 3,
                 "v2": 0,
                 "v3": 1065353216,
-                "v4": "Art/Model/Character/ch05/000/9000/ch05_000_9000.jcns"
+                "v4": "@Art/Model/Character/ch05/000/9000/ch05_000_9000.jcns"
             }
         },
-        "155": {
+        "156": {
             "via.render.ShellFurParam": {
                 "v0_MaterialName": "",
                 "v1_ForceTwoSide": false,
@@ -412,7 +412,7 @@
                 "v18_Disable": false
             }
         },
-        "167": {
+        "168": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
@@ -424,7 +424,7 @@
             "GameObject": {
                 "via.GameObject": {
                     "Name": "JyujinNpc_Airou",
-                    "Tag": "WorkRateTarget",
+                    "Tag": "WorkRateTarget|NPC",
                     "UpdateSelf": false,
                     "DrawSelf": false,
                     "TimeScale": -1.0
@@ -529,11 +529,10 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v4": [],
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[7]": {
@@ -795,9 +794,9 @@
             "Component[28]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": true,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": true,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[29]": {
@@ -962,6 +961,11 @@
                     },
                     "_SnowData": {
                         "app.CharacterTimelineEventActorBase.SnowParam": {
+                            "Rate": -1.0
+                        }
+                    },
+                    "_TarData": {
+                        "app.CharacterTimelineEventActorBase.TarParam": {
                             "Rate": -1.0
                         }
                     },
@@ -1740,7 +1744,7 @@
                     "v1_UpdateMode": "[0]Character",
                     "v2_UpdateTiming": "[0]PrevLateUpdate",
                     "v3": [
-                        144
+                        145
                     ]
                 }
             },
@@ -1796,7 +1800,7 @@
                     "UpdateTiming": "[3]ConstraintsEnd",
                     "Priority": 0,
                     "v4": 0,
-                    "v5": "Motion/NPC/Decorate/IkLeg/NpcIkLeg_Airou.ikleg2",
+                    "v5": "@Motion/NPC/Decorate/IkLeg/NpcIkLeg_Airou.ikleg2",
                     "v6": 1,
                     "v7": 1,
                     "v8": 1,
@@ -1901,7 +1905,7 @@
                     "v12_Static": false,
                     "v13": "",
                     "v14": [
-                        155
+                        156
                     ],
                     "v15": {
                         "x": 0,
@@ -2233,10 +2237,10 @@
             "Component[50]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -2276,7 +2280,7 @@
                     "v9": 0,
                     "v10": 1101004800,
                     "v11": 0,
-                    "v12": 167,
+                    "v12": 168,
                     "v13": 0,
                     "v14": 0,
                     "v15": 0,

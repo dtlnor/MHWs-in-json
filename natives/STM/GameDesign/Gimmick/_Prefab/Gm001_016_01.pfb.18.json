@@ -32,6 +32,26 @@
                 "v26": 0
             }
         },
+        "6": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Gm001/Gm001_016/Collision/Gm001_016_Boby.rcol"
+            }
+        },
+        "7": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "8": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Gm001/Gm001_016_01/Collision/Gm001_016_01_Sensor.rcol"
+            }
+        },
+        "9": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
         "30": {
             "via.physics.MeshShape": {
                 "v0_BoundingAabb": {
@@ -1115,32 +1135,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Gm001/Gm001_016/Collision/Gm001_016_Boby.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Gm001/Gm001_016_01/Collision/Gm001_016_01_Sensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        }
+                    "v4": [
+                        6,
+                        7,
+                        8,
+                        9
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[5]": {
@@ -1236,18 +1239,18 @@
             "Component[13]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[14]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": false,
                     "_MeshMaterialLOD": {
                         "": {}

@@ -3,7 +3,7 @@
     "looseInstance": {
         "12": {
             "via.character.CollisionShapePresetInfo": {
-                "v0_Resource": "Art/Model/Character/ch02/001/000/5/ch02_001_0005.clsp",
+                "v0_Resource": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005.clsp",
                 "v1_Enabled": true,
                 "v2_Global": false
             }
@@ -23,7 +23,7 @@
                 "v1": 3,
                 "v2": 0,
                 "v3": 1065353216,
-                "v4": "Art/Model/Character/ch02/001/000/5/ch02_001_0005_HJ.jcns"
+                "v4": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005_HJ.jcns"
             }
         },
         "22": {
@@ -37,12 +37,19 @@
                 "v1": 3,
                 "v2": 0,
                 "v3": 1065353216,
-                "v4": ""
+                "v4": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005_1_HJ.jcns"
             }
         },
         "35": {
             "via.motion.ChainWind": {
                 "v0": ""
+            }
+        },
+        "38": {
+            "via.character.CollisionShapePresetInfo": {
+                "v0_Resource": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.clsp",
+                "v1_Enabled": true,
+                "v2_Global": false
             }
         }
     },
@@ -90,8 +97,8 @@
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
-                    "v2": "Art/Model/Character/ch02/001/000/5/ch02_001_0005.mesh",
-                    "v3": "Art/Model/Character/ch02/001/000/5/ch02_001_0005.mdf2",
+                    "v2": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005.mesh",
+                    "v3": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005.mdf2",
                     "v4": 0,
                     "v5": 1065353216,
                     "v6": 0,
@@ -441,10 +448,10 @@
             "Component[3]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": false,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -521,6 +528,7 @@
                             "_Hash": 2180083513
                         }
                     },
+                    "_DisableSequentialPoseBlend": false,
                     "_MotionBank": "",
                     "_LayerIndex": -1,
                     "_BankID": 0
@@ -714,8 +722,8 @@
                     "via.render.Mesh": {
                         "v0": 31,
                         "v1": 1,
-                        "v2": "Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.mesh",
-                        "v3": "Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.mdf2",
+                        "v2": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.mesh",
+                        "v3": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.mdf2",
                         "v4": 0,
                         "v5": 1065353216,
                         "v6": 0,
@@ -1072,10 +1080,10 @@
                 "Component[20]": {
                     "app.MeshSetting": {
                         "v0_Enabled": true,
-                        "_LodSelectionAlogrithm": 0,
-                        "_AssetNo": 0,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false,
+                        "v1": 0,
+                        "v2": 0,
+                        "v3": true,
+                        "v4": false,
                         "_IsPassThrough": true,
                         "_MeshMaterialLOD": {
                             "": {}
@@ -1190,7 +1198,7 @@
                         "DebugDraw": false,
                         "UpdateTiming": "[4]Last",
                         "Priority": 0,
-                        "v4": "Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.chain2",
+                        "v4": "@Art/Model/Character/ch02/001/000/5/ch02_001_0005_1.chain2",
                         "v5": 1065353216,
                         "v6": 0,
                         "v7": 0,
@@ -1230,6 +1238,18 @@
                         "_ClothParameter": {
                             "": {}
                         }
+                    }
+                },
+                "Component[27]": {
+                    "via.character.CollisionShapePreset": {
+                        "v0": 0,
+                        "v1": [
+                            38
+                        ],
+                        "v2": 0,
+                        "v3": 0,
+                        "v4": 1,
+                        "v5": 0
                     }
                 }
             }

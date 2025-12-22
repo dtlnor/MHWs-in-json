@@ -32,6 +32,26 @@
                 "v26": 0
             }
         },
+        "6": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Gm401/Gm401_000/Collision/Gm401_000_Body.rcol"
+            }
+        },
+        "7": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "8": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "9": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
         "33": {
             "via.motion.ChainWind": {
                 "v0": ""
@@ -506,32 +526,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Gm401/Gm401_000/Collision/Gm401_000_Body.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        }
+                    "v4": [
+                        6,
+                        7,
+                        8,
+                        9
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[5]": {
@@ -623,18 +626,18 @@
             "Component[13]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[14]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -713,7 +716,7 @@
                     "DebugDraw": false,
                     "UpdateTiming": "[3]ConstraintsEnd",
                     "Priority": 0,
-                    "v4": "Motion/Gimmick/StageModel/it8226_0000/Common/IK/it8226_0000_Wagon.ikwagon",
+                    "v4": "@Motion/Gimmick/StageModel/it8226_0000/Common/IK/it8226_0000_Wagon.ikwagon",
                     "v5": 0,
                     "v6": "00000000-0000-0000-0000-000000000000",
                     "v7": 1,
@@ -732,16 +735,20 @@
                         "w": 0.0
                     },
                     "v12": 0,
-                    "v13": "0000000000"
+                    "v13": 1,
+                    "v14": 0,
+                    "v15": 0,
+                    "v16": 1008981770,
+                    "v17": "0000000000"
                 }
             },
             "Component[18]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -1332,10 +1339,10 @@
                 "Component[31]": {
                     "app.MeshSetting": {
                         "v0_Enabled": true,
-                        "_LodSelectionAlogrithm": 0,
-                        "_AssetNo": 0,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false,
+                        "v1": 0,
+                        "v2": 0,
+                        "v3": true,
+                        "v4": false,
                         "_IsPassThrough": false,
                         "_MeshMaterialLOD": {
                             "": {}

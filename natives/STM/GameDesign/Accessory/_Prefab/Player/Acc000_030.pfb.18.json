@@ -425,10 +425,10 @@
             "Component[3]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": false,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -507,9 +507,9 @@
             "Component[5]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[6]": {
@@ -590,10 +590,10 @@
             "Component[10]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -794,6 +794,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": -1.0,
@@ -1013,6 +1020,23 @@
                                 "s": 0.0,
                                 "r": 1.0
                             }
+                        }
+                    },
+                    "Component[21]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
                         }
                     }
                 }

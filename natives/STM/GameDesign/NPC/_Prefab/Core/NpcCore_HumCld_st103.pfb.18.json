@@ -406,7 +406,7 @@
                 "v11_InterpolationFrame": 0.0
             }
         },
-        "154": {
+        "155": {
             "via.motion.JointConstraintsLayer": {
                 "v0": 0,
                 "v1": 3,
@@ -422,7 +422,7 @@
             "GameObject": {
                 "via.GameObject": {
                     "Name": "NpcCore_HumCld_st103",
-                    "Tag": "",
+                    "Tag": "WorkRateTarget|NPC",
                     "UpdateSelf": false,
                     "DrawSelf": false,
                     "TimeScale": -1.0
@@ -529,11 +529,10 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v4": [],
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[7]": {
@@ -795,9 +794,9 @@
             "Component[28]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": true,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": true,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[29]": {
@@ -1011,6 +1010,11 @@
                     },
                     "_SnowData": {
                         "app.CharacterTimelineEventActorBase.SnowParam": {
+                            "Rate": -1.0
+                        }
+                    },
+                    "_TarData": {
+                        "app.CharacterTimelineEventActorBase.TarParam": {
                             "Rate": -1.0
                         }
                     },
@@ -1789,7 +1793,7 @@
                     "v1_UpdateMode": "[0]Character",
                     "v2_UpdateTiming": "[0]PrevLateUpdate",
                     "v3": [
-                        154
+                        155
                     ]
                 }
             },
@@ -1845,7 +1849,7 @@
                     "UpdateTiming": "[5]ByBehavior",
                     "Priority": 0,
                     "v4": 0,
-                    "v5": "Motion/NPC/Decorate/IkLeg/NpcIkLeg_Default.ikleg2",
+                    "v5": "@Motion/NPC/Decorate/IkLeg/NpcIkLeg_Default.ikleg2",
                     "v6": 1,
                     "v7": 1,
                     "v8": 1,
@@ -2307,6 +2311,7 @@
                             "_Hash": 1561031396
                         }
                     },
+                    "_DisableSequentialPoseBlend": false,
                     "_MotionBank": "Art/Model/Character/ch00/CharamakeMotionData/m_charamake.motbank",
                     "_LayerIndex": -1,
                     "_BankID": 9999
@@ -2321,10 +2326,10 @@
             "Component[53]": {
                 "app.SoundNpcMotionSequence": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -2363,21 +2368,21 @@
             "Component[56]": {
                 "app.SoundNpcActionSequence": {
                     "v0": 1,
-                    "_BaseActionUserCurveDataList": [
+                    "v1": [
                         {
                             "app.snd_user_data.SoundActionUserCurveListData": {
                                 "userdataPath": "Sound/UserData/36_ActionUserCurve/Player/Common/PlCommon_ActionUserCurveListData.user"
                             }
                         }
                     ],
-                    "_SubActionUserCurveDataList": [
+                    "v2": [
                         {
                             "app.snd_user_data.SoundActionUserCurveListData": {
                                 "userdataPath": "Sound/UserData/36_ActionUserCurve/Player/Common/PlCommonSub_ActionUserCurveListData.user"
                             }
                         }
                     ],
-                    "_AddActionUserCurveListDataList": []
+                    "v3": []
                 }
             }
         }

@@ -1,7 +1,7 @@
 {
     "gameObjectRefInfos": [],
     "looseInstance": {
-        "48": {
+        "49": {
             "via.render.SingleClusterMaterialController": {
                 "v0": []
             }
@@ -209,6 +209,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": -1.0,
@@ -429,9 +436,26 @@
                                 "r": 1.0
                             }
                         }
+                    },
+                    "Component[10]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
                     }
                 },
-                "ChildObject[10]": {
+                "ChildObject[11]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "Gesture_SpotLight_00",
@@ -441,7 +465,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[11]": {
+                    "Component[12]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 0.0,
@@ -469,7 +493,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[12]": {
+                    "Component[13]": {
                         "via.render.SpotLight": {
                             "v0_Enabled": true,
                             "v1_Intensity": 4.0,
@@ -538,13 +562,20 @@
                             "v56_RayTracingShadowEnable": false
                         }
                     },
-                    "Component[13]": {
+                    "Component[14]": {
                         "via.relib.light.ReLibLightBehavior": {
                             "v0": 1,
                             "_DistanceAttenuation": {
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": -1.0,
@@ -729,7 +760,7 @@
                             "_EventIdentifyName": ""
                         }
                     },
-                    "Component[14]": {
+                    "Component[15]": {
                         "app.AppLightController": {
                             "v0": 0,
                             "_Condition": 0,
@@ -742,7 +773,7 @@
                         }
                     }
                 },
-                "ChildObject[15]": {
+                "ChildObject[16]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "Gesture_VDecal_00",
@@ -752,7 +783,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[16]": {
+                    "Component[17]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 0.0,
@@ -780,7 +811,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[17]": {
+                    "Component[18]": {
                         "via.render.VolumeDecal": {
                             "v0_RenderOutputID": 31,
                             "v1_Enabled": true,
@@ -853,10 +884,10 @@
                             "v50": 4294967295,
                             "v51": 0,
                             "v52": "",
-                            "v53": 48
+                            "v53": 49
                         }
                     },
-                    "Component[18]": {
+                    "Component[19]": {
                         "app.VolumeDecalIntensityController": {
                             "v0": 1,
                             "_AnimationCurve": {
@@ -929,7 +960,7 @@
                             "_DrawOffEVSeconds": 0.0001
                         }
                     },
-                    "Component[19]": {
+                    "Component[20]": {
                         "app.AppLightController": {
                             "v0": 0,
                             "_Condition": 0,

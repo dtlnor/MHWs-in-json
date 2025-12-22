@@ -107,6 +107,41 @@
                 "v8_MotionList": ""
             }
         },
+        "10": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/Em0071/00/Collision/Collider/Em0071_00_Body.rcol"
+            }
+        },
+        "11": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/Em0071/00/Collision/Collider/Em0071_00_Attack.rcol"
+            }
+        },
+        "12": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/Em0071/00/Collision/Collider/Em0071_00_Sensor.rcol"
+            }
+        },
+        "13": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommon_Zone.rcol"
+            }
+        },
+        "14": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonBoss_Sensor.rcol"
+            }
+        },
+        "15": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonBoss_Body.rcol"
+            }
+        },
+        "16": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonBossZako_Attack.rcol"
+            }
+        },
         "30": {
             "via.motion.ChainWind": {
                 "v0": ""
@@ -130,7 +165,7 @@
                 "v4": "Art/Model/Character/ch90/071/0000/ch90_071_0000_MB.jcns"
             }
         },
-        "137": {
+        "61": {
             "via.motion.IkMultiLookAt2.LookAtLayer": {
                 "v0": "Motion/Enemy/em0071/00/Common/LookAt/em0071_LookAt2.iklookat2",
                 "v1": 132462089,
@@ -139,12 +174,12 @@
                 "v4": 327684
             }
         },
-        "145": {
+        "69": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
         },
-        "164": {
+        "174": {
             "via.render.AmbientOcclusionGeometryElement": {
                 "v0_AOIntensity": 1.0,
                 "v1_CullDistanceRatio": 32.0,
@@ -175,7 +210,7 @@
                 "v10_Radius": 0.45
             }
         },
-        "165": {
+        "175": {
             "via.render.AmbientOcclusionGeometryElement": {
                 "v0_AOIntensity": 1.0,
                 "v1_CullDistanceRatio": 32.0,
@@ -206,7 +241,7 @@
                 "v10_Radius": 0.45
             }
         },
-        "166": {
+        "176": {
             "via.render.AmbientOcclusionGeometryElement": {
                 "v0_AOIntensity": 1.0,
                 "v1_CullDistanceRatio": 32.0,
@@ -237,7 +272,7 @@
                 "v10_Radius": 0.35
             }
         },
-        "167": {
+        "177": {
             "via.render.AmbientOcclusionGeometryElement": {
                 "v0_AOIntensity": 1.0,
                 "v1_CullDistanceRatio": 32.0,
@@ -268,7 +303,7 @@
                 "v10_Radius": 0.35
             }
         },
-        "168": {
+        "178": {
             "via.render.AmbientOcclusionGeometryElement": {
                 "v0_AOIntensity": 1.0,
                 "v1_CullDistanceRatio": 32.0,
@@ -306,7 +341,7 @@
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Em0071_00_0",
-                    "Tag": "",
+                    "Tag": "Enemy",
                     "UpdateSelf": true,
                     "DrawSelf": true,
                     "TimeScale": -1.0
@@ -344,7 +379,7 @@
                 "via.render.Mesh": {
                     "v0": 15,
                     "v1": 1,
-                    "v2": "Art/Model/Character/ch90/071/0000/ch90_071_0000.mesh",
+                    "v2": "@Art/Model/Character/ch90/071/0000/ch90_071_0000.mesh",
                     "v3": "Art/Model/Character/ch90/071/0000/ch90_071_0000.mdf2",
                     "v4": 0,
                     "v5": 1065353216,
@@ -740,47 +775,18 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/Em0071/00/Collision/Collider/Em0071_00_Body.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/Em0071/00/Collision/Collider/Em0071_00_Attack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/Em0071/00/Collision/Collider/Em0071_00_Sensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommon_Zone.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonBoss_Sensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonBoss_Body.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonBossZako_Attack.rcol"
-                            }
-                        }
+                    "v4": [
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15,
+                        16
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[6]": {
@@ -959,109 +965,110 @@
                     "v5": "Motion/Enemy/em0071/00/Common/IK/em0071_IkLegSpine.ikls",
                     "v6": 1,
                     "v7": 1,
-                    "v8": 1065353216,
-                    "v9": 0,
+                    "v8": 0,
+                    "v9": 1065353216,
                     "v10": 0,
-                    "v11": 1008981770,
-                    "v12": 1065353216,
+                    "v11": 0,
+                    "v12": 1008981770,
                     "v13": 1065353216,
                     "v14": 1065353216,
-                    "v15": 0,
-                    "v16": 1065353216,
+                    "v15": 1065353216,
+                    "v16": 0,
                     "v17": 1065353216,
                     "v18": 1065353216,
                     "v19": 1065353216,
-                    "v20": 0,
-                    "v21": 3212836864,
-                    "v22": 1065353216,
+                    "v20": 1065353216,
+                    "v21": 0,
+                    "v22": 3212836864,
                     "v23": 1065353216,
                     "v24": 1065353216,
                     "v25": 1065353216,
                     "v26": 1065353216,
-                    "v27": 0,
-                    "v28": 1065353216,
+                    "v27": 1065353216,
+                    "v28": 0,
                     "v29": 1065353216,
-                    "v30": 0,
-                    "v31": 1065353216,
-                    "v32": 0,
+                    "v30": 1065353216,
+                    "v31": 0,
+                    "v32": 1065353216,
                     "v33": 0,
-                    "v34": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
+                    "v34": 0,
                     "v35": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v36": 0,
-                    "v37": 0,
-                    "v38": 0,
-                    "v39": 1065353216,
-                    "v40": 1,
-                    "v41": 1065353216,
-                    "v42": 0,
-                    "v43": 1065353216,
-                    "v44": 0,
-                    "v45": 0,
-                    "v46": 1050253722,
-                    "v47": 0,
-                    "v48": 1050253722,
-                    "v49": 1050253722,
-                    "v50": 1065353216,
-                    "v51": 4294967295,
-                    "v52": 0,
-                    "v53": 0,
-                    "v54": 0,
-                    "v55": 0,
-                    "v56": {
+                    "v36": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
+                    "v37": 0,
+                    "v38": 0,
+                    "v39": 0,
+                    "v40": 1065353216,
+                    "v41": 1,
+                    "v42": 1065353216,
+                    "v43": 0,
+                    "v44": 1065353216,
+                    "v45": 0,
+                    "v46": 0,
+                    "v47": 1050253722,
+                    "v48": 0,
+                    "v49": 1050253722,
+                    "v50": 1050253722,
+                    "v51": 1065353216,
+                    "v52": 4294967295,
+                    "v53": 0,
+                    "v54": 0,
+                    "v55": 0,
+                    "v56": 0,
                     "v57": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v58": 0,
-                    "v59": 0,
-                    "v60": 0,
-                    "v61": 0,
-                    "v62": {
+                    "v58": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v63": 1,
-                    "v64": 0,
+                    "v59": 0,
+                    "v60": 0,
+                    "v61": 0,
+                    "v62": 0,
+                    "v63": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "v64": 1,
                     "v65": 0,
-                    "v66": 1008981770,
-                    "v67": 0,
-                    "v68": 1,
-                    "v69": 1017370378,
-                    "v70": 1036831949,
-                    "v71": 1065269330,
-                    "v72": 1056964608,
-                    "v73": 0,
-                    "v74": 3212836864,
+                    "v66": 0,
+                    "v67": 1008981770,
+                    "v68": 0,
+                    "v69": 1,
+                    "v70": 1017370378,
+                    "v71": 1036831949,
+                    "v72": 1065269330,
+                    "v73": 1056964608,
+                    "v74": 0,
                     "v75": 3212836864,
                     "v76": 3212836864,
                     "v77": 3212836864,
                     "v78": 3212836864,
-                    "v79": 0,
+                    "v79": 3212836864,
                     "v80": 0,
                     "v81": 0,
-                    "v82": "empty",
+                    "v82": 0,
                     "v83": "empty",
                     "v84": "empty",
-                    "v85": "empty"
+                    "v85": "empty",
+                    "v86": "empty"
                 }
             },
             "Component[16]": {
@@ -1070,7 +1077,7 @@
                     "DebugDraw": false,
                     "UpdateTiming": "[5]ByBehavior",
                     "Priority": 0,
-                    "v4": "Art/Model/Character/ch90/071/0000/ch90_071_0000.chain2",
+                    "v4": "@Art/Model/Character/ch90/071/0000/ch90_071_0000.chain2",
                     "v5": 1065353216,
                     "v6": 0,
                     "v7": 0,
@@ -1175,6 +1182,356 @@
                 "ace.GameMessageReceiver": {}
             },
             "Component[24]": {
+                "app.MeshSetting": {
+                    "v0_Enabled": true,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
+                    "_IsPassThrough": false,
+                    "_MeshMaterialLOD": {
+                        "": {}
+                    },
+                    "_WetBlend": 0.0,
+                    "_WetBlendLimit": 1.0,
+                    "_TopMaskFade": 0.0,
+                    "_TopMaskFadeBias": 1.0,
+                    "_GlobalTopMaskFade": 0.5,
+                    "_TopMaskMapBlend": 0.0,
+                    "_EmissiveIntensity": 1.0,
+                    "_TopBlendVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_TriPlanarColor": {
+                        "R": 128,
+                        "G": 128,
+                        "B": 128,
+                        "A": 255
+                    },
+                    "_DispType": -1341824640,
+                    "_HeatReceiverParamID": -1343808000,
+                    "_GroundBlendBias": 1.0,
+                    "_PassThroughLengthBias": 1.0,
+                    "_ColorParam": {
+                        "R": 255,
+                        "G": 255,
+                        "B": 255,
+                        "A": 255
+                    },
+                    "_AlphaTestRef": 0.1,
+                    "_EmissivePower": 0.0,
+                    "_WaveScrollSpeed": 0.0,
+                    "_IceBlendRate": 1.0,
+                    "_IceSDFBlendRate": 0.5,
+                    "_IceNormalVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_IceNormalBlend": 0.0,
+                    "_EnvironmentGUID": 0,
+                    "_ShaderTimerGUID": 0,
+                    "_EditMaterialFlag": 4096,
+                    "_SimpleOrigin": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "_IsBurn": false
+                }
+            },
+            "Component[25]": {
+                "app.MeshSettingController": {
+                    "v0_Enabled": true,
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
+                }
+            },
+            "Component[26]": {
+                "ace.model_material_manager.ModelMaterialManager": {
+                    "v0": 1,
+                    "_Holders": [
+                        {
+                            "ace.model_material_manager.ModelMaterialManager.AssetHolder": {
+                                "_Id": 1,
+                                "_Data": {
+                                    "ace.user_data.ModelMaterialInfo": {
+                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_unique_mmi.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "ace.model_material_manager.ModelMaterialManager.AssetHolder": {
+                                "_Id": 0,
+                                "_Data": {
+                                    "ace.user_data.ModelMaterialInfo": {
+                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_common_mmi.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[27]": {
+                "app.ConstraintUpdater": {
+                    "v0": 0
+                }
+            },
+            "Component[28]": {
+                "app.SoundEnemyCullingController": {
+                    "v0": 1,
+                    "_Settings": {
+                        "app.snd_user_data.SoundCullingSettingsApp": {
+                            "userdataPath": "Sound/UserData/40_Culling/Enemy/EnemyBoss/Em_Boss_Base_CullingSettings.user"
+                        }
+                    },
+                    "_ForceCullingAfterDeath": true
+                }
+            },
+            "Component[29]": {
+                "ace.model_parts_manager.ModelPartsManager2": {
+                    "v0": 1,
+                    "_Holders": [
+                        {
+                            "ace.model_parts_manager.ModelPartsManager2.AssetHolder": {
+                                "_Id": 1,
+                                "_Data": {
+                                    "ace.user_data.ModelPartsInfo2": {
+                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_unique_mpi.user"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "ace.model_parts_manager.ModelPartsManager2.AssetHolder": {
+                                "_Id": 0,
+                                "_Data": {
+                                    "ace.user_data.ModelPartsInfo2": {
+                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_common_mpi.user"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "Component[30]": {
+                "app.EnemyBrowserHolder": {}
+            },
+            "Component[31]": {
+                "app.model_blend_shape_manager.ModelBlendShapeManager": {
+                    "v0": 1,
+                    "_Holders": []
+                }
+            },
+            "Component[32]": {
+                "via.motion.IkMultiLookAt2": {
+                    "Enabled": true,
+                    "DebugDraw": false,
+                    "UpdateTiming": "[5]ByBehavior",
+                    "Priority": 0,
+                    "v4": [
+                        61
+                    ],
+                    "v5": "010101010000000000000000",
+                    "v6": 4294967295
+                }
+            },
+            "Component[33]": {
+                "app.SoundEnemyMotionSequence": {
+                    "v0": 1,
+                    "v1": {
+                        "": {}
+                    },
+                    "v2": 2,
+                    "_UpdateOnlyDrawSelf": false
+                }
+            },
+            "Component[34]": {
+                "app.ChainSetting": {
+                    "v0_Enabled": true,
+                    "_WindAssetOverwrite": "",
+                    "_WindAssetOverwrite2": "",
+                    "_WindSamplingPoint": {
+                        "": {}
+                    },
+                    "_WindBias": 1.0,
+                    "_CullingLengthBias": 1.0,
+                    "_IsUpdateSelf": false,
+                    "_IsWindRecieve": true,
+                    "_IsCullingEnable": true,
+                    "_IsCreateVolumeOccludee": true
+                }
+            },
+            "Component[35]": {
+                "app.AppStreamingControllerRoot": {
+                    "v0_Enabled": true
+                }
+            },
+            "Component[36]": {
+                "via.render.StreamingMeshController": {}
+            },
+            "Component[37]": {
+                "via.render.StreamingTextureController": {
+                    "v0_MeshLowerPriority": 3,
+                    "v1_MeshHigherPriority": 0,
+                    "v2_Priority": 3,
+                    "v3_RequestMipLevel": 0,
+                    "v4_Strategy": "[0]Default"
+                }
+            },
+            "Component[38]": {
+                "app.AppStreamingController": {
+                    "v0_Enabled": true
+                }
+            },
+            "Component[39]": {
+                "app.ChainSub2": {
+                    "Enabled": true,
+                    "DebugDraw": false,
+                    "UpdateTiming": "[3]ConstraintsEnd",
+                    "Priority": 0,
+                    "v4": "",
+                    "v5": 1065353216,
+                    "v6": 0,
+                    "v7": 0,
+                    "v8": 1101004800,
+                    "v9": 0,
+                    "v10": 1101004800,
+                    "v11": 0,
+                    "v12": 69,
+                    "v13": 0,
+                    "v14": 0,
+                    "v15": 0,
+                    "v16": 0,
+                    "v17": 20,
+                    "v18": 1,
+                    "v19": 1,
+                    "v20": 0,
+                    "v21": 0,
+                    "v22": 0,
+                    "v23": 1,
+                    "v24": 1,
+                    "v25": 1,
+                    "v26": 0,
+                    "v27": 0,
+                    "v28": "00000000-0000-0000-0000-000000000000",
+                    "v29": 1092616192,
+                    "v30": 1123024896
+                }
+            },
+            "Component[40]": {
+                "ace.VolumeOccludeeController": {
+                    "v0": 1
+                }
+            },
+            "Component[41]": {
+                "app.StainMeshController": {
+                    "v0": 1,
+                    "_WholeCtrlType": "[1]PG",
+                    "_HeightCtrlType": "[1]PG"
+                }
+            },
+            "Component[42]": {
+                "app.SoundEnemySnowDepthGetter": {
+                    "v0": 1,
+                    "_Settings": {
+                        "app.snd_user_data.SoundSnowDepthGetterSettings": {
+                            "userdataPath": "Sound/UserData/43_SnowDepth/Enemy/EmBossBase_SnowDepthGetterSettings.user"
+                        }
+                    }
+                }
+            },
+            "Component[43]": {
+                "app.EnemyBossCharacter": {
+                    "v0": 1,
+                    "_IsCameraLockTarget": true
+                }
+            },
+            "Component[44]": {
+                "app.EnemyBossController": {
+                    "v0": 1
+                }
+            },
+            "Component[45]": {
+                "app.SoundEnemyActionSequence": {
+                    "v0": 1,
+                    "v1": [
+                        {
+                            "app.snd_user_data.SoundActionUserCurveListData": {
+                                "userdataPath": "Sound/UserData/36_ActionUserCurve/Enemy/EnemyBoss/em0071/Em0071_00_0_ActionUserCurveListData.user"
+                            }
+                        }
+                    ],
+                    "v2": [],
+                    "v3": []
+                }
+            },
+            "Component[46]": {
+                "app.SoundEnemyInfoGetter": {
+                    "v0": 1
+                }
+            },
+            "Component[47]": {
+                "app.ChainSettingCollection": {
+                    "v0_Enabled": true,
+                    "_WindSamplingPoint": {
+                        "ace.user_data.MeshWindSamplingPoint": {
+                            "userdataPath": "GameDesign/Wind/6legs_mantle.user"
+                        }
+                    },
+                    "_WindBias": 1.0,
+                    "_CullingLengthBias": 1.0,
+                    "STRUCT__BlendRate__HasValue": false,
+                    "STRUCT__BlendRate__Value": 0.0,
+                    "_IsUpdateSelf": false,
+                    "_IsWindRecieve": true,
+                    "_IsCullingEnable": true,
+                    "_IsCreateVolumeOccludee": true
+                }
+            },
+            "Component[48]": {
+                "via.effect.MeshMaterialEmitter": {
+                    "v0_Mesh": "Art/VFX/Mesh/Enemy/em0071/11_em0071_00_100.mesh",
+                    "v1_Material": "",
+                    "v2_EmissionMaskMap": ""
+                }
+            },
+            "Component[49]": {
+                "app.FieldRecommendController_Enemy": {
+                    "v0": 1
+                }
+            },
+            "Component[50]": {
+                "app.SoundVibrationContainer": {
+                    "v0": 1,
+                    "_VibrationData": {
+                        "ace.user_data.PadVibrationPresetList": {
+                            "userdataPath": "Sound/ADVibration/UserData/EM/Sound_em0071_PadVibrationPresetList.user"
+                        }
+                    },
+                    "_ADVibrationData": {
+                        "ace.user_data.ADVibrationPresetList": {
+                            "userdataPath": "@Sound/ADVibration/UserData/EM/Sound_em0071_ADVibrationPresetList.user"
+                        }
+                    },
+                    "_VibTriggerList": {
+                        "app.snd_user_data.SoundVibrationTriggerListData": {
+                            "userdataPath": "Sound/ADVibration/UserData/EM/Sound_em0071_VibrationTriggerListData.user"
+                        }
+                    },
+                    "_ForceValid": false
+                }
+            },
+            "Component[51]": {
                 "app.CharacterTimelineEventActorEnemy": {
                     "v0": 1,
                     "_ClipParamStartMotionSet": {
@@ -1199,8 +1556,8 @@
                                     "_StartMotionID": -1,
                                     "_LoopMotionID": -1,
                                     "_EndMotionID": -1,
-                                    "STRUCT__NextActionID__Category": 0,
-                                    "STRUCT__NextActionID__Index": 0,
+                                    "STRUCT__NextActionID__Category": -1,
+                                    "STRUCT__NextActionID__Index": -1,
                                     "_NextActionGUID": "00000000-0000-0000-0000-000000000000",
                                     "_MotionConnectBank": {
                                         "": {}
@@ -1217,7 +1574,7 @@
                                         "x": 0.0,
                                         "y": 0.0,
                                         "z": 0.0,
-                                        "w": 1.0
+                                        "w": 0.0
                                     }
                                 }
                             },
@@ -1231,14 +1588,14 @@
                     "_WarpData": {
                         "ace.CharacterTimelineEventActorBase.PosWarpData": {
                             "Type": "[0]WORLD_POS",
-                            "STRUCT_Pos__HasValue": false,
+                            "STRUCT_Pos__HasValue": true,
                             "STRUCT_Pos__Value": {
                                 "x": 0.0,
                                 "y": 0.0,
                                 "z": 0.0,
                                 "pad": 0.0
                             },
-                            "STRUCT_Rot__HasValue": false,
+                            "STRUCT_Rot__HasValue": true,
                             "STRUCT_Rot__Value": {
                                 "x": 0.0,
                                 "y": 0.0,
@@ -1269,6 +1626,11 @@
                     },
                     "_SnowData": {
                         "app.CharacterTimelineEventActorBase.SnowParam": {
+                            "Rate": -1.0
+                        }
+                    },
+                    "_TarData": {
+                        "app.CharacterTimelineEventActorBase.TarParam": {
                             "Rate": -1.0
                         }
                     },
@@ -1368,6 +1730,146 @@
                     "_EndMotionPosGroundAdjust": false,
                     "_EndMotionRotFlatQuat": false,
                     "_MaterialSettingData": [
+                        {
+                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
+                                "IsEnable": false,
+                                "MaterialNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamType": "[4]MAX",
+                                "ParamFloat": 0.0,
+                                "ParamFloat4": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                },
+                                "ParamColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "ParamColorF": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
+                                "IsEnable": false,
+                                "MaterialNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamType": "[4]MAX",
+                                "ParamFloat": 0.0,
+                                "ParamFloat4": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                },
+                                "ParamColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "ParamColorF": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
+                                "IsEnable": false,
+                                "MaterialNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamType": "[4]MAX",
+                                "ParamFloat": 0.0,
+                                "ParamFloat4": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                },
+                                "ParamColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "ParamColorF": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
+                                "IsEnable": false,
+                                "MaterialNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamNameHash": {
+                                    "ace.cStrHash": {
+                                        "_Hash": 0
+                                    }
+                                },
+                                "ParamType": "[4]MAX",
+                                "ParamFloat": 0.0,
+                                "ParamFloat4": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                },
+                                "ParamColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "ParamColorF": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 0.0
+                                }
+                            }
+                        },
                         {
                             "app.CharacterTimelineEventActorBase.MaterialSettingData": {
                                 "IsEnable": false,
@@ -1836,420 +2338,20 @@
                     }
                 }
             },
-            "Component[25]": {
-                "via.dynamics.Ragdoll": {
-                    "v0_Enabled": true,
-                    "v1_WorldNameHash": 0,
-                    "v2_DevelopDraw": false,
-                    "v3_Static": false,
-                    "v4_DependencyHierarchy": false,
-                    "v5": 1,
-                    "v6": 0,
-                    "v7": "DisableStates",
-                    "v8": 37040880,
-                    "v9": "Default",
-                    "v10": 1106175613,
-                    "v11": "GameDesign/Enemy/Em0071/00/Ragdoll/Em0071_Ragdoll.rdd",
-                    "v12": 0,
-                    "v13": 0,
-                    "v14": 4294967295,
-                    "v15": 1065353216,
-                    "v16": 0,
-                    "v17": 1,
-                    "v18": 0,
-                    "v19": 0,
-                    "v20": "",
-                    "v21": 0,
-                    "v22": "",
-                    "v23": "DisableStates",
-                    "v24": 37040880,
-                    "v25": "Default",
-                    "v26": 1106175613,
-                    "v27": 0,
-                    "v28": 1065353216,
-                    "v29": 0,
-                    "v30": 1065353216,
-                    "v31": 0,
-                    "v32": 1,
-                    "v33": 1120403456,
-                    "v34": "",
-                    "v35": "",
-                    "v36": 0
-                }
-            },
-            "Component[26]": {
-                "app.MeshSetting": {
-                    "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
-                    "_IsPassThrough": false,
-                    "_MeshMaterialLOD": {
-                        "": {}
-                    },
-                    "_WetBlend": 0.0,
-                    "_WetBlendLimit": 1.0,
-                    "_TopMaskFade": 0.0,
-                    "_TopMaskFadeBias": 1.0,
-                    "_GlobalTopMaskFade": 0.5,
-                    "_TopMaskMapBlend": 0.0,
-                    "_EmissiveIntensity": 1.0,
-                    "_TopBlendVector": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "pad": 0.0
-                    },
-                    "_TriPlanarColor": {
-                        "R": 128,
-                        "G": 128,
-                        "B": 128,
-                        "A": 255
-                    },
-                    "_DispType": -1341824640,
-                    "_HeatReceiverParamID": -1343808000,
-                    "_GroundBlendBias": 1.0,
-                    "_PassThroughLengthBias": 1.0,
-                    "_ColorParam": {
-                        "R": 255,
-                        "G": 255,
-                        "B": 255,
-                        "A": 255
-                    },
-                    "_AlphaTestRef": 0.1,
-                    "_EmissivePower": 0.0,
-                    "_WaveScrollSpeed": 0.0,
-                    "_IceBlendRate": 1.0,
-                    "_IceSDFBlendRate": 0.5,
-                    "_IceNormalVector": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "pad": 0.0
-                    },
-                    "_IceNormalBlend": 0.0,
-                    "_EnvironmentGUID": 0,
-                    "_ShaderTimerGUID": 0,
-                    "_EditMaterialFlag": 4096,
-                    "_SimpleOrigin": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
-                    "_IsBurn": false
-                }
-            },
-            "Component[27]": {
-                "app.MeshSettingController": {
-                    "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
-                }
-            },
-            "Component[28]": {
-                "app.InteractController": {
-                    "v0": 0,
-                    "_Data": {
-                        "app.user_data.InteractData": {
-                            "userdataPath": "GameDesign/Enemy/CommonData/Data/EmCommonInteractData_Boss.user"
-                        }
-                    }
-                }
-            },
-            "Component[29]": {
-                "ace.model_material_manager.ModelMaterialManager": {
-                    "v0": 1,
-                    "_Holders": [
-                        {
-                            "ace.model_material_manager.ModelMaterialManager.AssetHolder": {
-                                "_Id": 1,
-                                "_Data": {
-                                    "ace.user_data.ModelMaterialInfo": {
-                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_unique_mmi.user"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "ace.model_material_manager.ModelMaterialManager.AssetHolder": {
-                                "_Id": 0,
-                                "_Data": {
-                                    "ace.user_data.ModelMaterialInfo": {
-                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_common_mmi.user"
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            "Component[30]": {
-                "app.ConstraintUpdater": {
-                    "v0": 0
-                }
-            },
-            "Component[31]": {
-                "app.SoundEnemyCullingController": {
-                    "v0": 1,
-                    "_Settings": {
-                        "app.snd_user_data.SoundCullingSettingsApp": {
-                            "userdataPath": "Sound/UserData/40_Culling/Enemy/EnemyBoss/Em_Boss_Base_CullingSettings.user"
-                        }
-                    },
-                    "_ForceCullingAfterDeath": true
-                }
-            },
-            "Component[32]": {
-                "ace.model_parts_manager.ModelPartsManager2": {
-                    "v0": 1,
-                    "_Holders": [
-                        {
-                            "ace.model_parts_manager.ModelPartsManager2.AssetHolder": {
-                                "_Id": 1,
-                                "_Data": {
-                                    "ace.user_data.ModelPartsInfo2": {
-                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_unique_mpi.user"
-                                    }
-                                }
-                            }
-                        },
-                        {
-                            "ace.model_parts_manager.ModelPartsManager2.AssetHolder": {
-                                "_Id": 0,
-                                "_Data": {
-                                    "ace.user_data.ModelPartsInfo2": {
-                                        "userdataPath": "Art/Model/Character/ch90/071/0000/ch90_071_0000_common_mpi.user"
-                                    }
-                                }
-                            }
-                        }
-                    ]
-                }
-            },
-            "Component[33]": {
-                "app.EnemyBrowserHolder": {}
-            },
-            "Component[34]": {
-                "app.model_blend_shape_manager.ModelBlendShapeManager": {
-                    "v0": 1,
-                    "_Holders": []
-                }
-            },
-            "Component[35]": {
-                "via.motion.IkMultiLookAt2": {
-                    "Enabled": true,
-                    "DebugDraw": false,
-                    "UpdateTiming": "[5]ByBehavior",
-                    "Priority": 0,
-                    "v4": [
-                        137
-                    ],
-                    "v5": "010101010000000000000000",
-                    "v6": 4294967295
-                }
-            },
-            "Component[36]": {
-                "app.SoundEnemyMotionSequence": {
-                    "v0": 1,
-                    "_MotionStatusSettingListData": {
-                        "": {}
-                    },
-                    "_UpdateSequenceCategoryBits": 2,
-                    "_UpdateOnlyDrawSelf": false
-                }
-            },
-            "Component[37]": {
-                "app.ChainSetting": {
-                    "v0_Enabled": true,
-                    "_WindAssetOverwrite": "",
-                    "_WindAssetOverwrite2": "",
-                    "_WindSamplingPoint": {
-                        "": {}
-                    },
-                    "_WindBias": 1.0,
-                    "_CullingLengthBias": 1.0,
-                    "_IsUpdateSelf": false,
-                    "_IsWindRecieve": true,
-                    "_IsCullingEnable": true,
-                    "_IsCreateVolumeOccludee": true
-                }
-            },
-            "Component[38]": {
-                "app.AppStreamingControllerRoot": {
-                    "v0_Enabled": true
-                }
-            },
-            "Component[39]": {
-                "via.render.StreamingMeshController": {}
-            },
-            "Component[40]": {
-                "via.render.StreamingTextureController": {
-                    "v0_MeshLowerPriority": 3,
-                    "v1_MeshHigherPriority": 0,
-                    "v2_Priority": 3,
-                    "v3_RequestMipLevel": 0,
-                    "v4_Strategy": "[0]Default"
-                }
-            },
-            "Component[41]": {
-                "app.AppStreamingController": {
-                    "v0_Enabled": true
-                }
-            },
-            "Component[42]": {
-                "app.ChainSub2": {
-                    "Enabled": true,
-                    "DebugDraw": false,
-                    "UpdateTiming": "[3]ConstraintsEnd",
-                    "Priority": 0,
-                    "v4": "",
-                    "v5": 1065353216,
-                    "v6": 0,
-                    "v7": 0,
-                    "v8": 1101004800,
-                    "v9": 0,
-                    "v10": 1101004800,
-                    "v11": 0,
-                    "v12": 145,
-                    "v13": 0,
-                    "v14": 0,
-                    "v15": 0,
-                    "v16": 0,
-                    "v17": 20,
-                    "v18": 1,
-                    "v19": 1,
-                    "v20": 0,
-                    "v21": 0,
-                    "v22": 0,
-                    "v23": 1,
-                    "v24": 1,
-                    "v25": 1,
-                    "v26": 0,
-                    "v27": 0,
-                    "v28": "00000000-0000-0000-0000-000000000000",
-                    "v29": 1092616192,
-                    "v30": 1123024896
-                }
-            },
-            "Component[43]": {
-                "ace.VolumeOccludeeController": {
-                    "v0": 1
-                }
-            },
-            "Component[44]": {
-                "app.StainMeshController": {
-                    "v0": 1,
-                    "_WholeCtrlType": "[1]PG",
-                    "_HeightCtrlType": "[1]PG"
-                }
-            },
-            "Component[45]": {
-                "app.SoundEnemySnowDepthGetter": {
-                    "v0": 1,
-                    "_Settings": {
-                        "app.snd_user_data.SoundSnowDepthGetterSettings": {
-                            "userdataPath": "Sound/UserData/43_SnowDepth/Enemy/EmBossBase_SnowDepthGetterSettings.user"
-                        }
-                    }
-                }
-            },
-            "Component[46]": {
-                "app.EnemyBossCharacter": {
-                    "v0": 1,
-                    "_IsCameraLockTarget": true
-                }
-            },
-            "Component[47]": {
-                "app.EnemyBossController": {
-                    "v0": 1
-                }
-            },
-            "Component[48]": {
-                "app.SoundEnemyActionSequence": {
-                    "v0": 1,
-                    "_BaseActionUserCurveDataList": [
-                        {
-                            "app.snd_user_data.SoundActionUserCurveListData": {
-                                "userdataPath": "Sound/UserData/36_ActionUserCurve/Enemy/EnemyBoss/em0071/Em0071_00_0_ActionUserCurveListData.user"
-                            }
-                        }
-                    ],
-                    "_SubActionUserCurveDataList": [],
-                    "_AddActionUserCurveListDataList": []
-                }
-            },
-            "Component[49]": {
-                "app.SoundEnemyInfoGetter": {
-                    "v0": 1
-                }
-            },
-            "Component[50]": {
-                "app.ChainSettingCollection": {
-                    "v0_Enabled": true,
-                    "_WindSamplingPoint": {
-                        "ace.user_data.MeshWindSamplingPoint": {
-                            "userdataPath": "GameDesign/Wind/6legs_mantle.user"
-                        }
-                    },
-                    "_WindBias": 1.0,
-                    "_CullingLengthBias": 1.0,
-                    "STRUCT__BlendRate__HasValue": false,
-                    "STRUCT__BlendRate__Value": 0.0,
-                    "_IsUpdateSelf": false,
-                    "_IsWindRecieve": true,
-                    "_IsCullingEnable": true,
-                    "_IsCreateVolumeOccludee": true
-                }
-            },
-            "Component[51]": {
-                "via.effect.MeshMaterialEmitter": {
-                    "v0_Mesh": "Art/VFX/Mesh/Enemy/em0071/11_em0071_00_100.mesh",
-                    "v1_Material": "",
-                    "v2_EmissionMaskMap": ""
-                }
-            },
             "Component[52]": {
-                "app.FieldRecommendController_Enemy": {
-                    "v0": 1
-                }
-            },
-            "Component[53]": {
-                "app.SoundVibrationContainer": {
-                    "v0": 1,
-                    "_VibrationData": {
-                        "ace.user_data.PadVibrationPresetList": {
-                            "userdataPath": "Sound/ADVibration/UserData/EM/Sound_em0071_PadVibrationPresetList.user"
-                        }
-                    },
-                    "_ADVibrationData": {
-                        "ace.user_data.ADVibrationPresetList": {
-                            "userdataPath": "Sound/ADVibration/UserData/EM/Sound_em0071_ADVibrationPresetList.user"
-                        }
-                    },
-                    "_VibTriggerList": {
-                        "app.snd_user_data.SoundVibrationTriggerListData": {
-                            "userdataPath": "Sound/ADVibration/UserData/EM/Sound_em0071_VibrationTriggerListData.user"
-                        }
-                    }
-                }
-            },
-            "Component[54]": {
                 "via.render.AmbientOcclusionGeometry": {
                     "v0": 1,
                     "v1": 1065353216,
                     "v2": [
-                        164,
-                        165,
-                        166,
-                        167,
-                        168
+                        174,
+                        175,
+                        176,
+                        177,
+                        178
                     ]
                 }
             },
-            "Component[55]": {
+            "Component[53]": {
                 "via.motion.IkMultiBone": {
                     "Enabled": true,
                     "DebugDraw": false,
@@ -2261,7 +2363,7 @@
                     "v7": 4294967295
                 }
             },
-            "Component[56]": {
+            "Component[54]": {
                 "app.UShapeFootIKController": {
                     "DataTbl": [
                         {
@@ -2312,7 +2414,8 @@
                                 "ExtraFoot": true
                             }
                         }
-                    ]
+                    ],
+                    "_IsUpdateIkHand2": false
                 }
             }
         }

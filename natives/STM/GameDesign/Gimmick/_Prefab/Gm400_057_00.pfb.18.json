@@ -8,7 +8,7 @@
             "targetId": "[73]"
         },
         {
-            "objectId": "[122]",
+            "objectId": "[123]",
             "propertyId_HB": 2,
             "propertyId_LB": 4,
             "fieldArrayIndex": 0,
@@ -16,6 +16,26 @@
         }
     ],
     "looseInstance": {
+        "4": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "5": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "6": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "7": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
         "43": {
             "via.physics.MeshShape": {
                 "v0_BoundingAabb": {
@@ -1563,7 +1583,7 @@
                 "v7": ""
             }
         },
-        "220": {
+        "222": {
             "via.physics.MeshShape": {
                 "v0_BoundingAabb": {
                     "minpos": {
@@ -1862,7 +1882,7 @@
                 }
             }
         },
-        "221": {
+        "223": {
             "via.physics.FilterInfo": {
                 "v0_Layer": 0,
                 "v1_Group": 0,
@@ -1871,22 +1891,22 @@
                 "v4_MaskBits": 4294967295
             }
         },
-        "222": {
+        "224": {
             "via.physics.UserData": {}
         },
-        "223": {
+        "225": {
             "via.physics.Collider": {
                 "v0": 1,
-                "v1": 220,
-                "v2": 221,
-                "v3": 222,
+                "v1": 222,
+                "v2": 223,
+                "v3": 224,
                 "v4": "System/Collision/Filter/EffectTerrain/EffectTerrain_Default.cfil",
                 "v5": "",
                 "v6": "",
                 "v7": ""
             }
         },
-        "285": {
+        "287": {
             "via.physics.MeshShape": {
                 "v0_BoundingAabb": {
                     "minpos": {
@@ -2185,7 +2205,7 @@
                 }
             }
         },
-        "286": {
+        "288": {
             "via.physics.FilterInfo": {
                 "v0_Layer": 0,
                 "v1_Group": 0,
@@ -2194,22 +2214,22 @@
                 "v4_MaskBits": 4294967295
             }
         },
-        "287": {
+        "289": {
             "via.physics.UserData": {}
         },
-        "288": {
+        "290": {
             "via.physics.Collider": {
                 "v0": 1,
-                "v1": 285,
-                "v2": 286,
-                "v3": 287,
+                "v1": 287,
+                "v2": 288,
+                "v3": 289,
                 "v4": "System/Collision/Filter/EffectTerrain/EffectTerrain_Default.cfil",
                 "v5": "",
                 "v6": "",
                 "v7": ""
             }
         },
-        "294": {
+        "296": {
             "via.physics.MeshShape": {
                 "v0_BoundingAabb": {
                     "minpos": {
@@ -2508,7 +2528,7 @@
                 }
             }
         },
-        "295": {
+        "297": {
             "via.physics.FilterInfo": {
                 "v0_Layer": 0,
                 "v1_Group": 0,
@@ -2517,15 +2537,15 @@
                 "v4_MaskBits": 4294967295
             }
         },
-        "296": {
+        "298": {
             "via.physics.UserData": {}
         },
-        "297": {
+        "299": {
             "via.physics.Collider": {
                 "v0": 1,
-                "v1": 294,
-                "v2": 295,
-                "v3": 296,
+                "v1": 296,
+                "v2": 297,
+                "v3": 298,
                 "v4": "System/Collision/Filter/EffectTerrain/EffectTerrain_Default.cfil",
                 "v5": "",
                 "v6": "",
@@ -2928,32 +2948,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        }
+                    "v4": [
+                        4,
+                        5,
+                        6,
+                        7
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[4]": {
@@ -3037,18 +3040,18 @@
             "Component[12]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[13]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -3673,10 +3676,10 @@
                     "Component[28]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -4186,10 +4189,10 @@
                     "Component[35]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -4658,10 +4661,10 @@
                     "Component[41]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -5130,10 +5133,10 @@
                     "Component[47]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -5595,10 +5598,10 @@
                     "Component[52]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -6116,10 +6119,10 @@
                     "Component[57]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -6626,10 +6629,10 @@
                         "Component[65]": {
                             "app.MeshSetting": {
                                 "v0_Enabled": true,
-                                "_LodSelectionAlogrithm": 0,
-                                "_AssetNo": 0,
-                                "_IsMargeBoundaryInController": true,
-                                "_IsMargeBoundaryDrawOff": false,
+                                "v1": 0,
+                                "v2": 0,
+                                "v3": true,
+                                "v4": false,
                                 "_IsPassThrough": true,
                                 "_MeshMaterialLOD": {
                                     "": {}
@@ -7194,10 +7197,10 @@
                     "Component[76]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -7636,7 +7639,7 @@
                             },
                             "Component[106]": {
                                 "soundlib.SoundContainer": {
-                                    "v0": 1,
+                                    "v0": 0,
                                     "_TriggerOnlyDrawSelf": false,
                                     "_UserDataList": [
                                         {
@@ -7832,6 +7835,13 @@
                                         "via.relib.light.LightActionDistanceAttenuation": {
                                             "IsDistanceAttenuation": true,
                                             "EaseType": "[0]Linear",
+                                            "IsSpherePosition": false,
+                                            "SpherePosition": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0,
+                                                "pad": 0.0
+                                            },
                                             "NearFadeOutStartDistance": -1.0,
                                             "NearFadeOutEndDistance": 1000.0,
                                             "FadeOutStartDistance": 20.0,
@@ -8052,9 +8062,26 @@
                                         "r": 1.0
                                     }
                                 }
+                            },
+                            "Component[118]": {
+                                "app.LightLimitter": {
+                                    "v0": 0,
+                                    "_IsOptModeOnly": false,
+                                    "_LightEnable": false,
+                                    "_ShadowEnable": false,
+                                    "_DetailShadow": 1.0,
+                                    "_AOEfficeiency": 1.0,
+                                    "_ShadowCastFlag": "[3]ALL",
+                                    "_IsEnableEventPlaying": false,
+                                    "_LightEnableEventPlaying": false,
+                                    "_ShadowEnableEventPlaying": false,
+                                    "_DetailShadowEventPlaying": 1.0,
+                                    "_AOEfficeiencyEventPlaying": 1.0,
+                                    "_ShadowCastFlagEventPlaying": "[3]ALL"
+                                }
                             }
                         },
-                        "ChildObject[118]": {
+                        "ChildObject[119]": {
                             "GameObject": {
                                 "via.GameObject": {
                                     "Name": "sm43_058_00_A_PointLight",
@@ -8064,7 +8091,7 @@
                                     "TimeScale": -1.0
                                 }
                             },
-                            "Component[119]": {
+                            "Component[120]": {
                                 "via.Transform": {
                                     "LocalPosition": {
                                         "x": 0.0,
@@ -8092,7 +8119,7 @@
                                     "FrameSkip": "[0]None"
                                 }
                             },
-                            "Component[120]": {
+                            "Component[121]": {
                                 "via.render.PointLight": {
                                     "v0_Enabled": true,
                                     "v1_Intensity": 1000.0,
@@ -8155,13 +8182,20 @@
                                     "v50_RayTracingShadowEnable": false
                                 }
                             },
-                            "Component[121]": {
+                            "Component[122]": {
                                 "via.relib.light.ReLibLightBehavior": {
                                     "v0": 1,
                                     "_DistanceAttenuation": {
                                         "via.relib.light.LightActionDistanceAttenuation": {
                                             "IsDistanceAttenuation": true,
                                             "EaseType": "[0]Linear",
+                                            "IsSpherePosition": false,
+                                            "SpherePosition": {
+                                                "x": 0.0,
+                                                "y": 0.0,
+                                                "z": 0.0,
+                                                "pad": 0.0
+                                            },
                                             "NearFadeOutStartDistance": -1.0,
                                             "NearFadeOutEndDistance": 1000.0,
                                             "FadeOutStartDistance": 30.0,
@@ -8346,7 +8380,7 @@
                                     "_EventIdentifyName": "sm43_058_00_A"
                                 }
                             },
-                            "Component[122]": {
+                            "Component[123]": {
                                 "via.motion.ConstraintParent": {
                                     "v0_Enabled": true,
                                     "v1_UpdateMode": "[1]Props",
@@ -8371,7 +8405,7 @@
                                     "v10": 1
                                 }
                             },
-                            "Component[123]": {
+                            "Component[124]": {
                                 "app.AppLightController": {
                                     "v0": 1,
                                     "_Condition": 1,
@@ -8382,10 +8416,27 @@
                                         "r": 1.0
                                     }
                                 }
+                            },
+                            "Component[125]": {
+                                "app.LightLimitter": {
+                                    "v0": 0,
+                                    "_IsOptModeOnly": false,
+                                    "_LightEnable": false,
+                                    "_ShadowEnable": false,
+                                    "_DetailShadow": 1.0,
+                                    "_AOEfficeiency": 1.0,
+                                    "_ShadowCastFlag": "[3]ALL",
+                                    "_IsEnableEventPlaying": false,
+                                    "_LightEnableEventPlaying": false,
+                                    "_ShadowEnableEventPlaying": false,
+                                    "_DetailShadowEventPlaying": 1.0,
+                                    "_AOEfficeiencyEventPlaying": 1.0,
+                                    "_ShadowCastFlagEventPlaying": "[3]ALL"
+                                }
                             }
                         }
                     },
-                    "ChildObject[124]": {
+                    "ChildObject[126]": {
                         "GameObject": {
                             "via.GameObject": {
                                 "Name": "VFX",
@@ -8395,7 +8446,7 @@
                                 "TimeScale": -1.0
                             }
                         },
-                        "Component[125]": {
+                        "Component[127]": {
                             "via.Transform": {
                                 "LocalPosition": {
                                     "x": 0.0,
@@ -8423,7 +8474,7 @@
                                 "FrameSkip": "[0]None"
                             }
                         },
-                        "ChildObject[126]": {
+                        "ChildObject[128]": {
                             "GameObject": {
                                 "via.GameObject": {
                                     "Name": "epvs_sm43_058_00",
@@ -8433,7 +8484,7 @@
                                     "TimeScale": -1.0
                                 }
                             },
-                            "Component[127]": {
+                            "Component[129]": {
                                 "via.Transform": {
                                     "LocalPosition": {
                                         "x": 0.0,
@@ -8461,7 +8512,7 @@
                                     "FrameSkip": "[0]None"
                                 }
                             },
-                            "Component[128]": {
+                            "Component[130]": {
                                 "via.effect.script.EnvironmentEffectManager": {
                                     "v0": 1,
                                     "IsEnableAutoCulling": true,
@@ -8470,14 +8521,14 @@
                                     "ExternalPropertys": []
                                 }
                             },
-                            "Component[129]": {
+                            "Component[131]": {
                                 "via.effect.script.EPVStandardData": {
                                     "v0": 1,
                                     "Elements": [
                                         {
                                             "via.effect.script.EPVStandardData.Element": {
                                                 "v0": [
-                                                    "Art/VFX/EffectEditor/Props/sm/sm43/11_sm43_058_00_00.efx"
+                                                    "@Art/VFX/EffectEditor/Props/sm/sm43/11_sm43_058_00_00.efx"
                                                 ],
                                                 "TriggerId": 4294967295,
                                                 "StopTriggerId": 4294967295,
@@ -8573,7 +8624,7 @@
                         }
                     }
                 },
-                "ChildObject[130]": {
+                "ChildObject[132]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_001_00_A",
@@ -8583,7 +8634,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[131]": {
+                    "Component[133]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.2982285,
@@ -8611,7 +8662,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[132]": {
+                    "Component[134]": {
                         "via.render.Mesh": {
                             "v0": 15,
                             "v1": 1,
@@ -8960,13 +9011,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[133]": {
+                    "Component[135]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -9024,7 +9075,7 @@
                             "_IsBurn": false
                         }
                     },
-                    "Component[134]": {
+                    "Component[136]": {
                         "via.physics.Colliders": {
                             "Enabled": true,
                             "DevelopDraw": true,
@@ -9032,12 +9083,12 @@
                             "DependencyResources": [],
                             "v4": 1,
                             "v5": [
-                                223
+                                225
                             ]
                         }
                     }
                 },
-                "ChildObject[135]": {
+                "ChildObject[137]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_039_00_A",
@@ -9047,7 +9098,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[136]": {
+                    "Component[138]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.724915,
@@ -9075,7 +9126,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[137]": {
+                    "Component[139]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -9424,13 +9475,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[138]": {
+                    "Component[140]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -9489,7 +9540,7 @@
                         }
                     }
                 },
-                "ChildObject[139]": {
+                "ChildObject[141]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm43_066_00_A",
@@ -9499,7 +9550,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[140]": {
+                    "Component[142]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -0.78529644,
@@ -9527,7 +9578,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[141]": {
+                    "Component[143]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -9876,13 +9927,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[142]": {
+                    "Component[144]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -9941,7 +9992,7 @@
                         }
                     }
                 },
-                "ChildObject[143]": {
+                "ChildObject[145]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_006_01_A",
@@ -9951,7 +10002,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[144]": {
+                    "Component[146]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.3027358,
@@ -9979,7 +10030,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[145]": {
+                    "Component[147]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -10328,13 +10379,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[146]": {
+                    "Component[148]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -10393,7 +10444,7 @@
                         }
                     }
                 },
-                "ChildObject[147]": {
+                "ChildObject[149]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -10403,7 +10454,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[148]": {
+                    "Component[150]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.2074857,
@@ -10431,7 +10482,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[149]": {
+                    "Component[151]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -10780,13 +10831,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[150]": {
+                    "Component[152]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -10845,7 +10896,7 @@
                         }
                     }
                 },
-                "ChildObject[151]": {
+                "ChildObject[153]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -10855,7 +10906,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[152]": {
+                    "Component[154]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.3255895,
@@ -10883,7 +10934,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[153]": {
+                    "Component[155]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -11232,13 +11283,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[154]": {
+                    "Component[156]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -11297,7 +11348,7 @@
                         }
                     }
                 },
-                "ChildObject[155]": {
+                "ChildObject[157]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -11307,7 +11358,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[156]": {
+                    "Component[158]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.1767482,
@@ -11335,7 +11386,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[157]": {
+                    "Component[159]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -11684,13 +11735,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[158]": {
+                    "Component[160]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -11749,7 +11800,7 @@
                         }
                     }
                 },
-                "ChildObject[159]": {
+                "ChildObject[161]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -11759,7 +11810,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[160]": {
+                    "Component[162]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.1729323,
@@ -11787,7 +11838,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[161]": {
+                    "Component[163]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -12136,13 +12187,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[162]": {
+                    "Component[164]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -12201,7 +12252,7 @@
                         }
                     }
                 },
-                "ChildObject[163]": {
+                "ChildObject[165]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -12211,7 +12262,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[164]": {
+                    "Component[166]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.3843337,
@@ -12239,7 +12290,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[165]": {
+                    "Component[167]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -12588,13 +12639,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[166]": {
+                    "Component[168]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -12653,7 +12704,7 @@
                         }
                     }
                 },
-                "ChildObject[167]": {
+                "ChildObject[169]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_001_01_A",
@@ -12663,7 +12714,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[168]": {
+                    "Component[170]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.4259206,
@@ -12691,7 +12742,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[169]": {
+                    "Component[171]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -13040,13 +13091,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[170]": {
+                    "Component[172]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -13105,7 +13156,7 @@
                         }
                     }
                 },
-                "ChildObject[171]": {
+                "ChildObject[173]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -13115,7 +13166,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[172]": {
+                    "Component[174]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.3542144,
@@ -13143,7 +13194,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[173]": {
+                    "Component[175]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -13492,13 +13543,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[174]": {
+                    "Component[176]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -13557,7 +13608,7 @@
                         }
                     }
                 },
-                "ChildObject[175]": {
+                "ChildObject[177]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -13567,7 +13618,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[176]": {
+                    "Component[178]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.4977142,
@@ -13595,7 +13646,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[177]": {
+                    "Component[179]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -13944,13 +13995,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[178]": {
+                    "Component[180]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -14009,7 +14060,7 @@
                         }
                     }
                 },
-                "ChildObject[179]": {
+                "ChildObject[181]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -14019,7 +14070,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[180]": {
+                    "Component[182]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.5004842,
@@ -14047,7 +14098,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[181]": {
+                    "Component[183]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -14396,13 +14447,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[182]": {
+                    "Component[184]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -14461,7 +14512,7 @@
                         }
                     }
                 },
-                "ChildObject[183]": {
+                "ChildObject[185]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -14471,7 +14522,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[184]": {
+                    "Component[186]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.4474883,
@@ -14499,7 +14550,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[185]": {
+                    "Component[187]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -14848,13 +14899,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[186]": {
+                    "Component[188]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -14913,7 +14964,7 @@
                         }
                     }
                 },
-                "ChildObject[187]": {
+                "ChildObject[189]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_064_00_A",
@@ -14923,7 +14974,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[188]": {
+                    "Component[190]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 1.4181036,
@@ -14951,7 +15002,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[189]": {
+                    "Component[191]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -15300,13 +15351,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[190]": {
+                    "Component[192]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -15365,7 +15416,7 @@
                         }
                     }
                 },
-                "ChildObject[191]": {
+                "ChildObject[193]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_006_00_A",
@@ -15375,7 +15426,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[192]": {
+                    "Component[194]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -2.0002732,
@@ -15403,7 +15454,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[193]": {
+                    "Component[195]": {
                         "via.render.Mesh": {
                             "v0": 15,
                             "v1": 1,
@@ -15752,13 +15803,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[194]": {
+                    "Component[196]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -15816,7 +15867,7 @@
                             "_IsBurn": false
                         }
                     },
-                    "Component[195]": {
+                    "Component[197]": {
                         "via.physics.Colliders": {
                             "Enabled": true,
                             "DevelopDraw": true,
@@ -15824,12 +15875,12 @@
                             "DependencyResources": [],
                             "v4": 1,
                             "v5": [
-                                288
+                                290
                             ]
                         }
                     }
                 },
-                "ChildObject[196]": {
+                "ChildObject[198]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_003_00_A",
@@ -15839,7 +15890,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[197]": {
+                    "Component[199]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.9609544,
@@ -15867,7 +15918,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[198]": {
+                    "Component[200]": {
                         "via.render.Mesh": {
                             "v0": 15,
                             "v1": 1,
@@ -16216,13 +16267,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[199]": {
+                    "Component[201]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -16280,7 +16331,7 @@
                             "_IsBurn": false
                         }
                     },
-                    "Component[200]": {
+                    "Component[202]": {
                         "via.physics.Colliders": {
                             "Enabled": true,
                             "DevelopDraw": true,
@@ -16288,12 +16339,12 @@
                             "DependencyResources": [],
                             "v4": 1,
                             "v5": [
-                                297
+                                299
                             ]
                         }
                     }
                 },
-                "ChildObject[201]": {
+                "ChildObject[203]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -16303,7 +16354,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[202]": {
+                    "Component[204]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -2.0286424,
@@ -16331,7 +16382,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[203]": {
+                    "Component[205]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -16680,13 +16731,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[204]": {
+                    "Component[206]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -16745,7 +16796,7 @@
                         }
                     }
                 },
-                "ChildObject[205]": {
+                "ChildObject[207]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -16755,7 +16806,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[206]": {
+                    "Component[208]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -2.1779878,
@@ -16783,7 +16834,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[207]": {
+                    "Component[209]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -17132,13 +17183,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[208]": {
+                    "Component[210]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -17197,7 +17248,7 @@
                         }
                     }
                 },
-                "ChildObject[209]": {
+                "ChildObject[211]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -17207,7 +17258,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[210]": {
+                    "Component[212]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -2.1070302,
@@ -17235,7 +17286,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[211]": {
+                    "Component[213]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -17584,13 +17635,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[212]": {
+                    "Component[214]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -17649,7 +17700,7 @@
                         }
                     }
                 },
-                "ChildObject[213]": {
+                "ChildObject[215]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -17659,7 +17710,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[214]": {
+                    "Component[216]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.9898547,
@@ -17687,7 +17738,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[215]": {
+                    "Component[217]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -18036,13 +18087,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[216]": {
+                    "Component[218]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -18101,7 +18152,7 @@
                         }
                     }
                 },
-                "ChildObject[217]": {
+                "ChildObject[219]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -18111,7 +18162,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[218]": {
+                    "Component[220]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.7182041,
@@ -18139,7 +18190,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[219]": {
+                    "Component[221]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -18488,13 +18539,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[220]": {
+                    "Component[222]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -18553,7 +18604,7 @@
                         }
                     }
                 },
-                "ChildObject[221]": {
+                "ChildObject[223]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -18563,7 +18614,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[222]": {
+                    "Component[224]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.828142,
@@ -18591,7 +18642,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[223]": {
+                    "Component[225]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -18940,13 +18991,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[224]": {
+                    "Component[226]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -19005,7 +19056,7 @@
                         }
                     }
                 },
-                "ChildObject[225]": {
+                "ChildObject[227]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -19015,7 +19066,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[226]": {
+                    "Component[228]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.907301,
@@ -19043,7 +19094,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[227]": {
+                    "Component[229]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -19392,13 +19443,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[228]": {
+                    "Component[230]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -19457,7 +19508,7 @@
                         }
                     }
                 },
-                "ChildObject[229]": {
+                "ChildObject[231]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -19467,7 +19518,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[230]": {
+                    "Component[232]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.7825702,
@@ -19495,7 +19546,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[231]": {
+                    "Component[233]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -19844,13 +19895,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[232]": {
+                    "Component[234]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -19909,7 +19960,7 @@
                         }
                     }
                 },
-                "ChildObject[233]": {
+                "ChildObject[235]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm41_065_00_A",
@@ -19919,7 +19970,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[234]": {
+                    "Component[236]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -1.656413,
@@ -19947,7 +19998,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[235]": {
+                    "Component[237]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -20296,13 +20347,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[236]": {
+                    "Component[238]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -20361,7 +20412,7 @@
                         }
                     }
                 },
-                "ChildObject[237]": {
+                "ChildObject[239]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_066_00_A",
@@ -20371,7 +20422,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[238]": {
+                    "Component[240]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -2.0274305,
@@ -20399,7 +20450,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[239]": {
+                    "Component[241]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -20748,13 +20799,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[240]": {
+                    "Component[242]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}
@@ -20813,7 +20864,7 @@
                         }
                     }
                 },
-                "ChildObject[241]": {
+                "ChildObject[243]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "sm42_017_01_A",
@@ -20823,7 +20874,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[242]": {
+                    "Component[244]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 0.56093836,
@@ -20851,7 +20902,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[243]": {
+                    "Component[245]": {
                         "via.render.Mesh": {
                             "v0": 31,
                             "v1": 1,
@@ -21200,13 +21251,13 @@
                             "v81": 0
                         }
                     },
-                    "Component[244]": {
+                    "Component[246]": {
                         "app.MeshSetting": {
                             "v0_Enabled": true,
-                            "_LodSelectionAlogrithm": 0,
-                            "_AssetNo": 0,
-                            "_IsMargeBoundaryInController": true,
-                            "_IsMargeBoundaryDrawOff": false,
+                            "v1": 0,
+                            "v2": 0,
+                            "v3": true,
+                            "v4": false,
                             "_IsPassThrough": true,
                             "_MeshMaterialLOD": {
                                 "": {}

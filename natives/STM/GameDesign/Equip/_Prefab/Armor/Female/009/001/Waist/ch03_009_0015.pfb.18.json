@@ -12,6 +12,15 @@
             "via.motion.ChainWind": {
                 "v0": ""
             }
+        },
+        "19": {
+            "via.motion.JointConstraintsLayer": {
+                "v0": 0,
+                "v1": 3,
+                "v2": 0,
+                "v3": 1065353216,
+                "v4": "@Art/Model/Character/ch03/009/001/5/ch03_009_0015_RS.jcns"
+            }
         }
     },
     "looseGameObjectRefs": {},
@@ -58,8 +67,8 @@
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
-                    "v2": "Art/Model/Character/ch03/009/001/5/ch03_009_0015.mesh",
-                    "v3": "Art/Model/Character/ch03/009/001/5/ch03_009_0015.mdf2",
+                    "v2": "@Art/Model/Character/ch03/009/001/5/ch03_009_0015.mesh",
+                    "v3": "@Art/Model/Character/ch03/009/001/5/ch03_009_0015.mdf2",
                     "v4": 0,
                     "v5": 1065353216,
                     "v6": 0,
@@ -406,10 +415,10 @@
             "Component[3]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -486,6 +495,7 @@
                             "_Hash": 2180083513
                         }
                     },
+                    "_DisableSequentialPoseBlend": false,
                     "_MotionBank": "",
                     "_LayerIndex": -1,
                     "_BankID": 0
@@ -567,9 +577,9 @@
                 "via.motion.Chain2": {
                     "Enabled": true,
                     "DebugDraw": false,
-                    "UpdateTiming": "[3]ConstraintsEnd",
+                    "UpdateTiming": "[4]Last",
                     "Priority": 0,
-                    "v4": "Art/Model/Character/ch03/009/001/5/ch03_009_0015.chain2",
+                    "v4": "@Art/Model/Character/ch03/009/001/5/ch03_009_0015.chain2",
                     "v5": 1065353216,
                     "v6": 0,
                     "v7": 0,
@@ -596,6 +606,16 @@
                     "v28": "00000000-0000-0000-0000-000000000000",
                     "v29": 1092616192,
                     "v30": 1123024896
+                }
+            },
+            "Component[13]": {
+                "via.motion.JointConstraints": {
+                    "v0_Enabled": true,
+                    "v1_UpdateMode": "[0]Character",
+                    "v2_UpdateTiming": "[1]AfterLateUpdate",
+                    "v3": [
+                        19
+                    ]
                 }
             }
         }

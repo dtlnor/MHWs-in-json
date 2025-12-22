@@ -76,12 +76,47 @@
                 "v8_MotionList": ""
             }
         },
+        "9": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/Em5206/00/Collision/Collider/Em5206_00_Body.rcol"
+            }
+        },
+        "10": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/Em5206/00/Collision/Collider/Em5206_00_Attack.rcol"
+            }
+        },
+        "11": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/Em5206/00/Collision/Collider/Em5206_00_Sensor.rcol"
+            }
+        },
+        "12": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommon_Zone.rcol"
+            }
+        },
+        "13": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonAnimal_Sensor.rcol"
+            }
+        },
+        "14": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonAnimal_Body.rcol"
+            }
+        },
+        "15": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommon_Dummy.rcol"
+            }
+        },
         "29": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
         },
-        "128": {
+        "53": {
             "via.motion.IkMultiLookAt2.LookAtLayer": {
                 "v0": "",
                 "v1": 132462089,
@@ -90,7 +125,7 @@
                 "v4": 327684
             }
         },
-        "136": {
+        "61": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
@@ -102,7 +137,7 @@
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Em5206_00_0",
-                    "Tag": "",
+                    "Tag": "Enemy|Animal",
                     "UpdateSelf": true,
                     "DrawSelf": true,
                     "TimeScale": -1.0
@@ -535,47 +570,18 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/Em5206/00/Collision/Collider/Em5206_00_Body.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/Em5206/00/Collision/Collider/Em5206_00_Attack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/Em5206/00/Collision/Collider/Em5206_00_Sensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommon_Zone.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonAnimal_Sensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommonAnimal_Body.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Enemy/CommonData/Collision/EmCommon_Dummy.rcol"
-                            }
-                        }
+                    "v4": [
+                        9,
+                        10,
+                        11,
+                        12,
+                        13,
+                        14,
+                        15
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[6]": {
@@ -754,109 +760,110 @@
                     "v5": "Motion/Enemy/em5206/Common/IK/em5206_IkLegSpine.ikls",
                     "v6": 1,
                     "v7": 1,
-                    "v8": 1065353216,
-                    "v9": 0,
+                    "v8": 0,
+                    "v9": 1065353216,
                     "v10": 0,
-                    "v11": 1008981770,
-                    "v12": 1065353216,
+                    "v11": 0,
+                    "v12": 1008981770,
                     "v13": 1065353216,
                     "v14": 1065353216,
-                    "v15": 0,
-                    "v16": 1065353216,
+                    "v15": 1065353216,
+                    "v16": 0,
                     "v17": 1065353216,
                     "v18": 1065353216,
                     "v19": 1065353216,
-                    "v20": 0,
-                    "v21": 3212836864,
-                    "v22": 1065353216,
+                    "v20": 1065353216,
+                    "v21": 0,
+                    "v22": 3212836864,
                     "v23": 1065353216,
                     "v24": 1065353216,
                     "v25": 1065353216,
                     "v26": 1065353216,
-                    "v27": 0,
-                    "v28": 1065353216,
+                    "v27": 1065353216,
+                    "v28": 0,
                     "v29": 1065353216,
-                    "v30": 0,
-                    "v31": 1065353216,
-                    "v32": 0,
+                    "v30": 1065353216,
+                    "v31": 0,
+                    "v32": 1065353216,
                     "v33": 0,
-                    "v34": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
+                    "v34": 0,
                     "v35": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v36": 0,
-                    "v37": 0,
-                    "v38": 0,
-                    "v39": 1065353216,
-                    "v40": 1,
-                    "v41": 1065353216,
-                    "v42": 0,
-                    "v43": 1065353216,
-                    "v44": 0,
-                    "v45": 0,
-                    "v46": 1050253722,
-                    "v47": 0,
-                    "v48": 1050253722,
-                    "v49": 1050253722,
-                    "v50": 1065353216,
-                    "v51": 4294967295,
-                    "v52": 0,
-                    "v53": 0,
-                    "v54": 0,
-                    "v55": 0,
-                    "v56": {
+                    "v36": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
+                    "v37": 0,
+                    "v38": 0,
+                    "v39": 0,
+                    "v40": 1065353216,
+                    "v41": 1,
+                    "v42": 1065353216,
+                    "v43": 0,
+                    "v44": 1065353216,
+                    "v45": 0,
+                    "v46": 0,
+                    "v47": 1050253722,
+                    "v48": 0,
+                    "v49": 1050253722,
+                    "v50": 1050253722,
+                    "v51": 1065353216,
+                    "v52": 4294967295,
+                    "v53": 0,
+                    "v54": 0,
+                    "v55": 0,
+                    "v56": 0,
                     "v57": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v58": 0,
-                    "v59": 0,
-                    "v60": 0,
-                    "v61": 0,
-                    "v62": {
+                    "v58": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v63": 1,
-                    "v64": 0,
+                    "v59": 0,
+                    "v60": 0,
+                    "v61": 0,
+                    "v62": 0,
+                    "v63": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "v64": 1,
                     "v65": 0,
-                    "v66": 1008981770,
-                    "v67": 0,
-                    "v68": 1,
-                    "v69": 1017370378,
-                    "v70": 1036831949,
-                    "v71": 1065269330,
-                    "v72": 1056964608,
-                    "v73": 0,
-                    "v74": 3212836864,
+                    "v66": 0,
+                    "v67": 1008981770,
+                    "v68": 0,
+                    "v69": 1,
+                    "v70": 1017370378,
+                    "v71": 1036831949,
+                    "v72": 1065269330,
+                    "v73": 1056964608,
+                    "v74": 0,
                     "v75": 3212836864,
                     "v76": 3212836864,
                     "v77": 3212836864,
                     "v78": 3212836864,
-                    "v79": 0,
+                    "v79": 3212836864,
                     "v80": 0,
                     "v81": 0,
-                    "v82": "empty",
+                    "v82": 0,
                     "v83": "empty",
                     "v84": "empty",
-                    "v85": "empty"
+                    "v85": "empty",
+                    "v86": "empty"
                 }
             },
             "Component[16]": {
@@ -962,715 +969,12 @@
                 "ace.GameMessageReceiver": {}
             },
             "Component[24]": {
-                "app.CharacterTimelineEventActorEnemy": {
-                    "v0": 1,
-                    "_ClipParamStartMotionSet": {
-                        "ace.CharacterTimelineEventActorBase.cParamStartMotion": {
-                            "MsgStartMotionSet": {
-                                "ace.TimelineEventDef.cCutSceneStartMotionSetParam": {
-                                    "_MotionList": "",
-                                    "_MotionID": -1,
-                                    "_MotionConnectBank": {
-                                        "": {}
-                                    }
-                                }
-                            },
-                            "Frame": 0
-                        }
-                    },
-                    "_ClipParamEndMotionSet": {
-                        "ace.CharacterTimelineEventActorBase.cParamEndMotion": {
-                            "MsgEndMotionSet": {
-                                "ace.TimelineEventDef.cCutSceneEndMotionSetParam": {
-                                    "_MotionList": "",
-                                    "_StartMotionID": -1,
-                                    "_LoopMotionID": -1,
-                                    "_EndMotionID": -1,
-                                    "STRUCT__NextActionID__Category": 0,
-                                    "STRUCT__NextActionID__Index": 0,
-                                    "_NextActionGUID": "00000000-0000-0000-0000-000000000000",
-                                    "_MotionConnectBank": {
-                                        "": {}
-                                    },
-                                    "STRUCT__StartPos__HasValue": false,
-                                    "STRUCT__StartPos__Value": {
-                                        "x": 0.0,
-                                        "y": 0.0,
-                                        "z": 0.0,
-                                        "pad": 0.0
-                                    },
-                                    "STRUCT__StartRot__HasValue": false,
-                                    "STRUCT__StartRot__Value": {
-                                        "x": 0.0,
-                                        "y": 0.0,
-                                        "z": 0.0,
-                                        "w": 1.0
-                                    }
-                                }
-                            },
-                            "Frame": 0
-                        }
-                    },
-                    "_CheckerFrame": 0,
-                    "_EnableIngameAdjust": false,
-                    "DisableRootScaleDisable": false,
-                    "ToContinuance": false,
-                    "_WarpData": {
-                        "ace.CharacterTimelineEventActorBase.PosWarpData": {
-                            "Type": "[0]WORLD_POS",
-                            "STRUCT_Pos__HasValue": false,
-                            "STRUCT_Pos__Value": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "pad": 0.0
-                            },
-                            "STRUCT_Rot__HasValue": false,
-                            "STRUCT_Rot__Value": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "w": 1.0
-                            }
-                        }
-                    },
-                    "_SandData": {
-                        "app.CharacterTimelineEventActorBase.SandParam": {
-                            "Rate": -1.0
-                        }
-                    },
-                    "_WetData": {
-                        "app.CharacterTimelineEventActorBase.WetParam": {
-                            "Rate": -1.0
-                        }
-                    },
-                    "_MadData": {
-                        "app.CharacterTimelineEventActorBase.MadParam": {
-                            "Rate": -1.0
-                        }
-                    },
-                    "_OilData": {
-                        "app.CharacterTimelineEventActorBase.OilParam": {
-                            "Rate": -1.0
-                        }
-                    },
-                    "_SnowData": {
-                        "app.CharacterTimelineEventActorBase.SnowParam": {
-                            "Rate": -1.0
-                        }
-                    },
-                    "IsEventObj": false,
-                    "_ClothResetPose": [
-                        {
-                            "app.CharacterTimelineEventActorBase.ClothResetPoseData": {
-                                "isEnable": false,
-                                "Resource": "",
-                                "ClothName": ""
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.ClothResetPoseData": {
-                                "isEnable": false,
-                                "Resource": "",
-                                "ClothName": ""
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.ClothResetPoseData": {
-                                "isEnable": false,
-                                "Resource": "",
-                                "ClothName": ""
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.ClothResetPoseData": {
-                                "isEnable": false,
-                                "Resource": "",
-                                "ClothName": ""
-                            }
-                        }
-                    ],
-                    "_ClipParamGpuClothCollision": {
-                        "app.CharacterTimelineEventActorBase.ParamGpuClothCollision": {
-                            "isEnable": false,
-                            "_CollisionTarget": "[2]All"
-                        }
-                    },
-                    "_OverwriteMotionFrame": -1.0,
-                    "ForceDisableIngameAdjust": false,
-                    "_StencilFadeTarget": false,
-                    "_DisableESI": false,
-                    "_EnableESIAllDisable": false,
-                    "_OverrideChainMotion": [
-                        {
-                            "app.CharacterTimelineEventActorBase.OverrideChainMotion": {
-                                "TargetName": "",
-                                "ChainMotion": "",
-                                "ChainMotionList": "",
-                                "MotID": 4294967295,
-                                "Frame": 0.0
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.OverrideChainMotion": {
-                                "TargetName": "",
-                                "ChainMotion": "",
-                                "ChainMotionList": "",
-                                "MotID": 4294967295,
-                                "Frame": 0.0
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.OverrideChainMotion": {
-                                "TargetName": "",
-                                "ChainMotion": "",
-                                "ChainMotionList": "",
-                                "MotID": 4294967295,
-                                "Frame": 0.0
-                            }
-                        }
-                    ],
-                    "_ConstrainParentData": {
-                        "app.CharacterTimelineEventActorBase.ConstrainParentData": {
-                            "IsEnable": false,
-                            "TargetNpcID": {
-                                "app.NpcDef.ID_Serializable": {
-                                    "_Value": "[4]INVALID"
-                                }
-                            },
-                            "JointName": ""
-                        }
-                    },
-                    "_IsForceFixedMotion": false,
-                    "_IsForceNoneMotion": false,
-                    "_EnableInterpolateMotion": false,
-                    "_DisableForceSkipMotion": false,
-                    "_ForceNextCutChainReset": false,
-                    "_EndNextActionGUID": "00000000-0000-0000-0000-000000000000",
-                    "_SkipEndActionStopDisable": false,
-                    "_SkipEndActionNextMoveStart": false,
-                    "_SkipEndActionClothWarp": false,
-                    "_IsSkipEndMotionStartDisable": false,
-                    "_IsSkipEndMotionAllDisable": false,
-                    "_EndMotionPosGroundAdjust": false,
-                    "_EndMotionRotFlatQuat": false,
-                    "_MaterialSettingData": [
-                        {
-                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
-                                "IsEnable": false,
-                                "MaterialNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamType": "[4]MAX",
-                                "ParamFloat": 0.0,
-                                "ParamFloat4": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                },
-                                "ParamColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "ParamColorF": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                }
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
-                                "IsEnable": false,
-                                "MaterialNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamType": "[4]MAX",
-                                "ParamFloat": 0.0,
-                                "ParamFloat4": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                },
-                                "ParamColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "ParamColorF": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                }
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
-                                "IsEnable": false,
-                                "MaterialNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamType": "[4]MAX",
-                                "ParamFloat": 0.0,
-                                "ParamFloat4": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                },
-                                "ParamColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "ParamColorF": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                }
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.MaterialSettingData": {
-                                "IsEnable": false,
-                                "MaterialNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamNameHash": {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                "ParamType": "[4]MAX",
-                                "ParamFloat": 0.0,
-                                "ParamFloat4": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                },
-                                "ParamColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "ParamColorF": {
-                                    "x": 0.0,
-                                    "y": 0.0,
-                                    "z": 0.0,
-                                    "w": 0.0
-                                }
-                            }
-                        }
-                    ],
-                    "_ChainReduceSettingData": {
-                        "app.CharacterTimelineEventActorBase.ChainReduceSettingData": {
-                            "ChainReduceIndex": -1,
-                            "EnableChainReduceObj": false,
-                            "DisableChainReduceObj": false,
-                            "ChainReduceBase": false,
-                            "ChainForceRate": -1.0
-                        }
-                    },
-                    "_ChainStabilizeSettingData": {
-                        "app.CharacterTimelineEventActorBase.ChainStabilizeSettingData": {
-                            "OverrideStabilizeNum": -1
-                        }
-                    },
-                    "_NextActionVariationSettingData": [
-                        {
-                            "app.CharacterTimelineEventActorBase.NextActionVariationSettingData": {
-                                "VariationID": -1,
-                                "EndNextActionGUID": "00000000-0000-0000-0000-000000000000",
-                                "IsStopDisable": false,
-                                "IsStopOnly": false
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.NextActionVariationSettingData": {
-                                "VariationID": -1,
-                                "EndNextActionGUID": "00000000-0000-0000-0000-000000000000",
-                                "IsStopDisable": false,
-                                "IsStopOnly": false
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.NextActionVariationSettingData": {
-                                "VariationID": -1,
-                                "EndNextActionGUID": "00000000-0000-0000-0000-000000000000",
-                                "IsStopDisable": false,
-                                "IsStopOnly": false
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.NextActionVariationSettingData": {
-                                "VariationID": -1,
-                                "EndNextActionGUID": "00000000-0000-0000-0000-000000000000",
-                                "IsStopDisable": false,
-                                "IsStopOnly": false
-                            }
-                        }
-                    ],
-                    "_MeshMaterialVariationSettingData": [
-                        {
-                            "app.CharacterTimelineEventActorBase.MeshMaterialVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "MeshRes": "",
-                                "MeshMaterialRes": ""
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.MeshMaterialVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "MeshRes": "",
-                                "MeshMaterialRes": ""
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.MeshMaterialVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "MeshRes": "",
-                                "MeshMaterialRes": ""
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.MeshMaterialVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "MeshRes": "",
-                                "MeshMaterialRes": ""
-                            }
-                        }
-                    ],
-                    "_PartsVariationSettingData": [
-                        {
-                            "app.CharacterTimelineEventActorBase.PartsVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "IsOtherVariationInverse": false,
-                                "PartsID": -1,
-                                "IsDisp": false
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.PartsVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "IsOtherVariationInverse": false,
-                                "PartsID": -1,
-                                "IsDisp": false
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.PartsVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "IsOtherVariationInverse": false,
-                                "PartsID": -1,
-                                "IsDisp": false
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorBase.PartsVariationSettingData": {
-                                "GroupID": -1,
-                                "VariationID": -1,
-                                "IsOtherVariationInverse": false,
-                                "PartsID": -1,
-                                "IsDisp": false
-                            }
-                        }
-                    ],
-                    "_SeamlessInRotateAdjustData": {
-                        "app.CharacterTimelineEventActorBase.SeamlessInRotateAdjustData": {
-                            "IsEnable": false,
-                            "TargetPos": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "pad": 0.0
-                            },
-                            "RotateSpeed": 0.0,
-                            "SuccessRotate": 5.0
-                        }
-                    },
-                    "_DiningJointOffsetData": {
-                        "app.CharacterTimelineEventActorBase.DiningJointOffsetData": {
-                            "IsEnable": false,
-                            "IsRoot": false,
-                            "TargetJointName": {
-                                "ace.cStrHash": {
-                                    "_Hash": 0
-                                }
-                            },
-                            "TargetJointNameList": [
-                                {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                },
-                                {
-                                    "ace.cStrHash": {
-                                        "_Hash": 0
-                                    }
-                                }
-                            ]
-                        }
-                    },
-                    "_WarpDataWithBindEnd": {
-                        "ace.CharacterTimelineEventActorBase.PosWarpData": {
-                            "Type": "[0]WORLD_POS",
-                            "STRUCT_Pos__HasValue": false,
-                            "STRUCT_Pos__Value": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "pad": 0.0
-                            },
-                            "STRUCT_Rot__HasValue": false,
-                            "STRUCT_Rot__Value": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "w": 1.0
-                            }
-                        }
-                    },
-                    "_ClipParamGalleryEndMotionSet": {
-                        "ace.CharacterTimelineEventActorBase.cParamEndMotion": {
-                            "MsgEndMotionSet": {
-                                "ace.TimelineEventDef.cCutSceneEndMotionSetParam": {
-                                    "_MotionList": "",
-                                    "_StartMotionID": -1,
-                                    "_LoopMotionID": -1,
-                                    "_EndMotionID": -1,
-                                    "STRUCT__NextActionID__Category": -1,
-                                    "STRUCT__NextActionID__Index": -1,
-                                    "_NextActionGUID": "00000000-0000-0000-0000-000000000000",
-                                    "_MotionConnectBank": {
-                                        "": {}
-                                    },
-                                    "STRUCT__StartPos__HasValue": false,
-                                    "STRUCT__StartPos__Value": {
-                                        "x": 0.0,
-                                        "y": 0.0,
-                                        "z": 0.0,
-                                        "pad": 0.0
-                                    },
-                                    "STRUCT__StartRot__HasValue": false,
-                                    "STRUCT__StartRot__Value": {
-                                        "x": 0.0,
-                                        "y": 0.0,
-                                        "z": 0.0,
-                                        "w": 0.0
-                                    }
-                                }
-                            },
-                            "Frame": 0
-                        }
-                    },
-                    "_GalleryStartMotionFrame": -1.0,
-                    "_OverrideStartMotionFrame": -1.0,
-                    "_ModelPartsDataList": [
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelPartsData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelPartsData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelPartsData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelPartsData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1
-                            }
-                        }
-                    ],
-                    "_ModelMaterialDataList": [
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        },
-                        {
-                            "app.CharacterTimelineEventActorEnemy.ModelMaterialData": {
-                                "ResId": -1,
-                                "ConditionIndex": -1,
-                                "ConditionGUID": "00000000-0000-0000-0000-000000000000"
-                            }
-                        }
-                    ],
-                    "_Em0151_LightControl": {
-                        "app.CharacterTimelineEventActorEnemy.Em0151_LightControl": {
-                            "LightOff": false
-                        }
-                    },
-                    "_IkLegRateControl": {
-                        "app.CharacterTimelineEventActorEnemy.IkLegRateControl": {
-                            "_EnableRateControl": false,
-                            "_BlendRate": -1.0
-                        }
-                    }
-                }
-            },
-            "Component[25]": {
-                "via.dynamics.Ragdoll": {
-                    "v0_Enabled": true,
-                    "v1_WorldNameHash": 0,
-                    "v2_DevelopDraw": false,
-                    "v3_Static": false,
-                    "v4_DependencyHierarchy": false,
-                    "v5": 1,
-                    "v6": 0,
-                    "v7": "",
-                    "v8": 0,
-                    "v9": "",
-                    "v10": 0,
-                    "v11": "",
-                    "v12": 0,
-                    "v13": 0,
-                    "v14": 4294967295,
-                    "v15": 1065353216,
-                    "v16": 0,
-                    "v17": 1,
-                    "v18": 0,
-                    "v19": 0,
-                    "v20": "",
-                    "v21": 0,
-                    "v22": "",
-                    "v23": "",
-                    "v24": 0,
-                    "v25": "",
-                    "v26": 0,
-                    "v27": 0,
-                    "v28": 1065353216,
-                    "v29": 0,
-                    "v30": 1065353216,
-                    "v31": 0,
-                    "v32": 1,
-                    "v33": 1120403456,
-                    "v34": "",
-                    "v35": "",
-                    "v36": 0
-                }
-            },
-            "Component[26]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": false,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -1728,23 +1032,15 @@
                     "_IsBurn": false
                 }
             },
-            "Component[27]": {
+            "Component[25]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
-            "Component[28]": {
-                "app.InteractController": {
-                    "v0": 0,
-                    "_Data": {
-                        "": {}
-                    }
-                }
-            },
-            "Component[29]": {
+            "Component[26]": {
                 "ace.model_material_manager.ModelMaterialManager": {
                     "v0": 1,
                     "_Holders": [
@@ -1761,12 +1057,12 @@
                     ]
                 }
             },
-            "Component[30]": {
+            "Component[27]": {
                 "app.ConstraintUpdater": {
                     "v0": 0
                 }
             },
-            "Component[31]": {
+            "Component[28]": {
                 "app.SoundEnemyCullingController": {
                     "v0": 1,
                     "_Settings": {
@@ -1777,7 +1073,7 @@
                     "_ForceCullingAfterDeath": true
                 }
             },
-            "Component[32]": {
+            "Component[29]": {
                 "ace.model_parts_manager.ModelPartsManager2": {
                     "v0": 1,
                     "_Holders": [
@@ -1794,39 +1090,39 @@
                     ]
                 }
             },
-            "Component[33]": {
+            "Component[30]": {
                 "app.EnemyBrowserHolder": {}
             },
-            "Component[34]": {
+            "Component[31]": {
                 "app.model_blend_shape_manager.ModelBlendShapeManager": {
                     "v0": 1,
                     "_Holders": []
                 }
             },
-            "Component[35]": {
+            "Component[32]": {
                 "via.motion.IkMultiLookAt2": {
                     "Enabled": true,
                     "DebugDraw": false,
                     "UpdateTiming": "[5]ByBehavior",
                     "Priority": 0,
                     "v4": [
-                        128
+                        53
                     ],
                     "v5": "010101010000000000000000",
                     "v6": 4294967295
                 }
             },
-            "Component[36]": {
+            "Component[33]": {
                 "app.SoundEnemyMotionSequence": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
-            "Component[37]": {
+            "Component[34]": {
                 "app.ChainSetting": {
                     "v0_Enabled": true,
                     "_WindAssetOverwrite": "",
@@ -1842,15 +1138,15 @@
                     "_IsCreateVolumeOccludee": true
                 }
             },
-            "Component[38]": {
+            "Component[35]": {
                 "app.AppStreamingControllerRoot": {
                     "v0_Enabled": true
                 }
             },
-            "Component[39]": {
+            "Component[36]": {
                 "via.render.StreamingMeshController": {}
             },
-            "Component[40]": {
+            "Component[37]": {
                 "via.render.StreamingTextureController": {
                     "v0_MeshLowerPriority": 3,
                     "v1_MeshHigherPriority": 0,
@@ -1859,12 +1155,12 @@
                     "v4_Strategy": "[0]Default"
                 }
             },
-            "Component[41]": {
+            "Component[38]": {
                 "app.AppStreamingController": {
                     "v0_Enabled": true
                 }
             },
-            "Component[42]": {
+            "Component[39]": {
                 "app.ChainSub2": {
                     "Enabled": true,
                     "DebugDraw": false,
@@ -1878,7 +1174,7 @@
                     "v9": 0,
                     "v10": 1101004800,
                     "v11": 0,
-                    "v12": 136,
+                    "v12": 61,
                     "v13": 0,
                     "v14": 0,
                     "v15": 0,
@@ -1899,19 +1195,19 @@
                     "v30": 1123024896
                 }
             },
-            "Component[43]": {
+            "Component[40]": {
                 "ace.VolumeOccludeeController": {
                     "v0": 1
                 }
             },
-            "Component[44]": {
+            "Component[41]": {
                 "app.StainMeshController": {
                     "v0": 1,
                     "_WholeCtrlType": "[1]PG",
                     "_HeightCtrlType": "[1]PG"
                 }
             },
-            "Component[45]": {
+            "Component[42]": {
                 "app.SoundEnemySnowDepthGetter": {
                     "v0": 1,
                     "_Settings": {
@@ -1921,13 +1217,13 @@
                     }
                 }
             },
-            "Component[46]": {
+            "Component[43]": {
                 "app.EnemyAnimalCharacter": {
                     "v0": 1,
                     "_IsCameraLockTarget": true
                 }
             },
-            "Component[47]": {
+            "Component[44]": {
                 "app.EnemyAnimalController": {
                     "v0": 1
                 }

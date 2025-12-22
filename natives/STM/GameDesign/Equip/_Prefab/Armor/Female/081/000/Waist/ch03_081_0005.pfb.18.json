@@ -42,23 +42,14 @@
         },
         "24": {
             "via.motion.JointExprGraphLayer": {
-                "v0_JointExprGraph": "Art/Model/Character/ch03/081/000/5/ch03_081_0005_skirt_00.jntexprgraph",
+                "v0_JointExprGraph": "Art/System/ExprGraphDefinition/Skirt.jntexprgraph",
                 "v1_EnabledOverrideUpdateTiming": false,
                 "v2_OverrideUpdateTiming": "[2]Last",
                 "v3_Pause": false,
                 "v4_BlendRate": 1.0
             }
         },
-        "25": {
-            "via.motion.JointExprGraphLayer": {
-                "v0_JointExprGraph": "Art/Model/Character/ch03/081/000/5/ch03_081_0005_skirt_01.jntexprgraph",
-                "v1_EnabledOverrideUpdateTiming": false,
-                "v2_OverrideUpdateTiming": "[2]Last",
-                "v3_Pause": false,
-                "v4_BlendRate": 1.0
-            }
-        },
-        "31": {
+        "30": {
             "via.dynamics.cloth.CurveWind": {
                 "v0_Period": 1.0,
                 "v1_ScaleCurveX": 1.0,
@@ -99,19 +90,19 @@
                 }
             }
         },
-        "39": {
+        "68": {
             "via.character.CollisionShapePresetInfo": {
                 "v0_Resource": "Art/Model/Character/ch02/Common/Common_root_plane.clsp",
                 "v1_Enabled": true,
                 "v2_Global": false
             }
         },
-        "47": {
+        "76": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
         },
-        "56": {
+        "85": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
@@ -161,7 +152,7 @@
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
-                    "v2": "Art/Model/Character/ch03/081/000/5/ch03_081_0005.mesh",
+                    "v2": "@Art/Model/Character/ch03/081/000/5/ch03_081_0005.mesh",
                     "v3": "Art/Model/Character/ch03/081/000/5/ch03_081_0005.mdf2",
                     "v4": 0,
                     "v5": 1065353216,
@@ -509,10 +500,10 @@
             "Component[3]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -589,6 +580,7 @@
                             "_Hash": 2180083513
                         }
                     },
+                    "_DisableSequentialPoseBlend": false,
                     "_MotionBank": "",
                     "_LayerIndex": -1,
                     "_BankID": 0
@@ -722,8 +714,7 @@
                     "v2_UpdateTiming": "[3]ByBehavior",
                     "v3": 0,
                     "v4": [
-                        24,
-                        25
+                        24
                     ]
                 }
             },
@@ -797,39 +788,47 @@
                     "v56": 0,
                     "v57": 0,
                     "v58": 0,
-                    "v59": 0,
-                    "v60": 0,
+                    "v59": 1065353216,
+                    "v60": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.1,
+                        "w": 0.0
+                    },
                     "v61": 0,
                     "v62": 0,
                     "v63": 0,
                     "v64": 0,
-                    "v65": 1036831949,
-                    "v66": 1008981770,
-                    "v67": 1008981770,
-                    "v68": "",
-                    "v69": 0,
-                    "v70": 0,
-                    "v71": 0,
-                    "v72": 1065353216,
-                    "v73": "Art/Model/Character/ch03/081/000/5/ch03_081_0005.gpuc",
-                    "v74": "",
-                    "v75": 1,
-                    "v76": 2,
-                    "v77": 2,
-                    "v78": 4,
-                    "v79": 4,
-                    "v80": 0,
-                    "v81": {
+                    "v65": 0,
+                    "v66": 0,
+                    "v67": 0,
+                    "v68": 1036831949,
+                    "v69": 1008981770,
+                    "v70": 1008981770,
+                    "v71": "",
+                    "v72": 0,
+                    "v73": 0,
+                    "v74": 0,
+                    "v75": 1065353216,
+                    "v76": "@Art/Model/Character/ch03/081/000/5/ch03_081_0005.gpuc",
+                    "v77": "",
+                    "v78": 1,
+                    "v79": 2,
+                    "v80": 2,
+                    "v81": 4,
+                    "v82": 4,
+                    "v83": 0,
+                    "v84": {
                         "x": 0.0,
                         "y": -9.80665,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v82": 0,
-                    "v83": 1,
-                    "v84": 31,
-                    "v85": 1,
-                    "v86": {
+                    "v85": 0,
+                    "v86": 1,
+                    "v87": 30,
+                    "v88": 1,
+                    "v89": {
                         "x": 1.0,
                         "y": 0.0,
                         "z": 0.0,
@@ -847,10 +846,563 @@
                     "_IsUpdateSelf": false,
                     "_IsWindRecieve": true,
                     "_IsCullingEnable": true,
-                    "_IsCreateVolumeOccludee": true
+                    "_IsCreateVolumeOccludee": true,
+                    "_IsDestroyComponent_NSW2": false
                 }
             },
-            "ChildObject[18]": {
+            "Component[18]": {
+                "app.SkirtBatchProcessing": {
+                    "v0_Enabled": true,
+                    "SkirtVersion": "[0]V1",
+                    "HipJointName": "Hip",
+                    "LeftThighJointName": "L_Thigh",
+                    "RightThighJointName": "R_Thigh",
+                    "LeftKneeJointName": "L_Knee",
+                    "RightKneeJointName": "R_Knee",
+                    "LeftAnkleJointName": "L_Foot",
+                    "RightAnkleJointName": "R_Foot",
+                    "HJData": [
+                        {
+                            "app.SkirtHJData": {
+                                "JointName": "Hip_HJ_00"
+                            }
+                        }
+                    ],
+                    "ConstData": [
+                        {
+                            "app.SkirtConstData": {
+                                "JointName": "L_Ctrl5_jnt_upper_point",
+                                "ParentHJIndex": 0
+                            }
+                        },
+                        {
+                            "app.SkirtConstData": {
+                                "JointName": "L_Ctrl5_jnt_lower_point",
+                                "ParentHJIndex": 0
+                            }
+                        },
+                        {
+                            "app.SkirtConstData": {
+                                "JointName": "R_Ctrl5_jnt_upper_point",
+                                "ParentHJIndex": 0
+                            }
+                        },
+                        {
+                            "app.SkirtConstData": {
+                                "JointName": "R_Ctrl5_jnt_lower_point",
+                                "ParentHJIndex": 0
+                            }
+                        }
+                    ],
+                    "SubData": [
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_00_cloth_HJ_00",
+                                "SrcJointName": "L_side_00_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -36.6,
+                                "RightOffsetAngle": 28.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[1]XYZ",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.1,
+                                    "y": 0.5,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_01_cloth_HJ_00",
+                                "SrcJointName": "L_side_01_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -37.5,
+                                "RightOffsetAngle": 26.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[1]XYZ",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.2,
+                                    "y": 0.3,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_02_cloth_HJ_00",
+                                "SrcJointName": "L_side_02_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -39.0,
+                                "RightOffsetAngle": 23.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[1]XYZ",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.0,
+                                    "y": 0.1,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_03_cloth_HJ_00",
+                                "SrcJointName": "L_side_03_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -30.0,
+                                "RightOffsetAngle": 18.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_04_cloth_HJ_00",
+                                "SrcJointName": "L_side_04_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -27.0,
+                                "RightOffsetAngle": 17.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[1]Mul",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.2,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_05_cloth_HJ_00",
+                                "SrcJointName": "L_side_05_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -25.0,
+                                "RightOffsetAngle": 8.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_06_cloth_HJ_00",
+                                "SrcJointName": "L_side_06_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -10.0,
+                                "RightOffsetAngle": 1.4,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_07_cloth_HJ_00",
+                                "SrcJointName": "L_side_07_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -5.0,
+                                "RightOffsetAngle": 0.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_08_cloth_HJ_00",
+                                "SrcJointName": "L_side_08_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 0.0,
+                                "RightOffsetAngle": 0.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_09_cloth_HJ_00",
+                                "SrcJointName": "L_side_09_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 15.0,
+                                "RightOffsetAngle": 0.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_10_cloth_HJ_00",
+                                "SrcJointName": "L_side_10_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 18.0,
+                                "RightOffsetAngle": -10.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "L_side_11_cloth_HJ_00",
+                                "SrcJointName": "L_side_11_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 20.0,
+                                "RightOffsetAngle": -12.7,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_00_cloth_HJ_00",
+                                "SrcJointName": "R_side_00_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -24.2,
+                                "RightOffsetAngle": 32.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[1]Mul",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.3,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_01_cloth_HJ_00",
+                                "SrcJointName": "R_side_01_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -23.0,
+                                "RightOffsetAngle": 30.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[1]Mul",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.3,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_02_cloth_HJ_00",
+                                "SrcJointName": "R_side_02_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -16.0,
+                                "RightOffsetAngle": 24.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[1]Mul",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.3,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_03_cloth_HJ_00",
+                                "SrcJointName": "R_side_03_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -12.0,
+                                "RightOffsetAngle": 17.5,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_04_cloth_HJ_00",
+                                "SrcJointName": "R_side_04_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -0.5,
+                                "RightOffsetAngle": 5.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_05_cloth_HJ_00",
+                                "SrcJointName": "R_side_05_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 0.0,
+                                "RightOffsetAngle": 8.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_06_cloth_HJ_00",
+                                "SrcJointName": "R_side_06_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 0.0,
+                                "RightOffsetAngle": -5.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_07_cloth_HJ_00",
+                                "SrcJointName": "R_side_07_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 0.0,
+                                "RightOffsetAngle": -13.8,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_08_cloth_HJ_00",
+                                "SrcJointName": "R_side_08_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 0.0,
+                                "RightOffsetAngle": -16.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "R_side_09_cloth_HJ_00",
+                                "SrcJointName": "R_side_09_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 10.6,
+                                "RightOffsetAngle": -10.6,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "C_side_00_cloth_HJ_00",
+                                "SrcJointName": "C_side_00_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": -35.0,
+                                "RightOffsetAngle": 26.5,
+                                "LimitAngle": 120.0,
+                                "Apply": "[1]XYZ",
+                                "Curve": "[1]Mul",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 1.0,
+                                    "y": 0.5,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        },
+                        {
+                            "app.SkirtSubJointData": {
+                                "JointName": "C_side_01_cloth_HJ_00",
+                                "SrcJointName": "C_side_01_cloth_Offset_00",
+                                "Keep1Range": 20.0,
+                                "LegLength": 130.0,
+                                "ConeAngle": 20.0,
+                                "LeftOffsetAngle": 15.0,
+                                "RightOffsetAngle": -15.0,
+                                "LimitAngle": 120.0,
+                                "Apply": "[0]X",
+                                "Curve": "[0]None",
+                                "Multi": "[0]Mul",
+                                "Values": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "ChildObject[19]": {
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "CLSP_Ground",
@@ -860,7 +1412,7 @@
                         "TimeScale": -1.0
                     }
                 },
-                "Component[19]": {
+                "Component[20]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -888,7 +1440,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[20]": {
+                "Component[21]": {
                     "app.CLSPVirtualGround": {
                         "_HeightDamping": {
                             "ace.cDampingParam": {
@@ -911,11 +1463,11 @@
                         "_AngleRadLimit": 0.7853982
                     }
                 },
-                "Component[21]": {
+                "Component[22]": {
                     "via.character.CollisionShapePreset": {
                         "v0": 0,
                         "v1": [
-                            39
+                            68
                         ],
                         "v2": 0,
                         "v3": 0,
@@ -923,14 +1475,14 @@
                         "v5": 0
                     }
                 },
-                "Component[22]": {
+                "Component[23]": {
                     "app.CollisionShapePresetController": {
                         "_Enabled": true,
                         "_VirtualGround": 0
                     }
                 }
             },
-            "ChildObject[23]": {
+            "ChildObject[24]": {
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "ch02_081_0005_0",
@@ -940,7 +1492,7 @@
                         "TimeScale": -1.0
                     }
                 },
-                "Component[24]": {
+                "Component[25]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -968,7 +1520,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[25]": {
+                "Component[26]": {
                     "via.render.Mesh": {
                         "v0": 31,
                         "v1": 1,
@@ -1317,13 +1869,13 @@
                         "v81": 0
                     }
                 },
-                "Component[26]": {
+                "Component[27]": {
                     "app.MeshSetting": {
                         "v0_Enabled": true,
-                        "_LodSelectionAlogrithm": 0,
-                        "_AssetNo": 0,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false,
+                        "v1": 0,
+                        "v2": 0,
+                        "v3": true,
+                        "v4": false,
                         "_IsPassThrough": false,
                         "_MeshMaterialLOD": {
                             "": {}
@@ -1381,7 +1933,7 @@
                         "_IsBurn": false
                     }
                 },
-                "Component[27]": {
+                "Component[28]": {
                     "app.ChainSetting": {
                         "v0_Enabled": true,
                         "_WindAssetOverwrite": "",
@@ -1397,7 +1949,7 @@
                         "_IsCreateVolumeOccludee": true
                     }
                 },
-                "Component[28]": {
+                "Component[29]": {
                     "via.motion.Chain2": {
                         "Enabled": true,
                         "DebugDraw": false,
@@ -1411,7 +1963,7 @@
                         "v9": 0,
                         "v10": 1101004800,
                         "v11": 0,
-                        "v12": 47,
+                        "v12": 76,
                         "v13": 0,
                         "v14": 0,
                         "v15": 0,
@@ -1432,14 +1984,14 @@
                         "v30": 1123024896
                     }
                 },
-                "Component[29]": {
+                "Component[30]": {
                     "app.StainMeshController": {
                         "v0": 1,
                         "_WholeCtrlType": "[0]PARENT",
                         "_HeightCtrlType": "[2]NOTHING"
                     }
                 },
-                "Component[30]": {
+                "Component[31]": {
                     "via.motion.Motion": {
                         "v0": 1,
                         "v1": 0,
@@ -1474,7 +2026,7 @@
                     }
                 }
             },
-            "ChildObject[31]": {
+            "ChildObject[32]": {
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "ch02_081_0005_9",
@@ -1484,7 +2036,7 @@
                         "TimeScale": -1.0
                     }
                 },
-                "Component[32]": {
+                "Component[33]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -1512,7 +2064,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[33]": {
+                "Component[34]": {
                     "via.render.Mesh": {
                         "v0": 31,
                         "v1": 1,
@@ -1861,13 +2413,13 @@
                         "v81": 0
                     }
                 },
-                "Component[34]": {
+                "Component[35]": {
                     "app.MeshSetting": {
                         "v0_Enabled": true,
-                        "_LodSelectionAlogrithm": 0,
-                        "_AssetNo": 0,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false,
+                        "v1": 0,
+                        "v2": 0,
+                        "v3": true,
+                        "v4": false,
                         "_IsPassThrough": false,
                         "_MeshMaterialLOD": {
                             "": {}
@@ -1925,7 +2477,7 @@
                         "_IsBurn": false
                     }
                 },
-                "Component[35]": {
+                "Component[36]": {
                     "app.ChainSetting": {
                         "v0_Enabled": true,
                         "_WindAssetOverwrite": "",
@@ -1941,7 +2493,7 @@
                         "_IsCreateVolumeOccludee": true
                     }
                 },
-                "Component[36]": {
+                "Component[37]": {
                     "via.motion.Chain2": {
                         "Enabled": true,
                         "DebugDraw": false,
@@ -1955,7 +2507,7 @@
                         "v9": 0,
                         "v10": 1101004800,
                         "v11": 0,
-                        "v12": 56,
+                        "v12": 85,
                         "v13": 0,
                         "v14": 0,
                         "v15": 0,
@@ -1976,14 +2528,14 @@
                         "v30": 1123024896
                     }
                 },
-                "Component[37]": {
+                "Component[38]": {
                     "app.StainMeshController": {
                         "v0": 1,
                         "_WholeCtrlType": "[0]PARENT",
                         "_HeightCtrlType": "[2]NOTHING"
                     }
                 },
-                "Component[38]": {
+                "Component[39]": {
                     "via.motion.Motion": {
                         "v0": 1,
                         "v1": 0,

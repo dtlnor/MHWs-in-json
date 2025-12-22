@@ -77,6 +77,11 @@
                 "v2_DelayCoefficient": 1.0
             }
         },
+        "14": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Otomo/ActionData/Collision/Collider/DragAirShipAttack.rcol"
+            }
+        },
         "19": {
             "via.motion.ChainWind": {
                 "v0": ""
@@ -512,10 +517,10 @@
             "Component[4]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": false,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -671,10 +676,10 @@
             "Component[7]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -684,17 +689,12 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Otomo/ActionData/Collision/Collider/DragAirShipAttack.rcol"
-                            }
-                        }
+                    "v4": [
+                        14
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[9]": {
@@ -781,9 +781,9 @@
             "Component[15]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             }
         }

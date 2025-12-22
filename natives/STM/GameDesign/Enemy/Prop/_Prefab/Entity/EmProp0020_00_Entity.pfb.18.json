@@ -1,14 +1,14 @@
 {
     "gameObjectRefInfos": [
         {
-            "objectId": "[20]",
+            "objectId": "[21]",
             "propertyId_HB": 4,
             "propertyId_LB": 2,
             "fieldArrayIndex": 0,
             "targetId": "[0]"
         },
         {
-            "objectId": "[21]",
+            "objectId": "[22]",
             "propertyId_HB": 4,
             "propertyId_LB": 2,
             "fieldArrayIndex": 0,
@@ -1137,10 +1137,10 @@
             "Component[5]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -1238,10 +1238,10 @@
             "Component[8]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -1285,7 +1285,8 @@
                         "app.snd_user_data.SoundVibrationTriggerListData": {
                             "userdataPath": "Sound/ADVibration/UserData/Gimmick/Sound_gm_VibrationTriggerListData.user"
                         }
-                    }
+                    },
+                    "_ForceValid": false
                 }
             },
             "ChildObject[12]": {
@@ -1434,6 +1435,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": true,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 90.0,
@@ -2095,6 +2103,23 @@
                                 "s": 0.0,
                                 "r": 1.0
                             }
+                        }
+                    },
+                    "Component[20]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
                         }
                     }
                 }

@@ -1,6 +1,27 @@
 {
     "gameObjectRefInfos": [],
-    "looseInstance": {},
+    "looseInstance": {
+        "3": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "4": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "5": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Gm000/Gm000_130/Collision/Gm000_130_Sensor.rcol"
+            }
+        },
+        "6": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Gm000/Gm000_130/Collision/Gm000_130_Zone.rcol"
+            }
+        }
+    },
     "looseGameObjectRefs": {},
     "ObjectsHierarchy": {
         "MainObject[0]": {
@@ -47,32 +68,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Gm000/Gm000_130/Collision/Gm000_130_Sensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Gm000/Gm000_130/Collision/Gm000_130_Zone.rcol"
-                            }
-                        }
+                    "v4": [
+                        3,
+                        4,
+                        5,
+                        6
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[3]": {
@@ -212,15 +216,16 @@
                     "v26": 0,
                     "v27": 0,
                     "v28": 0,
-                    "v29": 4294967295,
-                    "v30": 0,
-                    "v31": 1
+                    "v29": 0,
+                    "v30": 4294967295,
+                    "v31": 0,
+                    "v32": 1
                 }
             },
             "Component[13]": {
                 "app.FoliageSetting": {
                     "v0_Enabled": true,
-                    "_DisableDispOffController": false,
+                    "v1": false,
                     "_IsPassThrough": false,
                     "_DispType": 686504192,
                     "_HeatReceiverParamID": -2104865152,
@@ -273,6 +278,10 @@
                         "w": 0.0
                     },
                     "_IsBurn": false,
+                    "_DisableShadowOptMode": false,
+                    "_DisableShadowOptModeSaveWork": true,
+                    "_EnableDencityCulling": false,
+                    "_EnableStaticFoliageOptMode": false,
                     "_MaterialValues": [],
                     "_MaterialParamIndexArray": [],
                     "_IsCullingByDistance": false
@@ -390,7 +399,8 @@
                         "app.snd_user_data.SoundVibrationTriggerListData": {
                             "userdataPath": "Sound/ADVibration/UserData/Gimmick/Sound_gm_VibrationTriggerListData.user"
                         }
-                    }
+                    },
+                    "_ForceValid": false
                 }
             },
             "ChildObject[21]": {
@@ -467,15 +477,16 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
                 "Component[24]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": 686504192,
                         "_HeatReceiverParamID": -2104865152,
@@ -528,6 +539,10 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": false,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": false

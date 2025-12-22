@@ -1,6 +1,27 @@
 {
     "gameObjectRefInfos": [],
-    "looseInstance": {},
+    "looseInstance": {
+        "4": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "5": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "6": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "7": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        }
+    },
     "looseGameObjectRefs": {},
     "ObjectsHierarchy": {
         "MainObject[0]": {
@@ -396,32 +417,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        }
+                    "v4": [
+                        4,
+                        5,
+                        6,
+                        7
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[4]": {
@@ -507,18 +511,18 @@
             "Component[12]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[13]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -759,6 +763,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": true,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 40.0,
@@ -950,9 +961,26 @@
                                 "r": 1.0
                             }
                         }
+                    },
+                    "Component[26]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
                     }
                 },
-                "ChildObject[26]": {
+                "ChildObject[27]": {
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "Gm150_012_00_PointLight_01",
@@ -962,7 +990,7 @@
                             "TimeScale": -1.0
                         }
                     },
-                    "Component[27]": {
+                    "Component[28]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 0.087402344,
@@ -990,7 +1018,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[28]": {
+                    "Component[29]": {
                         "via.render.PointLight": {
                             "v0_Enabled": true,
                             "v1_Intensity": 0.0001,
@@ -1053,13 +1081,20 @@
                             "v50_RayTracingShadowEnable": false
                         }
                     },
-                    "Component[29]": {
+                    "Component[30]": {
                         "via.relib.light.ReLibLightBehavior": {
                             "v0": 1,
                             "_DistanceAttenuation": {
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": true,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 40.0,
@@ -1215,7 +1250,7 @@
                             "_EventIdentifyName": ""
                         }
                     },
-                    "Component[30]": {
+                    "Component[31]": {
                         "via.motion.ConstraintParent": {
                             "v0_Enabled": false,
                             "v1_UpdateMode": "[1]Props",
@@ -1240,7 +1275,7 @@
                             "v10": 1
                         }
                     },
-                    "Component[31]": {
+                    "Component[32]": {
                         "app.AppLightController": {
                             "v0": 1,
                             "_Condition": 0,
@@ -1250,6 +1285,23 @@
                                 "s": 0.0,
                                 "r": 1.0
                             }
+                        }
+                    },
+                    "Component[33]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
                         }
                     }
                 }

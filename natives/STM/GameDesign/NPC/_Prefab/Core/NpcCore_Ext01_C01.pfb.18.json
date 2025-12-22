@@ -335,7 +335,7 @@
             "GameObject": {
                 "via.GameObject": {
                     "Name": "NpcCore_Ext01_C01",
-                    "Tag": "WorkRateTarget",
+                    "Tag": "WorkRateTarget|NPC",
                     "UpdateSelf": false,
                     "DrawSelf": false,
                     "TimeScale": -1.0
@@ -436,11 +436,10 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v4": [],
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[7]": {
@@ -702,9 +701,9 @@
             "Component[28]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": true,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": true,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[29]": {
@@ -869,6 +868,11 @@
                     },
                     "_SnowData": {
                         "app.CharacterTimelineEventActorBase.SnowParam": {
+                            "Rate": -1.0
+                        }
+                    },
+                    "_TarData": {
+                        "app.CharacterTimelineEventActorBase.TarParam": {
                             "Rate": -1.0
                         }
                     },
@@ -1713,10 +1717,10 @@
             "Component[46]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },

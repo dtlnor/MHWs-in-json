@@ -1,6 +1,26 @@
 {
     "gameObjectRefInfos": [],
     "looseInstance": {
+        "3": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Gm110/Gm110_000/Collision/Gm110_000_Body.rcol"
+            }
+        },
+        "4": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "5": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
+        "6": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
+            }
+        },
         "31": {
             "via.navigation.map.InteractionShapeOBB": {
                 "v0_Shape": {
@@ -79,32 +99,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Gm110/Gm110_000/Collision/Gm110_000_Body.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Gimmick/Common/Collision/GmDummyCol.rcol"
-                            }
-                        }
+                    "v4": [
+                        3,
+                        4,
+                        5,
+                        6
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[3]": {
@@ -242,15 +245,16 @@
                     "v26": 0,
                     "v27": 0,
                     "v28": 0,
-                    "v29": 4294967295,
-                    "v30": 0,
-                    "v31": 1
+                    "v29": 0,
+                    "v30": 4294967295,
+                    "v31": 0,
+                    "v32": 1
                 }
             },
             "Component[13]": {
                 "app.FoliageSetting": {
                     "v0_Enabled": true,
-                    "_DisableDispOffController": false,
+                    "v1": false,
                     "_IsPassThrough": false,
                     "_DispType": 686504192,
                     "_HeatReceiverParamID": -2104865152,
@@ -303,6 +307,10 @@
                         "w": 0.0
                     },
                     "_IsBurn": false,
+                    "_DisableShadowOptMode": false,
+                    "_DisableShadowOptModeSaveWork": true,
+                    "_EnableDencityCulling": false,
+                    "_EnableStaticFoliageOptMode": false,
                     "_MaterialValues": [],
                     "_MaterialParamIndexArray": [],
                     "_IsCullingByDistance": false
@@ -599,6 +607,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": true,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 40.0,
@@ -789,6 +804,23 @@
                                 "s": 0.0,
                                 "r": 1.0
                             }
+                        }
+                    },
+                    "Component[30]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
                         }
                     }
                 }

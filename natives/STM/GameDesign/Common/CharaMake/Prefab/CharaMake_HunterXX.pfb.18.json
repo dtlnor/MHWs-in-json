@@ -51,7 +51,7 @@
                 "v1": 3,
                 "v2": 0,
                 "v3": 1065353216,
-                "v4": "Art/Model/Character/ch03/000/900/ch03_000_9000.jcns"
+                "v4": "@Art/Model/Character/ch03/000/900/ch03_000_9000.jcns"
             }
         },
         "17": {
@@ -362,6 +362,101 @@
                     "z": 0.0
                 },
                 "v10_Radius": 0.07
+            }
+        },
+        "35": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlBody.rcol"
+            }
+        },
+        "36": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlAttack.rcol"
+            }
+        },
+        "37": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlSensor.rcol"
+            }
+        },
+        "38": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlZone.rcol"
+            }
+        },
+        "39": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlPhysics.rcol"
+            }
+        },
+        "40": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp00/Collision/Collider/Wp00_PhysicalAttack.rcol"
+            }
+        },
+        "41": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp01/Collision/Collider/Wp01_PhysicalAttack.rcol"
+            }
+        },
+        "42": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp02/Collision/Collider/Wp02_PhysicalAttack.rcol"
+            }
+        },
+        "43": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp03/Collision/Collider/Wp03_PhysicalAttack.rcol"
+            }
+        },
+        "44": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp04/Collision/Collider/Wp04_PhysicalAttack.rcol"
+            }
+        },
+        "45": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp05/Collision/Collider/Wp05_PhysicalAttack.rcol"
+            }
+        },
+        "46": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp06/Collision/Collider/Wp06_PhysicalAttack.rcol"
+            }
+        },
+        "47": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp07/Collision/Collider/Wp07_PhysicalAttack.rcol"
+            }
+        },
+        "48": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp08/Collision/Collider/Wp08_PhysicalAttack.rcol"
+            }
+        },
+        "49": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp09/Collision/Collider/Wp09_PhysicalAttack.rcol"
+            }
+        },
+        "50": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp10/Collision/Collider/Wp10_PhysicalAttack.rcol"
+            }
+        },
+        "51": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp11/Collision/Collider/Wp11_PhysicalAttack.rcol"
+            }
+        },
+        "52": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp00/Collision/Collider/Wp00_PhysicalAttack.rcol"
+            }
+        },
+        "53": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Player/ActionData/Wp00/Collision/Collider/Wp00_PhysicalAttack.rcol"
             }
         },
         "57": {
@@ -904,6 +999,7 @@
                             "_Hash": 1561031396
                         }
                     },
+                    "_DisableSequentialPoseBlend": false,
                     "_MotionBank": "",
                     "_LayerIndex": -1,
                     "_BankID": 9999
@@ -984,10 +1080,10 @@
             "Component[8]": {
                 "app.SoundCharaMakeMotionSequence": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false,
                     "_Chara": "[0]PLAYER"
                 }
@@ -1073,107 +1169,30 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlBody.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlSensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlZone.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlPhysics.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp00/Collision/Collider/Wp00_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp01/Collision/Collider/Wp01_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp02/Collision/Collider/Wp02_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp03/Collision/Collider/Wp03_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp04/Collision/Collider/Wp04_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp05/Collision/Collider/Wp05_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp06/Collision/Collider/Wp06_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp07/Collision/Collider/Wp07_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp08/Collision/Collider/Wp08_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp09/Collision/Collider/Wp09_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp10/Collision/Collider/Wp10_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp11/Collision/Collider/Wp11_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp00/Collision/Collider/Wp00_PhysicalAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Player/ActionData/Wp00/Collision/Collider/Wp00_PhysicalAttack.rcol"
-                            }
-                        }
+                    "v4": [
+                        35,
+                        36,
+                        37,
+                        38,
+                        39,
+                        40,
+                        41,
+                        42,
+                        43,
+                        44,
+                        45,
+                        46,
+                        47,
+                        48,
+                        49,
+                        50,
+                        51,
+                        52,
+                        53
                     ],
-                    "BankResource": "GameDesign/Player/ActionData/Common/Collision/Collider/PlCommonColliderBank.ccbk",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "GameDesign/Player/ActionData/Common/Collision/Collider/PlCommonColliderBank.ccbk",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "ChildObject[15]": {
@@ -1676,10 +1695,10 @@
                 "Component[20]": {
                     "app.MeshSetting": {
                         "v0_Enabled": true,
-                        "_LodSelectionAlogrithm": 0,
-                        "_AssetNo": 0,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false,
+                        "v1": 0,
+                        "v2": 0,
+                        "v3": true,
+                        "v4": false,
                         "_IsPassThrough": false,
                         "_MeshMaterialLOD": {
                             "": {}
@@ -1792,6 +1811,7 @@
                                 "_Hash": 1930613624
                             }
                         },
+                        "_DisableSequentialPoseBlend": false,
                         "_MotionBank": "",
                         "_LayerIndex": 9,
                         "_BankID": 9999
@@ -2233,6 +2253,7 @@
                                 "_Hash": 2180083513
                             }
                         },
+                        "_DisableSequentialPoseBlend": false,
                         "_MotionBank": "",
                         "_LayerIndex": -1,
                         "_BankID": 0

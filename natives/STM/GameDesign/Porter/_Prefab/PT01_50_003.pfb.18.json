@@ -306,6 +306,26 @@
                 "v8_MotionList": ""
             }
         },
+        "21": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtBody.rcol"
+            }
+        },
+        "22": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtAttack.rcol"
+            }
+        },
+        "23": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtSensor.rcol"
+            }
+        },
+        "24": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtZone.rcol"
+            }
+        },
         "30": {
             "via.motion.IkLookAt2.JointParam": {
                 "v0_YawCoefficient": 0.5,
@@ -478,7 +498,7 @@
                 "v14": 0
             }
         },
-        "123": {
+        "124": {
             "via.motion.ActorLayer": {
                 "v0_TargetLayerNo": 0,
                 "v1_BlendMode": "[0]Overwrite",
@@ -494,25 +514,25 @@
                 "v11_InterpolationFrame": 0.0
             }
         },
-        "125": {
-            "via.motion.JointConstraintsLayer": {
-                "v0": 0,
-                "v1": 3,
-                "v2": 0,
-                "v3": 1065353216,
-                "v4": "Art/Model/Character/ch07/000/0000/ch07_000_0000.jcns"
-            }
-        },
         "126": {
             "via.motion.JointConstraintsLayer": {
                 "v0": 0,
                 "v1": 3,
                 "v2": 0,
                 "v3": 1065353216,
-                "v4": "Art/Model/Character/ch07/000/0000/ch07_000_0000_RS.jcns"
+                "v4": "@Art/Model/Character/ch07/000/0000/ch07_000_0000.jcns"
             }
         },
-        "138": {
+        "127": {
+            "via.motion.JointConstraintsLayer": {
+                "v0": 0,
+                "v1": 3,
+                "v2": 0,
+                "v3": 1065353216,
+                "v4": "@Art/Model/Character/ch07/000/0000/ch07_000_0000_RS.jcns"
+            }
+        },
+        "139": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
@@ -524,7 +544,7 @@
             "GameObject": {
                 "via.GameObject": {
                     "Name": "PT01_50_003",
-                    "Tag": "",
+                    "Tag": "Porter",
                     "UpdateSelf": true,
                     "DrawSelf": true,
                     "TimeScale": -1.0
@@ -680,32 +700,15 @@
                     "DevelopDraw": true,
                     "DevelopDrawFillMode": "[1]WireFrame",
                     "DependencyResources": [],
-                    "Verbose": false,
-                    "RequestSetGroups": [
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtBody.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtAttack.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtSensor.rcol"
-                            }
-                        },
-                        {
-                            "via.physics.RequestSetCollider.RequestSetGroup": {
-                                "v0_Resource": "GameDesign/Porter/Collision/Collider/PtZone.rcol"
-                            }
-                        }
+                    "v4": [
+                        21,
+                        22,
+                        23,
+                        24
                     ],
-                    "BankResource": "",
-                    "v7": 4,
-                    "v8": 0
+                    "v5": "",
+                    "v6": 4,
+                    "v7": 0
                 }
             },
             "Component[10]": {
@@ -918,132 +921,133 @@
                     "UpdateTiming": "[5]ByBehavior",
                     "Priority": 0,
                     "v4": 1065353216,
-                    "v5": "Motion/Porter/Decorate/IkLeg/pt00_IkLegSpine.ikls",
+                    "v5": "@Motion/Porter/Decorate/IkLeg/pt00_IkLegSpine.ikls",
                     "v6": 1,
                     "v7": 1,
-                    "v8": 1065353216,
-                    "v9": 0,
+                    "v8": 0,
+                    "v9": 1065353216,
                     "v10": 0,
-                    "v11": 1008981770,
-                    "v12": 1036831949,
-                    "v13": 1065353216,
-                    "v14": 0,
+                    "v11": 0,
+                    "v12": 1008981770,
+                    "v13": 1036831949,
+                    "v14": 1065353216,
                     "v15": 0,
-                    "v16": 1065353216,
+                    "v16": 0,
                     "v17": 1065353216,
-                    "v18": 1061997773,
-                    "v19": 0,
+                    "v18": 1065353216,
+                    "v19": 1061997773,
                     "v20": 0,
-                    "v21": 3212836864,
-                    "v22": 1065353216,
+                    "v21": 0,
+                    "v22": 3212836864,
                     "v23": 1065353216,
                     "v24": 1065353216,
                     "v25": 1065353216,
                     "v26": 1065353216,
-                    "v27": 0,
-                    "v28": 1065353216,
+                    "v27": 1065353216,
+                    "v28": 0,
                     "v29": 1065353216,
-                    "v30": 0,
-                    "v31": 1065353216,
-                    "v32": 0,
+                    "v30": 1065353216,
+                    "v31": 0,
+                    "v32": 1065353216,
                     "v33": 0,
-                    "v34": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
+                    "v34": 0,
                     "v35": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v36": 0,
-                    "v37": 0,
-                    "v38": 1,
-                    "v39": 1050253722,
-                    "v40": 0,
-                    "v41": 1008981770,
-                    "v42": 0,
-                    "v43": 1065353216,
-                    "v44": 0,
-                    "v45": 0,
-                    "v46": 1050253722,
-                    "v47": 0,
-                    "v48": 1050253722,
-                    "v49": 1050253722,
-                    "v50": 1065353216,
-                    "v51": 4294967295,
-                    "v52": 0,
-                    "v53": 0,
-                    "v54": 0,
-                    "v55": 0,
-                    "v56": {
+                    "v36": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
+                    "v37": 0,
+                    "v38": 0,
+                    "v39": 1,
+                    "v40": 1050253722,
+                    "v41": 0,
+                    "v42": 1008981770,
+                    "v43": 0,
+                    "v44": 1065353216,
+                    "v45": 0,
+                    "v46": 0,
+                    "v47": 1050253722,
+                    "v48": 0,
+                    "v49": 1050253722,
+                    "v50": 1050253722,
+                    "v51": 1065353216,
+                    "v52": 4294967295,
+                    "v53": 0,
+                    "v54": 0,
+                    "v55": 0,
+                    "v56": 0,
                     "v57": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v58": 0,
-                    "v59": 0,
-                    "v60": 0,
-                    "v61": 0,
-                    "v62": {
+                    "v58": {
                         "x": 0.0,
                         "y": 0.0,
                         "z": 0.0,
                         "w": 0.0
                     },
-                    "v63": 1,
-                    "v64": 0,
+                    "v59": 0,
+                    "v60": 0,
+                    "v61": 0,
+                    "v62": 0,
+                    "v63": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "v64": 1,
                     "v65": 0,
-                    "v66": 1008981770,
-                    "v67": 0,
-                    "v68": 1,
-                    "v69": 1017370378,
-                    "v70": 1036831949,
-                    "v71": 1065269330,
-                    "v72": 1056964608,
-                    "v73": 0,
-                    "v74": 3212836864,
+                    "v66": 0,
+                    "v67": 1008981770,
+                    "v68": 0,
+                    "v69": 1,
+                    "v70": 1017370378,
+                    "v71": 1036831949,
+                    "v72": 1065269330,
+                    "v73": 1056964608,
+                    "v74": 0,
                     "v75": 3212836864,
                     "v76": 3212836864,
                     "v77": 3212836864,
                     "v78": 3212836864,
-                    "v79": 0,
+                    "v79": 3212836864,
                     "v80": 0,
                     "v81": 0,
-                    "v82": "empty",
+                    "v82": 0,
                     "v83": "empty",
                     "v84": "empty",
-                    "v85": "empty"
+                    "v85": "empty",
+                    "v86": "empty"
                 }
             },
             "Component[17]": {
                 "app.SoundActionSequence": {
                     "v0": 1,
-                    "_BaseActionUserCurveDataList": [
+                    "v1": [
                         {
                             "app.snd_user_data.SoundActionUserCurveListData": {
                                 "userdataPath": "Sound/UserData/36_ActionUserCurve/Porter/PorterCmn_ActionUserCurveListData.user"
                             }
                         }
                     ],
-                    "_SubActionUserCurveDataList": [
+                    "v2": [
                         {
                             "app.snd_user_data.SoundActionUserCurveListData": {
                                 "userdataPath": "Sound/UserData/36_ActionUserCurve/Porter/PorterCmnSub_ActionUserCurveListData.user"
                             }
                         }
                     ],
-                    "_AddActionUserCurveListDataList": []
+                    "v3": []
                 }
             },
             "Component[18]": {
@@ -1062,10 +1066,10 @@
             "Component[19]": {
                 "app.SoundMotionSequenceApp": {
                     "v0": 1,
-                    "_MotionStatusSettingListData": {
+                    "v1": {
                         "": {}
                     },
-                    "_UpdateSequenceCategoryBits": 2,
+                    "v2": 2,
                     "_UpdateOnlyDrawSelf": false
                 }
             },
@@ -1177,6 +1181,11 @@
                     },
                     "_SnowData": {
                         "app.CharacterTimelineEventActorBase.SnowParam": {
+                            "Rate": -1.0
+                        }
+                    },
+                    "_TarData": {
+                        "app.CharacterTimelineEventActorBase.TarParam": {
                             "Rate": -1.0
                         }
                     },
@@ -1663,9 +1672,9 @@
             "Component[24]": {
                 "app.MeshSettingController": {
                     "v0_Enabled": true,
-                    "_IsUpdateChild": false,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false
+                    "v1": false,
+                    "v2": true,
+                    "v3": false
                 }
             },
             "Component[25]": {
@@ -1712,7 +1721,7 @@
                     "v4": 2,
                     "v5": 0,
                     "v6": [
-                        123
+                        124
                     ],
                     "v7": ""
                 }
@@ -1723,8 +1732,8 @@
                     "v1_UpdateMode": "[0]Character",
                     "v2_UpdateTiming": "[1]AfterLateUpdate",
                     "v3": [
-                        125,
-                        126
+                        126,
+                        127
                     ]
                 }
             },
@@ -1832,7 +1841,7 @@
                     "v9": 0,
                     "v10": 1101004800,
                     "v11": 0,
-                    "v12": 138,
+                    "v12": 139,
                     "v13": 0,
                     "v14": 0,
                     "v15": 0,
@@ -1870,7 +1879,8 @@
                         "app.snd_user_data.SoundVibrationTriggerListData": {
                             "userdataPath": "Sound/ADVibration/UserData/Porter/Sound_Porter_VibrationTriggerListData.user"
                         }
-                    }
+                    },
+                    "_ForceValid": false
                 }
             },
             "Component[40]": {

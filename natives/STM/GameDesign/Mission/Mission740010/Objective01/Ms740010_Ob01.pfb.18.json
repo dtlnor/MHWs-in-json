@@ -1,0 +1,416 @@
+{
+    "gameObjectRefInfos": [],
+    "looseInstance": {
+        "3": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_RestoreFsm.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "4": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm00.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "5": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm01.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "6": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm02.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "7": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm03.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "8": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm04.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "9": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm05.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        },
+        "10": {
+            "via.behaviortree.BehaviorTree.CoreHandle": {
+                "v0": 1,
+                "v1": "GameDesign/Mission/Mission740010/Objective01/_Fsm/Ms740010_Ob01_Fsm06.fsmv2",
+                "v2": 0,
+                "v3": 0,
+                "v4": {
+                    "x": 0.0,
+                    "y": 0.0,
+                    "z": 0.0
+                }
+            }
+        }
+    },
+    "looseGameObjectRefs": {},
+    "ObjectsHierarchy": {
+        "MainObject[0]": {
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "Ms740010_Ob01",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Component[1]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "LocalScale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[2]": {
+                "via.behaviortree.ManualBehaviorTree": {
+                    "v0": 1,
+                    "v1": [
+                        3,
+                        4,
+                        5,
+                        6,
+                        7,
+                        8,
+                        9,
+                        10
+                    ],
+                    "v2": "",
+                    "v3": 0,
+                    "v4": 0,
+                    "v5": 0,
+                    "v6": 0,
+                    "v7": 0
+                }
+            },
+            "Component[3]": {
+                "via.physics.ColliderSet": {
+                    "Enabled": true,
+                    "DevelopDraw": true,
+                    "DevelopDrawFillMode": "[1]WireFrame",
+                    "DependencyResources": [],
+                    "v4_Static": true,
+                    "v5_Resource": "GameDesign/Mission/Mission740010/Objective01/_Zone/Ms740010_Ob01_Col.cset"
+                }
+            },
+            "Component[4]": {
+                "app.ObjectiveController": {
+                    "v0": 1,
+                    "_ObjecitiveStatePauseBefore": "[0]WAIT"
+                }
+            },
+            "Component[5]": {
+                "app.StoryZoneController": {
+                    "v0": 1,
+                    "isQuest": false
+                }
+            },
+            "ChildObject[6]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "ViewPointObject_00",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[7]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 1117.3123,
+                            "y": -228.27419,
+                            "z": -251.86702,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[8]": {
+                    "app.MissionObservePointRegister": {
+                        "v0": 1,
+                        "_IsCameraLookAt": false,
+                        "_CameraAttachParamGuid": "5eccf51f-60f0-46a8-91b7-9f45af8a8964",
+                        "_IsPlOperate": false,
+                        "_IsCanOperationPan": true,
+                        "_RangeDegree": {
+                            "x": 5.0,
+                            "y": 5.0,
+                            "pad1": 0.0,
+                            "pad2": 0.0
+                        },
+                        "_IsDampingCenter": true,
+                        "_Fov": 20.0,
+                        "_IsCameraFixedEye": false,
+                        "STRUCT__OverwritePitchDegree__HasValue": true,
+                        "STRUCT__OverwritePitchDegree__Value": 0.0,
+                        "_CameraEyePos": {
+                            "x": 1121.4338,
+                            "y": -227.88855,
+                            "z": -251.70956,
+                            "pad": 0.0
+                        },
+                        "_IsOverwriteMoveLength": false,
+                        "_CameraMoveLength": 5.0,
+                        "STRUCT__InterpolationTime__HasValue": false,
+                        "STRUCT__InterpolationTime__Value": 1.0,
+                        "_CameraDuration": 1.5,
+                        "_IsWaitCameraInterpolation": true,
+                        "_DialogueID": "[9646]Dia_stCh7400_Ms740010_0180",
+                        "_IsEVDialogue": true,
+                        "_ObservePointIndex": 0
+                    }
+                }
+            },
+            "ChildObject[9]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "ViewPointObject_01",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[10]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 1111.9073,
+                            "y": -227.72372,
+                            "z": -259.97403,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[11]": {
+                    "app.MissionObservePointRegister": {
+                        "v0": 1,
+                        "_IsCameraLookAt": false,
+                        "_CameraAttachParamGuid": "4e5edd1f-3428-4d9e-a56d-eb2fbc042592",
+                        "_IsPlOperate": false,
+                        "_IsCanOperationPan": true,
+                        "_RangeDegree": {
+                            "x": 5.0,
+                            "y": 5.0,
+                            "pad1": 0.0,
+                            "pad2": 0.0
+                        },
+                        "_IsDampingCenter": true,
+                        "_Fov": 20.0,
+                        "_IsCameraFixedEye": false,
+                        "STRUCT__OverwritePitchDegree__HasValue": true,
+                        "STRUCT__OverwritePitchDegree__Value": 0.0,
+                        "_CameraEyePos": {
+                            "x": 1122.2767,
+                            "y": -225.91307,
+                            "z": -261.32224,
+                            "pad": 0.0
+                        },
+                        "_IsOverwriteMoveLength": false,
+                        "_CameraMoveLength": 5.0,
+                        "STRUCT__InterpolationTime__HasValue": false,
+                        "STRUCT__InterpolationTime__Value": 1.0,
+                        "_CameraDuration": 1.5,
+                        "_IsWaitCameraInterpolation": true,
+                        "_DialogueID": "[9647]Dia_stCh7400_Ms740010_0181",
+                        "_IsEVDialogue": true,
+                        "_ObservePointIndex": 1
+                    }
+                }
+            },
+            "ChildObject[12]": {
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "ViewPointObject_02",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Component[13]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 1101.87,
+                            "y": -221.84872,
+                            "z": -249.29512,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[14]": {
+                    "app.MissionObservePointRegister": {
+                        "v0": 1,
+                        "_IsCameraLookAt": false,
+                        "_CameraAttachParamGuid": "899c2397-7d1b-45fb-9b33-1677cab6c7c4",
+                        "_IsPlOperate": false,
+                        "_IsCanOperationPan": true,
+                        "_RangeDegree": {
+                            "x": 5.0,
+                            "y": 5.0,
+                            "pad1": 0.0,
+                            "pad2": 0.0
+                        },
+                        "_IsDampingCenter": true,
+                        "_Fov": 20.0,
+                        "_IsCameraFixedEye": false,
+                        "STRUCT__OverwritePitchDegree__HasValue": true,
+                        "STRUCT__OverwritePitchDegree__Value": 5.0,
+                        "_CameraEyePos": {
+                            "x": 1101.87,
+                            "y": -221.84872,
+                            "z": -249.29512,
+                            "pad": 0.0
+                        },
+                        "_IsOverwriteMoveLength": false,
+                        "_CameraMoveLength": 5.0,
+                        "STRUCT__InterpolationTime__HasValue": false,
+                        "STRUCT__InterpolationTime__Value": 1.0,
+                        "_CameraDuration": 1.5,
+                        "_IsWaitCameraInterpolation": true,
+                        "_DialogueID": "[9648]Dia_stCh7400_Ms740010_0182",
+                        "_IsEVDialogue": true,
+                        "_ObservePointIndex": 2
+                    }
+                }
+            }
+        }
+    }
+}
