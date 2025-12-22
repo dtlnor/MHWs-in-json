@@ -1,0 +1,114 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cWp13RapidStepShoot_ActionParam": {
+                            "_DodgeType": "[10]AVOID_ATTACK",
+                            "_SpecifiedDist": 0.0
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cAwayAttackArea_Param": {
+                            "_IgnoreDisabling": true,
+                            "_IgnoreEffect": false,
+                            "_ContinueMove": false
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTargetCenter_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_UseAxisXZ": false,
+                            "_Offset": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            }
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckWp13CurrentMode_Param": {
+                                "_Mode": "[1]RAPID_BOOST"
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckAnyCancel_Param": {
+                                "_CancelMotSeq": "[1]WP"
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckCanStep_Param": {}
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckLoadedAmmo_Param": {
+                                "_CheckAmmoCount": 2
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckWp13IsStepShootRequest_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cDetectAttackArea_Param": {
+                                "_WhereNeedAvoid": false,
+                                "_IgnoreDisabling": false,
+                                "_IgnoreEffect": false,
+                                "_ReactType_Fixed": "[22]WP13_STEP_RM"
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

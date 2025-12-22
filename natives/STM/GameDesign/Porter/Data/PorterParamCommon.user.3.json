@@ -64,7 +64,7 @@
             },
             "_ReinData": {
                 "app.user_data.PorterReinData": {
-                    "userdataPath": "GameDesign/Porter/Data/Rein/Pt_ReinData.user"
+                    "userdataPath": "@GameDesign/Porter/Data/Rein/Pt_ReinData.user"
                 }
             },
             "_StirrupData": {
@@ -1255,6 +1255,17 @@
                             "_NearRange": 8.0,
                             "_OffsetLenghtNoCombat": 10.0,
                             "_OffsetLenghtCombat": 15.0,
+                            "_CalcMainTargetPosListDataOverwrite": [
+                                {
+                                    "app.user_data.PorterParamCommon.cMoveControl.cCalcMainTargetPosListData.cCalcMainTargetPosListDataOverwrite": {
+                                        "_EmId_Fixed": "[13052]EM0078_00_0",
+                                        "_FarRange": 40.0,
+                                        "_NearRange": 15.0,
+                                        "_OffsetLenghtNoCombat": 25.0,
+                                        "_OffsetLenghtCombat": 25.0
+                                    }
+                                }
+                            ],
                             "_SideOffsetLenghtRate": 0.6,
                             "_OffsetPlay": 2.0,
                             "_ArrivalRange": 5.0,
@@ -1443,6 +1454,23 @@
                         "app.user_data.PorterParamCommon.cNavigationControl.PorterRouteSelect": {
                             "_DengerLv": 3,
                             "_MonsterNumMaxDefault": 10
+                        }
+                    },
+                    "_AvoidRouteDataList": {
+                        "app.user_data.PorterParamCommon.cNavigationControl.AvoidRouteDataList": {
+                            "_AvoidRouteEm0078LastResortFlyApplyTerm": {
+                                "app.user_data.PorterParamCommon.cNavigationControl.AvoidRouteDataList.AvoidRouteData": {
+                                    "_IsUseCenterPos": true,
+                                    "_CenterPos": {
+                                        "x": 1121.69,
+                                        "y": 41.684,
+                                        "z": -334.06,
+                                        "pad": 0.0
+                                    },
+                                    "_AvoidRadius": 12.0,
+                                    "_AvoidRadiusCheckOffset": 3.0
+                                }
+                            }
                         }
                     }
                 }
@@ -1674,7 +1702,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": false,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1688,7 +1717,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1702,7 +1732,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1716,7 +1747,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1730,7 +1762,8 @@
                                 "_PermitGestureActionWhenLifeArea": false,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": true
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": true,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1744,7 +1777,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1758,7 +1792,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": true
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": true,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1772,7 +1807,8 @@
                                 "_PermitGestureActionWhenLifeArea": true,
                                 "_PermitGestureActionWhenClimbingDieBody": true,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": true
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": true,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         },
                         {
@@ -1786,7 +1822,8 @@
                                 "_PermitGestureActionWhenLifeArea": false,
                                 "_PermitGestureActionWhenClimbingDieBody": false,
                                 "_PermitGestureActionWhenInTrainingArea": false,
-                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false
+                                "_PermitGestureActionWhenInBarrierLAndRideOwnerWhenNotRiding": false,
+                                "_PermitGestureActionWhenIsInGuardSafetySpace": false
                             }
                         }
                     ],
@@ -1811,6 +1848,15 @@
                                 "_NotUpdateUnkoIntervaVisualSettingType": {
                                     "app.PorterDef.VISUAL_SETTING_TYPE_Serializable": {
                                         "_Value": "[-1716070016]EQUIP_013"
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cGesture.cVisualSettingType": {
+                                "_NotUpdateUnkoIntervaVisualSettingType": {
+                                    "app.PorterDef.VISUAL_SETTING_TYPE_Serializable": {
+                                        "_Value": "[6179]EQUIP_018"
                                     }
                                 }
                             }
@@ -1998,6 +2044,16 @@
                             "_AreaPointWaitPointForCombatRadiusMax": 10.0,
                             "_AreaPointWaitPointForCombatForPlayerRadiusMax": 30.0,
                             "_AreaPointWaitPointForCombatSearchRadius": 30.0,
+                            "_CombatPositioningAreaPointWaitPointForCombatOverwrite": [
+                                {
+                                    "app.user_data.PorterParamCommon.cCombatPositioningAreaPointWaitPointForCombat.cCombatPositioningAreaPointWaitPointForCombatOverwrite": {
+                                        "_EmId_Fixed": "[13052]EM0078_00_0",
+                                        "_AreaPointWaitPointForCombatRadiusMax": 40.0,
+                                        "_AreaPointWaitPointForCombatForPlayerRadiusMax": 60.0,
+                                        "_AreaPointWaitPointForCombatSearchRadius": 60.0
+                                    }
+                                }
+                            ],
                             "_AreaPointWaitPointForCombatLeaveLength": 20.0,
                             "_AreaPointWaitPointForCombatPosOffsetY": 5.0
                         }
@@ -2011,6 +2067,59 @@
                     "_OffsetForSingleEnemyAround": 10.0,
                     "_OffsetForMultipleEnemyAround": 10.0,
                     "_DistanceLimitForMove": 2.0
+                }
+            },
+            "_ZoneAreaFieldAttrPositioning": {
+                "app.user_data.PorterParamCommon.cZoneAreaFieldAttrPositioning": {
+                    "_CheckRideOwnerLengthTimerLimit": 1.0,
+                    "_RideOwnerFarAwayLengthMax": 40.0,
+                    "_RideOwnerFarAwayTimerLimit": 10.0,
+                    "_ZoneAreaFieldAttrStageList": [
+                        {
+                            "app.user_data.PorterParamCommon.cZoneAreaFieldAttrPositioning.cEnableZoneAreaFieldAttrStage": {
+                                "_EnableZoneAreaFieldAttrStage": {
+                                    "app.FieldDef.STAGE_Serializable": {
+                                        "_Value": "[13836]ST405"
+                                    }
+                                },
+                                "_AreaFieldAttr": "[1]st405_01",
+                                "_IsUnique": true
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cZoneAreaFieldAttrPositioning.cEnableZoneAreaFieldAttrStage": {
+                                "_EnableZoneAreaFieldAttrStage": {
+                                    "app.FieldDef.STAGE_Serializable": {
+                                        "_Value": "[13836]ST405"
+                                    }
+                                },
+                                "_AreaFieldAttr": "[2]st405_02_GM579_01",
+                                "_IsUnique": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cZoneAreaFieldAttrPositioning.cEnableZoneAreaFieldAttrStage": {
+                                "_EnableZoneAreaFieldAttrStage": {
+                                    "app.FieldDef.STAGE_Serializable": {
+                                        "_Value": "[13836]ST405"
+                                    }
+                                },
+                                "_AreaFieldAttr": "[3]st405_02_GM579_02",
+                                "_IsUnique": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cZoneAreaFieldAttrPositioning.cEnableZoneAreaFieldAttrStage": {
+                                "_EnableZoneAreaFieldAttrStage": {
+                                    "app.FieldDef.STAGE_Serializable": {
+                                        "_Value": "[13836]ST405"
+                                    }
+                                },
+                                "_AreaFieldAttr": "[4]st405_02_GM579_03",
+                                "_IsUnique": false
+                            }
+                        }
+                    ]
                 }
             },
             "_HidePositioning": {
@@ -2475,6 +2584,16 @@
                         {
                             "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
                                 "_ActionID": "1aa13a9e-9a4f-40c1-a8e4-2177cfd11c6d"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "83a6c073-520a-4564-844d-0dc05b813a72"
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cPorterEnableAction": {
+                                "_ActionID": "3442a0de-010b-4b16-815e-e68295dcc5f0"
                             }
                         }
                     ],
@@ -3282,6 +3401,78 @@
                                 "_ActionMotionSpeedRate": 1.0,
                                 "_IsUnique": false
                             }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[8255]PORTER_RIDE_PHOTO_A"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "c1092922-e076-442f-a7d9-f193f1a85e9c",
+                                "_ActionMotionSpeedRate": 1.0,
+                                "_IsUnique": true
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[15156]EX_BASE_ACTION_28"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e",
+                                "_ActionMotionSpeedRate": 1.0,
+                                "_IsUnique": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[624]EX_BASE_ACTION_29"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "09c4445e-6bd5-4833-9162-50ab21d1ef1e",
+                                "_ActionMotionSpeedRate": 1.0,
+                                "_IsUnique": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[8440]EX_BASE_ACTION_30"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "b1815c5d-438c-466d-a871-a12c2a32793f",
+                                "_ActionMotionSpeedRate": 1.2,
+                                "_IsUnique": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[14910]EX_BASE_ACTION_31"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "b1815c5d-438c-466d-a871-a12c2a32793f",
+                                "_ActionMotionSpeedRate": 0.8,
+                                "_IsUnique": false
+                            }
+                        },
+                        {
+                            "app.user_data.PorterParamCommon.cCommEmote.cSet": {
+                                "_PlEmoteType": {
+                                    "app.HunterDef.COMM_ACTION_TYPE_Serializable": {
+                                        "_Value": "[17954]EX_BASE_ACTION_32"
+                                    }
+                                },
+                                "_PorterEmoteActionID": "6241d866-42f1-47dd-ab05-fc3ef1276019",
+                                "_ActionMotionSpeedRate": 1.0,
+                                "_IsUnique": false
+                            }
                         }
                     ],
                     "_ChangeTimingEmoteTable": [
@@ -3369,6 +3560,51 @@
             "_Fishing": {
                 "app.user_data.PorterParamCommon.cFishing": {
                     "_FishingDistanceLimit": 25.0
+                }
+            },
+            "_EmUnique": {
+                "app.user_data.PorterParamCommon.cEmUnique": {
+                    "_Em0078Unique": {
+                        "app.user_data.PorterParamCommon.cEmUnique.cEm0078Unique": {
+                            "_Em0078AvoidLastResortPoint": {
+                                "app.user_data.PorterParamCommon.cEmUnique.cEm0078Unique.cEm0078AvoidLastResortPoint": {
+                                    "_LastResortForceKillRadiusMax": 10.0,
+                                    "_GuardSafetySpaceIn": {
+                                        "app.user_data.PorterParamCommon.cEmUnique.cEm0078Unique.cEm0078AvoidLastResortPoint.cGuardSafetySpaceIn": {
+                                            "_RayCheckBackRideOwnerLengthWhenGuarding": 7.0,
+                                            "_RayCheckBackRideOwnerLengthWhenGuardSafetySpace": 7.0,
+                                            "_RayCheckBackRideOwnerLengthWhenGuardSafetySpaceOtomo": 2.0,
+                                            "_RayCheckBackRideOwnerHeight": 3.0,
+                                            "_RayCheckBackRideOwnerOffsetLength": 1.0,
+                                            "_RayCheckGroundLength": 6.0,
+                                            "_ArrivalAvoidLastResortPointLenghtMax": 2.9
+                                        }
+                                    },
+                                    "_GuardSafetySpaceOut": {
+                                        "app.user_data.PorterParamCommon.cEmUnique.cEm0078Unique.cEm0078AvoidLastResortPoint.cGuardSafetySpaceOut": {
+                                            "_RayCheckGuardOwnerBackLength": 17.0,
+                                            "_RayCheckGuardOwnerBackDeg": 30.0,
+                                            "_RayCheckBackRideOwnerHeight": 3.0,
+                                            "_RayCheckBackRideOwnerOffsetLength": 1.0,
+                                            "_RayCheckGroundLength": 6.0,
+                                            "_ArrivalAvoidLastResortPointLenghtMax": 2.9
+                                        }
+                                    },
+                                    "_ConvertDamageActionLastResortFinishNotRiding": {
+                                        "app.user_data.PorterParamCommon.cEmUnique.cEm0078Unique.cEm0078AvoidLastResortPoint.cConvertDamageActionLastResortFinishNotRiding": {
+                                            "_ActionGround": "37854c8c-2d0a-4b09-bb1e-1172e557d569",
+                                            "_ActionFly": "37854c8c-2d0a-4b09-bb1e-1172e557d569"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_ProcessCullingData": {
+                "app.user_data.PorterProcessCullingData": {
+                    "userdataPath": "GameDesign/Porter/Data/PorterProcessCullingData.user"
                 }
             }
         }

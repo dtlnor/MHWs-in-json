@@ -1553,7 +1553,10 @@
                             {
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
-                                        "app.SpeechConditions.cOtomoIsAccompany_Param": {}
+                                        "app.SpeechConditions.cCheckDistanceToPL_Param": {
+                                            "_Distance": 40.0,
+                                            "_CheckRangeType": "[0]InRange"
+                                        }
                                     },
                                     "_Inverse": false
                                 }
@@ -1561,12 +1564,9 @@
                             {
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
-                                        "app.SpeechConditions.cCheckDistanceToPL_Param": {
-                                            "_Distance": 40.0,
-                                            "_CheckRangeType": "[0]InRange"
-                                        }
+                                        "app.SpeechConditions.cIsDodgeDisabled_Param": {}
                                     },
-                                    "_Inverse": false
+                                    "_Inverse": true
                                 }
                             }
                         ],
@@ -2229,6 +2229,18 @@
                                         "app.SpeechConditions.cAttackTarget_Is_QuestTarget_Param": {}
                                     },
                                     "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cIsAreaChangeVoiceDisabled_Param": {
+                                            "_EmIDs": [
+                                                "[13052]EM0078_00_0"
+                                            ]
+                                        }
+                                    },
+                                    "_Inverse": true
                                 }
                             }
                         ],
@@ -5658,7 +5670,8 @@
                                     "_Param": {
                                         "app.SpeechConditions.cNowEnviromentType_Param": {
                                             "EnvType": "[1]ABNORMAL",
-                                            "_EnvRate": 0.0
+                                            "_EnvRate": 0.0,
+                                            "_CheckRateOnly": false
                                         }
                                     },
                                     "_Inverse": false
@@ -5716,7 +5729,8 @@
                                     "_Param": {
                                         "app.SpeechConditions.cNowEnviromentType_Param": {
                                             "EnvType": "[0]RUIN",
-                                            "_EnvRate": 0.0
+                                            "_EnvRate": 0.0,
+                                            "_CheckRateOnly": false
                                         }
                                     },
                                     "_Inverse": false
@@ -6538,7 +6552,7 @@
                             "s": 30.0,
                             "r": 0.0
                         },
-                        "_SubCategoryFixed": "[0]NONE",
+                        "_SubCategoryFixed": "[41]OTO_EM_STATUS",
                         "_EnumFixedID": 163
                     }
                 },
@@ -6637,8 +6651,7 @@
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
                                         "app.SpeechConditions.cIsNearAvailableCultivationOption_Param": {
-                                            "_CheckUnique": false,
-                                            "_IgnoreUnique": true
+                                            "_ForRare": false
                                         }
                                     },
                                     "_Inverse": false
@@ -6712,8 +6725,7 @@
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
                                         "app.SpeechConditions.cIsNearAvailableCultivationOption_Param": {
-                                            "_CheckUnique": true,
-                                            "_IgnoreUnique": false
+                                            "_ForRare": true
                                         }
                                     },
                                     "_Inverse": false
@@ -6963,7 +6975,7 @@
                             "s": 30.0,
                             "r": 0.0
                         },
-                        "_SubCategoryFixed": "[0]NONE",
+                        "_SubCategoryFixed": "[41]OTO_EM_STATUS",
                         "_EnumFixedID": 177
                     }
                 },
@@ -6993,7 +7005,7 @@
                             "s": 30.0,
                             "r": 0.0
                         },
-                        "_SubCategoryFixed": "[0]NONE",
+                        "_SubCategoryFixed": "[41]OTO_EM_STATUS",
                         "_EnumFixedID": 175
                     }
                 },
@@ -7051,9 +7063,9 @@
                         "_IsNoRegularlyEvaluate": false,
                         "_CoolTime": {
                             "s": 30.0,
-                            "r": 0.0
+                            "r": 30.0
                         },
-                        "_SubCategoryFixed": "[0]NONE",
+                        "_SubCategoryFixed": "[41]OTO_EM_STATUS",
                         "_EnumFixedID": 174
                     }
                 },
@@ -7081,10 +7093,193 @@
                         "_IsNoRegularlyEvaluate": false,
                         "_CoolTime": {
                             "s": 30.0,
+                            "r": 30.0
+                        },
+                        "_SubCategoryFixed": "[41]OTO_EM_STATUS",
+                        "_EnumFixedID": 173
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cCheckQuestStart_Param": {
+                                            "_QuestType": "[0]HUNTING"
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cIsSuperLargeEmQuest_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 30.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[32]OTO_QUEST_START",
+                        "_EnumFixedID": 178
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cOtomoIsAccompany_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cIsFlashTrapNoEffect_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 30.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[41]OTO_EM_STATUS",
+                        "_EnumFixedID": 179
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cOtomoIsAccompany_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cCheckCurrentQuestClearCondition_Param": {
+                                            "_ClearType": "[3]EM_BOSS_CAPTURE"
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cCheckAttackContinueWhenCaptureEnabled_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 300.0,
+                            "r": 300.0
+                        },
+                        "_SubCategoryFixed": "[0]NONE",
+                        "_EnumFixedID": 180
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cCurrentSeasonEvent_Param": {
+                                            "_IsAny": false,
+                                            "_SeasonEventID": "[4]WINTER"
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cIsEnterVisualLobbyInSeasonalEvent_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 30.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[101]OTO_LOBBY",
+                        "_EnumFixedID": 181
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cIsQuestMenuIn_Param": {
+                                            "_IsForEventQuest": false
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 30.0,
                             "r": 0.0
                         },
                         "_SubCategoryFixed": "[0]NONE",
-                        "_EnumFixedID": 173
+                        "_EnumFixedID": 183
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cIsQuestMenuIn_Param": {
+                                            "_IsForEventQuest": true
+                                        }
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 30.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[0]NONE",
+                        "_EnumFixedID": 182
                     }
                 }
             ],
@@ -7549,11 +7744,6 @@
                             },
                             {
                                 "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
-                                    "_SpeechFixedID": 115
-                                }
-                            },
-                            {
-                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
                                     "_SpeechFixedID": 116
                                 }
                             },
@@ -7726,6 +7916,31 @@
                                 "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
                                     "_SpeechFixedID": 173
                                 }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 178
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 179
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 181
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 183
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 182
+                                }
                             }
                         ],
                         "_ConditionParams": [
@@ -7741,6 +7956,18 @@
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
                                         "app.SpeechConditions.cOtomoIsEquipChangeModeEnable_Param": {}
+                                    },
+                                    "_Inverse": true
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cOtomoCheckAIState_Param": {
+                                            "_AIState": [
+                                                "[4]WAIT_CAMP"
+                                            ]
+                                        }
                                     },
                                     "_Inverse": true
                                 }
@@ -7796,6 +8023,11 @@
                                 "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
                                     "_SpeechFixedID": 50
                                 }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 180
+                                }
                             }
                         ],
                         "_ConditionParams": [
@@ -7819,6 +8051,18 @@
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
                                         "app.SpeechConditions.cOtomoIsEquipChangeModeEnable_Param": {}
+                                    },
+                                    "_Inverse": true
+                                }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cOtomoCheckAIState_Param": {
+                                            "_AIState": [
+                                                "[4]WAIT_CAMP"
+                                            ]
+                                        }
                                     },
                                     "_Inverse": true
                                 }
@@ -8100,6 +8344,18 @@
                                     },
                                     "_Inverse": false
                                 }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cOtomoCheckAIState_Param": {
+                                            "_AIState": [
+                                                "[4]WAIT_CAMP"
+                                            ]
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
                             }
                         ],
                         "_EnumFixedID": 8
@@ -8184,9 +8440,34 @@
                                     },
                                     "_Inverse": false
                                 }
+                            },
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
+                                        "app.SpeechConditions.cOtomoCheckAIState_Param": {
+                                            "_AIState": [
+                                                "[4]WAIT_CAMP"
+                                            ]
+                                        }
+                                    },
+                                    "_Inverse": true
+                                }
                             }
                         ],
                         "_EnumFixedID": 9
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cGroup": {
+                        "_DataHolders": [
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 115
+                                }
+                            }
+                        ],
+                        "_ConditionParams": [],
+                        "_EnumFixedID": 10
                     }
                 }
             ],

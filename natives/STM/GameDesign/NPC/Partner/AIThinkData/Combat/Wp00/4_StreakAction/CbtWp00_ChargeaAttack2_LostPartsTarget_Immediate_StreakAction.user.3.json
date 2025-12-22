@@ -1,0 +1,110 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetWp00Charge_ActionParam": {
+                            "_ChargeType": "[1]CHARGE_STRONG",
+                            "_Range": {
+                                "s": 0.0,
+                                "r": 15.0
+                            },
+                            "_IsNoCharge": false,
+                            "_IsNoChargeParry": false
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTarget_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_LogicType": "[5]PRIORITY_LOST",
+                            "_AdjustType": "[2]UNADJUSTED",
+                            "_UpdateTiming": "[0]ALWAYS",
+                            "_CheckRayCast": false,
+                            "_IsDirectionAim": false
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckIsFly_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckWpOn_Param": {}
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cHitAttack_Param": {
+                                "_AttackAABB": {
+                                    "minpos": {
+                                        "x": -2.0,
+                                        "y": -0.5,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
+                                    "maxpos": {
+                                        "x": 2.0,
+                                        "y": 3.5,
+                                        "z": 4.5,
+                                        "pad": 0.0
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
+                                "_Immediate": true,
+                                "_Strict": true,
+                                "_ActionSelector": {
+                                    "app.cNpcHunterActionSelector": {
+                                        "_Category": 494089792,
+                                        "_Action": 9
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

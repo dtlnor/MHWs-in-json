@@ -142,6 +142,10 @@
                         "s": 0.0,
                         "r": 60.0
                     },
+                    "_StartCoutionRange": {
+                        "s": 0.0,
+                        "r": 20.0
+                    },
                     "_LastAttackBackTimeSec": 120.0,
                     "_LastDamageBackTimeSec": 120.0,
                     "_ConditionParams": [
@@ -291,6 +295,12 @@
                         },
                         {
                             "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
+                                "Type": "[25]IS_PL_NEAR_BOSS",
+                                "Transition": "[2]TO_CAUTION"
+                            }
+                        },
+                        {
+                            "app.user_data.NpcPartnerGlobalParam.cCombatPreConditionParam.ConditionParam": {
                                 "Type": "[1]DEFAULT",
                                 "Transition": "[2]TO_CAUTION"
                             }
@@ -309,10 +319,20 @@
                 "app.user_data.NpcPartnerGlobalParam.cNeglect": {
                     "STRUCT__DpsCheckLv1Start_DamagePercentage": 0.125,
                     "STRUCT__DpsCheckLv1End_DamagePercentage": 0.15,
+                    "_DpsCheckRate_Pl2": 75,
+                    "_DpsCheckRate_Pl3": 66,
+                    "_DpsCheckRate_Pl4": 50,
+                    "_DpsCheckRate_Pl5": 40,
+                    "_DpsCheckRate_Pl6": 34,
+                    "_DpsCheckRate_Pl7": 28,
+                    "_DpsCheckRate_Pl8": 26,
                     "_WeakeningDPM_Pl2": 50,
                     "_WeakeningDPM_Pl3": 33,
                     "_WeakeningDPM_Pl4": 25,
-                    "_WeakeningDPM_Pl5": 20
+                    "_WeakeningDPM_Pl5": 20,
+                    "_WeakeningDPM_Pl6": 17,
+                    "_WeakeningDPM_Pl7": 14,
+                    "_WeakeningDPM_Pl8": 13
                 }
             },
             "_DodgeParam": {
@@ -358,7 +378,7 @@
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
                                         "_FrameKindLv0": 25.0,
-                                        "_FrameKindLv1": 25.0,
+                                        "_FrameKindLv1": 40.0,
                                         "_FrameKindLv2": 25.0
                                     }
                                 }
@@ -406,7 +426,7 @@
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
                                         "_FrameKindLv0": 22.0,
-                                        "_FrameKindLv1": 22.0,
+                                        "_FrameKindLv1": 30.0,
                                         "_FrameKindLv2": 22.0
                                     }
                                 }
@@ -418,44 +438,44 @@
                             "_FrameData": [
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 25.0,
-                                        "_FrameKindLv1": 25.0,
-                                        "_FrameKindLv2": 25.0
+                                        "_FrameKindLv0": 40.0,
+                                        "_FrameKindLv1": 40.0,
+                                        "_FrameKindLv2": 40.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 27.0,
-                                        "_FrameKindLv1": 27.0,
-                                        "_FrameKindLv2": 27.0
+                                        "_FrameKindLv0": 42.0,
+                                        "_FrameKindLv1": 42.0,
+                                        "_FrameKindLv2": 42.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 29.0,
-                                        "_FrameKindLv1": 29.0,
-                                        "_FrameKindLv2": 29.0
+                                        "_FrameKindLv0": 44.0,
+                                        "_FrameKindLv1": 44.0,
+                                        "_FrameKindLv2": 44.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 31.0,
-                                        "_FrameKindLv1": 31.0,
-                                        "_FrameKindLv2": 31.0
+                                        "_FrameKindLv0": 46.0,
+                                        "_FrameKindLv1": 46.0,
+                                        "_FrameKindLv2": 46.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 33.0,
-                                        "_FrameKindLv1": 33.0,
-                                        "_FrameKindLv2": 33.0
+                                        "_FrameKindLv0": 48.0,
+                                        "_FrameKindLv1": 48.0,
+                                        "_FrameKindLv2": 48.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 36.0,
-                                        "_FrameKindLv1": 36.0,
-                                        "_FrameKindLv2": 36.0
+                                        "_FrameKindLv0": 50.0,
+                                        "_FrameKindLv1": 50.0,
+                                        "_FrameKindLv2": 50.0
                                     }
                                 }
                             ]
@@ -466,44 +486,92 @@
                             "_FrameData": [
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 13.0,
-                                        "_FrameKindLv1": 13.0,
-                                        "_FrameKindLv2": 13.0
+                                        "_FrameKindLv0": 24.0,
+                                        "_FrameKindLv1": 24.0,
+                                        "_FrameKindLv2": 24.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 15.0,
-                                        "_FrameKindLv1": 15.0,
-                                        "_FrameKindLv2": 15.0
+                                        "_FrameKindLv0": 26.0,
+                                        "_FrameKindLv1": 26.0,
+                                        "_FrameKindLv2": 26.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 17.0,
-                                        "_FrameKindLv1": 17.0,
-                                        "_FrameKindLv2": 17.0
+                                        "_FrameKindLv0": 28.0,
+                                        "_FrameKindLv1": 28.0,
+                                        "_FrameKindLv2": 28.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 19.0,
-                                        "_FrameKindLv1": 19.0,
-                                        "_FrameKindLv2": 19.0
+                                        "_FrameKindLv0": 30.0,
+                                        "_FrameKindLv1": 30.0,
+                                        "_FrameKindLv2": 30.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 22.0,
-                                        "_FrameKindLv1": 22.0,
-                                        "_FrameKindLv2": 22.0
+                                        "_FrameKindLv0": 32.0,
+                                        "_FrameKindLv1": 32.0,
+                                        "_FrameKindLv2": 32.0
                                     }
                                 },
                                 {
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
-                                        "_FrameKindLv0": 25.0,
-                                        "_FrameKindLv1": 25.0,
-                                        "_FrameKindLv2": 25.0
+                                        "_FrameKindLv0": 34.0,
+                                        "_FrameKindLv1": 34.0,
+                                        "_FrameKindLv2": 34.0
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "_Wp05SpParrySoundAttack": {
+                        "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame": {
+                            "_FrameData": [
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 30.0,
+                                        "_FrameKindLv1": 30.0,
+                                        "_FrameKindLv2": 30.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 32.0,
+                                        "_FrameKindLv1": 32.0,
+                                        "_FrameKindLv2": 32.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 34.0,
+                                        "_FrameKindLv1": 34.0,
+                                        "_FrameKindLv2": 34.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 36.0,
+                                        "_FrameKindLv1": 36.0,
+                                        "_FrameKindLv2": 36.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 38.0,
+                                        "_FrameKindLv1": 38.0,
+                                        "_FrameKindLv2": 38.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 40.0,
+                                        "_FrameKindLv1": 40.0,
+                                        "_FrameKindLv2": 40.0
                                     }
                                 }
                             ]
@@ -551,6 +619,54 @@
                                     "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
                                         "_FrameKindLv0": 25.0,
                                         "_FrameKindLv1": 25.0,
+                                        "_FrameKindLv2": 25.0
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "_Wp13Sliding": {
+                        "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame": {
+                            "_FrameData": [
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 13.0,
+                                        "_FrameKindLv1": 13.0,
+                                        "_FrameKindLv2": 13.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 15.0,
+                                        "_FrameKindLv1": 15.0,
+                                        "_FrameKindLv2": 15.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 17.0,
+                                        "_FrameKindLv1": 17.0,
+                                        "_FrameKindLv2": 17.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 19.0,
+                                        "_FrameKindLv1": 19.0,
+                                        "_FrameKindLv2": 19.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 22.0,
+                                        "_FrameKindLv1": 22.0,
+                                        "_FrameKindLv2": 22.0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cDodgeParam.cNoHitFrame.cFrameData": {
+                                        "_FrameKindLv0": 25.0,
+                                        "_FrameKindLv1": 50.0,
                                         "_FrameKindLv2": 25.0
                                     }
                                 }
@@ -609,6 +725,7 @@
             },
             "_BlockParam": {
                 "app.user_data.NpcPartnerGlobalParam.cBlockParam": {
+                    "_MashingIntervalSec": 0.1,
                     "_Data": {
                         "app.cEnumerableParam`2<app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Fixed,app.user_data.NpcPartnerGlobalParam.cBlockParam.cData>": {
                             "_ParamList": [
@@ -617,8 +734,7 @@
                                         "EnumValue": 1844144896,
                                         "_EnemyHealthPercentage_0": 0,
                                         "_EnemyHealthPercentage_1": 0,
-                                        "_EnemyHealthPercentage_2": 0,
-                                        "_MashingIntervalSec": 0.1
+                                        "_EnemyHealthPercentage_2": 0
                                     }
                                 },
                                 {
@@ -626,8 +742,7 @@
                                         "EnumValue": -1259553536,
                                         "_EnemyHealthPercentage_0": 55,
                                         "_EnemyHealthPercentage_1": 35,
-                                        "_EnemyHealthPercentage_2": 15,
-                                        "_MashingIntervalSec": 0.1
+                                        "_EnemyHealthPercentage_2": 15
                                     }
                                 },
                                 {
@@ -635,8 +750,7 @@
                                         "EnumValue": -160021552,
                                         "_EnemyHealthPercentage_0": 70,
                                         "_EnemyHealthPercentage_1": 50,
-                                        "_EnemyHealthPercentage_2": 30,
-                                        "_MashingIntervalSec": 0.1
+                                        "_EnemyHealthPercentage_2": 30
                                     }
                                 },
                                 {
@@ -644,8 +758,7 @@
                                         "EnumValue": -779717760,
                                         "_EnemyHealthPercentage_0": 100,
                                         "_EnemyHealthPercentage_1": 80,
-                                        "_EnemyHealthPercentage_2": 60,
-                                        "_MashingIntervalSec": 0.1
+                                        "_EnemyHealthPercentage_2": 60
                                     }
                                 }
                             ]
@@ -697,6 +810,7 @@
             },
             "_RideParam": {
                 "app.user_data.NpcPartnerGlobalParam.cRideParam": {
+                    "_MakeRawCount": 2,
                     "_Data": {
                         "app.cEnumerableParam`2<app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Fixed,app.user_data.NpcPartnerGlobalParam.cRideParam.cData>": {
                             "_ParamList": [
@@ -705,9 +819,7 @@
                                         "EnumValue": 1844144896,
                                         "_EnemyHealthPercentage_0": 0,
                                         "_EnemyHealthPercentage_1": 0,
-                                        "_EnemyHealthPercentage_2": 0,
-                                        "_MakeRawCount": 2,
-                                        "_PorterJumpAttackActivePercentage": 0
+                                        "_EnemyHealthPercentage_2": 0
                                     }
                                 },
                                 {
@@ -715,9 +827,7 @@
                                         "EnumValue": -1259553536,
                                         "_EnemyHealthPercentage_0": 60,
                                         "_EnemyHealthPercentage_1": 40,
-                                        "_EnemyHealthPercentage_2": 0,
-                                        "_MakeRawCount": 2,
-                                        "_PorterJumpAttackActivePercentage": 70
+                                        "_EnemyHealthPercentage_2": 0
                                     }
                                 },
                                 {
@@ -725,9 +835,7 @@
                                         "EnumValue": -160021552,
                                         "_EnemyHealthPercentage_0": 80,
                                         "_EnemyHealthPercentage_1": 60,
-                                        "_EnemyHealthPercentage_2": 10,
-                                        "_MakeRawCount": 2,
-                                        "_PorterJumpAttackActivePercentage": 70
+                                        "_EnemyHealthPercentage_2": 10
                                     }
                                 },
                                 {
@@ -735,8 +843,36 @@
                                         "EnumValue": -779717760,
                                         "_EnemyHealthPercentage_0": 97,
                                         "_EnemyHealthPercentage_1": 75,
-                                        "_EnemyHealthPercentage_2": 20,
-                                        "_MakeRawCount": 2,
+                                        "_EnemyHealthPercentage_2": 20
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    "_PtJumpAttackData": {
+                        "app.cEnumerableParam`2<app.NpcPartnerDef.PERSONAL_KIND_LEVEL_Fixed,app.user_data.NpcPartnerGlobalParam.cRideParam.cPtJumpAttack>": {
+                            "_ParamList": [
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cRideParam.cPtJumpAttack": {
+                                        "EnumValue": 1844144896,
+                                        "_PorterJumpAttackActivePercentage": 0
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cRideParam.cPtJumpAttack": {
+                                        "EnumValue": -1259553536,
+                                        "_PorterJumpAttackActivePercentage": 70
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cRideParam.cPtJumpAttack": {
+                                        "EnumValue": -160021552,
+                                        "_PorterJumpAttackActivePercentage": 70
+                                    }
+                                },
+                                {
+                                    "app.user_data.NpcPartnerGlobalParam.cRideParam.cPtJumpAttack": {
+                                        "EnumValue": -779717760,
                                         "_PorterJumpAttackActivePercentage": 100
                                     }
                                 }
@@ -1419,13 +1555,54 @@
             },
             "_SituationVoice": {
                 "app.user_data.NpcPartnerGlobalParam.cSituationVoice": {
-                    "_RemoveDelayFrame": 3
+                    "_RemoveDelayFrame": 3,
+                    "_UniqueMissionID_01": [
+                        "[-1747176448]MISSION_002150",
+                        "[-270805888]MISSION_003250",
+                        "[-1780491904]MISSION_004320",
+                        "[-2047311488]MISSION_007035",
+                        "[-534105984]MISSION_010115",
+                        "[1339655296]MISSION_005360",
+                        "[857671872]MISSION_005390",
+                        "[9340]MISSION_730015",
+                        "[29336]MISSION_730025",
+                        "[22363]MISSION_740025"
+                    ]
                 }
             },
             "_Role": {
                 "app.user_data.NpcPartnerGlobalParam.cRole": {
                     "_Em0166_Hostility_BadConditionEx01StackCount": 2,
-                    "_Em0166_Hostility_Time": 30.0
+                    "_Em0166_Hostility_Time": 30.0,
+                    "_Em0078_Cable01_DelayTime": {
+                        "s": 10.0,
+                        "r": 0.0
+                    },
+                    "_Em0078_Cable02_DelayTime": {
+                        "s": 180.0,
+                        "r": 30.0
+                    },
+                    "_Em0078_Cable01_CancelTime": {
+                        "s": 0.0,
+                        "r": 0.0
+                    },
+                    "_Em0078_Cable02_CancelTime": {
+                        "s": 0.0,
+                        "r": 0.0
+                    },
+                    "_Em0078_Cable01_CompleteTime": {
+                        "s": 90.0,
+                        "r": 30.0
+                    },
+                    "_Em0078_Cable02_CompleteTime": {
+                        "s": 90.0,
+                        "r": 30.0
+                    },
+                    "_Em0078_CableFollowStartDist": 10.0,
+                    "_Em0078_CableFollow_CoolTime": {
+                        "s": 30.0,
+                        "r": 0.0
+                    }
                 }
             },
             "_Damage": {
@@ -1433,6 +1610,12 @@
                     "_RandomDamageRateBias": 0.5,
                     "_SlipDamageRate_Combat_Em0166Heat": 0.5,
                     "_SlipDamageRate_NoCombat_Em0166Heat": 0.5
+                }
+            },
+            "_Wp13ExBulletParam": {
+                "app.user_data.NpcPartnerGlobalParam.cWp13ExBulletParam": {
+                    "_HitSlowTime": 0.1,
+                    "_HitSlowSpeedRate": 0.4
                 }
             },
             "_RouteNaviData": {

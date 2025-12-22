@@ -2,7 +2,7 @@
     {
         "app.StainMeshSetting": {
             "_StainBabResource": "MasterMaterial/ByteAddressBuffer/StainMeshBAB.gpbf",
-            "_MaxInstanceNum": 512,
+            "_MaxInstanceNum": 3000,
             "_UseParamLength": 48,
             "_StainSeparator": false,
             "_MaterialData": [
@@ -161,6 +161,32 @@
                         "_AddBlendSpeed": 0.0,
                         "_RemoveBlendSpeed": 0.0
                     }
+                },
+                {
+                    "app.cStainMaterialData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[6]TAR"
+                            }
+                        },
+                        "_DyanamicMat_Color": {
+                            "R": 0,
+                            "G": 0,
+                            "B": 0,
+                            "A": 255
+                        },
+                        "_DyanamicMat_Param": {
+                            "x": 0.2,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_SubHeightSpeed": 80.0,
+                        "_OCCBlend": 0.15,
+                        "_TopBlend": 0.2,
+                        "_AddBlendSpeed": 0.4,
+                        "_RemoveBlendSpeed": 1.0
+                    }
                 }
             ],
             "_SandStormDryTime": 7.0,
@@ -168,8 +194,11 @@
             "_SnowDynamicTexFade": 0.44,
             "_SnowDynamicTexContrast": 0.5,
             "_StornDynamicTexFade": 1.0,
+            "_TarDynamicTexFade": 0.58,
+            "_TarDynamicTexContrast": 0.6,
             "_HeightStainSeparator": false,
             "_SnowHeight": 0.5,
+            "_TarHeight": 1.0,
             "_HumanData": [
                 {
                     "app.cHeightStainData": {
@@ -233,6 +262,19 @@
                         "_offsetHeight": 0.15,
                         "_UseRT": false,
                         "_rtOffsetHeight": 0.15,
+                        "_gradationHeight": 0.2
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[6]TAR"
+                            }
+                        },
+                        "_offsetHeight": 0.2,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.1,
                         "_gradationHeight": 0.2
                     }
                 }
@@ -503,6 +545,19 @@
                         "_rtOffsetHeight": 0.15,
                         "_gradationHeight": 0.3
                     }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[6]TAR"
+                            }
+                        },
+                        "_offsetHeight": 0.1,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.3
+                    }
                 }
             ],
             "_OtomoData": [
@@ -569,6 +624,19 @@
                         "_UseRT": false,
                         "_rtOffsetHeight": 0.15,
                         "_gradationHeight": 0.2
+                    }
+                },
+                {
+                    "app.cHeightStainData": {
+                        "_StainType": {
+                            "app.StainCtrlDef.STAIN_TYPE_Serializable": {
+                                "_Value": "[6]TAR"
+                            }
+                        },
+                        "_offsetHeight": 0.1,
+                        "_UseRT": false,
+                        "_rtOffsetHeight": 0.0,
+                        "_gradationHeight": 0.15
                     }
                 }
             ],

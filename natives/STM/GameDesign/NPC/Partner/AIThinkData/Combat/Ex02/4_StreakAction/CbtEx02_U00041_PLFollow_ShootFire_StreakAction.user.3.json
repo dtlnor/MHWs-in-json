@@ -1,0 +1,102 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cWp13Shoot_ActionParam": {
+                            "_BulletTypeFixed": true,
+                            "_FixedBulletType": {
+                                "app.WeaponGunDef.SHELL_TYPE_Serializable": {
+                                    "_Value": "[1096774016]FIRE"
+                                }
+                            },
+                            "_NextNoUse": true
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetScoringPoint_FollowPL_LStickParam": {
+                            "v0": 1.5,
+                            "v1": false,
+                            "v2": false,
+                            "_MoveType": "[6]COMBAT",
+                            "_UseAIMoveEnd": false,
+                            "_FixedSpeedLv": "[0]INVALID",
+                            "_IsMoveStopTurn": false,
+                            "_StopTurnDir": "[0]PL_AXIS_Z",
+                            "_DegRange": {
+                                "s": 0.0,
+                                "r": 180.0
+                            },
+                            "_TargetParam": {
+                                "app.mcNpcTargetController.cScoringPoint_Param": {
+                                    "_ScoringData": {
+                                        "app.user_data.NpcPQSScoringData": {
+                                            "userdataPath": "GameDesign/NPC/Partner/CommonData/PointQuery/Combat/EX02_RailgunCableFollow_PQSScoring.user"
+                                        }
+                                    },
+                                    "_VerticalData": {
+                                        "": {}
+                                    },
+                                    "_RelayingData": {
+                                        "": {}
+                                    },
+                                    "_RouteType": "[0]HIGHSCORE_POINT",
+                                    "_DirectionType": "[0]INVALID",
+                                    "_EnvLayer": "[0]SHORT",
+                                    "_IsEnableJointTarget": false,
+                                    "_JudgeLength": 2.0
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTarget_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_LogicType": "[1]EFFECTIVE_MEAT",
+                            "_AdjustType": "[0]TO_KEY_JOINTS",
+                            "_UpdateTiming": "[0]ALWAYS",
+                            "_CheckRayCast": true,
+                            "_IsDirectionAim": false
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckNeedReload_Param": {
+                                "_BulletTypeFixed": false,
+                                "_FixedBulletType": {
+                                    "app.WeaponGunDef.SHELL_TYPE_Serializable": {
+                                        "_Value": "[1096774016]FIRE"
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": true
+                    }
+                }
+            ]
+        }
+    }
+]

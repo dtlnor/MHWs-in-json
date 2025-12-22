@@ -1,0 +1,137 @@
+{
+    "typeName": "app.point_graph_data.NpcLinearAct",
+    "GraphNodes": {
+        "0": {},
+        "1": {}
+    },
+    "Points": [],
+    "mainObjects": [
+        {
+            "app.point_graph_data.NpcLinearAct": {
+                "Index": 0,
+                "Position": {
+                    "x": 1214.3799,
+                    "y": -99.30986,
+                    "z": -159.07687,
+                    "pad": 0.0
+                },
+                "Attributes": 0,
+                "STRUCT__DegY__HasValue": true,
+                "STRUCT__DegY__Value": 15.0,
+                "_MoveType": {
+                    "app.NpcDef.LINEAR_ACT_MOVE_TYPE_Serializable": {
+                        "_Value": "[795790272]WALK"
+                    }
+                },
+                "_MoveBlendRate": 0.5,
+                "_DisableNavigation": false,
+                "_DisableAvoid": false,
+                "STRUCT__Reach__HasValue": false,
+                "STRUCT__Reach__Value": 0.0,
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[8]GREETING"
+                    }
+                },
+                "_ConditionData": {
+                    "": {}
+                },
+                "_Param": {
+                    "app.cNpcLinearActNone_Param": {}
+                }
+            }
+        },
+        {
+            "app.point_graph_data.NpcLinearAct": {
+                "Index": 0,
+                "Position": {
+                    "x": 1214.3799,
+                    "y": -99.30986,
+                    "z": -159.07687,
+                    "pad": 0.0
+                },
+                "Attributes": 0,
+                "STRUCT__DegY__HasValue": true,
+                "STRUCT__DegY__Value": 15.0,
+                "_MoveType": {
+                    "app.NpcDef.LINEAR_ACT_MOVE_TYPE_Serializable": {
+                        "_Value": "[795790272]WALK"
+                    }
+                },
+                "_MoveBlendRate": 0.5,
+                "_DisableNavigation": false,
+                "_DisableAvoid": false,
+                "STRUCT__Reach__HasValue": false,
+                "STRUCT__Reach__Value": 0.0,
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[8]GREETING"
+                    }
+                },
+                "_ConditionData": {
+                    "": {}
+                },
+                "_Param": {
+                    "app.cNpcLinearActIdle_Param": {
+                        "_LoopType": "[3]INFINITE",
+                        "_WaitTime": 2.0,
+                        "_MissionID": {
+                            "app.MissionIDList.ID_Serializable": {
+                                "_Value": "[0]INVALID"
+                            }
+                        },
+                        "_FlagIndex": -1,
+                        "_LoopCount": 1
+                    }
+                }
+            }
+        }
+    ],
+    "subObjects": [
+        {
+            "app.point_graph_data.NpcLinearAct.cSharedData": {
+                "_MotionPack": {
+                    "": {}
+                },
+                "_MotionPack_Sub": {
+                    "": {}
+                },
+                "_HoldMotionPackSelector": {
+                    "app.cNpcHoldMotionPackSelector": {
+                        "_Category": 923327552,
+                        "_HoldMotionPackID": -638524608
+                    }
+                },
+                "_FollowParam": {
+                    "app.point_graph_data.NpcLinearAct.cFollowParam": {
+                        "_TargetNpc": {
+                            "app.NpcDef.ID_Serializable": {
+                                "_Value": "[4]INVALID"
+                            }
+                        },
+                        "_DefaultSpeedLv": "[2]WALK",
+                        "_MoveTypeDests": [],
+                        "_StopAngle": 0.0
+                    }
+                },
+                "_MaskGestureTagBit": {
+                    "app.NpcDef.GESTURE_TAGBit_Serializable": {
+                        "_Value": "[0]"
+                    }
+                },
+                "_DisableMoveStartAccent": false,
+                "_IsLoop": false,
+                "_IsFinishIdle": true,
+                "_IsFinishAction": false,
+                "_ActionSelector": {
+                    "app.cNpcFsmLikeActionSelector": {
+                        "_Category": 0,
+                        "_ActionID": 1116084352,
+                        "_UseVariation": false,
+                        "_Variation": -663541696
+                    }
+                }
+            }
+        }
+    ]
+}

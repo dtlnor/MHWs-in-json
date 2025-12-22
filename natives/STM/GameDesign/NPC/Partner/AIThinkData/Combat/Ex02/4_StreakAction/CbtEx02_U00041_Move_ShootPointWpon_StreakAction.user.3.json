@@ -1,0 +1,65 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[1]LSTICK_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cEx02SetActPointRandom_Param": {
+                            "v0": 1.5,
+                            "v1": false,
+                            "v2": false,
+                            "_MoveType": "[11]COMBAT_HUNTER",
+                            "_UseAIMoveEnd": false,
+                            "_FixedSpeedLv": "[0]INVALID",
+                            "_IsMoveStopTurn": false,
+                            "_StopTurnDir": "[0]PL_AXIS_Z",
+                            "_DegRange": {
+                                "s": 0.0,
+                                "r": 180.0
+                            },
+                            "_ActPoints": [
+                                "[10]U00041_A01_01",
+                                "[13]U00041_A01_02",
+                                "[14]U00041_A01_03"
+                            ]
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.cNpcStreakEffectParam_None": {}
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckEx02DistActPoints_Param": {
+                                "_ActPoints": [
+                                    "[10]U00041_A01_01",
+                                    "[13]U00041_A01_02",
+                                    "[14]U00041_A01_03"
+                                ],
+                                "_Dist": 1.5,
+                                "_CompareType": "[4]GREATER_OR_EQUAL",
+                                "_CompareArray": "[0]ANY"
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]

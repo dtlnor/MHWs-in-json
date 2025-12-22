@@ -347,7 +347,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cWaitCamp_FinishMoveToTarget_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -409,7 +409,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cWaitCamp_FinishAdjustActPointPosition_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -458,7 +458,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cWaitCamp_IsActEnd_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -568,7 +568,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cWaitCamp_FinishTentActionIdle_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -625,7 +625,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cActionEnd_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -1019,7 +1019,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cActionEnd_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -1226,7 +1226,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cWaitCamp_IsSmashEndActionEnd_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -1283,7 +1283,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cActionEnd_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []
@@ -1481,7 +1481,7 @@
                                                     "_AssetGuid": "3af7f666-f327-48e9-9d67-f4c6169dfaf2",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
-                                                            "_Hash": 3810429826
+                                                            "_Hash": 3195520805
                                                         }
                                                     },
                                                     "_JustOnce": false,
@@ -1497,6 +1497,26 @@
                                                     "_AssetGuid": "3af7f666-f327-48e9-9d67-f4c6169dfaf2",
                                                     "_GoalNameHash": {
                                                         "app.cStrHashHeavy": {
+                                                            "_Hash": 3810429826
+                                                        }
+                                                    },
+                                                    "_JustOnce": false,
+                                                    "_Inverse": false,
+                                                    "_IgnoreInterrupt": false,
+                                                    "_EvaluatorParam": {
+                                                        "app.OtomoGoaTreeEvaluators.cWaitCamp_IsSeamlessQuestMoveAllowed_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false
+                                                        }
+                                                    }
+                                                }
+                                            },
+                                            {
+                                                "goatree.cGoalParam_Composite.cSubGoalSetting": {
+                                                    "_AssetGuid": "3af7f666-f327-48e9-9d67-f4c6169dfaf2",
+                                                    "_GoalNameHash": {
+                                                        "app.cStrHashHeavy": {
                                                             "_Hash": 2240895245
                                                         }
                                                     },
@@ -1504,7 +1524,11 @@
                                                     "_Inverse": false,
                                                     "_IgnoreInterrupt": false,
                                                     "_EvaluatorParam": {
-                                                        "goatree.cEvaluatorParam_Max": {}
+                                                        "app.OtomoGoaTreeEvaluators.cWaitCamp_IsSeamlessQuestMoveAllowed_Param": {
+                                                            "_IsWaitActionEnd": false,
+                                                            "_IsCheckStench": false,
+                                                            "_IsCheckReserveAIState": false
+                                                        }
                                                     }
                                                 }
                                             },
@@ -1531,6 +1555,44 @@
                             }
                         },
                         "_GoalEffectParams": []
+                    }
+                },
+                {
+                    "goatree.cGoalPackage_Basic": {
+                        "_GoalNameHash": {
+                            "app.cStrHashHeavy": {
+                                "_Hash": 3195520805
+                            }
+                        },
+                        "_BuildType": "[0]SET",
+                        "_SubGoalSelectType": {
+                            "goatree.GoaTreeDef.SUBGOAL_SELECT_TYPE_Serializable": {
+                                "_Value": "[0]MOST_DESIRABILITY"
+                            }
+                        },
+                        "_EndlessLoop": false,
+                        "_ParallelWhenInterrupted": false,
+                        "_UseableToReferent": false,
+                        "_OverridableToReferent": false,
+                        "_GoalParam": {
+                            "goatree.cGoalParam_EffectTerminationParam": {
+                                "_SubGoalWrapper": {
+                                    "goatree.cGoalParam_Composite.cSubGoalWrapper": {
+                                        "_SubGoalList": [],
+                                        "_InterruptGoalList": []
+                                    }
+                                }
+                            }
+                        },
+                        "_GoalEffectParams": [
+                            {
+                                "goatree.cGoalPackage.cGoalEffectHolder": {
+                                    "_Param": {
+                                        "app.OtomoGoaTreeGoalEffects.cWaitCamp_NotifySeamlessQuestFlowStarted_Param": {}
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
@@ -1589,13 +1651,6 @@
                                                 }
                                             }
                                         }
-                                    }
-                                }
-                            },
-                            {
-                                "goatree.cGoalPackage.cGoalEffectHolder": {
-                                    "_Param": {
-                                        "app.OtomoGoaTreeGoalEffects.cWaitCamp_NotifySeamlessQuestFlowStarted_Param": {}
                                     }
                                 }
                             }
@@ -1699,7 +1754,7 @@
                         "_OverridableToReferent": false,
                         "_GoalParam": {
                             "app.OtomoGoaTreeGoals.cWaitCamp_IsBrokenTentIdleFinished_Param": {
-                                "_SubGoalWrapper": {
+                                "v0": {
                                     "goatree.cGoalParam_Composite.cSubGoalWrapper": {
                                         "_SubGoalList": [],
                                         "_InterruptGoalList": []

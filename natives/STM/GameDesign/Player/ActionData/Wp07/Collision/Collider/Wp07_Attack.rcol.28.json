@@ -108,6 +108,35 @@
                     "shapeName": "",
                     "primaryJointName": "",
                     "secondaryJointName": ""
+                },
+                {
+                    "shapeGuid": "99335f9f-5705-4b7b-be22-415f0f9ab1c4",
+                    "shapeNameMMHash": 2180083513,
+                    "unknIndex": 0,
+                    "layerIndex": 0,
+                    "atteribute": -1,
+                    "skipIdBits": 0,
+                    "shapeType": "ContinuousCapsule",
+                    "shapeParam": {
+                        "start": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0
+                        },
+                        "end": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 4.5
+                        },
+                        "radius": 2.0
+                    },
+                    "ignoreTagBits": 1,
+                    "unkn": 0,
+                    "primaryJointNameMMHash": 2879905340,
+                    "secondaryJointNameMMHash": 2180083513,
+                    "shapeName": "",
+                    "primaryJointName": "root",
+                    "secondaryJointName": ""
                 }
             ],
             "maskGuids": [
@@ -2626,7 +2655,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -2804,7 +2833,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -2982,7 +3011,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -4127,6 +4156,14 @@
                             "": {}
                         }
                     }
+                },
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
                 }
             ],
             "userData": {
@@ -4298,6 +4335,14 @@
             "name": "",
             "keyName": "",
             "nativeShapeColliders": [
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
+                },
                 {
                     "via.physics.RequestSetColliderUserData": {
                         "Name": "",
@@ -4840,6 +4885,14 @@
             "name": "",
             "keyName": "",
             "nativeShapeColliders": [
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
+                },
                 {
                     "via.physics.RequestSetColliderUserData": {
                         "Name": "",
@@ -6441,5 +6494,10 @@
             }
         }
     ],
-    "ignoreTags": []
+    "ignoreTags": [
+        {
+            "ignoreTag": 1696471599,
+            "ignoreTagName": "ExtraStealthShape"
+        }
+    ]
 }

@@ -136,6 +136,35 @@
                     "shapeName": "",
                     "primaryJointName": "",
                     "secondaryJointName": ""
+                },
+                {
+                    "shapeGuid": "48ac4760-0cd1-404d-afa1-3a3c53e989dc",
+                    "shapeNameMMHash": 2180083513,
+                    "unknIndex": 0,
+                    "layerIndex": 0,
+                    "atteribute": -1,
+                    "skipIdBits": 0,
+                    "shapeType": "ContinuousCapsule",
+                    "shapeParam": {
+                        "start": {
+                            "x": 4.5691064e-07,
+                            "y": 0.0,
+                            "z": 1.5076146
+                        },
+                        "end": {
+                            "x": 1.3371276e-06,
+                            "y": 0.0,
+                            "z": 5.63888
+                        },
+                        "radius": 2.5
+                    },
+                    "ignoreTagBits": 1,
+                    "unkn": 0,
+                    "primaryJointNameMMHash": 2180083513,
+                    "secondaryJointNameMMHash": 2180083513,
+                    "shapeName": "",
+                    "primaryJointName": "",
+                    "secondaryJointName": ""
                 }
             ],
             "maskGuids": [
@@ -2342,7 +2371,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -4437,7 +4466,7 @@
                         }
                     },
                     "_DamageAngleOffsetDeg": 0.0,
-                    "_Attack": 48.0,
+                    "_Attack": 58.0,
                     "_FixAttack": 0.0,
                     "_GuardType": "[0]NORMAL",
                     "_VersusGuardPower": 0.0,
@@ -5626,7 +5655,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -5812,7 +5841,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -5998,7 +6027,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -6184,7 +6213,7 @@
                     "_UseStatusAttrPower": true,
                     "_StatusAttrRate": 1.0,
                     "_StatusConditionRate": 1.0,
-                    "_UseSkillAdditionalDamage": false,
+                    "_UseSkillAdditionalDamage": true,
                     "_UseSkillContinuousAttack": true,
                     "_MultiHitStatusRateCurve": {
                         "": {}
@@ -8842,8 +8871,8 @@
                     "_OldScarDamageRate": 1.0,
                     "_IsScarForceChange": false,
                     "_IsRawScarForce": false,
-                    "_IsRawScarLimit": false,
-                    "_IsWeakPointLimit": false,
+                    "_IsRawScarLimit": true,
+                    "_IsWeakPointLimit": true,
                     "_NoDamageReaction": false,
                     "_IsMultiHitEmParts": false,
                     "_MultiHitEmPartsMaxNum": 1,
@@ -9173,7 +9202,7 @@
                     "_CondCustomSec": 0.0,
                     "_StunDamage": 0.0,
                     "_FlagBit": "[1]USE_MULIT_HIT",
-                    "_MultiHitTimer": 10.0,
+                    "_MultiHitTimer": 6.0,
                     "_HealValue": 0.0,
                     "_PriorityFixed": {
                         "app.CollisionDef.PRIORITY_Serializable": {
@@ -10015,6 +10044,14 @@
                             "": {}
                         }
                     }
+                },
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
                 }
             ],
             "userData": {
@@ -10193,6 +10230,14 @@
                             "": {}
                         }
                     }
+                },
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
                 }
             ],
             "userData": {
@@ -10364,6 +10409,14 @@
             "name": "",
             "keyName": "",
             "nativeShapeColliders": [
+                {
+                    "via.physics.RequestSetColliderUserData": {
+                        "Name": "",
+                        "ParentUserData": {
+                            "": {}
+                        }
+                    }
+                },
                 {
                     "via.physics.RequestSetColliderUserData": {
                         "Name": "",
@@ -13105,5 +13158,10 @@
             }
         }
     ],
-    "ignoreTags": []
+    "ignoreTags": [
+        {
+            "ignoreTag": 1696471599,
+            "ignoreTagName": "ExtraStealthShape"
+        }
+    ]
 }

@@ -1,0 +1,101 @@
+[
+    {
+        "app.user_data.NpcStreakActionData": {
+            "_TerminateType": "[0]ACTION_EXECUTED",
+            "_ActionEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Action": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetWeaponOn_ActionParam": {
+                            "_Type": "[2]MOVE_ON"
+                        }
+                    }
+                }
+            },
+            "_LStickEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTargetParts_LStickParam": {
+                            "v0": 0.0,
+                            "v1": false,
+                            "v2": false,
+                            "_MoveType": "[6]COMBAT",
+                            "_UseAIMoveEnd": false,
+                            "_FixedSpeedLv": "[4]DASH",
+                            "_IsMoveStopTurn": false,
+                            "_StopTurnDir": "[0]PL_AXIS_Z",
+                            "_DegRange": {
+                                "s": 0.0,
+                                "r": 180.0
+                            },
+                            "_TargetType": "[6]PRIORITY_LOST",
+                            "_IsOverwritePartsType": false,
+                            "_OverwritePartsType": {
+                                "app.NpcPartnerDef.STREAK_TARGET_PARTS_TYPE_Serializable": {
+                                    "_Value": "[-156120704]NEAR_PARTS"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "_AimEffectParam": {
+                "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_Aim": {
+                    "_Param": {
+                        "app.NpcStreakEffects.cSetTarget_AimParam": {
+                            "_StartType": "[0]NONE",
+                            "_EndType": "[0]NONE",
+                            "_CanAimWpOff": false,
+                            "_UseParabora": "[0]NONE",
+                            "_StartActionSelector": {
+                                "app.cNpcHunterActionSelector": {
+                                    "_Category": 773579456,
+                                    "_Action": 0
+                                }
+                            },
+                            "_LogicType": "[5]PRIORITY_LOST",
+                            "_AdjustType": "[2]UNADJUSTED",
+                            "_UpdateTiming": "[0]ALWAYS",
+                            "_CheckRayCast": false,
+                            "_IsDirectionAim": false
+                        }
+                    }
+                }
+            },
+            "_EvaluatorParams": [
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckWpOn_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckIsFly_Param": {}
+                        },
+                        "_Inverse": true
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckAnyCancelSpecified_Param": {
+                                "_Immediate": false,
+                                "_Strict": false,
+                                "_ActionSelector": {
+                                    "app.cNpcHunterActionSelector": {
+                                        "_Category": -614648896,
+                                        "_Action": 2
+                                    }
+                                }
+                            }
+                        },
+                        "_Inverse": false
+                    }
+                }
+            ]
+        }
+    }
+]
