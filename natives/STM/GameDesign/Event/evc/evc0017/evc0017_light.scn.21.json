@@ -701,7 +701,7 @@
                             "v12": 1,
                             "v13": 1103626240,
                             "v14": 4291422463,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
                             "v16": 42,
                             "v17": 43
                         }
@@ -823,6 +823,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": true,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": 230.0,
                                     "NearFadeOutEndDistance": 30.0,
                                     "FadeOutStartDistance": -1.0,
@@ -1014,10 +1021,27 @@
                                 "r": 1.0
                             }
                         }
+                    },
+                    "Component[16]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
                     }
                 }
             },
-            "ChildObject[16]": {
+            "ChildObject[17]": {
                 "Guid": "599bed55-d341-492d-ab88-bb8c46d12143",
                 "GameObject": {
                     "via.GameObject": {
@@ -1029,7 +1053,7 @@
                     }
                 },
                 "Prefab": "Art/Light/Light_Prefab/EventLightController.pfb",
-                "Component[17]": {
+                "Component[18]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -1057,12 +1081,12 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[18]": {
+                "Component[19]": {
                     "app.EventLightController": {}
                 }
             }
         },
-        "MainFolder[19]": {
+        "MainFolder[20]": {
             "Folder": {
                 "via.Folder": {
                     "Name": "evc0017_Light",

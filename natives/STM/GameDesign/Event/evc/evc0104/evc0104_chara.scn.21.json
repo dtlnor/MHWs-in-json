@@ -140,17 +140,22 @@
                 "v4": "Art/Model/Character/ch90/162/0000/ch90_162_0000_SC.jcns"
             }
         },
-        "141": {
+        "34": {
+            "via.physics.RequestSetCollider.RequestSetGroup": {
+                "v0_Resource": "GameDesign/Event/Resource/system/Evm_Zone.rcol"
+            }
+        },
+        "142": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
         },
-        "143": {
+        "144": {
             "via.motion.ChainWind": {
                 "v0": ""
             }
         },
-        "145": {
+        "146": {
             "via.motion.JointExprGraphLayer": {
                 "v0_JointExprGraph": "Art/Model/Character/ch90/162/0000/ch90_162_0000.jntexprgraph",
                 "v1_EnabledOverrideUpdateTiming": false,
@@ -387,9 +392,9 @@
                 "Component[11]": {
                     "app.MeshSettingController": {
                         "v0_Enabled": true,
-                        "_IsUpdateChild": false,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false
+                        "v1": false,
+                        "v2": true,
+                        "v3": false
                     }
                 },
                 "Component[12]": {
@@ -423,10 +428,10 @@
                 "Component[14]": {
                     "app.MeshSetting": {
                         "v0_Enabled": true,
-                        "_LodSelectionAlogrithm": 0,
-                        "_AssetNo": 0,
-                        "_IsMargeBoundaryInController": true,
-                        "_IsMargeBoundaryDrawOff": false,
+                        "v1": 0,
+                        "v2": 0,
+                        "v3": true,
+                        "v4": false,
                         "_IsPassThrough": true,
                         "_MeshMaterialLOD": {
                             "": {}
@@ -505,17 +510,12 @@
                         "DevelopDraw": true,
                         "DevelopDrawFillMode": "[1]WireFrame",
                         "DependencyResources": [],
-                        "Verbose": false,
-                        "RequestSetGroups": [
-                            {
-                                "via.physics.RequestSetCollider.RequestSetGroup": {
-                                    "v0_Resource": "GameDesign/Event/Resource/system/Evm_Zone.rcol"
-                                }
-                            }
+                        "v4": [
+                            34
                         ],
-                        "BankResource": "",
-                        "v7": 4,
-                        "v8": 0
+                        "v5": "",
+                        "v6": 4,
+                        "v7": 0
                     }
                 },
                 "Component[19]": {
@@ -551,14 +551,15 @@
                         "_IsUpdateSelf": false,
                         "_IsWindRecieve": true,
                         "_IsCullingEnable": true,
-                        "_IsCreateVolumeOccludee": true
+                        "_IsCreateVolumeOccludee": true,
+                        "_IsDestroyComponent_NSW2": false
                     }
                 },
                 "Component[22]": {
                     "via.render.Mesh": {
                         "v0": 31,
                         "v1": 1,
-                        "v2": "Art/Model/Character/ch90/162/0000/ch90_162_0000.mesh",
+                        "v2": "@Art/Model/Character/ch90/162/0000/ch90_162_0000.mesh",
                         "v3": "Art/Model/Character/ch90/162/0000/ch90_162_0000.mdf2",
                         "v4": 0,
                         "v5": 1065353216,
@@ -998,6 +999,11 @@
                         },
                         "_SnowData": {
                             "app.CharacterTimelineEventActorBase.SnowParam": {
+                                "Rate": -1.0
+                            }
+                        },
+                        "_TarData": {
+                            "app.CharacterTimelineEventActorBase.TarParam": {
                                 "Rate": -1.0
                             }
                         },
@@ -1769,10 +1775,10 @@
                 "Component[27]": {
                     "app.SoundMotionSequenceApp": {
                         "v0": 1,
-                        "_MotionStatusSettingListData": {
+                        "v1": {
                             "": {}
                         },
-                        "_UpdateSequenceCategoryBits": 2,
+                        "v2": 2,
                         "_UpdateOnlyDrawSelf": false
                     }
                 },
@@ -1812,7 +1818,7 @@
                         "v9": 0,
                         "v10": 1101004800,
                         "v11": 0,
-                        "v12": 141,
+                        "v12": 142,
                         "v13": 0,
                         "v14": 0,
                         "v15": 0,
@@ -1847,7 +1853,7 @@
                         "v9": 0,
                         "v10": 1101004800,
                         "v11": 0,
-                        "v12": 143,
+                        "v12": 144,
                         "v13": 0,
                         "v14": 0,
                         "v15": 0,
@@ -1875,7 +1881,7 @@
                         "v2_UpdateTiming": "[3]ByBehavior",
                         "v3": 0,
                         "v4": [
-                            145
+                            146
                         ]
                     }
                 },

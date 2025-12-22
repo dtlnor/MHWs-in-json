@@ -223,7 +223,7 @@
                 }
             },
             "ChildObject[65]": {
-                "Guid": "af59726c-3f67-4e24-b610-7b0b02ed54b0",
+                "Guid": "e36e9723-0b2f-4e39-883a-1746c355297d",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "st104_a06_03_n16_p01_p00",
@@ -278,7 +278,7 @@
                         "v11_DrawSignedDistanceField": true,
                         "v12_Static": false,
                         "v13": 0,
-                        "v14": "GameDesign/Stage/st104/_Export/Foliage/st104_a06_03_n16_p01_p00.fol",
+                        "v14": "GameDesign/Stage/st104/_Export/Foliage/st104_a06_03_CullingFoliage_n16_p01_p00.fol",
                         "v15": 0,
                         "v16": 4,
                         "v17": 0,
@@ -298,15 +298,16 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
                 "Component[68]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": -1341824640,
                         "_HeatReceiverParamID": -2104865152,
@@ -359,6 +360,10 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": true,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": true,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": false
@@ -367,7 +372,7 @@
             }
         },
         "MainObject[0]": {
-            "Guid": "a464dfea-9418-4f8e-8148-f0833f0f18cc",
+            "Guid": "496f3710-ca03-493f-824b-6478a6cd317b",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm42_700_00_A",
@@ -758,10 +763,10 @@
             "Component[3]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -821,7 +826,7 @@
             }
         },
         "MainObject[4]": {
-            "Guid": "012ac1c2-2ea6-4d13-82d7-d36989a652bb",
+            "Guid": "670de64b-31a8-4e99-b604-dcab7b809e38",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm43_507_00_G",
@@ -1212,10 +1217,10 @@
             "Component[7]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -1275,7 +1280,7 @@
             }
         },
         "MainObject[8]": {
-            "Guid": "914392ba-8d21-4310-b785-995ff1647c7f",
+            "Guid": "4f3c819f-1253-434c-aa0c-f5abf55223bc",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -1316,7 +1321,7 @@
             }
         },
         "MainObject[10]": {
-            "Guid": "930dfd66-7ff4-477a-a9d1-0ac93e5cf5fc",
+            "Guid": "a06559e9-fa12-40fb-8fbf-f37f56007dc6",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -1357,7 +1362,7 @@
             }
         },
         "MainObject[12]": {
-            "Guid": "22755a8e-8fd2-472e-9220-0cc87548e639",
+            "Guid": "3fe70720-4b49-4b22-94f4-6d7e28534086",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -1398,7 +1403,7 @@
             }
         },
         "MainObject[14]": {
-            "Guid": "f4005ee6-3e0b-43c8-9d2d-312dbb95614b",
+            "Guid": "8ca782de-b04c-4348-8964-fa5151b37a36",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -1439,7 +1444,7 @@
             }
         },
         "MainObject[16]": {
-            "Guid": "60d4189a-f12d-46f0-9a17-bb4a9f23cc1d",
+            "Guid": "e785a573-5b72-4e09-891d-57109e297299",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm42_727_00_A",
@@ -1830,10 +1835,10 @@
             "Component[19]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -1893,7 +1898,7 @@
             }
         },
         "MainObject[20]": {
-            "Guid": "fa59079e-ae86-472d-ae68-2e0c593e24f7",
+            "Guid": "f4564a1b-fdc1-431d-9095-a50f7320c64c",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -1934,7 +1939,7 @@
             }
         },
         "MainObject[22]": {
-            "Guid": "1ed81d40-dfec-4bba-9496-16f42bae9cc2",
+            "Guid": "793429ef-f694-4071-b433-17eb6d4fc0dc",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_302_00_A",
@@ -2325,10 +2330,10 @@
             "Component[25]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -2388,7 +2393,7 @@
             }
         },
         "MainObject[26]": {
-            "Guid": "96652b17-01ca-41b4-a5da-2d29c955af12",
+            "Guid": "e683324e-7bd6-4140-a872-9195292e7d56",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm22_303_01_A",
@@ -2779,10 +2784,10 @@
             "Component[29]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -2842,7 +2847,7 @@
             }
         },
         "MainObject[30]": {
-            "Guid": "98de66f6-fccf-44f9-a25a-274dd87123ef",
+            "Guid": "8333d93a-749b-4619-8078-a1d7526bfd69",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -2883,7 +2888,7 @@
             }
         },
         "MainObject[32]": {
-            "Guid": "50a61d3e-fac3-4c31-bfdc-b73f00b631a8",
+            "Guid": "22b3197f-2cd5-47ba-8340-22e689a9f865",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -2924,7 +2929,7 @@
             }
         },
         "MainObject[34]": {
-            "Guid": "e29e5003-f673-410e-860d-69ffb9bd5dba",
+            "Guid": "cd509733-3751-4afc-b6d4-87b1ff1252d2",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -2965,7 +2970,7 @@
             }
         },
         "MainObject[36]": {
-            "Guid": "7a975d4d-0873-44e3-b9b2-99d680fdb87d",
+            "Guid": "6f5bc475-ac4e-41b7-b8ea-affc55f22a43",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -3006,7 +3011,7 @@
             }
         },
         "MainObject[38]": {
-            "Guid": "959ced21-cdf3-45cb-ba93-c1d376c62113",
+            "Guid": "b9883269-f2e8-4e2b-8ec9-29ba15af669a",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -3047,7 +3052,7 @@
             }
         },
         "MainObject[40]": {
-            "Guid": "445c923f-c0c2-4b6f-bc25-3758551bda49",
+            "Guid": "4162e3db-9b25-4012-af18-904ab908023e",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm22_303_00_A",
@@ -3438,10 +3443,10 @@
             "Component[43]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -3501,7 +3506,7 @@
             }
         },
         "MainObject[44]": {
-            "Guid": "84049e9a-88a9-4b1b-8e7c-fcec73e6cef5",
+            "Guid": "080e8564-19d1-46f5-8f4e-a7d6827b3945",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_304_00_A",
@@ -3892,10 +3897,10 @@
             "Component[47]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -3955,7 +3960,7 @@
             }
         },
         "MainObject[48]": {
-            "Guid": "72ddcd81-99ee-46d3-a860-ec4e7cb49899",
+            "Guid": "dfa4f403-b956-4154-bd54-354fc971ac07",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm22_303_02_A",
@@ -4346,10 +4351,10 @@
             "Component[51]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -4409,7 +4414,7 @@
             }
         },
         "MainObject[52]": {
-            "Guid": "a2a47beb-4ceb-4d25-80a6-b2b8ebc276d7",
+            "Guid": "364a88eb-6a99-47c9-9ca3-26746afa1a84",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm42_720_00_A",
@@ -4800,10 +4805,10 @@
             "Component[55]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -4863,7 +4868,7 @@
             }
         },
         "MainObject[56]": {
-            "Guid": "3c3d06c5-d02e-4543-97fc-f77e70f7f825",
+            "Guid": "25f9310e-3fff-4e43-bee5-23903fb324b1",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm22_309_02_A",
@@ -5254,10 +5259,10 @@
             "Component[59]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -5317,7 +5322,7 @@
             }
         },
         "MainObject[60]": {
-            "Guid": "4706e77c-f729-4ed3-a6ef-6e9e96da60eb",
+            "Guid": "445de77b-77fd-42a1-ab1e-c4dfebeb332c",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm45_092_00_A",
@@ -5708,10 +5713,10 @@
             "Component[63]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": false,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -5771,7 +5776,7 @@
             }
         },
         "MainObject[69]": {
-            "Guid": "411e89a5-efcd-4c8c-a81f-ccbf4ca1d76f",
+            "Guid": "1870cb05-bc13-43f5-88df-79c76b60087a",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -5811,7 +5816,7 @@
                 }
             },
             "ChildObject[71]": {
-                "Guid": "c0e090c9-1508-4a75-bcbf-86c09e560274",
+                "Guid": "68267204-3f9d-4853-80ed-9c931a0a1359",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "Sm_Reduction_rubble_iron",
@@ -5857,7 +5862,7 @@
                     }
                 },
                 "ChildObject[74]": {
-                    "Guid": "3cad2028-d64c-43ae-acea-69477ddc220b",
+                    "Guid": "ca1d4866-5fad-4feb-a1a6-d52c156ee19e",
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "SoundGenerator",
@@ -5913,7 +5918,7 @@
                     },
                     "Component[78]": {
                         "soundlib.SoundContainer": {
-                            "v0": 1,
+                            "v0": 0,
                             "_TriggerOnlyDrawSelf": false,
                             "_UserDataList": [
                                 {
@@ -5947,7 +5952,7 @@
             }
         },
         "MainObject[81]": {
-            "Guid": "8315ae3f-f216-4b0c-9a4f-602ccde6f17c",
+            "Guid": "247d805b-b364-4a63-ac1d-8cd76cabed3a",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -5987,7 +5992,7 @@
                 }
             },
             "ChildObject[83]": {
-                "Guid": "53491959-fccb-4754-8dd9-5a024f1f548d",
+                "Guid": "0c6d5d3a-7a0b-4279-98d9-7d34855cbedd",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "Sm_Reduction_WindReaction_Rock_A",
@@ -6033,7 +6038,7 @@
                     }
                 },
                 "ChildObject[86]": {
-                    "Guid": "a561d9f6-dbda-4ec3-becc-65eb6fc97a54",
+                    "Guid": "25bb20db-254e-442a-a8f8-24cf3744675f",
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "SoundGenerator",
@@ -6089,7 +6094,7 @@
                     },
                     "Component[90]": {
                         "soundlib.SoundContainer": {
-                            "v0": 1,
+                            "v0": 0,
                             "_TriggerOnlyDrawSelf": false,
                             "_UserDataList": [
                                 {
@@ -6123,7 +6128,7 @@
             }
         },
         "MainObject[93]": {
-            "Guid": "b6e561d5-11cc-4ae5-9933-b1f0bf2f456e",
+            "Guid": "dbc885a5-7c78-4e1a-ba5f-0dd3401deb50",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -6163,7 +6168,7 @@
                 }
             },
             "ChildObject[95]": {
-                "Guid": "dddcd054-21fa-41e8-a51d-4024d1378e82",
+                "Guid": "ce525c4c-5671-4185-b896-d92923775034",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "Sm_Reduction_WindReaction_Rock_A",
@@ -6209,7 +6214,7 @@
                     }
                 },
                 "ChildObject[98]": {
-                    "Guid": "779ac074-e385-4eff-946e-abb4edac66a6",
+                    "Guid": "e6ad411f-bbb6-4336-bad9-2f34941e5619",
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "SoundGenerator",
@@ -6265,7 +6270,7 @@
                     },
                     "Component[102]": {
                         "soundlib.SoundContainer": {
-                            "v0": 1,
+                            "v0": 0,
                             "_TriggerOnlyDrawSelf": false,
                             "_UserDataList": [
                                 {
@@ -6299,7 +6304,7 @@
             }
         },
         "MainObject[105]": {
-            "Guid": "96182002-a379-4ed6-b423-7bd77a29c339",
+            "Guid": "fca56050-cd21-4860-8ff5-d8350ca313ef",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sound",
@@ -6339,7 +6344,7 @@
                 }
             },
             "ChildObject[107]": {
-                "Guid": "099140dc-2d81-46df-a445-d8f77469f21d",
+                "Guid": "0961d6d3-99f9-41fb-94f0-614fa362243c",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "Sm_Reduction_WindReaction_Rock_A",
@@ -6385,7 +6390,7 @@
                     }
                 },
                 "ChildObject[110]": {
-                    "Guid": "eb9a5003-be29-4e91-860a-8d2ffc9fa27c",
+                    "Guid": "3416615d-81cd-4502-af81-22ac9b543bb0",
                     "GameObject": {
                         "via.GameObject": {
                             "Name": "SoundGenerator",
@@ -6441,7 +6446,7 @@
                     },
                     "Component[114]": {
                         "soundlib.SoundContainer": {
-                            "v0": 1,
+                            "v0": 0,
                             "_TriggerOnlyDrawSelf": false,
                             "_UserDataList": [
                                 {
@@ -6475,7 +6480,7 @@
             }
         },
         "MainObject[117]": {
-            "Guid": "30aef25f-73f8-43a1-971e-17867562a1be",
+            "Guid": "b4dce08a-e643-4e84-b3a5-6cfb98806aa2",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "MergedFoliage",
@@ -6550,15 +6555,16 @@
                     "v26": 0,
                     "v27": 0,
                     "v28": 0,
-                    "v29": 4294967295,
-                    "v30": 0,
-                    "v31": 0
+                    "v29": 0,
+                    "v30": 4294967295,
+                    "v31": 0,
+                    "v32": 0
                 }
             },
             "Component[120]": {
                 "app.FoliageSetting": {
                     "v0_Enabled": true,
-                    "_DisableDispOffController": false,
+                    "v1": false,
                     "_IsPassThrough": true,
                     "_DispType": 686504192,
                     "_HeatReceiverParamID": -2104865152,
@@ -6611,6 +6617,10 @@
                         "w": 0.0
                     },
                     "_IsBurn": false,
+                    "_DisableShadowOptMode": false,
+                    "_DisableShadowOptModeSaveWork": true,
+                    "_EnableDencityCulling": false,
+                    "_EnableStaticFoliageOptMode": false,
                     "_MaterialValues": [
                         {
                             "Dissolve": 255,
@@ -6753,127 +6763,127 @@
                         0,
                         0,
                         0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
+                        0,
                         1,
                         1,
                         1,
                         1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
                         0,
                         0,
                         0,

@@ -18,7 +18,7 @@
                 }
             },
             "ChildObject[1]": {
-                "Guid": "bf2c1127-151d-408a-bf32-dd4880f542a4",
+                "Guid": "01f7da7c-4083-4640-91b2-64fd209389a0",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "st102_a014_03_n04_p00_n17",
@@ -73,7 +73,7 @@
                         "v11_DrawSignedDistanceField": true,
                         "v12_Static": false,
                         "v13": 0,
-                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_03_PLANT_n04_p00_n17.fol",
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_03_AllowDensityCulling_n04_p00_n17.fol",
                         "v15": 0,
                         "v16": 4,
                         "v17": 0,
@@ -93,15 +93,16 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
                 "Component[4]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": -1341824640,
                         "_HeatReceiverParamID": -2104865152,
@@ -154,6 +155,10 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": true,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": true
@@ -161,17 +166,17 @@
                 }
             },
             "ChildObject[5]": {
-                "Guid": "f265e3ec-4dfb-4f4b-9a11-6ae35655d097",
+                "Guid": "2a1c07ea-f37c-4529-a380-fe5d8974e39f",
                 "GameObject": {
                     "via.GameObject": {
-                        "Name": "st102_a014_04_n04_p00_n17",
+                        "Name": "st102_a014_03_n04_p00_n17",
                         "Tag": "",
                         "UpdateSelf": true,
                         "DrawSelf": true,
                         "TimeScale": -1.0
                     }
                 },
-                "Prefab": null,
+                "Prefab": "GameDesign/Stage/Common/Foliage/FoliageSetting_preset.pfb",
                 "Component[6]": {
                     "via.Transform": {
                         "LocalPosition": {
@@ -216,7 +221,7 @@
                         "v11_DrawSignedDistanceField": true,
                         "v12_Static": false,
                         "v13": 0,
-                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_04_PLANT_n04_p00_n17.fol",
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_03_CullingPLANT_n04_p00_n17.fol",
                         "v15": 0,
                         "v16": 4,
                         "v17": 0,
@@ -236,15 +241,312 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
                 "Component[8]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
+                        "_IsPassThrough": true,
+                        "_DispType": -1341824640,
+                        "_HeatReceiverParamID": -2104865152,
+                        "_WetBlend": 0.0,
+                        "_WetBlendLimit": 1.0,
+                        "_TopMaskFade": 0.0,
+                        "_GlobalTopMaskFade": 0.5,
+                        "_TopMaskFadeBias": 1.0,
+                        "_TopMaskMapBlend": 0.0,
+                        "_EmissiveIntensity": 1.0,
+                        "_TopBlendVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_TriPlanarColor": {
+                            "R": 128,
+                            "G": 128,
+                            "B": 128,
+                            "A": 255
+                        },
+                        "_GroundBlendBias": 1.0,
+                        "_PassThroughLengthBias": 1.0,
+                        "_ColorParam": {
+                            "R": 255,
+                            "G": 255,
+                            "B": 255,
+                            "A": 255
+                        },
+                        "_EmissivePower": 0.0,
+                        "_WaveScrollSpeed": 0.0,
+                        "_IceBlendRate": 1.0,
+                        "_IceSDFBlendRate": 0.5,
+                        "_IceNormalVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IceNormalBlend": 1.0,
+                        "_AlphaTestRef": 0.1,
+                        "_EnvironmentGUID": 0,
+                        "_ShaderTimerGUID": 0,
+                        "_EditMaterialFlag": 0,
+                        "_SimpleOrigin": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_IsBurn": false,
+                        "_DisableShadowOptMode": true,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": true,
+                        "_EnableStaticFoliageOptMode": false,
+                        "_MaterialValues": [],
+                        "_MaterialParamIndexArray": [],
+                        "_IsCullingByDistance": true
+                    }
+                }
+            },
+            "ChildObject[9]": {
+                "Guid": "d7180343-11ae-4bd3-b849-e8df930195d9",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "st102_a014_03_n04_p00_n17",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": "GameDesign/Stage/Common/Foliage/FoliageSetting_preset.pfb",
+                "Component[10]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[11]": {
+                    "via.landscape.Foliage": {
+                        "v0_RenderOutputID": 31,
+                        "v1_Enabled": true,
+                        "v2_SmallObjectCullingFactor": 1.0,
+                        "v3_Occluder": false,
+                        "v4_OcclusionCulling": false,
+                        "v5_DrawDefault": true,
+                        "v6_DrawShadowCast": true,
+                        "v7_DrawFarCascadeShadowCast": true,
+                        "v8_DrawEnvmap": true,
+                        "v9_DrawVoxelize": true,
+                        "v10_DrawRayTracing": true,
+                        "v11_DrawSignedDistanceField": true,
+                        "v12_Static": false,
+                        "v13": 0,
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_03_PLANT_n04_p00_n17.fol",
+                        "v15": 0,
+                        "v16": 4,
+                        "v17": 0,
+                        "v18": 6,
+                        "v19": 1,
+                        "v20": 3,
+                        "v21": 0,
+                        "v22": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v23": 0,
+                        "v24": 0,
+                        "v25": 1,
+                        "v26": 0,
+                        "v27": 0,
+                        "v28": 0,
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
+                    }
+                },
+                "Component[12]": {
+                    "app.FoliageSetting": {
+                        "v0_Enabled": true,
+                        "v1": false,
+                        "_IsPassThrough": true,
+                        "_DispType": -1341824640,
+                        "_HeatReceiverParamID": -2104865152,
+                        "_WetBlend": 0.0,
+                        "_WetBlendLimit": 1.0,
+                        "_TopMaskFade": 0.0,
+                        "_GlobalTopMaskFade": 0.5,
+                        "_TopMaskFadeBias": 1.0,
+                        "_TopMaskMapBlend": 0.0,
+                        "_EmissiveIntensity": 1.0,
+                        "_TopBlendVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_TriPlanarColor": {
+                            "R": 128,
+                            "G": 128,
+                            "B": 128,
+                            "A": 255
+                        },
+                        "_GroundBlendBias": 1.0,
+                        "_PassThroughLengthBias": 1.0,
+                        "_ColorParam": {
+                            "R": 255,
+                            "G": 255,
+                            "B": 255,
+                            "A": 255
+                        },
+                        "_EmissivePower": 0.0,
+                        "_WaveScrollSpeed": 0.0,
+                        "_IceBlendRate": 1.0,
+                        "_IceSDFBlendRate": 0.5,
+                        "_IceNormalVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IceNormalBlend": 1.0,
+                        "_AlphaTestRef": 0.1,
+                        "_EnvironmentGUID": 0,
+                        "_ShaderTimerGUID": 0,
+                        "_EditMaterialFlag": 0,
+                        "_SimpleOrigin": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": false,
+                        "_EnableStaticFoliageOptMode": false,
+                        "_MaterialValues": [],
+                        "_MaterialParamIndexArray": [],
+                        "_IsCullingByDistance": true
+                    }
+                }
+            },
+            "ChildObject[13]": {
+                "Guid": "778d0ca1-4265-45c5-b2cf-003da59f4f40",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "st102_a014_04_n04_p00_n17",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[14]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[15]": {
+                    "via.landscape.Foliage": {
+                        "v0_RenderOutputID": 31,
+                        "v1_Enabled": true,
+                        "v2_SmallObjectCullingFactor": 1.0,
+                        "v3_Occluder": false,
+                        "v4_OcclusionCulling": false,
+                        "v5_DrawDefault": true,
+                        "v6_DrawShadowCast": true,
+                        "v7_DrawFarCascadeShadowCast": true,
+                        "v8_DrawEnvmap": true,
+                        "v9_DrawVoxelize": true,
+                        "v10_DrawRayTracing": true,
+                        "v11_DrawSignedDistanceField": true,
+                        "v12_Static": false,
+                        "v13": 0,
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_04_CullingPLANT_n04_p00_n17.fol",
+                        "v15": 0,
+                        "v16": 4,
+                        "v17": 0,
+                        "v18": 6,
+                        "v19": 1,
+                        "v20": 3,
+                        "v21": 0,
+                        "v22": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v23": 0,
+                        "v24": 0,
+                        "v25": 1,
+                        "v26": 0,
+                        "v27": 0,
+                        "v28": 0,
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
+                    }
+                },
+                "Component[16]": {
+                    "app.FoliageSetting": {
+                        "v0_Enabled": true,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": 686504192,
                         "_HeatReceiverParamID": -2104865152,
@@ -297,25 +599,29 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": true,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": true,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": true
                     }
                 }
             },
-            "ChildObject[9]": {
-                "Guid": "56195012-9f68-4ee8-a7a9-138decc6828d",
+            "ChildObject[17]": {
+                "Guid": "b0d64e96-d76b-4ec3-9a34-a25d81b8345b",
                 "GameObject": {
                     "via.GameObject": {
-                        "Name": "st102_a014_09_n04_p00_n17",
+                        "Name": "st102_a014_04_n04_p00_n17",
                         "Tag": "",
                         "UpdateSelf": true,
                         "DrawSelf": true,
                         "TimeScale": -1.0
                     }
                 },
-                "Prefab": "GameDesign/Stage/Common/Foliage/FoliageSetting_preset.pfb",
-                "Component[10]": {
+                "Prefab": null,
+                "Component[18]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -343,7 +649,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[11]": {
+                "Component[19]": {
                     "via.landscape.Foliage": {
                         "v0_RenderOutputID": 31,
                         "v1_Enabled": true,
@@ -359,7 +665,7 @@
                         "v11_DrawSignedDistanceField": true,
                         "v12_Static": false,
                         "v13": 0,
-                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_09_PLANT_n04_p00_n17.fol",
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_04_PLANT_n04_p00_n17.fol",
                         "v15": 0,
                         "v16": 4,
                         "v17": 0,
@@ -379,15 +685,164 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
-                "Component[12]": {
+                "Component[20]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
+                        "_IsPassThrough": true,
+                        "_DispType": 686504192,
+                        "_HeatReceiverParamID": -2104865152,
+                        "_WetBlend": 0.0,
+                        "_WetBlendLimit": 0.0,
+                        "_TopMaskFade": 0.0,
+                        "_GlobalTopMaskFade": 0.5,
+                        "_TopMaskFadeBias": 1.0,
+                        "_TopMaskMapBlend": 0.0,
+                        "_EmissiveIntensity": 1.0,
+                        "_TopBlendVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_TriPlanarColor": {
+                            "R": 128,
+                            "G": 128,
+                            "B": 128,
+                            "A": 255
+                        },
+                        "_GroundBlendBias": 1.0,
+                        "_PassThroughLengthBias": 1.0,
+                        "_ColorParam": {
+                            "R": 255,
+                            "G": 255,
+                            "B": 255,
+                            "A": 255
+                        },
+                        "_EmissivePower": 0.0,
+                        "_WaveScrollSpeed": 0.0,
+                        "_IceBlendRate": 1.0,
+                        "_IceSDFBlendRate": 0.5,
+                        "_IceNormalVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IceNormalBlend": 1.0,
+                        "_AlphaTestRef": 1.0,
+                        "_EnvironmentGUID": 0,
+                        "_ShaderTimerGUID": 0,
+                        "_EditMaterialFlag": 0,
+                        "_SimpleOrigin": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": false,
+                        "_EnableStaticFoliageOptMode": false,
+                        "_MaterialValues": [],
+                        "_MaterialParamIndexArray": [],
+                        "_IsCullingByDistance": true
+                    }
+                }
+            },
+            "ChildObject[21]": {
+                "Guid": "105d3a91-e724-47e3-beed-e1164e6b805a",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "st102_a014_09_n04_p00_n17",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": "GameDesign/Stage/Common/Foliage/FoliageSetting_preset.pfb",
+                "Component[22]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[23]": {
+                    "via.landscape.Foliage": {
+                        "v0_RenderOutputID": 31,
+                        "v1_Enabled": true,
+                        "v2_SmallObjectCullingFactor": 1.0,
+                        "v3_Occluder": false,
+                        "v4_OcclusionCulling": false,
+                        "v5_DrawDefault": true,
+                        "v6_DrawShadowCast": true,
+                        "v7_DrawFarCascadeShadowCast": true,
+                        "v8_DrawEnvmap": true,
+                        "v9_DrawVoxelize": true,
+                        "v10_DrawRayTracing": true,
+                        "v11_DrawSignedDistanceField": true,
+                        "v12_Static": false,
+                        "v13": 0,
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_09_CullingPLANT_n04_p00_n17.fol",
+                        "v15": 0,
+                        "v16": 4,
+                        "v17": 0,
+                        "v18": 6,
+                        "v19": 1,
+                        "v20": 3,
+                        "v21": 0,
+                        "v22": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v23": 0,
+                        "v24": 0,
+                        "v25": 1,
+                        "v26": 0,
+                        "v27": 0,
+                        "v28": 0,
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
+                    }
+                },
+                "Component[24]": {
+                    "app.FoliageSetting": {
+                        "v0_Enabled": true,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": -1341824640,
                         "_HeatReceiverParamID": -2104865152,
@@ -440,6 +895,158 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": true,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": true,
+                        "_EnableStaticFoliageOptMode": false,
+                        "_MaterialValues": [],
+                        "_MaterialParamIndexArray": [],
+                        "_IsCullingByDistance": true
+                    }
+                }
+            },
+            "ChildObject[25]": {
+                "Guid": "da790775-78c7-4b93-98ec-7e233d296c77",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "st102_a014_09_n04_p00_n17",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": "GameDesign/Stage/Common/Foliage/FoliageSetting_preset.pfb",
+                "Component[26]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[27]": {
+                    "via.landscape.Foliage": {
+                        "v0_RenderOutputID": 31,
+                        "v1_Enabled": true,
+                        "v2_SmallObjectCullingFactor": 1.0,
+                        "v3_Occluder": false,
+                        "v4_OcclusionCulling": false,
+                        "v5_DrawDefault": true,
+                        "v6_DrawShadowCast": true,
+                        "v7_DrawFarCascadeShadowCast": true,
+                        "v8_DrawEnvmap": true,
+                        "v9_DrawVoxelize": true,
+                        "v10_DrawRayTracing": true,
+                        "v11_DrawSignedDistanceField": true,
+                        "v12_Static": false,
+                        "v13": 0,
+                        "v14": "GameDesign/Stage/st102/_Export/Foliage/st102_a014_09_PLANT_n04_p00_n17.fol",
+                        "v15": 0,
+                        "v16": 4,
+                        "v17": 0,
+                        "v18": 6,
+                        "v19": 1,
+                        "v20": 3,
+                        "v21": 0,
+                        "v22": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v23": 0,
+                        "v24": 0,
+                        "v25": 1,
+                        "v26": 0,
+                        "v27": 0,
+                        "v28": 0,
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
+                    }
+                },
+                "Component[28]": {
+                    "app.FoliageSetting": {
+                        "v0_Enabled": true,
+                        "v1": false,
+                        "_IsPassThrough": true,
+                        "_DispType": -1341824640,
+                        "_HeatReceiverParamID": -2104865152,
+                        "_WetBlend": 0.0,
+                        "_WetBlendLimit": 1.0,
+                        "_TopMaskFade": 0.0,
+                        "_GlobalTopMaskFade": 0.5,
+                        "_TopMaskFadeBias": 1.0,
+                        "_TopMaskMapBlend": 0.0,
+                        "_EmissiveIntensity": 1.0,
+                        "_TopBlendVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_TriPlanarColor": {
+                            "R": 128,
+                            "G": 128,
+                            "B": 128,
+                            "A": 255
+                        },
+                        "_GroundBlendBias": 1.0,
+                        "_PassThroughLengthBias": 1.0,
+                        "_ColorParam": {
+                            "R": 255,
+                            "G": 255,
+                            "B": 255,
+                            "A": 255
+                        },
+                        "_EmissivePower": 0.0,
+                        "_WaveScrollSpeed": 0.0,
+                        "_IceBlendRate": 1.0,
+                        "_IceSDFBlendRate": 0.5,
+                        "_IceNormalVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IceNormalBlend": 1.0,
+                        "_AlphaTestRef": 0.1,
+                        "_EnvironmentGUID": 0,
+                        "_ShaderTimerGUID": 0,
+                        "_EditMaterialFlag": 0,
+                        "_SimpleOrigin": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": false,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": true

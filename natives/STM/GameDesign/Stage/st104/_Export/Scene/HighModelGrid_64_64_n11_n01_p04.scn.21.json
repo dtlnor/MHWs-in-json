@@ -2,7 +2,7 @@
     "looseInstance": {},
     "ObjectsHierarchy": {
         "MainObject[0]": {
-            "Guid": "0e7cf527-61b0-4bed-a297-f70454700c6f",
+            "Guid": "53b4145d-2b56-435d-9ccd-f08021d8fd4d",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm01_014_03_A",
@@ -393,10 +393,10 @@
             "Component[3]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -456,7 +456,7 @@
             }
         },
         "MainObject[4]": {
-            "Guid": "3b485ab4-4772-40a9-a1b6-ee2bc74386d4",
+            "Guid": "99307709-fbfb-4173-a911-c876bd598aef",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "MergedFoliage",
@@ -531,15 +531,16 @@
                     "v26": 0,
                     "v27": 0,
                     "v28": 0,
-                    "v29": 4294967295,
-                    "v30": 0,
-                    "v31": 0
+                    "v29": 0,
+                    "v30": 4294967295,
+                    "v31": 0,
+                    "v32": 0
                 }
             },
             "Component[7]": {
                 "app.FoliageSetting": {
                     "v0_Enabled": true,
-                    "_DisableDispOffController": false,
+                    "v1": false,
                     "_IsPassThrough": true,
                     "_DispType": 686504192,
                     "_HeatReceiverParamID": -2104865152,
@@ -592,48 +593,11 @@
                         "w": 0.0
                     },
                     "_IsBurn": false,
+                    "_DisableShadowOptMode": false,
+                    "_DisableShadowOptModeSaveWork": true,
+                    "_EnableDencityCulling": false,
+                    "_EnableStaticFoliageOptMode": false,
                     "_MaterialValues": [
-                        {
-                            "Dissolve": 255,
-                            "PassThrough": 0,
-                            "WetBlend": 0,
-                            "SandBlend": 0,
-                            "EditParamFlag": 0,
-                            "TopMaskFade": 0,
-                            "TopMaskFadeBias": 255,
-                            "GlobalTopMaskFade": 0,
-                            "TopMaskMapBlend": 0,
-                            "TriPlanarColorTopR": 128,
-                            "TriPlanarColorTopG": 128,
-                            "TriPlanarColorTopB": 128,
-                            "TriPlanarColorTopA": 255,
-                            "TopBlendVectorX": 127,
-                            "TopBlendVectorY": 255,
-                            "TopBlendVectorZ": 127,
-                            "GroundBlendBias": 255,
-                            "ColorParamR": 255,
-                            "ColorParamG": 255,
-                            "ColorParamB": 255,
-                            "AlphaTestRef": 25,
-                            "WaveScrollSpeed": 32768,
-                            "EnvironmentGUID": 0,
-                            "ShaderTimerGUID": 0,
-                            "EmissivePower": 256,
-                            "EmissiveIntensity": 255,
-                            "WetBlendLimit": 255,
-                            "IceSDFBlendRate": 32896,
-                            "IceBlendRate": 255,
-                            "IceNormalVectorX": 127,
-                            "IceNormalVectorY": 255,
-                            "IceNormalVectorZ": 127,
-                            "IceNormalBlend": 0,
-                            "SimpleOrigin": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "w": 0.0
-                            }
-                        },
                         {
                             "Dissolve": 255,
                             "PassThrough": 0,
@@ -756,26 +720,67 @@
                                 "z": 0.0,
                                 "w": 0.0
                             }
+                        },
+                        {
+                            "Dissolve": 255,
+                            "PassThrough": 0,
+                            "WetBlend": 0,
+                            "SandBlend": 0,
+                            "EditParamFlag": 0,
+                            "TopMaskFade": 0,
+                            "TopMaskFadeBias": 255,
+                            "GlobalTopMaskFade": 0,
+                            "TopMaskMapBlend": 0,
+                            "TriPlanarColorTopR": 128,
+                            "TriPlanarColorTopG": 128,
+                            "TriPlanarColorTopB": 128,
+                            "TriPlanarColorTopA": 255,
+                            "TopBlendVectorX": 127,
+                            "TopBlendVectorY": 255,
+                            "TopBlendVectorZ": 127,
+                            "GroundBlendBias": 255,
+                            "ColorParamR": 255,
+                            "ColorParamG": 255,
+                            "ColorParamB": 255,
+                            "AlphaTestRef": 25,
+                            "WaveScrollSpeed": 32768,
+                            "EnvironmentGUID": 0,
+                            "ShaderTimerGUID": 0,
+                            "EmissivePower": 256,
+                            "EmissiveIntensity": 255,
+                            "WetBlendLimit": 255,
+                            "IceSDFBlendRate": 32896,
+                            "IceBlendRate": 255,
+                            "IceNormalVectorX": 127,
+                            "IceNormalVectorY": 255,
+                            "IceNormalVectorZ": 127,
+                            "IceNormalBlend": 0,
+                            "SimpleOrigin": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "w": 0.0
+                            }
                         }
                     ],
                     "_MaterialParamIndexArray": [
                         0,
-                        0,
+                        1,
                         0,
                         0,
                         0,
                         0,
                         1,
+                        0,
+                        0,
                         2,
-                        1,
-                        1,
-                        1,
-                        1,
-                        2,
-                        1,
-                        1,
+                        0,
                         3,
-                        1
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
                     ],
                     "_IsCullingByDistance": false
                 }

@@ -2501,7 +2501,7 @@
                             "v12": 1,
                             "v13": 1112014848,
                             "v14": 4294958801,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
                             "v16": 45,
                             "v17": 46
                         }
@@ -2619,7 +2619,7 @@
                             "v12": 1,
                             "v13": 1065353216,
                             "v14": 4294958770,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
                             "v16": 82,
                             "v17": 83
                         }
@@ -2737,7 +2737,7 @@
                             "v12": 1,
                             "v13": 0,
                             "v14": 4294956472,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2DF_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2DF_0.mdf2",
                             "v16": 125,
                             "v17": 126
                         }
@@ -2855,7 +2855,7 @@
                             "v12": 1,
                             "v13": 0,
                             "v14": 4294956472,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2DF_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2DF_0.mdf2",
                             "v16": 168,
                             "v17": 169
                         }
@@ -2971,6 +2971,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": -1.0,
@@ -3164,6 +3171,23 @@
                         }
                     },
                     "Component[28]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
+                    },
+                    "Component[29]": {
                         "app.EventLightConstraintSetter": {
                             "v0": 1,
                             "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -3174,7 +3198,7 @@
                         }
                     }
                 },
-                "ChildObject[29]": {
+                "ChildObject[30]": {
                     "Guid": "19131a45-9a98-43aa-b7b1-1fb20572cbf5",
                     "GameObject": {
                         "via.GameObject": {
@@ -3186,7 +3210,7 @@
                         }
                     },
                     "Prefab": "Art/Light/Light_Prefab/Basic00_DirLight.pfb",
-                    "Component[30]": {
+                    "Component[31]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -732.7031,
@@ -3214,7 +3238,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[31]": {
+                    "Component[32]": {
                         "via.render.DirectionalLight": {
                             "v0_Enabled": true,
                             "v1_Intensity": 3000.0,
@@ -3279,55 +3303,63 @@
                             },
                             "v46": 0,
                             "v47": 256,
-                            "v48": 1106247680,
-                            "v49": 1140457472,
-                            "v50": 3,
-                            "v51": 1120403456,
-                            "v52": 64,
-                            "v53": 1127481344,
-                            "v54": 1050253722,
-                            "v55": 1065353216,
-                            "v56": 1120403456,
-                            "v57": {
+                            "v48": 0,
+                            "v49": 1106247680,
+                            "v50": 1140457472,
+                            "v51": 3,
+                            "v52": 1120403456,
+                            "v53": 64,
+                            "v54": 1127481344,
+                            "v55": 1050253722,
+                            "v56": 1065353216,
+                            "v57": 1120403456,
+                            "v58": 0,
+                            "v59": 1060320051,
+                            "v60": 1,
+                            "v61": {
                                 "x": 1028443341,
                                 "y": 1041865114,
                                 "z": 1056964608,
                                 "w": 1065353216
                             },
-                            "v58": {
+                            "v62": {
                                 "x": 1028443341,
                                 "y": 1041865114,
                                 "z": 1056964608,
                                 "w": 1065353216
                             },
-                            "v59": {
+                            "v63": {
                                 "x": 1073741824,
                                 "y": 1092616192,
                                 "z": 1112014848,
                                 "w": 1112014848
                             },
-                            "v60": {
+                            "v64": {
                                 "x": 1065353216,
                                 "y": 1065353216,
                                 "z": 1073741824,
                                 "w": 1065353216
                             },
-                            "v61": 0,
-                            "v62": 1112014848,
-                            "v63": 1176256512,
-                            "v64": 1036831949,
-                            "v65": "",
-                            "v66": "00000000-0000-0000-0000-000000000000",
-                            "v67": 8,
-                            "v68": 0,
-                            "v69": "17b7d138bd37863501",
-                            "v70": 0,
+                            "v65": 0,
+                            "v66": 1112014848,
+                            "v67": 1176256512,
+                            "v68": 1036831949,
+                            "v69": 4,
+                            "v70": "",
                             "v71": 0,
-                            "v72": {
+                            "v72": "00000000-0000-0000-0000-000000000000",
+                            "v73": 8,
+                            "v74": 1,
+                            "v75": 1077936128,
+                            "v76": 0,
+                            "v77": "17b7d138bd37863501",
+                            "v78": 0,
+                            "v79": 0,
+                            "v80": {
                                 "x": 16,
                                 "y": 16
                             },
-                            "v73": {
+                            "v81": {
                                 "coord": {
                                     "m00": 1.0,
                                     "m01": 0.0,
@@ -3353,43 +3385,43 @@
                                     "pad": 0.0
                                 }
                             },
-                            "v74": [],
-                            "v75": 0,
-                            "v76": 0,
-                            "v77": "",
-                            "v78": {
+                            "v82": [],
+                            "v83": 0,
+                            "v84": 0,
+                            "v85": "",
+                            "v86": {
                                 "x": 0.0,
                                 "y": 1.0,
                                 "z": 0.0,
                                 "w": 0.0
                             },
-                            "v79": {
+                            "v87": {
                                 "x": 0.0,
                                 "y": 0.0,
                                 "z": 0.0,
                                 "w": 1.0
                             },
-                            "v80": {
+                            "v88": {
                                 "x": 1120403456,
                                 "y": 1120403456,
                                 "z": 1120403456
                             },
-                            "v81": {
+                            "v89": {
                                 "x": 0,
                                 "y": 0
                             },
-                            "v82": {
+                            "v90": {
                                 "x": 0,
                                 "y": 0
                             },
-                            "v83": 1120403456,
-                            "v84": 1128792064,
-                            "v85": 0,
-                            "v86": 0,
-                            "v87": 0
+                            "v91": 1120403456,
+                            "v92": 1128792064,
+                            "v93": 0,
+                            "v94": 0,
+                            "v95": 0
                         }
                     },
-                    "Component[32]": {
+                    "Component[33]": {
                         "app.AppLightController": {
                             "v0": 1,
                             "_Condition": 0,
@@ -3401,7 +3433,7 @@
                             }
                         }
                     },
-                    "Component[33]": {
+                    "Component[34]": {
                         "app.ShadowDistanceController": {
                             "v0": 1
                         }
@@ -3453,7 +3485,7 @@
                 }
             }
         },
-        "MainFolder[34]": {
+        "MainFolder[35]": {
             "Folder": {
                 "via.Folder": {
                     "Name": "evc0105_Light",

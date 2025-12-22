@@ -1,6 +1,6 @@
 {
     "looseInstance": {
-        "46": {
+        "47": {
             "via.physics.SphereShape": {
                 "v0_BoundingAabb": {
                     "minpos": {
@@ -27,7 +27,7 @@
                 }
             }
         },
-        "47": {
+        "48": {
             "via.physics.FilterInfo": {
                 "v0_Layer": 0,
                 "v1_Group": 0,
@@ -36,15 +36,15 @@
                 "v4_MaskBits": 4294967295
             }
         },
-        "48": {
+        "49": {
             "via.physics.UserData": {}
         },
-        "49": {
+        "50": {
             "via.physics.Collider": {
                 "v0": 1,
-                "v1": 46,
-                "v2": 47,
-                "v3": 48,
+                "v1": 47,
+                "v2": 48,
+                "v3": 49,
                 "v4": "System/Collision/Filter/ZonePut/ZonePut_Player.cfil",
                 "v5": "",
                 "v6": "",
@@ -96,10 +96,10 @@
             "Component[2]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -609,7 +609,7 @@
                                 {
                                     "via.effect.script.EPVStandardData.Element": {
                                         "v0": [
-                                            "Art/VFX/EffectEditor/Props/sm/sm46/11_sm46_020_00_00.efx"
+                                            "@Art/VFX/EffectEditor/Props/sm/sm46/11_sm46_020_00_00.efx"
                                         ],
                                         "TriggerId": 4294967295,
                                         "StopTriggerId": 4294967295,
@@ -866,6 +866,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": true,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 50.0,
@@ -1153,10 +1160,27 @@
                                 "r": 1.0
                             }
                         }
+                    },
+                    "Component[20]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
                     }
                 }
             },
-            "ChildObject[20]": {
+            "ChildObject[21]": {
                 "Guid": "409ac789-c932-0850-34fd-19920bdd72a0",
                 "GameObject": {
                     "via.GameObject": {
@@ -1168,7 +1192,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[21]": {
+                "Component[22]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -1196,7 +1220,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "ChildObject[22]": {
+                "ChildObject[23]": {
                     "Guid": "e30230b1-2af9-0660-0c39-82a1a55f2cb3",
                     "GameObject": {
                         "via.GameObject": {
@@ -1208,7 +1232,7 @@
                         }
                     },
                     "Prefab": null,
-                    "Component[23]": {
+                    "Component[24]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 0.0,
@@ -1236,13 +1260,13 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[24]": {
+                    "Component[25]": {
                         "soundlib.SoundZoneGenerator": {
                             "v0": 1,
                             "_StaticCollider": true
                         }
                     },
-                    "ChildObject[25]": {
+                    "ChildObject[26]": {
                         "Guid": "bef1f114-c1ba-4fe1-ae55-8a15ddc0a8a7",
                         "GameObject": {
                             "via.GameObject": {
@@ -1254,7 +1278,7 @@
                             }
                         },
                         "Prefab": null,
-                        "Component[26]": {
+                        "Component[27]": {
                             "via.Transform": {
                                 "LocalPosition": {
                                     "x": 0.0,
@@ -1282,10 +1306,10 @@
                                 "FrameSkip": "[0]None"
                             }
                         },
-                        "Component[27]": {
+                        "Component[28]": {
                             "via.physics.ZoneGroup": {}
                         },
-                        "Component[28]": {
+                        "Component[29]": {
                             "via.physics.Colliders": {
                                 "Enabled": true,
                                 "DevelopDraw": true,
@@ -1293,13 +1317,13 @@
                                 "DependencyResources": [],
                                 "v4": 1,
                                 "v5": [
-                                    49
+                                    50
                                 ]
                             }
                         },
-                        "Component[29]": {
+                        "Component[30]": {
                             "soundlib.SoundContainer": {
-                                "v0": 1,
+                                "v0": 0,
                                 "_TriggerOnlyDrawSelf": false,
                                 "_UserDataList": [
                                     {
@@ -1310,7 +1334,7 @@
                                 ]
                             }
                         },
-                        "Component[30]": {
+                        "Component[31]": {
                             "app.SoundGenerator": {
                                 "v0": 1,
                                 "_TriggerIds": [
@@ -1324,12 +1348,12 @@
                                 "_FadeOutTime": 1
                             }
                         },
-                        "Component[31]": {
+                        "Component[32]": {
                             "app.SoundZoneGeneratorCollidersApp": {
                                 "v0": 1
                             }
                         },
-                        "Component[32]": {
+                        "Component[33]": {
                             "app.SoundZoneGeneratorVfxHelper": {
                                 "v0": 1
                             }

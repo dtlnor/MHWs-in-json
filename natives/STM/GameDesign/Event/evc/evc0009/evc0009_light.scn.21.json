@@ -364,6 +364,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": -1.0,
@@ -613,13 +620,30 @@
                         }
                     },
                     "Component[19]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
+                    },
+                    "Component[20]": {
                         "app.SyncLightBehaviorGlobalTime": {
                             "v0": 0,
                             "DisableSyncTime": false
                         }
                     }
                 },
-                "ChildObject[20]": {
+                "ChildObject[21]": {
                     "Guid": "ad4520eb-0ce5-4ace-8107-d9383425fc63",
                     "GameObject": {
                         "via.GameObject": {
@@ -631,7 +655,7 @@
                         }
                     },
                     "Prefab": "Art/Light/Light_Prefab/Basic00_ProjSpotLight.pfb",
-                    "Component[21]": {
+                    "Component[22]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": 3.730026,
@@ -659,7 +683,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[22]": {
+                    "Component[23]": {
                         "via.render.ProjectionSpotLight": {
                             "v0_Enabled": true,
                             "v1_Intensity": 30000.0,
@@ -738,13 +762,20 @@
                             "v66_TextureIndex": 0
                         }
                     },
-                    "Component[23]": {
+                    "Component[24]": {
                         "via.relib.light.ReLibLightBehavior": {
                             "v0": 1,
                             "_DistanceAttenuation": {
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": -1.0,
@@ -900,7 +931,7 @@
                             "_EventIdentifyName": ""
                         }
                     },
-                    "Component[24]": {
+                    "Component[25]": {
                         "via.motion.ConstraintParent": {
                             "v0_Enabled": false,
                             "v1_UpdateMode": "[1]Props",
@@ -925,7 +956,7 @@
                             "v10": 1
                         }
                     },
-                    "Component[25]": {
+                    "Component[26]": {
                         "app.AppLightController": {
                             "v0": 0,
                             "_Condition": 0,
@@ -937,7 +968,24 @@
                             }
                         }
                     },
-                    "Component[26]": {
+                    "Component[27]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
+                    },
+                    "Component[28]": {
                         "app.SyncLightBehaviorGlobalTime": {
                             "v0": 0,
                             "DisableSyncTime": false
@@ -946,7 +994,7 @@
                 }
             }
         },
-        "MainFolder[30]": {
+        "MainFolder[32]": {
             "Folder": {
                 "via.Folder": {
                     "Name": "evc0009_Light",
@@ -1032,7 +1080,7 @@
                 "app.CutSceneConstraintRoot": {}
             }
         },
-        "MainObject[27]": {
+        "MainObject[29]": {
             "Guid": "ae44cb9c-b26b-402c-b46a-bd93d8658eed",
             "GameObject": {
                 "via.GameObject": {
@@ -1044,7 +1092,7 @@
                 }
             },
             "Prefab": "Art/Light/Light_Prefab/EventLightController.pfb",
-            "Component[28]": {
+            "Component[30]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 0.0,
@@ -1072,7 +1120,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[29]": {
+            "Component[31]": {
                 "app.EventLightController": {}
             }
         }

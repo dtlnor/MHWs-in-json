@@ -1777,7 +1777,7 @@
                             "v12": 1,
                             "v13": 0,
                             "v14": 4291422463,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
                             "v16": 42,
                             "v17": 43
                         }
@@ -1895,7 +1895,7 @@
                             "v12": 1,
                             "v13": 0,
                             "v14": 4291422463,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
                             "v16": 79,
                             "v17": 80
                         }
@@ -2013,7 +2013,7 @@
                             "v12": 1,
                             "v13": 0,
                             "v14": 4291422463,
-                            "v15": "Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
+                            "v15": "@Art/Light/Light_Assets/Material/MaterialInstance/M_VF_2_Var2_0.mdf2",
                             "v16": 116,
                             "v17": 117
                         }
@@ -2129,6 +2129,13 @@
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 300.0,
@@ -2320,9 +2327,26 @@
                                 "r": 1.0
                             }
                         }
+                    },
+                    "Component[22]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
                     }
                 },
-                "ChildObject[22]": {
+                "ChildObject[23]": {
                     "Guid": "2ffab5d5-ded2-4983-8d75-6a532f023fbd",
                     "GameObject": {
                         "via.GameObject": {
@@ -2334,7 +2358,7 @@
                         }
                     },
                     "Prefab": "Art/Light/Light_Prefab/Basic00_PointLight.pfb",
-                    "Component[23]": {
+                    "Component[24]": {
                         "via.Transform": {
                             "LocalPosition": {
                                 "x": -319.1116,
@@ -2362,7 +2386,7 @@
                             "FrameSkip": "[0]None"
                         }
                     },
-                    "Component[24]": {
+                    "Component[25]": {
                         "via.render.PointLight": {
                             "v0_Enabled": false,
                             "v1_Intensity": 2500.0,
@@ -2425,13 +2449,20 @@
                             "v50_RayTracingShadowEnable": false
                         }
                     },
-                    "Component[25]": {
+                    "Component[26]": {
                         "via.relib.light.ReLibLightBehavior": {
                             "v0": 1,
                             "_DistanceAttenuation": {
                                 "via.relib.light.LightActionDistanceAttenuation": {
                                     "IsDistanceAttenuation": false,
                                     "EaseType": "[0]Linear",
+                                    "IsSpherePosition": false,
+                                    "SpherePosition": {
+                                        "x": 0.0,
+                                        "y": 0.0,
+                                        "z": 0.0,
+                                        "pad": 0.0
+                                    },
                                     "NearFadeOutStartDistance": -1.0,
                                     "NearFadeOutEndDistance": 1000.0,
                                     "FadeOutStartDistance": 300.0,
@@ -2587,7 +2618,7 @@
                             "_EventIdentifyName": ""
                         }
                     },
-                    "Component[26]": {
+                    "Component[27]": {
                         "via.motion.ConstraintParent": {
                             "v0_Enabled": false,
                             "v1_UpdateMode": "[1]Props",
@@ -2612,7 +2643,7 @@
                             "v10": 1
                         }
                     },
-                    "Component[27]": {
+                    "Component[28]": {
                         "app.AppLightController": {
                             "v0": 1,
                             "_Condition": 0,
@@ -2623,10 +2654,27 @@
                                 "r": 1.0
                             }
                         }
+                    },
+                    "Component[29]": {
+                        "app.LightLimitter": {
+                            "v0": 0,
+                            "_IsOptModeOnly": false,
+                            "_LightEnable": false,
+                            "_ShadowEnable": false,
+                            "_DetailShadow": 1.0,
+                            "_AOEfficeiency": 1.0,
+                            "_ShadowCastFlag": "[3]ALL",
+                            "_IsEnableEventPlaying": false,
+                            "_LightEnableEventPlaying": false,
+                            "_ShadowEnableEventPlaying": false,
+                            "_DetailShadowEventPlaying": 1.0,
+                            "_AOEfficeiencyEventPlaying": 1.0,
+                            "_ShadowCastFlagEventPlaying": "[3]ALL"
+                        }
                     }
                 }
             },
-            "ChildObject[28]": {
+            "ChildObject[30]": {
                 "Guid": "4595032c-bd02-4d6a-8856-65e3541f585e",
                 "GameObject": {
                     "via.GameObject": {
@@ -2638,7 +2686,7 @@
                     }
                 },
                 "Prefab": "Art/Light/Light_Prefab/EventLightController.pfb",
-                "Component[29]": {
+                "Component[31]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -2666,12 +2714,12 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[30]": {
+                "Component[32]": {
                     "app.EventLightController": {}
                 }
             }
         },
-        "MainFolder[31]": {
+        "MainFolder[33]": {
             "Folder": {
                 "via.Folder": {
                     "Name": "evc0026_Light",

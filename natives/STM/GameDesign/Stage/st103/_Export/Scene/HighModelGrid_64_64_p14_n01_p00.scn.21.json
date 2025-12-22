@@ -323,7 +323,7 @@
                 "v7": ""
             }
         },
-        "98": {
+        "102": {
             "via.physics.SphereShape": {
                 "v0_BoundingAabb": {
                     "minpos": {
@@ -350,7 +350,7 @@
                 }
             }
         },
-        "99": {
+        "103": {
             "via.physics.FilterInfo": {
                 "v0_Layer": 0,
                 "v1_Group": 0,
@@ -359,15 +359,15 @@
                 "v4_MaskBits": 4294967295
             }
         },
-        "100": {
+        "104": {
             "via.physics.UserData": {}
         },
-        "101": {
+        "105": {
             "via.physics.Collider": {
                 "v0": 1,
-                "v1": 98,
-                "v2": 99,
-                "v3": 100,
+                "v1": 102,
+                "v2": 103,
+                "v3": 104,
                 "v4": "System/Collision/Filter/ZonePut/ZonePut_Player.cfil",
                 "v5": "",
                 "v6": "",
@@ -393,7 +393,7 @@
                 }
             },
             "ChildObject[1]": {
-                "Guid": "0ed295f3-e768-4ffb-9557-8da7841cb3d9",
+                "Guid": "450ea810-5e18-4149-9fd2-857bf5da5e4a",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "st103_a01_01_p14_n01_p00",
@@ -468,15 +468,16 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
                 "Component[4]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": -1341824640,
                         "_HeatReceiverParamID": -2104865152,
@@ -529,6 +530,10 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": false,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": false
@@ -548,7 +553,7 @@
                 }
             },
             "ChildObject[6]": {
-                "Guid": "36fcbab9-25f2-4df0-a494-3ca8beee72b9",
+                "Guid": "36ade708-8f5a-4f80-b4bd-e47dcd8ad56a",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "st103_a07_01_p14_n01_p00",
@@ -623,15 +628,16 @@
                         "v26": 0,
                         "v27": 0,
                         "v28": 0,
-                        "v29": 4294967295,
-                        "v30": 0,
-                        "v31": 0
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
                     }
                 },
                 "Component[9]": {
                     "app.FoliageSetting": {
                         "v0_Enabled": true,
-                        "_DisableDispOffController": false,
+                        "v1": false,
                         "_IsPassThrough": true,
                         "_DispType": -1341824640,
                         "_HeatReceiverParamID": -2104865152,
@@ -684,6 +690,158 @@
                             "w": 0.0
                         },
                         "_IsBurn": false,
+                        "_DisableShadowOptMode": false,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": false,
+                        "_EnableStaticFoliageOptMode": false,
+                        "_MaterialValues": [],
+                        "_MaterialParamIndexArray": [],
+                        "_IsCullingByDistance": false
+                    }
+                }
+            },
+            "ChildObject[10]": {
+                "Guid": "1581b01c-c444-471a-b49a-d2a3a6c11470",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "st103_a07_01_p14_n01_p00",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": true,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": "GameDesign/Stage/Common/Foliage/FoliageSetting_preset.pfb",
+                "Component[11]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[12]": {
+                    "via.landscape.Foliage": {
+                        "v0_RenderOutputID": 31,
+                        "v1_Enabled": true,
+                        "v2_SmallObjectCullingFactor": 1.0,
+                        "v3_Occluder": false,
+                        "v4_OcclusionCulling": false,
+                        "v5_DrawDefault": true,
+                        "v6_DrawShadowCast": true,
+                        "v7_DrawFarCascadeShadowCast": true,
+                        "v8_DrawEnvmap": true,
+                        "v9_DrawVoxelize": true,
+                        "v10_DrawRayTracing": true,
+                        "v11_DrawSignedDistanceField": true,
+                        "v12_Static": false,
+                        "v13": 0,
+                        "v14": "GameDesign/Stage/st103/_Export/Foliage/st103_a07_01_CullingFoliage_p14_n01_p00.fol",
+                        "v15": 0,
+                        "v16": 4,
+                        "v17": 0,
+                        "v18": 6,
+                        "v19": 1,
+                        "v20": 3,
+                        "v21": 0,
+                        "v22": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v23": 0,
+                        "v24": 0,
+                        "v25": 1,
+                        "v26": 0,
+                        "v27": 0,
+                        "v28": 0,
+                        "v29": 0,
+                        "v30": 4294967295,
+                        "v31": 0,
+                        "v32": 0
+                    }
+                },
+                "Component[13]": {
+                    "app.FoliageSetting": {
+                        "v0_Enabled": true,
+                        "v1": false,
+                        "_IsPassThrough": true,
+                        "_DispType": -1341824640,
+                        "_HeatReceiverParamID": -2104865152,
+                        "_WetBlend": 0.0,
+                        "_WetBlendLimit": 1.0,
+                        "_TopMaskFade": 0.0,
+                        "_GlobalTopMaskFade": 0.5,
+                        "_TopMaskFadeBias": 1.0,
+                        "_TopMaskMapBlend": 0.0,
+                        "_EmissiveIntensity": 1.0,
+                        "_TopBlendVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_TriPlanarColor": {
+                            "R": 128,
+                            "G": 128,
+                            "B": 128,
+                            "A": 255
+                        },
+                        "_GroundBlendBias": 0.25,
+                        "_PassThroughLengthBias": 1.0,
+                        "_ColorParam": {
+                            "R": 255,
+                            "G": 255,
+                            "B": 255,
+                            "A": 255
+                        },
+                        "_EmissivePower": 0.0,
+                        "_WaveScrollSpeed": 0.0,
+                        "_IceBlendRate": 1.0,
+                        "_IceSDFBlendRate": 0.5,
+                        "_IceNormalVector": {
+                            "x": 0.0,
+                            "y": 1.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IceNormalBlend": 1.0,
+                        "_AlphaTestRef": 0.1,
+                        "_EnvironmentGUID": 0,
+                        "_ShaderTimerGUID": 0,
+                        "_EditMaterialFlag": 64,
+                        "_SimpleOrigin": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "_IsBurn": false,
+                        "_DisableShadowOptMode": true,
+                        "_DisableShadowOptModeSaveWork": true,
+                        "_EnableDencityCulling": true,
+                        "_EnableStaticFoliageOptMode": false,
                         "_MaterialValues": [],
                         "_MaterialParamIndexArray": [],
                         "_IsCullingByDistance": false
@@ -691,8 +849,8 @@
                 }
             }
         },
-        "MainObject[10]": {
-            "Guid": "1154cc96-e751-4c59-a0f2-596f5601afdb",
+        "MainObject[14]": {
+            "Guid": "8a948879-2937-45fd-a2ac-cbbe9077b11b",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm22_201_00_A",
@@ -703,7 +861,7 @@
                 }
             },
             "Prefab": null,
-            "Component[11]": {
+            "Component[15]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 898.1474,
@@ -721,460 +879,6 @@
                         "x": 1.7781721,
                         "y": 1.7781721,
                         "z": 1.7781725,
-                        "w": 0.0
-                    },
-                    "ParentJoint": "",
-                    "SameJointsConstraint": false,
-                    "AbsoluteScaling": false,
-                    "JointSegmentScale": false,
-                    "JointFastLockScene": false,
-                    "FrameSkip": "[0]None"
-                }
-            },
-            "Component[12]": {
-                "via.render.Mesh": {
-                    "v0": 31,
-                    "v1": 1,
-                    "v2": "Art/Model/StageModel/sm22/sm22_201/sm22_201_00.mesh",
-                    "v3": "Art/Model/StageModel/sm22/sm22_201/sm22_201_00_A.mdf2",
-                    "v4": 0,
-                    "v5": 1065353216,
-                    "v6": 0,
-                    "v7": "00000000-0000-0000-0000-000000000000",
-                    "v8": 1048576000,
-                    "v9": 2,
-                    "v10": 30,
-                    "v11": 2,
-                    "v12": 2,
-                    "v13": 2,
-                    "v14": 2,
-                    "v15": 256,
-                    "v16": 0,
-                    "v17": 1,
-                    "v18": 1,
-                    "v19": 0,
-                    "v20": 0,
-                    "v21": 0,
-                    "v22": 0,
-                    "v23": 1,
-                    "v24": 0,
-                    "v25": 0,
-                    "v26": 1,
-                    "v27": 1,
-                    "v28": 0,
-                    "v29": 0,
-                    "v30": 0,
-                    "v31": 0,
-                    "v32": 0,
-                    "v33": 0,
-                    "v34": 0,
-                    "v35": 0,
-                    "v36": 0,
-                    "v37": 1,
-                    "v38": 3,
-                    "v39": 0,
-                    "v40": 0,
-                    "v41": 0,
-                    "v42": 6,
-                    "v43": [],
-                    "v44": 0,
-                    "v45": 0,
-                    "v46": 0,
-                    "v47": 0,
-                    "v48": 0,
-                    "v49": 10,
-                    "v50": 1,
-                    "v51": 1,
-                    "v52": 0,
-                    "v53": 0,
-                    "v54": 0,
-                    "v55": 0,
-                    "v56": 0,
-                    "v57": "00000000-0000-0000-0000-000000000000",
-                    "v58": 0,
-                    "v59": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "v60": 0,
-                    "v61": 0,
-                    "v62": 0,
-                    "v63": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "v64": 4294967295,
-                    "v65": 255,
-                    "v66": 255,
-                    "v67": 255,
-                    "v68": 7,
-                    "v69": [
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1
-                    ],
-                    "v70": 0,
-                    "v71": 1,
-                    "v72": 0,
-                    "v73": 0,
-                    "v74": 0,
-                    "v75": 1,
-                    "v76": 0,
-                    "v77": 1,
-                    "v78": [],
-                    "v79": 0,
-                    "v80": 0,
-                    "v81": 0
-                }
-            },
-            "Component[13]": {
-                "app.MeshSetting": {
-                    "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
-                    "_IsPassThrough": true,
-                    "_MeshMaterialLOD": {
-                        "": {}
-                    },
-                    "_WetBlend": 0.0,
-                    "_WetBlendLimit": 1.0,
-                    "_TopMaskFade": 0.0,
-                    "_TopMaskFadeBias": 1.0,
-                    "_GlobalTopMaskFade": 0.5,
-                    "_TopMaskMapBlend": 0.0,
-                    "_EmissiveIntensity": 1.0,
-                    "_TopBlendVector": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "pad": 0.0
-                    },
-                    "_TriPlanarColor": {
-                        "R": 128,
-                        "G": 128,
-                        "B": 128,
-                        "A": 255
-                    },
-                    "_DispType": 686504192,
-                    "_HeatReceiverParamID": -1343808000,
-                    "_GroundBlendBias": 1.0,
-                    "_PassThroughLengthBias": 1.0,
-                    "_ColorParam": {
-                        "R": 255,
-                        "G": 255,
-                        "B": 255,
-                        "A": 255
-                    },
-                    "_AlphaTestRef": 0.1,
-                    "_EmissivePower": 0.0,
-                    "_WaveScrollSpeed": 0.0,
-                    "_IceBlendRate": 1.0,
-                    "_IceSDFBlendRate": 0.5,
-                    "_IceNormalVector": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "pad": 0.0
-                    },
-                    "_IceNormalBlend": 0.0,
-                    "_EnvironmentGUID": 0,
-                    "_ShaderTimerGUID": 0,
-                    "_EditMaterialFlag": 0,
-                    "_SimpleOrigin": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
-                    "_IsBurn": false
-                }
-            }
-        },
-        "MainObject[14]": {
-            "Guid": "285b4908-f134-4561-a04f-c3b1ffe27e57",
-            "GameObject": {
-                "via.GameObject": {
-                    "Name": "sm22_201_00_A",
-                    "Tag": "",
-                    "UpdateSelf": true,
-                    "DrawSelf": true,
-                    "TimeScale": -1.0
-                }
-            },
-            "Prefab": null,
-            "Component[15]": {
-                "via.Transform": {
-                    "LocalPosition": {
-                        "x": 958.189,
-                        "y": -17.244862,
-                        "z": 34.162563,
-                        "w": 0.0
-                    },
-                    "LocalRotation": {
-                        "x": -0.50643843,
-                        "y": -0.48001346,
-                        "z": 0.5606983,
-                        "w": 0.44578537
-                    },
-                    "LocalScale": {
-                        "x": 2.2513378,
-                        "y": 2.2513378,
-                        "z": 2.2513378,
                         "w": 0.0
                     },
                     "ParentJoint": "",
@@ -1537,10 +1241,10 @@
             "Component[17]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -1600,7 +1304,7 @@
             }
         },
         "MainObject[18]": {
-            "Guid": "9874a9ae-fcee-4620-8ca9-739c0c6bda3f",
+            "Guid": "5101b422-e9e3-4b2f-a3e8-c69024a712ca",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm22_201_00_A",
@@ -1612,6 +1316,460 @@
             },
             "Prefab": null,
             "Component[19]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 958.189,
+                        "y": -17.244862,
+                        "z": 34.162563,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": -0.50643843,
+                        "y": -0.48001346,
+                        "z": 0.5606983,
+                        "w": 0.44578537
+                    },
+                    "LocalScale": {
+                        "x": 2.2513378,
+                        "y": 2.2513378,
+                        "z": 2.2513378,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[20]": {
+                "via.render.Mesh": {
+                    "v0": 31,
+                    "v1": 1,
+                    "v2": "Art/Model/StageModel/sm22/sm22_201/sm22_201_00.mesh",
+                    "v3": "Art/Model/StageModel/sm22/sm22_201/sm22_201_00_A.mdf2",
+                    "v4": 0,
+                    "v5": 1065353216,
+                    "v6": 0,
+                    "v7": "00000000-0000-0000-0000-000000000000",
+                    "v8": 1048576000,
+                    "v9": 2,
+                    "v10": 30,
+                    "v11": 2,
+                    "v12": 2,
+                    "v13": 2,
+                    "v14": 2,
+                    "v15": 256,
+                    "v16": 0,
+                    "v17": 1,
+                    "v18": 1,
+                    "v19": 0,
+                    "v20": 0,
+                    "v21": 0,
+                    "v22": 0,
+                    "v23": 1,
+                    "v24": 0,
+                    "v25": 0,
+                    "v26": 1,
+                    "v27": 1,
+                    "v28": 0,
+                    "v29": 0,
+                    "v30": 0,
+                    "v31": 0,
+                    "v32": 0,
+                    "v33": 0,
+                    "v34": 0,
+                    "v35": 0,
+                    "v36": 0,
+                    "v37": 1,
+                    "v38": 3,
+                    "v39": 0,
+                    "v40": 0,
+                    "v41": 0,
+                    "v42": 6,
+                    "v43": [],
+                    "v44": 0,
+                    "v45": 0,
+                    "v46": 0,
+                    "v47": 0,
+                    "v48": 0,
+                    "v49": 10,
+                    "v50": 1,
+                    "v51": 1,
+                    "v52": 0,
+                    "v53": 0,
+                    "v54": 0,
+                    "v55": 0,
+                    "v56": 0,
+                    "v57": "00000000-0000-0000-0000-000000000000",
+                    "v58": 0,
+                    "v59": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "v60": 0,
+                    "v61": 0,
+                    "v62": 0,
+                    "v63": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "v64": 4294967295,
+                    "v65": 255,
+                    "v66": 255,
+                    "v67": 255,
+                    "v68": 7,
+                    "v69": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "v70": 0,
+                    "v71": 1,
+                    "v72": 0,
+                    "v73": 0,
+                    "v74": 0,
+                    "v75": 1,
+                    "v76": 0,
+                    "v77": 1,
+                    "v78": [],
+                    "v79": 0,
+                    "v80": 0,
+                    "v81": 0
+                }
+            },
+            "Component[21]": {
+                "app.MeshSetting": {
+                    "v0_Enabled": true,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
+                    "_IsPassThrough": true,
+                    "_MeshMaterialLOD": {
+                        "": {}
+                    },
+                    "_WetBlend": 0.0,
+                    "_WetBlendLimit": 1.0,
+                    "_TopMaskFade": 0.0,
+                    "_TopMaskFadeBias": 1.0,
+                    "_GlobalTopMaskFade": 0.5,
+                    "_TopMaskMapBlend": 0.0,
+                    "_EmissiveIntensity": 1.0,
+                    "_TopBlendVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_TriPlanarColor": {
+                        "R": 128,
+                        "G": 128,
+                        "B": 128,
+                        "A": 255
+                    },
+                    "_DispType": 686504192,
+                    "_HeatReceiverParamID": -1343808000,
+                    "_GroundBlendBias": 1.0,
+                    "_PassThroughLengthBias": 1.0,
+                    "_ColorParam": {
+                        "R": 255,
+                        "G": 255,
+                        "B": 255,
+                        "A": 255
+                    },
+                    "_AlphaTestRef": 0.1,
+                    "_EmissivePower": 0.0,
+                    "_WaveScrollSpeed": 0.0,
+                    "_IceBlendRate": 1.0,
+                    "_IceSDFBlendRate": 0.5,
+                    "_IceNormalVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_IceNormalBlend": 0.0,
+                    "_EnvironmentGUID": 0,
+                    "_ShaderTimerGUID": 0,
+                    "_EditMaterialFlag": 0,
+                    "_SimpleOrigin": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "_IsBurn": false
+                }
+            }
+        },
+        "MainObject[22]": {
+            "Guid": "8a3d956a-5493-48d3-9ff9-96222a7404b3",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "sm22_201_00_A",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[23]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 956.41284,
@@ -1639,7 +1797,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[20]": {
+            "Component[24]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -1988,13 +2146,13 @@
                     "v81": 0
                 }
             },
-            "Component[21]": {
+            "Component[25]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -2053,8 +2211,8 @@
                 }
             }
         },
-        "MainObject[22]": {
-            "Guid": "d4a12554-f172-4297-a399-395c29ead14e",
+        "MainObject[26]": {
+            "Guid": "405e1642-475e-4fcd-8045-0b5326bcc994",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm25_201_00_A",
@@ -2065,7 +2223,7 @@
                 }
             },
             "Prefab": null,
-            "Component[23]": {
+            "Component[27]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 908.0859,
@@ -2093,7 +2251,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[24]": {
+            "Component[28]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -2442,13 +2600,13 @@
                     "v81": 0
                 }
             },
-            "Component[25]": {
+            "Component[29]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -2507,8 +2665,8 @@
                 }
             }
         },
-        "MainObject[26]": {
-            "Guid": "34ec4a07-a436-4697-9b32-447655e3ed4b",
+        "MainObject[30]": {
+            "Guid": "5cde884d-636c-4e64-aead-b921f9a3f716",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm25_201_02_A",
@@ -2519,7 +2677,7 @@
                 }
             },
             "Prefab": null,
-            "Component[27]": {
+            "Component[31]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 908.79456,
@@ -2547,7 +2705,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[28]": {
+            "Component[32]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -2896,13 +3054,13 @@
                     "v81": 0
                 }
             },
-            "Component[29]": {
+            "Component[33]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -2961,8 +3119,8 @@
                 }
             }
         },
-        "MainObject[30]": {
-            "Guid": "cbbf5b1e-64b8-43f8-8e23-befa3b4816a0",
+        "MainObject[34]": {
+            "Guid": "8496600c-2431-4db1-b327-37c41bfc5ce2",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm43_413_00_A",
@@ -2973,7 +3131,7 @@
                 }
             },
             "Prefab": null,
-            "Component[31]": {
+            "Component[35]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 927.8849,
@@ -3001,7 +3159,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[32]": {
+            "Component[36]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -3350,13 +3508,13 @@
                     "v81": 0
                 }
             },
-            "Component[33]": {
+            "Component[37]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -3414,7 +3572,7 @@
                     "_IsBurn": false
                 }
             },
-            "Component[34]": {
+            "Component[38]": {
                 "app.LightEffectController": {
                     "v0": 1,
                     "_LightEffectType": "[4]TIME_ALL_ON",
@@ -3422,8 +3580,8 @@
                 }
             }
         },
-        "MainObject[35]": {
-            "Guid": "c5845b7e-f9e9-456e-9941-8b8964cf4e80",
+        "MainObject[39]": {
+            "Guid": "21fa3785-0f78-4f5e-8fa4-79352490f34a",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm43_414_00_A",
@@ -3434,7 +3592,7 @@
                 }
             },
             "Prefab": null,
-            "Component[36]": {
+            "Component[40]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 927.8849,
@@ -3462,7 +3620,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[37]": {
+            "Component[41]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -3811,13 +3969,13 @@
                     "v81": 0
                 }
             },
-            "Component[38]": {
+            "Component[42]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -3876,8 +4034,8 @@
                 }
             }
         },
-        "MainObject[39]": {
-            "Guid": "7c2b8bd9-6f40-40f3-8aeb-c6854b5e2f57",
+        "MainObject[43]": {
+            "Guid": "01446576-ada1-462e-8eb3-1b50e7e6b26f",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm43_414_01_A",
@@ -3888,7 +4046,7 @@
                 }
             },
             "Prefab": null,
-            "Component[40]": {
+            "Component[44]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 927.8849,
@@ -3916,7 +4074,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[41]": {
+            "Component[45]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -4265,13 +4423,13 @@
                     "v81": 0
                 }
             },
-            "Component[42]": {
+            "Component[46]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -4330,8 +4488,8 @@
                 }
             }
         },
-        "MainObject[43]": {
-            "Guid": "c7564fd4-b2e6-49f3-969f-3818ac1af9da",
+        "MainObject[47]": {
+            "Guid": "ddaf7570-8edd-4956-8ded-b7bbfd7b2a48",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm43_414_02_A",
@@ -4342,7 +4500,7 @@
                 }
             },
             "Prefab": null,
-            "Component[44]": {
+            "Component[48]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 927.8849,
@@ -4370,7 +4528,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[45]": {
+            "Component[49]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -4719,13 +4877,13 @@
                     "v81": 0
                 }
             },
-            "Component[46]": {
+            "Component[50]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -4784,8 +4942,8 @@
                 }
             }
         },
-        "MainObject[47]": {
-            "Guid": "62860ba1-d66d-44f0-b9ee-400a3b173d56",
+        "MainObject[51]": {
+            "Guid": "89636221-b945-47f7-9cff-a3e6fb597fbc",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm48_041_02_A",
@@ -4796,7 +4954,7 @@
                 }
             },
             "Prefab": null,
-            "Component[48]": {
+            "Component[52]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 927.93445,
@@ -4824,7 +4982,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[49]": {
+            "Component[53]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -5173,13 +5331,13 @@
                     "v81": 0
                 }
             },
-            "Component[50]": {
+            "Component[54]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -5238,8 +5396,8 @@
                 }
             }
         },
-        "MainObject[51]": {
-            "Guid": "4854ead8-b2e4-4ba6-97b5-1463d665379e",
+        "MainObject[55]": {
+            "Guid": "5a648245-2df0-4125-a9bb-1b37381473b6",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_125_00_B",
@@ -5250,7 +5408,7 @@
                 }
             },
             "Prefab": null,
-            "Component[52]": {
+            "Component[56]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 896.2831,
@@ -5278,7 +5436,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[53]": {
+            "Component[57]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -5627,13 +5785,13 @@
                     "v81": 0
                 }
             },
-            "Component[54]": {
+            "Component[58]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -5692,8 +5850,8 @@
                 }
             }
         },
-        "MainObject[55]": {
-            "Guid": "94c7cfa0-a7fb-4128-b7e4-70d6d72725f5",
+        "MainObject[59]": {
+            "Guid": "0e59798a-9572-4749-af09-14768222e1fb",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_131_00_B",
@@ -5704,7 +5862,7 @@
                 }
             },
             "Prefab": null,
-            "Component[56]": {
+            "Component[60]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 959.4209,
@@ -5732,7 +5890,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[57]": {
+            "Component[61]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -6081,13 +6239,13 @@
                     "v81": 0
                 }
             },
-            "Component[58]": {
+            "Component[62]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -6146,8 +6304,8 @@
                 }
             }
         },
-        "MainObject[59]": {
-            "Guid": "3b098b47-8150-4bf9-941f-bdbd8715b2ce",
+        "MainObject[63]": {
+            "Guid": "41941b2d-44ad-4573-b693-0f65c530d301",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_148_00_B",
@@ -6158,7 +6316,7 @@
                 }
             },
             "Prefab": null,
-            "Component[60]": {
+            "Component[64]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 952.11847,
@@ -6186,7 +6344,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[61]": {
+            "Component[65]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -6535,13 +6693,13 @@
                     "v81": 0
                 }
             },
-            "Component[62]": {
+            "Component[66]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -6600,8 +6758,8 @@
                 }
             }
         },
-        "MainObject[63]": {
-            "Guid": "8f710def-cbc9-4e9e-b99b-0b0c8e0ece7c",
+        "MainObject[67]": {
+            "Guid": "4f2ffc9c-b9e0-49d4-85a9-4837ddb57797",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_200_00_A",
@@ -6612,7 +6770,7 @@
                 }
             },
             "Prefab": null,
-            "Component[64]": {
+            "Component[68]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 918.5409,
@@ -6640,7 +6798,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[65]": {
+            "Component[69]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -6989,13 +7147,13 @@
                     "v81": 0
                 }
             },
-            "Component[66]": {
+            "Component[70]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -7054,8 +7212,8 @@
                 }
             }
         },
-        "MainObject[67]": {
-            "Guid": "10d3dd05-1d67-41ed-b328-017c9766d3e0",
+        "MainObject[71]": {
+            "Guid": "a87bace7-7461-4bcb-96e9-1b240981f309",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_201_00_A",
@@ -7066,7 +7224,7 @@
                 }
             },
             "Prefab": null,
-            "Component[68]": {
+            "Component[72]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 910.8028,
@@ -7094,7 +7252,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[69]": {
+            "Component[73]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -7443,467 +7601,13 @@
                     "v81": 0
                 }
             },
-            "Component[70]": {
-                "app.MeshSetting": {
-                    "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
-                    "_IsPassThrough": true,
-                    "_MeshMaterialLOD": {
-                        "": {}
-                    },
-                    "_WetBlend": 0.0,
-                    "_WetBlendLimit": 1.0,
-                    "_TopMaskFade": 0.0,
-                    "_TopMaskFadeBias": 1.0,
-                    "_GlobalTopMaskFade": 0.5,
-                    "_TopMaskMapBlend": 0.0,
-                    "_EmissiveIntensity": 1.0,
-                    "_TopBlendVector": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "pad": 0.0
-                    },
-                    "_TriPlanarColor": {
-                        "R": 128,
-                        "G": 128,
-                        "B": 128,
-                        "A": 255
-                    },
-                    "_DispType": 686504192,
-                    "_HeatReceiverParamID": -1343808000,
-                    "_GroundBlendBias": 1.0,
-                    "_PassThroughLengthBias": 1.0,
-                    "_ColorParam": {
-                        "R": 255,
-                        "G": 255,
-                        "B": 255,
-                        "A": 255
-                    },
-                    "_AlphaTestRef": 0.1,
-                    "_EmissivePower": 0.0,
-                    "_WaveScrollSpeed": 0.0,
-                    "_IceBlendRate": 1.0,
-                    "_IceSDFBlendRate": 0.5,
-                    "_IceNormalVector": {
-                        "x": 0.0,
-                        "y": 1.0,
-                        "z": 0.0,
-                        "pad": 0.0
-                    },
-                    "_IceNormalBlend": 0.0,
-                    "_EnvironmentGUID": 0,
-                    "_ShaderTimerGUID": 0,
-                    "_EditMaterialFlag": 0,
-                    "_SimpleOrigin": {
-                        "x": 0.0,
-                        "y": 0.0,
-                        "z": 0.0,
-                        "w": 0.0
-                    },
-                    "_IsBurn": false
-                }
-            }
-        },
-        "MainObject[71]": {
-            "Guid": "113961ad-955f-49dc-8980-792a99a0dcec",
-            "GameObject": {
-                "via.GameObject": {
-                    "Name": "sm15_003_01_C_02",
-                    "Tag": "",
-                    "UpdateSelf": true,
-                    "DrawSelf": true,
-                    "TimeScale": -1.0
-                }
-            },
-            "Prefab": null,
-            "Component[72]": {
-                "via.Transform": {
-                    "LocalPosition": {
-                        "x": 942.1894,
-                        "y": -42.95932,
-                        "z": 41.345173,
-                        "w": 0.0
-                    },
-                    "LocalRotation": {
-                        "x": 0.00022034474,
-                        "y": 0.2886463,
-                        "z": -0.059030436,
-                        "w": 0.9556143
-                    },
-                    "LocalScale": {
-                        "x": 0.68616205,
-                        "y": 0.6861621,
-                        "z": 0.6861622,
-                        "w": 0.0
-                    },
-                    "ParentJoint": "",
-                    "SameJointsConstraint": false,
-                    "AbsoluteScaling": false,
-                    "JointSegmentScale": false,
-                    "JointFastLockScene": false,
-                    "FrameSkip": "[0]None"
-                }
-            },
-            "Component[73]": {
-                "via.render.Mesh": {
-                    "v0": 31,
-                    "v1": 1,
-                    "v2": "Art/Model/StageModel/sm15/sm15_003/sm15_003_01.mesh",
-                    "v3": "Art/Model/StageModel/sm15/sm15_003/sm15_003_01_C.mdf2",
-                    "v4": 1,
-                    "v5": 1065353216,
-                    "v6": 0,
-                    "v7": "00000000-0000-0000-0000-000000000000",
-                    "v8": 1048576000,
-                    "v9": 2,
-                    "v10": 30,
-                    "v11": 2,
-                    "v12": 2,
-                    "v13": 2,
-                    "v14": 2,
-                    "v15": 256,
-                    "v16": 0,
-                    "v17": 1,
-                    "v18": 1,
-                    "v19": 0,
-                    "v20": 0,
-                    "v21": 0,
-                    "v22": 1,
-                    "v23": 1,
-                    "v24": 0,
-                    "v25": 0,
-                    "v26": 1,
-                    "v27": 1,
-                    "v28": 0,
-                    "v29": 0,
-                    "v30": 0,
-                    "v31": 0,
-                    "v32": 0,
-                    "v33": 0,
-                    "v34": 0,
-                    "v35": 0,
-                    "v36": 0,
-                    "v37": 1,
-                    "v38": 3,
-                    "v39": 0,
-                    "v40": 0,
-                    "v41": 0,
-                    "v42": 6,
-                    "v43": [],
-                    "v44": 0,
-                    "v45": 0,
-                    "v46": 1,
-                    "v47": 0,
-                    "v48": 0,
-                    "v49": 10,
-                    "v50": 1,
-                    "v51": 1,
-                    "v52": 0,
-                    "v53": 0,
-                    "v54": 0,
-                    "v55": 0,
-                    "v56": 0,
-                    "v57": "00000000-0000-0000-0000-000000000000",
-                    "v58": 0,
-                    "v59": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "v60": 0,
-                    "v61": 0,
-                    "v62": 0,
-                    "v63": {
-                        "x": 0,
-                        "y": 0
-                    },
-                    "v64": 4294967295,
-                    "v65": 255,
-                    "v66": 255,
-                    "v67": 255,
-                    "v68": 7,
-                    "v69": [
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1
-                    ],
-                    "v70": 0,
-                    "v71": 1,
-                    "v72": 0,
-                    "v73": 0,
-                    "v74": 0,
-                    "v75": 1,
-                    "v76": 0,
-                    "v77": 1,
-                    "v78": [],
-                    "v79": 0,
-                    "v80": 0,
-                    "v81": 0
-                }
-            },
             "Component[74]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -7963,10 +7667,10 @@
             }
         },
         "MainObject[75]": {
-            "Guid": "81aa458d-7c49-496a-a9dc-6ea8183b5f19",
+            "Guid": "d1a5b9da-6817-45db-bb89-e0f2981635a5",
             "GameObject": {
                 "via.GameObject": {
-                    "Name": "sm15_003_01_C",
+                    "Name": "sm15_003_01_C_02",
                     "Tag": "",
                     "UpdateSelf": true,
                     "DrawSelf": true,
@@ -7977,21 +7681,21 @@
             "Component[76]": {
                 "via.Transform": {
                     "LocalPosition": {
-                        "x": 937.821,
-                        "y": -43.214603,
-                        "z": 39.74529,
+                        "x": 942.1894,
+                        "y": -42.95932,
+                        "z": 41.345173,
                         "w": 0.0
                     },
                     "LocalRotation": {
-                        "x": -0.06922848,
-                        "y": -0.0153282415,
-                        "z": 0.0009960748,
-                        "w": 0.99748254
+                        "x": 0.00022034474,
+                        "y": 0.2886463,
+                        "z": -0.059030436,
+                        "w": 0.9556143
                     },
                     "LocalScale": {
-                        "x": 0.6861622,
+                        "x": 0.68616205,
                         "y": 0.6861621,
-                        "z": 0.6861621,
+                        "z": 0.6861622,
                         "w": 0.0
                     },
                     "ParentJoint": "",
@@ -8354,10 +8058,10 @@
             "Component[78]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -8417,10 +8121,10 @@
             }
         },
         "MainObject[79]": {
-            "Guid": "e7c71028-f629-4cc8-990b-0363ca46bb44",
+            "Guid": "8f8f00ed-a7b9-4e3d-b30a-a9b9c55f6df8",
             "GameObject": {
                 "via.GameObject": {
-                    "Name": "sm15_003_01_C_01",
+                    "Name": "sm15_003_01_C",
                     "Tag": "",
                     "UpdateSelf": true,
                     "DrawSelf": true,
@@ -8431,21 +8135,21 @@
             "Component[80]": {
                 "via.Transform": {
                     "LocalPosition": {
-                        "x": 941.6508,
-                        "y": -43.260265,
-                        "z": 40.742638,
+                        "x": 937.821,
+                        "y": -43.214603,
+                        "z": 39.74529,
                         "w": 0.0
                     },
                     "LocalRotation": {
-                        "x": -0.06279051,
-                        "y": -0.2353596,
-                        "z": -0.014995685,
-                        "w": 0.969762
+                        "x": -0.06922848,
+                        "y": -0.0153282415,
+                        "z": 0.0009960748,
+                        "w": 0.99748254
                     },
                     "LocalScale": {
                         "x": 0.6861622,
                         "y": 0.6861621,
-                        "z": 0.6861622,
+                        "z": 0.6861621,
                         "w": 0.0
                     },
                     "ParentJoint": "",
@@ -8808,10 +8512,10 @@
             "Component[82]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -8871,7 +8575,461 @@
             }
         },
         "MainObject[83]": {
-            "Guid": "893a291e-5109-4cfd-acea-205dfb43d48a",
+            "Guid": "87b99d40-383d-4fd1-b432-fcb565ba2945",
+            "GameObject": {
+                "via.GameObject": {
+                    "Name": "sm15_003_01_C_01",
+                    "Tag": "",
+                    "UpdateSelf": true,
+                    "DrawSelf": true,
+                    "TimeScale": -1.0
+                }
+            },
+            "Prefab": null,
+            "Component[84]": {
+                "via.Transform": {
+                    "LocalPosition": {
+                        "x": 941.6508,
+                        "y": -43.260265,
+                        "z": 40.742638,
+                        "w": 0.0
+                    },
+                    "LocalRotation": {
+                        "x": -0.06279051,
+                        "y": -0.2353596,
+                        "z": -0.014995685,
+                        "w": 0.969762
+                    },
+                    "LocalScale": {
+                        "x": 0.6861622,
+                        "y": 0.6861621,
+                        "z": 0.6861622,
+                        "w": 0.0
+                    },
+                    "ParentJoint": "",
+                    "SameJointsConstraint": false,
+                    "AbsoluteScaling": false,
+                    "JointSegmentScale": false,
+                    "JointFastLockScene": false,
+                    "FrameSkip": "[0]None"
+                }
+            },
+            "Component[85]": {
+                "via.render.Mesh": {
+                    "v0": 31,
+                    "v1": 1,
+                    "v2": "Art/Model/StageModel/sm15/sm15_003/sm15_003_01.mesh",
+                    "v3": "Art/Model/StageModel/sm15/sm15_003/sm15_003_01_C.mdf2",
+                    "v4": 1,
+                    "v5": 1065353216,
+                    "v6": 0,
+                    "v7": "00000000-0000-0000-0000-000000000000",
+                    "v8": 1048576000,
+                    "v9": 2,
+                    "v10": 30,
+                    "v11": 2,
+                    "v12": 2,
+                    "v13": 2,
+                    "v14": 2,
+                    "v15": 256,
+                    "v16": 0,
+                    "v17": 1,
+                    "v18": 1,
+                    "v19": 0,
+                    "v20": 0,
+                    "v21": 0,
+                    "v22": 1,
+                    "v23": 1,
+                    "v24": 0,
+                    "v25": 0,
+                    "v26": 1,
+                    "v27": 1,
+                    "v28": 0,
+                    "v29": 0,
+                    "v30": 0,
+                    "v31": 0,
+                    "v32": 0,
+                    "v33": 0,
+                    "v34": 0,
+                    "v35": 0,
+                    "v36": 0,
+                    "v37": 1,
+                    "v38": 3,
+                    "v39": 0,
+                    "v40": 0,
+                    "v41": 0,
+                    "v42": 6,
+                    "v43": [],
+                    "v44": 0,
+                    "v45": 0,
+                    "v46": 1,
+                    "v47": 0,
+                    "v48": 0,
+                    "v49": 10,
+                    "v50": 1,
+                    "v51": 1,
+                    "v52": 0,
+                    "v53": 0,
+                    "v54": 0,
+                    "v55": 0,
+                    "v56": 0,
+                    "v57": "00000000-0000-0000-0000-000000000000",
+                    "v58": 0,
+                    "v59": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "v60": 0,
+                    "v61": 0,
+                    "v62": 0,
+                    "v63": {
+                        "x": 0,
+                        "y": 0
+                    },
+                    "v64": 4294967295,
+                    "v65": 255,
+                    "v66": 255,
+                    "v67": 255,
+                    "v68": 7,
+                    "v69": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "v70": 0,
+                    "v71": 1,
+                    "v72": 0,
+                    "v73": 0,
+                    "v74": 0,
+                    "v75": 1,
+                    "v76": 0,
+                    "v77": 1,
+                    "v78": [],
+                    "v79": 0,
+                    "v80": 0,
+                    "v81": 0
+                }
+            },
+            "Component[86]": {
+                "app.MeshSetting": {
+                    "v0_Enabled": true,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
+                    "_IsPassThrough": true,
+                    "_MeshMaterialLOD": {
+                        "": {}
+                    },
+                    "_WetBlend": 0.0,
+                    "_WetBlendLimit": 1.0,
+                    "_TopMaskFade": 0.0,
+                    "_TopMaskFadeBias": 1.0,
+                    "_GlobalTopMaskFade": 0.5,
+                    "_TopMaskMapBlend": 0.0,
+                    "_EmissiveIntensity": 1.0,
+                    "_TopBlendVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_TriPlanarColor": {
+                        "R": 128,
+                        "G": 128,
+                        "B": 128,
+                        "A": 255
+                    },
+                    "_DispType": 686504192,
+                    "_HeatReceiverParamID": -1343808000,
+                    "_GroundBlendBias": 1.0,
+                    "_PassThroughLengthBias": 1.0,
+                    "_ColorParam": {
+                        "R": 255,
+                        "G": 255,
+                        "B": 255,
+                        "A": 255
+                    },
+                    "_AlphaTestRef": 0.1,
+                    "_EmissivePower": 0.0,
+                    "_WaveScrollSpeed": 0.0,
+                    "_IceBlendRate": 1.0,
+                    "_IceSDFBlendRate": 0.5,
+                    "_IceNormalVector": {
+                        "x": 0.0,
+                        "y": 1.0,
+                        "z": 0.0,
+                        "pad": 0.0
+                    },
+                    "_IceNormalBlend": 0.0,
+                    "_EnvironmentGUID": 0,
+                    "_ShaderTimerGUID": 0,
+                    "_EditMaterialFlag": 0,
+                    "_SimpleOrigin": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 0.0
+                    },
+                    "_IsBurn": false
+                }
+            }
+        },
+        "MainObject[87]": {
+            "Guid": "6d4875bd-de89-4e4c-ad2f-371d3ccbc672",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm45_069_01_A",
@@ -8882,7 +9040,7 @@
                 }
             },
             "Prefab": null,
-            "Component[84]": {
+            "Component[88]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 928.09973,
@@ -8910,7 +9068,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[85]": {
+            "Component[89]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -9259,13 +9417,13 @@
                     "v81": 0
                 }
             },
-            "Component[86]": {
+            "Component[90]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -9324,8 +9482,8 @@
                 }
             }
         },
-        "MainObject[87]": {
-            "Guid": "cc226e00-83cd-41b1-829a-d9317bfe5ae6",
+        "MainObject[91]": {
+            "Guid": "c73ced21-d483-43d2-af13-403ab6a5020e",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "Sm_Reduction_Pipe_st103",
@@ -9336,7 +9494,7 @@
                 }
             },
             "Prefab": null,
-            "Component[88]": {
+            "Component[92]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 928.09973,
@@ -9364,14 +9522,14 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[89]": {
+            "Component[93]": {
                 "soundlib.SoundZoneGenerator": {
                     "v0": 1,
                     "_StaticCollider": true
                 }
             },
-            "ChildObject[90]": {
-                "Guid": "b011dc04-0639-4cad-83e7-dee6ba3c46a7",
+            "ChildObject[94]": {
+                "Guid": "e348ea7f-25e4-438a-b4b0-11603c7178d9",
                 "GameObject": {
                     "via.GameObject": {
                         "Name": "SoundGenerator",
@@ -9382,7 +9540,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[91]": {
+                "Component[95]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -9410,10 +9568,10 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[92]": {
+                "Component[96]": {
                     "via.physics.ZoneGroup": {}
                 },
-                "Component[93]": {
+                "Component[97]": {
                     "via.physics.Colliders": {
                         "Enabled": true,
                         "DevelopDraw": true,
@@ -9421,13 +9579,13 @@
                         "DependencyResources": [],
                         "v4": 1,
                         "v5": [
-                            101
+                            105
                         ]
                     }
                 },
-                "Component[94]": {
+                "Component[98]": {
                     "soundlib.SoundContainer": {
-                        "v0": 1,
+                        "v0": 0,
                         "_TriggerOnlyDrawSelf": false,
                         "_UserDataList": [
                             {
@@ -9438,7 +9596,7 @@
                         ]
                     }
                 },
-                "Component[95]": {
+                "Component[99]": {
                     "app.SoundGenerator": {
                         "v0": 1,
                         "_TriggerIds": [
@@ -9452,15 +9610,15 @@
                         "_FadeOutTime": 500
                     }
                 },
-                "Component[96]": {
+                "Component[100]": {
                     "app.SoundZoneGeneratorCollidersApp": {
                         "v0": 1
                     }
                 }
             }
         },
-        "MainObject[97]": {
-            "Guid": "86d5420a-5259-46c7-8999-46a3d9884e73",
+        "MainObject[101]": {
+            "Guid": "5523f316-a45e-4af4-bb9c-138bce16e520",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_210_00_A",
@@ -9471,7 +9629,7 @@
                 }
             },
             "Prefab": null,
-            "Component[98]": {
+            "Component[102]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 949.5937,
@@ -9499,7 +9657,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[99]": {
+            "Component[103]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -9848,13 +10006,13 @@
                     "v81": 0
                 }
             },
-            "Component[100]": {
+            "Component[104]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -9913,8 +10071,8 @@
                 }
             }
         },
-        "MainObject[101]": {
-            "Guid": "d4536d44-3e55-448a-b89a-2d35b0d0725e",
+        "MainObject[105]": {
+            "Guid": "4eb0dce7-503b-410d-9cfe-89afcbd3043c",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_041_00_D",
@@ -9925,7 +10083,7 @@
                 }
             },
             "Prefab": null,
-            "Component[102]": {
+            "Component[106]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 953.6551,
@@ -9953,7 +10111,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[103]": {
+            "Component[107]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -10302,13 +10460,13 @@
                     "v81": 0
                 }
             },
-            "Component[104]": {
+            "Component[108]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -10367,8 +10525,8 @@
                 }
             }
         },
-        "MainObject[105]": {
-            "Guid": "ae1c1cc2-b04e-4922-9df1-37f1af81d5c3",
+        "MainObject[109]": {
+            "Guid": "b68551c3-2ba5-4a04-b525-4995f9d5ab33",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "sm23_212_00_A",
@@ -10379,7 +10537,7 @@
                 }
             },
             "Prefab": null,
-            "Component[106]": {
+            "Component[110]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 952.0506,
@@ -10407,7 +10565,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[107]": {
+            "Component[111]": {
                 "via.render.Mesh": {
                     "v0": 31,
                     "v1": 1,
@@ -10756,13 +10914,13 @@
                     "v81": 0
                 }
             },
-            "Component[108]": {
+            "Component[112]": {
                 "app.MeshSetting": {
                     "v0_Enabled": true,
-                    "_LodSelectionAlogrithm": 0,
-                    "_AssetNo": 0,
-                    "_IsMargeBoundaryInController": true,
-                    "_IsMargeBoundaryDrawOff": false,
+                    "v1": 0,
+                    "v2": 0,
+                    "v3": true,
+                    "v4": false,
                     "_IsPassThrough": true,
                     "_MeshMaterialLOD": {
                         "": {}
@@ -10821,8 +10979,8 @@
                 }
             }
         },
-        "MainObject[109]": {
-            "Guid": "1dd9ee85-a895-4bbc-b26c-fa72edf4b914",
+        "MainObject[113]": {
+            "Guid": "791f9bc1-fbb3-486b-b8d2-c24ebd12befa",
             "GameObject": {
                 "via.GameObject": {
                     "Name": "MergedFoliage",
@@ -10833,7 +10991,7 @@
                 }
             },
             "Prefab": null,
-            "Component[110]": {
+            "Component[114]": {
                 "via.Transform": {
                     "LocalPosition": {
                         "x": 0.0,
@@ -10861,7 +11019,7 @@
                     "FrameSkip": "[0]None"
                 }
             },
-            "Component[111]": {
+            "Component[115]": {
                 "via.landscape.Foliage": {
                     "v0_RenderOutputID": 31,
                     "v1_Enabled": true,
@@ -10897,15 +11055,16 @@
                     "v26": 0,
                     "v27": 0,
                     "v28": 0,
-                    "v29": 4294967295,
-                    "v30": 0,
-                    "v31": 0
+                    "v29": 0,
+                    "v30": 4294967295,
+                    "v31": 0,
+                    "v32": 0
                 }
             },
-            "Component[112]": {
+            "Component[116]": {
                 "app.FoliageSetting": {
                     "v0_Enabled": true,
-                    "_DisableDispOffController": false,
+                    "v1": false,
                     "_IsPassThrough": true,
                     "_DispType": 686504192,
                     "_HeatReceiverParamID": -2104865152,
@@ -10958,7 +11117,52 @@
                         "w": 0.0
                     },
                     "_IsBurn": false,
+                    "_DisableShadowOptMode": false,
+                    "_DisableShadowOptModeSaveWork": true,
+                    "_EnableDencityCulling": false,
+                    "_EnableStaticFoliageOptMode": false,
                     "_MaterialValues": [
+                        {
+                            "Dissolve": 255,
+                            "PassThrough": 0,
+                            "WetBlend": 0,
+                            "SandBlend": 0,
+                            "EditParamFlag": 64,
+                            "TopMaskFade": 0,
+                            "TopMaskFadeBias": 255,
+                            "GlobalTopMaskFade": 0,
+                            "TopMaskMapBlend": 0,
+                            "TriPlanarColorTopR": 128,
+                            "TriPlanarColorTopG": 128,
+                            "TriPlanarColorTopB": 128,
+                            "TriPlanarColorTopA": 255,
+                            "TopBlendVectorX": 127,
+                            "TopBlendVectorY": 255,
+                            "TopBlendVectorZ": 127,
+                            "GroundBlendBias": 127,
+                            "ColorParamR": 255,
+                            "ColorParamG": 255,
+                            "ColorParamB": 255,
+                            "AlphaTestRef": 25,
+                            "WaveScrollSpeed": 32768,
+                            "EnvironmentGUID": 0,
+                            "ShaderTimerGUID": 0,
+                            "EmissivePower": 256,
+                            "EmissiveIntensity": 255,
+                            "WetBlendLimit": 255,
+                            "IceSDFBlendRate": 32896,
+                            "IceBlendRate": 255,
+                            "IceNormalVectorX": 127,
+                            "IceNormalVectorY": 255,
+                            "IceNormalVectorZ": 127,
+                            "IceNormalBlend": 0,
+                            "SimpleOrigin": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "w": 0.0
+                            }
+                        },
                         {
                             "Dissolve": 255,
                             "PassThrough": 0,
@@ -11058,7 +11262,7 @@
                             "TopBlendVectorX": 127,
                             "TopBlendVectorY": 255,
                             "TopBlendVectorZ": 127,
-                            "GroundBlendBias": 127,
+                            "GroundBlendBias": 158,
                             "ColorParamR": 255,
                             "ColorParamG": 255,
                             "ColorParamB": 255,
@@ -11087,7 +11291,7 @@
                             "PassThrough": 0,
                             "WetBlend": 0,
                             "SandBlend": 0,
-                            "EditParamFlag": 64,
+                            "EditParamFlag": 256,
                             "TopMaskFade": 0,
                             "TopMaskFadeBias": 255,
                             "GlobalTopMaskFade": 0,
@@ -11099,7 +11303,7 @@
                             "TopBlendVectorX": 127,
                             "TopBlendVectorY": 255,
                             "TopBlendVectorZ": 127,
-                            "GroundBlendBias": 158,
+                            "GroundBlendBias": 255,
                             "ColorParamR": 255,
                             "ColorParamG": 255,
                             "ColorParamB": 255,
@@ -11108,7 +11312,7 @@
                             "EnvironmentGUID": 0,
                             "ShaderTimerGUID": 0,
                             "EmissivePower": 256,
-                            "EmissiveIntensity": 255,
+                            "EmissiveIntensity": 0,
                             "WetBlendLimit": 255,
                             "IceSDFBlendRate": 32896,
                             "IceBlendRate": 255,
@@ -11286,230 +11490,189 @@
                                 "z": 0.0,
                                 "w": 0.0
                             }
-                        },
-                        {
-                            "Dissolve": 255,
-                            "PassThrough": 0,
-                            "WetBlend": 0,
-                            "SandBlend": 0,
-                            "EditParamFlag": 256,
-                            "TopMaskFade": 0,
-                            "TopMaskFadeBias": 255,
-                            "GlobalTopMaskFade": 0,
-                            "TopMaskMapBlend": 0,
-                            "TriPlanarColorTopR": 128,
-                            "TriPlanarColorTopG": 128,
-                            "TriPlanarColorTopB": 128,
-                            "TriPlanarColorTopA": 255,
-                            "TopBlendVectorX": 127,
-                            "TopBlendVectorY": 255,
-                            "TopBlendVectorZ": 127,
-                            "GroundBlendBias": 255,
-                            "ColorParamR": 255,
-                            "ColorParamG": 255,
-                            "ColorParamB": 255,
-                            "AlphaTestRef": 25,
-                            "WaveScrollSpeed": 32768,
-                            "EnvironmentGUID": 0,
-                            "ShaderTimerGUID": 0,
-                            "EmissivePower": 256,
-                            "EmissiveIntensity": 0,
-                            "WetBlendLimit": 255,
-                            "IceSDFBlendRate": 32896,
-                            "IceBlendRate": 255,
-                            "IceNormalVectorX": 127,
-                            "IceNormalVectorY": 255,
-                            "IceNormalVectorZ": 127,
-                            "IceNormalBlend": 0,
-                            "SimpleOrigin": {
-                                "x": 0.0,
-                                "y": 0.0,
-                                "z": 0.0,
-                                "w": 0.0
-                            }
                         }
                     ],
                     "_MaterialParamIndexArray": [
                         0,
                         0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
                         1,
                         2,
-                        0,
-                        0,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        1,
-                        2,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        2,
-                        2,
-                        0,
-                        1,
                         3,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
                         2,
                         0,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
+                        2,
                         0,
+                        2,
                         1,
                         1,
                         1,
                         1,
-                        0,
                         1,
-                        0,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        1,
+                        1,
+                        2,
+                        1,
+                        2,
                         4,
+                        4,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
                         0,
-                        0,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        2,
+                        1,
+                        2,
+                        1,
                         5,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
                         1,
-                        0,
-                        0,
-                        0,
                         1,
-                        0,
-                        1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
                         6,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        2,
+                        2,
+                        2,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
                         7,
-                        0,
-                        0,
-                        0,
+                        8,
+                        1,
+                        1,
+                        1,
+                        1,
                         0,
                         2,
                         1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
                         1,
                         1,
                         1,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        8,
-                        8,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0,
-                        0
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
                     ],
                     "_IsCullingByDistance": false
                 }

@@ -1,6 +1,6 @@
 {
     "looseInstance": {
-        "498": {
+        "520": {
             "via.render.MaterialParam": {
                 "v0": "lambert1",
                 "v1": "AlphaMap",
@@ -133,6 +133,13 @@
                         "via.relib.light.LightActionDistanceAttenuation": {
                             "IsDistanceAttenuation": false,
                             "EaseType": "[0]Linear",
+                            "IsSpherePosition": false,
+                            "SpherePosition": {
+                                "x": 0.0,
+                                "y": 0.0,
+                                "z": 0.0,
+                                "pad": 0.0
+                            },
                             "NearFadeOutStartDistance": -1.0,
                             "NearFadeOutEndDistance": 1000.0,
                             "FadeOutStartDistance": -1.0,
@@ -543,6 +550,13 @@
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -736,6 +750,23 @@
                     }
                 },
                 "Component[17]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[18]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -746,7 +777,7 @@
                     }
                 }
             },
-            "ChildObject[18]": {
+            "ChildObject[19]": {
                 "Guid": "a0ea58a4-d788-4ef8-ad62-10958fe771dc",
                 "GameObject": {
                     "via.GameObject": {
@@ -758,7 +789,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[19]": {
+                "Component[20]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -786,7 +817,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[20]": {
+                "Component[21]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -855,13 +886,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[21]": {
+                "Component[22]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -1017,7 +1055,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[22]": {
+                "Component[23]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -1042,7 +1080,7 @@
                         "v10": 1
                     }
                 },
-                "Component[23]": {
+                "Component[24]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -1054,7 +1092,24 @@
                         }
                     }
                 },
-                "Component[24]": {
+                "Component[25]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[26]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -1064,13 +1119,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[25]": {
+                "Component[27]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[26]": {
+            "ChildObject[28]": {
                 "Guid": "0b681753-28aa-4ee1-b9be-0ce823897a5d",
                 "GameObject": {
                     "via.GameObject": {
@@ -1082,7 +1137,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[27]": {
+                "Component[29]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -1110,7 +1165,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[28]": {
+                "Component[30]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -1179,13 +1234,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[29]": {
+                "Component[31]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -1341,7 +1403,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[30]": {
+                "Component[32]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -1366,7 +1428,7 @@
                         "v10": 1
                     }
                 },
-                "Component[31]": {
+                "Component[33]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -1378,7 +1440,24 @@
                         }
                     }
                 },
-                "Component[32]": {
+                "Component[34]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[35]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -1388,13 +1467,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[33]": {
+                "Component[36]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[34]": {
+            "ChildObject[37]": {
                 "Guid": "06885c74-ffcb-4eb1-8a30-595b7674b8d2",
                 "GameObject": {
                     "via.GameObject": {
@@ -1406,7 +1485,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[35]": {
+                "Component[38]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -1434,7 +1513,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[36]": {
+                "Component[39]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -1503,13 +1582,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[37]": {
+                "Component[40]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -1665,7 +1751,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[38]": {
+                "Component[41]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -1690,7 +1776,7 @@
                         "v10": 1
                     }
                 },
-                "Component[39]": {
+                "Component[42]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -1702,7 +1788,24 @@
                         }
                     }
                 },
-                "Component[40]": {
+                "Component[43]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[44]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -1712,13 +1815,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[41]": {
+                "Component[45]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[42]": {
+            "ChildObject[46]": {
                 "Guid": "890db15c-55fa-46bf-8596-7e30599fbfa6",
                 "GameObject": {
                     "via.GameObject": {
@@ -1730,7 +1833,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[43]": {
+                "Component[47]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -1758,7 +1861,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[44]": {
+                "Component[48]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -1827,13 +1930,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[45]": {
+                "Component[49]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -1989,7 +2099,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[46]": {
+                "Component[50]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -2014,7 +2124,7 @@
                         "v10": 1
                     }
                 },
-                "Component[47]": {
+                "Component[51]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -2026,7 +2136,24 @@
                         }
                     }
                 },
-                "Component[48]": {
+                "Component[52]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[53]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -2036,13 +2163,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[49]": {
+                "Component[54]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[50]": {
+            "ChildObject[55]": {
                 "Guid": "773cb47b-9db7-4871-ba06-3e986f726bff",
                 "GameObject": {
                     "via.GameObject": {
@@ -2054,7 +2181,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[51]": {
+                "Component[56]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -2082,7 +2209,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[52]": {
+                "Component[57]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -2151,13 +2278,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[53]": {
+                "Component[58]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -2313,7 +2447,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[54]": {
+                "Component[59]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -2338,7 +2472,7 @@
                         "v10": 1
                     }
                 },
-                "Component[55]": {
+                "Component[60]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -2350,7 +2484,24 @@
                         }
                     }
                 },
-                "Component[56]": {
+                "Component[61]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[62]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -2360,13 +2511,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[57]": {
+                "Component[63]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[58]": {
+            "ChildObject[64]": {
                 "Guid": "004211cd-3b79-4614-b3b2-195da9272e09",
                 "GameObject": {
                     "via.GameObject": {
@@ -2378,7 +2529,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[59]": {
+                "Component[65]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -2406,7 +2557,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[60]": {
+                "Component[66]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -2475,13 +2626,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[61]": {
+                "Component[67]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -2637,7 +2795,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[62]": {
+                "Component[68]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -2662,7 +2820,7 @@
                         "v10": 1
                     }
                 },
-                "Component[63]": {
+                "Component[69]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -2674,7 +2832,24 @@
                         }
                     }
                 },
-                "Component[64]": {
+                "Component[70]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[71]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -2684,13 +2859,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[65]": {
+                "Component[72]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[66]": {
+            "ChildObject[73]": {
                 "Guid": "b7b2cc1d-da10-493b-97c4-b7c66f769e5b",
                 "GameObject": {
                     "via.GameObject": {
@@ -2702,7 +2877,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[67]": {
+                "Component[74]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -2730,7 +2905,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[68]": {
+                "Component[75]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -2797,339 +2972,22 @@
                         },
                         "v55_TranslucencyEnable": false,
                         "v56_RayTracingShadowEnable": false
-                    }
-                },
-                "Component[69]": {
-                    "via.relib.light.ReLibLightBehavior": {
-                        "v0": 0,
-                        "_DistanceAttenuation": {
-                            "via.relib.light.LightActionDistanceAttenuation": {
-                                "IsDistanceAttenuation": false,
-                                "EaseType": "[0]Linear",
-                                "NearFadeOutStartDistance": -1.0,
-                                "NearFadeOutEndDistance": 1000.0,
-                                "FadeOutStartDistance": -1.0,
-                                "FadeOutEndDistance": 1000.0,
-                                "IsImprovement": false
-                            }
-                        },
-                        "_KillComponent": {
-                            "via.relib.light.LightActionKillComponent": {
-                                "IsUpdatePerFrame": true
-                            }
-                        },
-                        "_LightActionDistanceShadow": {
-                            "via.relib.light.LightActionDistanceShadow": {
-                                "IsDistanceSwitchShadowEnable": false,
-                                "ShadowSwitchtShadowEnableStartDistance": -1.0,
-                                "ShadowSwitchtBackGroundShadowEnableStartDistance": -1.0
-                            }
-                        },
-                        "_LightActionControlAOEfficiency": {
-                            "via.relib.light.LightActionControlAOEfficiency": {
-                                "IsEnable": false,
-                                "ShadowOffAOEfficiency": 1.0,
-                                "ShadowOnAOEfficiency": 1.0
-                            }
-                        },
-                        "MainPlayer": "[0]UserCurve",
-                        "GlobalParamIndex": -1,
-                        "BlinkUserCurvePlayer": {
-                            "via.relib.light.LightBlinkUserCurvePlayer": {
-                                "BlinkUserCurve": "",
-                                "_PlayType": "[0]PlayStartScene",
-                                "BlinkStartFrame": {
-                                    "s": 0.0,
-                                    "r": 0.0
-                                },
-                                "FrameScaleRange": {
-                                    "s": 1.0,
-                                    "r": 0.0
-                                },
-                                "IntensityScaleRange": {
-                                    "s": 1.0,
-                                    "r": 0.0
-                                },
-                                "IntensityRate": 1.0,
-                                "LightColorCoef": 1.0,
-                                "BlinklightColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "VolumetricScatteringIntensityCoef": 1.0,
-                                "EmissiveColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "IsLoop": true,
-                                "LightDelayPlayer": {
-                                    "via.relib.light.LightDelayPlayer": {
-                                        "PowerOn": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        },
-                                        "PowerOff": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                "MaterialControllParamList": []
-                            }
-                        },
-                        "BlinkUserCurveVariationPlayer": {
-                            "via.relib.light.LightBlinkUserCurveVariationPlayer": {
-                                "BlinkUserCurve": "",
-                                "_PlayType": "[0]PlayStartScene",
-                                "IntensityRate": 1.0,
-                                "LightColorCoef": 1.0,
-                                "BlinklightColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "VolumetricScatteringIntensityCoef": 1.0,
-                                "EmissiveColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "IsLoop": true,
-                                "_VariationIndex": 0,
-                                "VariationParamList": [],
-                                "LightDelayPlayer": {
-                                    "via.relib.light.LightDelayPlayer": {
-                                        "PowerOn": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        },
-                                        "PowerOff": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "TimelineAnimation": {
-                            "via.relib.light.TimelineUserCurvePlayer": {
-                                "IsLoop": true,
-                                "TimelineAnimationUserCurve": "",
-                                "_TimelinePlayType": "[0]PlayStartScene",
-                                "RlinkRateStartAnimationFrame": 0.0,
-                                "FrameScale": 1.0,
-                                "MaterialControllParamList": []
-                            }
-                        },
-                        "_EventIntensityRate": 1.0,
-                        "_EventEmissiveRate": 1.0,
-                        "_IsEventIntensityRate": false,
-                        "_EventIdentifyName": ""
-                    }
-                },
-                "Component[70]": {
-                    "via.motion.ConstraintParent": {
-                        "v0_Enabled": false,
-                        "v1_UpdateMode": "[1]Props",
-                        "v2_UpdateTiming": "[1]AfterLateUpdate",
-                        "v3": "00000000-0000-0000-0000-000000000000",
-                        "v4": "",
-                        "v5": "",
-                        "v6": "",
-                        "v7": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "v8": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 1.0
-                        },
-                        "v9": 1,
-                        "v10": 1
-                    }
-                },
-                "Component[71]": {
-                    "app.AppLightController": {
-                        "v0": 1,
-                        "_Condition": 0,
-                        "_IntensityZoneName": "",
-                        "_InverseBlendRate": false,
-                        "_ClampBlendRate": {
-                            "s": 0.0,
-                            "r": 1.0
-                        }
-                    }
-                },
-                "Component[72]": {
-                    "app.EventLightConstraintSetter": {
-                        "v0": 0,
-                        "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
-                        "_TargetName": "",
-                        "_IsBindActor": false,
-                        "_BindTargetName": "",
-                        "_ActorType": "[0]Name"
-                    }
-                },
-                "Component[73]": {
-                    "app.MainCameraAttacher": {
-                        "v0": 0
-                    }
-                }
-            },
-            "ChildObject[74]": {
-                "Guid": "07632a7f-dde0-4f59-abfe-4cb7864e4e79",
-                "GameObject": {
-                    "via.GameObject": {
-                        "Name": "Event_Other01_SpotLight",
-                        "Tag": "",
-                        "UpdateSelf": true,
-                        "DrawSelf": false,
-                        "TimeScale": -1.0
-                    }
-                },
-                "Prefab": null,
-                "Component[75]": {
-                    "via.Transform": {
-                        "LocalPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "LocalRotation": {
-                            "x": -0.7071068,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.7071068
-                        },
-                        "LocalScale": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "z": 1.0,
-                            "w": 0.0
-                        },
-                        "ParentJoint": "",
-                        "SameJointsConstraint": false,
-                        "AbsoluteScaling": false,
-                        "JointSegmentScale": false,
-                        "JointFastLockScene": false,
-                        "FrameSkip": "[0]None"
                     }
                 },
                 "Component[76]": {
-                    "via.render.SpotLight": {
-                        "v0_Enabled": false,
-                        "v1_Intensity": 3000.0,
-                        "v2_RenderOutputID": 13,
-                        "v3_Color": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "z": 1.0,
-                            "pad": 0.0
-                        },
-                        "v4_BlackBodyRadiation": false,
-                        "v5_Temperature": 6400.0,
-                        "v6_BounceIntensity": 1.0,
-                        "v7_SpecularScale": 1.0,
-                        "v8_MinRoughness": 0.0,
-                        "v9_AOEfficiency": 0.0,
-                        "v10_ImportantLevel": "[1]High",
-                        "v11_ImportantLevelForRayTracing": "[2]Normal",
-                        "v12_LightingTarget": "[3]All",
-                        "v13_LightBakeOption": "[3]All",
-                        "v14_LightChannelMode": "[0]All",
-                        "v15_LightChannelIntensityScale": 1.0,
-                        "v16_LightChannelIntensityScale1": 1.0,
-                        "v17_LightChannelIntensityScale2": 1.0,
-                        "v18_LightChannelIntensityScale3": 1.0,
-                        "v19_LightChannelIntensityScale4": 1.0,
-                        "v20_LightChannelIntensityScale5": 1.0,
-                        "v21_LightChannelIntensityScale6": 1.0,
-                        "v22_LightChannelIntensityScale7": 1.0,
-                        "v23_UsingSameIntensity": false,
-                        "v24_VolumetricScatteringIntensity": 0.0,
-                        "v25_Unit": "[1]Candela",
-                        "v26_Radius": 1.0,
-                        "v27_SourceRadius": 0.01,
-                        "v28_ReferenceEffectiveRange": 10.0,
-                        "v29_UseCustomAttenuation": false,
-                        "v30_AttenuationCurve": "Default",
-                        "v31_AttenuationStartDistance": 0.0,
-                        "v32_IlluminanceThreshold": 24.79339,
-                        "v33_Cone": 60.0,
-                        "v34_Spread": 25.0,
-                        "v35_Falloff": 1.0,
-                        "v36_IES": "",
-                        "v37_SpecularRadius": 0.1,
-                        "v38_ShadowEnable": false,
-                        "v39_BackGroundShadowEnable": false,
-                        "v40_ForceShadowCacheEnable": false,
-                        "v41_ShadowCastFlag": "[3]ALL",
-                        "v42_AllowTranslucentShadows": false,
-                        "v43_ShadowLodBias": 0.0,
-                        "v44_UniformShadowEnbale": false,
-                        "v45_ShadowNearPlane": 0.1,
-                        "v46_ShadowVariance": 0.0025,
-                        "v47_ShadowBias": 3e-05,
-                        "v48_ShadowDepthBias": 0.0003,
-                        "v49_ShadowSlopeBias": 0.1,
-                        "v50_ShadowOccluderMaxSlopeBias": 100.0,
-                        "v51_DetailShadow": 1.0,
-                        "v52_DetailFocusTarget": "00000000-0000-0000-0000-000000000000",
-                        "v53_UseRenderClip": false,
-                        "v54_RenderClipPlane": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "v55_TranslucencyEnable": false,
-                        "v56_RayTracingShadowEnable": false
-                    }
-                },
-                "Component[77]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -3285,7 +3143,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[78]": {
+                "Component[77]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -3310,7 +3168,7 @@
                         "v10": 1
                     }
                 },
-                "Component[79]": {
+                "Component[78]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -3320,6 +3178,23 @@
                             "s": 0.0,
                             "r": 1.0
                         }
+                    }
+                },
+                "Component[79]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
                     }
                 },
                 "Component[80]": {
@@ -3339,10 +3214,10 @@
                 }
             },
             "ChildObject[82]": {
-                "Guid": "0d4738ec-3cc1-470a-a944-74e2c66366a2",
+                "Guid": "07632a7f-dde0-4f59-abfe-4cb7864e4e79",
                 "GameObject": {
                     "via.GameObject": {
-                        "Name": "Event_Other02_SpotLight",
+                        "Name": "Event_Other01_SpotLight",
                         "Tag": "",
                         "UpdateSelf": true,
                         "DrawSelf": false,
@@ -3454,6 +3329,13 @@
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -3647,6 +3529,23 @@
                     }
                 },
                 "Component[88]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[89]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -3656,13 +3555,361 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[89]": {
+                "Component[90]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[90]": {
+            "ChildObject[91]": {
+                "Guid": "0d4738ec-3cc1-470a-a944-74e2c66366a2",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "Event_Other02_SpotLight",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": false,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[92]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": -0.7071068,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.7071068
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[93]": {
+                    "via.render.SpotLight": {
+                        "v0_Enabled": false,
+                        "v1_Intensity": 3000.0,
+                        "v2_RenderOutputID": 13,
+                        "v3_Color": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "pad": 0.0
+                        },
+                        "v4_BlackBodyRadiation": false,
+                        "v5_Temperature": 6400.0,
+                        "v6_BounceIntensity": 1.0,
+                        "v7_SpecularScale": 1.0,
+                        "v8_MinRoughness": 0.0,
+                        "v9_AOEfficiency": 0.0,
+                        "v10_ImportantLevel": "[1]High",
+                        "v11_ImportantLevelForRayTracing": "[2]Normal",
+                        "v12_LightingTarget": "[3]All",
+                        "v13_LightBakeOption": "[3]All",
+                        "v14_LightChannelMode": "[0]All",
+                        "v15_LightChannelIntensityScale": 1.0,
+                        "v16_LightChannelIntensityScale1": 1.0,
+                        "v17_LightChannelIntensityScale2": 1.0,
+                        "v18_LightChannelIntensityScale3": 1.0,
+                        "v19_LightChannelIntensityScale4": 1.0,
+                        "v20_LightChannelIntensityScale5": 1.0,
+                        "v21_LightChannelIntensityScale6": 1.0,
+                        "v22_LightChannelIntensityScale7": 1.0,
+                        "v23_UsingSameIntensity": false,
+                        "v24_VolumetricScatteringIntensity": 0.0,
+                        "v25_Unit": "[1]Candela",
+                        "v26_Radius": 1.0,
+                        "v27_SourceRadius": 0.01,
+                        "v28_ReferenceEffectiveRange": 10.0,
+                        "v29_UseCustomAttenuation": false,
+                        "v30_AttenuationCurve": "Default",
+                        "v31_AttenuationStartDistance": 0.0,
+                        "v32_IlluminanceThreshold": 24.79339,
+                        "v33_Cone": 60.0,
+                        "v34_Spread": 25.0,
+                        "v35_Falloff": 1.0,
+                        "v36_IES": "",
+                        "v37_SpecularRadius": 0.1,
+                        "v38_ShadowEnable": false,
+                        "v39_BackGroundShadowEnable": false,
+                        "v40_ForceShadowCacheEnable": false,
+                        "v41_ShadowCastFlag": "[3]ALL",
+                        "v42_AllowTranslucentShadows": false,
+                        "v43_ShadowLodBias": 0.0,
+                        "v44_UniformShadowEnbale": false,
+                        "v45_ShadowNearPlane": 0.1,
+                        "v46_ShadowVariance": 0.0025,
+                        "v47_ShadowBias": 3e-05,
+                        "v48_ShadowDepthBias": 0.0003,
+                        "v49_ShadowSlopeBias": 0.1,
+                        "v50_ShadowOccluderMaxSlopeBias": 100.0,
+                        "v51_DetailShadow": 1.0,
+                        "v52_DetailFocusTarget": "00000000-0000-0000-0000-000000000000",
+                        "v53_UseRenderClip": false,
+                        "v54_RenderClipPlane": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "v55_TranslucencyEnable": false,
+                        "v56_RayTracingShadowEnable": false
+                    }
+                },
+                "Component[94]": {
+                    "via.relib.light.ReLibLightBehavior": {
+                        "v0": 0,
+                        "_DistanceAttenuation": {
+                            "via.relib.light.LightActionDistanceAttenuation": {
+                                "IsDistanceAttenuation": false,
+                                "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "NearFadeOutStartDistance": -1.0,
+                                "NearFadeOutEndDistance": 1000.0,
+                                "FadeOutStartDistance": -1.0,
+                                "FadeOutEndDistance": 1000.0,
+                                "IsImprovement": false
+                            }
+                        },
+                        "_KillComponent": {
+                            "via.relib.light.LightActionKillComponent": {
+                                "IsUpdatePerFrame": true
+                            }
+                        },
+                        "_LightActionDistanceShadow": {
+                            "via.relib.light.LightActionDistanceShadow": {
+                                "IsDistanceSwitchShadowEnable": false,
+                                "ShadowSwitchtShadowEnableStartDistance": -1.0,
+                                "ShadowSwitchtBackGroundShadowEnableStartDistance": -1.0
+                            }
+                        },
+                        "_LightActionControlAOEfficiency": {
+                            "via.relib.light.LightActionControlAOEfficiency": {
+                                "IsEnable": false,
+                                "ShadowOffAOEfficiency": 1.0,
+                                "ShadowOnAOEfficiency": 1.0
+                            }
+                        },
+                        "MainPlayer": "[0]UserCurve",
+                        "GlobalParamIndex": -1,
+                        "BlinkUserCurvePlayer": {
+                            "via.relib.light.LightBlinkUserCurvePlayer": {
+                                "BlinkUserCurve": "",
+                                "_PlayType": "[0]PlayStartScene",
+                                "BlinkStartFrame": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                },
+                                "FrameScaleRange": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "IntensityScaleRange": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "IntensityRate": 1.0,
+                                "LightColorCoef": 1.0,
+                                "BlinklightColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "VolumetricScatteringIntensityCoef": 1.0,
+                                "EmissiveColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "IsLoop": true,
+                                "LightDelayPlayer": {
+                                    "via.relib.light.LightDelayPlayer": {
+                                        "PowerOn": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        },
+                                        "PowerOff": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "MaterialControllParamList": []
+                            }
+                        },
+                        "BlinkUserCurveVariationPlayer": {
+                            "via.relib.light.LightBlinkUserCurveVariationPlayer": {
+                                "BlinkUserCurve": "",
+                                "_PlayType": "[0]PlayStartScene",
+                                "IntensityRate": 1.0,
+                                "LightColorCoef": 1.0,
+                                "BlinklightColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "VolumetricScatteringIntensityCoef": 1.0,
+                                "EmissiveColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "IsLoop": true,
+                                "_VariationIndex": 0,
+                                "VariationParamList": [],
+                                "LightDelayPlayer": {
+                                    "via.relib.light.LightDelayPlayer": {
+                                        "PowerOn": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        },
+                                        "PowerOff": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "TimelineAnimation": {
+                            "via.relib.light.TimelineUserCurvePlayer": {
+                                "IsLoop": true,
+                                "TimelineAnimationUserCurve": "",
+                                "_TimelinePlayType": "[0]PlayStartScene",
+                                "RlinkRateStartAnimationFrame": 0.0,
+                                "FrameScale": 1.0,
+                                "MaterialControllParamList": []
+                            }
+                        },
+                        "_EventIntensityRate": 1.0,
+                        "_EventEmissiveRate": 1.0,
+                        "_IsEventIntensityRate": false,
+                        "_EventIdentifyName": ""
+                    }
+                },
+                "Component[95]": {
+                    "via.motion.ConstraintParent": {
+                        "v0_Enabled": false,
+                        "v1_UpdateMode": "[1]Props",
+                        "v2_UpdateTiming": "[1]AfterLateUpdate",
+                        "v3": "00000000-0000-0000-0000-000000000000",
+                        "v4": "",
+                        "v5": "",
+                        "v6": "",
+                        "v7": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v8": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "v9": 1,
+                        "v10": 1
+                    }
+                },
+                "Component[96]": {
+                    "app.AppLightController": {
+                        "v0": 1,
+                        "_Condition": 0,
+                        "_IntensityZoneName": "",
+                        "_InverseBlendRate": false,
+                        "_ClampBlendRate": {
+                            "s": 0.0,
+                            "r": 1.0
+                        }
+                    }
+                },
+                "Component[97]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[98]": {
+                    "app.EventLightConstraintSetter": {
+                        "v0": 0,
+                        "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
+                        "_TargetName": "",
+                        "_IsBindActor": false,
+                        "_BindTargetName": "",
+                        "_ActorType": "[0]Name"
+                    }
+                },
+                "Component[99]": {
+                    "app.MainCameraAttacher": {
+                        "v0": 0
+                    }
+                }
+            },
+            "ChildObject[100]": {
                 "Guid": "6aa5d828-5774-47a4-9308-abdcc2bc887e",
                 "GameObject": {
                     "via.GameObject": {
@@ -3674,7 +3921,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[91]": {
+                "Component[101]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -3702,7 +3949,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[92]": {
+                "Component[102]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -3771,13 +4018,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[93]": {
+                "Component[103]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -3933,7 +4187,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[94]": {
+                "Component[104]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -3958,7 +4212,7 @@
                         "v10": 1
                     }
                 },
-                "Component[95]": {
+                "Component[105]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -3970,7 +4224,24 @@
                         }
                     }
                 },
-                "Component[96]": {
+                "Component[106]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[107]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -3980,13 +4251,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[97]": {
+                "Component[108]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[98]": {
+            "ChildObject[109]": {
                 "Guid": "3bd42525-70db-40f0-a208-b36d3fb10e28",
                 "GameObject": {
                     "via.GameObject": {
@@ -3998,7 +4269,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[99]": {
+                "Component[110]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -4026,7 +4297,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[100]": {
+                "Component[111]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -4095,13 +4366,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[101]": {
+                "Component[112]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -4257,7 +4535,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[102]": {
+                "Component[113]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -4282,7 +4560,7 @@
                         "v10": 1
                     }
                 },
-                "Component[103]": {
+                "Component[114]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -4294,7 +4572,24 @@
                         }
                     }
                 },
-                "Component[104]": {
+                "Component[115]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[116]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -4304,13 +4599,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[105]": {
+                "Component[117]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[106]": {
+            "ChildObject[118]": {
                 "Guid": "408100f5-e2d0-410f-9539-cbdf66ce4a68",
                 "GameObject": {
                     "via.GameObject": {
@@ -4322,7 +4617,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[107]": {
+                "Component[119]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -4350,7 +4645,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[108]": {
+                "Component[120]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -4419,13 +4714,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[109]": {
+                "Component[121]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -4581,7 +4883,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[110]": {
+                "Component[122]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -4606,7 +4908,7 @@
                         "v10": 1
                     }
                 },
-                "Component[111]": {
+                "Component[123]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -4618,7 +4920,24 @@
                         }
                     }
                 },
-                "Component[112]": {
+                "Component[124]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[125]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -4628,13 +4947,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[113]": {
+                "Component[126]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[114]": {
+            "ChildObject[127]": {
                 "Guid": "d171db54-e2cb-4130-83da-9a3150452683",
                 "GameObject": {
                     "via.GameObject": {
@@ -4646,7 +4965,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[115]": {
+                "Component[128]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -4674,7 +4993,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[116]": {
+                "Component[129]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -4743,13 +5062,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[117]": {
+                "Component[130]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -4905,7 +5231,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[118]": {
+                "Component[131]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -4930,7 +5256,7 @@
                         "v10": 1
                     }
                 },
-                "Component[119]": {
+                "Component[132]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -4942,7 +5268,24 @@
                         }
                     }
                 },
-                "Component[120]": {
+                "Component[133]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[134]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -4952,13 +5295,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[121]": {
+                "Component[135]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[122]": {
+            "ChildObject[136]": {
                 "Guid": "2703165c-85b7-4c3e-ac42-22ba89753bf5",
                 "GameObject": {
                     "via.GameObject": {
@@ -4970,7 +5313,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[123]": {
+                "Component[137]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -4998,7 +5341,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[124]": {
+                "Component[138]": {
                     "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -5067,13 +5410,20 @@
                         "v56_RayTracingShadowEnable": false
                     }
                 },
-                "Component[125]": {
+                "Component[139]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -5229,7 +5579,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[126]": {
+                "Component[140]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -5254,7 +5604,7 @@
                         "v10": 1
                     }
                 },
-                "Component[127]": {
+                "Component[141]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -5266,7 +5616,24 @@
                         }
                     }
                 },
-                "Component[128]": {
+                "Component[142]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[143]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -5276,13 +5643,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[129]": {
+                "Component[144]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[130]": {
+            "ChildObject[145]": {
                 "Guid": "66031ec4-2c55-048d-2f46-65ebc5b74451",
                 "GameObject": {
                     "via.GameObject": {
@@ -5294,7 +5661,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[131]": {
+                "Component[146]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -5322,724 +5689,89 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[132]": {
-                    "via.render.SpotLight": {
-                        "v0_Enabled": false,
-                        "v1_Intensity": 3000.0,
-                        "v2_RenderOutputID": 13,
-                        "v3_Color": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "z": 1.0,
-                            "pad": 0.0
-                        },
-                        "v4_BlackBodyRadiation": false,
-                        "v5_Temperature": 6400.0,
-                        "v6_BounceIntensity": 1.0,
-                        "v7_SpecularScale": 1.0,
-                        "v8_MinRoughness": 0.0,
-                        "v9_AOEfficiency": 0.0,
-                        "v10_ImportantLevel": "[1]High",
-                        "v11_ImportantLevelForRayTracing": "[2]Normal",
-                        "v12_LightingTarget": "[3]All",
-                        "v13_LightBakeOption": "[3]All",
-                        "v14_LightChannelMode": "[0]All",
-                        "v15_LightChannelIntensityScale": 1.0,
-                        "v16_LightChannelIntensityScale1": 1.0,
-                        "v17_LightChannelIntensityScale2": 1.0,
-                        "v18_LightChannelIntensityScale3": 1.0,
-                        "v19_LightChannelIntensityScale4": 1.0,
-                        "v20_LightChannelIntensityScale5": 1.0,
-                        "v21_LightChannelIntensityScale6": 1.0,
-                        "v22_LightChannelIntensityScale7": 1.0,
-                        "v23_UsingSameIntensity": false,
-                        "v24_VolumetricScatteringIntensity": 0.0,
-                        "v25_Unit": "[1]Candela",
-                        "v26_Radius": 1.0,
-                        "v27_SourceRadius": 0.01,
-                        "v28_ReferenceEffectiveRange": 10.0,
-                        "v29_UseCustomAttenuation": false,
-                        "v30_AttenuationCurve": "Default",
-                        "v31_AttenuationStartDistance": 0.0,
-                        "v32_IlluminanceThreshold": 24.79339,
-                        "v33_Cone": 60.0,
-                        "v34_Spread": 25.0,
-                        "v35_Falloff": 1.0,
-                        "v36_IES": "",
-                        "v37_SpecularRadius": 0.1,
-                        "v38_ShadowEnable": false,
-                        "v39_BackGroundShadowEnable": false,
-                        "v40_ForceShadowCacheEnable": false,
-                        "v41_ShadowCastFlag": "[3]ALL",
-                        "v42_AllowTranslucentShadows": false,
-                        "v43_ShadowLodBias": 0.0,
-                        "v44_UniformShadowEnbale": false,
-                        "v45_ShadowNearPlane": 0.1,
-                        "v46_ShadowVariance": 0.0025,
-                        "v47_ShadowBias": 3e-05,
-                        "v48_ShadowDepthBias": 0.0003,
-                        "v49_ShadowSlopeBias": 0.1,
-                        "v50_ShadowOccluderMaxSlopeBias": 100.0,
-                        "v51_DetailShadow": 1.0,
-                        "v52_DetailFocusTarget": "00000000-0000-0000-0000-000000000000",
-                        "v53_UseRenderClip": false,
-                        "v54_RenderClipPlane": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "v55_TranslucencyEnable": false,
-                        "v56_RayTracingShadowEnable": false
-                    }
-                },
-                "Component[133]": {
-                    "via.relib.light.ReLibLightBehavior": {
-                        "v0": 0,
-                        "_DistanceAttenuation": {
-                            "via.relib.light.LightActionDistanceAttenuation": {
-                                "IsDistanceAttenuation": false,
-                                "EaseType": "[0]Linear",
-                                "NearFadeOutStartDistance": -1.0,
-                                "NearFadeOutEndDistance": 1000.0,
-                                "FadeOutStartDistance": -1.0,
-                                "FadeOutEndDistance": 1000.0,
-                                "IsImprovement": false
-                            }
-                        },
-                        "_KillComponent": {
-                            "via.relib.light.LightActionKillComponent": {
-                                "IsUpdatePerFrame": true
-                            }
-                        },
-                        "_LightActionDistanceShadow": {
-                            "via.relib.light.LightActionDistanceShadow": {
-                                "IsDistanceSwitchShadowEnable": false,
-                                "ShadowSwitchtShadowEnableStartDistance": -1.0,
-                                "ShadowSwitchtBackGroundShadowEnableStartDistance": -1.0
-                            }
-                        },
-                        "_LightActionControlAOEfficiency": {
-                            "via.relib.light.LightActionControlAOEfficiency": {
-                                "IsEnable": false,
-                                "ShadowOffAOEfficiency": 1.0,
-                                "ShadowOnAOEfficiency": 1.0
-                            }
-                        },
-                        "MainPlayer": "[0]UserCurve",
-                        "GlobalParamIndex": -1,
-                        "BlinkUserCurvePlayer": {
-                            "via.relib.light.LightBlinkUserCurvePlayer": {
-                                "BlinkUserCurve": "",
-                                "_PlayType": "[0]PlayStartScene",
-                                "BlinkStartFrame": {
-                                    "s": 0.0,
-                                    "r": 0.0
-                                },
-                                "FrameScaleRange": {
-                                    "s": 1.0,
-                                    "r": 0.0
-                                },
-                                "IntensityScaleRange": {
-                                    "s": 1.0,
-                                    "r": 0.0
-                                },
-                                "IntensityRate": 1.0,
-                                "LightColorCoef": 1.0,
-                                "BlinklightColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "VolumetricScatteringIntensityCoef": 1.0,
-                                "EmissiveColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "IsLoop": true,
-                                "LightDelayPlayer": {
-                                    "via.relib.light.LightDelayPlayer": {
-                                        "PowerOn": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        },
-                                        "PowerOff": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                "MaterialControllParamList": []
-                            }
-                        },
-                        "BlinkUserCurveVariationPlayer": {
-                            "via.relib.light.LightBlinkUserCurveVariationPlayer": {
-                                "BlinkUserCurve": "",
-                                "_PlayType": "[0]PlayStartScene",
-                                "IntensityRate": 1.0,
-                                "LightColorCoef": 1.0,
-                                "BlinklightColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "VolumetricScatteringIntensityCoef": 1.0,
-                                "EmissiveColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "IsLoop": true,
-                                "_VariationIndex": 0,
-                                "VariationParamList": [],
-                                "LightDelayPlayer": {
-                                    "via.relib.light.LightDelayPlayer": {
-                                        "PowerOn": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        },
-                                        "PowerOff": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "TimelineAnimation": {
-                            "via.relib.light.TimelineUserCurvePlayer": {
-                                "IsLoop": true,
-                                "TimelineAnimationUserCurve": "",
-                                "_TimelinePlayType": "[0]PlayStartScene",
-                                "RlinkRateStartAnimationFrame": 0.0,
-                                "FrameScale": 1.0,
-                                "MaterialControllParamList": []
-                            }
-                        },
-                        "_EventIntensityRate": 1.0,
-                        "_EventEmissiveRate": 1.0,
-                        "_IsEventIntensityRate": false,
-                        "_EventIdentifyName": ""
-                    }
-                },
-                "Component[134]": {
-                    "via.motion.ConstraintParent": {
-                        "v0_Enabled": false,
-                        "v1_UpdateMode": "[1]Props",
-                        "v2_UpdateTiming": "[1]AfterLateUpdate",
-                        "v3": "00000000-0000-0000-0000-000000000000",
-                        "v4": "",
-                        "v5": "",
-                        "v6": "",
-                        "v7": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "v8": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 1.0
-                        },
-                        "v9": 1,
-                        "v10": 1
-                    }
-                },
-                "Component[135]": {
-                    "app.AppLightController": {
-                        "v0": 1,
-                        "_Condition": 0,
-                        "_IntensityZoneName": "",
-                        "_InverseBlendRate": false,
-                        "_ClampBlendRate": {
-                            "s": 0.0,
-                            "r": 1.0
-                        }
-                    }
-                },
-                "Component[136]": {
-                    "app.EventLightConstraintSetter": {
-                        "v0": 0,
-                        "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
-                        "_TargetName": "",
-                        "_IsBindActor": false,
-                        "_BindTargetName": "",
-                        "_ActorType": "[0]Name"
-                    }
-                },
-                "Component[137]": {
-                    "app.MainCameraAttacher": {
-                        "v0": 0
-                    }
-                }
-            },
-            "ChildObject[138]": {
-                "Guid": "54f096d2-749b-05c5-3577-0e193b0405de",
-                "GameObject": {
-                    "via.GameObject": {
-                        "Name": "Event_Other09_SpotLight",
-                        "Tag": "",
-                        "UpdateSelf": true,
-                        "DrawSelf": false,
-                        "TimeScale": -1.0
-                    }
-                },
-                "Prefab": null,
-                "Component[139]": {
-                    "via.Transform": {
-                        "LocalPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "LocalRotation": {
-                            "x": -0.7071068,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.7071068
-                        },
-                        "LocalScale": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "z": 1.0,
-                            "w": 0.0
-                        },
-                        "ParentJoint": "",
-                        "SameJointsConstraint": false,
-                        "AbsoluteScaling": false,
-                        "JointSegmentScale": false,
-                        "JointFastLockScene": false,
-                        "FrameSkip": "[0]None"
-                    }
-                },
-                "Component[140]": {
-                    "via.render.SpotLight": {
-                        "v0_Enabled": false,
-                        "v1_Intensity": 3000.0,
-                        "v2_RenderOutputID": 13,
-                        "v3_Color": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "z": 1.0,
-                            "pad": 0.0
-                        },
-                        "v4_BlackBodyRadiation": false,
-                        "v5_Temperature": 6400.0,
-                        "v6_BounceIntensity": 1.0,
-                        "v7_SpecularScale": 1.0,
-                        "v8_MinRoughness": 0.0,
-                        "v9_AOEfficiency": 0.0,
-                        "v10_ImportantLevel": "[1]High",
-                        "v11_ImportantLevelForRayTracing": "[2]Normal",
-                        "v12_LightingTarget": "[3]All",
-                        "v13_LightBakeOption": "[3]All",
-                        "v14_LightChannelMode": "[0]All",
-                        "v15_LightChannelIntensityScale": 1.0,
-                        "v16_LightChannelIntensityScale1": 1.0,
-                        "v17_LightChannelIntensityScale2": 1.0,
-                        "v18_LightChannelIntensityScale3": 1.0,
-                        "v19_LightChannelIntensityScale4": 1.0,
-                        "v20_LightChannelIntensityScale5": 1.0,
-                        "v21_LightChannelIntensityScale6": 1.0,
-                        "v22_LightChannelIntensityScale7": 1.0,
-                        "v23_UsingSameIntensity": false,
-                        "v24_VolumetricScatteringIntensity": 0.0,
-                        "v25_Unit": "[1]Candela",
-                        "v26_Radius": 1.0,
-                        "v27_SourceRadius": 0.01,
-                        "v28_ReferenceEffectiveRange": 10.0,
-                        "v29_UseCustomAttenuation": false,
-                        "v30_AttenuationCurve": "Default",
-                        "v31_AttenuationStartDistance": 0.0,
-                        "v32_IlluminanceThreshold": 24.79339,
-                        "v33_Cone": 60.0,
-                        "v34_Spread": 25.0,
-                        "v35_Falloff": 1.0,
-                        "v36_IES": "",
-                        "v37_SpecularRadius": 0.1,
-                        "v38_ShadowEnable": false,
-                        "v39_BackGroundShadowEnable": false,
-                        "v40_ForceShadowCacheEnable": false,
-                        "v41_ShadowCastFlag": "[3]ALL",
-                        "v42_AllowTranslucentShadows": false,
-                        "v43_ShadowLodBias": 0.0,
-                        "v44_UniformShadowEnbale": false,
-                        "v45_ShadowNearPlane": 0.1,
-                        "v46_ShadowVariance": 0.0025,
-                        "v47_ShadowBias": 3e-05,
-                        "v48_ShadowDepthBias": 0.0003,
-                        "v49_ShadowSlopeBias": 0.1,
-                        "v50_ShadowOccluderMaxSlopeBias": 100.0,
-                        "v51_DetailShadow": 1.0,
-                        "v52_DetailFocusTarget": "00000000-0000-0000-0000-000000000000",
-                        "v53_UseRenderClip": false,
-                        "v54_RenderClipPlane": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "v55_TranslucencyEnable": false,
-                        "v56_RayTracingShadowEnable": false
-                    }
-                },
-                "Component[141]": {
-                    "via.relib.light.ReLibLightBehavior": {
-                        "v0": 0,
-                        "_DistanceAttenuation": {
-                            "via.relib.light.LightActionDistanceAttenuation": {
-                                "IsDistanceAttenuation": false,
-                                "EaseType": "[0]Linear",
-                                "NearFadeOutStartDistance": -1.0,
-                                "NearFadeOutEndDistance": 1000.0,
-                                "FadeOutStartDistance": -1.0,
-                                "FadeOutEndDistance": 1000.0,
-                                "IsImprovement": false
-                            }
-                        },
-                        "_KillComponent": {
-                            "via.relib.light.LightActionKillComponent": {
-                                "IsUpdatePerFrame": true
-                            }
-                        },
-                        "_LightActionDistanceShadow": {
-                            "via.relib.light.LightActionDistanceShadow": {
-                                "IsDistanceSwitchShadowEnable": false,
-                                "ShadowSwitchtShadowEnableStartDistance": -1.0,
-                                "ShadowSwitchtBackGroundShadowEnableStartDistance": -1.0
-                            }
-                        },
-                        "_LightActionControlAOEfficiency": {
-                            "via.relib.light.LightActionControlAOEfficiency": {
-                                "IsEnable": false,
-                                "ShadowOffAOEfficiency": 1.0,
-                                "ShadowOnAOEfficiency": 1.0
-                            }
-                        },
-                        "MainPlayer": "[0]UserCurve",
-                        "GlobalParamIndex": -1,
-                        "BlinkUserCurvePlayer": {
-                            "via.relib.light.LightBlinkUserCurvePlayer": {
-                                "BlinkUserCurve": "",
-                                "_PlayType": "[0]PlayStartScene",
-                                "BlinkStartFrame": {
-                                    "s": 0.0,
-                                    "r": 0.0
-                                },
-                                "FrameScaleRange": {
-                                    "s": 1.0,
-                                    "r": 0.0
-                                },
-                                "IntensityScaleRange": {
-                                    "s": 1.0,
-                                    "r": 0.0
-                                },
-                                "IntensityRate": 1.0,
-                                "LightColorCoef": 1.0,
-                                "BlinklightColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "VolumetricScatteringIntensityCoef": 1.0,
-                                "EmissiveColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "IsLoop": true,
-                                "LightDelayPlayer": {
-                                    "via.relib.light.LightDelayPlayer": {
-                                        "PowerOn": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        },
-                                        "PowerOff": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        }
-                                    }
-                                },
-                                "MaterialControllParamList": []
-                            }
-                        },
-                        "BlinkUserCurveVariationPlayer": {
-                            "via.relib.light.LightBlinkUserCurveVariationPlayer": {
-                                "BlinkUserCurve": "",
-                                "_PlayType": "[0]PlayStartScene",
-                                "IntensityRate": 1.0,
-                                "LightColorCoef": 1.0,
-                                "BlinklightColor": {
-                                    "R": 255,
-                                    "G": 255,
-                                    "B": 255,
-                                    "A": 255
-                                },
-                                "VolumetricScatteringIntensityCoef": 1.0,
-                                "EmissiveColor": {
-                                    "R": 0,
-                                    "G": 0,
-                                    "B": 0,
-                                    "A": 255
-                                },
-                                "IsLoop": true,
-                                "_VariationIndex": 0,
-                                "VariationParamList": [],
-                                "LightDelayPlayer": {
-                                    "via.relib.light.LightDelayPlayer": {
-                                        "PowerOn": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        },
-                                        "PowerOff": {
-                                            "via.relib.light.LightDelayPlayer.DelayParam": {
-                                                "EnableDelay": false,
-                                                "DelayUserCurve": "",
-                                                "_UseEmissiveDelayTracks": false,
-                                                "FrameScaleRange": {
-                                                    "s": 1.0,
-                                                    "r": 0.0
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        },
-                        "TimelineAnimation": {
-                            "via.relib.light.TimelineUserCurvePlayer": {
-                                "IsLoop": true,
-                                "TimelineAnimationUserCurve": "",
-                                "_TimelinePlayType": "[0]PlayStartScene",
-                                "RlinkRateStartAnimationFrame": 0.0,
-                                "FrameScale": 1.0,
-                                "MaterialControllParamList": []
-                            }
-                        },
-                        "_EventIntensityRate": 1.0,
-                        "_EventEmissiveRate": 1.0,
-                        "_IsEventIntensityRate": false,
-                        "_EventIdentifyName": ""
-                    }
-                },
-                "Component[142]": {
-                    "via.motion.ConstraintParent": {
-                        "v0_Enabled": false,
-                        "v1_UpdateMode": "[1]Props",
-                        "v2_UpdateTiming": "[1]AfterLateUpdate",
-                        "v3": "00000000-0000-0000-0000-000000000000",
-                        "v4": "",
-                        "v5": "",
-                        "v6": "",
-                        "v7": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "v8": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 1.0
-                        },
-                        "v9": 1,
-                        "v10": 1
-                    }
-                },
-                "Component[143]": {
-                    "app.AppLightController": {
-                        "v0": 1,
-                        "_Condition": 0,
-                        "_IntensityZoneName": "",
-                        "_InverseBlendRate": false,
-                        "_ClampBlendRate": {
-                            "s": 0.0,
-                            "r": 1.0
-                        }
-                    }
-                },
-                "Component[144]": {
-                    "app.EventLightConstraintSetter": {
-                        "v0": 0,
-                        "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
-                        "_TargetName": "",
-                        "_IsBindActor": false,
-                        "_BindTargetName": "",
-                        "_ActorType": "[0]Name"
-                    }
-                },
-                "Component[145]": {
-                    "app.MainCameraAttacher": {
-                        "v0": 0
-                    }
-                }
-            },
-            "ChildObject[146]": {
-                "Guid": "46e57833-e76d-42d5-9dba-a77fb16cf529",
-                "GameObject": {
-                    "via.GameObject": {
-                        "Name": "Event_Other00_PointLight",
-                        "Tag": "",
-                        "UpdateSelf": true,
-                        "DrawSelf": false,
-                        "TimeScale": -1.0
-                    }
-                },
-                "Prefab": null,
                 "Component[147]": {
-                    "via.Transform": {
-                        "LocalPosition": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 0.0
-                        },
-                        "LocalRotation": {
-                            "x": 0.0,
-                            "y": 0.0,
-                            "z": 0.0,
-                            "w": 1.0
-                        },
-                        "LocalScale": {
+                    "via.render.SpotLight": {
+                        "v0_Enabled": false,
+                        "v1_Intensity": 3000.0,
+                        "v2_RenderOutputID": 13,
+                        "v3_Color": {
                             "x": 1.0,
                             "y": 1.0,
                             "z": 1.0,
-                            "w": 0.0
+                            "pad": 0.0
                         },
-                        "ParentJoint": "",
-                        "SameJointsConstraint": false,
-                        "AbsoluteScaling": false,
-                        "JointSegmentScale": false,
-                        "JointFastLockScene": false,
-                        "FrameSkip": "[0]None"
+                        "v4_BlackBodyRadiation": false,
+                        "v5_Temperature": 6400.0,
+                        "v6_BounceIntensity": 1.0,
+                        "v7_SpecularScale": 1.0,
+                        "v8_MinRoughness": 0.0,
+                        "v9_AOEfficiency": 0.0,
+                        "v10_ImportantLevel": "[1]High",
+                        "v11_ImportantLevelForRayTracing": "[2]Normal",
+                        "v12_LightingTarget": "[3]All",
+                        "v13_LightBakeOption": "[3]All",
+                        "v14_LightChannelMode": "[0]All",
+                        "v15_LightChannelIntensityScale": 1.0,
+                        "v16_LightChannelIntensityScale1": 1.0,
+                        "v17_LightChannelIntensityScale2": 1.0,
+                        "v18_LightChannelIntensityScale3": 1.0,
+                        "v19_LightChannelIntensityScale4": 1.0,
+                        "v20_LightChannelIntensityScale5": 1.0,
+                        "v21_LightChannelIntensityScale6": 1.0,
+                        "v22_LightChannelIntensityScale7": 1.0,
+                        "v23_UsingSameIntensity": false,
+                        "v24_VolumetricScatteringIntensity": 0.0,
+                        "v25_Unit": "[1]Candela",
+                        "v26_Radius": 1.0,
+                        "v27_SourceRadius": 0.01,
+                        "v28_ReferenceEffectiveRange": 10.0,
+                        "v29_UseCustomAttenuation": false,
+                        "v30_AttenuationCurve": "Default",
+                        "v31_AttenuationStartDistance": 0.0,
+                        "v32_IlluminanceThreshold": 24.79339,
+                        "v33_Cone": 60.0,
+                        "v34_Spread": 25.0,
+                        "v35_Falloff": 1.0,
+                        "v36_IES": "",
+                        "v37_SpecularRadius": 0.1,
+                        "v38_ShadowEnable": false,
+                        "v39_BackGroundShadowEnable": false,
+                        "v40_ForceShadowCacheEnable": false,
+                        "v41_ShadowCastFlag": "[3]ALL",
+                        "v42_AllowTranslucentShadows": false,
+                        "v43_ShadowLodBias": 0.0,
+                        "v44_UniformShadowEnbale": false,
+                        "v45_ShadowNearPlane": 0.1,
+                        "v46_ShadowVariance": 0.0025,
+                        "v47_ShadowBias": 3e-05,
+                        "v48_ShadowDepthBias": 0.0003,
+                        "v49_ShadowSlopeBias": 0.1,
+                        "v50_ShadowOccluderMaxSlopeBias": 100.0,
+                        "v51_DetailShadow": 1.0,
+                        "v52_DetailFocusTarget": "00000000-0000-0000-0000-000000000000",
+                        "v53_UseRenderClip": false,
+                        "v54_RenderClipPlane": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "v55_TranslucencyEnable": false,
+                        "v56_RayTracingShadowEnable": false
                     }
                 },
                 "Component[148]": {
-                    "via.render.PointLight": {
-                        "v0_Enabled": false,
-                        "v1_Intensity": 3000.0,
-                        "v2_RenderOutputID": 13,
-                        "v3_Color": {
-                            "x": 1.0,
-                            "y": 1.0,
-                            "z": 1.0,
-                            "pad": 0.0
-                        },
-                        "v4_BlackBodyRadiation": false,
-                        "v5_Temperature": 6400.0,
-                        "v6_BounceIntensity": 1.0,
-                        "v7_SpecularScale": 1.0,
-                        "v8_MinRoughness": 0.0,
-                        "v9_AOEfficiency": 0.0,
-                        "v10_ImportantLevel": "[1]High",
-                        "v11_ImportantLevelForRayTracing": "[2]Normal",
-                        "v12_LightingTarget": "[3]All",
-                        "v13_LightBakeOption": "[3]All",
-                        "v14_LightChannelMode": "[0]All",
-                        "v15_LightChannelIntensityScale": 1.0,
-                        "v16_LightChannelIntensityScale1": 1.0,
-                        "v17_LightChannelIntensityScale2": 1.0,
-                        "v18_LightChannelIntensityScale3": 1.0,
-                        "v19_LightChannelIntensityScale4": 1.0,
-                        "v20_LightChannelIntensityScale5": 1.0,
-                        "v21_LightChannelIntensityScale6": 1.0,
-                        "v22_LightChannelIntensityScale7": 1.0,
-                        "v23_UsingSameIntensity": false,
-                        "v24_VolumetricScatteringIntensity": 0.0,
-                        "v25_Unit": "[1]Candela",
-                        "v26_Radius": 1.0,
-                        "v27_SourceRadius": 0.01,
-                        "v28_ReferenceEffectiveRange": 10.0,
-                        "v29_UseCustomAttenuation": false,
-                        "v30_AttenuationCurve": "Default",
-                        "v31_AttenuationStartDistance": 0.0,
-                        "v32_IlluminanceThreshold": 24.79339,
-                        "v33_IES": "",
-                        "v34_SpecularRadius": 0.1,
-                        "v35_ShadowEnable": false,
-                        "v36_BackGroundShadowEnable": false,
-                        "v37_ForceShadowCacheEnable": false,
-                        "v38_ShadowCastFlag": "[3]ALL",
-                        "v39_ShadowLodBias": 0.0,
-                        "v40_ShadowNearPlane": 0.1,
-                        "v41_ShadowVariance": 0.0025,
-                        "v42_ShadowBias": 3e-05,
-                        "v43_ShadowDepthBias": 0.0003,
-                        "v44_ShadowSlopeBias": 0.1,
-                        "v45_ShadowOccluderMaxSlopeBias": 100.0,
-                        "v46_UseRenderClip": false,
-                        "v47_RenderClipPlane": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "v48_Cubemap": "",
-                        "v49_TranslucencyEnable": false,
-                        "v50_RayTracingShadowEnable": false
-                    }
-                },
-                "Component[149]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -6195,7 +5927,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[150]": {
+                "Component[149]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -6220,7 +5952,7 @@
                         "v10": 1
                     }
                 },
-                "Component[151]": {
+                "Component[150]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -6230,6 +5962,23 @@
                             "s": 0.0,
                             "r": 1.0
                         }
+                    }
+                },
+                "Component[151]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
                     }
                 },
                 "Component[152]": {
@@ -6249,10 +5998,10 @@
                 }
             },
             "ChildObject[154]": {
-                "Guid": "c07eb4f7-b044-4d83-beb8-7a053d84f951",
+                "Guid": "54f096d2-749b-05c5-3577-0e193b0405de",
                 "GameObject": {
                     "via.GameObject": {
-                        "Name": "Event_Other01_PointLight",
+                        "Name": "Event_Other09_SpotLight",
                         "Tag": "",
                         "UpdateSelf": true,
                         "DrawSelf": false,
@@ -6269,10 +6018,10 @@
                             "w": 0.0
                         },
                         "LocalRotation": {
-                            "x": 0.0,
+                            "x": -0.7071068,
                             "y": 0.0,
                             "z": 0.0,
-                            "w": 1.0
+                            "w": 0.7071068
                         },
                         "LocalScale": {
                             "x": 1.0,
@@ -6289,7 +6038,7 @@
                     }
                 },
                 "Component[156]": {
-                    "via.render.PointLight": {
+                    "via.render.SpotLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
                         "v2_RenderOutputID": 13,
@@ -6328,27 +6077,33 @@
                         "v30_AttenuationCurve": "Default",
                         "v31_AttenuationStartDistance": 0.0,
                         "v32_IlluminanceThreshold": 24.79339,
-                        "v33_IES": "",
-                        "v34_SpecularRadius": 0.1,
-                        "v35_ShadowEnable": false,
-                        "v36_BackGroundShadowEnable": false,
-                        "v37_ForceShadowCacheEnable": false,
-                        "v38_ShadowCastFlag": "[3]ALL",
-                        "v39_ShadowLodBias": 0.0,
-                        "v40_ShadowNearPlane": 0.1,
-                        "v41_ShadowVariance": 0.0025,
-                        "v42_ShadowBias": 3e-05,
-                        "v43_ShadowDepthBias": 0.0003,
-                        "v44_ShadowSlopeBias": 0.1,
-                        "v45_ShadowOccluderMaxSlopeBias": 100.0,
-                        "v46_UseRenderClip": false,
-                        "v47_RenderClipPlane": {
+                        "v33_Cone": 60.0,
+                        "v34_Spread": 25.0,
+                        "v35_Falloff": 1.0,
+                        "v36_IES": "",
+                        "v37_SpecularRadius": 0.1,
+                        "v38_ShadowEnable": false,
+                        "v39_BackGroundShadowEnable": false,
+                        "v40_ForceShadowCacheEnable": false,
+                        "v41_ShadowCastFlag": "[3]ALL",
+                        "v42_AllowTranslucentShadows": false,
+                        "v43_ShadowLodBias": 0.0,
+                        "v44_UniformShadowEnbale": false,
+                        "v45_ShadowNearPlane": 0.1,
+                        "v46_ShadowVariance": 0.0025,
+                        "v47_ShadowBias": 3e-05,
+                        "v48_ShadowDepthBias": 0.0003,
+                        "v49_ShadowSlopeBias": 0.1,
+                        "v50_ShadowOccluderMaxSlopeBias": 100.0,
+                        "v51_DetailShadow": 1.0,
+                        "v52_DetailFocusTarget": "00000000-0000-0000-0000-000000000000",
+                        "v53_UseRenderClip": false,
+                        "v54_RenderClipPlane": {
                             "x": 0.0,
                             "y": 0.0
                         },
-                        "v48_Cubemap": "",
-                        "v49_TranslucencyEnable": false,
-                        "v50_RayTracingShadowEnable": false
+                        "v55_TranslucencyEnable": false,
+                        "v56_RayTracingShadowEnable": false
                     }
                 },
                 "Component[157]": {
@@ -6358,6 +6113,13 @@
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -6551,6 +6313,23 @@
                     }
                 },
                 "Component[160]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[161]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -6560,13 +6339,697 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[161]": {
+                "Component[162]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[162]": {
+            "ChildObject[163]": {
+                "Guid": "46e57833-e76d-42d5-9dba-a77fb16cf529",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "Event_Other00_PointLight",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": false,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[164]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[165]": {
+                    "via.render.PointLight": {
+                        "v0_Enabled": false,
+                        "v1_Intensity": 3000.0,
+                        "v2_RenderOutputID": 13,
+                        "v3_Color": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "pad": 0.0
+                        },
+                        "v4_BlackBodyRadiation": false,
+                        "v5_Temperature": 6400.0,
+                        "v6_BounceIntensity": 1.0,
+                        "v7_SpecularScale": 1.0,
+                        "v8_MinRoughness": 0.0,
+                        "v9_AOEfficiency": 0.0,
+                        "v10_ImportantLevel": "[1]High",
+                        "v11_ImportantLevelForRayTracing": "[2]Normal",
+                        "v12_LightingTarget": "[3]All",
+                        "v13_LightBakeOption": "[3]All",
+                        "v14_LightChannelMode": "[0]All",
+                        "v15_LightChannelIntensityScale": 1.0,
+                        "v16_LightChannelIntensityScale1": 1.0,
+                        "v17_LightChannelIntensityScale2": 1.0,
+                        "v18_LightChannelIntensityScale3": 1.0,
+                        "v19_LightChannelIntensityScale4": 1.0,
+                        "v20_LightChannelIntensityScale5": 1.0,
+                        "v21_LightChannelIntensityScale6": 1.0,
+                        "v22_LightChannelIntensityScale7": 1.0,
+                        "v23_UsingSameIntensity": false,
+                        "v24_VolumetricScatteringIntensity": 0.0,
+                        "v25_Unit": "[1]Candela",
+                        "v26_Radius": 1.0,
+                        "v27_SourceRadius": 0.01,
+                        "v28_ReferenceEffectiveRange": 10.0,
+                        "v29_UseCustomAttenuation": false,
+                        "v30_AttenuationCurve": "Default",
+                        "v31_AttenuationStartDistance": 0.0,
+                        "v32_IlluminanceThreshold": 24.79339,
+                        "v33_IES": "",
+                        "v34_SpecularRadius": 0.1,
+                        "v35_ShadowEnable": false,
+                        "v36_BackGroundShadowEnable": false,
+                        "v37_ForceShadowCacheEnable": false,
+                        "v38_ShadowCastFlag": "[3]ALL",
+                        "v39_ShadowLodBias": 0.0,
+                        "v40_ShadowNearPlane": 0.1,
+                        "v41_ShadowVariance": 0.0025,
+                        "v42_ShadowBias": 3e-05,
+                        "v43_ShadowDepthBias": 0.0003,
+                        "v44_ShadowSlopeBias": 0.1,
+                        "v45_ShadowOccluderMaxSlopeBias": 100.0,
+                        "v46_UseRenderClip": false,
+                        "v47_RenderClipPlane": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "v48_Cubemap": "",
+                        "v49_TranslucencyEnable": false,
+                        "v50_RayTracingShadowEnable": false
+                    }
+                },
+                "Component[166]": {
+                    "via.relib.light.ReLibLightBehavior": {
+                        "v0": 0,
+                        "_DistanceAttenuation": {
+                            "via.relib.light.LightActionDistanceAttenuation": {
+                                "IsDistanceAttenuation": false,
+                                "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "NearFadeOutStartDistance": -1.0,
+                                "NearFadeOutEndDistance": 1000.0,
+                                "FadeOutStartDistance": -1.0,
+                                "FadeOutEndDistance": 1000.0,
+                                "IsImprovement": false
+                            }
+                        },
+                        "_KillComponent": {
+                            "via.relib.light.LightActionKillComponent": {
+                                "IsUpdatePerFrame": true
+                            }
+                        },
+                        "_LightActionDistanceShadow": {
+                            "via.relib.light.LightActionDistanceShadow": {
+                                "IsDistanceSwitchShadowEnable": false,
+                                "ShadowSwitchtShadowEnableStartDistance": -1.0,
+                                "ShadowSwitchtBackGroundShadowEnableStartDistance": -1.0
+                            }
+                        },
+                        "_LightActionControlAOEfficiency": {
+                            "via.relib.light.LightActionControlAOEfficiency": {
+                                "IsEnable": false,
+                                "ShadowOffAOEfficiency": 1.0,
+                                "ShadowOnAOEfficiency": 1.0
+                            }
+                        },
+                        "MainPlayer": "[0]UserCurve",
+                        "GlobalParamIndex": -1,
+                        "BlinkUserCurvePlayer": {
+                            "via.relib.light.LightBlinkUserCurvePlayer": {
+                                "BlinkUserCurve": "",
+                                "_PlayType": "[0]PlayStartScene",
+                                "BlinkStartFrame": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                },
+                                "FrameScaleRange": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "IntensityScaleRange": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "IntensityRate": 1.0,
+                                "LightColorCoef": 1.0,
+                                "BlinklightColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "VolumetricScatteringIntensityCoef": 1.0,
+                                "EmissiveColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "IsLoop": true,
+                                "LightDelayPlayer": {
+                                    "via.relib.light.LightDelayPlayer": {
+                                        "PowerOn": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        },
+                                        "PowerOff": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "MaterialControllParamList": []
+                            }
+                        },
+                        "BlinkUserCurveVariationPlayer": {
+                            "via.relib.light.LightBlinkUserCurveVariationPlayer": {
+                                "BlinkUserCurve": "",
+                                "_PlayType": "[0]PlayStartScene",
+                                "IntensityRate": 1.0,
+                                "LightColorCoef": 1.0,
+                                "BlinklightColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "VolumetricScatteringIntensityCoef": 1.0,
+                                "EmissiveColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "IsLoop": true,
+                                "_VariationIndex": 0,
+                                "VariationParamList": [],
+                                "LightDelayPlayer": {
+                                    "via.relib.light.LightDelayPlayer": {
+                                        "PowerOn": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        },
+                                        "PowerOff": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "TimelineAnimation": {
+                            "via.relib.light.TimelineUserCurvePlayer": {
+                                "IsLoop": true,
+                                "TimelineAnimationUserCurve": "",
+                                "_TimelinePlayType": "[0]PlayStartScene",
+                                "RlinkRateStartAnimationFrame": 0.0,
+                                "FrameScale": 1.0,
+                                "MaterialControllParamList": []
+                            }
+                        },
+                        "_EventIntensityRate": 1.0,
+                        "_EventEmissiveRate": 1.0,
+                        "_IsEventIntensityRate": false,
+                        "_EventIdentifyName": ""
+                    }
+                },
+                "Component[167]": {
+                    "via.motion.ConstraintParent": {
+                        "v0_Enabled": false,
+                        "v1_UpdateMode": "[1]Props",
+                        "v2_UpdateTiming": "[1]AfterLateUpdate",
+                        "v3": "00000000-0000-0000-0000-000000000000",
+                        "v4": "",
+                        "v5": "",
+                        "v6": "",
+                        "v7": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v8": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "v9": 1,
+                        "v10": 1
+                    }
+                },
+                "Component[168]": {
+                    "app.AppLightController": {
+                        "v0": 1,
+                        "_Condition": 0,
+                        "_IntensityZoneName": "",
+                        "_InverseBlendRate": false,
+                        "_ClampBlendRate": {
+                            "s": 0.0,
+                            "r": 1.0
+                        }
+                    }
+                },
+                "Component[169]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[170]": {
+                    "app.EventLightConstraintSetter": {
+                        "v0": 0,
+                        "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
+                        "_TargetName": "",
+                        "_IsBindActor": false,
+                        "_BindTargetName": "",
+                        "_ActorType": "[0]Name"
+                    }
+                },
+                "Component[171]": {
+                    "app.MainCameraAttacher": {
+                        "v0": 0
+                    }
+                }
+            },
+            "ChildObject[172]": {
+                "Guid": "c07eb4f7-b044-4d83-beb8-7a053d84f951",
+                "GameObject": {
+                    "via.GameObject": {
+                        "Name": "Event_Other01_PointLight",
+                        "Tag": "",
+                        "UpdateSelf": true,
+                        "DrawSelf": false,
+                        "TimeScale": -1.0
+                    }
+                },
+                "Prefab": null,
+                "Component[173]": {
+                    "via.Transform": {
+                        "LocalPosition": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "LocalRotation": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "LocalScale": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "w": 0.0
+                        },
+                        "ParentJoint": "",
+                        "SameJointsConstraint": false,
+                        "AbsoluteScaling": false,
+                        "JointSegmentScale": false,
+                        "JointFastLockScene": false,
+                        "FrameSkip": "[0]None"
+                    }
+                },
+                "Component[174]": {
+                    "via.render.PointLight": {
+                        "v0_Enabled": false,
+                        "v1_Intensity": 3000.0,
+                        "v2_RenderOutputID": 13,
+                        "v3_Color": {
+                            "x": 1.0,
+                            "y": 1.0,
+                            "z": 1.0,
+                            "pad": 0.0
+                        },
+                        "v4_BlackBodyRadiation": false,
+                        "v5_Temperature": 6400.0,
+                        "v6_BounceIntensity": 1.0,
+                        "v7_SpecularScale": 1.0,
+                        "v8_MinRoughness": 0.0,
+                        "v9_AOEfficiency": 0.0,
+                        "v10_ImportantLevel": "[1]High",
+                        "v11_ImportantLevelForRayTracing": "[2]Normal",
+                        "v12_LightingTarget": "[3]All",
+                        "v13_LightBakeOption": "[3]All",
+                        "v14_LightChannelMode": "[0]All",
+                        "v15_LightChannelIntensityScale": 1.0,
+                        "v16_LightChannelIntensityScale1": 1.0,
+                        "v17_LightChannelIntensityScale2": 1.0,
+                        "v18_LightChannelIntensityScale3": 1.0,
+                        "v19_LightChannelIntensityScale4": 1.0,
+                        "v20_LightChannelIntensityScale5": 1.0,
+                        "v21_LightChannelIntensityScale6": 1.0,
+                        "v22_LightChannelIntensityScale7": 1.0,
+                        "v23_UsingSameIntensity": false,
+                        "v24_VolumetricScatteringIntensity": 0.0,
+                        "v25_Unit": "[1]Candela",
+                        "v26_Radius": 1.0,
+                        "v27_SourceRadius": 0.01,
+                        "v28_ReferenceEffectiveRange": 10.0,
+                        "v29_UseCustomAttenuation": false,
+                        "v30_AttenuationCurve": "Default",
+                        "v31_AttenuationStartDistance": 0.0,
+                        "v32_IlluminanceThreshold": 24.79339,
+                        "v33_IES": "",
+                        "v34_SpecularRadius": 0.1,
+                        "v35_ShadowEnable": false,
+                        "v36_BackGroundShadowEnable": false,
+                        "v37_ForceShadowCacheEnable": false,
+                        "v38_ShadowCastFlag": "[3]ALL",
+                        "v39_ShadowLodBias": 0.0,
+                        "v40_ShadowNearPlane": 0.1,
+                        "v41_ShadowVariance": 0.0025,
+                        "v42_ShadowBias": 3e-05,
+                        "v43_ShadowDepthBias": 0.0003,
+                        "v44_ShadowSlopeBias": 0.1,
+                        "v45_ShadowOccluderMaxSlopeBias": 100.0,
+                        "v46_UseRenderClip": false,
+                        "v47_RenderClipPlane": {
+                            "x": 0.0,
+                            "y": 0.0
+                        },
+                        "v48_Cubemap": "",
+                        "v49_TranslucencyEnable": false,
+                        "v50_RayTracingShadowEnable": false
+                    }
+                },
+                "Component[175]": {
+                    "via.relib.light.ReLibLightBehavior": {
+                        "v0": 0,
+                        "_DistanceAttenuation": {
+                            "via.relib.light.LightActionDistanceAttenuation": {
+                                "IsDistanceAttenuation": false,
+                                "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
+                                "NearFadeOutStartDistance": -1.0,
+                                "NearFadeOutEndDistance": 1000.0,
+                                "FadeOutStartDistance": -1.0,
+                                "FadeOutEndDistance": 1000.0,
+                                "IsImprovement": false
+                            }
+                        },
+                        "_KillComponent": {
+                            "via.relib.light.LightActionKillComponent": {
+                                "IsUpdatePerFrame": true
+                            }
+                        },
+                        "_LightActionDistanceShadow": {
+                            "via.relib.light.LightActionDistanceShadow": {
+                                "IsDistanceSwitchShadowEnable": false,
+                                "ShadowSwitchtShadowEnableStartDistance": -1.0,
+                                "ShadowSwitchtBackGroundShadowEnableStartDistance": -1.0
+                            }
+                        },
+                        "_LightActionControlAOEfficiency": {
+                            "via.relib.light.LightActionControlAOEfficiency": {
+                                "IsEnable": false,
+                                "ShadowOffAOEfficiency": 1.0,
+                                "ShadowOnAOEfficiency": 1.0
+                            }
+                        },
+                        "MainPlayer": "[0]UserCurve",
+                        "GlobalParamIndex": -1,
+                        "BlinkUserCurvePlayer": {
+                            "via.relib.light.LightBlinkUserCurvePlayer": {
+                                "BlinkUserCurve": "",
+                                "_PlayType": "[0]PlayStartScene",
+                                "BlinkStartFrame": {
+                                    "s": 0.0,
+                                    "r": 0.0
+                                },
+                                "FrameScaleRange": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "IntensityScaleRange": {
+                                    "s": 1.0,
+                                    "r": 0.0
+                                },
+                                "IntensityRate": 1.0,
+                                "LightColorCoef": 1.0,
+                                "BlinklightColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "VolumetricScatteringIntensityCoef": 1.0,
+                                "EmissiveColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "IsLoop": true,
+                                "LightDelayPlayer": {
+                                    "via.relib.light.LightDelayPlayer": {
+                                        "PowerOn": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        },
+                                        "PowerOff": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        }
+                                    }
+                                },
+                                "MaterialControllParamList": []
+                            }
+                        },
+                        "BlinkUserCurveVariationPlayer": {
+                            "via.relib.light.LightBlinkUserCurveVariationPlayer": {
+                                "BlinkUserCurve": "",
+                                "_PlayType": "[0]PlayStartScene",
+                                "IntensityRate": 1.0,
+                                "LightColorCoef": 1.0,
+                                "BlinklightColor": {
+                                    "R": 255,
+                                    "G": 255,
+                                    "B": 255,
+                                    "A": 255
+                                },
+                                "VolumetricScatteringIntensityCoef": 1.0,
+                                "EmissiveColor": {
+                                    "R": 0,
+                                    "G": 0,
+                                    "B": 0,
+                                    "A": 255
+                                },
+                                "IsLoop": true,
+                                "_VariationIndex": 0,
+                                "VariationParamList": [],
+                                "LightDelayPlayer": {
+                                    "via.relib.light.LightDelayPlayer": {
+                                        "PowerOn": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        },
+                                        "PowerOff": {
+                                            "via.relib.light.LightDelayPlayer.DelayParam": {
+                                                "EnableDelay": false,
+                                                "DelayUserCurve": "",
+                                                "_UseEmissiveDelayTracks": false,
+                                                "FrameScaleRange": {
+                                                    "s": 1.0,
+                                                    "r": 0.0
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                        "TimelineAnimation": {
+                            "via.relib.light.TimelineUserCurvePlayer": {
+                                "IsLoop": true,
+                                "TimelineAnimationUserCurve": "",
+                                "_TimelinePlayType": "[0]PlayStartScene",
+                                "RlinkRateStartAnimationFrame": 0.0,
+                                "FrameScale": 1.0,
+                                "MaterialControllParamList": []
+                            }
+                        },
+                        "_EventIntensityRate": 1.0,
+                        "_EventEmissiveRate": 1.0,
+                        "_IsEventIntensityRate": false,
+                        "_EventIdentifyName": ""
+                    }
+                },
+                "Component[176]": {
+                    "via.motion.ConstraintParent": {
+                        "v0_Enabled": false,
+                        "v1_UpdateMode": "[1]Props",
+                        "v2_UpdateTiming": "[1]AfterLateUpdate",
+                        "v3": "00000000-0000-0000-0000-000000000000",
+                        "v4": "",
+                        "v5": "",
+                        "v6": "",
+                        "v7": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 0.0
+                        },
+                        "v8": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "v9": 1,
+                        "v10": 1
+                    }
+                },
+                "Component[177]": {
+                    "app.AppLightController": {
+                        "v0": 1,
+                        "_Condition": 0,
+                        "_IntensityZoneName": "",
+                        "_InverseBlendRate": false,
+                        "_ClampBlendRate": {
+                            "s": 0.0,
+                            "r": 1.0
+                        }
+                    }
+                },
+                "Component[178]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[179]": {
+                    "app.EventLightConstraintSetter": {
+                        "v0": 0,
+                        "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
+                        "_TargetName": "",
+                        "_IsBindActor": false,
+                        "_BindTargetName": "",
+                        "_ActorType": "[0]Name"
+                    }
+                },
+                "Component[180]": {
+                    "app.MainCameraAttacher": {
+                        "v0": 0
+                    }
+                }
+            },
+            "ChildObject[181]": {
                 "Guid": "1fab3852-d06e-4a80-b2f6-3a63a297be5c",
                 "GameObject": {
                     "via.GameObject": {
@@ -6578,7 +7041,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[163]": {
+                "Component[182]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -6606,7 +7069,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[164]": {
+                "Component[183]": {
                     "via.render.PointLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -6669,13 +7132,20 @@
                         "v50_RayTracingShadowEnable": false
                     }
                 },
-                "Component[165]": {
+                "Component[184]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -6831,7 +7301,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[166]": {
+                "Component[185]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -6856,7 +7326,7 @@
                         "v10": 1
                     }
                 },
-                "Component[167]": {
+                "Component[186]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -6868,7 +7338,24 @@
                         }
                     }
                 },
-                "Component[168]": {
+                "Component[187]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[188]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -6878,13 +7365,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[169]": {
+                "Component[189]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[170]": {
+            "ChildObject[190]": {
                 "Guid": "c1d94766-0b6c-4203-b044-c94bca8c461f",
                 "GameObject": {
                     "via.GameObject": {
@@ -6896,7 +7383,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[171]": {
+                "Component[191]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -6924,7 +7411,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[172]": {
+                "Component[192]": {
                     "via.render.PointLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -6987,13 +7474,20 @@
                         "v50_RayTracingShadowEnable": false
                     }
                 },
-                "Component[173]": {
+                "Component[193]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -7149,7 +7643,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[174]": {
+                "Component[194]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -7174,7 +7668,7 @@
                         "v10": 1
                     }
                 },
-                "Component[175]": {
+                "Component[195]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -7186,7 +7680,24 @@
                         }
                     }
                 },
-                "Component[176]": {
+                "Component[196]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[197]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -7196,13 +7707,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[177]": {
+                "Component[198]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[178]": {
+            "ChildObject[199]": {
                 "Guid": "0e554cd5-650b-07e2-355f-a7c8709e440d",
                 "GameObject": {
                     "via.GameObject": {
@@ -7214,7 +7725,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[179]": {
+                "Component[200]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -7242,7 +7753,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[180]": {
+                "Component[201]": {
                     "via.render.PointLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -7305,13 +7816,20 @@
                         "v50_RayTracingShadowEnable": false
                     }
                 },
-                "Component[181]": {
+                "Component[202]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -7467,7 +7985,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[182]": {
+                "Component[203]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -7492,7 +8010,7 @@
                         "v10": 1
                     }
                 },
-                "Component[183]": {
+                "Component[204]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -7504,7 +8022,24 @@
                         }
                     }
                 },
-                "Component[184]": {
+                "Component[205]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[206]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -7514,13 +8049,13 @@
                         "_ActorType": "[0]Name"
                     }
                 },
-                "Component[185]": {
+                "Component[207]": {
                     "app.MainCameraAttacher": {
                         "v0": 0
                     }
                 }
             },
-            "ChildObject[186]": {
+            "ChildObject[208]": {
                 "Guid": "fd46b1c7-9da0-4485-8975-40d8a2c545f5",
                 "GameObject": {
                     "via.GameObject": {
@@ -7532,7 +8067,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[187]": {
+                "Component[209]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -7560,7 +8095,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[188]": {
+                "Component[210]": {
                     "via.render.DirectionalLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 1500.0,
@@ -7625,55 +8160,63 @@
                         },
                         "v46": 0,
                         "v47": 256,
-                        "v48": 1106247680,
-                        "v49": 1140457472,
-                        "v50": 3,
-                        "v51": 1120403456,
-                        "v52": 64,
-                        "v53": 1127481344,
-                        "v54": 1050253722,
-                        "v55": 1065353216,
-                        "v56": 1120403456,
-                        "v57": {
+                        "v48": 0,
+                        "v49": 1106247680,
+                        "v50": 1140457472,
+                        "v51": 3,
+                        "v52": 1120403456,
+                        "v53": 64,
+                        "v54": 1127481344,
+                        "v55": 1050253722,
+                        "v56": 1065353216,
+                        "v57": 1120403456,
+                        "v58": 0,
+                        "v59": 1060320051,
+                        "v60": 1,
+                        "v61": {
                             "x": 1028443341,
                             "y": 1041865114,
                             "z": 1056964608,
                             "w": 1065353216
                         },
-                        "v58": {
+                        "v62": {
                             "x": 1028443341,
                             "y": 1041865114,
                             "z": 1056964608,
                             "w": 1065353216
                         },
-                        "v59": {
+                        "v63": {
                             "x": 1073741824,
                             "y": 1092616192,
                             "z": 1112014848,
                             "w": 1112014848
                         },
-                        "v60": {
+                        "v64": {
                             "x": 1065353216,
                             "y": 1065353216,
                             "z": 1073741824,
                             "w": 1065353216
                         },
-                        "v61": 0,
-                        "v62": 1112014848,
-                        "v63": 1176256512,
-                        "v64": 1036831949,
-                        "v65": "",
-                        "v66": "00000000-0000-0000-0000-000000000000",
-                        "v67": 8,
-                        "v68": 0,
-                        "v69": "17b7d138bd37863501",
-                        "v70": 0,
+                        "v65": 0,
+                        "v66": 1112014848,
+                        "v67": 1176256512,
+                        "v68": 1036831949,
+                        "v69": 4,
+                        "v70": "",
                         "v71": 0,
-                        "v72": {
+                        "v72": "00000000-0000-0000-0000-000000000000",
+                        "v73": 8,
+                        "v74": 1,
+                        "v75": 1077936128,
+                        "v76": 0,
+                        "v77": "17b7d138bd37863501",
+                        "v78": 0,
+                        "v79": 0,
+                        "v80": {
                             "x": 16,
                             "y": 16
                         },
-                        "v73": {
+                        "v81": {
                             "coord": {
                                 "m00": 1.0,
                                 "m01": 0.0,
@@ -7699,43 +8242,43 @@
                                 "pad": 0.0
                             }
                         },
-                        "v74": [],
-                        "v75": 0,
-                        "v76": 0,
-                        "v77": "",
-                        "v78": {
+                        "v82": [],
+                        "v83": 0,
+                        "v84": 0,
+                        "v85": "",
+                        "v86": {
                             "x": 0.0,
                             "y": 1.0,
                             "z": 0.0,
                             "w": 0.0
                         },
-                        "v79": {
+                        "v87": {
                             "x": 0.0,
                             "y": 0.0,
                             "z": 0.0,
                             "w": 1.0
                         },
-                        "v80": {
+                        "v88": {
                             "x": 1120403456,
                             "y": 1120403456,
                             "z": 1120403456
                         },
-                        "v81": {
+                        "v89": {
                             "x": 0,
                             "y": 0
                         },
-                        "v82": {
+                        "v90": {
                             "x": 0,
                             "y": 0
                         },
-                        "v83": 1120403456,
-                        "v84": 1128792064,
-                        "v85": 0,
-                        "v86": 1,
-                        "v87": 0
+                        "v91": 1120403456,
+                        "v92": 1128792064,
+                        "v93": 0,
+                        "v94": 1,
+                        "v95": 0
                     }
                 },
-                "Component[189]": {
+                "Component[211]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -7747,13 +8290,13 @@
                         }
                     }
                 },
-                "Component[190]": {
+                "Component[212]": {
                     "app.ShadowDistanceController": {
                         "v0": 1
                     }
                 }
             },
-            "ChildObject[191]": {
+            "ChildObject[213]": {
                 "Guid": "6858a49a-b1e7-44ea-943b-75e68c4aa832",
                 "GameObject": {
                     "via.GameObject": {
@@ -7765,7 +8308,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[192]": {
+                "Component[214]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -7793,7 +8336,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[193]": {
+                "Component[215]": {
                     "via.render.Mesh": {
                         "v0": 31,
                         "v1": 0,
@@ -8142,7 +8685,7 @@
                         "v81": 0
                     }
                 },
-                "Component[194]": {
+                "Component[216]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[0]Character",
@@ -8167,7 +8710,7 @@
                         "v10": 1
                     }
                 },
-                "Component[195]": {
+                "Component[217]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -8178,7 +8721,7 @@
                     }
                 }
             },
-            "ChildObject[196]": {
+            "ChildObject[218]": {
                 "Guid": "caa1fb9a-c17e-4323-83e4-c9b2ee9f7e50",
                 "GameObject": {
                     "via.GameObject": {
@@ -8190,7 +8733,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[197]": {
+                "Component[219]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -8218,7 +8761,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[198]": {
+                "Component[220]": {
                     "via.render.Mesh": {
                         "v0": 31,
                         "v1": 0,
@@ -8264,7 +8807,7 @@
                         "v41": 0,
                         "v42": 0,
                         "v43": [
-                            498
+                            520
                         ],
                         "v44": 0,
                         "v45": 0,
@@ -8569,7 +9112,7 @@
                         "v81": 0
                     }
                 },
-                "Component[199]": {
+                "Component[221]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[0]Character",
@@ -8594,7 +9137,7 @@
                         "v10": 1
                     }
                 },
-                "Component[200]": {
+                "Component[222]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
@@ -8605,7 +9148,7 @@
                     }
                 }
             },
-            "ChildObject[201]": {
+            "ChildObject[223]": {
                 "Guid": "7a48d2d8-145d-4aa9-a9e7-913941327b7e",
                 "GameObject": {
                     "via.GameObject": {
@@ -8617,7 +9160,7 @@
                     }
                 },
                 "Prefab": null,
-                "Component[202]": {
+                "Component[224]": {
                     "via.Transform": {
                         "LocalPosition": {
                             "x": 0.0,
@@ -8645,7 +9188,7 @@
                         "FrameSkip": "[0]None"
                     }
                 },
-                "Component[203]": {
+                "Component[225]": {
                     "via.render.IESPointLight": {
                         "v0_Enabled": false,
                         "v1_Intensity": 3000.0,
@@ -8710,13 +9253,20 @@
                         "v52_UpdateIESCache": false
                     }
                 },
-                "Component[204]": {
+                "Component[226]": {
                     "via.relib.light.ReLibLightBehavior": {
                         "v0": 0,
                         "_DistanceAttenuation": {
                             "via.relib.light.LightActionDistanceAttenuation": {
                                 "IsDistanceAttenuation": false,
                                 "EaseType": "[0]Linear",
+                                "IsSpherePosition": false,
+                                "SpherePosition": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "pad": 0.0
+                                },
                                 "NearFadeOutStartDistance": -1.0,
                                 "NearFadeOutEndDistance": 1000.0,
                                 "FadeOutStartDistance": -1.0,
@@ -8872,7 +9422,7 @@
                         "_EventIdentifyName": ""
                     }
                 },
-                "Component[205]": {
+                "Component[227]": {
                     "via.motion.ConstraintParent": {
                         "v0_Enabled": false,
                         "v1_UpdateMode": "[1]Props",
@@ -8897,7 +9447,7 @@
                         "v10": 1
                     }
                 },
-                "Component[206]": {
+                "Component[228]": {
                     "app.AppLightController": {
                         "v0": 1,
                         "_Condition": 0,
@@ -8909,7 +9459,24 @@
                         }
                     }
                 },
-                "Component[207]": {
+                "Component[229]": {
+                    "app.LightLimitter": {
+                        "v0": 0,
+                        "_IsOptModeOnly": false,
+                        "_LightEnable": false,
+                        "_ShadowEnable": false,
+                        "_DetailShadow": 1.0,
+                        "_AOEfficeiency": 1.0,
+                        "_ShadowCastFlag": "[3]ALL",
+                        "_IsEnableEventPlaying": false,
+                        "_LightEnableEventPlaying": false,
+                        "_ShadowEnableEventPlaying": false,
+                        "_DetailShadowEventPlaying": 1.0,
+                        "_AOEfficeiencyEventPlaying": 1.0,
+                        "_ShadowCastFlagEventPlaying": "[3]ALL"
+                    }
+                },
+                "Component[230]": {
                     "app.EventLightConstraintSetter": {
                         "v0": 0,
                         "_TargetParentObject": "00000000-0000-0000-0000-000000000000",
