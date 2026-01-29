@@ -1967,6 +1967,13 @@
         "EquipChange": 0,
         "Appearance": 1
     },
+    "app.GrassCulling.CULLING_MODE_Fixed": {
+        "FAR": 6601,
+        "MIDDLE": 20827,
+        "NEAR": 8922,
+        "NEAREST": 24229,
+        "MAX": 20844
+    },
     "app.Wp09Def.BIN_TYPE_Fixed": {
         "GRENADE": 0,
         "ELEMENT": 1,
@@ -6746,6 +6753,15 @@
     "app.OtomoCommonAction.cRidePorterChangePosition.STATE": {
         "START": 0,
         "END": 1
+    },
+    "app.StreamingControllerPlatform.TYPE": {
+        "DEFAULT": 0,
+        "PC": 1,
+        "PS5": 2,
+        "XBSX": 3,
+        "XBSS": 4,
+        "NSW2": 5,
+        "MAX": 6
     },
     "app.Wp09Action.cSwordEnergySlashCharge.PHASE": {
         "START": 0,
@@ -16508,7 +16524,8 @@
         "ResizeLayerOutputTrace": 2441,
         "ResizeLayerSceneTrace": 2442,
         "ChangeUpscalingAlgorithmTrace": 2443,
-        "ChangeFrameGenerationAlgorithmTrace": 2444
+        "ChangeFrameGenerationAlgorithmTrace": 2444,
+        "AMD_DoNotRunRdpAndGpuDebug": 2464
     },
     "app.user_data.CharaEditItemData.cData.ItemType": {
         "ITEM": 0,
@@ -30177,6 +30194,10 @@
         "MAX": 101
     },
     "app.Em5300Def.SCAR_POINT": {},
+    "app.OptionParamDef.PLANT_COLLISION": {
+        "ON": 0,
+        "OFF": 1
+    },
     "app.SeasonType.TYPE_Fixed": {
         "INVALID": -1,
         "NORMAL": 0,
@@ -49671,6 +49692,11 @@
         "ITEMPACK_34": 56,
         "ITEMPACK_35": 55
     },
+    "app.user_data.GrassCullingSetting.CULLING_TYPE": {
+        "FAR": 0,
+        "MIDDLE": 1,
+        "NEAR": 2
+    },
     "app.cGUI060000Radar.RADAR_SIZE_TYPE": {
         "SMALL": 0,
         "DEFAULT": 1,
@@ -54594,7 +54620,8 @@
         "HIGHEST": 0,
         "HIGH": 1,
         "STANDARD": 2,
-        "LOW": 3
+        "LOW": 3,
+        "LOWEST": 4
     },
     "via.store.InGameState": {
         "Initializing": 0,
@@ -59765,8 +59792,8 @@
         "HIGH": 0,
         "MIDDLE": 1,
         "LOW": 2,
-        "LOWEST": 3,
-        "OUTDOOR_LIGHT_PROBE": 4
+        "OUTDOOR_LIGHT_PROBE": 3,
+        "UNKNOWN": -1
     },
     "app.GUI000012.OUT_WINDOW_OFFSET": {
         "DEFAUTL": 0,
@@ -61209,8 +61236,11 @@
         "MAX": 2
     },
     "app.OptionParamDef.VOLUME_FOG_QUALITY": {
-        "HIGH": 0,
-        "LOW": 1
+        "HIGHEST": 0,
+        "HIGH": 1,
+        "STANDARD": 2,
+        "LOW": 3,
+        "LOWEST": 4
     },
     "app.NpcPartnerDef.CONDITION_AABB_PARAM_ID": {
         "INVALID": 0
@@ -74548,6 +74578,13 @@
         "FAR": 3,
         "SUPER_FAR": 5
     },
+    "ace.cGraphicsSetting.MESH_CULLING_SETTING": {
+        "HIGHEST": 0,
+        "HIGH": 1,
+        "MIDDLE": 2,
+        "LOW": 3,
+        "LOWEST": 4
+    },
     "app.mcGunnerAimAdjust.PARAM_INTERPOLATE_PHASE": {
         "NONE": 0,
         "FADE_OUT": 1,
@@ -74771,6 +74808,11 @@
         "TpBL": 10,
         "TpBR": 11,
         "Max": 12
+    },
+    "app.StainMeshManager.STAIN_QUALITY": {
+        "INVALID": -1,
+        "ALL_ENABLE": 0,
+        "ALL_DISABLE": 2
     },
     "app.CircleDef.CIRCLE_PROFILE_SETTING": {
         "JOIN_REQUEST": 0,
@@ -76221,11 +76263,6 @@
         "TYPE_07": 7,
         "TYPE_08": 8,
         "MAX": 9
-    },
-    "app.OptionParamDef.LOBBY_PLAYER_NUM": {
-        "STANDARD": 0,
-        "LIGHT": 1,
-        "SUPER_LIGHT": 2
     },
     "app.MissionBeaconController.STATE": {
         "WAIT": 0,
@@ -78969,6 +79006,15 @@
         "EM_RIDE_FINISH_DELAY_HIT": 22,
         "MAX": 1
     },
+    "app.StreamingControllerPlatform.TYPE_Fixed": {
+        "DEFAULT": 0,
+        "PC": 1,
+        "PS5": 2,
+        "XBSX": 3,
+        "XBSS": 4,
+        "NSW2": 5,
+        "MAX": 6
+    },
     "app.Ms720015_GimmickTag.TYPE_Fixed": {
         "GM_00": 1797,
         "GM_01": 15224,
@@ -80180,7 +80226,7 @@
         "DUMMY_0108": 663,
         "DUMMY_0109": 664,
         "DUMMY_0110": 665,
-        "DUMMY_0111": 666,
+        "RefSystem_0022_002": 666,
         "DUMMY_0112": 667,
         "DUMMY_0113": 668,
         "DUMMY_0114": 669,
@@ -106415,7 +106461,19 @@
         "Dia_NPC102_00_041_OnQuest_0014": 9512,
         "Dia_NPC102_00_041_OnQuest_0015": 9513,
         "Dia_PL_Banter_0217": 9514,
-        "Dia_PL_Banter_0218": 9515
+        "Dia_PL_Banter_0218": 9515,
+        "Dia_PL_Banter_0209": 9516,
+        "Dia_PL_Banter_0210": 9517,
+        "Dia_PL_Banter_0211": 9518,
+        "Dia_PL_Banter_0212": 9519,
+        "Dia_PL_Banter_0213": 9520,
+        "Dia_PL_Banter_0214": 9521,
+        "Dia_PL_Banter_0215": 9522,
+        "Dia_PL_Banter_0216": 9523,
+        "Dia_stCh514001_Ms514001_0122": 9524,
+        "Dia_NPC310_01_118_Facility_032": 9525,
+        "Dia_NPC222_14_025_Facility_034": 9526,
+        "Dia_stCh7401_Ms740020_0335": 9527
     },
     "app.CharaMakeSceneController.PHASE": {
         "INVALID": -1,
@@ -107394,6 +107452,14 @@
         "SINGLE_LOOP": 4,
         "SINGLE_END": 5
     },
+    "app.OptionParamDef.PRESET_QUALITY_CPU": {
+        "HIGHEST": 0,
+        "HIGH": 1,
+        "STANDARD": 2,
+        "LOW": 3,
+        "LOWEST": 4,
+        "NONE": 5
+    },
     "app.NpcDef.FSM_LIKE_ACTION_HUMAN_ST103": {
         "INVALID": -1,
         "ADL_BASIC_IDLE": 0,
@@ -108330,7 +108396,9 @@
         "OPTION_PIC_0147": 150,
         "OPTION_PIC_0148": 151,
         "OPTION_PIC_0149": 152,
-        "OPTION_PIC_0150": 153
+        "OPTION_PIC_0150": 153,
+        "OPTION_PIC_0151": 154,
+        "OPTION_PIC_0152": 155
     },
     "app.net_lobby_session.cLobbySession.LOBBY_COORD_AREA": {
         "FIELD": 0,
@@ -110818,6 +110886,109 @@
         "ACTION_1": 1,
         "ACTION_2": 2
     },
+    "app.UsedVramSizeType.TYPE_Fixed": {
+        "INVALID": 0,
+        "RESOLUTION_1280x720": 45,
+        "RESOLUTION_1600x900": 44,
+        "RESOLUTION_1920x1080": 43,
+        "RESOLUTION_2560x1440": 42,
+        "RESOLUTION_3840x2160": 41,
+        "RESOLUTION_5120x2880": 40,
+        "RESOLUTION_7680x4320": 39,
+        "RESOLUTION_2560x1080": 38,
+        "RESOLUTION_3440x1440": 37,
+        "RESOLUTION_3840x1600": 36,
+        "RESOLUTION_5120x2160": 35,
+        "IMAGE_QUALITY_50": 34,
+        "IMAGE_QUALITY_100": 33,
+        "IMAGE_QUALITY_200": 32,
+        "RAY_TRACING_HIGH": 31,
+        "RAY_TRACING_MIDDLE": 30,
+        "RAY_TRACING_LOW": 29,
+        "RAY_TRACING_OFF": 28,
+        "TEXTURE_HIGHEST": 27,
+        "TEXTURE_HIGH": 26,
+        "TEXTURE_MIDDLE": 25,
+        "TEXTURE_LOW": 24,
+        "TEXTURE_LOWEST": 23,
+        "MESH_HIGHEST": 22,
+        "MESH_HIGH": 21,
+        "MESH_MIDDLE": 20,
+        "FUR_HIGH": 19,
+        "FUR_LOW": 18,
+        "CLOUDSCAPE_HIGHEST": 17,
+        "CLOUDSCAPE_HIGH": 16,
+        "CLOUDSCAPE_MIDDLE": 15,
+        "CLOUDSCAPE_LOW": 14,
+        "CLOUDSCAPE_LOWEST": 13,
+        "SPEEDTREE_HIGH": 12,
+        "SPEEDTREE_MIDDLE": 11,
+        "SPEEDTREE_LOW": 10,
+        "WIND_TURBULENCE_HIGH": 9,
+        "WIND_TURBULENCE_LOW": 8,
+        "WIND_TURBULENCE_OFF": 7,
+        "GROUND_QUALITY_HIGH": 6,
+        "GROUND_QUALITY_MIDDLE": 105,
+        "GROUND_QUALITY_LOW": 104,
+        "GROUND_QUALITY_LOWEST": 5,
+        "SAND_SNOW_WATER_QUALITY_HIGHEST": 4,
+        "SAND_SNOW_WATER_QUALITY_HIGH": 3,
+        "SAND_SNOW_WATER_QUALITY_MIDDLE": 2,
+        "SAND_SNOW_WATER_QUALITY_LOW": 1,
+        "SAND_SNOW_WATER_QUALITY_LOWEST": 49,
+        "CULLING_SETTING_HIGHEST": 48,
+        "CULLING_SETTING_HIGH": 55,
+        "CULLING_SETTING_MIDDLE": 54,
+        "CULLING_SETTING_LOW": 53,
+        "CULLING_SETTING_LOWEST": 52,
+        "SHADOW_QUALITY_HIGHEST": 51,
+        "SHADOW_QUALITY_HIGH": 50,
+        "SHADOW_QUALITY_MIDDLE": 59,
+        "SHADOW_QUALITY_LOW": 58,
+        "SHADOW_QUALITY_LOWEST": 57,
+        "SHADOW_LENGTH_HIGH": 66,
+        "SHADOW_LENGTH_MIDDLE": 65,
+        "SHADOW_LENGTH_LOW": 64,
+        "SDF_HIGH": 68,
+        "SDF_LOW": 67,
+        "GI_HIGH": 56,
+        "GI_MIDDLE": 46,
+        "GI_LOW": 63,
+        "AO_HIGH": 62,
+        "AO_MIDDLE": 61,
+        "AO_OFF": 60,
+        "BLOOM_HIGH": 74,
+        "BLOOM_MIDDLE": 73,
+        "BLOOM_OFF": 72,
+        "SSR_ON": 71,
+        "SSR_OFF": 70,
+        "VFOG_HIGHEST": 76,
+        "VFOG_HIGH": 75,
+        "VFOG_MIDDLE": 69,
+        "VFOG_LOW": 79,
+        "VFOG_LOWEST": 78,
+        "DLSS_OFF_4K": 118,
+        "DLSS_AA_4K": 108,
+        "DLSS_QUALITY_4K": 107,
+        "DLSS_BALANCE_4K": 109,
+        "DLSS_PERFORMANCE_4K": 110,
+        "DLSS_ULTRA_PERFORMANCE_4K": 106,
+        "DLSS_FG": 111,
+        "FSR_OFF_4K": 119,
+        "FSR_AA_4K": 101,
+        "FSR_QUALITY_4K": 100,
+        "FSR_BALANCE_4K": 103,
+        "FSR_PERFORMANCE_4K": 102,
+        "FSR_ULTRA_PERFORMANCE_4K": 114,
+        "FSR_FG": 121,
+        "XESS_OFF_4K": 120,
+        "XESS_AA_4K": 122,
+        "XESS_QUALITY_4K": 117,
+        "XESS_BALANCE_4K": 116,
+        "XESS_PERFORMANCE_4K": 115,
+        "XESS_ULTRA_PERFORMANCE_4K": 113,
+        "MAX": 47
+    },
     "via.motion.IkLegSpine.SkipStatus": {
         "None": 0,
         "Start": 1,
@@ -112454,7 +112625,7 @@
         "DUMMY_0108": 639,
         "DUMMY_0109": 640,
         "DUMMY_0110": 641,
-        "DUMMY_0111": 642,
+        "RefSystem_0022_002": 642,
         "DUMMY_0112": 643,
         "DUMMY_0113": 644,
         "DUMMY_0114": 645,
@@ -113001,6 +113172,11 @@
         "FINISH": 0,
         "KILL": 1,
         "FINISH_EX": 2
+    },
+    "ace.cGraphicsSetting.WIND_SIMULATION_QUALITY": {
+        "HIGH": 0,
+        "LOW": 1,
+        "OFF": 2
     },
     "ace.CameraDef.CAMERA_PARAM_USER": {
         "USER_0": 0,
@@ -116665,6 +116841,7 @@
         "VILLAGE_High": 23137,
         "VILLAGE_Middle": 10105,
         "VILLAGE_Low": 7363,
+        "VILLAGE_Lowest": 14875,
         "HUNTER": -906992064,
         "PARTNER": -1848447360,
         "MAX": 1671917184
@@ -127914,7 +128091,8 @@
     "app.RELogId.NPC_Jack_Gesture": {},
     "app.OptionParamDef.WIND_FLUID_SIMULATION": {
         "HIGH": 0,
-        "LOW": 1
+        "LOW": 1,
+        "OFF": 2
     },
     "app.StencilID.ID": {
         "OUTLINE_FRONT": 0,
@@ -129690,6 +129868,13 @@
         "Oil_Default": 0,
         "EXOil_Default": 1
     },
+    "app.GrassCulling.CULLING_MODE": {
+        "FAR": 0,
+        "MIDDLE": 1,
+        "NEAR": 2,
+        "NEAREST": 3,
+        "MAX": 4
+    },
     "app.Em0046_00_Def.PARTS_LOST_TYPE": {
         "LOST_TAIL": 0
     },
@@ -130124,6 +130309,10 @@
         "AMD": 2,
         "INTEL": 3,
         "MAX": 4
+    },
+    "app.SAVE_FREE_BUF_SYSTEM_INT.TYPE": {
+        "NONE": 0,
+        "FLAG": 1
     },
     "app.NpcDef.ACC_U00001_MOT_Fixed": {
         "INVALID": -768924416,
@@ -132097,6 +132286,14 @@
     "app.PlayerCommonAction.cGestureActionBase.SPOTLIGHT_TYPE": {
         "TYPE_A": 0,
         "TYPE_B": 1
+    },
+    "ace.cGraphicsSetting.STREAMING_TEXTURE_QUALITY": {
+        "HIGHEST": 0,
+        "HIGH": 1,
+        "MIDDLE": 2,
+        "LOW": 3,
+        "LOWEST": 4,
+        "INVALID": 5
     },
     "app.PlayerCommonAction.cFishingBigBattleIdle.PHASE": {
         "IDLE": 0,
@@ -136574,6 +136771,109 @@
         "WB": 256,
         "WC": 512,
         "Default": 256
+    },
+    "app.UsedVramSizeType.TYPE": {
+        "INVALID": 0,
+        "RESOLUTION_1280x720": 1,
+        "RESOLUTION_1600x900": 2,
+        "RESOLUTION_1920x1080": 3,
+        "RESOLUTION_2560x1440": 4,
+        "RESOLUTION_3840x2160": 5,
+        "RESOLUTION_5120x2880": 6,
+        "RESOLUTION_7680x4320": 7,
+        "RESOLUTION_2560x1080": 8,
+        "RESOLUTION_3440x1440": 9,
+        "RESOLUTION_3840x1600": 10,
+        "RESOLUTION_5120x2160": 11,
+        "IMAGE_QUALITY_50": 12,
+        "IMAGE_QUALITY_100": 13,
+        "IMAGE_QUALITY_200": 14,
+        "RAY_TRACING_HIGH": 15,
+        "RAY_TRACING_MIDDLE": 16,
+        "RAY_TRACING_LOW": 17,
+        "RAY_TRACING_OFF": 18,
+        "TEXTURE_HIGHEST": 19,
+        "TEXTURE_HIGH": 20,
+        "TEXTURE_MIDDLE": 21,
+        "TEXTURE_LOW": 22,
+        "TEXTURE_LOWEST": 23,
+        "MESH_HIGHEST": 24,
+        "MESH_HIGH": 25,
+        "MESH_MIDDLE": 26,
+        "FUR_HIGH": 27,
+        "FUR_LOW": 28,
+        "CLOUDSCAPE_HIGHEST": 29,
+        "CLOUDSCAPE_HIGH": 30,
+        "CLOUDSCAPE_MIDDLE": 31,
+        "CLOUDSCAPE_LOW": 32,
+        "CLOUDSCAPE_LOWEST": 33,
+        "SPEEDTREE_HIGH": 34,
+        "SPEEDTREE_MIDDLE": 35,
+        "SPEEDTREE_LOW": 36,
+        "WIND_TURBULENCE_HIGH": 37,
+        "WIND_TURBULENCE_LOW": 38,
+        "WIND_TURBULENCE_OFF": 39,
+        "GROUND_QUALITY_HIGH": 40,
+        "GROUND_QUALITY_MIDDLE": 41,
+        "GROUND_QUALITY_LOW": 42,
+        "GROUND_QUALITY_LOWEST": 43,
+        "SAND_SNOW_WATER_QUALITY_HIGHEST": 44,
+        "SAND_SNOW_WATER_QUALITY_HIGH": 45,
+        "SAND_SNOW_WATER_QUALITY_MIDDLE": 46,
+        "SAND_SNOW_WATER_QUALITY_LOW": 47,
+        "SAND_SNOW_WATER_QUALITY_LOWEST": 48,
+        "CULLING_SETTING_HIGHEST": 49,
+        "CULLING_SETTING_HIGH": 50,
+        "CULLING_SETTING_MIDDLE": 51,
+        "CULLING_SETTING_LOW": 52,
+        "CULLING_SETTING_LOWEST": 53,
+        "SHADOW_QUALITY_HIGHEST": 54,
+        "SHADOW_QUALITY_HIGH": 55,
+        "SHADOW_QUALITY_MIDDLE": 56,
+        "SHADOW_QUALITY_LOW": 57,
+        "SHADOW_QUALITY_LOWEST": 58,
+        "SHADOW_LENGTH_HIGH": 59,
+        "SHADOW_LENGTH_MIDDLE": 60,
+        "SHADOW_LENGTH_LOW": 61,
+        "SDF_HIGH": 62,
+        "SDF_LOW": 63,
+        "GI_HIGH": 64,
+        "GI_MIDDLE": 65,
+        "GI_LOW": 66,
+        "AO_HIGH": 67,
+        "AO_MIDDLE": 68,
+        "AO_OFF": 69,
+        "BLOOM_HIGH": 70,
+        "BLOOM_MIDDLE": 71,
+        "BLOOM_OFF": 72,
+        "SSR_ON": 73,
+        "SSR_OFF": 74,
+        "VFOG_HIGHEST": 75,
+        "VFOG_HIGH": 76,
+        "VFOG_MIDDLE": 77,
+        "VFOG_LOW": 78,
+        "VFOG_LOWEST": 79,
+        "DLSS_OFF_4K": 80,
+        "DLSS_AA_4K": 81,
+        "DLSS_QUALITY_4K": 82,
+        "DLSS_BALANCE_4K": 83,
+        "DLSS_PERFORMANCE_4K": 84,
+        "DLSS_ULTRA_PERFORMANCE_4K": 85,
+        "DLSS_FG": 86,
+        "FSR_OFF_4K": 87,
+        "FSR_AA_4K": 88,
+        "FSR_QUALITY_4K": 89,
+        "FSR_BALANCE_4K": 90,
+        "FSR_PERFORMANCE_4K": 91,
+        "FSR_ULTRA_PERFORMANCE_4K": 92,
+        "FSR_FG": 93,
+        "XESS_OFF_4K": 94,
+        "XESS_AA_4K": 95,
+        "XESS_QUALITY_4K": 96,
+        "XESS_BALANCE_4K": 97,
+        "XESS_PERFORMANCE_4K": 98,
+        "XESS_ULTRA_PERFORMANCE_4K": 99,
+        "MAX": 100
     },
     "app.QuestClearActionPreview.CONDITION_Fixed": {
         "TYPE_00": 0,
@@ -146150,7 +146450,19 @@
         "Dia_NPC102_00_041_OnQuest_0014": 10457,
         "Dia_NPC102_00_041_OnQuest_0015": 10458,
         "Dia_PL_Banter_0217": 10459,
-        "Dia_PL_Banter_0218": 10460
+        "Dia_PL_Banter_0218": 10460,
+        "Dia_PL_Banter_0209": 10461,
+        "Dia_PL_Banter_0210": 10462,
+        "Dia_PL_Banter_0211": 10463,
+        "Dia_PL_Banter_0212": 10464,
+        "Dia_PL_Banter_0213": 10465,
+        "Dia_PL_Banter_0214": 10466,
+        "Dia_PL_Banter_0215": 10467,
+        "Dia_PL_Banter_0216": 10468,
+        "Dia_stCh514001_Ms514001_0122": 10469,
+        "Dia_NPC310_01_118_Facility_032": 10470,
+        "Dia_NPC222_14_025_Facility_034": 10471,
+        "Dia_stCh7401_Ms740020_0335": 10472
     },
     "app.GUI060000.CTRL_UPDATE_ORDER": {
         "OTHER_INPUT": 0,
@@ -151158,6 +151470,12 @@
         "PARENT": 0,
         "R_WEP": 1
     },
+    "ace.cGraphicsSetting.GROUND_QUALITY": {
+        "HIGH": 0,
+        "MIDDLE": 1,
+        "LOW": 2,
+        "LOWEST": 3
+    },
     "app.user_data.HumanHeadControlParam.DETAIL_TYPE": {
         "AIM": 0,
         "SHOOT": 1,
@@ -152168,7 +152486,9 @@
         "OPTION_PIC_0147": 113,
         "OPTION_PIC_0148": 114,
         "OPTION_PIC_0149": 115,
-        "OPTION_PIC_0150": 116
+        "OPTION_PIC_0150": 116,
+        "OPTION_PIC_0151": 117,
+        "OPTION_PIC_0152": 118
     },
     "app.DialogueEyeBrinkMotionDef.EYE_BRINK_TYPE_DIALOGUE": {
         "INVALID": -1,
@@ -153590,6 +153910,10 @@
         "OBB": 2,
         "CYLINDER": 3
     },
+    "app.SAVE_FREE_BUF_SYSTEM_INT.TYPE_Fixed": {
+        "NONE": 0,
+        "FLAG": 1
+    },
     "app.GUI080106.SUBMENU_INDEX": {
         "BOX_DISP_CHANGE": 0,
         "MAX": 1
@@ -154684,6 +155008,12 @@
         "FADE_IN": 1,
         "ACTIVE": 2,
         "FADE_OUT": 3
+    },
+    "app.cGUIAssistNpcController.TYPE": {
+        "SUPPORT": 0,
+        "NPC": 1,
+        "GIMMICK": 2,
+        "MAX": 3
     },
     "app.cEm0150_00Extend.SHELL_UNIQUE_ID": {
         "BIND_VOICE": 0,
@@ -160627,7 +160957,8 @@
         "HIGH": 1,
         "STANDARD": 2,
         "LOW": 3,
-        "LOWEST": 4
+        "LOWEST": 4,
+        "SIMPLIFIED": 5
     },
     "app.GUI080006.SUBMENU_INDEX": {
         "STATUS_DISP_CHANGE": 0,
@@ -160971,9 +161302,10 @@
         "VILLAGE_High": 2,
         "VILLAGE_Middle": 3,
         "VILLAGE_Low": 4,
-        "HUNTER": 5,
-        "PARTNER": 6,
-        "MAX": 7
+        "VILLAGE_Lowest": 5,
+        "HUNTER": 6,
+        "PARTNER": 7,
+        "MAX": 8
     },
     "app.SearchSortDef.SORT_ORDERING_Fixed": {
         "INVALID": -1,
@@ -162180,6 +162512,12 @@
         "UP": 0,
         "LEFT": 1,
         "RIGHT": 2
+    },
+    "app.OptionParamDef.PLANT_DENSITY": {
+        "HIGH": 0,
+        "MIDDLE": 1,
+        "LOW": 2,
+        "LOWEST": 3
     },
     "via.render.AtmosphericDirectionalLight": {
         "None": 0,
@@ -171715,6 +172053,10 @@
         "DANGER": 2,
         "ERROR": 3
     },
+    "app.savedata.cUpdateBufferSystemData.FREE_FLAG": {
+        "GRAPHIC_RESET_DISP": 0,
+        "MAX": 32
+    },
     "via.houdini.LogId": {
         "ID256": 256,
         "ID257": 257,
@@ -174232,7 +174574,9 @@
     },
     "app.OptionParamDef.GROUND_QUALITY": {
         "HIGH": 0,
-        "LOW": 1
+        "STANDARD": 1,
+        "LOW": 2,
+        "LOWEST": 3
     },
     "app.Wp06Action.cFinishStingerChargeBase.TURN_STATE": {
         "NONE": 0,
