@@ -69,7 +69,7 @@
                                             "x": 0.0,
                                             "y": 0.0,
                                             "z": 0.0,
-                                            "w": 1.0
+                                            "w": 0.0
                                         }
                                     }
                                 ],
@@ -80,7 +80,7 @@
                                             "x": 0.0,
                                             "y": 0.0,
                                             "z": 0.0,
-                                            "w": 1.0
+                                            "w": 0.0
                                         }
                                     }
                                 ]
@@ -185,7 +185,69 @@
                         "_GroundRunRayType": "[0]SHELL_VEC",
                         "_IsShellDeleteIsHitTerrain": false,
                         "_CheckTerrainOffset": 1.0,
-                        "_DisableContactWall": true
+                        "_DisableContactWall": true,
+                        "_IsCheckCharaCol": false
+                    }
+                },
+                {
+                    "app.cShellminiParamCallDelayChildShell": {
+                        "MiniParamName": "CallDelayChildShell",
+                        "MiniParamtype": "[4]CALL_CHILD",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 0,
+                        "LateUpdateOrder": 0,
+                        "_CreateNum": 1,
+                        "_Offset": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "pad": 0.0
+                        },
+                        "_IsInheritChildScaleValue": false,
+                        "_IsRotWorldY": false,
+                        "STRUCT__StartRot__HasValue": false,
+                        "STRUCT__StartRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "STRUCT__OffsetRot__HasValue": false,
+                        "STRUCT__OffsetRot__Value": {
+                            "x": 0.0,
+                            "y": 0.0,
+                            "z": 0.0,
+                            "w": 1.0
+                        },
+                        "_IsSameTimeCall": false,
+                        "_IsCreateShellOwnerPos": false,
+                        "_IsChainShell": false,
+                        "_ChainID": 0,
+                        "_LinkParentChainID": 0,
+                        "_IsConstShell": false,
+                        "_ChildOverrideParam": {
+                            "app.cShellminiParamCallChildShell.cChildOverrideSetting": {
+                                "_OffsetArray": [],
+                                "_StartRotArray": [],
+                                "_OffsetRotArray": []
+                            }
+                        },
+                        "_DelayShell": {
+                            "ace.cChildShellGenerateParam": {
+                                "_IsPassingHitID": true,
+                                "_ShellNameHash": 1414950488
+                            }
+                        },
+                        "_DelayTime": 1.2
+                    }
+                },
+                {
+                    "app.cShellMiniParam_Em0155_00_SelectDetonationShell_HighDifficultyEvent": {
+                        "MiniParamName": "Em0155_00_SelectDetonationShell_HighDifficultyEvent",
+                        "MiniParamtype": "[7]OTHER",
+                        "_IsDependedOn": false,
+                        "UpdateOrder": 0,
+                        "LateUpdateOrder": 0
                     }
                 }
             ],

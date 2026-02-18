@@ -1,0 +1,86 @@
+[
+    {
+        "app.user_data.NpcDesireParam": {
+            "_DefaultParam": {
+                "app.user_data.NpcDesireParam.cParam": {
+                    "_CoolTime": {
+                        "app.user_data.NpcDesireParam.cParam.cCoolTime": {
+                            "_Complete": {
+                                "s": 60.0,
+                                "r": 60.0
+                            },
+                            "_Cancel": {
+                                "s": 15.0,
+                                "r": 15.0
+                            },
+                            "_Group": {
+                                "s": 30.0,
+                                "r": 30.0
+                            }
+                        }
+                    },
+                    "_StartConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckTargetEventEm1152_Param": {}
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRangeInTargetEnemy_Param": {
+                                        "_Range": {
+                                            "s": 3.0,
+                                            "r": 10.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cRangeInTargetEnemyToPlayer_Param": {
+                                        "_Range": {
+                                            "s": 0.0,
+                                            "r": 8.0
+                                        }
+                                    }
+                                },
+                                "_Inverse": true
+                            }
+                        },
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cCheckPlBetweenSelfAndTarget_Param": {
+                                        "_PerpendicularDist": 3.0
+                                    }
+                                },
+                                "_Inverse": true
+                            }
+                        }
+                    ],
+                    "_EndConditionParams": [
+                        {
+                            "app.cNpcDesireConditionHolder": {
+                                "_Param": {
+                                    "app.NpcDesireConditions.cUsedItemCategory_Param": {
+                                        "_ItemCategory": "[8]SET_BOMB"
+                                    }
+                                },
+                                "_Inverse": false
+                            }
+                        }
+                    ],
+                    "_ContinueConditionParams": []
+                }
+            },
+            "_OverwriteKindParams": []
+        }
+    }
+]

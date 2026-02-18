@@ -257,7 +257,7 @@
                             "s": 3000.0,
                             "r": 0.0
                         },
-                        "_SubCategoryFixed": "[3]NPC_QUEST_END",
+                        "_SubCategoryFixed": "[109]NPC_QUEST_END_TALK",
                         "_EnumFixedID": 63
                     }
                 },
@@ -2755,6 +2755,28 @@
                             {
                                 "app.cNpcSpeechConditionHolder": {
                                     "_Param": {
+                                        "app.SpeechConditions.cCombatEnemyFlinchEx_Param": {}
+                                    },
+                                    "_Inverse": false
+                                }
+                            }
+                        ],
+                        "_IsEnable": true,
+                        "_IsNoRegularlyEvaluate": false,
+                        "_CoolTime": {
+                            "s": 60.0,
+                            "r": 0.0
+                        },
+                        "_SubCategoryFixed": "[0]NONE",
+                        "_EnumFixedID": 70
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechConditionPackages.cData": {
+                        "_ConditionParams": [
+                            {
+                                "app.cNpcSpeechConditionHolder": {
+                                    "_Param": {
                                         "app.SpeechConditions.cCheckPartsBreakedCombatEnemy_Param": {
                                             "SuccessTime": 2.0
                                         }
@@ -3341,6 +3363,11 @@
                             {
                                 "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
                                     "_SpeechFixedID": 46
+                                }
+                            },
+                            {
+                                "app.user_data.NpcSpeechConditionPackages.cGroup.cDataHolder": {
+                                    "_SpeechFixedID": 70
                                 }
                             },
                             {

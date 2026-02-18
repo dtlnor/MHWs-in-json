@@ -394,6 +394,40 @@
                         "_DialogueParams": [
                             {
                                 "app.user_data.NpcSpeechDialoguePackages.cData.cDialogue": {
+                                    "_ConditionParams": [
+                                        {
+                                            "app.cNpcSpeechConditionHolder": {
+                                                "_Param": {
+                                                    "app.SpeechConditions.cPlOtomoFollowCheck_Param": {}
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        },
+                                        {
+                                            "app.cNpcSpeechConditionHolder": {
+                                                "_Param": {
+                                                    "app.SpeechConditions.cCheckQuestUnique_Param": {
+                                                        "_UniqueType": "[1]UNIQUE_01"
+                                                    }
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        }
+                                    ],
+                                    "_Weight": 100,
+                                    "_DialogueID": "[10465]Dia_PL_Banter_0213"
+                                }
+                            }
+                        ],
+                        "_Probability": 100,
+                        "_EnumFixedID": 163
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechDialoguePackages.cData": {
+                        "_DialogueParams": [
+                            {
+                                "app.user_data.NpcSpeechDialoguePackages.cData.cDialogue": {
                                     "_ConditionParams": [],
                                     "_Weight": 50,
                                     "_DialogueID": "[1215]Dia_NPC102_00_001_OnQuest_0010"
@@ -1335,6 +1369,71 @@
                         ],
                         "_Probability": 30,
                         "_EnumFixedID": 6
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechDialoguePackages.cData": {
+                        "_DialogueParams": [
+                            {
+                                "app.user_data.NpcSpeechDialoguePackages.cData.cDialogue": {
+                                    "_ConditionParams": [
+                                        {
+                                            "app.cNpcSpeechConditionHolder": {
+                                                "_Param": {
+                                                    "app.SpeechConditions.cPlOtomoFollowCheck_Param": {}
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        },
+                                        {
+                                            "app.cNpcSpeechConditionHolder": {
+                                                "_Param": {
+                                                    "app.SpeechConditions.cCheckQuestUnique_Param": {
+                                                        "_UniqueType": "[1]UNIQUE_01"
+                                                    }
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        }
+                                    ],
+                                    "_Weight": 100,
+                                    "_DialogueID": "[10466]Dia_PL_Banter_0214"
+                                }
+                            }
+                        ],
+                        "_Probability": 100,
+                        "_EnumFixedID": 162
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechDialoguePackages.cData": {
+                        "_DialogueParams": [
+                            {
+                                "app.user_data.NpcSpeechDialoguePackages.cData.cDialogue": {
+                                    "_ConditionParams": [
+                                        {
+                                            "app.cNpcSpeechConditionHolder": {
+                                                "_Param": {
+                                                    "app.SpeechConditions.cCheckQuestTargetEnemy_Param": {
+                                                        "_TargetEmID": "[746996864]EM0160_00_0",
+                                                        "_CheckOption": true,
+                                                        "_RoleID": "[0]NORMAL",
+                                                        "_LegendaryID": "[2]KING",
+                                                        "_Rank": "[2]EX",
+                                                        "_QuestLevel": 10
+                                                    }
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        }
+                                    ],
+                                    "_Weight": 100,
+                                    "_DialogueID": "[9408]Dia_NPC102_00_001_OnQuest_0350"
+                                }
+                            }
+                        ],
+                        "_Probability": 50,
+                        "_EnumFixedID": 164
                     }
                 },
                 {
@@ -7518,6 +7617,62 @@
                         ],
                         "_Probability": 30,
                         "_EnumFixedID": 155
+                    }
+                },
+                {
+                    "app.user_data.NpcSpeechDialoguePackages.cData": {
+                        "_DialogueParams": [
+                            {
+                                "app.user_data.NpcSpeechDialoguePackages.cData.cDialogue": {
+                                    "_ConditionParams": [
+                                        {
+                                            "app.cNpcSpeechConditionHolder": {
+                                                "_Param": {
+                                                    "app.SpeechConditions.cOtomoArmorCheck_Param": {
+                                                        "_SetInfo": {
+                                                            "app.SpeechConditions.cOtomoArmorCheck_ParamBase.cPartsSetInfo": {
+                                                                "_Weapon": {
+                                                                    "app.SpeechConditions.cOtomoArmorCheck_ParamBase.cPartsInfo": {
+                                                                        "_Series": {
+                                                                            "app.OtEquipDef.EQUIP_SERIES_ID_Serializable": {
+                                                                                "_Value": "[-978216832]INVALID"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "_Helm": {
+                                                                    "app.SpeechConditions.cOtomoArmorCheck_ParamBase.cPartsInfo": {
+                                                                        "_Series": {
+                                                                            "app.OtEquipDef.EQUIP_SERIES_ID_Serializable": {
+                                                                                "_Value": "[27698]SERIES_ID_071"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                },
+                                                                "_Body": {
+                                                                    "app.SpeechConditions.cOtomoArmorCheck_ParamBase.cPartsInfo": {
+                                                                        "_Series": {
+                                                                            "app.OtEquipDef.EQUIP_SERIES_ID_Serializable": {
+                                                                                "_Value": "[27698]SERIES_ID_071"
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                },
+                                                "_Inverse": false
+                                            }
+                                        }
+                                    ],
+                                    "_Weight": 100,
+                                    "_DialogueID": "[10461]Dia_PL_Banter_0209"
+                                }
+                            }
+                        ],
+                        "_Probability": 30,
+                        "_EnumFixedID": 161
                     }
                 },
                 {
