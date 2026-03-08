@@ -13,9 +13,9 @@
                 "app.user_data.NpcStreakActionData.cNpcStreakEffectHolder_LStick": {
                     "_Param": {
                         "app.NpcStreakEffects.cEx02SetIntoCoverPoint_Param": {
-                            "v0": 0.75,
-                            "v1": true,
-                            "v2": true,
+                            "_Reach": 0.75,
+                            "_ContinueMove": true,
+                            "_StopWhenReached": true,
                             "_MoveType": "[11]COMBAT_HUNTER",
                             "_UseAIMoveEnd": false,
                             "_FixedSpeedLv": "[4]DASH",
@@ -63,6 +63,14 @@
                             "app.NpcStreakEvaluators.cCheckEx02SpecialGuardTarget_Param": {}
                         },
                         "_Inverse": false
+                    }
+                },
+                {
+                    "app.user_data.NpcStreakActionData.cNpcStreakEvaluatorHolder": {
+                        "_Param": {
+                            "app.NpcStreakEvaluators.cCheckEx02SpecialGuardSafety_Param": {}
+                        },
+                        "_Inverse": true
                     }
                 }
             ]

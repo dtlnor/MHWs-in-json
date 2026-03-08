@@ -69,6 +69,7 @@
                         {
                             "app.user_data.OptionGraphicsData.cItemTextureQuality": {
                                 "_Option": "[0]HIGHEST",
+                                "_StreamingTextureQuality": "[0]HIGHEST",
                                 "_ValueNoDlc": -1,
                                 "_ValueDlcAvailable": 0
                             }
@@ -76,6 +77,7 @@
                         {
                             "app.user_data.OptionGraphicsData.cItemTextureQuality": {
                                 "_Option": "[1]HIGH",
+                                "_StreamingTextureQuality": "[1]HIGH",
                                 "_ValueNoDlc": 0,
                                 "_ValueDlcAvailable": 1
                             }
@@ -83,6 +85,7 @@
                         {
                             "app.user_data.OptionGraphicsData.cItemTextureQuality": {
                                 "_Option": "[2]STANDARD",
+                                "_StreamingTextureQuality": "[2]MIDDLE",
                                 "_ValueNoDlc": 1,
                                 "_ValueDlcAvailable": 2
                             }
@@ -90,6 +93,7 @@
                         {
                             "app.user_data.OptionGraphicsData.cItemTextureQuality": {
                                 "_Option": "[3]LOW",
+                                "_StreamingTextureQuality": "[3]LOW",
                                 "_ValueNoDlc": 2,
                                 "_ValueDlcAvailable": 3
                             }
@@ -97,6 +101,7 @@
                         {
                             "app.user_data.OptionGraphicsData.cItemTextureQuality": {
                                 "_Option": "[4]LOWEST",
+                                "_StreamingTextureQuality": "[4]LOWEST",
                                 "_ValueNoDlc": 3,
                                 "_ValueDlcAvailable": 4
                             }
@@ -179,7 +184,11 @@
                                 "_MainRaymarchResolution": "[3]Quarter",
                                 "_IBLRaymarchResolution": "[1]Half",
                                 "_IBLRaymarchScale": 1.0,
-                                "_IBLPartialDrawFrame": 4
+                                "_IBLPartialDrawFrame": 4,
+                                "_MainRaymarchNum": 128,
+                                "_ShadowRaymarchNum": 7,
+                                "_ResourceOption": "[0]High",
+                                "_UpscaleBoundaryBlendAdjuster": 0.0
                             }
                         },
                         {
@@ -188,7 +197,11 @@
                                 "_MainRaymarchResolution": "[3]Quarter",
                                 "_IBLRaymarchResolution": "[1]Half",
                                 "_IBLRaymarchScale": 1.0,
-                                "_IBLPartialDrawFrame": 8
+                                "_IBLPartialDrawFrame": 8,
+                                "_MainRaymarchNum": 128,
+                                "_ShadowRaymarchNum": 7,
+                                "_ResourceOption": "[0]High",
+                                "_UpscaleBoundaryBlendAdjuster": 0.0
                             }
                         },
                         {
@@ -197,7 +210,11 @@
                                 "_MainRaymarchResolution": "[3]Quarter",
                                 "_IBLRaymarchResolution": "[2]OneThird",
                                 "_IBLRaymarchScale": 1.0,
-                                "_IBLPartialDrawFrame": 8
+                                "_IBLPartialDrawFrame": 8,
+                                "_MainRaymarchNum": 128,
+                                "_ShadowRaymarchNum": 7,
+                                "_ResourceOption": "[0]High",
+                                "_UpscaleBoundaryBlendAdjuster": 0.0
                             }
                         },
                         {
@@ -206,7 +223,11 @@
                                 "_MainRaymarchResolution": "[4]OneFifth",
                                 "_IBLRaymarchResolution": "[2]OneThird",
                                 "_IBLRaymarchScale": 0.75,
-                                "_IBLPartialDrawFrame": 10
+                                "_IBLPartialDrawFrame": 10,
+                                "_MainRaymarchNum": 128,
+                                "_ShadowRaymarchNum": 7,
+                                "_ResourceOption": "[0]High",
+                                "_UpscaleBoundaryBlendAdjuster": 0.0
                             }
                         },
                         {
@@ -215,7 +236,24 @@
                                 "_MainRaymarchResolution": "[5]OneEighth",
                                 "_IBLRaymarchResolution": "[2]OneThird",
                                 "_IBLRaymarchScale": 0.625,
-                                "_IBLPartialDrawFrame": 12
+                                "_IBLPartialDrawFrame": 12,
+                                "_MainRaymarchNum": 128,
+                                "_ShadowRaymarchNum": 7,
+                                "_ResourceOption": "[0]High",
+                                "_UpscaleBoundaryBlendAdjuster": 0.0
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItemSkyCloudQuality": {
+                                "_Option": "[5]SIMPLIFIED",
+                                "_MainRaymarchResolution": "[5]OneEighth",
+                                "_IBLRaymarchResolution": "[2]OneThird",
+                                "_IBLRaymarchScale": 0.25,
+                                "_IBLPartialDrawFrame": 8,
+                                "_MainRaymarchNum": 64,
+                                "_ShadowRaymarchNum": 5,
+                                "_ResourceOption": "[2]SuperLow",
+                                "_UpscaleBoundaryBlendAdjuster": 1.0
                             }
                         }
                     ]
@@ -267,6 +305,54 @@
                     ]
                 }
             },
+            "_PlantDensity": {
+                "app.user_data.OptionGraphicsData.cSetting`2<app.OptionParamDef.PLANT_DENSITY,app.GrassCulling.CULLING_MODE>": {
+                    "_Items": [
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.PLANT_DENSITY,app.GrassCulling.CULLING_MODE>": {
+                                "_Option": "[0]HIGH",
+                                "_Value": "[0]FAR"
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.PLANT_DENSITY,app.GrassCulling.CULLING_MODE>": {
+                                "_Option": "[1]MIDDLE",
+                                "_Value": "[1]MIDDLE"
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.PLANT_DENSITY,app.GrassCulling.CULLING_MODE>": {
+                                "_Option": "[2]LOW",
+                                "_Value": "[2]NEAR"
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.PLANT_DENSITY,app.GrassCulling.CULLING_MODE>": {
+                                "_Option": "[3]LOWEST",
+                                "_Value": "[3]NEAREST"
+                            }
+                        }
+                    ]
+                }
+            },
+            "_PlantCollision": {
+                "app.user_data.OptionGraphicsData.cSetting`2<app.OptionParamDef.PLANT_COLLISION,System.Int32>": {
+                    "_Items": [
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.PLANT_COLLISION,System.Int32>": {
+                                "_Option": "[0]ON",
+                                "_Value": 0
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.PLANT_COLLISION,System.Int32>": {
+                                "_Option": "[1]OFF",
+                                "_Value": 1
+                            }
+                        }
+                    ]
+                }
+            },
             "_SandSnowWaterQuality": {
                 "app.user_data.OptionGraphicsData.cSettingSandSnowWaterQuality": {
                     "_Items": [
@@ -275,8 +361,51 @@
                                 "_Option": "[0]HIGHEST",
                                 "_MaxTessellationLevel": 4,
                                 "_MaxShadowTessellationLevel": 4,
-                                "_Lod0SwitchDistance": 310.0,
-                                "_Lod1SwitchDistance": 128.0,
+                                "_EnableGroundSwtichLodPerPatch": false,
+                                "_GroundSwitchLodDistanceArray": [
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1044114240,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1226157568,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -859829056,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1251081216,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1182228864,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 327401792,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    }
+                                ],
                                 "_SwitchDistanceScaleAfterLod2": 2.0,
                                 "_ShaderSwitchDistance": 500.0,
                                 "_ShaderTransitionDistance": 60.0,
@@ -290,8 +419,51 @@
                                 "_Option": "[1]HIGH",
                                 "_MaxTessellationLevel": 3,
                                 "_MaxShadowTessellationLevel": 3,
-                                "_Lod0SwitchDistance": 180.0,
-                                "_Lod1SwitchDistance": 128.0,
+                                "_EnableGroundSwtichLodPerPatch": false,
+                                "_GroundSwitchLodDistanceArray": [
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1044114240,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1226157568,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -859829056,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1251081216,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1182228864,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 327401792,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    }
+                                ],
                                 "_SwitchDistanceScaleAfterLod2": 2.0,
                                 "_ShaderSwitchDistance": 500.0,
                                 "_ShaderTransitionDistance": 60.0,
@@ -305,8 +477,51 @@
                                 "_Option": "[2]STANDARD",
                                 "_MaxTessellationLevel": 2,
                                 "_MaxShadowTessellationLevel": 2,
-                                "_Lod0SwitchDistance": 180.0,
-                                "_Lod1SwitchDistance": 128.0,
+                                "_EnableGroundSwtichLodPerPatch": true,
+                                "_GroundSwitchLodDistanceArray": [
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1044114240,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1226157568,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 210.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -859829056,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1251081216,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1182228864,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 327401792,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    }
+                                ],
                                 "_SwitchDistanceScaleAfterLod2": 2.0,
                                 "_ShaderSwitchDistance": 400.0,
                                 "_ShaderTransitionDistance": 50.0,
@@ -320,8 +535,51 @@
                                 "_Option": "[3]LOW",
                                 "_MaxTessellationLevel": 1,
                                 "_MaxShadowTessellationLevel": 1,
-                                "_Lod0SwitchDistance": 180.0,
-                                "_Lod1SwitchDistance": 128.0,
+                                "_EnableGroundSwtichLodPerPatch": true,
+                                "_GroundSwitchLodDistanceArray": [
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1044114240,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1226157568,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 210.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -859829056,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1251081216,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1182228864,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 327401792,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    }
+                                ],
                                 "_SwitchDistanceScaleAfterLod2": 2.0,
                                 "_ShaderSwitchDistance": 300.0,
                                 "_ShaderTransitionDistance": 40.0,
@@ -335,8 +593,51 @@
                                 "_Option": "[4]LOWEST",
                                 "_MaxTessellationLevel": 0,
                                 "_MaxShadowTessellationLevel": 0,
-                                "_Lod0SwitchDistance": 180.0,
-                                "_Lod1SwitchDistance": 128.0,
+                                "_EnableGroundSwtichLodPerPatch": true,
+                                "_GroundSwitchLodDistanceArray": [
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1044114240,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1226157568,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 210.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -859829056,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": -1251081216,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 1182228864,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    },
+                                    {
+                                        "ace.cGraphicsSetting.GroundLOD": {
+                                            "_StageID_Fixed": 327401792,
+                                            "_LOD0": 180.0,
+                                            "_LOD1": 128.0
+                                        }
+                                    }
+                                ],
                                 "_SwitchDistanceScaleAfterLod2": 2.0,
                                 "_ShaderSwitchDistance": 250.0,
                                 "_ShaderTransitionDistance": 30.0,
@@ -475,18 +776,46 @@
                 }
             },
             "_VolumeFogQuality": {
-                "app.user_data.OptionGraphicsData.cSetting`2<app.OptionParamDef.VOLUME_FOG_QUALITY,via.render.VolumetricFogControl.TextureSize>": {
+                "app.user_data.OptionGraphicsData.cSettingVolumetriFog": {
                     "_Items": [
                         {
-                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.VOLUME_FOG_QUALITY,via.render.VolumetricFogControl.TextureSize>": {
-                                "_Option": "[0]HIGH",
-                                "_Value": "[1]W160xH90xD128"
+                            "app.user_data.OptionGraphicsData.cItemVolumetricFog": {
+                                "_Option": "[0]HIGHEST",
+                                "_Value": "[1]W160xH90xD128",
+                                "_ShadowCullingBlendFactorScale": 0.0,
+                                "_CustomMaterialImproveNoise": true
                             }
                         },
                         {
-                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.VOLUME_FOG_QUALITY,via.render.VolumetricFogControl.TextureSize>": {
-                                "_Option": "[1]LOW",
-                                "_Value": "[0]W160xH90xD64"
+                            "app.user_data.OptionGraphicsData.cItemVolumetricFog": {
+                                "_Option": "[1]HIGH",
+                                "_Value": "[0]W160xH90xD64",
+                                "_ShadowCullingBlendFactorScale": 0.0,
+                                "_CustomMaterialImproveNoise": true
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItemVolumetricFog": {
+                                "_Option": "[2]STANDARD",
+                                "_Value": "[3]W96xH54xD64",
+                                "_ShadowCullingBlendFactorScale": 0.0,
+                                "_CustomMaterialImproveNoise": true
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItemVolumetricFog": {
+                                "_Option": "[3]LOW",
+                                "_Value": "[5]W54xH30xD64",
+                                "_ShadowCullingBlendFactorScale": 0.0,
+                                "_CustomMaterialImproveNoise": true
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItemVolumetricFog": {
+                                "_Option": "[4]LOWEST",
+                                "_Value": "[4]W54xH30xD32",
+                                "_ShadowCullingBlendFactorScale": 1.0,
+                                "_CustomMaterialImproveNoise": false
                             }
                         }
                     ]
@@ -538,15 +867,21 @@
                 "app.user_data.OptionGraphicsData.cSettingWindFluidSimulation": {
                     "_Items": [
                         {
-                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.WIND_FLUID_SIMULATION,System.Boolean>": {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.WIND_FLUID_SIMULATION,ace.cGraphicsSetting.WIND_SIMULATION_QUALITY>": {
                                 "_Option": "[0]HIGH",
-                                "_Value": false
+                                "_Value": "[0]HIGH"
                             }
                         },
                         {
-                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.WIND_FLUID_SIMULATION,System.Boolean>": {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.WIND_FLUID_SIMULATION,ace.cGraphicsSetting.WIND_SIMULATION_QUALITY>": {
                                 "_Option": "[1]LOW",
-                                "_Value": true
+                                "_Value": "[1]LOW"
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.WIND_FLUID_SIMULATION,ace.cGraphicsSetting.WIND_SIMULATION_QUALITY>": {
+                                "_Option": "[2]OFF",
+                                "_Value": "[2]OFF"
                             }
                         }
                     ]
@@ -556,15 +891,27 @@
                 "app.user_data.OptionGraphicsData.cSettingGroundQuality": {
                     "_Items": [
                         {
-                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.GROUND_QUALITY,System.Boolean>": {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.GROUND_QUALITY,ace.cGraphicsSetting.GROUND_QUALITY>": {
                                 "_Option": "[0]HIGH",
-                                "_Value": false
+                                "_Value": "[0]HIGH"
                             }
                         },
                         {
-                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.GROUND_QUALITY,System.Boolean>": {
-                                "_Option": "[1]LOW",
-                                "_Value": true
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.GROUND_QUALITY,ace.cGraphicsSetting.GROUND_QUALITY>": {
+                                "_Option": "[1]STANDARD",
+                                "_Value": "[1]MIDDLE"
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.GROUND_QUALITY,ace.cGraphicsSetting.GROUND_QUALITY>": {
+                                "_Option": "[2]LOW",
+                                "_Value": "[2]LOW"
+                            }
+                        },
+                        {
+                            "app.user_data.OptionGraphicsData.cItem`2<app.OptionParamDef.GROUND_QUALITY,ace.cGraphicsSetting.GROUND_QUALITY>": {
+                                "_Option": "[3]LOWEST",
+                                "_Value": "[3]LOWEST"
                             }
                         }
                     ]
